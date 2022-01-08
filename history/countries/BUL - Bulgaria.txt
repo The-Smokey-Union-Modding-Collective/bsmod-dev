@@ -7,6 +7,7 @@ set_convoys = 5 #VANILLA & DLC
 create_intelligence_agency = {
 	name = "Natsionalnata Razuznavatelna Sluzhba"
 	icon = "GFX_intelligence_agency_logo_bul"
+}
 #You don't want Bulgarian party names? Just remove these lines
 set_party_name = { # DLC
 	ideology = communism

@@ -7,6 +7,8 @@ create_intelligence_agency = {
 	icon = "GFX_intelligence_agency_logo_bs"
 }
 
+add_command_power = 100
+
 if = {
 	limit = {
 		NOT = {

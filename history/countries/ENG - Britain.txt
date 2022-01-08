@@ -5,6 +5,8 @@ set_oob = "ENG_1936"
 create_intelligence_agency = {
 	name = "MI6"
 	icon = "GFX_intelligence_agency_logo_uk"
+}
+
 if = {
 	limit = {
 		NOT = {
