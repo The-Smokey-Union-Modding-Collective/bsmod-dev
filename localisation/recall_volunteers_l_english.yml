@@ -1,0 +1,5 @@
+﻿l_english:
+ RECALL_VOLUNTEERS_TT:0 "Recall the volunteers deployed in §Y[This.GetNameWithFlag]§!."
+ RECALL_VOLUNTEERS_TT_2:0 "§RYou can only recall volunteers from §Y[This.GetNameWithFlag]§! if any are deployed.§!"
+ RECALL_VOLUNTEERS_TITLE:0 "Recall Volunteers"
+ RECALL_VOLUNTEERS_ACTION_DESC:0 "Recall our volunteer-troops."

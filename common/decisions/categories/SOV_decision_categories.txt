@@ -1,0 +1,65 @@
+################
+#### SOVIET ####
+################
+
+SOV_reclaim_russian_territory_category = {
+	icon = generic_communism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = SOV
+	}
+	
+	visible = {
+		NOT = {
+			AND = {
+				146 = { is_owned_by = SOV }
+				13 = { is_owned_by = SOV }
+				12 = { is_owned_by = SOV }
+				11 = { is_owned_by = SOV }
+				78 = { is_owned_by = SOV }
+			}
+		}
+	}
+}
+					
+
+SOV_finnish_surrender_category = {
+	icon = generic_fascism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		SOV = { has_war_with = FIN }
+	}
+}
+
+SOV_industry_relocation = {
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	available = {
+		has_completed_focus = SOV_move_industry_to_urals
+	}
+
+	visible = {
+		has_war_with = GER
+	}
+}
+
+SOV_great_patriotic_war = {
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		has_war = yes
+	}
+		
+}

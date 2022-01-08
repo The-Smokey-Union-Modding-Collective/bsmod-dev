@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_decision_cat_mod_german_operations"
+		texturefile = "gfx/interface/decisions/decision_cat_mod_german_operations.dds"
+	}
+}

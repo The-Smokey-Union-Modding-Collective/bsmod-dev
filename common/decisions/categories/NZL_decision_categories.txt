@@ -1,0 +1,13 @@
+NZL_join_australia_category = {
+	
+	allowed = {
+		original_tag = NZL
+	}
+
+	visible = {
+		is_ai = yes
+		date < 1936.02.01
+	}
+	
+	priority = 10
+}

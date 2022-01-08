@@ -1,0 +1,515 @@
+﻿division_template = {
+	name = "Juntuán"				# Represents: German-trained divisions (better equipment than rest),
+	division_names_group = CHI_INF_01
+									# 	as well as two-division infantry corps (generally poorly-equipped militias),
+	regiments = {					#	and local militia groups.
+		infantry = { x = 0 y = 0 }	# Note: Chinese divisions were brigade-sized compared other nations' armies
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+
+	priority = 0 # garrison
+}
+division_template = {
+	name = "Sanjiao Jun"			# Represents three-division infantry corps (generally poorly-equipped militias)
+	division_names_group = CHI_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+	}
+}
+division_template = {
+	name = "Qibing Jun"		# Represents two-division cavalry corps (generally poorly-equipped)
+	division_names_group = CHI_CAV_01
+
+	regiments = {
+		cavalry = { x = 0 y = 0 }
+		cavalry = { x = 0 y = 1 }
+		cavalry = { x = 1 y = 0 }
+		cavalry = { x = 1 y = 1 }
+	}
+}
+
+### OOB ###
+units = {
+	###### Kuomintang Army (CO: Chang Kai-shek) ######
+	##### Beiping-Tianjin Area (CO: ) #####
+	### 29 Juntuan (highly-reinforced corps) ###
+	division = {
+		name = "1 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "2 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "3 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "4 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "5 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "6 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "7 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "8 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "9 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "10 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "11 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "12 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "13 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "14 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "15 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "16 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "17 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "18 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "19 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "20 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "21 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "22 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "23 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "24 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "25 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "26 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "27 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "28 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "29 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "30 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "31 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "32 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "33 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "34 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "35 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "36 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "37 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "38 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "39 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "40 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "41 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "42 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "43 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "44 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "45 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "46 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "47 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "48 Bubing Shi"
+		location = 11913
+		division_template = "Sanjiao Jun"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "1 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "2 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "3 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "4 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "5 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "6 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "7 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "8 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "9 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "10 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "11 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "12 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "13 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "14 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "15 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "16 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "17 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "18 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "19 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "20 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "21 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "22 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "23 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+		division = {
+		name = "24 Juntuán"
+		location = 11913
+		division_template = "Juntuán"
+		start_experience_factor = 0.3
+	}
+
+}
+
+
+### Air Forces ###
+air_wings = {
+# Roughly 300 fighters, 21 tac bombers, but only 200 aircraft total were serviceable in 1937 due to neglect
+	# Beijing
+	608 = { 
+		fighter_equipment_0 = { owner = "CHI" amount = 30 }				# 3rd PG - Fiat CR.32
+	}
+	#Shanghai
+	613 = {
+		fighter_equipment_0 = { owner = "CHI" amount = 70 } 		# 4th PF, 5th PG, 9th PS - Curtiss Hawk
+		tac_bomber_equipment_0 =  { owner = "CHI" amount = 15 }		# Combined BG -- Martin 139WC, Savoia S.72
+	}
+}
+
+
+
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 2
+		progress = 0.55
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = fighter_equipment_0
+			creator = "CHI"
+		}
+		requested_factories = 1
+		progress = 0.55
+		efficiency = 100
+	}	
+}

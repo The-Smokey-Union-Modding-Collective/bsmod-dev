@@ -1,0 +1,46 @@
+spriteTypes = {
+   spriteType = { 
+     name = "GFX_unit_jaeger_icon_medium"				
+     textureFile = "gfx/interface/counters/divisions_large/unit_ranger_icon.dds"
+     noOfFrames = 2
+   }
+
+   spriteType = { 
+     name = "GFX_unit_jaeger_icon_medium_white"						
+     textureFile = "gfx/interface/counters/divisions_small/onmap_unit_ranger_icon.dds" 
+     noOfFrames = 2
+   }
+
+   spriteType = {
+     name = "GFX_unit_jaeger_icon_small"
+     texturefile = "gfx/texticons/unit_ranger_icon_small.dds"
+     legacy_lazy_load = no
+     noOfFrames = 2		 
+   }		
+   
+   SpriteType = {
+		name = "GFX_jaeger_medium"
+		texturefile = "gfx/interface/technologies/rangers.dds"
+	}
+   
+   SpriteType = {
+		name = "GFX_jaeger_forester_medium"
+		texturefile = "gfx/interface/technologies/forest_specialization_1.dds"
+	}
+   
+   SpriteType = {
+		name = "GFX_jaeger_forester2_medium"
+		texturefile = "gfx/interface/technologies/forest_specialization_2.dds"
+	}
+
+   SpriteType = {
+		name = "GFX_jaeger_jungle_medium"
+		texturefile = "gfx/interface/technologies/harsh_climate_specialization_1.dds"
+	}
+  
+  SpriteType = {
+		name = "GFX_jaeger_jungle2_medium"
+		texturefile = "gfx/interface/technologies/harsh_climate_specialization_2.dds"
+	}
+}
+	

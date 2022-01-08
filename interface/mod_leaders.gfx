@@ -1,0 +1,65 @@
+spriteTypes = {	
+
+	### MAN
+	
+	spriteType = {
+		name = "GFX_portrait_man_yoshiko_kawashima_ARMY"
+		texturefile = "gfx/leaders/MAN/portrait_man_yoshiko_kawashima_ARMY.dds"
+	}
+	
+	### ITA
+	
+	spriteType = {
+		name = "GFX_portrait_ita_arghos"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Arghos.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ita_tommy"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Tommy.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ita_scared_mussolini"
+		texturefile = "gfx/leaders/ITA/Portrait_Italy_Scared_Mussolini.dds"
+	}
+	
+	### ENG
+	
+	spriteType = {
+		name = "GFX_portrait_mkrover"
+		texturefile = "gfx/leaders/ENG/Portrait_Britain_MKRover.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_christopher_lee"
+		texturefile = "gfx/leaders/ENG/Portrait_Britain_Christopher_Lee.dds"
+	}
+	
+	### GER
+	
+	spriteType = {
+		name = "GFX_portrait_hagen_forster"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hagen_Forster.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_klaus_hoffmann"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Klaus_Hoffmann.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_ulrich_wrangel"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Ulrich_Wrangel.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_johannes_vonreinhartz"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Johannes_vonReinhartz.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_ger_hinrich_laudrup"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Hinrich_Laudrup.dds"
+	}
+}

@@ -1,0 +1,29 @@
+
+#Important to put LOWEST first
+SIA_civil_war_level_down = {
+	if = {
+		limit = { has_idea = SIA_civil_war_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = SIA_civil_war_2
+				add_idea = SIA_civil_war_1
+			}
+		}
+		hidden_effect = { remove_ideas = SIA_civil_war_1 }
+	}
+	if = {
+		limit = { has_idea = SIA_civil_war_2 }
+		swap_ideas = {
+			remove_idea = SIA_civil_war_2
+			add_idea = SIA_civil_war_1
+		}
+	}
+	if = {
+		limit = { has_idea = SIA_civil_war_3 }
+		swap_ideas = {
+			remove_idea = SIA_civil_war_3
+			add_idea = SIA_civil_war_2
+		}
+	}
+}

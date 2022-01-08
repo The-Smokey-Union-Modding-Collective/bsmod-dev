@@ -1,0 +1,17 @@
+spriteTypes = {	
+
+	### Gondor stands alone
+	
+	spriteType = {
+		name = "GFX_idea_gondor_stands_alone"
+		texturefile = "gfx/interface/ideas/idea_gondor_stands_alone.dds"
+	}
+	
+	### (France) Will to Fight
+	
+	spriteType = {
+		name = "GFX_idea_FRA_will_to_fight"
+		texturefile = "gfx/interface/ideas/idea_fra_will_to_fight.dds"
+	}
+	
+}

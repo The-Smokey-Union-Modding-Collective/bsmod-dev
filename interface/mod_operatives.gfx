@@ -1,0 +1,10 @@
+spriteTypes = {	
+
+	### BS mod agency
+	
+	spriteType = {
+		name = "GFX_intelligence_agency_logo_bs"
+		texturefile = "gfx/interface/operatives/agencies/agency_logo_bs.dds"
+	}
+	
+}

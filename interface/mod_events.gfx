@@ -1,0 +1,24 @@
+spriteTypes = {	
+
+	### Fall of Peterborough
+	
+	spriteType = {
+		name = "GFX_news_event_peterborough"
+		texturefile = "gfx/event_pictures/news_event_peterborough.dds"
+	}
+	
+	### Fall of Gondor
+	
+	spriteType = {
+		name = "GFX_news_event_gondor"
+		texturefile = "gfx/event_pictures/news_event_gondor.dds"
+	}
+	
+	### Anschluss of South Tyrol
+	
+	spriteType = {
+		name = "GFX_news_event_anschluss_easteregg"
+		texturefile = "gfx/event_pictures/news_event_anschluss_easteregg.dds"
+	}
+	
+}

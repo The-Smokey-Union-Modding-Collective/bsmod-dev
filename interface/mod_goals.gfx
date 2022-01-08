@@ -1,0 +1,38 @@
+spriteTypes = {	
+
+	### Befriend Japan
+	
+	spriteType = {
+		name = "GFX_focus_ger_befriend_japan"
+		texturefile = "gfx/interface/goals/focus_ger_befriend_japan.dds"
+	}
+	
+	### Befriend China
+	
+	spriteType = {
+		name = "GFX_focus_ger_befriend_china"
+		texturefile = "gfx/interface/goals/focus_ger_befriend_china.dds"
+	}
+	
+	### Cope Pro
+	
+	spriteType = {
+		name = "GFX_focus_jap_cope_pro"
+		texturefile = "gfx/interface/goals/focus_jap_cope_pro.dds"
+	}
+	
+	### Shadddo Scheme
+	
+	spriteType = {
+		name = "GFX_focus_eng_shadddo_scheme"
+		texturefile = "gfx/interface/goals/focus_eng_shadddo_scheme.dds"
+	}
+	
+	### Shadddo Factories
+	
+	spriteType = {
+		name = "GFX_focus_eng_shadddo_factories"
+		texturefile = "gfx/interface/goals/focus_can_shadddo_factories.dds"
+	}
+	
+}

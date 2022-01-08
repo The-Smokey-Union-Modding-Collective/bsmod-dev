@@ -1,0 +1,6 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_resources_container_bg"
+		texturefile = "gfx/interface/resources_container_bg.dds"
+	}
+}

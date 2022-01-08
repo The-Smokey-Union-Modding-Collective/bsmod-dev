@@ -1,0 +1,9 @@
+NDefines_Graphics.NGraphics.VICTORY_POINT_MAP_ICON_TEXT_CUTOFF = {300, 500, 1000}  --vanilla=150, 250, 500
+NDefines_Graphics.NGraphics.VICTORY_POINTS_DISTANCE_CUTOFF = {300, 500, 1000} --vanilla=250, 500, 1000
+NDefines_Graphics.NGraphics.AIRBASE_ICON_DISTANCE_CUTOFF = 2000
+NDefines_Graphics.NGraphics.UNITS_DISTANCE_CUTOFF = 240 --vanilla=120
+NDefines_Graphics.NGraphics.MAP_ICONS_GROUP_CAM_DISTANCE = 180 --vanilla=90
+NDefines_Graphics.NGraphics.MAP_ICONS_STATE_GROUP_CAM_DISTANCE = 350 --vanilla=180
+NDefines_Graphics.NGraphics.MAP_ICONS_STRATEGIC_GROUP_CAM_DISTANCE = 700 --vanilla=350
+NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE = 700 --vanilla=350
+NDefines_Graphics.NGraphics.MAP_ICONS_COARSE_COUNTRY_GROUPING_DISTANCE_STRATEGIC = 700 --vanilla=350

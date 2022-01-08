@@ -1,0 +1,678 @@
+ideas = {
+	
+	country = { 
+		SIA_the_thai_monarchy = {
+		
+			allowed = {
+				original_tag = SIA
+			}
+			
+			cancel = { 
+				has_government = communism
+			}
+			
+			picture = generic_monarchist_uprising
+			modifier = { 
+				stability_factor = 0.05
+				war_support_factor = -0.15
+				neutrality_drift = 0.05
+			}
+		}
+		
+		SIA_shackled_monarchy = {
+		
+			allowed = {
+				always = no 
+			}
+			
+			cancel = { 
+				has_government = communism
+			}
+			
+			picture = generic_king_handled
+			modifier = { 
+				stability_factor = 0.05
+				neutrality_drift = -0.05
+			}
+		}
+		
+		SIA_fascist_army_sympathies = {
+		
+			allowed = {
+				original_tag = SIA
+			}
+			
+			cancel = {
+				has_government = communism
+			}
+			
+			picture = generic_fascism_drift_2
+			modifier = {
+				war_support_factor = 0.1
+				fascism_drift = 0.15
+			}
+		}
+		
+		SIA_great_leader = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_government = communism
+			}
+			
+			picture = ast_abandon_the_westminster_system_fascism
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.20
+				fascism_drift = 0.10
+			}
+		}
+		
+		SIA_seri_thai_opposition = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_government = communism
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.05
+				communism_drift = 0.10
+				democratic_drift = 0.10
+				party_popularity_stability_factor = -0.1
+			}
+		}
+		
+		SIA_non_existent_ship_industry = {
+		
+			allowed = {
+				original_tag = SIA
+			}
+			
+			picture = generic_naval_manufacturer_3
+			research_bonus = {
+					naval_equipment = -1
+					naval_doctrine = -1
+				}
+			modifier = {
+				industrial_capacity_dockyard = -0.50
+			}
+		}
+		
+		SIA_limited_ship_industry = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_naval_manufacturer_1
+			research_bonus = {
+					naval_equipment = -0.35
+					naval_doctrine = -0.35
+				}
+			modifier = {
+				industrial_capacity_dockyard = -0.20
+			}
+		}
+		
+		SIA_developed_ship_industry = {
+		
+			allowed = {
+				always = no
+			}
+			
+			picture = generic_naval_manufacturer_2
+			research_bonus = {
+					naval_equipment = 0.10
+					naval_doctrine = 0.10
+				}
+			modifier = {
+				industrial_capacity_dockyard = 0.10
+			}
+		}
+		
+		SIA_cultural_mandates_idea = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_government = communism
+			}
+			
+			picture = generic_morale_bonus
+			modifier = {
+				stability_weekly = 0.005
+			}
+		}
+		
+		SIA_civil_war_3 = { 
+			
+			name = SIA_civil_war_aftermath
+			
+			allowed = { 
+				original_tag = SIA
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_war_of_resistance3
+			
+			modifier = { 
+				political_power_factor = -0.40
+				consumer_goods_factor = 0.05
+				stability_factor = -0.30
+				war_support_factor = -0.15
+			}
+		}
+		SIA_civil_war_2 = { 
+			
+			name = SIA_civil_war_aftermath
+			
+			allowed = { 
+				always = no
+			}
+			
+			picture = chi_war_of_resistance2
+			
+			removal_cost = -1
+			
+			modifier = { 
+				political_power_factor = -0.25
+				stability_factor = -0.10
+				war_support_factor = -0.05
+			}
+		}
+		
+		SIA_civil_war_1 = { 
+			
+			name = SIA_civil_war_aftermath
+			
+			allowed = { 
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			picture = chi_war_of_resistance
+			
+			modifier = { 
+				political_power_factor = -0.15
+				stability_factor = -0.05
+			}
+		}
+		
+		SIA_anti_china_cause = { 
+		
+			allowed = { 
+				always = no
+			}
+			
+			picture = jap_ichi_go
+			modifier = { 
+				send_volunteer_size = 4
+				air_volunteer_cap = 200
+				war_support_factor = 0.10
+			}
+		}
+		
+		SIA_Zaibatsu_dominance = {
+		
+			allowed = { 
+				always = no
+			}
+			
+			picture = jap_zaibatsu
+			modifier = {
+				consumer_goods_factor = 0.10
+				war_support_factor = -0.05
+				stability_factor = -0.05
+				production_speed_arms_factory_factor = 0.15
+			}
+		}
+		
+		SIA_national_industry1 = {
+			
+			name = SIA_growing_national_industry
+			
+			allowed = { 
+				always = no
+			}
+			
+			picture = man_five_year_plan_industry
+			modifier = {
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		SIA_national_industry2 = {
+		
+			name = SIA_growing_national_industry
+		
+			allowed = { 
+				always = no
+			}
+			
+			picture = man_five_year_plan_industry
+			modifier = {
+				consumer_goods_factor = -0.05
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.10
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		
+		SIA_national_industry3 = {
+		
+			allowed = { 
+				always = no
+			}
+			
+			picture = man_five_year_plan_tank
+			modifier = {
+				consumer_goods_factor = -0.10
+				production_speed_arms_factory_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+			}
+		}
+		
+		
+	}
+	
+	political_advisor = {
+
+		SIA_phot_bhahalyodin = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { prince_of_terror }
+		}
+		
+		SIA_military_development_mission = {
+
+			picture = jap_zaibatsu_ally
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = SIA_joint_japanese_radar_development
+			}
+			
+			traits = { quartermaster_general }
+		}
+		
+		luang_wichitwathakan = {
+
+			picture = generic_political_advisor_asia_2
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = { 
+				has_completed_focus = SIA_instal_loyal_men
+			}
+			
+			traits = { fascist_demagogue }
+		
+		}
+		
+		SIA_kuang_abhayavongsa = {
+
+			picture = generic_political_advisor_asia_3
+				
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { silent_workhorse }
+		}
+
+		SIA_thawee_punyaketu = {
+
+			picture = generic_political_advisor_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { captain_of_industry }
+		}
+	}	
+
+	army_chief = {
+		
+		SIA_plaek_phibunsongkhram = {
+			
+			picture = generic_army_asia_3
+
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_chief_offensive_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+
+	}
+
+	air_chief = {
+		
+
+		SIA_phra_vechayanrangsarit = {
+			
+			picture = generic_air_asia_2
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_chief_ground_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		SIA_phraya_chalermarkiart = {
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_chief_night_operations_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+	navy_chief = {
+		
+
+		SIA_phraya_wichcitcholathai = {
+			
+			picture = generic_navy_asia_1
+
+			allowed = {
+				original_tag = SIA
+			}
+					
+			traits = { navy_chief_decisive_battle_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+
+		SIA_thawon_thamrongnawasawat = {
+			
+			picture = generic_navy_asia_3
+
+			allowed = {
+				original_tag = SIA
+			}
+					
+			traits = { navy_chief_maneuver_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	high_command = {
+		
+		SIA_phraya_chitnasongkhla = {
+
+			ledger = army
+
+			picture = generic_army_asia_4
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = SIA_spirit_of_infantry
+			}
+			
+			traits = { army_infantry_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SIA_tianliang_huntrakool = {
+			ledger = army
+
+			picture = generic_army_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = SIA_elephants_of_bangkok
+			}
+			
+			traits = { army_armored_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+		
+		SIA_sindhu_kamalanavin = {
+			ledger = army
+
+			picture = generic_army_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { army_logistics_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SIA_phraya_thayarnpikart = {
+			ledger = air
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_close_air_support_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SIA_luang_sinthusongkhramchai = {
+			ledger = navy
+
+			picture = generic_air_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { air_naval_strike_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SIA_pridi_phanomyong = {
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { navy_screen_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+
+		SIA_phraya_preechacholayudha = {
+			ledger = navy
+
+			picture = generic_navy_asia_1
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			traits = { navy_submarine_2 }
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+	
+
+
+	theorist = {
+		SIA_manphya_khanphialong = {
+			ledger = army
+
+			picture = generic_army_asia_5
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			research_bonus = {
+				land_doctrine = 0.10
+			}
+			
+			traits = { military_theorist }
+		}
+		
+		SIA_sawat_phutianands = { 
+			ledger = navy
+
+			picture = generic_navy_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			research_bonus = {
+				naval_doctrine = 0.10
+			}
+			
+			traits = { naval_theorist }
+		}
+
+		SIA_phra_silpasakrakorn = {
+			ledger = air
+
+			picture = generic_air_asia_3
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			research_bonus = {
+				air_doctrine = 0.10
+			}
+			
+			traits = { air_warfare_theorist }
+		}
+
+	}
+	
+	naval_manufacturer = {
+	
+		designer = yes
+		
+		japan_navy_board = {
+						
+			picture = maizuru_naval_arsenal
+			
+			allowed = {
+				original_tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = SIA_japanese_assisted_naval_development
+			}
+			
+			research_bonus = {
+				naval_equipment = 0.15
+			}
+			
+			traits = { naval_manufacturer }
+		}
+	}
+	
+	tank_manufacturer = {
+	
+		designer = yes
+	
+		japan_armor_board = {
+			
+			picture = osaka_army_arsenal
+			
+			allowed = {
+				tag = SIA
+			}
+			
+			available = {
+				has_completed_focus = SIA_local_tank_facilities
+			}
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { tank_manufacturer }
+		}	
+	}
+
+}

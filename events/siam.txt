@@ -1,0 +1,113 @@
+#####SIAM#####
+
+add_namespace = siam
+
+
+country_event  = {
+	id = siam.1
+	title = siam.1.t
+	desc = siam.1.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = siam.1.a
+		swap_ideas = {
+			remove_idea = SIA_national_industry1 
+			add_idea = SIA_national_industry2 
+		}
+		hidden_effect = {
+			country_event = { days = 720 id = siam.2 }
+		}
+		
+	}
+	
+	immediate = {
+		clr_country_flag = SIA_national_industry_growing
+		set_country_flag = SIA_national_industry_prospering
+	}
+}
+
+country_event  = {
+	id = siam.2
+	title = siam.2.t
+	desc = siam.2.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = siam.2.a
+		swap_ideas = {
+			remove_idea =  SIA_national_industry2
+			add_idea = SIA_national_industry3
+		}
+	}
+}
+
+country_event  = {
+	id = siam.3
+	title = siam.3.t
+	desc = siam.3.d
+	picture = GFX_report_event_asian_politicians
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = SIA
+		has_country_flag = SIA_resistance_movement_start
+	}
+	
+	mean_time_to_happen = {
+		days = 1200
+	}
+	
+	
+	option = {
+		name = siam.3.a
+		
+		add_ideas = SIA_seri_thai_opposition
+		
+		set_party_name = { 
+			ideology = democratic 
+			long_name = SIA_RE_democratic_long
+			name = SIA_RE_democratic_short
+		}
+		set_party_name = { 
+			ideology = communism 
+			long_name = SIA_RE_communism_long
+			name = SIA_RE_communism_short
+		}
+	}
+}
+
+country_event  = {
+	id = siam.4
+	title = siam.4.t
+	desc = siam.4.d
+	picture = GFX_report_event_asian_politicians
+	
+	fire_only_once = yes
+	
+	trigger = {
+		TAG = SIA
+		is_ai = yes
+	}
+	
+	mean_time_to_happen = {
+		days = 20
+	}
+	
+	
+	option = {
+		name = siam.4.a
+		
+		add_stability = 0.2
+		
+		add_popularity = {
+			ideology = fascism
+			popularity = 0.4
+		}
+	}
+}
