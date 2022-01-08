@@ -78,7 +78,6 @@ bookmarks = {
 			focuses = {
 				tizard_mission_focus
 				ENG_war_with_germany
-				ENG_war_with_italy
 			}
 		}
 		"GER"={
