@@ -1,5 +1,6 @@
 sub_units = {
 	military_police = {
+		abbreviation = "MP"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 0
@@ -27,7 +28,7 @@ sub_units = {
 		max_organisation = 0	
 		default_morale = 0.3
 		manpower = 500
-		training_time = 90
+		training_time = 180
 
 		#Misc Abilities
 		weight = 0.1
