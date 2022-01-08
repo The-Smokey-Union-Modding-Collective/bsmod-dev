@@ -129,9 +129,14 @@ ideas = {
 			ai_will_do = {
    				factor = 1
 				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 5000
+				}
+				modifier = {
 					#Prio if low on manpower
 					factor = 20
-					manpower_per_military_factory <  1000
+					manpower_per_military_factory < 1000
 				}
 				modifier = {
 					tag = ENG
@@ -219,6 +224,13 @@ ideas = {
 			}
 			ai_will_do = {
    				factor = 1
+
+				modifier = {
+					# Ignore if high on manpower
+					factor = 0.5
+					manpower_per_military_factory > 3000
+				}
+
 				modifier = {
 					#Prio if low on manpower
 					factor = 20
@@ -234,10 +246,16 @@ ideas = {
 				modifier = { # china relies a lot on throwing bodies at the enemy
 					factor = 3
 
-					tag = CHI
-					has_manpower < 200000
+					original_tag = CHI
+					has_manpower < 300000
 				}
 				
+				modifier = {
+					factor = 3
+
+					original_tag = SOV
+					has_manpower < 300000
+				}
 			}
 			
 			cost = 150
@@ -359,7 +377,14 @@ ideas = {
 				modifier = { # china relies a lot on throwing bodies at the enemy
 					factor = 3
 
-					tag = CHI
+					original_tag = CHI
+					has_manpower < 200000
+				}
+
+				modifier = {
+					factor = 3
+
+					original_tag = SOV
 					has_manpower < 200000
 				}
 
@@ -369,12 +394,6 @@ ideas = {
 					original_tag = GER
 					has_manpower < 2000000
 				}
-				modifier = {
-					factor = 1000
-					original_tag = SOV
-					check_variable = { manpower_k < 3000 }
-				}
-
 			}
 			
 			cost = 150
