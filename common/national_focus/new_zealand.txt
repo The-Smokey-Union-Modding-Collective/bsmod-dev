@@ -133,9 +133,9 @@
 
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = NZL_form_the_rnzn
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -534,9 +534,9 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = NZL_form_the_rnzaf
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -558,9 +558,9 @@
 				}
 				set_state_flag = NZL_expand_the_nzpaf_AB
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = NZL_form_the_rnzaf
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -822,6 +822,7 @@
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = NZL_national_roads_board_Inf1
 			}
 			723 = {
 				add_building_construction = {
@@ -829,6 +830,7 @@
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = NZL_national_roads_board_Inf2
 			}
 		}
 	}
@@ -1300,10 +1302,6 @@
 
 		}
 
-		allow_branch = {
-			NZL = { has_focus_tree = generic_focus }
-		}
-
 		bypass = {
 
 		}
@@ -1350,9 +1348,9 @@
 
 		completion_reward = {
 			army_experience = 25
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = NZL_army_reforms
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -1419,7 +1417,10 @@
 		}
 
 		bypass = {
-
+			OR = {
+				has_tech = basic_light_tank
+				has_tech = basic_light_tank_chassis
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1429,11 +1430,24 @@
 
 		completion_reward = {
 			add_ideas = NZL_bob_semple_tank
+			if = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
 			add_tech_bonus = {
 				name = NZL_bob_semple_tank
 				bonus = 1.0
 				uses = 1
-				category = cat_light_armor
+					technology = basic_light_tank
+				}
+			}
+			else = {
+				add_tech_bonus = {
+					name = NZL_bob_semple_tank
+					bonus = 1.0
+					uses = 1
+					technology = basic_light_tank_chassis
+				}
 			}
 		}
 	}
@@ -1536,7 +1550,7 @@
 				name = NZL_schofield_tank
 				bonus = 1.0
 				uses = 1
-				category = armor
+				category = cat_light_armor
 			}
 		}
 	}
@@ -1630,10 +1644,6 @@
 			factor = 25
 		}
 
-		allow_branch = {
-			NZL = { has_focus_tree = generic_focus }
-		}
-
 		available = {
 #			is_subject = no
 			has_war = yes
@@ -1689,11 +1699,26 @@
 		search_filters = { FOCUS_FILTER_RESEARCH }
 
 		completion_reward = {
+			if = {
+				limit = {
+					NOT = { has_dlc = "No Step Back" }
+				}
 			add_tech_bonus = {
 				name = NZL_big_bob_tank
+					ahead_reduction = 2
 				bonus = 1.0
 				uses = 1
 				category = armor
+			}
+		}
+			else = {
+				add_tech_bonus = {
+					name = NZL_big_bob_tank
+					ahead_reduction = 2
+					bonus = 1.0
+					uses = 1
+					technology = super_heavy_tank_chassis
+				}
 			}
 		}
 	}
@@ -1981,7 +2006,7 @@
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 25
@@ -2001,28 +2026,27 @@
 
 		completion_reward = {
 			unlock_decision_tooltip = NZL_demand_islands
-			add_ideas = NZL_maori_volunteers
-#			division_template = {
-#				is_locked = yes
-#				name = "Maori Volunteers"
-#				division_names_group = NZL_INF_01
-#				regiments = {
-#					infantry = { x = 0 y = 0 }
-#					infantry = { x = 0 y = 1 }
-#					infantry = { x = 0 y = 2 }
-#					
-#					infantry = { x = 1 y = 0 }
-#					infantry = { x = 1 y = 1 }
-#					infantry = { x = 1 y = 2 }
-#				}
-#			}
-#			random_owned_controlled_state = {
-#				prioritize = { 284 723 }
-#				create_unit = {
-#					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
-#					owner = NZL
-#				}
-#			}
+			division_template = {
+				is_locked = yes
+				name = "Maori Volunteers"
+				division_names_group = NZL_INF_01
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 284 723 }
+				create_unit = {
+					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
+					owner = NZL
+				}
+			}
 		}
 	}
 
@@ -2314,10 +2338,7 @@
 		available = {
 			is_subject = no
 			has_government = communism
-			SOV = {
-				has_capitulated = no
-				is_subject = no
-			}
+			SOV_comintern_joinable = yes 
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 
@@ -2350,6 +2371,7 @@
 
 		available = {
 			has_government = communism
+			SOV = { has_government = communism }
 			is_subject = no
 			is_in_faction_with = SOV
 			NOT = { has_country_flag = britain_enforced_our_loyalty }

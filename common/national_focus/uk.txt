@@ -1529,9 +1529,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = ENG_anti_submarine_training_school
-				bonus = 1.0
+				cost_reduction = 0.35
 				uses = 2
 				category = convoy_defense_tree
 			}
@@ -1554,9 +1554,9 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = uk_waves_focus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -1850,9 +1850,6 @@ focus_tree = {
 	focus = {
 		id = uk_mediterranean_focus 
 		prerequisite = { focus = uk_service_focus }
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		available = {
 			447 = {
 				CONTROLLER = {
@@ -2684,7 +2681,7 @@ focus_tree = {
 				OR = {
 					has_completed_focus = ENG_global_defense
 					has_country_leader = {
-					    name = "Winston Churchill"
+					    character = ENG_winston_churchill
 					    ruling_only = yes
 					}
 				}
@@ -4898,7 +4895,7 @@ focus_tree = {
 		cost = 10
 
 		available_if_capitulated = yes
-		
+
 		completion_reward = {
 			annex_country = {
 				target = MAL
@@ -4907,7 +4904,7 @@ focus_tree = {
 			336 = {
 				set_building_level = {
 					type = infrastructure
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 				set_building_level = {
@@ -5064,9 +5061,6 @@ focus_tree = {
 	focus = {
 		id = uk_burma_focus
 		prerequisite = { focus = uk_asia_focus } 
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		available = {
 			CHI = { 
 				has_war_with = JAP 
@@ -5282,9 +5276,6 @@ focus_tree = {
 	focus = {
 		id = singapore_focus
 		prerequisite = { focus = uk_asia_focus }
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		icon = GFX_goal_generic_fortify_city
 		x = 0
 		y = 1
@@ -5466,9 +5457,6 @@ focus_tree = {
 	focus = {
 		id = hongkong_focus
 		prerequisite = { focus = uk_asia_focus }
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		icon = GFX_goal_generic_fortify_city
 		x = 2
 		y = 1
@@ -5905,9 +5893,6 @@ focus_tree = {
 				}
 			}
 		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		bypass = {
 			CAN = {
 				exists = no
@@ -5990,6 +5975,51 @@ focus_tree = {
 	}
 
 	focus = {
+		id = ENG_british_commonwealth_air_training_plan
+		prerequisite = { focus = uk_commonwealth_focus }
+		icon = GFX_goal_generic_air_fighter2
+		x = -1
+		y = 1
+		relative_position_id = uk_commonwealth_focus
+		cost = 10
+		ai_will_do = {
+			factor = 3
+		}
+
+		available = {
+			OR = {
+				CAN = { is_in_faction_with = ENG }
+				SAF = { is_in_faction_with = ENG }
+				RAJ = { is_in_faction_with = ENG }
+				AST = { is_in_faction_with = ENG }
+				NZL = { is_in_faction_with = ENG }
+			}
+		}
+
+		bypass = {
+		}
+
+		completion_reward = {
+			add_ideas = ENG_british_commonwealth_air_training_plan
+			every_country = {
+				limit = {
+					is_subject_of = ROOT
+					NOT = { original_tag = SAF }
+				}
+				add_ideas = ENG_british_commonwealth_air_training_plan
+			}
+			SAF = {
+				if = {
+					limit = {
+						is_subject_of = ROOT
+					}
+					add_ideas = ENG_joint_air_training_scheme
+				}
+			}
+		}
+	}
+
+	focus = {
 		id = uk_india_focus 
 		prerequisite = { focus = uk_commonwealth_focus }
 		available = {
@@ -5997,10 +6027,7 @@ focus_tree = {
 				original_tag = RAJ
 				is_in_faction_with = ROOT
 			}
-		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
+		} 
 		icon = GFX_goal_generic_construct_civ_factory
 		x = -3
 		y = 1
@@ -6145,9 +6172,6 @@ focus_tree = {
 				}
 			}
 		} #counters JAP's indian army focus
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		icon = GFX_goal_generic_improve_relations
 		x = -1
 		y = 1
@@ -6193,9 +6217,7 @@ focus_tree = {
 				is_in_faction_with = ROOT
 			}
 		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
+
 		bypass = {
 			OR = {
 				AST = { exists = no }
@@ -6355,9 +6377,6 @@ focus_tree = {
 				original_tag = NZL
 				is_in_faction_with = ROOT
 			}
-		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
 		}
 		bypass = {
 			OR = {
@@ -6519,9 +6538,6 @@ focus_tree = {
 				is_in_faction_with = ROOT
 			}
 		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 		bypass = {
 			OR = {
 				CAN = { exists = no }
@@ -6680,9 +6696,6 @@ focus_tree = {
 				original_tag = SAF
 				is_in_faction_with = ROOT
 			}
-		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
 		}
 		bypass = {
 			OR = {
@@ -6848,9 +6861,7 @@ focus_tree = {
 				is_subject_of = ENG
 			}
 		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
+
 		continue_if_invalid = no
 
 		icon = GFX_focus_generic_self_management
@@ -6871,6 +6882,165 @@ focus_tree = {
 				autonomy_state = autonomy_dominion
 			}
 			RAJ = { add_timed_idea = { idea = ENG_indian_autonomy_RAJ_idea days = 730 } }
+			custom_effect_tooltip = ENG_indian_autonomy_tt
+		}
+	}
+
+	focus = {
+		id = ENG_imperial_conference
+		prerequisite = { focus = uk_canada_focus }
+		prerequisite = { focus = uk_new_zealand_focus }
+		prerequisite = { focus = uk_south_africa_focus }
+
+		allow_branch = {
+			has_dlc = "Man the Guns"
+		}
+
+		available = {
+			CAN = {
+				OR = {
+					AND = {
+						is_subject_of = ENG
+						has_government = ROOT
+					}
+					exists = no
+				}
+			}
+			SAF = {
+				OR = {
+					AND = {
+						is_subject_of = ENG
+						has_government = ROOT
+					}
+					exists = no
+				}
+			}
+			AST = {
+				OR = {
+					AND = {
+						is_subject_of = ENG
+						has_government = ROOT
+					}
+					exists = no
+				}
+			}
+			NZL = {
+				OR = {
+					AND = {
+						is_subject_of = ENG
+						has_government = ROOT
+					}
+					exists = no
+				}
+			}
+			NOT = {
+				any_state = {
+					OR = {
+						is_core_of = ENG
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+					}
+					NOT = { state = 331 }
+					OWNER = {
+						NOT = {
+							OR = {
+								tag = ENG
+								tag = CAN
+								tag = SAF
+								tag = AST
+								tag = NZL
+							}
+						}
+					}
+				}
+			}
+
+		}
+
+		bypass = {
+			CAN = {
+				exists = no
+			}
+			SAF = {
+				exists = no
+			}
+			RAJ = {
+				OR = {
+					exists = no
+					NOT = { is_subject_of = ENG }
+				}
+			}
+			AST = {
+				exists = no
+			}
+			NZL = {
+				exists = no
+			}
+			NOT = {
+				any_state = {
+					OR = {
+						is_core_of = ENG
+						is_core_of = CAN
+						is_core_of = SAF
+						is_core_of = AST
+						is_core_of = NZL
+					}
+					OWNER = {
+						NOT = { tag = ENG }
+					}
+				}
+			}
+		}
+
+		continue_if_invalid = no
+
+		icon = GFX_goal_generic_national_unity
+
+		x = 0
+		y = 2
+		relative_position_id = uk_new_zealand_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+			#modifier = {
+			#	factor = 0
+			#}
+		}
+		search_filters = {FOCUS_FILTER_POLITICAL}	
+		completion_reward = {
+			add_political_power = 120
+			every_country = {
+				limit = {
+					OR = {
+						tag = ENG
+						AND = {
+							is_subject_of = ENG
+							tag = CAN
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = SAF
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = RAJ
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = AST
+						}
+						AND = {
+							is_subject_of = ENG
+							tag = NZL
+						}
+					}
+				}
+				country_event = { id = mtg_britain.82 hours = 6 }
+			}
+			hidden_effect = { news_event = { id = mtg_news.13 days = 1 } }
+			custom_effect_tooltip = ENG_imperial_conference_tt
 			custom_effect_tooltip = ENG_indian_autonomy_tt
 		}
 	}
@@ -7295,9 +7465,6 @@ focus_tree = {
 				has_country_flag = ENG_dominions_accepted_federation
 			}
 		}
-		allow_branch = {
-			ENG = { has_focus_tree = generic_focus }
-		}
 
 		icon = GFX_focus_eng_imperial_federation
 
@@ -7422,6 +7589,7 @@ focus_tree = {
 			}
 		}
 	}
+
 	### DEMOCRATIC BRANCH - STEADY AS SHE GOES ###
 
 	focus = {
@@ -7652,14 +7820,14 @@ focus_tree = {
 		prerequisite = { focus = ENG_global_defense }
 		available = { 
 			has_country_leader =  {
-				name = "Neville Chamberlain"
+				character = ENG_neville_chamberlain
 				ruling_only = yes
 			}
 		}
 		bypass = {
 			OR = {
 				has_country_leader =  {
-					name = "Winston Churchill"
+					character = ENG_winston_churchill
 					ruling_only = yes
 				}
 				has_country_leader =  {
@@ -7884,9 +8052,9 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 3
 				category = naval_doctrine
 			}
@@ -7996,9 +8164,9 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_RESEARCH}	
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -8960,7 +9128,7 @@ focus_tree = {
 			create_country_leader = {
 				name = "Edward VIII"
 				desc = "POLITICS_EDWARD_EDWARD_DESC"
-				picture = "Portrait_Britain_Edward_VIII.dds"
+				picture = GFX_portrait_Edward_VIII
 				expire = "1965.1.1"
 				ideology = despotism
 				traits = {
@@ -9889,7 +10057,7 @@ focus_tree = {
 			NOT = { is_in_faction_with = SOV }
 			SOV = { has_government = communism }
 		}
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU
 		icon = GFX_focus_attack_soviet
 		x = -1
 		y = 1
@@ -10602,7 +10770,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_follow_moscow }
 		available = {
 			is_subject = no
-			NOT = { is_in_faction_with = SOV }
+			NOT = { is_in_faction_with = SOU }
 		}
 		icon = GFX_focus_generic_join_comintern
 		x = -2
@@ -10620,13 +10788,13 @@ focus_tree = {
 			hidden_effect = { news_event = { id = mtg_news.36 days = 1 } }
 			if = {
 				limit = {
-					has_country_leader = { name = "Harry Pollitt" ruling_only = yes }
+					has_country_leader = { character = ENG_harry_pollitt ruling_only = yes }
 				}
 				retire_country_leader = yes
 				create_country_leader = {
 					name = "Rajani Palme Dutt"
 					desc = "POLITICS_PALME_DUTT_DESC"
-					picture = "Portrait_Britain_Palme_Dutt.dds"
+					picture = GFX_portrait_Rajani_Palme_Dutt
 					expire = "1965.1.1"
 					ideology = leninism
 					traits = {
@@ -10636,20 +10804,20 @@ focus_tree = {
 			}
 			add_ai_strategy = {
 				type = alliance
-				id = SOV
+				id = SOU
 				value = -200
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = SOV
+				id = SOU
 				value = -200
 			}
 			add_ai_strategy = {
 				type = protect
-				id = SOV
+				id = SOU
 				value = -200
 			}
-			SOV = {
+			SOU = {
 				add_ai_strategy = {
 					type = alliance
 					id = ROOT
@@ -11204,9 +11372,12 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_the_one_true_revolution }
 		available = {
 			is_subject = no
-			country_exists = SOV
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
+			NOT = { has_war_with = SOU }
+			SOU = { 
+				exists = yes
+				has_civil_war = no
+				has_government = communism 
+			}
 		}
 		bypass = {
 			is_in_faction_with = SOV
@@ -11222,9 +11393,9 @@ focus_tree = {
 		completion_reward = {
 			if = {
 				limit = {
-					SOV = { NOT = { has_war_with = GER } }
+					SOU = { NOT = { has_war_with = GER } }
 				}
-				SOV = { country_event = { id = mtg_britain.49 hours = 6 } }
+				SOU = { country_event = { id = mtg_britain.49 hours = 6 } }
 			}
 			else = {
 				create_wargoal = {
@@ -11242,14 +11413,14 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_soviet_cooperation }
 		available = {
 			is_subject = no
-			country_exists = SOV
-			NOT = { is_in_faction_with = SOV }
-			SOV = { has_government = communism }
+			country_exists = SOU
+			NOT = { is_in_faction_with = SOU }
+			SOU = { has_government = communism }
 		}
 		bypass = {
-			has_war_with = SOV
+			has_war_with = SOU
 		}
-		will_lead_to_war_with = SOV
+		will_lead_to_war_with = SOU
 		icon = GFX_focus_attack_soviet
 		x = 0
 		y = 1
@@ -11261,7 +11432,7 @@ focus_tree = {
 		completion_reward = {
 			create_wargoal = {
 				type = puppet_wargoal_focus
-				target = SOV
+				target = SOU
 				expire = 0
 			}
 			hidden_effect = { news_event = { id = mtg_news.38 days = 1 } }
@@ -11276,13 +11447,16 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_the_british_communist_alternative }
 		available = {
 			is_subject = no
-			country_exists = SOV
-			NOT = { is_in_faction_with = SOV }
-			NOT = { has_war_with = SOV }
-			SOV = { has_government = communism }
+			country_exists = SOu
+			NOT = { is_in_faction_with = SOU }
+			NOT = { has_war_with = SOU }
+			SOU = { 
+				has_government = communism
+				has_civil_war = no
+				}
 		}
 		bypass = {
-			is_in_faction_with = SOV
+			is_in_faction_with = SOU
 			NOT = {
 				focus_progress = {
 					focus = ENG_the_british_communist_alternative
@@ -11301,7 +11475,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY}	
 		completion_reward = {
 			add_stability = 0.05
-			SOV = { country_event = { id = mtg_britain.52 hours = 6 } }
+			SOU = { country_event = { id = mtg_britain.52 hours = 6 } }
 		}
 	}
 

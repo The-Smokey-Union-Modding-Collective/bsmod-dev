@@ -716,52 +716,65 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
 		completion_reward = {
-			448 = {
-				set_building_level = {
+			450  = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
 					type = infrastructure
-					level = 4
+						level = 2
 					instant_build = yes
 				}
 			}
 			449 = {
 				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
 				}
 			}
 			661 = {
 				set_building_level = {
 					type = infrastructure
-					level = 4
+					level = 2
 					instant_build = yes
 				}
-			}
+				}
 			662 = {
-				set_building_level = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
 					type = infrastructure
-					level = 4
+						level = 2
 					instant_build = yes
 				}
 			}
-			663 = {
-				set_building_level = {
+				}
+			449 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
 					type = infrastructure
-					level = 5
+						level = 3
 					instant_build = yes
 				}
+			}
 			}
 			451 = {
-				set_building_level = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
 					type = infrastructure
-					level = 5
+						level = 3
 					instant_build = yes
 				}
 			}
-			450 = {
-				set_building_level = {
+			}
+			448 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -879,9 +892,9 @@
 				}				
 			}
 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -940,9 +953,9 @@
 				#technology = tech_recon2
 				#technology = tech_recon3
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = land_doctrine
 			}
@@ -1104,9 +1117,9 @@
 				}				
 			}
 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = naval_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = naval_doctrine
 			}
@@ -1137,9 +1150,9 @@
 				uses = 1
 				category = light_fighter
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1366,9 +1379,9 @@
 				uses = 1
 				category = light_fighter
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = air_doc_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = air_doctrine
 			}
@@ -1423,9 +1436,9 @@
 				uses = 1
 				category = dd_tech
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = con_def_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = convoy_defense_tree
 				#technology = convoy_sailing
@@ -1457,9 +1470,9 @@
 				uses = 1
 				category = dd_tech
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = ITA_escort_effort
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = convoy_defense_tree
 
@@ -1493,9 +1506,9 @@
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = sub_op_bonus
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = submarine_doctrine
 				#technology = submarine_operations
@@ -1533,9 +1546,9 @@
 				uses = 1
 				category = ss_tech
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = ITA_sea_wolves
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 2
 				category = submarine_doctrine
 			}
