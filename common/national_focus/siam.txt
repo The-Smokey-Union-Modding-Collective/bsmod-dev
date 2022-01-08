@@ -232,10 +232,10 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 15000
 			add_timed_idea = { idea = SIA_anti_china_cause days = 720 } 
-			set_rule = can_send_volunteers
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
-}
+
 ######THAILAND######	
 	
 	focus = {
