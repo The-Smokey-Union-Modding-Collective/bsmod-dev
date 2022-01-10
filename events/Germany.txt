@@ -7370,15 +7370,15 @@ country_event = {
 
 #####SAVING THE SPANISH CIVIL War
 country_event = {
-	id = germany.1002
-	title = germany.1002.t
-	desc = germany.1002.d
+	id = germany.1100
+	title = germany.1100.t
+	desc = germany.1100.d
 	picture = GFX_report_event_german_reichstag_gathering
 
 	is_triggered_only = yes
 
 	option = {
-		name = germany.1002.a
+		name = germany.1100.a
 		ai_chance = {
 			base = 100
 		}
