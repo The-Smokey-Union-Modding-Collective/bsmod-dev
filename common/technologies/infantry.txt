@@ -719,7 +719,7 @@ technologies = {
 		
 		on_research_complete_limit = {
 			NOT = {
-				has_template_containing_unit = jaegar_infantry
+				has_template_containing_unit = jaeger
 			}
 		}
 
