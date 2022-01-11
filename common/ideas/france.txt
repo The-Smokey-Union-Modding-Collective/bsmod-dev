@@ -2,6 +2,27 @@ ideas = {
 
 	country = {
 
+		FRA_will_to_fight = {
+			picture = FRA_will_to_fight
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				legitimacy_gain_factor = 0.5
+				legitimacy_daily = 0.05
+				resistance_growth_on_our_occupied_states = 0.1
+			}
+		}
+
+
 		FRA_full_employment = {
 			picture = generic_production_bonus
 			allowed = {

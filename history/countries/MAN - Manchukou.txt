@@ -85,7 +85,7 @@ set_convoys = 5
 
 		#Five year plan
 		unlock_national_focus = MAN_first_five_year_plan
-		add_timed_idea = { days = 1275 idea = MAN_five_year_plan_industry }
+		#add_timed_idea = { days = 1275 idea = MAN_five_year_plan_industry }
 
 		complete_national_focus = MAN_trade_delegation
 		complete_national_focus = MAN_expand_the_textile_industry
