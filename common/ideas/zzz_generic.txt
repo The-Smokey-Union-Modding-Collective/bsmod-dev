@@ -101,6 +101,22 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+
+		mod_improved_worker_conditions = {
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_political_support
+			modifier = {
+				stability_weekly = 0.005
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+			}
+		}
 	
 		nationalism = {
 			
