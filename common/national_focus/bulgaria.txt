@@ -8456,6 +8456,10 @@ focus_tree = {
 	focus = {
 		id = BUL_peaceful_development
 
+		allow_branch = {
+			BUL = { has_focus_tree = generic_focus }
+		}
+
 		prerequisite = { focus = BUL_join_the_tripartite_pact }
 
 		icon = GFX_goal_generic_position_armies
@@ -8538,61 +8542,129 @@ focus_tree = {
 	focus = {
 		id = BUL_bulgarian_administration_of_the_balkans
 
-		prerequisite = { focus = BUL_peaceful_development focus = BUL_nationalist_propaganda }
+		prerequisite = { focus = BUL_join_the_tripartite_pact }
 
 		icon = GFX_focus_BUL_bulgarian_administration_of_the_balkans
 		relative_position_id = BUL_join_the_tripartite_pact
-		x = -4
-		y = 2
+		x = 0
+		y = 1
 		cost = 20
 
+#		available = {
+#			any_state = {
+#				has_state_flag = BUL_historical_bulgarian_claim_flag
+#				is_fully_controlled_by = BUL
+#			}
+#		}
+
 		available = {
-			any_state = {
-				has_state_flag = BUL_historical_bulgarian_claim_flag
-				is_fully_controlled_by = BUL
+			77 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			802 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			803 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			106 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			108 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			731 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
+			}
+			184 = {
+				controller = {
+					OR = {
+						is_in_faction_with = BUL
+						tag = BUL
+					}
+				}
 			}
 		}
 		
 		search_filters = {FOCUS_FILTER_ANNEXATION}
 		completion_reward = {
-			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_decisions_tt
-			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_cores_tt
-			if = {
-				limit = {
-					has_full_control_of_state = 106
-					106 = { NOT = { is_core_of = ROOT } }
-				}
-				106 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 106
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 803
-					803 = { NOT = { is_core_of = ROOT } }
-				}
-				803 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 803
-			}
-			if = {
-				limit = {
-					has_full_control_of_state = 77
-					77 = { NOT = { is_core_of = ROOT } }
-				}
-				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
-				add_state_core = 77
-			}
-			custom_effect_tooltip = BUL_historical_states_tt
-
-			hidden_effect = {
-				news_event = { id = bftb_news.5 hours = 8 random_hours = 4 }
-			}
-
-			add_ai_strategy = { #We really want to garrison all these territorial gains
-				type = garrison
-				value = 75
-			}
+			transfer_state = 77
+			transfer_state = 803
+			transfer_state = 106
+			transfer_state = 731
+			transfer_state = 184
+			transfer_state = 108
+			transfer_state = 802
 		}
 	}
+#			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_decisions_tt
+#			custom_effect_tooltip = BUL_bulgarian_administration_of_the_balkans_cores_tt
+#			if = {
+#				limit = {
+#					has_full_control_of_state = 106
+#					106 = { NOT = { is_core_of = ROOT } }
+#				}
+#				106 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+#				add_state_core = 106
+#			}
+#			if = {
+#				limit = {
+#					has_full_control_of_state = 803
+#					803 = { NOT = { is_core_of = ROOT } }
+#				}
+#				803 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+#				add_state_core = 803
+#			}
+#			if = {
+#				limit = {
+#					has_full_control_of_state = 77
+#					77 = { NOT = { is_core_of = ROOT } }
+#				}
+#				77 = { set_state_flag = BUL_bulgarian_reintegration_campaign_flag }
+#				add_state_core = 77
+#			}
+#			custom_effect_tooltip = BUL_historical_states_tt
+#
+#			hidden_effect = {
+#				news_event = { id = bftb_news.5 hours = 8 random_hours = 4 }
+#			}
+#
+#			add_ai_strategy = { #We really want to garrison all these territorial gains
+#				type = garrison
+#				value = 75
+#			}
+#		}
+#	}
 
 	focus = {
 		id = BUL_restore_the_bulgarian_patriarchate
@@ -8601,7 +8673,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_restore_the_bulgarian_patriarchate
 		relative_position_id = BUL_bulgarian_administration_of_the_balkans
-		x = 0
+		x = -2
 		y = 1
 		cost = 10
 
@@ -8621,6 +8693,10 @@ focus_tree = {
 
 	focus = {
 		id = BUL_total_war
+		
+		allow_branch = {
+			BUL = { has_focus_tree = generic_focus }
+		}
 
 		select_effect = {
 			if = {
@@ -8838,200 +8914,308 @@ focus_tree = {
 	focus = {
 		id = BUL_the_third_bulgarian_empire
 
-		select_effect = {
-			if = {
-				limit = {
-					NOT = { is_in_faction_with = TUR }
-				}
-				add_ai_strategy = {
-					type = prepare_for_war
-					id = TUR
-					value = 100
-				}
-			}
-		}
+#		select_effect = {
+#			if = {
+#				limit = {
+#					NOT = { is_in_faction_with = TUR }
+#				}
+#				add_ai_strategy = {
+#					type = prepare_for_war
+#					id = TUR
+#					value = 100
+#				}
+#			}
+#		}
 
-		prerequisite = { focus = BUL_total_war focus = BUL_bulgarian_administration_of_the_balkans }
+		prerequisite = { focus = BUL_bulgarian_administration_of_the_balkans}
 
 		icon = GFX_focus_BUL_the_third_bulgarian_empire
-		relative_position_id = BUL_total_war
-		x = -1
-		y = 2
+		relative_position_id = BUL_bulgarian_administration_of_the_balkans
+		x = 0
+		y = 1
 		cost = 10
 
-		available = {
-			is_subject = no
-		}
+#		available = {
+#			is_subject = no
+#		}
 		
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			set_rule = {
-				can_create_factions = yes
-			}
-			random_owned_state = {
-				prioritize = { 48 212 }
-				limit = {
-					free_building_slots = {
-						building = arms_factory
-						size > 1
-						include_locked = yes
-					}
-				}
+			77 = {
+				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
-				if = {
-					limit = {
-						infrastructure < 3
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 2
-						instant_build = yes
-					}
-				}
-				else_if = {
-					limit = {
-						infrastructure < 5
-					}
-					add_building_construction = {
-						type = infrastructure
-						level = 1
-						instant_build = yes
-					}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-
-			if = {
-				limit = {
-					any_owned_state = {
-						is_core_of = ROOT
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-					}
+			803 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					set_state_flag = BUL_imperial_industrial_upgrade_flag
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							infrastructure < 5
-						}
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-						NOT = { has_state_flag = BUL_imperial_industrial_upgrade_flag }
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					set_state_flag = BUL_imperial_industrial_upgrade_flag
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							infrastructure < 5
-						}
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				random_owned_state = {
-					limit = {
-						is_core_of = ROOT
-						has_state_flag = BUL_historical_bulgarian_claim_flag
-						NOT = { has_state_flag = BUL_imperial_industrial_upgrade_flag }
-						free_building_slots = {
-							building = industrial_complex
-							size > 0
-							include_locked = yes
-						}
-					}
-					add_extra_state_shared_building_slots = 1
-					add_building_construction = {
-						type = industrial_complex
-						level = 1
-						instant_build = yes
-					}
-					if = {
-						limit = {
-							infrastructure < 5
-						}
-						add_building_construction = {
-							type = infrastructure
-							level = 1
-							instant_build = yes
-						}
-					}
-				}
-				every_owned_state = {
-					limit = {
-						has_state_flag = BUL_imperial_industrial_upgrade_flag
-					}
-					clr_state_flag = BUL_imperial_industrial_upgrade_flag
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-			else = {
-				custom_effect_tooltip = BUL_the_third_bulgarian_empire_tt
-			}
-
-			if = {
-				limit = {
-					NOT = { has_wargoal_against = TUR }
-					NOT = { is_in_faction_with = TUR }
+			106 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
 				}
-				create_wargoal = {
-					type = annex_everything
-					target = TUR
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-
-			#Set ideology cosmetic tag to show the appropriate 3D models
+			731 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			184 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			802 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			108 = {
+				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
 			set_country_flag = BUL_tbe_flag
 			BUL_set_appropriate_cosmetic_tag = yes
 
 			hidden_effect = {
 				news_event = { id = bftb_news.7 hours = 8 random_hours = 4 }
 			}
-
-			add_ai_strategy = {
-				type = declare_war
-				id = TUR
-				value = 100
-			}
 		}
 	}
+#			set_rule = {
+#				can_create_factions = yes
+#			}
+#			random_owned_state = {
+#				prioritize = { 48 212 }
+#				limit = {
+#					free_building_slots = {
+#						building = arms_factory
+#						size > 1
+#						include_locked = yes
+#					}
+#				}
+#				add_extra_state_shared_building_slots = 2
+#				add_building_construction = {
+#					type = arms_factory
+#					level = 2
+#					instant_build = yes
+#				}
+#				if = {
+#					limit = {
+#						infrastructure < 9
+#					}
+#					add_building_construction = {
+#						type = infrastructure
+#						level = 2
+#						instant_build = yes
+#					}
+#				}
+#				else_if = {
+#					limit = {
+#						infrastructure < 10
+#					}
+#					add_building_construction = {
+#						type = infrastructure
+#						level = 1
+#						instant_build = yes
+#					}
+#				}
+#			}
+#
+#			if = {
+#				limit = {
+#					any_owned_state = {
+#						is_core_of = ROOT
+#						has_state_flag = BUL_historical_bulgarian_claim_flag
+#					}
+#				}
+#				random_owned_state = {
+#					limit = {
+#						is_core_of = ROOT
+#						has_state_flag = BUL_historical_bulgarian_claim_flag
+#						free_building_slots = {
+#							building = industrial_complex
+#							size > 0
+#							include_locked = yes
+#						}
+#					}
+#					set_state_flag = BUL_imperial_industrial_upgrade_flag
+#					add_extra_state_shared_building_slots = 1
+#					add_building_construction = {
+#						type = industrial_complex
+#						level = 1
+#						instant_build = yes
+#					}
+#					if = {
+#						limit = {
+#							infrastructure < 10
+#						}
+#						add_building_construction = {
+#							type = infrastructure
+#							level = 1
+#							instant_build = yes
+#						}
+#					}
+#				}
+#				random_owned_state = {
+#					limit = {
+#						is_core_of = ROOT
+#						has_state_flag = BUL_historical_bulgarian_claim_flag
+#						NOT = { has_state_flag = BUL_imperial_industrial_upgrade_flag }
+#						free_building_slots = {
+#							building = industrial_complex
+#							size > 0
+#							include_locked = yes
+#						}
+#					}
+#					set_state_flag = BUL_imperial_industrial_upgrade_flag
+#					add_extra_state_shared_building_slots = 1
+#					add_building_construction = {
+#						type = industrial_complex
+#						level = 1
+#						instant_build = yes
+#					}
+#					if = {
+#						limit = {
+#							infrastructure < 10
+#						}
+#						add_building_construction = {
+#							type = infrastructure
+#							level = 1
+#							instant_build = yes
+#						}
+#					}
+#				}
+#				random_owned_state = {
+#					limit = {
+#						is_core_of = ROOT
+#						has_state_flag = BUL_historical_bulgarian_claim_flag
+#						NOT = { has_state_flag = BUL_imperial_industrial_upgrade_flag }
+#						free_building_slots = {
+#							building = industrial_complex
+#							size > 0
+#							include_locked = yes
+#						}
+#					}
+#					add_extra_state_shared_building_slots = 1
+#					add_building_construction = {
+#						type = industrial_complex
+#						level = 1
+#						instant_build = yes
+#					}
+#					if = {
+#						limit = {
+#							infrastructure < 10
+#						}
+#						add_building_construction = {
+#							type = infrastructure
+#							level = 1
+#							instant_build = yes
+#						}
+#					}
+#				}
+#				every_owned_state = {
+#					limit = {
+#						has_state_flag = BUL_imperial_industrial_upgrade_flag
+#					}
+#					clr_state_flag = BUL_imperial_industrial_upgrade_flag
+#				}
+#			}
+#			else = {
+#				custom_effect_tooltip = BUL_the_third_bulgarian_empire_tt
+#			}
+#
+#			if = {
+#				limit = {
+#					NOT = { has_wargoal_against = TUR }
+#					NOT = { is_in_faction_with = TUR }
+#				}
+#				create_wargoal = {
+#					type = annex_everything
+#					target = TUR
+#				}
+#			}
+#
+#			#Set ideology cosmetic tag to show the appropriate 3D models
+#			set_country_flag = BUL_tbe_flag
+#			BUL_set_appropriate_cosmetic_tag = yes
+#
+#			hidden_effect = {
+#				news_event = { id = bftb_news.7 hours = 8 random_hours = 4 }
+#			}
+#
+#			add_ai_strategy = {
+#				type = declare_war
+#				id = TUR
+#				value = 100
+#			}
+#		}
+#	}
+
 }

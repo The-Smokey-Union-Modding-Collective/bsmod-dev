@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = romanian_focus
 	
 	country = {
@@ -920,10 +920,10 @@
 	focus = {
 		id = ROM_national_defense_industry
 		icon = GFX_goal_generic_construct_mil_factory
-		prerequisite = { focus = ROM_balkans_dominance }
-		x = 2
-		y = 0
-		relative_position_id = ROM_civil_works
+		prerequisite = { focus = ROM_preserve_greater_romania }
+		x = 7
+		y = 1
+		relative_position_id = ROM_preserve_greater_romania
 
 		cost = 10
 
@@ -1431,6 +1431,10 @@
 		available = {
 			num_of_factories > 50
 		}
+		
+		allow_branch = {
+			ROM = { has_focus_tree = generic_focus }
+		}
 
 		bypass = {
 
@@ -1448,9 +1452,9 @@
 	focus = {
 		id = ROM_exploit_the_baita_mines
 		icon = GFX_goal_generic_construction2
-		prerequisite = { focus = ROM_expand_the_university_of_bucharest }
+		prerequisite = { focus = ROM_expand_ploiesti_oil_production }
 		x = 1
-		y = 7
+		y = 6
 		relative_position_id = ROM_civil_works
 
 		cost = 10
@@ -1495,6 +1499,10 @@
 
 		available = {
 
+		}
+
+		allow_branch = {
+			ROM = { has_focus_tree = generic_focus }
 		}
 
 		bypass = {

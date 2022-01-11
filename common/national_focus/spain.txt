@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -4007,6 +4007,11 @@ focus_tree = {
 		id = SPA_utilize_the_intellectuals
 		available = {
 		}
+		
+		allow_branch = {
+			ROOT = { has_focus_tree = generic_focus }
+		}
+		
 		bypass = {
 		}
 		prerequisite = { focus = SPA_integrate_the_requetes focus = SPA_confirm_the_fueros }
@@ -5058,6 +5063,9 @@ focus_tree = {
 		available = {
 			has_completed_focus = SPA_adopt_the_26_points
 		}
+		allow_branch = {
+			ROOT = { has_focus_tree = generic_focus }
+		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
@@ -5087,6 +5095,9 @@ focus_tree = {
 		id = SPA_the_tangiers_enclave
 		available = {
 			has_full_control_of_state = 290
+		}
+		allow_branch = {
+			ROOT = { has_focus_tree = generic_focus }
 		}
 		bypass = {
 		}
@@ -5147,6 +5158,9 @@ focus_tree = {
 				owns_state = 458
 				owns_state = 665
 			}
+		}
+		allow_branch = {
+			ROOT = { has_focus_tree = generic_focus }
 		}
 		bypass = {
 		}

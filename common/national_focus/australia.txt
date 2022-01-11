@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = australian_focus
 	
 	country = {
@@ -2182,7 +2182,7 @@
 
 		available = {
 			OR = {
-				threat > 0.20
+				threat > 0.1
 				has_war = yes
 			}
 		}
@@ -2607,7 +2607,7 @@
 		}
 
 		available = {
-			is_subject = no
+#			is_subject = no
 			has_war = yes
 			is_in_faction = yes
 			OR = {
@@ -2617,6 +2617,10 @@
 					num_of_factories > 50
 				}
 			}
+		}
+		
+		allow_branch = {
+			AST = { has_focus_tree = generic_focus }
 		}
 
 		bypass = {
@@ -2824,7 +2828,11 @@
 		}
 
 		available = {
-			is_subject = no
+#			is_subject = no
+		}
+		
+		allow_branch = {
+			AST = { has_focus_tree = generic_focus }
 		}
 		
 		bypass = {

@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = canadian_focus
 	
 	country = {
@@ -289,7 +289,7 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -336,7 +336,7 @@
 		y = 3
 		relative_position_id = CAN_rowell_sirois_commission
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 75
@@ -475,7 +475,7 @@
 		}
 
 		available = {
-			threat > 0.2
+			threat > 0.1
 		}
 		
 		bypass = {
@@ -927,7 +927,7 @@
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1134,7 +1134,7 @@
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -1436,7 +1436,7 @@
 		id = CAN_send_in_the_zombies
 		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = CAN_commit_to_the_war }
-		#mutually_exclusive = { focus = CAN_national_steel_car }
+#		mutually_exclusive = { focus = CAN_national_steel_car }
 		x = 3
 		y = 4
 		relative_position_id = CAN_defence_of_canada_regulations
@@ -1522,7 +1522,11 @@
 
 		available = {
 			num_of_factories > 50
-			is_subject = no
+#			is_subject = no
+		}
+		
+		allow_branch = {
+			CAN = { has_focus_tree = generic_focus }
 		}
 		
 		bypass = {
@@ -2341,7 +2345,7 @@
 
 	focus = {
 		id = CAN_shadow_factories
-		icon = GFX_goal_generic_construct_mil_factory
+		icon = GFX_focus_eng_shadddo_factories
 		prerequisite = { focus = CAN_strengthen_the_commonwealth_ties }
 		x = -2
 		y = 1

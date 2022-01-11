@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -3153,6 +3153,10 @@ focus_tree = {
 		available = {
 
 		}
+		
+		allow_branch = {
+			HUN = { has_focus_tree = generic_focus }
+		}
 
 		bypass = {
 
@@ -3279,6 +3283,10 @@ focus_tree = {
 
 		available = {
 
+		}
+		
+		allow_branch = {
+			HUN = { has_focus_tree = generic_focus }
 		}
 
 		bypass = {

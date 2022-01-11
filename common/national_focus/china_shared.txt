@@ -1,4 +1,4 @@
-﻿#	shared_focus = {
+#	shared_focus = {
 #		id = CHI_
 #		icon = GFX_
 #		prerequisite = { focus = }
@@ -1206,7 +1206,7 @@ shared_focus = {
 	}
 
 	available = {
-		FRA_will_support = yes
+#		FRA_will_support = yes
 	}
 
 	bypass = {
@@ -1322,10 +1322,10 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			FRA_will_support = yes
-			SOV_will_support = yes
-		}
+#		OR = {
+#			FRA_will_support = yes
+#			SOV_will_support = yes
+#		}
 	}
 
 	bypass = {
@@ -2656,12 +2656,12 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			is_subject = no
-			is_subject_of = ENG
-		}
+#		OR = {
+#			is_subject = no
+#			is_subject_of = ENG
+#		}
 		all_other_country = { NOT = { has_completed_focus = CHI_ledo_road } }
-		ENG_will_support = yes
+#		ENG_will_support = yes
 		325 = { #Yunnan
 			CONTROLLER = {
 				OR = {
@@ -2801,17 +2801,17 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			AND = {
-				has_completed_focus = CHI_british_cooperation
-				ENG_will_support = yes
-			}
-			AND = {
-				has_completed_focus = CHI_mission_to_the_us
-				USA_will_support = yes
-			}
-		}
-		is_subject = no
+#		OR = {
+#			AND = {
+#				has_completed_focus = CHI_british_cooperation
+#				ENG_will_support = yes
+#			}
+#			AND = {
+#				has_completed_focus = CHI_mission_to_the_us
+#				USA_will_support = yes
+#			}
+#		}
+#		is_subject = no
 	}
 
 	bypass = {
@@ -2997,7 +2997,7 @@ shared_focus = {
 
 	available = {
 		NOT = { USA = { has_country_flag = joseph_stilwell_sent_to_china } }
-		USA_will_support = yes
+#		USA_will_support = yes
 		USA = {
 			has_civil_war = no
 		}
@@ -3222,7 +3222,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+#		USA_will_support = yes
 	}
 
 	bypass = {
@@ -3260,7 +3260,7 @@ shared_focus = {
 	}
 
 	available = {
-		USA_will_support = yes
+#		USA_will_support = yes
 	}
 
 	bypass = {
@@ -3372,10 +3372,10 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
+#		OR = {
+#			USA_will_support = yes
+#			JAP_will_support = yes
+#		}
 	}
 
 	bypass = {
@@ -3473,10 +3473,10 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
+#		OR = {
+#			USA_will_support = yes
+#			JAP_will_support = yes
+#		}
 	}
 
 	bypass = {
@@ -3512,10 +3512,10 @@ shared_focus = {
 	}
 
 	available = {
-		OR = {
-			USA_will_support = yes
-			JAP_will_support = yes
-		}
+#		OR = {
+#			USA_will_support = yes
+#			JAP_will_support = yes
+#		}
 	}
 
 	bypass = {

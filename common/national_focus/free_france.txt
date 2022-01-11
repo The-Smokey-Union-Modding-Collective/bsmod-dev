@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = free_french_focus
 	
 	country = {
@@ -166,7 +166,7 @@
 	focus = {
 		id = FRA_intervention_in_north_africa
 		icon = GFX_goal_generic_position_armies
-		x = -5
+		x = -1
 		y = 1
 		offset = {
 			x = 0
@@ -223,6 +223,10 @@
 			}
 		}
 		
+		allow_branch = {
+			FRA = { has_focus_tree = generic_focus }
+		}
+		
 		bypass = {
 
 		}
@@ -239,7 +243,7 @@
 	focus = {
 		id = FRA_intervention_in_syria
 		icon = GFX_goal_generic_position_armies
-		x = -1
+		x = 1
 		y = 1
 		offset = {
 			x = 0
@@ -297,6 +301,10 @@
 			}
 		}
 		
+		allow_branch = {
+			FRA = { has_focus_tree = generic_focus }
+		}
+		
 		bypass = {
 
 		}
@@ -332,6 +340,10 @@
 			NOT = {
 				FRA_controls_central_africa = yes
 			}
+		}
+		
+		allow_branch = {
+			FRA = { has_focus_tree = generic_focus }
 		}
 		
 		bypass = {
@@ -378,6 +390,10 @@
 			}
 		}
 		
+		allow_branch = {
+			FRA = { has_focus_tree = generic_focus }
+		}
+		
 		bypass = {
 
 		}
@@ -418,7 +434,7 @@
 				limit = {
 					has_dlc = "Man the Guns"
 				}
-				has_legitimacy > 90
+				has_legitimacy > 80
 			}
 			else = {
 				num_of_factories > 24

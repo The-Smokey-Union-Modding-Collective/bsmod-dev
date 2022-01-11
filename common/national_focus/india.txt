@@ -1,4 +1,4 @@
-﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -12,11 +12,13 @@ focus_tree = {
 	country = {
 		factor = 0
 		
-		modifier = {
-			add = 10
-			tag = RAJ
-			has_dlc = "Together for Victory"
-		}
+
+
+		#modifier = {
+		#	add = 10
+		#	original_tag = RAJ
+		#	has_dlc = "Together for Victory"
+		#}
 	}
 	
 	default = no
@@ -2256,6 +2258,10 @@ focus_tree = {
 			num_of_factories > 50
 		}
 		
+		allow_branch = {
+			RAJ = { has_focus_tree = generic_focus }
+		}
+
 		bypass = {
 
 		}
@@ -2879,6 +2885,10 @@ focus_tree = {
 			factor = 25
 		}
 		
+		allow_branch = {
+			RAJ = { has_focus_tree = generic_focus }
+		}
+
 		available = {
 #			is_subject = no
 			has_war = yes

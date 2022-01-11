@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = new_zealander_focus
 	
 	country = {
@@ -1302,6 +1302,10 @@
 
 		}
 
+		allow_branch = {
+			NZL = { has_focus_tree = generic_focus }
+		}
+
 		bypass = {
 
 		}
@@ -1642,6 +1646,10 @@
 
 		ai_will_do = {
 			factor = 25
+		}
+
+		allow_branch = {
+			NZL = { has_focus_tree = generic_focus }
 		}
 
 		available = {
@@ -2006,7 +2014,7 @@
 		y = 4
 		relative_position_id = NZL_ratana_alliance
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2026,27 +2034,28 @@
 
 		completion_reward = {
 			unlock_decision_tooltip = NZL_demand_islands
-			division_template = {
-				is_locked = yes
-				name = "Maori Volunteers"
-				division_names_group = NZL_INF_01
-				regiments = {
-					infantry = { x = 0 y = 0 }
-					infantry = { x = 0 y = 1 }
-					infantry = { x = 0 y = 2 }
-					
-					infantry = { x = 1 y = 0 }
-					infantry = { x = 1 y = 1 }
-					infantry = { x = 1 y = 2 }
-				}
-			}
-			random_owned_controlled_state = {
-				prioritize = { 284 723 }
-				create_unit = {
-					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
-					owner = NZL
-				}
-			}
+			add_ideas = NZL_maori_volunteers
+#			division_template = {
+#				is_locked = yes
+#				name = "Maori Volunteers"
+#				division_names_group = NZL_INF_01
+#				regiments = {
+#					infantry = { x = 0 y = 0 }
+#					infantry = { x = 0 y = 1 }
+#					infantry = { x = 0 y = 2 }
+#					
+#					infantry = { x = 1 y = 0 }
+#					infantry = { x = 1 y = 1 }
+#					infantry = { x = 1 y = 2 }
+#				}
+#			}
+#			random_owned_controlled_state = {
+#				prioritize = { 284 723 }
+#				create_unit = {
+#					division = " name = \"Maori Volunteers\" division_template = \"Maori Volunteers\" start_experience_factor = 0.0"
+#					owner = NZL
+#				}
+#			}
 		}
 	}
 

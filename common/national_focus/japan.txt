@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = japan_wtt_focus
 	
 	country = {
@@ -2276,7 +2276,7 @@
 		id = JAP_national_mobilization_law
 		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = JAP_guide_the_zaibatsus focus = JAP_challenge_the_zaibatsus }
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = JAP_guide_the_zaibatsus
 
@@ -2350,7 +2350,7 @@
 		id = JAP_national_research_policy
 		icon = GFX_focus_research
 		prerequisite = { focus = JAP_national_mobilization_law }
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = JAP_national_mobilization_law
 
@@ -2383,7 +2383,7 @@
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = JAP_national_mobilization_law }
 		prerequisite = { focus = JAP_challenge_the_zaibatsus }
-		x = 2
+		x = 1
 		y = 1
 		relative_position_id = JAP_national_mobilization_law
 
@@ -4565,6 +4565,10 @@
 		y = 1
 		relative_position_id = JAP_expand_manchurian_railways
 
+		allow_branch = {
+			MAN = { has_focus_tree = generic_focus }
+		}
+
 		cost = 10
 
 		ai_will_do = {
@@ -4607,6 +4611,10 @@
 		x = 0
 		y = 2
 		relative_position_id = JAP_expand_manchurian_railways
+
+		allow_branch = {
+			MAN = { has_focus_tree = generic_focus }
+		}
 
 		cost = 10
 
