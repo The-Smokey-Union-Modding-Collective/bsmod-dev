@@ -1,9 +1,9 @@
-﻿
+
 units= {
 	##### NAVAL UNITS #####
 	### ITALY ###
 	fleet = {
-		name = "I Squadra Navale"			
+		name = "Comando Navale Ionio e Basso Adriatico"			
 		naval_base = 11837 # Taranto, Italy
 		task_force = { 
 			name = "I Squadra Navale" # Dipartimento Militare Marittimo 'Ionio e Basso Adriatico' / I Squadra
@@ -137,6 +137,8 @@ units= {
 			ship = { name = "RCT Antonio Mosto" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curatone Class" } } } 
 			ship = { name = "RCT Ippolito Nievo" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curatone Class" } } } 
 			ship = { name = "RCT Fratelli Cairoli" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curatone Class" } } } 
+			ship = { name = "RSmg Medusa" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
+			ship = { name = "RSmg Anfitrite" definition = submarine equipment = { ship_hull_submarine_2 = { amount = 1 owner = ITA version_name = "Sirena Class" } } } 
 			# I Squadriglia Torpediniere
 			ship = { name = "RCT Palestro" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curatone Class" } } } 
 			ship = { name = "RCT Confienza" definition = destroyer start_experience_factor = 0.25 equipment = { ship_hull_light_1 = { amount = 1 owner = ITA version_name = "Curatone Class" } } } 
