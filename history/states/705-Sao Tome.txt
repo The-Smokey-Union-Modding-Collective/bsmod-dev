@@ -4,17 +4,22 @@ state={
 	manpower=24725	
 	state_category = tiny_island
 
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = POR
-#		buildings = {
-#			infrastructure = 2
-#			13015 ={
-#				naval_base = 1
-#			}
-#		}
-#	}
+		buildings = {
+			infrastructure = 1
+			13015 ={
+				naval_base = 1
+			}
+		}
+	}
 
 	provinces={
 		13015 
 	}
+
+	local_supplies=0.0 
 }

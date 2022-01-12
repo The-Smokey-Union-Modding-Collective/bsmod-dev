@@ -7,17 +7,22 @@ state={
 	manpower=1000000
 	buildings_max_level_factor=1.000
 	state_category = rural
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = TIB
-#		buildings = {
-#			infrastructure = 1
-#			industrial_complex = 1
-#			arms_factory = 1
-#		}
-#		victory_points = {
-#			5033 5 
-#		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+			arms_factory = 0
+		}
+		victory_points = {
+			5033 5 
+		}
 #		add_core_of = TIB
-#
-#	}
+
+	}
+
+	local_supplies=0.0 
 }

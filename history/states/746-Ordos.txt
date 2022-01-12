@@ -10,25 +10,14 @@ state={
 	history=
 	{
 		owner = CHI
-		add_core_of = SHX
 		add_core_of = CHI
-		add_core_of = PRC
 		
 		buildings = {
-			infrastructure = 2
-		}
-
-		1938.10.25 = {
-			controller = JAP
-		}
-		
-		1939.1.1 = {
-			
-			owner = PRC
-			controller = MEN
-
+			infrastructure = 1
 		}
 	}
 	manpower=500000
 	buildings_max_level_factor=1.000
+
+	local_supplies=0.0 
 }

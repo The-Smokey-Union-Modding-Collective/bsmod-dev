@@ -5,17 +5,22 @@ state={
 	
 	state_category = small_island
 
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = POR
-#		buildings = {
-#			infrastructure = 3
-#			13014 ={
-#				naval_base = 1
-#			}
-#		}
-#	}
+		buildings = {
+			infrastructure = 2
+			13014 ={
+				naval_base = 1
+			}
+		}
+	}
 
 	provinces={
 		13014 
 	}
+
+	local_supplies=0.0 
 }
