@@ -9,12 +9,12 @@ state={
 
 	history={
 
-		owner = VEN
+		owner = BAD
 		buildings = {
-			infrastructure = 2
+			# infrastructure = 2
 
 		}
-		add_core_of = VEN
+		add_core_of = BAD
 		victory_points = {
 			10879 1
 		}

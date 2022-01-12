@@ -6,19 +6,19 @@ state={
 	
 	state_category = wasteland
 
-#	history={
-#		owner = PER
-#		buildings = {
-#			infrastructure = 1
-#		}
-#		victory_points = {
-#			10913 1 
-#		}
-#		victory_points = {
-#			7990 1 
-#		}
-#		add_core_of = PER
-#	}
+	history={
+		owner = BAD
+		buildings = {
+			# infrastructure = 1
+		}
+		victory_points = {
+			10913 1 
+		}
+		victory_points = {
+			7990 1 
+		}
+		add_core_of = BAD
+	}
 
 	provinces={
 		1986 7990 10759 10890 10913 11249 12739 12809 12852 12895 
