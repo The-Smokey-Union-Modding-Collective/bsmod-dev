@@ -1,6 +1,21 @@
 ideas = {
 
 	country = {
+
+		gondor_stands_alone = {
+		
+			picture = gondor_stands_alone
+			
+			allowed = {
+				original_tag = YUG
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+			}
+		}
 	
 		anti_german_military = {
 			

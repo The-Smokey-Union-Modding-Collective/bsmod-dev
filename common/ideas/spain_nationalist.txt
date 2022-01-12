@@ -21,6 +21,19 @@ ideas = {
 	}
 
 	country = {
+		SPA_volunteer_force = {
+			
+			picture = SPR_nationalist_remnants
+			
+			allowed = {
+				original_tag = SPR
+			}
+			
+			modifier = {
+				send_volunteer_size = 9
+				air_volunteer_cap = 200
+			}
+		}
 
 		SPA_death_before_surrender = {
 
