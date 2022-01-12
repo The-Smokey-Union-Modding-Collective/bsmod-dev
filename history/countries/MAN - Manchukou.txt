@@ -17,6 +17,7 @@ if = {
 	set_country_flag = MAN_western_bandits
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_low_legitimacy_5
 }
 
 recruit_character = MAN_aisin_gioro_puyi
