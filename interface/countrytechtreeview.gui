@@ -1141,16 +1141,16 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "armor_tech_1_tree"
-				position = { x = 37% y = 172 }
-				size = { width = 80% height = 80% }
+				position = { x = 80% y = 172 }
+				size = { width = 0 height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
 
 			gridboxtype = {
 				name = "engine_tech_1_tree"
-				position = { x = -22% y = 172 }
-				size = { width = 80% height = 80% }
+				position = { x = 137  y = 172 }
+				size = { width = 80 height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
