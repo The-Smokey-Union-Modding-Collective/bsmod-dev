@@ -1,4 +1,4 @@
-﻿capital = 126
+capital = 126
 
 set_oob = "ENG_1936"
 
@@ -705,7 +705,7 @@ if = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+		icon = "GFX_ENG_basic_light_tank_medium"
 		obsolete = yes #used for oob
 	}
 	create_equipment_variant = {
@@ -721,7 +721,7 @@ if = {
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = smoke_launchers
 		}
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+		icon = "GFX_ENG_basic_light_tank_medium"
 		upgrades = {
 			tank_nsb_engine_upgrade = 2
 			tank_nsb_armor_upgrade = 2
@@ -744,7 +744,7 @@ if = {
 			tank_nsb_armor_upgrade = 1
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+		icon = "GFX_ENG_basic_light_tank_medium"
 	}
 
 	create_equipment_variant = {
@@ -763,7 +763,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_BAB_camo.dds"
+		icon = "GFX_ENG_light_BAB_camo"
 		obsolete = yes #export only
 	}
 
@@ -782,7 +782,7 @@ if = {
 			tank_nsb_armor_upgrade = 3
 			tank_nsb_engine_upgrade = 2
 		}
-		icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_BAB_camo.dds"
+		icon = "GFX_ENG_light_BAB_camo"
 		obsolete = yes #export only
 	}
 }
@@ -1434,7 +1434,7 @@ if = {
 				tank_nsb_engine_upgrade = 2
 				tank_nsb_armor_upgrade = 6
 			}
-			icon = "gfx/interface/technologies/ENG_imp_light_tank.dds"
+			icon = "GFX_ENG_improved_light_tank_medium"
 			obsolete = yes
 		}
 
@@ -1455,7 +1455,7 @@ if = {
 				tank_nsb_engine_upgrade = 4
 				tank_nsb_armor_upgrade = 8
 			}
-			icon = "gfx/interface/technologies/ENG_imp_light_tank.dds"
+			icon = "GFX_ENG_improved_light_tank_medium"
 		}
 
 		create_equipment_variant = {
@@ -1477,7 +1477,7 @@ if = {
 				tank_nsb_armor_upgrade = 1
 			}
 			obsolete = yes
-			icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
+			icon = "GFX_ENG_light_CCA_camo"
 		}
 
 		create_equipment_variant = {
@@ -1499,7 +1499,7 @@ if = {
 				tank_nsb_engine_upgrade = 7
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "gfx/interface/equipmentdesigner/tanks/designer/ENG/ENG_light_CCA_camo.dds"
+			icon = "GFX_ENG_light_CCA_camo"
 		}
 	}
 }

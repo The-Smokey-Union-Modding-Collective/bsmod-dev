@@ -1,4 +1,4 @@
-﻿capital = 2
+capital = 2
 
 
 create_intelligence_agency = {
@@ -426,7 +426,7 @@ if = {
 			tank_nsb_engine_upgrade = 1
 			tank_nsb_armor_upgrade = 1
 		}
-		icon = "gfx/interface/technologies/ITA_basic_light_tank.dds"
+		icon = "GFX_ITA_basic_light_tank_medium"
 	}
 }
 if = {
@@ -935,7 +935,7 @@ if = {
 				tank_nsb_engine_upgrade = 2
 				tank_nsb_armor_upgrade = 4
 			}
-			icon = "gfx/interface/technologies/ITA_imp_light_tank.dds"
+			icon = "GFX_ITA_improved_light_tank_medium"
 		}
 
 		create_equipment_variant = {
@@ -954,7 +954,7 @@ if = {
 				tank_nsb_engine_upgrade = 2
 				tank_nsb_armor_upgrade = 3
 			}
-			icon = "gfx/interface/technologies/ITA_basic_main_tank.dds"
+			icon = "GFX_ITA_basic_medium_tank_medium"
 		}
 	}
 }

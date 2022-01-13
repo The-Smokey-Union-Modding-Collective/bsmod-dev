@@ -438,12 +438,12 @@ focus_tree = {
 					add_country_leader_role = {
 						character = RAJ_subhas_chanda_bose
 						country_leader = {
-						expire = "1965.1.1"
-						ideology = stalinism
-						traits = {
-							indomitable_perseverance
+							expire = "1965.1.1"
+							ideology = stalinism
+							traits = {
+								indomitable_perseverance
+							}
 						}
-					}
 						promote_leader = yes
 					}
 				}
@@ -904,12 +904,12 @@ focus_tree = {
 					add_country_leader_role = {
 						character = RAJ_subhas_chanda_bose
 						country_leader = {
-						expire = "1965.1.1"
-						ideology = nazism
-						traits = {
-							indomitable_perseverance
+							expire = "1965.1.1"
+							ideology = nazism
+							traits = {
+								indomitable_perseverance
+							}
 						}
-					}
 						promote_leader = yes
 					}
 				}

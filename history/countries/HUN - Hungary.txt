@@ -1,4 +1,4 @@
-﻿capital = 43
+capital = 43
 
 oob = "HUN_1936"
 
@@ -204,7 +204,7 @@ if = {
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 2
 			}
-			icon = "gfx/interface/equipmentdesigner/tanks/designer/generic/generic_light_BAA_camo.dds"
+			icon = "GFX_generic_light_BAA_camo"
 		}
 		set_oob = "HUN_1939_nsb"
 	}
