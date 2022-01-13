@@ -16876,7 +16876,6 @@ SOV_soviet_civil_war_dec_cat = {
 		cancel_if_not_visible = yes
 
 		timeout_effect = {
-			custom_effect_tooltip = "TODO: Lock still neutral Advisors. Prevent Bloodless Coup" # TODO_THOMAS FIX EFFECT
 			add_political_power = -25
 			SOV_opposition_support_low_decrease_effect = yes
 			set_country_flag = SOV_secure_the_administration_completed_flag
@@ -17027,7 +17026,7 @@ SOV_soviet_civil_war_dec_cat = {
 		cancel_if_not_visible = yes
 
 		timeout_effect = {
-			custom_effect_tooltip = "TODO: Trigger Trotsky event" # TODO_THOMAS FIX EFFECT
+			ROOT = { news_event = { id = news.37 } } #SUCCESS - Kill Trotsky
 			SOV_opposition_support_low_decrease_effect = yes
 			set_country_flag = SOV_behead_the_snake_completed_flag
 		}

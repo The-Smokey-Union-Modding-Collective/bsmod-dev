@@ -22,7 +22,7 @@ leader_traits = {
 			factor = 1
 		}
 	}
-	
+
 	national_traitor = {
 		random = yes
 		stability_factor = -0.20
@@ -1645,8 +1645,6 @@ leader_traits = {
 		sprite = 13
 
 		war_support_factor = 0.05
-		mobilization_laws_cost_factor = -0.33
-		justify_war_goal_time = -0.15
 		production_factory_max_efficiency_factor = 0.05
 		communism_drift = 0.1
 	}
@@ -1706,7 +1704,7 @@ leader_traits = {
 		random = no
 		sprite = 13
 
-		compliance_gain = 0.1
+		compliance_gain = 0.05
 		root_out_resistance_effectiveness_factor = 0.1
 		non_core_manpower = 0.05
 	}
@@ -2776,6 +2774,7 @@ leader_traits = {
 		random = yes
 		sprite = 13
 		opinion_gain_monthly_factor = 0.15
+		resistance_damage_to_garrison = -0.15 
 		
 		ai_will_do = {
 			factor = 1
@@ -2784,8 +2783,8 @@ leader_traits = {
 	
 	backroom_backstabber = {
 		sprite = 13
-		political_power_factor = 0.05
-		drift_defence_factor = 0.15
+		subversive_activites_upkeep = -0.25
+		drift_defence_factor = 0.25
 		
 		ai_will_do = {
 			factor = 1
@@ -2795,6 +2794,7 @@ leader_traits = {
 	smooth_talking_charmer = {
 		random = yes
 		sprite = 13
+		improve_relations_maintain_cost_factor = -0.5
 		trade_opinion_factor = 0.10
 		
 		ai_will_do = {
@@ -2806,6 +2806,7 @@ leader_traits = {
 		random = yes
 		sprite = 13
 		opinion_gain_monthly_same_ideology_factor = 1.0
+		party_popularity_stability_factor = 0.1
 		
 		ai_will_do = {
 			factor = 0.2
@@ -2883,6 +2884,7 @@ leader_traits = {
 		sprite = 10
 		random = yes
 		conversion_cost_civ_to_mil_factor = -0.2
+		production_speed_supply_node_factor = 0.1
 		# civ_to_mil_industry_conversion_rate = -1
 		
 		ai_will_do = {
@@ -4326,8 +4328,6 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				reliability = 0.05
-				soft_attack = 0.05
-				maximum_speed = 0.05
 			}
 		}
 		
@@ -4518,17 +4518,6 @@ leader_traits = {
 	naval_manufacturer = {
 		random = no
 		#generic
-		equipment_bonus = {
-			capital_ship = {
-				armor_value = 0.15 
-				hg_attack = 0.10
-				lg_attack = 0.10
-			}
-			screen_ship = {
-				torpedo_attack = 0.25
-				lg_attack = 0.10
-			}
-		}
 		
 		ai_will_do = {
 			factor = 1
