@@ -55,7 +55,7 @@ autonomy_state = {
 			limit = {
 				original_tag = SAF
 			}
-			has_completed_focus = SAF_abandon_westminster
+			#has_completed_focus = SAF_abandon_westminster # bsmod change
 		}
 	}
 
