@@ -32,7 +32,7 @@ ITA_yugoslavian_surrender_category = {
 		}
 		
 		available = {
-			NOT = { country_exists = YUG }
+			NOT = { has_war_with = YUG }
 		}
 		
 		activation = {
@@ -60,7 +60,7 @@ ITA_greek_surrender_category = {
 		}
 		
 		available = {
-			NOT = { country_exists = GRE }
+			NOT = { has_war_with = GRE }
 		}
 		
 		activation = {

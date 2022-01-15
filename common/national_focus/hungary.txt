@@ -4697,7 +4697,10 @@ focus_tree = {
 				name = HUN_form_parachute_battalions
 				bonus = 3.0
 				uses = 1
+				category = marine_tech
 				category = para_tech
+				category = mountaineers_tech
+				category = jaeger_tech
 			}
 		}
 	}

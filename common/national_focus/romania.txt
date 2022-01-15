@@ -3703,7 +3703,10 @@ focus_tree = {
 				name = ROM_vanatori_de_munte
 				bonus = 1.0
 				uses = 1
+				category = marine_tech
+				category = para_tech
 				category = mountaineers_tech
+				category = jaeger_tech
 			}
 			add_ideas = special_forces
 		}

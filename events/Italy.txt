@@ -26,34 +26,6 @@ country_event = {
 			transfer_state = 735
 			transfer_state = 1
 		}
-		if = {
-			limit = {
-				ETH = {
-					is_puppet_of = ITA
-				}
-			}
-			ETH = {
-				add_to_war = {
-					targeted_alliance = GER
-					enemy = ENG
-					hostility_reason = asked_to_join
-				}
-			}
-		}
-		if = {
-			limit = {
-				ETH = {
-					is_puppet_of = ITA
-				}
-			}
-			D04 = {
-				add_to_war = {
-					targeted_alliance = GER
-					enemy = ENG
-					hostility_reason = asked_to_join
-				}
-			}
-		}
 	}
 }
 
@@ -415,14 +387,14 @@ country_event = {
 			news_event = { id = news.190 }
 		}
 	}
-	option = {
-		name = italy.9.b
-		ai_chance = { factor = 0 }
-		ITA = { country_event = { id = italy.11 } }
-		effect_tooltip = {
-			ITA = { add_state_claim = 177 }
-		}
-	}
+	#option = {
+	#	name = italy.9.b
+	#	ai_chance = { factor = 0 }
+	#	ITA = { country_event = { id = italy.11 } }
+	#	effect_tooltip = {
+	#		ITA = { add_state_claim = 177 }
+	#	}
+	#}
 }
 
 # Spain Gives Up Balearic Islands

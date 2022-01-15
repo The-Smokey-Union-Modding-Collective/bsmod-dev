@@ -1257,6 +1257,9 @@
 				name = FRA_fusiliers_marine
 				category = tp_tech
 				category = marine_tech
+				category = para_tech
+				category = mountaineers_tech
+				category = jaeger_tech
 				uses = 2
 				bonus = 1
 			}
