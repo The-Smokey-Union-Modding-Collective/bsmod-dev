@@ -7,11 +7,25 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_gondor_stands_alone.dds"
 	}
 	
+	### Chopstick Samurai
+	
+	spriteType = {
+		name = "GFX_idea_chopstick_samurai"
+		texturefile = "gfx/interface/ideas/idea_jap_chopstick_samurai.dds"
+	}
+	
 	### (France) Will to Fight
 	
 	spriteType = {
 		name = "GFX_idea_FRA_will_to_fight"
 		texturefile = "gfx/interface/ideas/idea_fra_will_to_fight.dds"
+	}
+	
+	### (France) Protected by Siebo Line
+	
+	spriteType = {
+		name = "GFX_idea_FRA_protected_by_siebo_line"
+		texturefile = "gfx/interface/ideas/idea_fra_protected_by_siebo_line.dds"
 	}
 	
 }

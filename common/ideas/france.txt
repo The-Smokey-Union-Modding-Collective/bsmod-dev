@@ -1209,7 +1209,7 @@ ideas = {
 
 			removal_cost = -1
 
-			picture = generic_wall_line
+			picture = FRA_protected_by_siebo_line
 			
 			modifier = {
 				max_planning = 0.25

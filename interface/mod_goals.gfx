@@ -35,4 +35,32 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_can_shadddo_factories.dds"
 	}
 	
+	### Siebo Line
+	
+	spriteType = {
+		name = "GFX_focus_fra_siebo_line"
+		texturefile = "gfx/interface/goals/focus_fra_siebo_line.dds"
+	}
+	
+	### Around Siebo Line
+	
+	spriteType = {
+		name = "GFX_focus_ger_around_siebo_line"
+		texturefile = "gfx/interface/goals/focus_ger_around_siebo_line.dds"
+	}
+	
+	### Siebo Line
+	
+	spriteType = {
+		name = "GFX_focus_usa_arsenal_of_democracy"
+		texturefile = "gfx/interface/goals/focus_usa_arsenal_of_democracy.dds"
+	}
+	
+	### Giant Wakes
+	
+	spriteType = {
+		name = "GFX_focus_usa_giant_wakes"
+		texturefile = "gfx/interface/goals/focus_usa_giant_wakes.dds"
+	}
+	
 }

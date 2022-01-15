@@ -979,7 +979,7 @@
 	}
 	focus = {
 		id = FRA_extend_the_maginot_line
-		icon = GFX_goal_generic_fortify_city
+		icon = GFX_focus_fra_siebo_line
 		prerequisite = { focus = FRA_alpine_forts }
 		x = 0
 		y = 1

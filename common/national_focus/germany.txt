@@ -3631,7 +3631,7 @@ focus_tree = {
 	
 	focus = {
 		id = GER_around_maginot
-		icon = GFX_goal_generic_attack_allies
+		icon = GFX_focus_ger_around_siebo_line
 		prerequisite = { focus = GER_danzig_or_war focus = GER_poland_friend}
 		
 		available = {
