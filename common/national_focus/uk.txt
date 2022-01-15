@@ -5725,7 +5725,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_AST_rats_tobruk
+		icon = GFX_focus_NZL_bob_semple_tank
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus

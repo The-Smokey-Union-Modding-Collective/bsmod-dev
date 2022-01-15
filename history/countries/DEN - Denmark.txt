@@ -151,7 +151,7 @@ set_popularities = {
 set_convoys = 40
 
 create_country_leader = {
-	name = "Weebkoen1"
+	name = "Thorvald Stauning"
 	desc = "POLITICS_THORVALD_STAUNING_DESC"
 	picture = "Portrait_Denmark_Thorvald_Stauning.dds"
 	expire = "1965.1.1"

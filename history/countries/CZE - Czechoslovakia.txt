@@ -36,7 +36,7 @@ set_popularities = {
 }
 
 create_country_leader = {
-	name = "Pavel Sohaj"
+	name = "Edvard Benes"
 	desc = "POLITICS_EDVARD_BENES_DESC"
 	picture = "Portrait_Czech_Edvard_Benes.dds"
 	expire = "1965.1.1"

@@ -701,7 +701,7 @@ create_corps_commander = {
 }
 
 create_corps_commander = {
-	name = "Elsa"
+	name = "Ernst-Eberhard Hell"
 	picture = "Portrait_Germany_Ernst-Eberhard_Hell.dds"
 	traits = { winter_specialist trait_engineer war_hero }
 	skill = 3

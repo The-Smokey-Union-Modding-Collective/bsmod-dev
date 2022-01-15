@@ -208,7 +208,7 @@ if = {
 
 	
 create_country_leader = {
-	name = "Neville Chamberlain"
+	name = "ThatJamesGuy01"
 	desc = "POLITICS_NEVILLE_CHAMBERLAIN_DESC"
 	picture = "Portrait_Britain_Neville_Chamberlain.dds"
 	expire = "1965.1.1"

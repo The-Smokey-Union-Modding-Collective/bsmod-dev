@@ -1,3 +1,5 @@
+NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 48	--vanilla=10
+NDefines.NGame.LAG_DAYS_FOR_PAUSE = 48			--vanilla=25
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0	--vanilla=0.05
@@ -5,6 +7,8 @@ NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0		--vanilla=0.05
 NDefines.NDiplomacy.VOLUNTEERS_RETURN_EQUIPMENT = 1		--vanilla=0.95
 NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED = 3		--vanilla=14
 NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 1	--vanilla=30
+NDefines.NDiplomacy.MP_NUM_WINNERS_FOR_PEACE_PAUSE = 5	--vanilla=0
+NDefines.NDiplomacy.MP_NUM_LOSERS_FOR_PEACE_PAUSE = 0	--vanilla=0
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40	--vanilla=24
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0			--vanilla=0.2
@@ -40,6 +44,13 @@ NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.0
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
+		1000,     -- do not engage
+		15,   -- low
+		3.0,   -- medium
+		1.0,   -- high
+		1.0,   -- I am death incarnate!
+	}
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
 		1.0, -- PATROL		
