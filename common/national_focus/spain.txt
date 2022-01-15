@@ -2626,14 +2626,11 @@ focus_tree = {
 			add_tech_bonus = {
 				name = SPA_expand_the_special_forces
 				bonus = 1.0
-				uses = 1
+				uses = 2
 				category = marine_tech
-			}
-			add_tech_bonus = {
-				name = SPA_expand_the_special_forces
-				bonus = 1.0
-				uses = 1
+				category = para_tech
 				category = mountaineers_tech
+				category = jaeger_tech
 			}
 		}
 	}
@@ -3483,6 +3480,9 @@ focus_tree = {
 				producer = GER
 			}
 			add_ideas = SPA_volunteer_force
+			set_rule = {
+				can_send_volunteers = yes
+			}
 			add_stability = 0.1
 			activate_mission = SPA_carlist_uprising_mission
 		}

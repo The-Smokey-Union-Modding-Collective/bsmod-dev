@@ -261,6 +261,9 @@
 				bonus = 1.0
 				uses = 1
 				category = marine_tech
+				category = para_tech
+				category = mountaineers_tech
+				category = jaeger_tech
 			}
 		}
 	}
@@ -562,6 +565,8 @@
 				uses = 1
 				category = marine_tech
 				category = para_tech
+				category = mountaineers_tech
+				category = jaeger_tech
 			}
 		}
 	}

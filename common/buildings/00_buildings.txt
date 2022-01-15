@@ -124,9 +124,9 @@ buildings = {
 		#local_resources_oil = 1 # May use local_resources_ + any resource name
 		local_resources_rubber = 1 # May use local_resources_ + any resource name
 		refinery = yes
-		max_level = 50 # This is the max unlock level
+		max_level = 3 # This is the max unlock level
 		shares_slots = yes
-		value = 1
+		value = 5
 		infrastructure_construction_effect = yes
 		
 		show_modifier = yes

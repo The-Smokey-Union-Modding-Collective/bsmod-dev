@@ -88,14 +88,9 @@ focus_tree = {
 				}
 			}
 			48 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
 					level = 1
 					instant_build = yes
 				}
@@ -613,12 +608,7 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 10
 			212 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -742,7 +732,6 @@ focus_tree = {
 		id = BUL_darzhavna_aeroplanna_rabotilnitsa
 
 		prerequisite = { focus = BUL_pilot_training_program }
-		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_goal_generic_air_fighter
 		relative_position_id = BUL_pilot_training_program
 		x = 0
@@ -816,7 +805,7 @@ focus_tree = {
 	focus = {
 		id = BUL_foreign_aircraft_designers
 
-		prerequisite = { focus = BUL_reorganize_the_military_industry }
+		prerequisite = { focus = BUL_pilot_training_program }
 		icon = GFX_goal_generic_air_fighter2
 		relative_position_id = BUL_darzhavna_aeroplanna_rabotilnitsa
 		x = 2
@@ -866,7 +855,7 @@ focus_tree = {
 	focus = {
 		id = BUL_kaproni_bulgarski
 
-		prerequisite = { focus = BUL_reorganize_the_military_industry }
+		prerequisite = { focus = BUL_pilot_training_program }
 		icon = GFX_goal_generic_air_bomber
 		relative_position_id = BUL_foreign_aircraft_designers
 		x = 2
@@ -918,10 +907,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			212 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -956,10 +945,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			212 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -2120,7 +2109,10 @@ focus_tree = {
 				name = BUL_strike_from_the_seas
 			    bonus = 1.0
 			    uses = 2
-			    category = marine_tech
+				category = marine_tech
+				category = para_tech
+				category = mountaineers_tech
+				category = jaeger_tech
 			    category = tp_tech
 			}
 		}
@@ -8807,89 +8799,32 @@ focus_tree = {
 			77 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			803 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			106 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			731 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			184 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			802 = {
 				add_core_of = BUL
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
 			}
 			108 = {
 				add_core_of = BUL
+				add_extra_state_shared_building_slots = 2
+			}
+			48 = {
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory

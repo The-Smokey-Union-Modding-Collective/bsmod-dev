@@ -52,7 +52,7 @@ equipments = {
 			steel = 3	
 		}
 
-		fuel_consumption = 4
+		fuel_consumption = 0.4
 	}
 
 	amphibious_tank_equipment_1 = {

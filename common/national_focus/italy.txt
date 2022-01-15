@@ -591,8 +591,15 @@
 		text = ITA_prospect_for_oil
 		prerequisite = { focus = ITA_italian_highways }
 		available = {
-			ITA = {
-				controls_state = 662
+			450 = {
+				or = {
+					controller = {
+							is_in_faction_with = ITA
+					}
+					ITA = {
+							has_full_control_of_state = 450
+					}
+				}
 			}
 		}
 		bypass = {
@@ -644,14 +651,16 @@
 		text = ITA_libyan_refineries
 		prerequisite = { focus = ITA_prospect_for_oil }
 		available = {
-			ITA = {
-				controls_state = 450
+			450 = {
+				or = {
+					controller = {
+							is_in_faction_with = ITA
+					}
+					ITA = {
+							has_full_control_of_state = 450
+					}
+				}
 			}
-#			450 = {
-#				NOT = {
-#					has_state_flag = benghazi_oil_developed
-#				}
-#			}
 		}
 		x = -1
 		y = 1
@@ -711,7 +720,20 @@
 		ai_will_do = {
 			factor = 1
 		}
-
+		
+		available = {
+			450 = {
+				or = {
+					controller = {
+							is_in_faction_with = ITA
+					}
+					ITA = {
+							has_full_control_of_state = 450
+					}
+				}
+			}
+		}
+		
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
@@ -971,16 +993,19 @@
 				name = special_bonus
 				bonus = 1.0
 				uses = 1
+				category = marine_tech
 				category = para_tech
-				#technology = paratroopers
-				#technology = paratroopers2
+				category = mountaineers_tech
+				category = jaeger_tech
 			}
 			add_tech_bonus = {
 				name = special_bonus
 				ahead_reduction = 2
 				uses = 1
+				category = marine_tech
+				category = para_tech
 				category = mountaineers_tech
-				#technology = tech_mountaineers2
+				category = jaeger_tech
 			}
 		}
 	}

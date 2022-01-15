@@ -53,7 +53,7 @@ equipments = {
 			steel = 2
 		}
 		
-		fuel_consumption = 3.6
+		fuel_consumption = 0.3
 	}
 
 	# 1939
@@ -182,7 +182,7 @@ equipments = {
 			tungsten = 3
 			steel = 2
 		}
-		fuel_consumption = 1.8
+		fuel_consumption = 0.1
 	}
 
 	medium_tank_artillery_equipment_1 = {
@@ -317,7 +317,7 @@ equipments = {
 			tungsten = 4
 			steel = 2
 		}
-		fuel_consumption = 1.8
+		fuel_consumption = 0.1
 	}
 
 	# 1939
@@ -458,7 +458,7 @@ equipments = {
 			tungsten = 2
 			steel = 2
 		}
-		fuel_consumption = 0.9
+		fuel_consumption = 0.1
 	}
 
 	medium_tank_aa_equipment_1 = {

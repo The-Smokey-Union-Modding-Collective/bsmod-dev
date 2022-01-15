@@ -52,7 +52,7 @@ equipments = {
 			chromium = 4
 		}
 		
-		fuel_consumption = 5
+		fuel_consumption = 0.5
 	}
 
 	modern_tank_equipment_1 = {
@@ -117,7 +117,7 @@ equipments = {
 			steel = 3
 			chromium = 4
 		}
-		fuel_consumption = 2.5
+		fuel_consumption = 0.2
 	}
 
 	modern_tank_artillery_equipment_1 = {
@@ -184,7 +184,7 @@ equipments = {
 			steel = 3
 			chromium = 4
 		}
-		fuel_consumption = 2.5
+		fuel_consumption = 0.2
 	}
 
 	modern_tank_destroyer_equipment_1 = {
@@ -250,7 +250,7 @@ equipments = {
 			steel = 3
 			chromium = 4
 		}
-		fuel_consumption = 1.25
+		fuel_consumption = 0.1
 	}
 
 	modern_tank_aa_equipment_1 = {

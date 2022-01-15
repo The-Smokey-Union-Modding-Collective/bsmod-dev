@@ -1101,7 +1101,7 @@ technologies = {
 
 		enable_building = {
 			building = synthetic_refinery
-			level = 1.5
+			level = 3
 		}
 				
 		path = {

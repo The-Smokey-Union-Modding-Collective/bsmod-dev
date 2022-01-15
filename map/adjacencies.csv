@@ -193,4 +193,27 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 2998;11156;impassable;-1;-1;-1;-1;-1;;russo-finnish border
 2998;6153;impassable;-1;-1;-1;-1;-1;;russo-finnish border
 9231;6153;impassable;-1;-1;-1;-1;-1;;russo-finnish border
+5060;1473;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+5060;7919;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+1960;7919;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+1960;5084;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10857;5084;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10857;12719;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10764;12719;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10764;2034;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+1953;2034;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+7996;2034;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+7133;2034;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+7133;12783;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+7133;2154;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+7088;12783;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+3854;1181;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+9962;1181;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+2220;4941;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10988;1846;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10988;13209;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+10845;10972;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+8201;10972;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+8201;2202;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+12944;2202;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
 -1;-1;;-1;-1;-1;-1;-1;-1;
