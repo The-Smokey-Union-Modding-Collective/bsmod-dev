@@ -111,6 +111,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 		available = {
@@ -2713,6 +2714,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 		available = {

@@ -2682,6 +2682,11 @@ focus_tree = {
 		icon = GFX_goal_generic_dangerous_deal
 		prerequisite = { focus = GER_mol_rib_pact }
 		mutually_exclusive = { focus = GER_ussr_war_goal }
+
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		available = {
 			is_subject = no
 			has_government = fascism
@@ -5953,6 +5958,7 @@ focus_tree = {
 		mutually_exclusive = { focus = GER_rhineland }
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Waking the Tiger"
 		}
 

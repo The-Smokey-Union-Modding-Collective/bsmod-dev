@@ -1602,6 +1602,10 @@
 		allow_branch = { has_dlc = "La Resistance" }
 		cost = 10
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -3499,7 +3503,7 @@
 		}
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
+			#focus = FRA_protect_the_rights_of_man
 		}
 		relative_position_id = FRA_reform_the_labour_laws
 		cost = 10
@@ -3541,7 +3545,7 @@
 		}
 		prerequisite = {
 			focus = FRA_form_the_popular_front
-			focus = FRA_revive_the_national_bloc
+			#focus = FRA_revive_the_national_bloc
 		}
 		
 		relative_position_id = FRA_form_the_popular_front
@@ -3627,6 +3631,11 @@
 			x = 0
 			y = 0
 		}
+
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		prerequisite = {
 			focus = FRA_review_foreign_policy
 		}
@@ -4148,7 +4157,7 @@
 		available = {
 		}
 	 	prerequisite = {
-	 		focus = FRA_strengthen_the_little_entente
+	 		#focus = FRA_strengthen_the_little_entente
 	 		focus = FRA_buy_time
 	 	}
 		x = 5
@@ -4294,6 +4303,10 @@
 		mutually_exclusive = { focus = FRA_go_with_britain }
 		relative_position_id = FRA_buy_time
 		cost = 10
+
+		allow_branch = {
+			always = no
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -4612,6 +4625,10 @@
 		offset = {
 			x = 0
 			y = 0
+		}
+
+		allow_branch = {
+			always = no
 		}
 
 		cost = 10

@@ -2665,6 +2665,7 @@ focus_tree = {
 		mutually_exclusive = { focus = uk_empire_focus }
 
 		allow_branch = {
+			always = no #bsmod change
 			has_dlc = "Man the Guns"
 		}
 
@@ -7480,6 +7481,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_home_defence }
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 
@@ -8776,6 +8778,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_steady_as_she_goes }
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 
