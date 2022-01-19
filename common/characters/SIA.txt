@@ -80,6 +80,8 @@ characters={
 			idea_token = SIA_luang_wichitwathakan
 			allowed = {
 				original_tag = SIA
+			}
+			available = {
 				has_completed_focus = SIA_instal_loyal_men
 			}
 			traits = {
@@ -102,6 +104,9 @@ characters={
 			ledger = army
 				allowed = {
 					original_tag = SIA
+				}
+				available = {
+					has_completed_focus = SIA_elephants_of_bangkok
 				}
 				traits = {
 					army_armored_2
@@ -128,7 +133,6 @@ characters={
 			ledger = air
 				allowed = {
 					original_tag = SIA
-					has_completed_focus = SIA_elephants_of_bangkok
 				}
 				
 				traits = {
@@ -201,6 +205,8 @@ characters={
 			idea_token = SIA_military_development_mission
 			allowed = {
 				original_tag = SIA
+			}
+			available = {
 				has_completed_focus = SIA_joint_japanese_radar_development
 			}
 			traits = {
@@ -309,16 +315,18 @@ characters={
 			slot = high_command
 			idea_token = SIA_phraya_chitnasongkhla
 			allowed = {
-					original_tag = SIA
-					has_completed_focus = SIA_spirit_of_infantry
-				}
-				traits = {
-					army_infantry_2
-				}
-				cost = 100
-				ai_will_do = {
-					factor = 1.000
-				}
+				original_tag = SIA
+			}
+			available = {
+				has_completed_focus = SIA_spirit_of_infantry
+			}
+			traits = {
+				army_infantry_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Chitnasongkhla"

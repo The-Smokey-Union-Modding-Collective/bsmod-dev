@@ -10,9 +10,8 @@ if = {
 }
 
 recruit_character = SIA_phraya_phahon
-recruit_character =
+recruit_character = SIA_military_development_mission
 recruit_character = SIA_luang_wichitwathakan
-recruit_character =
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena
 recruit_character = SIA_nangklao_suriyawongse
