@@ -4305,7 +4305,7 @@
 		cost = 10
 
 		allow_branch = {
-			always = no
+			always = no # bsmod change
 		}
 
 		ai_will_do = {
@@ -4628,7 +4628,7 @@
 		}
 
 		allow_branch = {
-			always = no
+			always = no # bsmod change
 		}
 
 		cost = 10
