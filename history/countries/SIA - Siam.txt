@@ -14,7 +14,6 @@ recruit_character = SIA_military_development_mission
 recruit_character = SIA_luang_wichitwathakan
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena
-recruit_character = SIA_nangklao_suriyawongse
 recruit_character = SIA_tianliang_huntrakool
 recruit_character = SIA_phra_silpasakrakorn
 recruit_character = SIA_luang_sinthusongkhramchai
