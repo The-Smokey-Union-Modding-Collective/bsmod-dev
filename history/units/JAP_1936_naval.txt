@@ -1,4 +1,4 @@
-﻿
+
 
 
 ##### OOB #####
@@ -7,7 +7,7 @@ units = {
 	#Yokosuka (Tokyo)
 	fleet = {
 		name = "Dai 1 Kantai"			
-		naval_base = 1092  #Yokosuka
+		naval_base = 9998  #Yokosuka
 		task_force = {
 			name = "1 Kantai"
 			location = 1092  #Yokosuka

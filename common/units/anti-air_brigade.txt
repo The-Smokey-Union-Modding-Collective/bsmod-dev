@@ -5,6 +5,7 @@
 sub_units = {
 
 	anti_air_brigade = {
+		abbreviation = "ANA"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 301
@@ -30,7 +31,7 @@ sub_units = {
 		default_morale = 0.1
 		max_strength = 0.6
 		manpower = 500
-		training_time = 90
+		training_time = 120
 		weight = 0.5
 		
 		supply_consumption = 0.1
@@ -64,6 +65,7 @@ sub_units = {
 		}
 	}
 	mot_anti_air_brigade = {
+		abbreviation = "MAA"
 		sprite = infantry
 		map_icon_category = infantry
 		priority = 301

@@ -40,6 +40,7 @@ GER_mefo_bills_category = {
 	allowed = {
 		original_tag = GER
 	}
+	priority = 10
 }
 
 GER_case_anton_category = {
@@ -53,8 +54,8 @@ GER_case_anton_category = {
 
 	visible = {
 		has_government = fascism
-		any_allied_country = {
-			original_tag = FRA
+		any_country_with_original_tag = {
+			original_tag_to_check = FRA
 			has_government = fascism
 			OR = {
 				is_subject_of = GER
@@ -66,7 +67,7 @@ GER_case_anton_category = {
 }
 
 GER_reichskommissariats = {
-	
+
 	allowed = {
 		original_tag = GER
 	}
@@ -78,12 +79,12 @@ GER_reichskommissariats = {
 
 GER_military_buildup = {
 	icon = generic_political_actions
-	
+
 	allowed = {
 		original_tag = GER
 	}
 	visible = {
-	
+
 	}
 }
 

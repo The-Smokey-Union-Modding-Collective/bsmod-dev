@@ -464,12 +464,43 @@ focus_tree = {
 					}
 				}
 				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}				
 			}
+			if = {
+				limit = {
+					controls_state = 801
+					controls_state = 211
+				}
+				build_railway = {
+					path = { 949 3971 3952 3819 6842 9769 649 9783}
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 212
+				}
+				build_railway = { 
+					path = { 949 3908 3937 6923 }
+				}
+			}
+			if = {
+				limit = {
+					controls_state = 212
+					controls_state = 211
+				}
+				build_railway = { 
+					path = { 6923 9862 9888 9902 }
+				}
+			}
+			if = {
+				limit = { 
+					has_full_control_of_state = 803 
+					has_full_control_of_state = 106
+				}
+				build_railway = {
+					level = 2
+					path = { 949 935 907 3882 }
+				}
+			}				
 		}
 	}
 
@@ -636,9 +667,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			air_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_pilot_training_program
-			    bonus = 2.0
+			    cost_reduction = 0.65
 			    uses = 2
 			    category = air_doctrine
 			}
@@ -1036,9 +1067,9 @@ focus_tree = {
 		
 		search_filters = {FOCUS_FILTER_RESEARCH FOCUS_FILTER_MANPOWER}
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_rebuild_the_army
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 2
 				category = land_doctrine
 			}
@@ -1083,9 +1114,9 @@ focus_tree = {
 			army_experience = 15
 			navy_experience = 15
 			air_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_vasil_levsky_national_military_university
-			    bonus = 0.75
+			    cost_reduction = 0.35
 			    uses = 2
 				category = land_doctrine
 				category = naval_doctrine
@@ -1156,9 +1187,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			army_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_national_military_academy
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 1
 				category = land_doctrine
 			}
@@ -1310,9 +1341,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 15
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_a_black_sea_fleet
-			    bonus = 0.75
+			    cost_reduction = 0.35
 			    uses = 1
 				category = naval_doctrine
 			}
@@ -2261,12 +2292,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 25
+			add_doctrine_cost_reduction = {
+				name = BUL_a_powerful_bulgarian_navy
+			    cost_reduction = 0.5
+			    uses = 1
+			    category = naval_doctrine
+			}
 			add_tech_bonus = {
 				name = BUL_a_powerful_bulgarian_navy
-			    bonus = 1.0
-			    uses = 2
-			    category = bb_tech
-			    category = naval_doctrine
+				bonus = 0.75
+				uses = 1
+				category = bb_tech
 			}
 		}
 	}
@@ -2288,9 +2324,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			navy_experience = 25
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_modern_tactics
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 2
 			    category = naval_doctrine
 			}
@@ -2347,7 +2383,7 @@ focus_tree = {
 			custom_effect_tooltip = BUL_oppose_the_royal_dictatorship_tt
 			custom_effect_tooltip = remove_political_advisor
 			show_ideas_tooltip = BUL_ivan_dochev
-			show_ideas_tooltip = BUL_dobri_bozhilov_bftb
+			show_ideas_tooltip = BUL_dobri_bozhilov
 		}
 	}
 
@@ -2514,9 +2550,9 @@ focus_tree = {
 			remove_ideas = BUL_tsar_boris_negative_01
 			if = {
 				limit = {
-					has_idea = BUL_georgi_ivanov_kyoseivanov_bftb
+					has_idea = BUL_georgi_ivanov_kyoseivanov
 				}
-				remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
+				remove_ideas = BUL_tsar_boris_negative_01
 			}
 
 			if = { #Low Stability triggers a Civil War
@@ -2582,37 +2618,26 @@ focus_tree = {
 				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
 
 				clr_country_flag = BUL_factions_unlocked_flag
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
+				}	
 			}
 			else = {
 				add_stability = -0.1
 				if = {
 					limit = {
 						has_country_leader = {
-							name = "Boris III"
+							character = BUL_boris_iii
 							ruling_only = yes
 						}
 					}
 					retire_country_leader = yes
 				}
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
 				}
 
 				#Separate scopes for tt reasons
@@ -2979,18 +3004,20 @@ focus_tree = {
 		cost = 10
 
 		available = {
-			country_exists = SOV
-			NOT = { has_war_with = SOV }
-			SOV = { 
+			country_exists = SOU
+			NOT = { has_war_with = SOU }
+			SOU = { 
 				NOT = { is_justifying_wargoal_against = ROOT }
 				has_opinion	= {
 					target = ROOT
 					value > 24
 				}
+				has_government = communism
+				has_civil_war = no
 			}
 			OR = {
 				is_in_faction = no
-				is_in_faction_with = SOV
+				is_in_faction_with = SOU
 			}
 		}
 		
@@ -3017,39 +3044,39 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { country_exists = SOV }
-						has_war_with = SOV
-						SOV = { BUL_is_valid_subject = no }
+						NOT = { country_exists = SOU }
+						has_war_with = SOU
+						SOU = { BUL_is_valid_subject = no }
 					}
 				}
 				hidden_effect = {
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_artillery }
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_military_vehicles }
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_aircraft }
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_infantry_equipment }
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_armor }
-					activate_targeted_decision = { target = SOV decision = BUL_purchase_ships }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_artillery }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_military_vehicles }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_aircraft }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_infantry_equipment }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_armor }
+					activate_targeted_decision = { target = SOU decision = BUL_purchase_ships }
 				}
 			}
 			else = {
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_artillery }
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_military_vehicles }
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_aircraft }
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_infantry_equipment }
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_armor }
-				activate_targeted_decision = { target = SOV decision = BUL_purchase_ships }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_artillery }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_military_vehicles }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_aircraft }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_infantry_equipment }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_armor }
+				activate_targeted_decision = { target = SOU decision = BUL_purchase_ships }
 			}
 
-			SOV = {
+			SOU = {
 				country_event = { id = bftb_bulgaria_soviet_influence.1 hours = 8 random_hours = 8 }
 			}
 			effect_tooltip = {
 				custom_effect_tooltip = BUL_soviet_bulgarian_treaty_of_mutual_assistance_tt
 				add_opinion_modifier = { 
-					target = SOV
+					target = SOU
 					modifier = BUL_strengthened_relations_with_us
 				}
-				SOV = {
+				SOU = {
 					add_opinion_modifier = { 
 						target = ROOT
 						modifier = BUL_strengthened_relations_with_us
@@ -3068,7 +3095,7 @@ focus_tree = {
 							tag = FRA
 							tag = GER
 						}
-						NOT = { is_in_faction_with = SOV }
+						NOT = { is_in_faction_with = SOU }
 					}
 					add_opinion_modifier = { 
 						target = ROOT
@@ -3077,7 +3104,7 @@ focus_tree = {
 				}
 			}
 
-			SOV = {
+			SOU = {
 				add_ai_strategy = {
 					type = befriend
 					id = ROOT
@@ -3086,7 +3113,7 @@ focus_tree = {
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = SOV
+				id = SOU
 				value = 20
 			}
 		}
@@ -3106,8 +3133,8 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NOT = { country_exists = SOV }
-				NOT = { SOV = { has_government = communism } }
-				is_in_faction_with = SOV
+				NOT = { SOU = { has_government = communism } }
+				is_in_faction_with = SOU
 			}
 		}
 
@@ -3115,22 +3142,23 @@ focus_tree = {
 			if = {
 				limit = {
 					OR = {
-						NOT = { country_exists = SOV }
-						NOT = { SOV = { has_government = communism } }
-						is_in_faction_with = SOV
+						NOT = { country_exists = SOU }
+						NOT = { SOU = { has_government = communism } }
+						is_in_faction_with = SOU
 					}
 				}
 				#This is intended so that the focus does not look unavailable when it is actually bypassed
 			}
 			else = {
-				SOV = {
+				SOU = {
 					has_government = communism
 					is_faction_leader = yes
 					is_subject = no
+					has_civil_war = no
 					NOT = { is_justifying_wargoal_against = ROOT }
 					NOT = { has_war_with = ROOT }
 				}
-				SOV = { #Split for easier visualization in the tooltip
+				SOU = { #Split for easier visualization in the tooltip
 					has_opinion	= {
 						target = ROOT
 						value > 50
@@ -3144,17 +3172,17 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 70			
-			SOV = {
+			SOU = {
 				country_event = { id = generic.2 hours = 4 random_hours = 4 }
 			}
 			if = {
 				limit = {
-					SOV = { has_war = yes }
+					SOU = { has_war = yes }
 				}
 				add_war_support = 0.1
 			}
 
-			SOV = {
+			SOU = {
 				add_ai_strategy = {
 					type = befriend
 					id = ROOT
@@ -3163,7 +3191,7 @@ focus_tree = {
 			}
 			add_ai_strategy = {
 				type = befriend
-				id = SOV
+				id = SOU
 				value = 100
 			}
 		}
@@ -3221,9 +3249,9 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = { 
 				name = BUL_darzhavna_samoletna_fabrika
-			    bonus = 1.0
+			    cost_reduction = 0.5
 			    uses = 2
 				category = land_doctrine
 				category = air_doctrine
@@ -3369,7 +3397,6 @@ focus_tree = {
 					else_if = {
 						limit = {
 							has_tech = basic_medium_tank
-							NOT = { has_tech = improved_medium_tank }
 						}
 						create_production_license = {
 							target = BUL
@@ -3412,6 +3439,116 @@ focus_tree = {
 							target = BUL
 							equipment = {
 								type = heavy_tank_equipment_1
+							}
+							cost_factor = 0
+						}
+					}
+					if = {
+						limit = {
+							has_tech = advanced_light_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = light_tank_chassis_3
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = improved_light_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = light_tank_chassis_2
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = basic_light_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = light_tank_chassis_1
+							}
+							cost_factor = 0
+						}
+					}
+					#Latest Medium Tank license
+					if = {
+						limit = {
+							has_tech = advanced_medium_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = medium_tank_chassis_3
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = improved_medium_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = medium_tank_chassis_2
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = basic_medium_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = medium_tank_chassis_1
+							}
+							cost_factor = 0
+						}
+					}
+					#Latest Heavy Tank license
+					if = {
+						limit = {
+							has_tech = advanced_heavy_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = heavy_tank_chassis_3
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = improved_heavy_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = heavy_tank_chassis_2
+							}
+							cost_factor = 0
+						}
+					}
+					else_if = {
+						limit = {
+							has_tech = basic_heavy_tank_chassis
+						}
+						create_production_license = {
+							target = BUL
+							equipment = {
+								type = heavy_tank_chassis_1
 							}
 							cost_factor = 0
 						}
@@ -4474,7 +4611,7 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = BUL_stefan_stefanov
-			show_ideas_tooltip = BUL_konstantin_muraviev_bftb
+			show_ideas_tooltip = BUL_konstantin_muraviev
 
 			BUL_zveno_low_loyalty_decrease_effect = yes
 			BUL_bs_low_loyalty_increase_effect = yes
@@ -4596,9 +4733,10 @@ focus_tree = {
 			remove_ideas = BUL_tsar_boris_negative_01
 			if = {
 				limit = {
-					has_idea = BUL_georgi_ivanov_kyoseivanov_bftb
+					has_idea = BUL_georgi_ivanov_kyoseivanov
 				}
-				remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
+				remove_ideas = BUL_georgi_ivanov_kyoseivanov
+
 			}
 
 			
@@ -4637,7 +4775,17 @@ focus_tree = {
 							PREV = { set_nationality = PREV }
 						}
 					}
-
+					random_other_country = { 
+						limit = { 
+							original_tag = BUL 
+							has_government = neutrality
+						}
+						promote_character = {
+							character = BUL_georgi_ivanov_kyoseivanov
+							ideology = moderatism
+						}
+					}
+				
 					#Operatives
 					if = {
 						limit = {
@@ -4653,16 +4801,6 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
 				clr_country_flag = BUL_factions_unlocked_flag
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
-					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
 			}
 			else = {
 				every_unit_leader = {
@@ -4679,26 +4817,19 @@ focus_tree = {
 					}
 					retire = yes
 				}
-
 				add_stability = -0.1
 				if = {
 					limit = {
 						has_country_leader = {
-							name = "Boris III"
+							character = BUL_boris_iii
 							ruling_only = yes
 						}
 					}
 					retire_country_leader = yes
 				}
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
 				}
 			}
 
@@ -4797,6 +4928,9 @@ focus_tree = {
 				}
 				set_politics = {
 					ruling_party = democratic
+					last_election = "1936.1.1"
+					election_frequency = 48
+					elections_allowed = yes
 				}
 			}
 
@@ -5088,7 +5222,7 @@ focus_tree = {
 				tooltip = BUL_approach_the_united_kingdom_ferdinand_tt
 				NOT = {
 					has_country_leader = {
-						name = "Ferdinand I"
+						character = BUL_ferdinand_i
 					}
 				}
 			}
@@ -5228,7 +5362,7 @@ focus_tree = {
 					tooltip = BUL_approach_the_united_kingdom_ferdinand_tt
 					NOT = {
 						has_country_leader = {
-							name = "Ferdinand I"
+							character = BUL_ferdinand_i
 						}
 					}
 				}
@@ -6718,7 +6852,7 @@ focus_tree = {
 				if = {
 					limit = {
 						has_country_leader = {
-							name = "Georgi Kyoseivanov"
+							character = BUL_georgi_ivanov_kyoseivanov
 							ruling_only = yes
 						}
 					}
@@ -6727,7 +6861,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_country_leader = {
-							name = "Bogdan Filov"
+							character = BUL_bogdan_filov
 							ruling_only = yes
 						}
 					}
@@ -6736,7 +6870,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_country_leader = {
-							name = "Nikola Mushanov"
+							character = BUL_nikola_mushanov
 							ruling_only = yes
 						}
 					}
@@ -6745,7 +6879,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_country_leader = {
-							name = "Hristo Lukov"
+							character = BUL_hristo_lukov
 							ruling_only = yes
 						}
 					}
@@ -6754,7 +6888,7 @@ focus_tree = {
 				else_if = {
 					limit = {
 						has_country_leader = {
-							name = "Aleksandar Tsankov"
+							character = BUL_aleksandar_tsankov
 							ruling_only = yes
 						}
 					}
@@ -6768,15 +6902,16 @@ focus_tree = {
 				long_name = BUL_ferdinand_loyalists_party_long
 				name = BUL_ferdinand_loyalists_party
 			}
-			create_country_leader = {
-				name = "Ferdinand I"
-				desc = "POLITICS_FERDINAND_I_DESC"
-				picture = GFX_portrait_bul_ferdinand_i
-				expire = "1965.1.1"
-				ideology = despotism
-				traits = {
-					dreams_of_a_new_byzantium
+			add_country_leader_role = {
+				character = BUL_ferdinand_i
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = despotism
+					traits = {
+						dreams_of_a_new_byzantium
+					}
 				}
+				promote_leader = yes
 			}
 			if = {
 				limit = {
@@ -6845,7 +6980,7 @@ focus_tree = {
 
 		available = {
 			has_country_leader = {
-				name = "Ferdinand I" 
+				character = BUL_ferdinand_i 
 				ruling_only = yes
 			}
 			OR = {
@@ -7315,9 +7450,9 @@ focus_tree = {
 		completion_reward = {
 			add_war_support = 0.05
 			navy_experience = 50
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = BUL_consolidate_dominance_of_the_seas
-			    bonus = 1
+			    cost_reduction = 0.5
 			    uses = 2
 				category = naval_doctrine
 			}
@@ -7487,9 +7622,9 @@ focus_tree = {
 			remove_ideas = BUL_tsar_boris_positive_01
 			if = {
 				limit = {
-					has_idea = BUL_georgi_ivanov_kyoseivanov_bftb
+					has_idea = BUL_georgi_ivanov_kyoseivanov
 				}
-				remove_ideas = BUL_georgi_ivanov_kyoseivanov_bftb
+				remove_ideas = BUL_georgi_ivanov_kyoseivanov
 			}
 
 			if = { #Low Stability triggers a Civil War
@@ -7537,6 +7672,15 @@ focus_tree = {
 							PREV = { set_nationality = PREV }
 						}
 					}
+					random_other_country = {
+						limit = { 
+							original_tag = BUL 
+							has_government = neutrality }
+							promote_character = {
+								character = BUL_georgi_ivanov_kyoseivanov
+								ideology = moderatism 
+							}
+					}
 
 					#Operatives
 					if = {
@@ -7553,16 +7697,10 @@ focus_tree = {
 				}
 				custom_effect_tooltip = BUL_depose_the_tsar_cw_tt
 				clr_country_flag = BUL_factions_unlocked_flag
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
-				}
+				}		
 			}
 			else = {
 				random_unit_leader = {
@@ -7582,20 +7720,14 @@ focus_tree = {
 				if = {
 					limit = {
 						has_country_leader = {
-							name = "Boris III"
+							character = BUL_boris_iii
 						}
 					}
 					retire_country_leader = yes
 				}
-				create_country_leader = {
-					name = "Georgi Kyoseivanov"
-					desc = "POLITICS_GEORGI_KYOSEIVANOV_DESC"
-					picture = GFX_portrait_bul_georgi_kyoseivanov
-					expire = "1965.1.1"
+				promote_character = { 
+					character = BUL_georgi_ivanov_kyoseivanov
 					ideology = moderatism
-					traits = {
-						incompetent_leader
-					}
 				}
 				add_stability = -0.1
 			}
@@ -8068,6 +8200,11 @@ focus_tree = {
 			add_ai_strategy = {
 				type = befriend
 				id = GER
+				value = 20
+			}
+			add_ai_strategy = {
+				type = befriend
+				id = ITA
 				value = 20
 			}
 		}

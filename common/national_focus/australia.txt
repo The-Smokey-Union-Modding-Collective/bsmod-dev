@@ -1,4 +1,4 @@
-﻿focus_tree = {
+focus_tree = {
 	id = australian_focus
 	
 	country = {
@@ -88,9 +88,9 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_additional_militia_training
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -163,17 +163,16 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_promote_reservists
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
 			custom_effect_tooltip = AST_new_general_tt
 			hidden_effect = {
-				create_corps_commander = {
-					name = "Iven Mackay"
-					gfx = "GFX_AST_iven_mackay"
+				add_corps_commander_role = {
+					character = AST_iven_mackay
 					traits = { }
 					skill = 3
 					attack_skill = 2
@@ -181,7 +180,7 @@
 					planning_skill = 3
 					logistics_skill = 3
 				}
-			}		
+			}
 		}
 	}
 
@@ -250,9 +249,9 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_hmas_assault
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -376,8 +375,8 @@
 				technology = tech_logistics_company3
 				technology = tech_logistics_company4
 			}
-			
-			
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = AST_cederic_hicks
 		}
 	}
 
@@ -522,9 +521,9 @@
 
 		completion_reward = {
 			army_experience = 5
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_introduce_unconventional_warfare
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = land_doctrine
 			}
@@ -653,9 +652,9 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -677,9 +676,9 @@
 				}
 				set_state_flag = AST_expand_the_raaf_AB
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -766,9 +765,9 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_expand_northern_presence
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -791,9 +790,9 @@
 				}
 				set_state_flag = AST_expand_the_raaf_AB
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_expand_northern_presence
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1149,9 +1148,9 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_death_from_down_under
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1165,6 +1164,7 @@
 						building = air_base
 						size > 1
 					}
+					NOT = { state = 674 }
 				}
 				add_building_construction = {
 					type = air_base
@@ -1180,6 +1180,7 @@
 						building = anti_air_building
 						size > 1
 					}
+					NOT = { state = 674 }
 				}
 				add_building_construction = {
 					type = anti_air_building
@@ -1195,6 +1196,7 @@
 						building = anti_air_building
 						size > 1
 					}
+					NOT = { state = 674 }
 				}
 				add_building_construction = {
 					type = anti_air_building
@@ -1210,6 +1212,7 @@
 						building = anti_air_building
 						size > 1
 					}
+					NOT = { state = 674 }
 				}
 				add_building_construction = {
 					type = anti_air_building
@@ -1219,9 +1222,9 @@
 				set_state_flag = AST_death_from_down_under_AA3
 			}
 
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_death_from_down_under
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1302,9 +1305,9 @@
 					instant_build = yes
 				}
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_dominate_the_skies
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1318,6 +1321,7 @@
 						building = air_base
 						size > 1
 					}
+					NOT = { state = 674 }
 				}
 				add_building_construction = {
 					type = air_base
@@ -1326,9 +1330,9 @@
 				}
 				set_state_flag = AST_dominate_the_skies_AB
 			}
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_expand_the_raaf
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = air_doctrine
 			}
@@ -1394,6 +1398,7 @@
 						size > 2
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -1435,9 +1440,9 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_protect_overseas_commerce
-				bonus = 1.0
+				cost_reduction = 0.25
 				uses = 2
 				category = fleet_in_being_tree
 				category = convoy_defense_tree
@@ -1474,9 +1479,9 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_fly_the_jolly_roger
-				bonus = 1.0
+				cost_reduction = 0.25
 				uses = 2
 				category = submarine_doctrine
 			}
@@ -1658,9 +1663,9 @@
 		search_filters = { FOCUS_FILTER_RESEARCH  }
 
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = AST_pacific_area_navy
-				bonus = 1.0
+				cost_reduction = 0.5
 				uses = 1
 				category = naval_doctrine
 			}
@@ -1698,45 +1703,8 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-#		complete_tooltip = {
-#			random_state = {
-#				limit = {
-#					has_state_flag = AST_standard_gauge_railway_Inf1
-#				}
-#				add_building_construction = {
-#					type = infrastructure
-#					level = 1
-#					instant_build = yes
-#				}
-#			}
-#
-#			random_state = {
-#				limit = {
-#					has_state_flag = AST_standard_gauge_railway_Inf2
-#				}
-#				add_building_construction = {
-#					type = infrastructure
-#					level = 1
-#					instant_build = yes
-#				}
-#			}
-#		}
-
 		completion_reward = {
-			285 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			517 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
+			add_ideas = AST_standard_gauge_railway
 		}
 	}
 
@@ -1796,7 +1764,10 @@
 		}
 		
 		bypass = {
-
+			NOT = {
+				controls_state = 522
+				controls_state = 519
+			}
 		}
 
 		cancel_if_invalid = yes
@@ -1804,37 +1775,9 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-#		complete_tooltip = {
-#			random_state = {
-#				limit = {
-#					has_state_flag = AST_western_australian_government_railways_Inf1
-#				}
-#				add_building_construction = {
-#					type = infrastructure
-#					level = 1
-#					instant_build = yes
-#				}
-#			}
-#
-#			random_owned_controlled_state = {
-#				limit = {
-#					has_state_flag = AST_western_australian_government_railways_Inf2
-#				}
-#				add_building_construction = {
-#					type = infrastructure
-#					level = 1
-#					instant_build = yes
-#				}
-#			}
-#		}
-
 		completion_reward = {
-			522 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = {
+				path = { 1652 2157 10983 1526 10949 8200 10969 2191 12948 5197 8165 10927 8186 }
 			}
 		}
 	}
@@ -1889,6 +1832,7 @@
 						size > 1
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -1951,6 +1895,7 @@
 						size > 0
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -2013,6 +1958,7 @@
 						size > 1
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2087,6 +2033,7 @@
 						size > 1
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2104,6 +2051,7 @@
 						size > 1
 						include_locked = yes
 					}
+					NOT = { state = 674 }
 				}
 				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
@@ -2131,7 +2079,7 @@
 		}
 
 		available = {
-
+			controls_state = 520
 		}
 		
 		bypass = {
@@ -2143,26 +2091,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 
-#		complete_tooltip = {
-#			random_state = {
-#				limit = {
-#					has_state_flag = AST_expand_the_northern_railway_Inf
-#				}
-#				add_building_construction = {
-#					type = infrastructure
-#					level = 2
-#					instant_build = yes
-#				}
-#			}
-#		}
-
 		completion_reward = {
-			521 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 2
-					instant_build = yes
-				}
+			build_railway = {
+				level = 2
+				path = { 7669 1431 12104 1454 }
 			}
 		}
 	}
@@ -2791,7 +2723,10 @@
 
 		completion_reward = {
 			random_owned_controlled_state = {
-				limit = { is_in_home_area = yes }
+				limit = {
+					is_in_home_area = yes
+					NOT = { state = 674 }
+				}
 				add_resource = {
 					type = aluminium
 					amount = 24
@@ -2799,7 +2734,10 @@
 				set_state_flag = AST_rationing_and_recycling_alu
 			}
 			random_owned_controlled_state = {
-				limit = { is_in_home_area = yes }
+				limit = {
+					is_in_home_area = yes
+					NOT = { state = 674 }
+				}
 				add_resource = {
 					type = oil
 					amount = 12
@@ -4727,11 +4665,7 @@
 
 		available = {
 			is_subject = no
-			any_other_country = {
-				is_major = yes
-				has_government = communism
-				is_faction_leader = yes
-			}
+			ANY_comintern_joinable = yes 
 			NOT = { has_country_flag = britain_enforced_our_loyalty }
 		}
 		
