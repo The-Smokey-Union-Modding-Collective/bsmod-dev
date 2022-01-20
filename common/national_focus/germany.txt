@@ -29,6 +29,19 @@ focus_tree = {
 		ai_will_do = {
 			factor = 12
 		}
+
+		available = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = BSMOD_RHINELAND_FIRST
+						option = FIRST
+					}
+				}
+				has_completed_focus = GER_rhineland # bsmod change
+			}
+		}
+
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_tech_bonus = {
@@ -40,7 +53,6 @@ focus_tree = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
 		}
-		
 	}
 
 	focus = {
@@ -2060,6 +2072,18 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = BSMOD_RHINELAND_FIRST
+						option = FIRST
+					}
+				}
+				has_completed_focus = GER_rhineland # bsmod change
+			}
+		}
+
 		available_if_capitulated = yes
 		complete_tooltip = {
 			air_experience = 25
@@ -2295,6 +2319,18 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = BSMOD_RHINELAND_FIRST
+						option = FIRST
+					}
+				}
+				has_completed_focus = GER_rhineland # bsmod change
+			}
 		}
 
 		available_if_capitulated = yes
@@ -4649,6 +4685,18 @@ focus_tree = {
 		cost = 5
 		ai_will_do = {
 			factor = 1
+		}
+
+		available = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = BSMOD_RHINELAND_FIRST
+						option = FIRST
+					}
+				}
+				has_completed_focus = GER_rhineland # bsmod change
+			}
 		}
 
 		available_if_capitulated = yes
