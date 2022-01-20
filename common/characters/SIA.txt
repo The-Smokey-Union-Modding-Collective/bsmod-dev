@@ -47,10 +47,19 @@ characters={
 				large=GFX_Portrait_Asia_Generic_land_5
 			}
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1953.1.1.12"
-			id=-1
+		corps_commander={
+			traits={ infantry_officer trait_reckless }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=1
+			legacy_id=6
+		}
+		portraits={
+			army={
+				small="GFX_idea_generic_army_asia_5"
+			}
 		}
 	}
 	SIA_luang_wichitwathakan = {
@@ -317,20 +326,6 @@ characters={
 		}
 # TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Phraya Chitnasongkhla"
-		corps_commander={
-			traits={ infantry_officer trait_reckless }
-			skill=3
-			attack_skill=3
-			defense_skill=1
-			planning_skill=2
-			logistics_skill=1
-			legacy_id=6
-		}
-		portraits={
-			army={
-				small="GFX_idea_generic_army_asia_4"
-			}
-		}
 	}
 	SIA_phraya_thayarnpikart={
 		advisor={

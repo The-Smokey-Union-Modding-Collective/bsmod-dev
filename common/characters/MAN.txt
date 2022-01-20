@@ -20,8 +20,8 @@ characters={
 		}
 	}
 	
-	CHI_wang_jingwei={
-		name=CHI_wang_jingwei
+	MAN_wang_jingwei={
+		name=MAN_wang_jingwei
 		portraits={
 			civilian={
 				large="GFX_portrait_chi_wang_jingwei"
