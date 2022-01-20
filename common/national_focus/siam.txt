@@ -139,9 +139,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			set_politics = {
-				ruling_party = fascism
-				elections_allowed = no
+			add_country_leader_role = {
+					character = SIA_plaek_phibunsongkhram
+					country_leader = {
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
+				promote_leader = yes
 			}
 			swap_ideas = {
 				remove_idea = SIA_the_thai_monarchy
@@ -164,8 +171,6 @@ focus_tree = {
 				set_country_flag = SIA_resistance_movement_start
 			}
 		}
-		recruit_character = SIA_plaek_phibunsongkhram
-		promote_character = SIA_plaek_phibunsongkhram
 	}
 	
 	focus = {

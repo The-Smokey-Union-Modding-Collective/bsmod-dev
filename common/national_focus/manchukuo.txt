@@ -1837,8 +1837,17 @@
 
 		completion_reward = {
 			retire_country_leader = yes
-			recruit_character = MAN_wang_jingwei
-			promote_character = MAN_wang_jingwei 
+			add_country_leader_role = {
+					character = MAN_wang_jingwei
+					country_leader = {
+					expire = "1965.1.1"
+					ideology = fascism_ideology
+					traits = {
+						
+					}
+				}
+				promote_leader = yes
+			}
 			transfer_state = 609
 			transfer_state = 745
 			609 = {
