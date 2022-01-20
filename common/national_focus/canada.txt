@@ -3692,7 +3692,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 25 # bsmod change vanilla = 35
 		y = 0
 
 		cost = 10
@@ -4200,7 +4200,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 29 # bsmod change vanilla = 39
 		y = 0
 
 		cost = 10
