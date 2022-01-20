@@ -47,11 +47,6 @@ characters={
 				large=GFX_Portrait_Asia_Generic_land_5
 			}
 		}
-		country_leader={
-			ideology=fascism_ideology
-			expire="1953.1.1.12"
-			id=-1
-		}
 	}
 	SIA_luang_wichitwathakan = {
 		name="Luang Wichitwathakan"
