@@ -1836,7 +1836,6 @@
 		}
 
 		completion_reward = {
-			retire_country_leader = yes
 			promote_character = MAN_wang_jingwei
 			transfer_state = 609
 			transfer_state = 745
