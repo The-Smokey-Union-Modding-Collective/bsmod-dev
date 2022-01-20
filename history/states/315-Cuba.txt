@@ -6,7 +6,7 @@ state= {
 		steel=26 # was: 4
 		chromium=98 # was: 160
 		oil=122
-		tungsten=37
+		tungsten = 95
 	}
 	
 	state_category = town
@@ -14,10 +14,10 @@ state= {
 	history= {
 		owner = CUB
 		buildings = {
-			infrastructure = 4
-			arms_factory = 1
-			industrial_complex = 3
-			air_base = 1
+			infrastructure = 1
+			# arms_factory = 1
+			# industrial_complex = 3
+			# air_base = 1
 			7622 = {
 				naval_base = 3
 			}
@@ -37,4 +37,6 @@ state= {
 	provinces={
 		1550 4476 4600 7451 7546 7590 7622 10374 10498 12347
 	}
+
+	local_supplies=0.0 
 }

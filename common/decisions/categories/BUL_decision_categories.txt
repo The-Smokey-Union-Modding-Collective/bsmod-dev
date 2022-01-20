@@ -2,20 +2,6 @@
 #### BULGARIA ####
 ################
 
-#BUL_annexed_by_romania_category = {
-#	
-#	allowed = {
-#		original_tag = BUL
-#	}
-#
-#	visible = {
-#		is_ai = yes
-#		date < 1936.02.01
-#	}
-#	
-#	priority = 10
-#}
-
 BUL_internal_factions = {
 	priority = 10
 

@@ -390,6 +390,83 @@ country_event = {
 	}
 
 
+# SAF_support_the_german_coup completed
+# South-African national focus
+country_event = {
+	id = tfv_south_africa.10
+	title = tfv_south_africa.10.t	# SAF Civil war. Ask HOL or GER for support?
+	desc = tfv_south_africa.10.desc	#
+	picture = GFX_report_event_saf_coup
+	
+	fire_only_once = yes
+
+	trigger = {
+		always = no #added for bsmod
+		#has_completed_focus = SAF_support_the_german_coup # removed for bsmod
+		has_government = fascism
+		original_tag = SAF
+		has_civil_war = yes
+		OR = {
+			GER = {
+				NOT = { has_war_with = SAF }
+				has_government = fascism
+			}		
+			HOL = {
+				has_government = fascism
+				NOT = { has_war_with = SAF }
+			}		
+		}
+	}
+
+	mean_time_to_happen = { days = 2 }
+	
+	option = {
+		name = tfv_south_africa.10.a # Ask GER for support
+		trigger = {
+			GER = {
+				NOT = { has_war_with = SAF }
+				has_government = fascism
+			}			
+		}
+		
+		ai_chance = {
+			base = 100
+			modifier = {
+				GER = { NOT = { has_government = fascism } }
+				factor = 0.1
+			}
+		}
+		
+		set_country_flag = asked_GER_for_support
+		
+		GER = { country_event = { id = tfv_south_africa.11 days = 1 } }
+	}
+	
+	option = {
+		name = tfv_south_africa.10.b # Ask HOL for support
+		trigger = {
+			HOL = {
+				has_government = fascism
+				NOT = { has_war_with = SAF }
+			}			
+		}
+
+		ai_chance = {
+			base = 30
+			modifier = {
+				GER = { 
+					has_government = fascism 
+					has_war = no
+				} 
+				factor = 0
+			}
+		}
+		
+		set_country_flag = asked_HOL_for_support
+		
+		HOL = { country_event = { id = tfv_south_africa.12 days = 1 } }
+	}
+}
 
 country_event = {
 	id = tfv_south_africa.11

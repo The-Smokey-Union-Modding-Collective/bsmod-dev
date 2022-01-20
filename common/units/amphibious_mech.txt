@@ -1,6 +1,7 @@
 sub_units = {
 
 	amphibious_mechanized = {
+		abbreviation = "AMT"
 		sprite = amphibious_mechanized
 		map_icon_category = infantry
 
@@ -35,7 +36,7 @@ sub_units = {
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 90
+		training_time = 120
 		suppression = 1
 		weight = 1
 		

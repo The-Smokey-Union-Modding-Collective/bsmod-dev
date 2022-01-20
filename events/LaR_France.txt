@@ -3365,7 +3365,7 @@ country_event = {
 		else_if = {
 			limit = { has_government = democratic }
 			set_variable = { volunteer_strength = FRA.party_popularity@democratic }
-			multiply_variable = { volunteer_strength = FRA.war_support } #special modifier to reduce impact of democratic support
+			multiply_variable = { volunteer_strength = 0.5 } #special modifier to reduce impact of democratic support [no longer war support, or we reach 0 often, also it is HIDDEN]
 		}
 		else_if = {
 			limit = { has_government = neutrality }
@@ -3612,28 +3612,28 @@ country_event = {
 	is_triggered_only = yes
 	immediate = {
 		random_list = {
-			99 = { country_event = lar_appeal_to_overseas_territories.2 } #indochina remains with Vichy
-			1 = { country_event = lar_appeal_to_overseas_territories.3 } #indochina switches sides
+			85 = { country_event = lar_appeal_to_overseas_territories.2 } #indochina remains with Vichy
+			15 = { country_event = lar_appeal_to_overseas_territories.3 } #indochina switches sides
 		}
 		random_list = {
-			99 = { country_event = { id = lar_appeal_to_overseas_territories.4 days = 3 } } #syria remains with Vichy
-			1 = { country_event = { id = lar_appeal_to_overseas_territories.5 days = 3 } } #syria switches sides
+			80 = { country_event = { id = lar_appeal_to_overseas_territories.4 days = 3 } } #syria remains with Vichy
+			20 = { country_event = { id = lar_appeal_to_overseas_territories.5 days = 3 } } #syria switches sides
 		}
 		random_list = {
-			1 = { country_event = { id = lar_appeal_to_overseas_territories.6 days = 8 } } #central africa remains with Vichy
-			99 = { country_event = { id = lar_appeal_to_overseas_territories.7 days = 8 } } #central africa switches sides
+			80 = { country_event = { id = lar_appeal_to_overseas_territories.6 days = 8 } } #central africa remains with Vichy
+			20 = { country_event = { id = lar_appeal_to_overseas_territories.7 days = 8 } } #central africa switches sides
 		}
 		random_list = {
-			1 = { country_event = { id = lar_appeal_to_overseas_territories.8 days = 12 } } #western africa remains with Vichy
-			99 = { country_event = { id = lar_appeal_to_overseas_territories.9 days = 12 } } #western africa switches sides
+			90 = { country_event = { id = lar_appeal_to_overseas_territories.8 days = 12 } } #western africa remains with Vichy
+			10 = { country_event = { id = lar_appeal_to_overseas_territories.9 days = 12 } } #western africa switches sides
 		}
 		random_list = {
-			1 = { country_event = { id = lar_appeal_to_overseas_territories.10 days = 16 } } #madagascar remains with Vichy
-			99 = { country_event = { id = lar_appeal_to_overseas_territories.11 days = 16 } } #madagascar switches sides
+			70 = { country_event = { id = lar_appeal_to_overseas_territories.10 days = 16 } } #madagascar remains with Vichy
+			30 = { country_event = { id = lar_appeal_to_overseas_territories.11 days = 16 } } #madagascar switches sides
 		}
 		random_list = {
-			99 = { country_event = { id = lar_appeal_to_overseas_territories.12 days = 20 } } #north africa remains with Vichy
-			1 = { country_event = { id = lar_appeal_to_overseas_territories.13 days = 20 } } #north africa switches sides
+			95 = { country_event = { id = lar_appeal_to_overseas_territories.12 days = 20 } } #north africa remains with Vichy
+			5 = { country_event = { id = lar_appeal_to_overseas_territories.13 days = 20 } } #north africa switches sides
 		}
 	}
 	

@@ -239,7 +239,7 @@ FRA_vichy_france = {
 #				}
 #			}
 #			controls_state = 16 #Paris
-			date > 1999.09.09
+			always = no
 		}
 
 		visible = {
@@ -247,7 +247,7 @@ FRA_vichy_france = {
 #				tag = VIC
 #			}
 #			country_exists = VIC
-			date > 1999.09.09
+			always = no
 		}
 		ai_will_do = {
 			factor = 100
@@ -359,7 +359,7 @@ category_test_decisions = {
 					}
 					add_core_of = PREV
 				}
-				set_capital = 26
+				set_capital = { state = 26 }
 				set_politics = {
 					ruling_party = fascism
 					elections_allowed = no
@@ -370,17 +370,24 @@ category_test_decisions = {
 					fascism = 80
 					communism = 0
 				}
-				set_cosmetic_tag = FRA_VICHY
-				create_country_leader = {
-					name = "Philippe Pétain"
-					desc = "POLITICS_PHILIPPE_PÉTAIN_DESC"
-					picture = "Portrait_France_Philippe_Petain.dds"
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						
+				FRA = {
+					FRA_philippe_petain= {
+						set_nationality = event_target:france_vichy	
 					}
 				}
+				FRA_philippe_petain= {
+					add_country_leader_role = {
+						country_leader = {
+							expire = "1965.1.1"
+							ideology = fascism_ideology
+							traits = {
+								
+							}
+						}
+						promote_leader = yes
+					}
+				}
+				set_cosmetic_tag = FRA_VICHY
 				add_ideas = FRA_occupation_costs_4
 				load_focus_tree = vichy_french_focus
 				FRA = {
@@ -490,7 +497,7 @@ FRA_weapons_purchases_category = {
 			factor = 1
 			modifier = {
 				has_equipment = {
-					light_tank_equipment < 1
+					light_tank_chassis < 50
 				}
 				factor = 5
 			}
@@ -510,17 +517,22 @@ FRA_weapons_purchases_category = {
 			if = {
 				limit = {
 					USA = { 
-						has_tech = basic_light_tank 
+						OR = {
+							has_tech = basic_light_tank 
+							has_tech = basic_light_tank_chassis
+						}
 						NOT = { 
 							OR = {
 								has_tech = basic_medium_tank 
 								has_tech = improved_medium_tank #needed because basic can be bypassed
+								has_tech = basic_medium_tank_chassis
+								has_tech = improved_medium_tank_chassis
 							}
 						}
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = light_tank_equipment
+					type = light_tank_chassis
 					amount = 50
 				}
 			}
@@ -530,11 +542,13 @@ FRA_weapons_purchases_category = {
 						OR = {
 							has_tech = basic_medium_tank 
 							has_tech = improved_medium_tank #needed because basic can be bypassed
+							has_tech = basic_medium_tank_chassis
+							has_tech = improved_medium_tank_chassis
 						}
 					}
 				}
 				add_equipment_to_stockpile = {
-					type = medium_tank_equipment
+					type = medium_tank_chassis
 					amount = 50
 				}
 			}
@@ -1181,6 +1195,7 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1217,6 +1232,7 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1254,6 +1270,7 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1290,6 +1307,7 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -1326,6 +1344,7 @@ economy_decisions = {
 						include_locked = yes
 					}
 				}
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
 					level = 1
@@ -2825,38 +2844,6 @@ FRA_decolonization = {
 				add_resistance_target = {
 					amount = 10
 					tooltip = FRA_promised_independence_tt
-				}
-			}
-		}
-	}
-}
-
-FRA_dday_category = {
-	FRA_dday = {
-		
-		available = {
-			any_state = {
-				is_controlled_by = FRA
-				is_coastal = yes
-				is_on_continent = europe
-				is_core_of = FRA
-				}
-			date > 1941.01.01
-		}
-		
-		fire_only_once = yes
-
-		cost = 0
-		
-		ai_will_do = {
-			factor = 100
-		}
-		
-		complete_effect = {
-			GER = {
-				annex_country = {
-					target = VIC
-					transfer_troops = no
 				}
 			}
 		}

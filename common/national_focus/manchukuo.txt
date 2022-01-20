@@ -695,7 +695,7 @@
 			custom_effect_tooltip = empire_restoration
 			hidden_effect = {
 				set_cosmetic_tag = MAN_restored
-				set_capital = 608
+				set_capital = { state = 608 }
 				news_event = { id = wtt_news.44 days = 2 }
 				kill_country_leader = yes 
 				if = {
@@ -2321,7 +2321,7 @@
 		}
 
 		completion_reward = {
-			set_capital = 613
+			set_capital = { state = 613 }
 			set_cosmetic_tag = MAN_reorg
 			swap_ideas = {
 				remove_idea = MAN_new_front_1

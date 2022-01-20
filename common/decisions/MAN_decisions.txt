@@ -40,9 +40,12 @@ MAN_mamc_facilities = {
 		
 		}
 		
-		highlight_state_targets = {
-			state = 605
+		highlight_states = {
+			highlight_state_targets = {
+				state = 605
+			}
 		}
+
 		
 		available = {
 			num_of_civilian_factories_available_for_projects > 4
@@ -84,9 +87,10 @@ MAN_mamc_facilities = {
 		allowed = {
 		
 		}
-		
-		highlight_state_targets = {
-			state = 597
+		highlight_states = {
+			highlight_state_targets = {
+				state = 597
+			}
 		}
 		
 		available = {
@@ -129,9 +133,10 @@ MAN_mamc_facilities = {
 		allowed = {
 		
 		}
-		
-		highlight_state_targets = {
-			state = 325
+		highlight_states = {
+			highlight_state_targets = {
+				state = 325
+			}
 		}
 		
 		available = {
@@ -171,7 +176,7 @@ MAN_mamc_facilities = {
 
 MAN_integrate_industries_category = {
 	
-	MAN_integrate_our_new_industries {
+	MAN_integrate_our_new_industries = {
 		
 		icon = decision_generic_factory
 		
@@ -212,8 +217,10 @@ MAN_resource_extraction_programme_category = {
 		available = {
 			has_tech = excavation1
 		}
-		highlight_state_targets = {
-			state = 328
+		highlight_states = {
+			highlight_state_targets = {
+				state = 328
+			}
 		}
 
 		visible = {
@@ -255,8 +262,10 @@ MAN_resource_extraction_programme_category = {
 		available = {
 			has_tech = excavation1
 		}
-		highlight_state_targets = {
-			state = 716
+		highlight_states = {
+			highlight_state_targets = {
+				state = 716
+			}
 		}
 
 		visible = {
@@ -298,8 +307,10 @@ MAN_resource_extraction_programme_category = {
 		available = {
 			has_tech = excavation1
 		}
-		highlight_state_targets = {
-			state = 714
+		highlight_states = {
+			highlight_state_targets = {
+				state = 714
+			}
 		}
 
 		visible = {
@@ -343,8 +354,10 @@ prospect_for_resources = {
 		available = {
 			has_tech = excavation1
 		}
-		highlight_state_targets = {
-			state = 328
+		highlight_states = {
+			highlight_state_targets = {
+				state = 328
+			}
 		}
 
 		visible = {
@@ -387,8 +400,10 @@ prospect_for_resources = {
 
 		}
 
-		highlight_state_targets = {
-			state = 716
+		highlight_states = {
+			highlight_state_targets = {
+				state = 716
+			}
 		}
 
 		available = {

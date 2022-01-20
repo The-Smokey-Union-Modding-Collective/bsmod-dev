@@ -1,0 +1,29 @@
+### Technologies specific to the BigSchmokes Community Mod
+technologies = {
+
+	SIA_light_tank_jungle_tech = {
+
+		research_cost = 1
+	
+		# only from focus!!! #####
+		allow = {
+			always = no
+		}
+	
+	
+		#If you change these
+		#Change the custom tooltip too: HUN_light_infantry_divisions_doctrine_effect
+		light_armor = {
+			jungle = {
+				attack = 0.1
+				movement = 0.05
+			}
+	
+			forest = {
+				attack = 0.1 
+				movement = 0.05
+			}
+		}
+	}
+
+}

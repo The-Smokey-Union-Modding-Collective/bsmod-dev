@@ -1020,12 +1020,47 @@
 			}
 		}
 	}
+
+	focus = {
+		id = SAF_south_african_railways
+		icon = GFX_goal_generic_construct_infrastructure
+		prerequisite = { focus = SAF_smoll_civ_natal focus = SAF_smoll_civ_cape focus = SAF_smoll_civ_transvaal focus = SAF_smoll_south_west}
+		x = 4
+		y = 4
+		relative_position_id = SAF_smoll_infrastruktur_cape
+
+		cost = 10
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+        search_filters = { FOCUS_FILTER_INDUSTRY }
+
+		completion_reward = {
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = SAF_south_african_railways
+		}
+	}
+
 	focus = {
 		id = SAF_smol_university
 		icon = GFX_focus_research
 		prerequisite = { focus = SAF_smoll_civ_natal focus = SAF_smoll_civ_cape focus = SAF_smoll_civ_transvaal focus = SAF_smoll_south_west}
-		x = 3
-		y = 3
+		x = 2
+		y = 4
 		relative_position_id = SAF_smoll_infrastruktur_cape
 
 		cost = 5
@@ -1292,8 +1327,8 @@
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = SAF_smol_university }
 		mutually_exclusive = { focus = saf_smol_free_trade_reform_fokus }
-		x = 2
-		y = 4
+		x = 1
+		y = 5
 		relative_position_id = SAF_smoll_infrastruktur_cape
 
 		cost = 5
@@ -1323,8 +1358,8 @@
 		icon = GFX_goal_generic_production
 		prerequisite = { focus = SAF_smol_university }
 		mutually_exclusive = { focus = saf_smol_autarky_reform_fokus }
-		x = 4
-		y = 4
+		x = 3
+		y = 5
 		relative_position_id = SAF_smoll_infrastruktur_cape
 
 		cost = 5

@@ -1,6 +1,7 @@
 sub_units = {
 
 	armored_car = {
+		abbreviation = "CAR"
 		#sprite = light_armor
 		sprite = armored_car
 		map_icon_category = armored
@@ -28,7 +29,7 @@ sub_units = {
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.3
-		training_time = 90
+		training_time = 180
 		max_strength = 2
 		weight = 0.8
 		supply_consumption = 0.14

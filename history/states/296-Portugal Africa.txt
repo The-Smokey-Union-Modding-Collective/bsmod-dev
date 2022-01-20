@@ -8,21 +8,26 @@ state={
 	resources={
 		rubber=1 # was: 1
 	}
-#	history={
+	history={
 #		owner = POR
-#		add_core_of = GNB
-#		victory_points = {
-#			12891 1
-#		}
-#		buildings = {
-#			infrastructure = 2
-#			12891 ={
-#				naval_base = 1
-#			}
-#		}
-#	}
+#		add_core_of = GNB		
+		# 
+		owner = BAD
+		add_core_of = BAD
+		victory_points = {
+			12891 1
+		}
+		buildings = {
+			infrastructure = 1
+			12891 ={
+				naval_base = 1
+			}
+		}
+	}
 
 	provinces={
 		12747 12891 
 	}
+
+	local_supplies=0.0 
 }
