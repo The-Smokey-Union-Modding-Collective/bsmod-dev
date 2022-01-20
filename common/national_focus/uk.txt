@@ -7449,10 +7449,11 @@ focus_tree = {
 		x = 14
 		y = 0
 		offset = {
-			x = -7
+			x = -9 # bsmod change vanilla = -7
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#NOT = { has_dlc = "Man the Guns" }
 			}
 		}
 		relative_position_id = ENG_revisit_colonial_policy
