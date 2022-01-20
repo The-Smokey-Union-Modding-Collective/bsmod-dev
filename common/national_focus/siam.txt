@@ -143,17 +143,7 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
-			add_country_leader_role = {
-					character = SIA_plaek_phibunsongkhram
-					country_leader = {
-					expire = "1965.1.1"
-					ideology = fascism_ideology
-					traits = {
-						
-					}
-				}
-				promote_leader = yes
-			}
+			promote_character = SIA_plaek_phibunsongkhram
 			swap_ideas = {
 				remove_idea = SIA_the_thai_monarchy
 				add_idea = SIA_shackled_monarchy
