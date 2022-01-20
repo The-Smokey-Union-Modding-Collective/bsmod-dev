@@ -1837,10 +1837,8 @@
 
 		completion_reward = {
 			retire_country_leader = yes
-			set_political_party = {
-    			ideology = fascism
-    			popularity = 50
-			}
+			recruit_character = MAN_wang_jingwei
+			promote_character = MAN_wang_jingwei 
 			transfer_state = 609
 			transfer_state = 745
 			609 = {
