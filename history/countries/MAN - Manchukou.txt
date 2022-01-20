@@ -19,6 +19,7 @@ if = {
 	add_ideas = MAN_kwantung_veto
 }
 
+recruit_character = MAN_wang_jingwei
 recruit_character = MAN_aisin_gioro_puyi
 recruit_character = MAN_zhang_haipeng
 recruit_character = MAN_zhang_jinghui
