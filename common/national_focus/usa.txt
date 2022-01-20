@@ -70,7 +70,8 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 
@@ -1446,7 +1447,7 @@ focus_tree = {
 	focus = {
 		id = USA_limited_intervention
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal } #focus = USA_reestablish_the_gold_standard } bsmod change
 		mutually_exclusive = { focus = USA_neutrality_act }
 		continue_if_invalid = yes
 		x = 0
@@ -1456,6 +1457,10 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		available_if_capitulated = no
 		cancel_if_invalid = no
@@ -1785,7 +1790,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal } #focus = USA_reestablish_the_gold_standard } # bsmod change
 		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
@@ -1830,7 +1835,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 2
 		y = 2
-		prerequisite = { focus = USA_neutrality_act focus = USA_limited_intervention }
+		prerequisite = { focus = USA_neutrality_act } #focus = USA_limited_intervention } # bsmod change
 		relative_position_id = USA_limited_intervention
 		cost = 10
 
@@ -2497,10 +2502,15 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -2534,6 +2544,10 @@ focus_tree = {
 		prerequisite = { focus = USA_reestablish_the_gold_standard }
 		relative_position_id = USA_reestablish_the_gold_standard
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -4058,7 +4072,8 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		
@@ -4833,7 +4848,8 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		cost = 10
