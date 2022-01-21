@@ -3495,7 +3495,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 4
+		x = 6 # bsmod change
 		y = 1
 		offset = {
 			x = 0
@@ -4228,7 +4228,7 @@
 		}
 	 	prerequisite = { focus = FRA_buy_time }
 	 	mutually_exclusive = { focus = FRA_france_leads }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = FRA_buy_time
 		cost = 10

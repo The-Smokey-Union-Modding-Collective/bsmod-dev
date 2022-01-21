@@ -2697,6 +2697,10 @@ focus_tree = {
 			factor = 3
 		}
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		available = {
 
 		}
