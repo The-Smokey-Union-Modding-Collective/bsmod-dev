@@ -995,10 +995,10 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = doctrine_bonus
-				bonus = 0.5
-				uses = 1
+				cost_reduction = 0.50
+				uses = 2
 				category = land_doctrine
 			}
 			army_experience = 20
@@ -1029,9 +1029,9 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = doctrine_bonus
-				bonus = 0.5
+				cost_reduction = 0.50
 				uses = 2
 				category = land_doctrine
 			}
