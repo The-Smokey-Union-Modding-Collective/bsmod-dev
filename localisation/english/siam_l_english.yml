@@ -60,3 +60,7 @@
  SIA_civil_war_aftermath_desc:0 "The bloodless coup in 1933 was swiftly followed by a rebellion led by prince Boworadet. Although the civil war was limited in damage, the political fallout has been rather painful. The nation is in harmony but tensions between the royal family and the "People's party" are high and the party fears the royals might again attempt to take over."
  japan_navy_board:0 "Japanese Naval Research Board"
  japan_armor_board:0 "Japanese Armour Research Board"
+ SIA_free_thai_movement_category:0 "Dealing with the free Thai movement"
+ SIA_free_thai_movement_category_desc:0 "The free Thai movement represents a continous threat to us. We must swiftly hunt their members down, shut down their bases and hidden airfield that are hidden all over the country"
+ hunt_the_free_thai_movement:0 "Hunt down the free Thai members"
+ end_the_free_thai_movement:0 "End the free Thai movement"

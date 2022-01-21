@@ -1,0 +1,102 @@
+form_rattanakosin_kingdom_category = {	
+	form_rattanakosin_kingdom = {
+
+		icon = generic_form_nation
+
+		allowed = {
+			original_tag = SIA
+			has_dlc = "Waking the Tiger"
+		}
+
+		available = {
+			is_subject = no
+			# Siam
+			controls_state = 289
+			controls_state = 724
+			controls_state = 286
+			# Cambodia
+			controls_state = 741
+			# Laos
+			controls_state = 670
+		}
+
+		visible = {
+			original_tag = SIA
+			NOT = { has_global_flag = form_rattanakosin_kingdom_flag }
+			has_completed_focus = SIA_prathet_thai
+		}
+
+		complete_effect = {
+			set_cosmetic_tag = RAT_UNIFIED
+			741 = { add_core_of = ROOT }
+			670 = { add_core_of = ROOT }
+			286 = { add_core_of = ROOT }
+			hidden_effect = {
+				news_event = { id = wtt_news.69 hours = 6 }
+				set_global_flag = form_rattanakosin_kingdom_flag
+			}
+		}
+
+		ai_will_do = {
+			factor = 200
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	}
+}
+
+SIA_free_thai_movement_category = {
+	hunt_the_free_thai_movement = {
+		icon = generic_assassination
+
+		allowed = { 
+		} 
+
+		available = {
+			has_idea = SIA_seri_thai_opposition2
+			has_stability > 0.6 
+		}
+		cancel_trigger = {
+		}
+		
+		days_remove = 70
+		days_re_enable = 0
+
+		cost = 150
+
+		complete_effect = {
+			swap_ideas = {
+				remove_idea = SIA_seri_thai_opposition2
+				add_idea = SIA_seri_thai_opposition1
+			}
+			add_stability = -0.1
+		}
+	}
+
+	end_the_free_thai_movement = {
+		icon = generic_assassination
+
+		allowed = { 
+		} 
+
+		available = {
+			has_completed_focus = SIA_malaya_occupation
+			has_idea = SIA_seri_thai_opposition1
+			has_stability > 0.7 
+		}
+		cancel_trigger = {
+		}
+		
+		days_remove = 70
+		days_re_enable = 0
+
+		cost = 100
+
+		complete_effect = {
+			remove_ideas = SIA_seri_thai_opposition1
+			add_stability = 0.25
+		}
+	}
+}

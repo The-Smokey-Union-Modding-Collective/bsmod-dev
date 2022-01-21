@@ -67,7 +67,7 @@ country_event  = {
 	option = {
 		name = siam.3.a
 		
-		add_ideas = SIA_seri_thai_opposition
+		add_ideas = SIA_seri_thai_opposition2
 		
 		set_party_name = { 
 			ideology = democratic 

@@ -10,9 +10,11 @@ if = {
 }
 
 recruit_character = SIA_phraya_phahon
+recruit_character = SIA_plaek_phibunsongkhram
+recruit_character = SIA_military_development_mission
+recruit_character = SIA_luang_wichitwathakan
 recruit_character = SIA_nangklao_chichalerm
 recruit_character = SIA_chao_phonphayuhasena
-recruit_character = SIA_nangklao_suriyawongse
 recruit_character = SIA_tianliang_huntrakool
 recruit_character = SIA_phra_silpasakrakorn
 recruit_character = SIA_luang_sinthusongkhramchai
@@ -32,6 +34,10 @@ recruit_character = SIA_kuang_abhayavongsa
 recruit_character = SIA_thawee_punyaketu
 recruit_character = SIA_phot_bhahalyodin
 
+add_ideas = SIA_the_thai_monarchy
+add_ideas = SIA_fascist_army_sympathies
+add_ideas = SIA_non_existent_ship_industry
+add_ideas = SIA_civil_war_3
 
 # Starting tech
 set_technology = {
