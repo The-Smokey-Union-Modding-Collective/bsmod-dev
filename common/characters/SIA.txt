@@ -119,6 +119,15 @@ characters={
 				small="GFX_idea_generic_army_asia_3"
 			}
 		}
+		corps_commander={
+			traits={ armor_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=2
+			legacy_id=2007
+		}
 	}
 	SIA_phra_silpasakrakorn={
 		advisor={

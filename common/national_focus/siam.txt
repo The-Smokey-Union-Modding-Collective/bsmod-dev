@@ -1587,7 +1587,7 @@ focus_tree = {
 		completion_reward = {
 			random_unit_leader = {
 				limit = {
-					has_id = 2000
+					has_id = 2005
 				}
 				add_attack = 1
 				add_logistics = 2
@@ -1595,7 +1595,7 @@ focus_tree = {
 			}
 			random_unit_leader = {
 				limit = {
-					has_id = 2001
+					has_id = 2006
 				}
 				add_attack = 2
 				add_logistics = 1
@@ -1631,16 +1631,16 @@ focus_tree = {
 		completion_reward = {
 			random_unit_leader = {
 				limit = {
-					has_id = 2000
+					has_id = 2005
 				}
-				add_attack = 1
+				add_attack = 2
 				add_unit_leader_trait = jungle_rat
 			}
 			random_unit_leader = {
 				limit = {
-					has_id = 2002
+					has_id = 2007
 				}
-				add_attack = 1
+				add_attack = 2
 				add_unit_leader_trait = jungle_rat
 			}
 		}

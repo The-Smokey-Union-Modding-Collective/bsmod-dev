@@ -71,7 +71,26 @@ ideas = {
 			}
 		}
 		
-		SIA_seri_thai_opposition = {
+		SIA_seri_thai_opposition2 = {
+		
+			allowed = {
+				always = no
+			}
+			
+			cancel = {
+				has_government = communism
+			}
+			
+			picture = generic_volunteer_expedition_bonus
+			modifier = {
+				stability_factor = -0.1
+				communism_drift = 0.10
+				democratic_drift = 0.10
+				party_popularity_stability_factor = -0.1
+			}
+		}
+		
+		SIA_seri_thai_opposition1 = {
 		
 			allowed = {
 				always = no
@@ -84,12 +103,12 @@ ideas = {
 			picture = generic_volunteer_expedition_bonus
 			modifier = {
 				stability_factor = -0.05
-				communism_drift = 0.10
-				democratic_drift = 0.10
-				party_popularity_stability_factor = -0.1
+				communism_drift = 0.05
+				democratic_drift = 0.05
+				party_popularity_stability_factor = -0.05
 			}
 		}
-		
+
 		SIA_non_existent_ship_industry = {
 		
 			allowed = {
