@@ -1836,15 +1836,15 @@
 		}
 
 		completion_reward = {
-			retire_country_leader = yes
-			create_country_leader = {
-				name = "Wang Jingwei"
-				picture = "GFX_portrait_chi_wang_jingwei"
-				expire = "1965.1.1"
-				ideology = fascism_ideology
-				traits = {
-					national_traitor
+			add_country_leader_role = {
+				character = MAN_wang_jingwei
+				country_leader = {
+					expire = "1959.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
 				}
+				promote_leader = yes
 			}
 			transfer_state = 609
 			transfer_state = 745
