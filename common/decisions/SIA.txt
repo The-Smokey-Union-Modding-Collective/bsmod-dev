@@ -71,7 +71,7 @@ SIA_free_thai_movement_category = {
 				remove_idea = SIA_seri_thai_opposition2
 				add_idea = SIA_seri_thai_opposition1
 			}
-			add_stability = -0.2
+			add_stability = -0.1
 		}
 	}
 
@@ -96,6 +96,7 @@ SIA_free_thai_movement_category = {
 
 		complete_effect = {
 			remove_ideas = SIA_seri_thai_opposition1
+			add_stability = 0.25
 		}
 	}
 }
