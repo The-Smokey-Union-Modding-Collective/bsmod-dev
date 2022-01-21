@@ -24,11 +24,11 @@
 BSMOD_RHINELAND_FIRST = {
 	name = "BSMOD_RHINELAND_FIRST"
 	group = "BSMOD"
-	option = {										
+	default = {										
 		name = FIRST
 		text = "Must do first"
 	}
-	default = {										
+	option = {										
 		name = VANILLA
 		text = "Vanilla"
 	}
