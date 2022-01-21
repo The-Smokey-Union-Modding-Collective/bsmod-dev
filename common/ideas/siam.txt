@@ -72,7 +72,9 @@ ideas = {
 		}
 		
 		SIA_seri_thai_opposition2 = {
-		
+			
+			name = SIA_seri_thai_opposition
+
 			allowed = {
 				always = no
 			}
@@ -91,7 +93,9 @@ ideas = {
 		}
 		
 		SIA_seri_thai_opposition1 = {
-		
+			
+			name = SIA_seri_thai_opposition
+
 			allowed = {
 				always = no
 			}
