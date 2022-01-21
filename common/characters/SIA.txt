@@ -112,12 +112,11 @@ characters={
 					factor = 1.000
 				}
 		}
-# TODO[ PORTRAIT LARGE ]: Missing large portrait please check!
 		name="Tianliang Huntrakool"
 		portraits={
 			army={
-				large="GFX_Portrait_Asia_Generic_land_4"
-				small="GFX_idea_asia_generic_land_4"
+				large="GFX_portrait_asia_generic_land_4"
+				small="GFX_idea_generic_army_asia_4"
 			}
 		}
 		corps_commander={
