@@ -7,10 +7,16 @@ SIA_free_thai_movement_category ={
 
 	allowed = {
 		tag = SIA
-		has_idea = SIA_seri_thai_opposition
-	}
+		OR = {
+            has_idea = SIA_seri_thai_opposition2
+            has_idea = SIA_seri_thai_opposition1
+        }
+    }
 
 	visible = {
-		has_idea = SIA_seri_thai_opposition
+		OR = {
+            has_idea = SIA_seri_thai_opposition2
+            has_idea = SIA_seri_thai_opposition1
+        }
 	}
 }
