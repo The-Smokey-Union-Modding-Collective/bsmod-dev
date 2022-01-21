@@ -3353,6 +3353,10 @@ focus_tree = {
 		x = 35
 		y = 0
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		cost = 10
 
 		ai_will_do = {

@@ -1800,10 +1800,11 @@ focus_tree = {
 		x = 28
 		y = 0
 		offset = {
-			x = -2
+			x = -8
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#NOT = { has_dlc = "Man the Guns" }
 			}
 		}
 		cost = 5
@@ -1835,7 +1836,8 @@ focus_tree = {
 			x = 2
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#NOT = { has_dlc = "Man the Guns" }
 			}
 		}
 		relative_position_id = uk_empire_focus
@@ -2665,6 +2667,7 @@ focus_tree = {
 		mutually_exclusive = { focus = uk_empire_focus }
 
 		allow_branch = {
+			always = no #bsmod change
 			has_dlc = "Man the Guns"
 		}
 
@@ -4861,8 +4864,8 @@ focus_tree = {
 		id = uk_colonial_focus 
 		prerequisite = { focus = uk_service_focus }
 		icon = GFX_focus_research2
-		x = -5
-		y = 1
+		x = -1.5 # bsmod change
+		y = 2
 		relative_position_id = uk_service_focus
 		cost = 10
 
@@ -7448,10 +7451,11 @@ focus_tree = {
 		x = 14
 		y = 0
 		offset = {
-			x = -7
+			x = -15 # bsmod change vanilla = -7
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#NOT = { has_dlc = "Man the Guns" }
 			}
 		}
 		relative_position_id = ENG_revisit_colonial_policy
@@ -7480,6 +7484,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_home_defence }
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 
@@ -8099,7 +8104,8 @@ focus_tree = {
 			x = -5
 			y = 0
 			trigger = {
-				NOT = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#NOT = { has_dlc = "Man the Guns" }
 			}
 		}
 		relative_position_id = ENG_steady_as_she_goes
@@ -8776,6 +8782,7 @@ focus_tree = {
 		mutually_exclusive = { focus = ENG_steady_as_she_goes }
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 

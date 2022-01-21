@@ -2545,7 +2545,7 @@ focus_tree = {
 	focus = {
 		id = CAN_camp_x
 		icon = GFX_goal_generic_intelligence_exchange 
-		prerequisite = { focus = CAN_montreal_laboratory_collaboration focus = CAN_permanent_joint_defense_board }
+		prerequisite = { focus = CAN_montreal_laboratory_collaboration }
 		x = 0
 		y = 2
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
@@ -2737,6 +2737,10 @@ focus_tree = {
 		x = 2
 		y = 0
 		relative_position_id = CAN_strengthen_the_commonwealth_ties
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		cost = 10
 
@@ -3688,7 +3692,7 @@ focus_tree = {
 	focus = {
 		id = CAN_rcaf_station_borden
 		icon = GFX_goal_generic_build_airforce
-		x = 35
+		x = 25 # bsmod change vanilla = 35
 		y = 0
 
 		cost = 10
@@ -4196,7 +4200,7 @@ focus_tree = {
 	focus = {
 		id = CAN_halifax_shipyards
 		icon = GFX_goal_generic_construct_naval_dockyard
-		x = 39
+		x = 29 # bsmod change vanilla = 39
 		y = 0
 
 		cost = 10

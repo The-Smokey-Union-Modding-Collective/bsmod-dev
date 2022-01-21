@@ -1544,7 +1544,7 @@
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 26
+		x = 23 # bsmod change vanilla = 26
 		y = 0
 		offset = {
 			x = 0
@@ -1601,6 +1601,10 @@
 		relative_position_id = FRA_form_the_popular_front
 		allow_branch = { has_dlc = "La Resistance" }
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -3491,7 +3495,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 10
+		x = 6 # bsmod change
 		y = 1
 		offset = {
 			x = 0
@@ -3499,7 +3503,7 @@
 		}
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
+			#focus = FRA_protect_the_rights_of_man # bsmod change
 		}
 		relative_position_id = FRA_reform_the_labour_laws
 		cost = 10
@@ -3533,7 +3537,7 @@
 	focus = {
 		id = FRA_intervention_in_spain
 		icon = GFX_focus_focus_fra_intervention_spain
-		x = 7
+		x = 4 # bsmod change vanilla = 7
 		y = 2
 		offset = {
 			x = 0
@@ -3541,7 +3545,7 @@
 		}
 		prerequisite = {
 			focus = FRA_form_the_popular_front
-			focus = FRA_revive_the_national_bloc
+			#focus = FRA_revive_the_national_bloc # bsmod change
 		}
 		
 		relative_position_id = FRA_form_the_popular_front
@@ -3572,7 +3576,7 @@
 	focus = {
 		id = FRA_support_the_finns
 		icon = GFX_focus_invite_finland
-		x = 2
+		x = 0 # bsmod change vanilla = 2
 		y = 1
 		offset = {
 			x = 0
@@ -3627,6 +3631,11 @@
 			x = 0
 			y = 0
 		}
+
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		prerequisite = {
 			focus = FRA_review_foreign_policy
 		}
@@ -4072,7 +4081,7 @@
 	focus = {
 		id = FRA_buy_time
 		icon = GFX_goal_generic_neutrality_focus
-		x = 4
+		x = 2 # bsmod change vanilla = 4
 		y = 2
 		prerequisite = {
 			focus = FRA_review_foreign_policy
@@ -4148,7 +4157,7 @@
 		available = {
 		}
 	 	prerequisite = {
-	 		focus = FRA_strengthen_the_little_entente
+	 		#focus = FRA_strengthen_the_little_entente
 	 		focus = FRA_buy_time
 	 	}
 		x = 5
@@ -4219,7 +4228,7 @@
 		}
 	 	prerequisite = { focus = FRA_buy_time }
 	 	mutually_exclusive = { focus = FRA_france_leads }
-		x = 0
+		x = 2
 		y = 1
 		relative_position_id = FRA_buy_time
 		cost = 10
@@ -4294,6 +4303,10 @@
 		mutually_exclusive = { focus = FRA_go_with_britain }
 		relative_position_id = FRA_buy_time
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -4472,7 +4485,7 @@
 		y = 1
 		relative_position_id = FRA_form_the_popular_front
 		cost = 10
-		allow_branch = { not = { has_dlc = "La Resistance" } } 
+		allow_branch = { always = no not = { has_dlc = "La Resistance" } } 
 		available_if_capitulated = yes
 
 		ai_will_do = {
@@ -4612,6 +4625,10 @@
 		offset = {
 			x = 0
 			y = 0
+		}
+
+		allow_branch = {
+			always = no # bsmod change
 		}
 
 		cost = 10
@@ -4996,7 +5013,7 @@
 		ai_will_do = {
 			factor = 1
 		}
-		allow_branch = { has_dlc = "La Resistance" }
+		allow_branch = { has_dlc = "La Resistance" always = no } # bsmod change 
 		available = {
 			NOT = {
 				has_completed_focus = FRA_review_foreign_policy
@@ -7982,10 +7999,11 @@
 		y = 0
 		cost = 10
 		offset = {
-			x = -16
+			x = -37 # bsmod change vanilla = -16
 			y = 0
 			trigger = {
-				not = { has_dlc = "La Resistance" }
+				always = yes # bsmod change
+				#not = { has_dlc = "La Resistance" }
 			}
 		}
 		available_if_capitulated = yes
@@ -8480,10 +8498,11 @@
 		y = 0
 		cost = 10
 		offset = {
-			x = -17
+			x = -38 # bsmod change vanilla = -17
 			y = 0
 			trigger = {
-				not = { has_dlc = "La Resistance" }
+				always = yes # bsmod change
+				#not = { has_dlc = "La Resistance" }
 			}
 		}
 		available_if_capitulated = yes
