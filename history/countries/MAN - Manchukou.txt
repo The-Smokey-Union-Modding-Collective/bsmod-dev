@@ -18,7 +18,7 @@ if = {
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
 }
-
+recruit_character = MAN_masaomi_yasuoka
 recruit_character = MAN_wang_jingwei
 recruit_character = MAN_aisin_gioro_puyi
 recruit_character = MAN_zhang_haipeng
