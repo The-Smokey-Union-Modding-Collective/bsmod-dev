@@ -70,7 +70,8 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 
@@ -111,6 +112,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 		available = {
@@ -1445,7 +1447,7 @@ focus_tree = {
 	focus = {
 		id = USA_limited_intervention
 		icon = GFX_goal_generic_territory_or_war
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal } #focus = USA_reestablish_the_gold_standard } bsmod change
 		mutually_exclusive = { focus = USA_neutrality_act }
 		continue_if_invalid = yes
 		x = 0
@@ -1455,6 +1457,10 @@ focus_tree = {
 		#ai_will_do = {
 		#	factor = 1
 		#}
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		available_if_capitulated = no
 		cancel_if_invalid = no
@@ -1784,7 +1790,7 @@ focus_tree = {
 		icon = GFX_goal_generic_neutrality_focus
 		x = 4
 		y = 1
-		prerequisite = { focus = USA_continue_the_new_deal focus = USA_reestablish_the_gold_standard }
+		prerequisite = { focus = USA_continue_the_new_deal } #focus = USA_reestablish_the_gold_standard } # bsmod change
 		mutually_exclusive = { focus = USA_limited_intervention }
 		relative_position_id = USA_continue_the_new_deal
 		cost = 10
@@ -1829,7 +1835,7 @@ focus_tree = {
 		icon = GFX_focus_generic_treaty
 		x = 2
 		y = 2
-		prerequisite = { focus = USA_neutrality_act focus = USA_limited_intervention }
+		prerequisite = { focus = USA_neutrality_act } #focus = USA_limited_intervention } # bsmod change
 		relative_position_id = USA_limited_intervention
 		cost = 10
 
@@ -2496,10 +2502,15 @@ focus_tree = {
 			x = -12
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -2533,6 +2544,10 @@ focus_tree = {
 		prerequisite = { focus = USA_reestablish_the_gold_standard }
 		relative_position_id = USA_reestablish_the_gold_standard
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -2713,6 +2728,7 @@ focus_tree = {
 			factor = 1
 		}
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Man the Guns"
 		}
 		available = {
@@ -4056,7 +4072,8 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		
@@ -4094,7 +4111,7 @@ focus_tree = {
 		cost = 10
 
 		allow_branch = {
-			USA = { has_focus_tree = generic_focus }
+			#USA = { has_focus_tree = generic_focus }
 		}
 
 		ai_will_do = {
@@ -4126,6 +4143,10 @@ focus_tree = {
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		ai_will_do = {
 			factor = 1
 		}
@@ -4154,6 +4175,10 @@ focus_tree = {
 		prerequisite = { focus = USA_intervention_in_the_americas }
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		ai_will_do = {
 			factor = 1
@@ -4186,6 +4211,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 2
 		}
+
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		completion_reward = {
 			custom_effect_tooltip = USA_reinforce_monroe_doctrine_tt
 			unlock_decision_category_tooltip = USA_intervention_mandate
@@ -4220,7 +4250,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		x = 0
 		y = 3
-		prerequisite = { focus = USA_reinforce_monroe_doctrine }
+		prerequisite = { focus = USA_intervention_in_the_americas }
 		relative_position_id = USA_intervention_in_the_americas
 		cost = 10
 
@@ -4831,7 +4861,8 @@ focus_tree = {
 			x = -26
 			y = 0
 			trigger = {
-				not = { has_dlc = "Man the Guns" }
+				always = yes # bsmod change
+				#not = { has_dlc = "Man the Guns" }
 			}
 		}
 		cost = 10
