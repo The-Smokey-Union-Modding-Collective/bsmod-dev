@@ -95,7 +95,7 @@ SIA_free_thai_movement_category = {
 		cost = 100
 
 		complete_effect = {
-			remove_idea = SIA_seri_thai_opposition1
+			remove_ideas = SIA_seri_thai_opposition1
 		}
 	}
 }

@@ -120,7 +120,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ armor_officer }
+			traits={ infantry_officer }
 			skill=3
 			attack_skill=3
 			defense_skill=1
@@ -224,7 +224,11 @@ characters={
 				factor = 1.000
 			}
 		}
-		picture = jap_zaibatsu_ally
+		portraits={
+			army={
+				small="GFX_idea_jap_zaibatsu_ally"
+			}
+		}
 	}
 	SIA_phraya_preechacholayudha={
 		advisor={

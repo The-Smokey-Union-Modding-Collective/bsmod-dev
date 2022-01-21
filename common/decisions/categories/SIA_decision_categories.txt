@@ -14,4 +14,3 @@ SIA_free_thai_movement_category ={
 		has_idea = SIA_seri_thai_opposition
 	}
 }
-}
