@@ -72,7 +72,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150			
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = luang_wichitwathakan
+			show_ideas_tooltip = SIA_luang_wichitwathakan
 		}
 	}
 	
