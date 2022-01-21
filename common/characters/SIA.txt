@@ -116,8 +116,8 @@ characters={
 		name="Tianliang Huntrakool"
 		portraits={
 			army={
-				large="GFX_portrait_generic_army_asia_1"
-				small="GFX_idea_generic_army_asia_1"
+				large="GFX_Portrait_Asia_Generic_land_4"
+				small="GFX_idea_asia_generic_land_4"
 			}
 		}
 		corps_commander={
