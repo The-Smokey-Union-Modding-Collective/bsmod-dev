@@ -2435,8 +2435,8 @@
 				}
 			}
 			create_equipment_variant = {
-				name = "Type-1 Medium experimental"
-				type = light_tank_chassis_2
+				name = "Type-1 tankette experimental"
+				type = light_tank_chassis_0
 				parent_version = 0
 				modules = {
 				main_armament_slot = tank_auto_cannon
