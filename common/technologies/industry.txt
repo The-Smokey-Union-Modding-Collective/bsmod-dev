@@ -1617,6 +1617,7 @@ technologies = {
 			leads_to_tech = excavation1
 			research_cost_coeff = 1
 		}
+
 		
 		research_cost = 2
 		start_year = 1936
@@ -1645,6 +1646,7 @@ technologies = {
 		local_resources_factor = 0.15
 		
 		path = {
+			leads_to_tech = excavation2
 			research_cost_coeff = 1
 		}
 		
@@ -1699,10 +1701,7 @@ technologies = {
 			leads_to_tech = construction3 
 			research_cost_coeff = 1
 		}		
-		path = {
-			leads_to_tech = excavation2 
-			research_cost_coeff = 1
-		}
+
 		
 		research_cost = 2
 		start_year = 1937
@@ -1732,6 +1731,7 @@ technologies = {
 		local_resources_factor = 0.15
 		
 		path = {
+			leads_to_tech = excavation3
 			research_cost_coeff = 1
 		}
 		
@@ -1788,10 +1788,6 @@ technologies = {
 			research_cost_coeff = 1
 		}
 				
-		path = {
-			leads_to_tech = excavation3
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1939
@@ -1832,6 +1828,7 @@ technologies = {
 		local_resources_factor = 0.15
 		
 		path = {
+			leads_to_tech = excavation4
 			research_cost_coeff = 1
 		}
 		
@@ -1887,10 +1884,6 @@ technologies = {
 			leads_to_tech = construction5 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = excavation4
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1941
@@ -1920,6 +1913,7 @@ technologies = {
 		local_resources_factor = 0.15
 		
 		path = {
+			leads_to_tech = excavation5
 			research_cost_coeff = 1
 		}
 		
@@ -1972,7 +1966,6 @@ technologies = {
 		industry_repair_factor = 0.10
 		
 		path = {
-			leads_to_tech = excavation5
 			research_cost_coeff = 1
 		}
 

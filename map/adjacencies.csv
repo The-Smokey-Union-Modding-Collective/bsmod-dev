@@ -216,4 +216,22 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 8201;10972;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
 8201;2202;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
 12944;2202;impassable;-1;-1;-1;-1;-1;;Sahara-Tanzania line
+11130;3058;impassable;-1;-1;-1;-1;-1;;Lappland
+11130;3082;impassable;-1;-1;-1;-1;-1;;Lappland
+11130;6107;impassable;-1;-1;-1;-1;-1;;Lappland
+11130;9191;impassable;-1;-1;-1;-1;-1;;Lappland
+203;9191;impassable;-1;-1;-1;-1;-1;;Lappland
+203;11169;impassable;-1;-1;-1;-1;-1;;Lappland
+167;11169;impassable;-1;-1;-1;-1;-1;;Lappland
+167;9128;impassable;-1;-1;-1;-1;-1;;Lappland
+3069;9128;impassable;-1;-1;-1;-1;-1;;Lappland
+3069;11104;impassable;-1;-1;-1;-1;-1;;Lappland
+6061;11104;impassable;-1;-1;-1;-1;-1;;Lappland
+6061;9064;impassable;-1;-1;-1;-1;-1;;Lappland
+6061;6092;impassable;-1;-1;-1;-1;-1;;Lappland
+3097;6092;impassable;-1;-1;-1;-1;-1;;Lappland
+3097;9116;impassable;-1;-1;-1;-1;-1;;Lappland
+6183;9116;impassable;-1;-1;-1;-1;-1;;Lappland
+11142;9116;impassable;-1;-1;-1;-1;-1;;Lappland
+9140;9116;impassable;-1;-1;-1;-1;-1;;Lappland
 -1;-1;;-1;-1;-1;-1;-1;-1;

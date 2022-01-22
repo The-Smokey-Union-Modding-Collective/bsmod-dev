@@ -3746,6 +3746,11 @@ focus_tree = {
 				news_event = { hours = 6 id = news.234 }
 			}
 			unlock_decision_tooltip = GER_fall_gelb
+			FRA = {
+				remove_ideas = {
+					FRA_protected_by_the_maginot_line
+				}
+			}
 		}
 			
 #			#limit wargoals to when it makes sense to give them. No faction, war or non exist
