@@ -1,5 +1,12 @@
 ﻿capital = 111
 
+create_intelligence_agency = {
+	name = "PE TIEDOS"
+	icon = "GFX_intelligence_agency_logo_fin"
+}
+
+add_command_power = 100
+
 oob = "FIN_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }

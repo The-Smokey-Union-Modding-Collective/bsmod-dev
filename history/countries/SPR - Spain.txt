@@ -1,5 +1,13 @@
 ﻿capital = 41
 
+create_intelligence_agency = {
+	name = "SIPM"
+	icon = "GFX_intelligence_agency_logo_spa"
+}
+
+add_command_power = 100
+
+
 oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
