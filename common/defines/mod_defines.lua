@@ -39,6 +39,7 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999		--vanilla=500
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01	--vanilla=0.06
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	--vanilla=true
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1	--vanilla=3
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.0
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
