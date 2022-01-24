@@ -10,31 +10,36 @@ state={
 		steel=16 # was: 24
 	}
 
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = CHL
-#		buildings = {
-#			infrastructure = 5
-#			arms_factory = 1
-#			industrial_complex = 7
-#			air_base = 3
-#			8222 = {
-#				naval_base = 5
-#			}
-#			5121 = {
-#				naval_base = 1
-#			}
-#			650 = {
-#				bunker = 1
-#			}
-#		}
+		buildings = {
+			infrastructure = 3 #was: 5
+			arms_factory = 0
+			industrial_complex = 0
+			air_base = 3
+			8222 = {
+				naval_base = 5
+			}
+			5121 = {
+				naval_base = 1
+			}
+			650 = {
+				bunker = 1
+			}
+		}
 #		add_core_of = CHL
-#		victory_points = {
-#			650 10
-#		}
-#
-#	}
+		victory_points = {
+			650 10
+		}
+
+	}
 
 	provinces={
 		650 5121 5169 5191 8194 8222 8229 8251 12920 12954 12984 
 	}
+
+	local_supplies=0.0 
 }

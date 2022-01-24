@@ -72,7 +72,7 @@ focus_tree = {
 		completion_reward = {
 			add_political_power = 150			
 			custom_effect_tooltip = available_political_advisor
-			show_ideas_tooltip = luang_wichitwathakan
+			show_ideas_tooltip = SIA_luang_wichitwathakan
 		}
 	}
 	
@@ -143,6 +143,16 @@ focus_tree = {
 				ruling_party = fascism
 				elections_allowed = no
 			}
+			add_country_leader_role = {
+				character = SIA_plaek_phibunsongkhram
+				country_leader = {
+					expire = "1959.1.1"
+					ideology = fascism_ideology
+					traits = {
+					}
+				}
+				promote_leader = yes
+			}
 			swap_ideas = {
 				remove_idea = SIA_the_thai_monarchy
 				add_idea = SIA_shackled_monarchy
@@ -164,6 +174,7 @@ focus_tree = {
 				set_country_flag = SIA_resistance_movement_start
 			}
 		}
+	
 	}
 	
 	focus = {
@@ -232,10 +243,10 @@ focus_tree = {
 		completion_reward = {
 			add_manpower = 15000
 			add_timed_idea = { idea = SIA_anti_china_cause days = 720 } 
-			set_rule = can_send_volunteers
+			set_rule = { can_send_volunteers = yes }
 		}
 	}
-}
+
 ######THAILAND######	
 	
 	focus = {
@@ -984,10 +995,10 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = doctrine_bonus
-				bonus = 0.5
-				uses = 1
+				cost_reduction = 0.50
+				uses = 2
 				category = land_doctrine
 			}
 			army_experience = 20
@@ -1018,9 +1029,9 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = doctrine_bonus
-				bonus = 0.5
+				cost_reduction = 0.50
 				uses = 2
 				category = land_doctrine
 			}
@@ -1467,17 +1478,6 @@ focus_tree = {
 			}
 			custom_effect_tooltip = available_military_high_command
 			show_ideas_tooltip = SIA_tianliang_huntrakool
-			create_corps_commander = {
-				name = "Tianliang Huntrakool"
-				portrait_path = "gfx/leaders/Asia/Portrait_Asia_Generic_land_4.dds"
-				traits = { armor_officer }
-				skill = 2
-				id = 2002
-				attack_skill = 2
-				defense_skill = 1
-				planning_skill = 1
-				logistics_skill = 2
-			}
 		}
 	}
 	
@@ -1576,7 +1576,7 @@ focus_tree = {
 		completion_reward = {
 			random_unit_leader = {
 				limit = {
-					has_id = 2000
+					has_id = 2005
 				}
 				add_attack = 1
 				add_logistics = 2
@@ -1584,7 +1584,7 @@ focus_tree = {
 			}
 			random_unit_leader = {
 				limit = {
-					has_id = 2001
+					has_id = 2006
 				}
 				add_attack = 2
 				add_logistics = 1
@@ -1620,16 +1620,16 @@ focus_tree = {
 		completion_reward = {
 			random_unit_leader = {
 				limit = {
-					has_id = 2000
+					has_id = 2005
 				}
-				add_attack = 1
+				add_attack = 2
 				add_unit_leader_trait = jungle_rat
 			}
 			random_unit_leader = {
 				limit = {
-					has_id = 2002
+					has_id = 2007
 				}
-				add_attack = 1
+				add_attack = 2
 				add_unit_leader_trait = jungle_rat
 			}
 		}

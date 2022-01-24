@@ -39,6 +39,7 @@ NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999		--vanilla=500
 NDefines.NMilitary.TRAINING_ATTRITION = 0.01	--vanilla=0.06
+NDefines.NMilitary.UNIT_LEADER_USE_NONLINEAR_XP_GAIN = false	--vanilla=true
 NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1	--vanilla=3
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.0
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -68,3 +69,7 @@ NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00	--vanilla=0.02
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = -100	--vanilla=20
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0	--vanilla=-100
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30 -- max infrastructure level will reduce the supply flow drop off by this ratio # Vanilla = 0.30
+NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2	-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above. # Vanilla = 2.2
+NDefines.NSupply.NAVAL_BASE_FLOW = 5.0 -- max output/input of a naval node is limited by this base value + additional ratio for each level # Vanilla = 15.0 

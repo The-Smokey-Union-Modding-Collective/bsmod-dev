@@ -6,17 +6,22 @@ state={
 	
 	state_category = pastoral
 
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = BOL
-#		buildings = {
-#			infrastructure = 1
-#			industrial_complex = 1
-#		}
+		buildings = {
+			infrastructure = 1
+			industrial_complex = 0
+		}
 #		add_core_of = BOL
-#	}
+	}
 
 	provinces={
 		2160 5188 8211 8240 10924 10982 10996 12902 12916 12917 12973 
 	}
 	
+
+	local_supplies=0.0 
 }

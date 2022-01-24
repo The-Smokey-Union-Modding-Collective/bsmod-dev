@@ -6,17 +6,22 @@ state={
 	
 	state_category = pastoral
 
-#	history={
+	history={
+		# 
+		owner = BAD
+		add_core_of = BAD
 #		owner = PRU
-#		buildings = {
-#			infrastructure = 3
-#			industrial_complex = 1
-#			air_base = 1
-#		}
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 0
+			air_base = 1
+		}
 #		add_core_of = PRU
-#	}
+	}
 
 	provinces={
 		8149 10942 
 	}
+
+	local_supplies=6.0 
 }
