@@ -17,6 +17,8 @@ if = {
 	set_country_flag = MAN_western_bandits
 	add_ideas = MAN_banditry
 	add_ideas = MAN_kwantung_veto
+	add_ideas = MAN_opium_exports_1
+	add_ideas = MAN_army_against_bandits_3
 }
 recruit_character = MAN_masaomi_yasuoka
 recruit_character = MAN_wang_jingwei
