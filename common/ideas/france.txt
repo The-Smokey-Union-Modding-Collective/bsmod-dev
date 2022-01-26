@@ -40,6 +40,7 @@ ideas = {
 				conscription_factor = -0.25
 			}
 		}
+		
 		FRA_worker_shortage = {
 			picture = FRA_factory_strikes
 			allowed = {
@@ -55,12 +56,14 @@ ideas = {
 			
 			modifier = {
 				conscription_factor = -0.25
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				production_factory_max_efficiency_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.15
 			}
 		}
-		FRA_inefficient_economy_1 = {
-			picture = generic_local_self_management
+		
+		FRA_french_depression_3 = {
+			picture = idea_usa_great_depression_3
+			name = FRA_french_depression
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -73,13 +76,17 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
+				stability_factor = -0.3
+				war_support_factor = -0.3
 			}
 		}
-		FRA_inefficient_economy_2 = {
-			picture = generic_local_self_management
-			name = FRA_inefficient_economy_1
+		
+		FRA_french_depression_2 = {
+			picture = idea_usa_great_depression_2
+			name = FRA_french_depression
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -92,10 +99,37 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				consumer_goods_factor = 0.10
 				industrial_capacity_factory = -0.2
 				industrial_capacity_dockyard = -0.2
+				stability_factor = -0.2
+				war_support_factor = -0.2
 			}
 		}
+
+		FRA_french_depression_1 = {
+			picture = great_depression
+			name = FRA_french_depression
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				tag = FRA
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
 		FRA_political_violence = {
 
 			allowed = {
@@ -116,6 +150,7 @@ ideas = {
 				
 			}
 		}
+		
 		FRA_devalue_the_franc = {
 			picture = generic_foreign_capital
 			allowed = {
@@ -134,6 +169,7 @@ ideas = {
 				stability_factor = -0.05
 			}
 		}
+		
 		FRA_global_investments = {
 			picture = generic_exploit_mines
 			allowed = {
@@ -151,6 +187,7 @@ ideas = {
 				local_resources_factor = 0.1
 			}
 		}
+		
 		FRA_womens_suffrage = {
 			picture = generic_constitutional_guarantees
 			allowed = {
@@ -168,6 +205,7 @@ ideas = {
 				political_power_gain = 0.25
 			}
 		}
+		
 		FRA_agricultural_collectivization = {
 			picture = generic_agrarian_reform
 			allowed = {
@@ -185,6 +223,7 @@ ideas = {
 				conscription_factor = 0.15
 			}
 		}
+		
 		FRA_anti_fascist_immigrants = {
 			picture = generic_manpower_bonus
 			allowed = {
@@ -203,6 +242,7 @@ ideas = {
 				weekly_manpower = 1000
 			}
 		}
+		
 		FRA_league_of_french_bolshevist_volunteers = {
 			picture = fourth_international
 			allowed = {
