@@ -669,14 +669,14 @@
 		x = 0
 		y = 1
 		relative_position_id = MAN_concordia_supreme
-		cost = 10
+		cost = 5
 		
 		ai_will_do = {
 			factor = 1
 		}
 
 		available = {
-			CHI = { exists = no }
+			controls_state = 608
 		}
 
 		bypass = {
