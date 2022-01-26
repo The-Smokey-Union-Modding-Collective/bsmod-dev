@@ -4,6 +4,9 @@ oob = "SAF_1936"
 
 set_stability = 0.6
 set_war_support = 0.1
+
+set_research_slots = 3
+
 # Starting tech
 set_technology = {
 	infantry_weapons = 1
@@ -182,6 +185,7 @@ recruit_character = SAF_e_g_jansen
 recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
 recruit_character = SAF_abram_fischer
+recruit_character = SAF_Edward_Puttick
 
 1939.1.1 = {
 	set_politics = {

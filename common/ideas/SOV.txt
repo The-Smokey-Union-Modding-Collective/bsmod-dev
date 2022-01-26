@@ -106,6 +106,8 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+				send_volunteer_size = 6
+				air_volunteer_cap = 200
 			}
 			rule = {
 				can_create_factions = yes
@@ -9728,7 +9730,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05 # bsmod change vanilla = 0.1
 			}
 		}
 
@@ -9757,7 +9759,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05 # bsmod change vanilla = 0.1
 				consumer_goods_factor = -0.05
 			}
 		}
@@ -9787,7 +9789,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_dockyard_factor = 0.05
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05 # bsmod change vanilla = 0.1
 				industrial_capacity_factory = 0.05
 			}
 		}
@@ -9817,7 +9819,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.05
 				production_speed_dockyard_factor = 0.1
 				license_purchase_cost = -0.25
-				production_factory_max_efficiency_factor = 0.1
+				production_factory_max_efficiency_factor = 0.05 # bsmod change vanilla = 0.1
 				industrial_capacity_dockyard = 0.05
 			}
 		}

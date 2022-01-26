@@ -32,6 +32,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Waking the Tiger"
 		}
 
@@ -2696,6 +2697,10 @@ focus_tree = {
 			factor = 3
 		}
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		available = {
 
 		}
@@ -3540,6 +3545,7 @@ focus_tree = {
 		}
 
 		allow_branch = {
+			always = no # bsmod change
 			has_dlc = "Waking the Tiger"
 		}
 

@@ -15,6 +15,8 @@ ideas = {
 			
 			modifier = {
 				drift_defence_factor = 0.5
+				send_volunteer_size = 6
+				air_volunteer_cap = 200
 			}
 			rule = {
 				can_create_factions = yes
@@ -53,6 +55,8 @@ ideas = {
 			modifier = {
 				political_power_gain = 1
 				drift_defence_factor = 0.5
+				send_volunteer_size = 9
+				air_volunteer_cap = 200
 			}
 			rule = {
 				can_create_factions = yes
