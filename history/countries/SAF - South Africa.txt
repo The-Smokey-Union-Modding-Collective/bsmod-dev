@@ -2,10 +2,24 @@
 
 oob = "SAF_1936"
 
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
+
 set_stability = 0.6
 set_war_support = 0.1
 
 set_research_slots = 3
+
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
 
 # Starting tech
 set_technology = {
