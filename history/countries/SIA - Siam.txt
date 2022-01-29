@@ -1,5 +1,12 @@
 ﻿capital = 289
 
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
+
 oob = "SIA_1936"
 
 set_research_slots = 3

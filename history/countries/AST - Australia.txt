@@ -1,6 +1,15 @@
-﻿capital = 285
+capital = 285
 
 oob = "AST_1936"
+
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
+
+set_research_slots = 3
 set_stability = 0.8
 set_war_support = 0.3
 
