@@ -9,6 +9,13 @@ if = {
 	}
 }
 
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
+
 if = {
 	limit = {
 		NOT = {

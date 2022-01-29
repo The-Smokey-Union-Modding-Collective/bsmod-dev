@@ -19,11 +19,6 @@ spriteTypes = {
 		texturefile = "gfx/leaders/ITA/Portrait_Italy_Tommy.dds"
 	}
 	
-	spriteType = {
-		name = "GFX_portrait_ita_scared_mussolini"
-		texturefile = "gfx/leaders/ITA/Portrait_Italy_Scared_Mussolini.dds"
-	}
-	
 	### ENG
 	
 	spriteType = {
