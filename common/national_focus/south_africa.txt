@@ -1652,10 +1652,9 @@
 				gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
 				traits = { brilliant_strategist media_personality swamp_fox urban_assault_specialist}
 				skill = 3
-    			attack_skill = 2
-
+    			attack_skill = 3
     			defense_skill = 4
-    			planning_skill = 1
+    			planning_skill = 2
    				 logistics_skill = 1
 			}
 		}
@@ -1698,9 +1697,9 @@
 				gfx = "GFX_RAJ_krishna_pillai"
 				traits = {old_guard brilliant_strategist media_personality desert_fox urban_assault_specialist panzer_leader infantry_leader commando}
 				skill = 6
-    			attack_skill = 5
+    			attack_skill = 6
     			defense_skill = 4
-    			planning_skill = 1
+    			planning_skill = 2
    				logistics_skill = 6
 			}
 		}

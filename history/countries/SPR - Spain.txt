@@ -1,5 +1,13 @@
 ﻿capital = 41
 
+create_intelligence_agency = {
+	name = "SIPM"
+	icon = "GFX_intelligence_agency_logo_spa"
+}
+
+add_command_power = 100
+
+
 oob = "SPR_1936"
 if = {
 	limit = { has_dlc = "Man the Guns" }
@@ -8,6 +16,13 @@ if = {
 		set_naval_oob = "SPR_1936_naval_legacy"
 	}
 }
+
+create_intelligence_agency = {
+	name = "BS Agency"
+	icon = "GFX_intelligence_agency_logo_bs"
+}
+
+add_command_power = 100
 
 if = {
 	limit = {
