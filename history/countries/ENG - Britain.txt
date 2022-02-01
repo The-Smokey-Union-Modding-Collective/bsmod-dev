@@ -2,8 +2,10 @@ capital = 126
 
 set_oob = "ENG_1936"
 
+set_country_flag = fuel_system_enabled # Fuel system enablement flag for the faction - set on faction leaders
+
 create_intelligence_agency = {
-	name = "MI6"
+	name = "MI6" 
 	icon = "GFX_intelligence_agency_logo_uk"
 }
 

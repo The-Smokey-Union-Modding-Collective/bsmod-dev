@@ -1,5 +1,7 @@
 capital = 64
 
+set_country_flag = fuel_system_enabled  # Fuel system enablement flag for the faction - set on faction leaders
+
 create_intelligence_agency = {
 	name = "Abwehr"
 	icon = "GFX_intelligence_agency_logo_ger"
