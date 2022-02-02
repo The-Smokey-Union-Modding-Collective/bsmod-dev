@@ -73,7 +73,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "whitepeace"	
-			position = {x=110 y=200}
+			position = {x=100 y=195}
 			spriteType = "GFX_relation_truce"
             		scale=1.8
 			pdx_tooltip = "WHITEPEACE"
@@ -84,7 +84,7 @@ guiTypes = {
 
 		buttonType = {
 			name = "award_states" 
-			position = {x=250 y=190}	
+			position = {x=245 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 13
 			pdx_tooltip = "TRANSFER_STATES"
@@ -92,14 +92,23 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "add_cores" 
-			position = {x=310 y=190}	
+			position = {x=295 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 6
 			pdx_tooltip = "ADD_CORES"
 			pdx_tooltip_delayed = "ADD_CORES_DELAYED"
-		}buttonType = {
+		}
+		buttonType = {
+			name = "add_compliance" 
+			position = {x=345 y=190}	
+			spriteType = "GFX_global_diplorequest_icons"
+            		frame = 14
+			pdx_tooltip = "ADD_COMPLIANCE"
+			pdx_tooltip_delayed = "ADD_COMPLIANCE_DELAYED"
+		}
+		buttonType = {
 			name = "annex_country" 
-			position = {x=370 y=190}	
+			position = {x=395 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 2
 			pdx_tooltip = "ANNEX_COUNTRY"
@@ -107,7 +116,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "puppet_country" 
-			position = {x=430 y=190}	
+			position = {x=445 y=190}	
 			spriteType = "GFX_global_diplorequest_icons"
             		frame = 1
 			pdx_tooltip = "PUPPET_COUNTRY"

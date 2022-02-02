@@ -103,6 +103,25 @@ scripted_gui = {
 					}
 				}
 			}
+
+			add_compliance_click = {
+				owner = {
+					for_each_loop = {
+						array = ROOT.marked_states
+						value = state
+						var:state= { set_compliance = 100 }
+					}
+					ROOT = {
+						for_each_scope_loop = {
+							array = marked_states
+							clear_variable = mark_status
+						}
+						clear_array = marked_states
+						clear_variable = first_marked_state
+					}
+				}
+			}
+
 			annex_country_click = {
 
 				owner = {

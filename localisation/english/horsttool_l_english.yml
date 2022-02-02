@@ -17,7 +17,10 @@
  TRANSFER_STATES:0 "§HTransfer States§!\nTransfer marked states to [This.Owner.GetName]\n\n"
  TRANSFER_STATES_DELAYED:0 ""
  
- ADD_CORES:0 "§HAdd cores§!\nAdd cores to marked states for [This.Owner.GetName]\n\n"
+ ADD_CORES:0 "§HAdd cores§!\nAdd 100% compliance to marked states for [This.Owner.GetName]\n\n"
+ ADD_CORES_DELAYED:0 ""
+
+ ADD_COMPLIANCE:0 "§HAdd 100% compliance§!\nAdd cores to marked states for [This.Owner.GetName]\n\n"
  ADD_CORES_DELAYED:0 ""
  
  ANNEX_COUNTRY:0 "§HAnnex§!\n[This.Owner.GetName] annexes the owner of the selected state\n\n"
