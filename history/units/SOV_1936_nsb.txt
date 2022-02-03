@@ -1813,12 +1813,12 @@ units = {
 
 ### Air Wings
 air_wings = {
-	# LVO Aviatsya Komandovaniya -- Leningrad
-	195 = { 
+	# MVO Aviatsya Komandovaniya
+	219 = {
 		# 15ya Istrebitel'nye Aviabrigada
 		fighter_equipment_0 = {
 			owner = "SOV" 
-			amount = 94
+			amount = 470
 		}
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
@@ -1827,92 +1827,22 @@ air_wings = {
 			callsign="SIEBOSGIRLFRIEND"
 			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
-		# 18ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
+				fighter_equipment_1 = {
 			owner = "SOV" 
-			amount = 60
+			amount = 188
 		}
-	}
-
-	# MVO Aviatsya Komandovaniya
-	219 = {
-		# 2ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 3ya Dal'nyaya Bombardirovochnye Aviabrigada
-		# 13ya Dal'nyaya Bombardirovochnye Aviabrigada
 		strat_bomber_equipment_1 =  {
 			owner = "SOV" 
-			amount = 48
-		}
-		# TODO -- 46ya Transporta Aviabrigada -- transport planes
-	}
-
-	# BOVO Aviatsya Komandovaniya -- Minsk
-	206 = {
-		# 8ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 14ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 94
+			amount = 72
 		}
 		# 16ya Bombardirovochnye Aviabrigada
 		tac_bomber_equipment_0 =  {
 			owner = "SOV" 
-			amount = 60
+			amount = 240
 		}
-	}
-
-	# KOVO Aviatsya Komandovaniya -- Kiev
-	202 = {
-		# 17ya Istrebitel'nye Aviabrigada
-		fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 94
-		}
-		# 1ya Bombardirovochnye Aviabrigada
-		# 10ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 120
-		}
-	}
-
-	# Dal'nevostochniy Aviatsya Komandovaniya -- Vladivostock	
-	408 = {
-		# 12ya Istrebitel'nye Aviabrigada
-		# 20ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 188
-		}
-		# 5ya Dal'nyaya Bombardirovochnye Aviabrigada
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 24
-		}
-	}
-
-	# VVS - KBF Aviatsya Komandovaniya -- Leningrad
-	195 = {
-		# 8ya VMF Aviabrigada
 		nav_bomber_equipment_1 = {
 			owner = "SOV" 
-			amount = 54
-		}
-	}
-	# VVS - BSF Aviatsya Komandovaniya -- Sevastopol
-	137 = {
-		# 4ya VMF Aviabrigada
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 54
+			amount = 108
 		}
 	}
 }
