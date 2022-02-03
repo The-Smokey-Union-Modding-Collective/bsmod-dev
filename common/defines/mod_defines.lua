@@ -28,7 +28,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 2.0			--vanilla=2
 NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 3.0		--vanilla=3	
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 1.0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 1.0		--vanilla=1
-NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=1.0
+NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=0.01
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -67,12 +67,12 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00	--vanilla=0.02
-NDefines.NNavy.NAVAL_INVASION_PRIORITY = 4        								-- Default convoy priority for naval invasions
-NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 4                                    	-- Default convoy priority for naval transports
-NDefines.NNavy.SUPPLY_PRIORITY = 1                                            	-- Default convoy priority for supplying units via sea
-NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5                                	-- Default convoy priority for export lend lease
-NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3                                    	-- Default convoy priority for export trade
-NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2                                    	-- Default convoy priority for resources shipped internally
+NDefines.NNavy.NAVAL_INVASION_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval invasions
+NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval transports
+NDefines.NNavy.SUPPLY_PRIORITY = 1              -- vanilla = 2; Default convoy priority for supplying units via sea
+NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5  -- vanilla = 3; Default convoy priority for export lend lease
+NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3     -- vanilla = 4; Default convoy priority for export trade
+NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2     -- vanilla = 5; Default convoy priority for resources shipped internally
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = -100	--vanilla=20
