@@ -6010,7 +6010,14 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_idea = SOV_desperate_measures_ns }
+			OR = {
+				NOT = { has_idea = SOV_desperate_measures_ns }
+				AND = { # Must have a defensive war with Germany AND lose 1 million men
+					has_defensive_war_with = GER
+					casualties_k > 1000
+				}
+				surrender_progress > 0.35
+			}
 		}
 		
 		search_filters = {FOCUS_FILTER_ARMY_XP}
