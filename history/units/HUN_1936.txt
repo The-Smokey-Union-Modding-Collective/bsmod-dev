@@ -250,10 +250,6 @@ air_wings = {
 			creator = "ITA"
 				amount = 72
 		}
-
-	}
-	154 = {
-		# 3. Légi Ezred -- Caproni Ca.101, WM-16 Budapest light bombers
 		CAS_equipment_1 = {
 			owner = "HUN" 
 			amount = 12
