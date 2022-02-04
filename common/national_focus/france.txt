@@ -75,7 +75,17 @@
 			factor = 1
 		}
 		available = {
-			
+			communism > 20
+			communism < 60
+			stability > 40
+			OR ={
+				has_idea = FRA_the_popular_front_tier1
+				has_idea = FRA_the_popular_front_tier2
+				has_idea = FRA_the_popular_front_tier3
+				has_idea = FRA_the_popular_front_tier4
+				has_idea = FRA_the_popular_front_tier5
+				has_idea = FRA_the_popular_front_tier6
+			}
 		}
 		
 		bypass = {
@@ -86,9 +96,11 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
+			add_stability = 0.05
+			add_political_power = 50
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
 			}
 		}
 	}
@@ -108,7 +120,17 @@
 			factor = 1
 		}
 		available = {
-			
+			communism > 20
+			communism < 60
+			stability > 40
+			OR ={
+				has_idea = FRA_the_popular_front_tier1
+				has_idea = FRA_the_popular_front_tier2
+				has_idea = FRA_the_popular_front_tier3
+				has_idea = FRA_the_popular_front_tier4
+				has_idea = FRA_the_popular_front_tier5
+				has_idea = FRA_the_popular_front_tier6
+			}
 		}
 		
 		bypass = {
@@ -122,6 +144,9 @@
 			add_timed_idea = {
 				idea = FRA_devalue_the_franc
 				days = 365
+			}
+			add_popularity = {
+
 			}
 		}
 	}
@@ -141,7 +166,17 @@
 			factor = 1
 		}
 		available = {
-			
+			communism > 20
+			communism < 60
+			stability > 40
+			OR ={
+				has_idea = FRA_the_popular_front_tier1
+				has_idea = FRA_the_popular_front_tier2
+				has_idea = FRA_the_popular_front_tier3
+				has_idea = FRA_the_popular_front_tier4
+				has_idea = FRA_the_popular_front_tier5
+				has_idea = FRA_the_popular_front_tier6
+			}
 		}
 		
 		bypass = {
@@ -152,10 +187,11 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
 			}
+			add_war_support = 0.05
 		}
 	}
 
@@ -174,7 +210,17 @@
 			factor = 1
 		}
 		available = {
-			
+			communism > 20
+			communism < 60
+			stability > 40
+			OR ={
+				has_idea = FRA_the_popular_front_tier1
+				has_idea = FRA_the_popular_front_tier2
+				has_idea = FRA_the_popular_front_tier3
+				has_idea = FRA_the_popular_front_tier4
+				has_idea = FRA_the_popular_front_tier5
+				has_idea = FRA_the_popular_front_tier6
+			}
 		}
 		
 		bypass = {
@@ -185,10 +231,11 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
 			}
+			add_stability = 0.1
 		}
 	}
 
@@ -220,9 +267,9 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_army_experience = 50
-			add_navy_experience = 50
-			add_air_experience = 50
+			army_experience = 50
+			navy_experience = 50
+			air_experience = 50
 		}
 	}
 
@@ -583,7 +630,7 @@
 				uses = 3
 				category = land_doctrine
 			}
-			add_idea = FRA_motorized_focus
+			add_ideas = FRA_motorized_focus
 		}
 	}
 
@@ -800,7 +847,7 @@
 				uses = 2
 				category = land_doctrine
 			}
-			add_army_experience = 50
+			army_experience = 50
 		}
 	}
 
@@ -866,13 +913,19 @@
 				limit = { 
 					has_idea = FRA_matignon_agreements1 
 				}
-				add_ideas = { FRA_matignon_agreements2a }
+				swap_ideas ={
+					remove_idea	= FRA_matignon_agreements1 
+					add_idea =  FRA_matignon_agreements2a 
+				}
 			}
 			else_if = {
 				limit = {
 					has_idea = FRA_matignon_agreements2b
 				}
-				add_ideas = { FRA_matignon_agreements3 }
+				swap_ideas ={
+					remove_idea	= FRA_matignon_agreements2b 
+					add_idea =  FRA_matignon_agreements3 
+				} 
 			}
 		}
 	}
@@ -907,13 +960,19 @@
 				limit = { 
 					has_idea = FRA_matignon_agreements1 
 				}
-				add_ideas = { FRA_matignon_agreements2b }
+				swap_ideas = {
+					remove_idea = FRA_matignon_agreements1
+					add_idea =  FRA_matignon_agreements2b 
+				}	
 			}
 			else_if = {
 				limit = {
 					has_idea = FRA_matignon_agreements2a
 				}
-				add_ideas = { FRA_matignon_agreements3 }
+				swap_ideas = {
+					remove_idea = FRA_matignon_agreements2a
+					add_idea =  FRA_matignon_agreements3 
+				}
 			}
 		}
 	}
@@ -978,6 +1037,15 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
+			if = {
+				limit = {
+					has_idea = FRA_french_depression3
+				}
+				swap_ideas = {
+					remove_idea = FRA_french_depression3
+					add_idea = FRA_french_depression2
+				}
+			}
 			random_owned_state = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
@@ -1191,10 +1259,16 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
+			if = {
+				limit = {
+					has_idea = FRA_french_depression2
+				}
+				swap_ideas = {
+					remove_idea = FRA_french_depression2
+					add_idea = FRA_french_depression1
+				}
 			}
+			add_stability = 0.2
 		}
 	}
 
@@ -1491,7 +1565,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_army_experience = 50
+			army_experience = 50
 		}
 	}
 
@@ -2048,10 +2122,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
-			}
+			add_ideas = FRA_national_council_of_the_resistance
 		}
 	}
 
@@ -2110,10 +2181,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
-			}
+			add_ideas = FRA_patriots_of_france
 		}
 	}
 
@@ -2142,9 +2210,10 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
+			add_ideas = FRA_communist_cooperation
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
 			}
 		}
 	}
@@ -2237,10 +2306,7 @@
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_timed_idea = {
-				idea = FRA_devalue_the_franc
-				days = 365
-			}
+			add_ideas = FRA_colonial_recruitment
 		}
 	}
 

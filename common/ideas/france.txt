@@ -86,7 +86,7 @@ ideas = {
 
 		FRA_the_popular_front_tier1 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -109,7 +109,7 @@ ideas = {
 
 		FRA_the_popular_front_tier2 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -132,7 +132,7 @@ ideas = {
 
 		FRA_the_popular_front_tier3 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -152,7 +152,7 @@ ideas = {
 
 		FRA_the_popular_front_tier4 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -172,7 +172,7 @@ ideas = {
 
 		FRA_the_popular_front_tier5 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -195,7 +195,7 @@ ideas = {
 
 		FRA_the_popular_front_tier6 = {
 			picture = usa_great_depression_3
-			name = FRA_french_depression
+			name = FRA_the_popular_front_name
 			allowed = {
 				original_tag = FRA
 				always = no
@@ -370,7 +370,7 @@ ideas = {
 			}
 		}
 		
-		FRA_womens_suffrage = {
+		FRA_womens_movements = {
 			picture = generic_constitutional_guarantees
 			allowed = {
 				original_tag = FRA
@@ -384,7 +384,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				political_power_gain = 0.25
+				political_power_factor = 0.15
+				recruitable_population = 0.02
+				recruitable_population_factor = 0.1
 			}
 		}
 
@@ -996,6 +998,26 @@ ideas = {
 				resistance_growth_on_our_occupied_states  = 0.1 
 			}
 		}
+		FRA_patriots_of_france = {
+			picture = hol_haven_of_tolerance
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			available = {
+				communism < 0.2 #switched out at 15%
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_growth_on_our_occupied_states = 0.1 
+			}
+		}
 		FRA_communist_cooperation = {
 			picture = hol_haven_of_tolerance
 			allowed = {
@@ -1014,60 +1036,6 @@ ideas = {
 			
 			modifier = {
 				resistance_growth_on_our_occupied_states = 0.1 
-				communism_drift = 0.05
-			}
-		}
-		FRA_communist_cooperation_2 = {
-			name = FRA_communist_cooperation
-			picture = hol_haven_of_tolerance
-			allowed = {
-				original_tag = FRA 
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				resistance_growth_on_our_occupied_states = 0.1 
-			}
-		}
-		FRA_industrialist_connections = {
-			picture = man_five_year_plan_industry
-			allowed = {
-				original_tag = FRA 
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				compliance_growth_on_our_occupied_states = -0.15
-			}
-		}
-		FRA_civil_and_military_organization = {
-			picture = FRA_scw_intervention_nationalists_focus
-			allowed = {
-				original_tag = FRA 
-				always = no
-			}
-
-			allowed_civil_war = {
-				has_government = democratic
-			}
-
-			removal_cost = -1
-			
-			modifier = {
-				compliance_growth_on_our_occupied_states = -0.15
-				resistance_growth_on_our_occupied_states  = 0.05
 			}
 		}
 		FRA_national_council_of_the_resistance = {
@@ -1084,8 +1052,9 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				compliance_growth_on_our_occupied_states = -0.25
-				resistance_growth_on_our_occupied_states  = 0.1
+				compliance_growth_on_our_occupied_states = -0.4
+				resistance_growth_on_our_occupied_states  = 0.3
+				subversive_activites_upkeep = 0.5
 			}
 		}
 		FRA_national_uprising = {
@@ -1357,7 +1326,7 @@ ideas = {
 			}
 		}
 
-		FRA_national_mobilization_focus = {
+		FRA_army_of_free_france = {
 			allowed = {
 				always = no
 			}
@@ -1369,8 +1338,27 @@ ideas = {
 			modifier = {
 				conscription = 0.01
 				army_morale_factor = 0.10
+				supply_consumption_factor = -0.10
 			}
-		}		
+		}
+
+		FRA_army_of_free_france_tanks = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			modifier = {
+				conscription = 0.01
+				army_morale_factor = 0.15
+				supply_consumption_factor = -0.15
+				army_org_factor = 0.05
+			}
+		}
+
 		FRA_support_the_centre_focus = {
 				picture = generic_democratic_drift_bonus				
 				allowed = {
@@ -1494,6 +1482,7 @@ ideas = {
 		}
 
 		FRA_matignon_agreements1 = {
+			name = FRA_matignon_agreements
 			picture = generic_production_bonus
 			allowed = {
 				always = no
@@ -1514,6 +1503,7 @@ ideas = {
 		}
 
 		FRA_matignon_agreements2a = {
+			name = FRA_matignon_agreements
 			picture = generic_production_bonus
 			allowed = {
 				always = no
@@ -1534,6 +1524,7 @@ ideas = {
 		}
 
 		FRA_matignon_agreements2b = {
+			name = FRA_matignon_agreements
 			picture = generic_production_bonus
 			allowed = {
 				always = no
@@ -1553,6 +1544,7 @@ ideas = {
 		}
 
 		FRA_matignon_agreements3 = {
+			name = FRA_matignon_agreements
 			picture = generic_production_bonus
 			allowed = {
 				always = no
@@ -1572,6 +1564,7 @@ ideas = {
 		}
 
 		FRA_matignon_agreements4 = {
+			name = FRA_matignon_agreements
 			picture = generic_production_bonus
 			allowed = {
 				always = no
