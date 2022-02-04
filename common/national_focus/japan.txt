@@ -1736,7 +1736,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_strike_south_doctrine
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -1748,6 +1748,7 @@ focus_tree = {
 			SIA = {
 				is_ai = yes
 			}
+			
 		}
 
 		bypass = {
@@ -1778,6 +1779,12 @@ focus_tree = {
 					type = infrastructure
 					level = 5
 					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					level = 5
+					instant_build = yes
+					province = 12131
 				}
 			}
 			289 = {
@@ -1835,6 +1842,26 @@ focus_tree = {
 					level = 10
 					instant_build = yes
 					province = 4401
+				}
+			}
+			build_railway = {
+				path = {
+					1488 10371 4496 10456  4613 7218 10103  4075
+				}
+			}
+			build_railway = { 
+				path = {
+					10137 1300 4334 4405 10162
+				}
+			}
+			build_railway = { 
+				path = {
+					4401 10261 12260 7376 7432
+				}
+			}
+			build_railway = { 
+				path = {
+					7236 12131
 				}
 			}
 		}
