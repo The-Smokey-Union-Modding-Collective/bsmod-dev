@@ -234,4 +234,8 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 6183;9116;impassable;-1;-1;-1;-1;-1;;Lappland
 11142;9116;impassable;-1;-1;-1;-1;-1;;Lappland
 9140;9116;impassable;-1;-1;-1;-1;-1;;Lappland
+4135;7153;impassable;-1;-1;-1;-1;-1;;Gibraltar
+4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
+13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
 -1;-1;;-1;-1;-1;-1;-1;-1;

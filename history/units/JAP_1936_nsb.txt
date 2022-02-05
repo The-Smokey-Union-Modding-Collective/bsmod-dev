@@ -659,7 +659,7 @@ air_wings = {
 		# 1 Hiko Rentai -- Kawasaki Ki-10
 		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 216
+			amount = 72
 		}
 		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
 			modifier="fighter_genius"
@@ -668,32 +668,91 @@ air_wings = {
 			callsign="CHIHA"
 			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
 		}
+		# 16 Hiko Rentai -- Kawasaki Ki-10
+		fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 72
+		}
 		# 6 Hiko Rentai -- Mitsubishi Ki-2
 		CAS_equipment_1 =  {
 			owner = "JAP" 
-			amount = 162
+			amount = 54
 		}
 		# 9 Hiko Rentai -- Mitsubishi Ki-1
 		tac_bomber_equipment_0 =  {
 			owner = "JAP" 
 			amount = 54
 		}
+	}
 
-		# 12 Kokutai -- Nakajima A4N1
-		cv_fighter_equipment_0 = {
+	# 2 Hikodan -- Dalian
+	716 = {
+		# 3 Hiko Rentai -- Kawasaki Ki-10
+		fighter_equipment_0 = {
 			owner = "JAP" 
-			amount = 84
+			amount = 72
 		}
+		# 5 Hiko Rentai -- Kawasaki Ki-3
+		CAS_equipment_1 =  {
+			owner = "JAP" 
+			amount = 54
+		}
+	}
+
+	# 3 Hikodan -- Taiwan
+	524 = {
+		# 10 Hiko Rentai -- Kawasaki Ki-3
+		CAS_equipment_1 =  {
+			owner = "JAP" 
+			amount = 54
+		}
+
+	}
+
+	### IJN Air Forces ###
+	# 1 Rengo Kokutai -- Taiwan
+	524 = {
 		# Kizarazu Kokutai -- Aichi D1A2
 		cv_CAS_equipment_1 = {
 			owner = "JAP" 
-			amount = 129
+			amount = 60
+		}
+		# Kanoya Kokutai -- Aichi D1A2
+		cv_CAS_equipment_1 = {
+			owner = "JAP" 
+			amount = 60
+		}
+	}
+
+	# 2 Rengo Kokutai -- Taiwan
+	524 = {
+		# 12 Kokutai -- Nakajima A4N1
+		cv_fighter_equipment_0 = {
+			owner = "JAP" 
+			amount = 72
 		}
 		# 13 Kokutai -- Mitsubishi B2M2
 		cv_nav_bomber_equipment_1 = {
 			owner = "JAP" 
-			amount = 57
+			amount = 48
 		}
+	}
+
+	### Akagi CAG -- Hiroshima (while Akagi is refit)
+	529 = { 
+		cv_fighter_equipment_0 =  {
+			owner = "JAP" 
+			amount = 12
+		}
+		cv_CAS_equipment_1 = {
+			owner = "JAP" 
+			amount = 9
+		}
+		cv_nav_bomber_equipment_1 =  {
+			owner = "JAP" 
+			amount = 9
+		}
+
 	}
 }
 
