@@ -18,13 +18,6 @@ if = {
 
 set_research_slots = 3
 
-create_intelligence_agency = {
-	name = "PE TIEDOS"
-	icon = "GFX_intelligence_agency_logo_fin"
-}
-
-add_command_power = 100
-
 recruit_character = FIN_risto_heikki_ryti
 recruit_character = FIN_aimo_aaltonen
 recruit_character = FIN_vilho_annala

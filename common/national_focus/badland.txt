@@ -1,8 +1,8 @@
-﻿#####SIAM#####
+﻿#####BADLAND#####
 
 
 focus_tree = {
-	id = bad_focus
+	id = emu_focus
 	
 	country = {
 		factor = 0

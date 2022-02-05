@@ -2976,9 +2976,7 @@ focus_tree = {
 		relative_position_id = GER_rhineland
 		cost = 10
 		available = {
-			is_subject = no
-			NOT = { has_government = communism }
-			NOT = { is_in_faction_with = SOU }
+			has_completed_focus = GER_danzig_or_war
 		}
 		bypass = {
 
