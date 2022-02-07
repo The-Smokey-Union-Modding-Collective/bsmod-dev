@@ -14,6 +14,7 @@ NDefines.NCountry.SPECIAL_FORCES_CAP_MIN = 40	--vanilla=24
 NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0			--vanilla=0.2
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0	--vanilla=0.1
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00007			--vanilla=0.0005
+NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	--vanilla=100000

@@ -21,4 +21,11 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_anschluss_easteregg.dds"
 	}
 	
+	### 6 hour war: capitulation of denmark
+	
+	spriteType = {
+		name = "GFX_news_event_danish_surrender"
+		texturefile = "gfx/event_pictures/news_event_danish_surrender.dds"
+	}
+	
 }
