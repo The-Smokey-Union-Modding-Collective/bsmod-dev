@@ -118,8 +118,6 @@ GER_operations_category = {
 				target = NOR
 				type = annex_everything
 			}
-			ENG = { add_to_faction = DEN }
-			ENG = { add_to_faction = NOR }
 		}
 	}
 	

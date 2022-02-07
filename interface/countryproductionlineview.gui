@@ -1591,7 +1591,7 @@ guiTypes = {
 		iconType = {
 			name ="carrier_fighter_icon"
 			spriteType = "GFX_airwing_carrier_icon"
-			position = { x=40 y=88 }
+			position = { x=20 y=88 }
 			centerposition = yes
 			alwaystransparent = yes
 		}

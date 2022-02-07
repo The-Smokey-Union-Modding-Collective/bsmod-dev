@@ -2168,44 +2168,6 @@ focus_tree = {
 			}
 		}
 	}
-	
-	focus = {
-		id = AST_third_emu_war
-		icon = GFX_focus_ast_third_emu_war
-		prerequisite = { focus = AST_uranium_mining }
-		x = 0
-		y = 1
-		relative_position_id = AST_uranium_mining
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-			has_tech = nuclear_reactor
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
-
-		completion_reward = {
-			annex_country = {
-				target = EMU
-			}
-			add_ideas = AST_third_emu_war
-			674 = {
-				add_extra_state_shared_building_slots = 1
-			}
-		}
-	}
 
 	############################
 	#### WAR PREP SECTION ######

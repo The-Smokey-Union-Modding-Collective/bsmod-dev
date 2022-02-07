@@ -28,11 +28,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_fra_protected_by_siebo_line.dds"
 	}
 	
-	### (Australia) Third Emu War
-	
-	spriteType = {
-		name = "GFX_idea_AST_third_emu_war"
-		texturefile = "gfx/interface/ideas/idea_ast_third_emu_war.dds"
-	}
-	
 }

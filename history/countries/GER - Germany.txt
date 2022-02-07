@@ -414,10 +414,6 @@ recruit_character = GER_hermann_hoth
 recruit_character = GER_hugo_sperrle
 recruit_character = GER_johannes_blaskowitz
 recruit_character = GER_karl_donitz
-recruit_character = GER_hinrich_laudrup
-recruit_character = GER_ulrich_wrangel
-recruit_character = GER_klaus_hoffmann
-recruit_character = GER_johannes_vonreinhartz
 recruit_character = GER_kurt_student
 recruit_character = GER_ludwig_beck
 recruit_character = GER_maximilian_von_weichs
@@ -483,14 +479,7 @@ if = {
 		available_to_spy_master = yes
 		nationalities = { GER }
 	}
-	create_operative_leader = {
-		name = "Hagen Forster"
-		GFX = GFX_portrait_hagen_forster
-		traits = { operative_infiltrator operative_master_interrogator operative_linguist }
-		bypass_recruitment = no
-		available_to_spy_master = yes
-		nationalities = { GER }
-	}
+
 	create_operative_leader = {
 		name = "Nikolaus Ritter"
 		GFX = GFX_portrait_nikolaus_ritter

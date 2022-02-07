@@ -1933,12 +1933,6 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_building_level = {
-					type = coastal_bunker
-					level = 5
-					province = 13228
-					instant_build = yes
-				}
-				set_building_level = {
 					type = radar_station
 					level = 5
 					instant_build = yes
@@ -5701,7 +5695,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_the_raj
+		icon = GFX_focus_smiling_buddha
 		x = 0
 		y = 1
 		relative_position_id = uk_colonial_focus
@@ -5736,7 +5730,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_pacific_dominions
+		icon = GFX_focus_NZL_bob_semple_tank
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus
@@ -5791,7 +5785,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_atlantic_dominions
+		icon = GFX_focus_hol_united_netherlands
 		x = 2
 		y = 1
 		relative_position_id = uk_colonial_focus

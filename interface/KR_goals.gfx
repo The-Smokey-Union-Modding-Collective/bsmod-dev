@@ -63,31 +63,4 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/focus_usa_giant_wakes.dds"
 	}
 	
-	### Third Emu War
-	
-	spriteType = {
-		name = "GFX_focus_ast_third_emu_war"
-		texturefile = "gfx/interface/goals/focus_ast_third_emu_war.dds"
-	}
-	
-	### Develop Atlantic Dominions
-	
-	spriteType = {
-		name = "GFX_focus_eng_develop_atlantic_dominions"
-		texturefile = "gfx/interface/goals/focus_eng_develop_atlantic_dominions.dds"
-	}
-	
-	### Develop the Raj
-	
-	spriteType = {
-		name = "GFX_focus_eng_develop_the_raj"
-		texturefile = "gfx/interface/goals/focus_eng_develop_the_raj.dds"
-	}
-	
-	### Develop Pacific Dominions
-	
-	spriteType = {
-		name = "GFX_focus_eng_develop_pacific_dominions"
-		texturefile = "gfx/interface/goals/focus_eng_develop_pacific_dominions.dds"
-	}
 }

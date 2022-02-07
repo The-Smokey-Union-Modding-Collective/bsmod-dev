@@ -914,39 +914,6 @@ focus_tree = {
 				uses = 2
 				category = industry
 			}
-			46 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			81 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			82 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			79 = {
-				add_extra_state_shared_building_slots = 2
-				add_building_construction = {
-					type = industrial_complex
-					level = 1
-					instant_build = yes
-				}
-			}
-			
 		}
 	}
 
@@ -1011,10 +978,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ROM_national_defense_industry_AF1
@@ -1028,10 +995,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 3
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = ROM_national_defense_industry_AF2
@@ -1068,24 +1035,6 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = ROM_agrarian_reform
-			46 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			81 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			82 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			83 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			84 = {
-				add_extra_state_shared_building_slots = 1
-			}
-			79 = {
-				add_extra_state_shared_building_slots = 1
-			}
 		}
 	}
 
@@ -1115,35 +1064,84 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = ROM_danubian_transport_network_Inf
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = ROM_danubian_transport_network_Inf_2
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_state = {
+				limit = {
+					has_state_flag = ROM_danubian_transport_network_Inf_3
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
 
 		completion_reward = {
-			81 = {
-				set_building_level = {
+			random_owned_controlled_state = {
+				prioritize = { 46 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 1
 					instant_build = yes
 				}
+				set_state_flag = ROM_danubian_transport_network_Inf
 			}
-			82 = {
-				set_building_level = {
+			random_owned_controlled_state = {
+				prioritize = { 81 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 1
 					instant_build = yes
 				}
+				set_state_flag = ROM_danubian_transport_network_Inf_2
 			}
-			83 = {
-				set_building_level = {
+			random_owned_controlled_state = {
+				prioritize = { 82 }
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 0
+					}
+				}
+				add_building_construction = {
 					type = infrastructure
-					level = 5
+					level = 1
 					instant_build = yes
 				}
-			}
-			84 = {
-				set_building_level = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
+				set_state_flag = ROM_danubian_transport_network_Inf_3
 			}
 		}
 	}
@@ -1152,6 +1150,7 @@ focus_tree = {
 		id = ROM_malaxa
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = ROM_danubian_transport_network }
+		mutually_exclusive = { focus = ROM_invite_foreign_motor_companies }
 		x = 0
 		y = 3
 		relative_position_id = ROM_civil_works
@@ -1174,23 +1173,38 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			46 = {
-				add_extra_state_shared_building_slots = 3
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = ROM_malaxa_IC
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
 			}
-			79 = {
-				add_extra_state_shared_building_slots = 3
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 79 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = ROM_malaxa_IC
 			}
 		}
 	}
@@ -1199,6 +1213,7 @@ focus_tree = {
 		id = ROM_invite_foreign_motor_companies
 		icon = GFX_goal_generic_army_motorized
 		prerequisite = { focus = ROM_danubian_transport_network }
+		mutually_exclusive = { focus = ROM_malaxa }
 		x = 2
 		y = 3
 		relative_position_id = ROM_civil_works
@@ -1224,22 +1239,6 @@ focus_tree = {
 
 		completion_reward = {
 			country_event = DOD_romania.120
-			81 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
-			82 = {
-				add_extra_state_shared_building_slots = 3
-				add_building_construction = {
-					type = arms_factory
-					level = 2
-					instant_build = yes
-				}
-			}
 		}
 	}
 
@@ -1269,10 +1268,12 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			84 = {
-				add_extra_state_shared_building_slots = 3
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = ROM_hunedoara_steel_works_IC
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
@@ -1280,19 +1281,32 @@ focus_tree = {
 				}
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 8
 				}
 			}
-			83 = {
-				add_extra_state_shared_building_slots = 3
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 84 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV } 
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = ROM_hunedoara_steel_works_IC
 				add_resource = {
 					type = steel
-					amount = 16
+					amount = 12
 				}
 			}
 		}
@@ -1324,23 +1338,38 @@ focus_tree = {
 		continue_if_invalid = no
 		available_if_capitulated = no
 		search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			81 = {
-				add_extra_state_shared_building_slots = 3
+		complete_tooltip = {
+			random_state = {
+				limit = {
+					has_state_flag = ROM_invest_in_the_iar_AF1
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
 			}
-			82 = {
-				add_extra_state_shared_building_slots = 3
+		}
+
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 81 }
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					free_building_slots = {
+						building = arms_factory
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
 					level = 2
 					instant_build = yes
 				}
+				set_state_flag = ROM_invest_in_the_iar_AF1
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = ROM_iar
