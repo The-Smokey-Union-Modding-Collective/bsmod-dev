@@ -267,6 +267,7 @@ ideas = {
 			visible = { has_tech = trench_warfare }
 			ledger = army
 			modifier = {
+				unit_jaeger_design_cost_factor = -1
 				unit_marine_design_cost_factor = -1
 				unit_mountaineers_design_cost_factor = -1
 				unit_paratrooper_design_cost_factor = -1
