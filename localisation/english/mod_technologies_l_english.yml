@@ -14,3 +14,4 @@
  jaeger_jungle_desc:0 "Although more effective at fighting in rough terrain, rangers still lack the equipment and training to sustain combat in harsher climates, common in the east and in Africa. With new tactics and equipment our rangers will become much more effective at fighting in these conditions" 
  jaeger_jungle2:0 "Harsh climate specialization II"
  jaeger_jungle2_desc:0 "Further improvements to ranger tactics, training and equipment in harsh climates will make these troops fully capable of assaulting and defending in these conditions."
+ modifier_unit_jaeger_design_cost_factor:0 "Rangers Unit Design Cost"
