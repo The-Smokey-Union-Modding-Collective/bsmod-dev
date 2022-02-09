@@ -4,99 +4,57 @@ on_actions = {
 			every_country = {
 				if = {
 					limit = {
-						land_doctrine_level > 0
+						has_tech = mobile_warfare
 					}
-					if = {
-						limit = {
-							has_tech = mobile_warfare
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_grand_battle_plan
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_superior_firepower
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mass_assault
-						}
+					add_doctrine_cost_reduction = {
+						name = STARTING_COST_REDUCTION
+						cost_reduction = 0.5
+						uses = 1
+						category = first_land_doctrine
 					}
-					else_if = {
-						limit = {
-							has_tech = superior_firepower
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_grand_battle_plan
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mobile_warfare
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mass_assault
-						}
+				}
+				else_if = {
+					limit = {
+						has_tech = superior_firepower
 					}
-					else_if = {
-						limit = {
-							has_tech = grand_battle_plan
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_superior_firepower
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mobile_warfare
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mass_assault
-						}
+					add_doctrine_cost_reduction = {
+						name = STARTING_COST_REDUCTION
+						cost_reduction = 0.5
+						uses = 1
+						category = first_land_doctrine
 					}
-					else_if = {
-						limit = {
-							has_tech = mass_assault
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_superior_firepower
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_mobile_warfare
-						}
-						add_doctrine_cost_reduction = {
-							name = STARTING_COST_REDUCTION
-							cost_reduction = 0.5
-							uses = 1
-							category = cat_grand_battle_plan
-						}
+				}
+				else_if = {
+					limit = {
+						has_tech = grand_battle_plan
+					}
+					add_doctrine_cost_reduction = {
+						name = STARTING_COST_REDUCTION
+						cost_reduction = 0.5
+						uses = 1
+						category = first_land_doctrine
+					}
+				}
+				else_if = {
+					limit = {
+						has_tech = mass_assault
+					}
+					add_doctrine_cost_reduction = {
+						name = STARTING_COST_REDUCTION
+						cost_reduction = 0.5
+						uses = 1
+						category = first_land_doctrine
+					}
+				}
+				else_if = {
+					limit = {
+						land_doctrine_level < 1
+					}
+					add_doctrine_cost_reduction = {
+						name = STARTING_COST_REDUCTION
+						cost_reduction = 0.5
+						uses = 1
+						category = first_land_doctrine
 					}
 				}
 			}
