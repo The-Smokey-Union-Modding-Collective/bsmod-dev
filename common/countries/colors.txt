@@ -1,5 +1,9 @@
 #reload countrycolors
 
+EMU = {
+	color = rgb { 57 143 97 }
+	color_ui = rgb { 74 186 126 }
+}
 GER = {
 	color = HSV { 0.1 0.15 0.4 }
 	color_ui = rgb { 138 155 116 }
@@ -13,8 +17,8 @@ SOV = {
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
-	color = rgb { 36 132 247 }
-	color_ui = rgb { 47 172 255 }
+	color = rgb { 111 71 71 }
+	color_ui = rgb { 144 92 92 }
 }
 FRA = {
 	color = rgb { 57 113 228 }
@@ -62,8 +66,8 @@ ITA = {
 	color_ui = rgb { 87 165 82 }
 }
 ROM = {
-	color = rgb { 249 126 98 }
-	color_ui = rgb { 255 164 127 }
+	color = rgb { 215 196 72 }
+	color_ui = rgb { 255 255 120 }
 }
 YUG = {
 	color = rgb { 72 73 126 }
@@ -86,8 +90,8 @@ ALB = {
 	color_ui = rgb { 194 59 133 }
 }
 NOR = {
-	color = rgb { 111 71 71 }
-	color_ui = rgb { 144 92 92 }
+	color = rgb { 36 132 247 }
+	color_ui = rgb { 47 172 255 }
 }
 DEN = {
 	color = rgb { 153 116 93 }
@@ -110,8 +114,8 @@ IRE = {
 	color_ui = rgb { 104 207 117 }
 }
 HUN = {
-	color = rgb { 215 196 72 }
-	color_ui = rgb { 255 255 120 }
+	color = rgb { 249 126 98 }
+	color_ui = rgb { 255 164 127 }
 }
 AFG = {
 	color = rgb { 64 160 167 }
