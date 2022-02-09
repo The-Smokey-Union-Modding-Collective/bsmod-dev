@@ -93,6 +93,7 @@ technology_categories = {
 	cat_production
 	cat_synth_rubber
 	cat_synth_oil
+	first_land_doctrine
 }
 
 technology_folders = {
