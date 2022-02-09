@@ -34,6 +34,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
+			first_land_doctrine
 		}
 		
 		ai_will_do = {
@@ -937,6 +938,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_superior_firepower
+			first_land_doctrine
 		}
 
 		
@@ -1823,6 +1825,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
+			first_land_doctrine
 		}
 
 		
@@ -2628,6 +2631,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_mass_assault
+			first_land_doctrine
 		}
 
 		
