@@ -50,6 +50,23 @@ NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.107 --vanilla=0.25
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
+NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
+0.0, -- AIR_SUPERIORITY
+0.0, -- CAS
+0.0, -- INTERCEPTION
+0.0, -- STRATEGIC_BOMBER
+0.0, -- NAVAL_BOMBER
+0.0, -- DROP_NUKE
+0.0, -- PARADROP
+0.0, -- NAVAL_KAMIKAZE
+0.0, -- PORT_STRIKE
+300, -- ATTACK_LOGISTICS vanilla=0.0
+0.2, -- AIR_SUPPLY
+0.0, -- TRAINING
+0.0, -- NAVAL_MINES_PLANTING
+0.0, -- NAVAL_MINES_SWEEPING
+0.0, -- MISSION_RECON
+}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
