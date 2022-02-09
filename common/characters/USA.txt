@@ -1813,7 +1813,7 @@ characters={
 			idea_token = usa_william_donovan
 			available  = {
 				has_intelligence_agency  = yes 
-				threat > 0.500
+				#threat > 0.500 # bsmod change
 			}
 			allowed  = {
 				original_tag  = USA
