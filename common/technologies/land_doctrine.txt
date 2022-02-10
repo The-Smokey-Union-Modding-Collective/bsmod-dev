@@ -1782,6 +1782,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
+			first_land_doctrine
 		}
 
 		
@@ -1825,7 +1826,6 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
-			first_land_doctrine
 		}
 
 		
