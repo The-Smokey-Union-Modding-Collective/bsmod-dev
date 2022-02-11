@@ -12,13 +12,13 @@ ideas = {
 			picture = eng_preparing_the_second_front
 			equipment_bonus = {
 				motorized_equipment = {
-					build_cost_ic = -0.2 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				mechanized_equipment = {
-					build_cost_ic = -0.2 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				amphibious_mechanized_equipment = {
-					build_cost_ic = -0.2 instant = yes
+					build_cost_ic = -0.1 instant = yes
 				}
 				motorized_rocket_equipment = {
 					build_cost_ic = -0.2 instant = yes
