@@ -157,7 +157,7 @@ guiTypes = {
 				spriteType = "GFX_BPT_order_area_defense_btn"
 				clicksound = click_battleplan
 				oversound = ui_menu_over
-				shortcut = "v"
+				#shortcut = "v"
 			}
 
 			buttonType = {

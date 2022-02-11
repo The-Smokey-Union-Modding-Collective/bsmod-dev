@@ -1057,12 +1057,12 @@ country_event = {
 					capital_scope = {
 						NOT = {
 							state = 16
-							state = 635
+							state = 539
 						}
 					}
-					controls_state = 635
+					controls_state = 539
 				}
-				set_capital = { state = 635 }
+				set_capital = { state = 539 }
 			}
 			539 = {
 				set_building_level = {

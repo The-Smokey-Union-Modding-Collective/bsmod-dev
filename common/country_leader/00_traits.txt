@@ -4328,6 +4328,8 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				reliability = 0.05
+				soft_attack = 0.025
+				hard_attack = 0.025
 			}
 		}
 		
@@ -4521,6 +4523,20 @@ leader_traits = {
 		
 		ai_will_do = {
 			factor = 1
+		}
+		equipment_bonus = {
+			carrier = {
+				carrier_size = 0.1 naval_range = 0.1
+			}
+			capital_ship = {
+				naval_speed = 0.05 hg_attack = 0.1
+			}
+			screen_ship = {
+				naval_speed = 0.05 torpedo_attack = 0.1
+			}
+			submarine = {
+				torpedo_attack = 0.1
+			}
 		}
 	}
 	
