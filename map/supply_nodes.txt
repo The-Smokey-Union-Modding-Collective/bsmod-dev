@@ -707,10 +707,14 @@
 1 13087 
 1 13089 
 1 13230 
-1 12322 # Burma
+1 12322 #Burma
 1 4454
 1 10404 #China
 1 6999 
 1 7631
 1 12019
 1 2015 
+1 13228 #Gibraltar West
+1 1071 #El Alamein
+1 1149 #Tripoli
+1 11954 #Benghazi

@@ -34,6 +34,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_mobile_warfare
+			first_land_doctrine
 		}
 		
 		ai_will_do = {
@@ -937,6 +938,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_superior_firepower
+			first_land_doctrine
 		}
 
 		
@@ -1780,6 +1782,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_grand_battle_plan
+			first_land_doctrine
 		}
 
 		
@@ -2628,6 +2631,7 @@ technologies = {
 		categories = {
 			land_doctrine
 			cat_mass_assault
+			first_land_doctrine
 		}
 
 		
@@ -3317,10 +3321,10 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		infantry = {
-			combat_width = -0.25
+			combat_width = -0.4
 		}
 
-		land_reinforce_rate = 0.05		
+		land_reinforce_rate = 0.15		
 		
 		path = {
 			leads_to_tech = guerilla_warfare

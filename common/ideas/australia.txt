@@ -1,6 +1,25 @@
 ideas = {
 
 	country = {
+		AST_third_emu_war = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = AST_third_emu_war
+
+			modifier = {
+				production_speed_nuclear_reactor_factor = 0.5
+				nuclear_production_factor = 0.5
+			}
+		}
 		AST_standard_gauge_railway = {
 
 			allowed = {
