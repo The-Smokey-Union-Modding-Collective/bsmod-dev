@@ -35,9 +35,9 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 8	--vanilla=20
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 2--vanilla=5
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 4	--vanilla=10
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0	--vanilla=20
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0--vanilla=5
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0	--vanilla=10
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999		--vanilla=500
