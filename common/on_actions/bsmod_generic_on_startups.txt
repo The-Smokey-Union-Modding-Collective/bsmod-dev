@@ -1,7 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
-			every_country = {
+			every_country = { # Land Doctrine cost reduction
 				if = {
 					limit = {
 						has_tech = mobile_warfare
@@ -46,7 +46,7 @@ on_actions = {
 						category = first_land_doctrine
 					}
 				}
-				else_if = {
+				else_if = { # handles the case where there is no current land doctrine
 					limit = {
 						land_doctrine_level < 1
 					}
@@ -56,6 +56,26 @@ on_actions = {
 						uses = 1
 						category = first_land_doctrine
 					}
+				}
+			}
+			every_country = { # Add 100% compliance to every state that isn't owned by ITA or JAP
+				limit = {
+					NOT = {
+						OR = {
+							original_tag = ITA
+							original_tag = JAP
+						}
+					}
+					OR = {
+						original_tag = ENG
+						original_tag = FRA
+					}
+					any_owned_state = {
+						has_resistance = yes
+					}
+				}
+				every_controlled_state = {
+					set_compliance = 100
 				}
 			}
 		}
