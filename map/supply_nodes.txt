@@ -715,3 +715,6 @@
 1 12019
 1 2015 
 1 13228 #Gibraltar West
+1 1071 #El Alamein
+1 1149 #Tripoli
+1 11954 #Benghazi
