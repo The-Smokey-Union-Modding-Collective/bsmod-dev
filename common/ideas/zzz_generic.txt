@@ -101,6 +101,56 @@ ideas = {
 
 	# Special ones that can be applied on other countries through focus system.
 	country = {
+	
+		mod_scw_axis_minor = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_bonus
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 1
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		mod_scw_allies_minor = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_democratic_drift_bonus
+			modifier = {
+				send_volunteers_tension = -1
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		mod_scw_allies_major = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = generic_victors_of_ww1
+			modifier = {
+				send_volunteers_tension = -1
+				air_volunteer_cap = 200
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
 
 		mod_improved_worker_conditions = {
 		

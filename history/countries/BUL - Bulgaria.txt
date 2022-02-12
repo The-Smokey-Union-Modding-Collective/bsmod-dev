@@ -52,6 +52,7 @@ if = { #DLC
 		BUL_imro_01
 		volunteer_only
 	}
+	add_ideas = mod_scw_axis_minor
 
 	#Army limitations due to Treaty of Neuilly sur Seine
 	set_rule = { #DLC

@@ -55,6 +55,7 @@ if = {
 		disarmed_nation
 		HUN_treaty_of_triannon
 	}
+	add_ideas = mod_scw_axis_minor
 }
 
 if = {

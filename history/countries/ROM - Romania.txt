@@ -123,6 +123,7 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
+	add_ideas = mod_scw_axis_minor
 	give_guarantee = CZE
 	give_guarantee = GRE
 	give_guarantee = TUR
