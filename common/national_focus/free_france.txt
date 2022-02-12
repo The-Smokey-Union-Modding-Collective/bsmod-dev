@@ -47,9 +47,77 @@ focus_tree = {
 				add_manpower = 10000
 				add_legitimacy = 15
 			}
+			add_research_slot = 1
+			add_political_power = 120
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
 				amount = 5000
+			}
+			786 = {
+				add_core_of = Fra
+			}
+			782 = {
+				add_core_of = Fra
+			}
+			515 = {
+				add_core_of = Fra
+			}
+			775 = {
+				add_core_of = Fra
+			}
+			557 = {
+				add_core_of = Fra
+			}
+			272 = {
+				add_core_of = Fra
+			}
+			780 = {
+				add_core_of = Fra
+			}
+			556 = {
+				add_core_of = Fra
+			}
+			779 = {
+				add_core_of = Fra
+			}
+			778 = {
+				add_core_of = Fra
+			}
+			781 = {
+				add_core_of = Fra
+			}
+			777 = {
+				add_core_of = Fra
+			}
+			776 = {
+				add_core_of = Fra
+			}
+			268 = {
+				add_core_of = Fra
+			}
+			708 = {
+				add_core_of = Fra
+			}
+			543 = {
+				add_core_of = Fra
+			}
+			706 = {
+				add_core_of = Fra
+			}
+			774 = {
+				add_core_of = Fra
+			}
+			773 = {
+				add_core_of = Fra
+			}
+			660 = {
+				add_core_of = Fra
+			}
+			539 = {
+				add_core_of = Fra
+			}
+			772 = {
+				add_core_of = Fra
 			}
 		}
 	}
@@ -106,57 +174,7 @@ focus_tree = {
 			transfer_state = 543
 			transfer_state = 706
 			
-			786 = {
-				set_compliance = 100
-			}
-			782 = {
-				set_compliance = 100
-			}
-			515 = {
-				set_compliance = 100
-			}
-			775 = {
-				set_compliance = 100
-			}
-			557 = {
-				set_compliance = 100
-			}
-			272 = {
-				set_compliance = 100
-			}
-			780 = {
-				set_compliance = 100
-			}
-			556 = {
-				set_compliance = 100
-			}
-			779 = {
-				set_compliance = 100
-			}
-			778 = {
-				set_compliance = 100
-			}
-			781 = {
-				set_compliance = 100
-			}
-			777 = {
-				set_compliance = 100
-			}
-			776 = {
-				set_compliance = 100
-			}
-			268 = {
-				set_compliance = 100
-			}
-			708 = {
-				set_compliance = 100
-			}
-			543 = {
-				set_compliance = 100
-			}
-			706 = {
-				set_compliance = 100
-			}
+			add_timed_idea = { idea = FRA_economic_recuperation days = 365 }
 			
 #			hidden_effect = {
 #				country_event = lar_appeal_to_overseas_territories.1
@@ -576,6 +594,14 @@ focus_tree = {
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 250
+			}
+			539 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 3
+					instant_build = yes
+				}
 			}
 			create_navy_leader = {
 				name = "Emilie Muselier"

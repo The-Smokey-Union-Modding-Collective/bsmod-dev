@@ -2103,17 +2103,6 @@ focus_tree = {
 		completion_reward = {
 			447 = {
 				set_building_level = {
-					type = bunker
-					level = 5
-					province = 1071
-					instant_build = yes
-				}
-				set_building_level = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
 					type = coastal_bunker
 					level = 2
 					province = 1071
@@ -2144,48 +2133,47 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1071
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4076
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7164
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10073
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
 					type = naval_base
 					level = 10
 					province = 4076
 					instant_build = yes
 				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 			446 = {
-				set_building_level = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 10005
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 7011
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 12004
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 4143
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 7188
-					instant_build = yes
-				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 2
@@ -2198,20 +2186,48 @@ focus_tree = {
 					province = 12049
 					instant_build = yes
 				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7011
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 12004
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 4143
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 7188
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10005
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 			453 = {
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 1155
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 9947
-					instant_build = yes
-				}
 				set_building_level = {
 					type = coastal_bunker
 					level = 2
@@ -2219,11 +2235,32 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_building_level = {
-					type = naval_base
-					level = 1
-					province = 10099
+					type = bunker
+					level = 3
+					province = 1155
 					instant_build = yes
 				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9947
+					instant_build = yes
+				}
+			}
+			452 = {
+				set_building_level = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+			}
+			build_railway = {
+				level = 5
+				path = { 4076 7164 4145 1071 }
+			}
+			build_railway = {
+				level = 5
+				path = { 7164 10073 7011 4073 }
 			}
 		}
 	}
@@ -2256,6 +2293,84 @@ focus_tree = {
 		completion_reward = {
 			456 = {
 				set_building_level = {
+					type = bunker
+					level = 5
+					province = 10097
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 7073
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 12071
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			457 = {
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 10126
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 1080
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 9957
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 3
+					province = 12002
+					instant_build = yes
+				}
+				set_building_level = {
+					type = bunker
+					level = 5
+					province = 12889
+					instant_build = yes
+				}
+				set_building_level = {
+					type = naval_base
+					province = 5069
+					level = 10
+					instant_build = yes
+				}
+				set_building_level = {
+					type = infrastructure
+					level = 5
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			551 = {
+				set_building_level = {
 					type = infrastructure
 					level = 5
 					instant_build = yes
@@ -2267,68 +2382,21 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = radar_station
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 10097
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 7073
+					level = 6
 					instant_build = yes
 				}
 			}
-			457 = {
-				set_building_level = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
-					type = air_base
-					level = 10
-					instant_build = yes
-				}
-				set_building_level = {
-					type = anti_air_building
-					level = 5
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 12071
-					instant_build = yes
-				}
-				set_building_level = {
-					type = bunker
-					level = 2
-					province = 7073
-					instant_build = yes
-				}
-				set_building_level = {
-					type = naval_base
-					level = 10
-					province = 5069
-					instant_build = yes
-				}
+			build_railway = {
+				level = 5
+				path = { 5069 7156 11999 }
 			}
-			551 = {
-				set_building_level = {
-					type = infrastructure
-					level = 5
-					instant_build = yes
-				}
+			build_railway = {
+				level = 2
+				path = { 11999 10844 8105 }
+			}
+			build_railway = {
+				level = 2
+				path = { 12806 10795 10851 12744 10908 7996 2096 8223 12929 5160 10860 1939 5196 5210 8183 2196 }
 			}
 		}
 	}

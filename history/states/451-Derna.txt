@@ -28,6 +28,9 @@ state={
 			7082 = {
 				naval_base = 1
 			}
+			10120 = {
+				naval_base = 1
+			}
 		}
 		add_core_of = LBA
 	}

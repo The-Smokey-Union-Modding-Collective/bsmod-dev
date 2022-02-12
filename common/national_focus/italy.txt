@@ -579,8 +579,11 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
-			}									
-			
+			}
+			build_railway = {
+				level = 5
+				path = { 9904 11846 923 9826 819 11803 883 6843 9784 11837 }
+			}
 		}
 	}	
 	
@@ -685,6 +688,11 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+				set_building_level = {
+					type = radar_station
+					level = 6
+					instant_build = yes
+				}
 			}
 			451 = {
 				set_building_level = {
@@ -697,9 +705,18 @@ focus_tree = {
 					level = 5
 					instant_build = yes
 				}
+			}
+			164 = {
 				set_building_level = {
-					type = radar_station
-					level = 5
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			182 = {
+				set_building_level = {
+					type = air_base
+					level = 10
 					instant_build = yes
 				}
 			}
@@ -803,6 +820,22 @@ focus_tree = {
 					province = 1149
 					instant_build = yes
 				}
+			}
+			build_railway = {
+				level = 2
+				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 1198 1127 4120 11954 }
+			}
+			build_railway = {
+				level = 5
+				path = { 11954 10123 12094 4151 1204 7082 9992 1130 }
+			}
+			build_railway = {
+				level = 2
+				path = { 1130 4136 10120 }
+			}
+			build_railway = {
+				level = 2
+				path = { 4120 7063 12079 1186 13078 1130 }
 			}
 		}
 	}		

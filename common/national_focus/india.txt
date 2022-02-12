@@ -2352,58 +2352,36 @@ focus_tree = {
 		available_if_capitulated = no
 
 		complete_tooltip = {
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB1
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
-			random_state = {
-				limit = {
-					has_state_flag = RAJ_expand_air_bases_AB2
-				}
-				add_building_construction = {
-					type = air_base
-					level = 1
-					instant_build = yes
-				}
-			}
 		}
 
 		completion_reward = {
-			random_owned_controlled_state = {
-				prioritize = { 438 439 431 435 445 442 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-					}
-				}
-				add_building_construction = {
+			435 = {
+				set_building_level = {
 					type = air_base
-					level = 1
+					level = 10
 					instant_build = yes
 				}
-				set_state_flag = RAJ_expand_air_bases_AB1
 			}
-			random_owned_controlled_state = {
-				prioritize = { 438 439 431 435 445 442 }
-				limit = {
-					free_building_slots = {
-						building = air_base
-						size > 0
-					}
-				}
-				add_building_construction = {
+			431 = {
+				set_building_level = {
 					type = air_base
-					level = 1
+					level = 10
 					instant_build = yes
 				}
-				set_state_flag = RAJ_expand_air_bases_AB2
+			}
+			430 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
+			}
+			439 = {
+				set_building_level = {
+					type = air_base
+					level = 10
+					instant_build = yes
+				}
 			}
 		}
 	}
@@ -2640,12 +2618,58 @@ focus_tree = {
 #		}
 
 		completion_reward = {
-			build_railway = { #Delhi - Karachi
-				path = { 2086 2054 1908 4984 10847 1980 4110 10108 3456 }
+			build_railway = {
+				level = 3
+				path = { 2086 12868 2002 10772 10066 9084 8007 10898 1971 10735 7084 4110 10108 3456 }
+			}
+			build_railway = {
+				level = 4
+				path = { 4110 1147 4064 9975 }
+			}
+			build_railway = {
+				level = 3
+				path = { 9975 11952 7150 4187 7013 1349 12269 12182 10210 12295 7250 12105 4278 10208 8100 8011 12734 1344 10278 }
+			}
+			439 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-			build_railway = { #Delhi - Ahmadabad - Bombay
-				path = {
-					1908 4149 12886 1103 9975 11952 7150 4187 7013 1349
+			}
+			440 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			443 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			428 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			429 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			424 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -3350,25 +3374,70 @@ focus_tree = {
 		
 
 		completion_reward = {
-			if = {
-				limit = {
-					controls_state = 640
-					controls_state = 288
-				}
-				build_railway = {
-					path = { #Rangoon - Mandalay - Myitkyina
-						1330 12127 1417 12256 4626 4585 1492 7469 12464 1082 4425
+			build_railway = {
+				level = 5
+				path = { 2086 10794 5086 12137 1377 4299 9973 10751 4516 4544 7537 7593 4204 4245 }
+			}
+			build_railway = {
+				level = 2
+				path = { 5040 5096 4953 11995 4950 10030 }
+			}
+			build_railway = {
+				level = 2
+				path = { 10030 7430 7060 4072 7013 1349 }
+			}
+			build_railway = {
+				level = 2
+				path = { 10030 4883 4557 12420 10401 7574 9946 10428 1538 1059 7220 4062 4245 10077 }
+			}
+			build_railway = {
+				level = 3
+				path = { 10077 1609 4616 9993 11968 }
+			}
+			build_railway = {
+				level = 3
+				path = { 11968 12010 7179 10090 4454 }
+			}
+			438 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
+			435 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
-			if = {
-				limit = {
-					controls_state = 430
 			}
-				build_railway = { #connects railway around Dacca to the rest of the network
-					path = {
-						11968 9993 4616
-					}
+			431 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			430 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			436 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			432 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
 		}
@@ -3404,27 +3473,48 @@ focus_tree = {
 
 
 		completion_reward = {
-			if = {
-				limit = {
-					controls_state = 429
-					controls_state = 427
-				}
-				build_railway = { #Bombay - Hyderabad - East Coast
-					path = {
-						1349 10270 4353 12142 1359 10324 8087 4472 12114 4280 7340
+			build_railway = {
+				level = 1
+				path = { 2086 2054 1908 4149 12886 1103 }
+			}
+			build_railway = {
+				level = 3
+				path = { 1103 12092 12743 12080 2105 11995 }
+			}
+			build_railway = {
+				level = 3
+				path = { 10030 12781 5019 11950 8087 }
+			}
+			build_railway = {
+				level = 2
+				path = { 8087 5104 10259 10756 4414 8100 }
+			}
+			433 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
+			437 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
-			if = {
-				limit = {
-					controls_state = 438
-					controls_state = 436
-					controls_state = 429
 			}
-				build_railway = { #Lucknow - Bombay
-					path = {
-						1349 7013 4072 7060 7430 10030 4950 11995 4953 5096 5040 4045 2036 12137
-					}
+			427 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			425 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
 				}
 			}
 		}

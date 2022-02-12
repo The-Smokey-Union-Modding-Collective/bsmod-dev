@@ -3,10 +3,12 @@ state= {
 	name="STATE_315"
 	manpower = 3607919
 	resources={
-		steel=26 # was: 4
+		steel=31 # was: 4
 		chromium=98 # was: 160
 		oil=122
-		tungsten = 95
+		tungsten=95
+		aluminium=4
+		rubber=23
 	}
 	
 	state_category = town
@@ -14,7 +16,7 @@ state= {
 	history= {
 		owner = CUB
 		buildings = {
-			infrastructure = 1
+			infrastructure = 5
 			# arms_factory = 1
 			# industrial_complex = 3
 			# air_base = 1

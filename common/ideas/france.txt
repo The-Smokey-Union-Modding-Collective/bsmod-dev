@@ -1,6 +1,24 @@
 ideas = {
 
 	country = {
+	
+		FRA_economic_recuperation = {
+			picture = generic_economic_increase
+			allowed = {
+				original_tag = FRA 
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.5
+			}
+		}
 
 		FRA_will_to_fight = {
 			picture = FRA_will_to_fight
