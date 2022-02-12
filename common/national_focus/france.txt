@@ -55,6 +55,7 @@
 				ideology = democratic
 				popularity = 0.15
 			}
+			country_event = { days = 0 id = france.2 }
 		}
 	}
 	

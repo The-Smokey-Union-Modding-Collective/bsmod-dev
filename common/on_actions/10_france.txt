@@ -1,0 +1,114 @@
+on_actions = {
+    on_daily_FRA = {
+        effect = {
+            if = {
+                limit = {
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier1
+                    }
+                    communism > 0
+                    communism < 0.10
+                }
+                
+                remove_ideas = {
+                    FRA_the_popular_front_tier2
+                    FRA_the_popular_front_tier3
+                    FRA_the_popular_front_tier4
+                    FRA_the_popular_front_tier5
+                    FRA_the_popular_front_tier6
+                }
+                add_ideas = FRA_the_popular_front_tier1
+            }
+            else_if = {
+                limit ={
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier2
+                    }
+                    communism > 0.10
+                    communism < 0.20
+                }
+                remove_ideas = {
+                    FRA_the_popular_front_tier1
+                    FRA_the_popular_front_tier3
+                    FRA_the_popular_front_tier4
+                    FRA_the_popular_front_tier5
+                    FRA_the_popular_front_tier6
+                }
+                add_ideas = FRA_the_popular_front_tier2
+            }
+            else_if = {
+                limit ={
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier3
+                    }
+                    communism > 0.20
+                    communism < 0.30
+                }
+                remove_ideas = {
+                    FRA_the_popular_front_tier1
+                    FRA_the_popular_front_tier2
+                    FRA_the_popular_front_tier4
+                    FRA_the_popular_front_tier5
+                    FRA_the_popular_front_tier6
+                }
+                add_ideas = FRA_the_popular_front_tier3
+            }
+            else_if = {
+                limit ={
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier4
+                    }
+                    communism > 0.30
+                    communism < 0.40
+                }
+                remove_ideas = {
+                    FRA_the_popular_front_tier1
+                    FRA_the_popular_front_tier2
+                    FRA_the_popular_front_tier3
+                    FRA_the_popular_front_tier5
+                    FRA_the_popular_front_tier6
+                }
+                add_ideas = FRA_the_popular_front_tier4
+            }
+            else_if = {
+                limit ={
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier5
+                    }
+                    communism > 0.40
+                    communism < 0.50
+                }
+                remove_ideas = {
+                    FRA_the_popular_front_tier1
+                    FRA_the_popular_front_tier2
+                    FRA_the_popular_front_tier3
+                    FRA_the_popular_front_tier4
+                    FRA_the_popular_front_tier6
+                }
+                add_ideas = FRA_the_popular_front_tier5
+            }
+            else_if = {
+                limit ={
+                    has_country_flag = FRA_start_the_popular_front_flag
+                    communism > 0.50
+                    NOT = {
+                        has_idea = FRA_the_popular_front_tier6
+                    }
+                }
+                remove_ideas = {
+                    FRA_the_popular_front_tier1
+                    FRA_the_popular_front_tier2
+                    FRA_the_popular_front_tier3
+                    FRA_the_popular_front_tier4
+                    FRA_the_popular_front_tier5
+                }
+                add_ideas = FRA_the_popular_front_tier6
+            }
+        }
+    }
+}

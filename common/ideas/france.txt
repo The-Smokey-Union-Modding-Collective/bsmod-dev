@@ -405,10 +405,37 @@ ideas = {
 			
 			modifier = {
 				research_speed_factor = 0.05
-				weekly_manpower = 1000
 			}
 		}
 		
+		FRA_crusade_against_fascism = {
+			picture = generic_manpower_bonus
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+			}
+			
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = ITA
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+		}
+
 		FRA_dirigisme = {
 			picture = generic_central_management
 			allowed = {
@@ -465,7 +492,23 @@ ideas = {
 				non_core_manpower = 0.08
 			}
 		}
+		FRA_colonial_exploitation = {
+			picture = generic_exploit_mines
+			allowed = {
+				original_tag = FRA
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				local_resources_factor = 0.05
+			}
+		}
 		FRA_firepower = {
 			picture = generic_artillery_regiments
 			allowed = {
@@ -1133,6 +1176,9 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
 				experience_gain_army_factor = -0.1
 			}
 		}
@@ -1477,6 +1523,27 @@ ideas = {
 				industrial_capacity_factory = -0.9
 				industrial_capacity_dockyard = -0.9
 				stability_factor = -0.1
+				war_support_factor = -0.1
+			}
+		}
+		
+		FRA_celebratory_strikes = {
+			picture = generic_production_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				political_power_factor = 0.25
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				stability_factor = 0.1
 				war_support_factor = -0.1
 			}
 		}
