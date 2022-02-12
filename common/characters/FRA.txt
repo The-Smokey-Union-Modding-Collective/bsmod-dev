@@ -186,7 +186,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_aggressive_focus
+				#has_completed_focus = FRA_aggressive_focus # bsmod change
 			}
 			cost = 100.000
 			traits = {
@@ -226,7 +226,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_defensive_focus
+				#has_completed_focus = FRA_defensive_focus # bsmod change
 			}
 			cost = 100.000
 			traits = {
@@ -323,7 +323,7 @@ characters={
 				original_tag = FRA
 			}
 			available = {
-				has_completed_focus = FRA_battle_of_maneuver
+				#has_completed_focus = FRA_battle_of_maneuver # bsmod change
 			}
 			
 			traits = {
@@ -1243,7 +1243,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_buy_time 
+				#has_completed_focus  = FRA_buy_time # bsmod change
 				has_government  = democratic 
 			}
 			cost  = 75.000
@@ -1444,7 +1444,7 @@ characters={
 				original_tag  = FRA
 			}
 			available  = {
-				has_completed_focus  = FRA_form_the_popular_front 
+				#has_completed_focus  = FRA_form_the_popular_front # bsmod change
 			}
 			traits  = {
 				financial_expert 
