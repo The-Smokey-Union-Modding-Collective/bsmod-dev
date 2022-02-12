@@ -8,3 +8,5 @@
  FRA_will_to_fight_desc:0 "The French army has been beaten, the mainland lost and politicians decided to side with the germans. But the French people havent given up yet, their will to fight is unbroken. Their armies shall be rebuild, their territories reclaimed and the german tyrants wiped off the map."
  AST_third_emu_war:0 "the Melbourne Project"
  AST_third_emu_war_desc:0 "With our annexation of the Emu Nation we have gained more Land and Manpower. We shall use both to build more nuclear reactor and to speed up our Nuclear Weapons production."
+ trade_treaty_germany:0 "Ambassadors to the Supreme Chancellor"
+ trade_treaty_germany_desc:0 "These §Y[ROOT.GetName]§! Federation types are cowards, negotiations will be short."

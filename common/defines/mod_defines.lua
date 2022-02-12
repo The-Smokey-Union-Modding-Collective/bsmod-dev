@@ -35,9 +35,9 @@ NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 8	--vanilla=20
-NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 2--vanilla=5
-NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 4	--vanilla=10
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_GROUP_COST = 0	--vanilla=20
+NDefines.NMilitary.BASE_DIVISION_BRIGADE_CHANGE_COST = 0--vanilla=5
+NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 0	--vanilla=10
 NDefines.NMilitary.MAX_ARMY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_NAVY_EXPERIENCE = 999	--vanilla=500
 NDefines.NMilitary.MAX_AIR_EXPERIENCE = 999		--vanilla=500
@@ -47,7 +47,7 @@ NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1	--vanilla=3
 NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.02, 0.15, 0.225, 0.35, 0.5, 0.7, 0.925, 1.15 } --vanilla={0.1, 0.3, 0.75, 0.9}
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.107 --vanilla=0.25
-
+NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 200 --vanilla=96 ( this / ARMY_FUEL_COST_MULT ) * fuel_consumption = total capacity
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
