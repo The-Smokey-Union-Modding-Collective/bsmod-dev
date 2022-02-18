@@ -1945,26 +1945,6 @@ focus_tree = {
 							set_state_flag = GER_integrate_war_economies_2
 						}
 					}
-					if = {
-						limit = {
-							has_dlc = "Death or Dishonor" 
-						}
-						set_autonomy = { target = HUN autonomy_state = autonomy_satellite }
-					}
-					if = {
-						limit = { 
-							has_dlc = "Together for Victory"
-							NOT = { has_dlc = "Death or Dishonor" } 
-						}
-						set_autonomy = { target = HUN autonomy_state = autonomy_dominion }
-					}
-					if = {
-						limit = { 
-							NOT = { has_dlc = "Together for Victory" }
-							NOT = { has_dlc = "Death or Dishonor" }
-						}
-						puppet = HUN
-					}
 				}
 				custom_effect_tooltip = GER_integrate_war_economies_tt3
 			}
@@ -2049,26 +2029,6 @@ focus_tree = {
 							}
 							set_state_flag = GER_integrate_war_economies_2
 						}
-					}
-					if = {
-						limit = {
-							has_dlc = "Death or Dishonor" 
-						}
-						set_autonomy = { target = ROM autonomy_state = autonomy_satellite }
-					}
-					if = {
-						limit = { 
-							has_dlc = "Together for Victory"
-							NOT = { has_dlc = "Death or Dishonor" } 
-						}
-						set_autonomy = { target = ROM autonomy_state = autonomy_dominion }
-					}
-					if = {
-						limit = { 
-							NOT = { has_dlc = "Together for Victory" }
-							NOT = { has_dlc = "Death or Dishonor" }
-						}
-						puppet = ROM
 					}
 				}
 				custom_effect_tooltip = GER_integrate_war_economies_tt4
@@ -2155,10 +2115,6 @@ focus_tree = {
 							set_state_flag = GER_integrate_war_economies_2
 						}
 					}
-					if = {
-						set_autonomy = { target = BUL autonomy_state = autonomy_satellite }
-					}
-
 				}
 				custom_effect_tooltip = GER_integrate_war_economies_tt5
 			}
