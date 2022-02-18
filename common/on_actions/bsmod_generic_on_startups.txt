@@ -26,7 +26,7 @@ on_actions = {
 				}
 				else_if = {
 					limit = {
-						has_tech = grand_battle_plan
+						has_tech = trench_warfare
 					}
 					add_doctrine_cost_reduction = {
 						name = STARTING_COST_REDUCTION
