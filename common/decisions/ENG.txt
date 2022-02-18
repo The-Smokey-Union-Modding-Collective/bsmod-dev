@@ -42,8 +42,8 @@ ENG_organize_the_blackshirts = {
 		}
 
 		highlight_states = {
- highlight_state_targets = { state = 119 } 
-}
+			highlight_state_targets = { state = 119 } 
+		}
 
 		on_map_mode = map_only
 
@@ -8242,6 +8242,7 @@ ENG_imperial_conference_decision = {
 		icon = eng_imperial_federation
 
 		allowed = {
+			always = no # bsmod change
 			tag = ENG
 		}
 
