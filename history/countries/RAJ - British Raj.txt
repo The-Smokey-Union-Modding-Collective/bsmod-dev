@@ -94,6 +94,8 @@ if = {
 	}
 	set_technology = {
 		mtg_transport = 1
+		ship_hull_super_heavy = 1
+		basic_heavy_battery = 1
 	}
 }
 

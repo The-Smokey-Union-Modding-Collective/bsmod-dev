@@ -136,6 +136,7 @@ if = {
 		improved_secondary_battery = 1
 		basic_heavy_armor_scheme = 1
 		mtg_transport = 1
+		ship_hull_super_heavy = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
 	add_ideas = mod_scw_allies_minor

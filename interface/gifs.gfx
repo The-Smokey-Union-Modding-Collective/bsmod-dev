@@ -1,0 +1,18 @@
+spriteTypes = {
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_cuba_jose_barnet"
+		texturefile = "gfx/leaders/CUB/portrait_cub_jose_barnet.dds"
+		noOfFrames = 12
+		animation_rate_fps = 14
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_Portrait_Europe_Generic_3"
+		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
+		noOfFrames = 9
+		animation_rate_fps = 25
+		looping = yes
+		play_on_show = yes
+	}
+}

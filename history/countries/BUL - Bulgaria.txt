@@ -321,6 +321,13 @@ set_technology = { #VANILLA & DLC
 	fuel_silos = 1
 	basic_train = 1
 }
+if = {
+	limit = { has_dlc = "Man the Guns" }
+	set_technology = {
+		ship_hull_super_heavy = 1
+		basic_heavy_battery = 1
+	}
+}
 
 
 

@@ -81,6 +81,8 @@ if = {
 		basic_battery = 1
 		basic_torpedo = 1
 		coastal_defense_ships = 1
+		ship_hull_super_heavy = 1
+		basic_heavy_battery = 1
 	}
 }
 set_convoys = 15
