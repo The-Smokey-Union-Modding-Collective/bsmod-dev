@@ -53,10 +53,10 @@ sub_units = {
 			attack = 0.05
 		}
 		mountain = {
-			attack = 0.1
+			attack = 0.15
 		}
 		hills = {
-			attack = 0.15
+			attack = 0.1
 		}
 		jungle = {
 			attack = 0.2

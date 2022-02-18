@@ -204,30 +204,6 @@ technologies = {
 			}
 		}
 
-		light_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		medium_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
-		heavy_flame_tank = {
-			urban = {
-				attack = 0.1
-			}
-			fort = {
-				attack = 0.10
-			}
-		}
 		path = {
 			leads_to_tech = tech_engineers4
 			research_cost_coeff = 1
@@ -275,27 +251,36 @@ technologies = {
 			}
 		}
 		light_flame_tank = {
-			urban = {
-				attack = 0.1
+			mountain = {
+				attack = 0.05
 			}
-			fort = {
-				attack = 0.10
+			hills = {
+				attack = 0.05
+			}
+			jungle = {
+				attack = 0.05
 			}
 		}
 		medium_flame_tank = {
-			urban = {
-				attack = 0.1
+			river = {
+				attack = 0.05
 			}
-			fort = {
-				attack = 0.10
+			amphibious = {
+				attack = 0.05
 			}
 		}
 		heavy_flame_tank = {
 			urban = {
-				attack = 0.1
+				attack = 0.05
 			}
 			fort = {
-				attack = 0.10
+				attack = 0.05
+			}
+			river = {
+				attack = 0.05
+			}
+			amphibious = {
+				attack = 0.05
 			}
 		}
 		research_cost = 1.5
