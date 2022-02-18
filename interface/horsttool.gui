@@ -80,6 +80,16 @@ guiTypes = {
 			pdx_tooltip_delayed = "WHITEPEACE_DELAYED"
 			#scale = 0.95
 		}
+
+		buttonType = {
+			name = "declare_war"	
+			position = {x=160 y=195}
+			spriteType = "GFX_relation_war_relation"
+            		scale=1.8
+			pdx_tooltip = "HOST_DECLARE_WAR"
+			pdx_tooltip_delayed = "HOST_DECLARE_WAR_DELAYED"
+			#scale = 0.95
+		}
 	
 
 		buttonType = {

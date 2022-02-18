@@ -10,6 +10,10 @@
  
  WHITEPEACE:0 "§HWhitepeace§!\nCountry will be whitepeaced with every enemy\n\n"
  WHITEPEACE_DELAYED:0 ""
+
+ HOST_DECLARE_WAR:0 "§HDeclare War§!\nCountry will declare war on the owners of the marked territories!\n\n"
+ HOST_DECLARE_WAR_DELAYED:0 ""
+
  
  CLEAR_ALL_MARKINGS:0 "§HClear All Marks§!\nEvery mark on world will be removed\n\n"
  CLEAR_ALL_MARKINGS_DELAYED:0 ""

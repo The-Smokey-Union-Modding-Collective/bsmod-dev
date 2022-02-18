@@ -32,6 +32,26 @@ scripted_gui = {
 				}
 			}
 
+			declare_war_click = {
+				 owner = {
+					for_each_loop = {
+						array = ROOT.marked_states
+						value = state
+						declare_war_on = {
+							target = state.owner
+							type = annex_everything
+						} 
+					}
+					ROOT = {
+						for_each_scope_loop = {
+							array = marked_states
+							clear_variable = mark_status
+						}
+						clear_array = marked_states
+					}
+				}
+			}
+
 			clear_all_markings_click = {
 				ROOT = {
 					for_each_scope_loop = {
