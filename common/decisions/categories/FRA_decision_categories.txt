@@ -2,6 +2,15 @@
 ##### FRA ######
 ################
 
+FRA_dday_category = { # bsmod 
+	allowed = {
+		original_tag = FRA
+	}
+	visible = {
+		has_completed_focus = VIC_emergency_powers_to_petain
+	}
+}
+
 FRA_civil_unrest_category = {
 	icon = power_struggle
 	allowed = {
