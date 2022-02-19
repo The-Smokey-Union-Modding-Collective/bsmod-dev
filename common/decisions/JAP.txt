@@ -1,4 +1,155 @@
 #Category allowed for JAP
+JAP_operations_category = {
+	
+	JAP_attack_allies = {
+	
+		icon = generic_air
+		
+		allowed = {
+			original_tag = JAP
+		}
+		
+		visible = {
+			has_completed_focus = JAP_strike_on_the_southern_resource_area
+		}
+		
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 1
+		}
+		
+		complete_effect = {
+			JAP = {
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CAN
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SAF
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = AST
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NZL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MAL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = INS
+					type = annex_everything
+				}
+			}
+			MAN = {
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CAN
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SAF
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = AST
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NZL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MAL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = INS
+					type = annex_everything
+				}
+			}
+			SIA = {
+				declare_war_on = {
+					target = USA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = ENG
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = FRA
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = CAN
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = SAF
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = RAJ
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = AST
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = NZL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = MAL
+					type = annex_everything
+				}
+				declare_war_on = {
+					target = INS
+					type = annex_everything
+				}
+			}
+		}
+	}
+}
+
 JAP_intervene_in_china = {
 
 	JAP_china_step_up_war_effort = {

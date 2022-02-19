@@ -18,3 +18,5 @@
  mod_scw_allies_major_desc:0 "As an allied major power we can send one volunteer division and 200 airplanes to defend Democracy in Spain."
  mod_scw_axis_minor:0 "Spanish Chaos War"
  mod_scw_axis_minor_desc:0 "As an axis minor power we can send two volunteer division to fight Bolshevism in Spain."
+ mod_scw_exp_gain:0 "Lessons of the Spanish Civil War"
+ mod_scw_exp_gain_desc:0 "War has changed since the end of the Great War. The experiences our volunteers in spain gather are priceless, we have to adapt to the new ways of warfare before the next war reaches our nation."

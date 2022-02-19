@@ -672,6 +672,7 @@ economy_decisions = {
 }
 
 propaganda_efforts = {
+
 	war_propaganda = {
 
 		icon = generic_prepare_civil_war
@@ -740,6 +741,7 @@ propaganda_efforts = {
 #			NOT = { has_country_flag = war_propaganda_campaign_running }
 			FROM = {
 				OR = {
+					has_war_with = ROOT
 					is_justifying_wargoal_against = ROOT
 					AND = {
 						has_war_with = ROOT
@@ -794,14 +796,7 @@ propaganda_efforts = {
 					}
 					AND = {
 						NOT = { is_neighbor_of = ROOT }
-						OR = {
-							has_offensive_war_with = ROOT
-							AND = {
-								NOT = { has_government = ROOT }
-								has_offensive_war = yes
-								has_added_tension_amount > 30
-							}
-						}
+						has_war_with = ROOT
 					}
 				}
 			}
@@ -825,13 +820,9 @@ propaganda_efforts = {
 					}
 					AND = {
 						NOT = { is_neighbor_of = ROOT }
-						OR = {
-							has_offensive_war_with = ROOT
-							AND = {
-								NOT = { has_government = ROOT }
-								has_offensive_war = yes
-								has_added_tension_amount > 30
-							}
+						AND = {
+							NOT = { is_neighbor_of = ROOT }
+							has_war_with = ROOT
 						}
 					}
 				}
@@ -850,9 +841,11 @@ propaganda_efforts = {
 		}
 
 		complete_effect = {
-			set_country_flag = { flag = war_propaganda_campaign_running value = 1 days = 90 } #TODO_Manu: This is a nasty fix so that the flag gets eventually removed if the target is annexed. days = days_remove
+			log = "[GetDateText]: [Root.GetName]: Decision war_propaganda_against_warmonger"
+			set_country_flag = war_propaganda_campaign_running
 		}
 		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision remove war_propaganda_against_warmonger"
 			clr_country_flag = war_propaganda_campaign_running
 		}
 

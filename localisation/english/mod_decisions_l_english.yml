@@ -10,6 +10,11 @@
  GER_unternehmen_barbarossa:0 "Unternehmen Barbarossa"
  GER_unternehmen_barbarossa_desc:0 "The time to face our ultimate enemy has come. We have only to kick in the door and the whole rotten structure will come crashing down. Blitzkrieg will guarantee us victory once more!"
  
+ JAP_operations_category:0 "Military Operations"
+ JAP_operations_category_desc:0 "The World has been engulfed in the second great war. We must strike now to claim lordship over all asia."
+ JAP_attack_allies:0 "Attack the USA and their Allies"
+ JAP_attack_allies_desc:0 "The Allies have proven to be weak. And we mustnot fear the americans either, they dont have the guts for a proper fight. Asia can and will be ours."
+ 
  ITA_ethiopian_surrender_category:0 "Ethiopian army on the brink of collapse"
  ITA_ethiopian_surrender_category_desc:0 ""
  ITA_ethiopian_surrender:0 "Our victory draws closer."

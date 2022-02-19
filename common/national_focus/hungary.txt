@@ -1855,7 +1855,9 @@ focus_tree = {
 
 		bypass = {
 			OR = {
-				is_in_faction_with = ROM
+				ROM = {
+					is_ai = no
+				}
 				664 = {
 					OWNER = {
 						has_war_with = ROOT
@@ -1903,23 +1905,12 @@ focus_tree = {
 
 		available = {
 			
-			# if = { # bsmod change
-			# 	limit = { 
-			# 		country_exists = CZE 
-			# 		664 = { is_owned_by = CZE }
-			# 	}
-			# 	# strength_ratio = { tag = CZE ratio > 0.75 }
-			# }
-			# if = {
-			# 	limit = { 
-			# 		country_exists = SLO 
-			# 		664 = { is_owned_by = SLO }
-			# 	}
-			# 	# strength_ratio = { tag = SLO ratio > 0.75 }
-			# }
-				
-			
-			# has_army_manpower = { size > 120000 } # bsmod change
+			if = {
+				limit = { 
+					country_exists = CZE 
+					664 = { is_owned_by = CZE }
+				}
+			}
 		}
 
 		bypass = {
@@ -2007,8 +1998,6 @@ focus_tree = {
 		}
 
 		available = {
-			# strength_ratio = { tag = YUG ratio > 0.75 } # bsmod change
-			# has_army_manpower = { size > 175000 }
 		}
 
 		bypass = {

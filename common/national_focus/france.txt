@@ -27,7 +27,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 5
+		cost = 10
 			ai_will_do = {
 			factor = 1
 		}
@@ -62,7 +62,7 @@
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -1917,7 +1917,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { focus = FRA_revive_the_national_bloc }
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -3875,7 +3875,7 @@
 			#focus = FRA_protect_the_rights_of_man # bsmod change
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -4532,7 +4532,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_buy_time
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 
@@ -4563,7 +4563,7 @@
 		x = 0
 		y = 1
 		relative_position_id = FRA_strengthen_government_support
-		cost = 5
+		cost = 10
 
 		available_if_capitulated = yes
 

@@ -1,0 +1,64 @@
+on_actions = {
+	on_send_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+				}
+				add_ideas = mod_scw_exp_gain
+			}
+		}
+	}
+	on_recall_volunteers = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						original_tag = SPR
+					}
+				}
+				ROOT = {
+					if = {
+					limit = {
+							has_idea = mod_scw_exp_gain
+						}
+						remove_ideas = mod_scw_exp_gain
+					}
+				}
+			}
+		}
+	}
+	on_war = {
+		effect = {
+			ROOT = {
+				if = {
+					limit = {
+						has_idea = mod_scw_exp_gain
+					}
+					remove_ideas = mod_scw_exp_gain
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					ROOT = {
+						original_tag = SPR
+					}
+				}
+				every_country = {
+					if = {
+						limit = {
+							has_idea = mod_scw_exp_gain
+						}
+						remove_ideas = mod_scw_exp_gain
+					}
+				}
+			}
+		}
+	}
+}
