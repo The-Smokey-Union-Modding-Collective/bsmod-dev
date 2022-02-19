@@ -68,7 +68,7 @@ focus_tree = {
 		id = HUN_balanced_budget
 		icon = GFX_goal_generic_consumer_goods
 		mutually_exclusive = { focus = HUN_economic_intervention }
-		x = 5
+		x = 2
 		y = 0
 
 		cost = 10
@@ -177,6 +177,10 @@ focus_tree = {
 		x = -3
 		y = 1
 		relative_position_id = HUN_elect_a_king
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		cost = 10
 
@@ -750,6 +754,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_elect_a_king
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		cost = 10
 
 		ai_will_do = {
@@ -1207,7 +1215,7 @@ focus_tree = {
 		id = HUN_economic_intervention
 		icon = GFX_goal_generic_demand_territory
 		mutually_exclusive = { focus = HUN_balanced_budget }
-		x = 15
+		x = 5
 		y = 0
 
 		cost = 10
@@ -1245,7 +1253,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = HUN_economic_intervention }
 		mutually_exclusive = { focus = HUN_council_of_peoples_commissars }
-		x = -5
+		x = 0
 		y = 1
 		relative_position_id = HUN_economic_intervention
 
@@ -1840,13 +1848,14 @@ focus_tree = {
 			NOT = {
 				has_war_with = ROM
 			}
-			strength_ratio = { tag = ROM ratio > 0.66 }
-			has_army_manpower = { size > 200000 }
+			# strength_ratio = { tag = ROM ratio > 0.66 } # bsmod change
+			# has_army_manpower = { size > 200000 } # bsmod change
 		
 		}
 
 		bypass = {
 			OR = {
+				is_in_faction_with = ROM
 				664 = {
 					OWNER = {
 						has_war_with = ROOT
@@ -1869,7 +1878,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {	
-			custom_effect_tooltip = HUN_demands_tt		
+			# custom_effect_tooltip = HUN_demands_tt		
 			ROM = { country_event = { id = DOD_hungary.50 } }
 			hidden_effect = {
 				news_event = { id = news.300 }
@@ -1894,23 +1903,23 @@ focus_tree = {
 
 		available = {
 			
-			if = {
-				limit = { 
-					country_exists = CZE 
-					664 = { is_owned_by = CZE }
-				}
-				strength_ratio = { tag = CZE ratio > 0.75 }
-			}
-			if = {
-				limit = { 
-					country_exists = SLO 
-					664 = { is_owned_by = SLO }
-				}
-				strength_ratio = { tag = SLO ratio > 0.75 }
-			}
+			# if = { # bsmod change
+			# 	limit = { 
+			# 		country_exists = CZE 
+			# 		664 = { is_owned_by = CZE }
+			# 	}
+			# 	# strength_ratio = { tag = CZE ratio > 0.75 }
+			# }
+			# if = {
+			# 	limit = { 
+			# 		country_exists = SLO 
+			# 		664 = { is_owned_by = SLO }
+			# 	}
+			# 	# strength_ratio = { tag = SLO ratio > 0.75 }
+			# }
 				
 			
-			has_army_manpower = { size > 120000 }
+			# has_army_manpower = { size > 120000 } # bsmod change
 		}
 
 		bypass = {
@@ -1935,7 +1944,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
+			# custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
 					CZE = {
@@ -1998,8 +2007,8 @@ focus_tree = {
 		}
 
 		available = {
-			strength_ratio = { tag = YUG ratio > 0.75 }
-			has_army_manpower = { size > 175000 }
+			# strength_ratio = { tag = YUG ratio > 0.75 } # bsmod change
+			# has_army_manpower = { size > 175000 }
 		}
 
 		bypass = {
@@ -2028,7 +2037,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
+			# custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
 					OR = {
@@ -2108,10 +2117,10 @@ focus_tree = {
 			}
 			if = {
 				limit = { country_exists = SLO }
-				strength_ratio = { tag = SLO ratio > 0.75 }
+				# strength_ratio = { tag = SLO ratio > 0.75 } # bsmod change
 				NOT = { has_war_with = SLO }
 			}
-			has_army_manpower = { size > 175000 }
+			# has_army_manpower = { size > 175000 } # bsmod change
 		}
 
 		bypass = {
@@ -2135,7 +2144,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			custom_effect_tooltip = HUN_demands_tt
+			# custom_effect_tooltip = HUN_demands_tt
 			if = {
 				limit = {
 					70 = {
@@ -2251,6 +2260,10 @@ focus_tree = {
 		relative_position_id = HUN_economic_intervention
 		x = 2
 		y = 1
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		cost = 10
 
@@ -2595,7 +2608,7 @@ focus_tree = {
 	focus = {
 		id = HUN_industrial_revitalization
 		icon = GFX_goal_generic_construction
-		x = 22
+		x = 15
 		y = 0
 
 		cost = 10
@@ -3483,7 +3496,7 @@ focus_tree = {
 	focus = {
 		id = HUN_secret_rearmament
 		icon = GFX_focus_secret_rearmament
-		x = 33
+		x = 26
 		y = 0
 
 		cost = 10
