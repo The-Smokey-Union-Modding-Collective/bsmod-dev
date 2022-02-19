@@ -740,6 +740,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			jaeger_tech
 		}
 		
@@ -788,6 +789,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			jaeger_tech
 		}
 		
@@ -829,6 +831,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			jaeger_tech
 		}
 		
@@ -876,6 +879,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		categories = {
+			infantry_tech
 			jaeger_tech
 		}
 		
@@ -917,6 +921,7 @@ technologies = {
 		}
 		
 		categories = {
+			infantry_tech
 			jaeger_tech
 		}
 		
@@ -1456,6 +1461,10 @@ technologies = {
 			defense = 0.03
 			breakthrough = 0.03
 		}
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
+		}
 		paratrooper = {
 			defense = 0.03
 			breakthrough = 0.03
@@ -1542,6 +1551,10 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
+		}
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
 		}		
 		mountaineers = {
 			defense = 0.03
@@ -1639,6 +1652,10 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
+		}
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
 		}		
 		mountaineers = {
 			defense = 0.03
@@ -1723,6 +1740,10 @@ technologies = {
 		cavalry = {
 			defense = 0.02
 			breakthrough = 0.02
+		}
+		jaeger = {
+			defense = 0.03
+			breakthrough = 0.03
 		}		
 		mountaineers = {
 			defense = 0.03
