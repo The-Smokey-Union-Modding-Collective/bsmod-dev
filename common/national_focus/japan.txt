@@ -1710,21 +1710,7 @@ focus_tree = {
 #			}
 #		}
 		completion_reward = {
-			create_wargoal = {
-				target = ENG
-				type = annex_everything
-				expire = 0
-			}
-			create_wargoal = {
-				target = INS
-				type = annex_everything
-				expire = 0
-			}
-			create_wargoal = {
-				target = RAJ
-				type = annex_everything
-				expire = 0
-			}
+			unlock_decision_tooltip = JAP_attack_allies
 		}
 	}
 

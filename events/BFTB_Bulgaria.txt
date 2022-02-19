@@ -3454,34 +3454,34 @@ country_event = {
 		}
 	}
 
-	option = { #Take action
-		name = bftb_bulgaria_rearmament.9.b
-
-		ai_chance = {
-			base = 0
-			modifier = {
-				add = 100
-				any_allied_country = {
-					has_war_with = BUL
-				}
-			}
-		}
-
-		trigger = {
-			BUL = {
-				is_in_faction = yes
-			}
-		}
-
-		effect_tooltip = { 
-			BUL = { remove_ideas = BUL_army_restrictions }
-		}
-		add_political_power = -75
-		create_wargoal = {
-			type = topple_government
-			target = BUL
-		}
-	}
+#	option = { #Take action
+#		name = bftb_bulgaria_rearmament.9.b
+#
+#		ai_chance = {
+#			base = 0
+#			modifier = {
+#				add = 100
+#				any_allied_country = {
+#					has_war_with = BUL
+#				}
+#			}
+#		}
+#
+#		trigger = {
+#			BUL = {
+#				is_in_faction = yes
+#			}
+#		}
+#
+#		effect_tooltip = { 
+#			BUL = { remove_ideas = BUL_army_restrictions }
+#		}
+#		add_political_power = -75
+#		create_wargoal = {
+#			type = topple_government
+#			target = BUL
+#		}
+#	}
 }
 
 

@@ -5919,13 +5919,6 @@ BUL_rearmament = {
 		}
 
 		available = {
-			OR = {
-				has_war = yes
-				AND = {
-					is_in_faction = yes
-					NOT = { is_in_faction_with = ENG }
-				}
-			}	
 			NOT = { has_country_flag = BUL_rearmament_negotiations_ongoing_flag }
 		}
 
@@ -5935,7 +5928,7 @@ BUL_rearmament = {
 			has_idea = BUL_army_restrictions
 		}
 
-		cost = 50
+		cost = 0
 
 		complete_effect = {
 			clr_country_flag = BUL_rearmament_negotiations_ongoing_flag
@@ -5946,12 +5939,6 @@ BUL_rearmament = {
 			}
 			set_country_flag = BUL_refused_arms_restrictions_flag
 			ENG = { country_event = bftb_bulgaria_rearmament.9 }
-			if = {
-				limit = {
-					has_war = no
-				}
-				add_threat = 5
-			}
 		}
 	}
 }

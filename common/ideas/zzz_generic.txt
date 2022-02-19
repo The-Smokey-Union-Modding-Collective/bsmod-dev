@@ -102,6 +102,20 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 	
+		mod_scw_exp_gain = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SPR_nationalist_remnants
+			modifier = {
+				experience_gain_factor = 1.0
+				experience_gain_army_factor = 1.0
+			}
+		}
+	
 		mod_scw_axis_minor = {
 			allowed = {
 				always = no
