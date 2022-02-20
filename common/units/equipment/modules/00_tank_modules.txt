@@ -252,7 +252,7 @@ equipment_modules = {
 
 	tank_light_fixed_superstructure_turret = {
 		abbreviation = "lfs"
-		category = tank_light_turret_type
+		category = tank_light_fixed_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 
@@ -347,7 +347,7 @@ equipment_modules = {
 
 	tank_medium_fixed_superstructure_turret = {
 		abbreviation = "mfs"
-		category = tank_medium_turret_type
+		category = tank_medium_fixed_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 
@@ -429,7 +429,7 @@ equipment_modules = {
 
 	tank_heavy_fixed_superstructure_turret = {
 		abbreviation = "hfs"
-		category = tank_heavy_turret_type
+		category = tank_heavy_fixed_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
 
