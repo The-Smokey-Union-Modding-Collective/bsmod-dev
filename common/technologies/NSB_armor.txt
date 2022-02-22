@@ -54,10 +54,10 @@ technologies = {
 			tank_super_heavy_four_man_tank_turret
 			tank_super_heavy_three_man_tank_turret
 			tank_modern_tank_turret
-			sloped_armor
 			extra_ammo_storage
 			wet_ammo_storage
 			smoke_launchers
+			basic_armor_profile
 		}
 		enable_subunits = {
 			light_armor
@@ -958,6 +958,7 @@ technologies = {
 	armor_tech_1 = {
 		enable_equipment_modules = {
 			tank_welded_armor
+			improved_armor_profile
 		}
 
 		path = {
@@ -1014,6 +1015,7 @@ technologies = {
 
 		enable_equipment_modules = {
 			armor_skirts
+			omni_armor_profile
 		}
 		path = {
 			leads_to_tech = armor_tech_3
@@ -1067,6 +1069,9 @@ technologies = {
 
 	armor_tech_3 = {
 
+		enable_equipment_modules = {
+			sloped_armor
+		}
 
 		path = {
 			leads_to_tech = armor_tech_4
