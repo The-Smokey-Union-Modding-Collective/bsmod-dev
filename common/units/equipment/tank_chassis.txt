@@ -1999,7 +1999,7 @@ equipments = {
 					tank_armor_profile
 				}
 			}
-			
+
 			special_type_slot_1 = {
 				required = no
 				allowed_module_categories = {
@@ -2009,22 +2009,6 @@ equipments = {
 			}
 
 			special_type_slot_2 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_4 = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
