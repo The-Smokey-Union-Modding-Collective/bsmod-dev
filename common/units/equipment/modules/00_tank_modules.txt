@@ -1257,7 +1257,7 @@ equipment_modules = {
 			hard_attack = -0.05
 			soft_attack = -0.05
 			armor_value = 0.15
-			build_cost_ic = 0.03
+			build_cost_ic = 0.02
 		}
 	}
 
