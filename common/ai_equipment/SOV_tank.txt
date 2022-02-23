@@ -716,7 +716,7 @@ SOV_medium_tanks = {
 
 		target_variant = { #Vehicle of glorious design T-34
 			match_value = 3000
-			type = medium_tank_chassis_1
+			type = medium_tank_chassis_2
 			modules = {
 				main_armament_slot = { 
 					any_of = { 
@@ -784,7 +784,6 @@ SOV_medium_tanks = {
 				special_type_slot_1 = empty
 				special_type_slot_2 = tank_radio_module
 				special_type_slot_3 = empty
-				special_type_slot_4 = empty
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 10
