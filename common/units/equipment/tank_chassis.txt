@@ -1864,23 +1864,6 @@ equipments = {
 					tank_radio_module
 				}
 			}
-
-			special_type_slot_3 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
-			special_type_slot_4 = {
-				required = no
-				allowed_module_categories = {
-					tank_special_module
-					tank_radio_module
-				}
-			}
-
 		}
 		module_count_limit = {
 			module = sloped_armor
