@@ -25,9 +25,9 @@
  EQ_MOD_CAT_tank_radio_module_TITLE:0 "Radio"
  EQ_MOD_CAT_tank_secondary_turret_TITLE:0 "Secondary Turret"
  EQ_MOD_CAT_tank_non_tracked_suspension_type_TITLE:0 "Non-tracked Suspension"
- EQ_MOD_CAT_tank_tank_light_fixed_turret_type:0 "Light Fixed Turret Type"
- EQ_MOD_CAT_tank_tank_medium_fixed_turret_type:0 "Medium Fixed Turret Type"
- EQ_MOD_CAT_tank_tank_heavy_fixed_turret_type:0 "Heavy Fixed Turret Type"
+ EQ_MOD_CAT_tank_light_fixed_turret_type_TITLE:0 "Light Fixed Turret Type"
+ EQ_MOD_CAT_tank_medium_fixed_turret_type_TITLE:0 "Medium Fixed Turret Type"
+ EQ_MOD_CAT_tank_heavy_fixed_turret_type_TITLE:0 "Heavy Fixed Turret Type"
 
  ### EQUIPMENT MODULE SLOTS ###
  EQ_MOD_SLOT_main_armament_slot_TITLE:0 "Main Armament"
@@ -154,7 +154,7 @@
  basic_armor_profile:0 "Basic Armor Profile"
  basic_armor_profile_desc:0 "The most basic form of armor profiles consisting largely of flat surfaces with little to no angling of armor. Whilst this reduces the protection of the tank it is considerably cheaper to make tanks with this simple armor profile."
  improved_armor_profile:0 "Improved Armor Profile"
- improved_armor_profile:0 "Armor profile consisting of rounded and angled surfaces in a limited form. The tank gains a considerable protection increase thanks to increased armor effectivness allowing one to even reduces total weight, unlike traditional flat surfaces this armor profile is harder to produce"
+ improved_armor_profile_desc:0 "Armor profile consisting of rounded and angled surfaces in a limited form. The tank gains a considerable protection increase thanks to increased armor effectivness allowing one to even reduces total weight, unlike traditional flat surfaces this armor profile is harder to produce"
  omni_armor_profile:0 "Omni Directional Armor Profile"
  omni_armor_profile_desc:0 "Armor profile consisting of sloped angles on most if not all sides of the vehicle. The protection is greatly increased at the cost of crew space which reduces combat effectivness."
  sloped_armor:0 "Advanced Armor Profile"
