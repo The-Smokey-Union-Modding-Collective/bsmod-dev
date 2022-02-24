@@ -223,6 +223,28 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	###modded stuff below###
+
+	spriteType = {
+		name = "GFX_EMI_tank_light_fixed_turret_type"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_light_fixed_superstructure.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_medium_fixed_turret_type"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_medium_fixed_superstructure.dds"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_EMI_tank_heavy_fixed_turret_type"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_heavy_fixed_superstructure.dds"
+		legacy_lazy_load = no
+	}
+
+	###Vanilla stuff below###
+
 	spriteType = {
 		name = "GFX_EMI_tank_petrol_electric_engine"
 		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_petrol_electric_engine.dds"
