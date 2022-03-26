@@ -245,19 +245,19 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_EMI_tank_module_basic_armor_profile"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_basic_armor_profile.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_module_improved_armor_profile"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_improved_armor_profile.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor.dds"
 		legacy_lazy_load = no
 	}
 
 	spriteType = {
 		name = "GFX_EMI_tank_module_omni_armor_profile"
-		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_omni_armor.dds"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/tank_module_sloped_armor.dds"
 		legacy_lazy_load = no
 	}
 
