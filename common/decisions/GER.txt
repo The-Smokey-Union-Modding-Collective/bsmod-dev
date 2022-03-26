@@ -217,6 +217,11 @@ GER_spanish_civil_war_category = {
 	
 		complete_effect = {
 			SPR = { country_event = { id = germany.1100 } }
+			every_country = {
+				remove_ideas = {
+					mod_scw_exp_gain
+				}
+			}
 		}
 	}
 }
