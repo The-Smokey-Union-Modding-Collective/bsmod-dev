@@ -81,6 +81,7 @@ scripted_gui = {
 
 					set_variable= { this.target_country = Root.target_country }
 					set_variable= { this.selected_cheat = Root.selected_cheat }
+					news_event= { id = horsttool.1} }
 				clear_variable = ROOT.taker
 
 			}

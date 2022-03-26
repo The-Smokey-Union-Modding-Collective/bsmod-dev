@@ -1,7 +1,7 @@
 guiTypes = {
 
 	containerWindowType = {
-		name = "hosttool_open_container"
+		name = "horsttool_open_container"
 		position = { x = -530 y = 4 }
 		Orientation = UPPER_RIGHT
 		buttonType = {
@@ -29,7 +29,7 @@ guiTypes = {
 	}
 		
 	containerWindowType = {
-		name = "hosttool_container"
+		name = "horsttool_container"
 		position = {x=1200 y=20}
 		size = { width=650 height=600}
 		

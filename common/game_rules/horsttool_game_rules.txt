@@ -1,6 +1,6 @@
 #### Host Tool rules - from Lennard
 
-hosttool_host_country = {
+horst_host_country = {
 	name = "Select Host"
 	group = "Host Rules"
 	icon = "GFX_volunteers"
@@ -102,11 +102,6 @@ hosttool_host_country = {
 	option = {
 		name = SPR
 		text = "Spain"
-		desc = ""
-	}
-	option = {
-		name = SIA
-		text = "Siam"
 		desc = ""
 	}
 }
