@@ -62,3 +62,9 @@
  
  AST_ask_for_development_category:0 "Colonial Investments" 
  AST_ask_for_development:0 "It's time to ask the UK for industrial Development"
+
+ dockyard_expansion:0 "Dockyard Expansion"
+ dockyard_expansion_desc:0 "The Naval High Command is in need of more ships, ship construction is to be expanded immediately."
+
+ dockyard_expansion_flag_not_set:0 "Dockyards already expanded!"
+ dockyard_expansion_flag:0 "Dockyards have not been expanded!"
