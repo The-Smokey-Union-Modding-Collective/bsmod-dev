@@ -52,9 +52,19 @@ spriteTypes = {
 		name = "GFX_portrait_ger_johannes_vonreinhartz"
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Johannes_vonReinhartz.dds"
 	}
-	
+
 	spriteType = {
 		name = "GFX_portrait_ger_hinrich_laudrup"
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Hinrich_Laudrup.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Germany_Konrad_Adenauer_General"
+		texturefile = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer_General.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_Soviet_Gregory_Nikita_Krushchev_General"
+		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Nikita_Krushchev_General.dds"
 	}
 }
