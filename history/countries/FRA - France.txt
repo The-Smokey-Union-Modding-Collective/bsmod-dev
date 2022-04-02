@@ -505,6 +505,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 1
@@ -522,6 +523,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 1
@@ -539,6 +541,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_cast_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 2
@@ -556,6 +559,7 @@ if = {
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_small_cannon
 		}
@@ -577,6 +581,7 @@ if = {
 			armor_type_slot = tank_welded_armor
 			engine_type_slot = tank_gasoline_engine
 			special_type_slot_1 = tank_radio_1
+			armor_profile_type_slot = basic_armor_profile
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 4
