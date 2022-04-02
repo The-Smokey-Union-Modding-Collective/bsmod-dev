@@ -111,8 +111,8 @@ ideas = {
 
 			picture = SPR_nationalist_remnants
 			modifier = {
-				#experience_gain_factor = 1.0
-				experience_gain_army_factor = 1.0
+				experience_gain_factor = 1.0
+				#experience_gain_army_factor = 1.0
 			}
 		}
 	
