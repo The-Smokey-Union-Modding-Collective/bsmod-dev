@@ -190,6 +190,80 @@ GER_operations_category = {
 				target = SOV
 				type = annex_everything
 			}
+			hidden_effect = {
+				GER = {
+					create_corps_commander = {
+						name = "Konrad Adenauer"
+						gfx = "GFX_portrait_Germany_Konrad_Adenauer_General"
+						traits = { brilliant_strategist harsh_leader panzer_leader ranger trickster organizer trait_engineer}
+						skill = 5
+						attack_skill = 6
+						defense_skill = 4
+						planning_skill = 5
+						logistics_skill = 4
+					}
+				}
+				SOV = {
+					create_corps_commander = {
+						name = "Nikita Krushchev"
+						gfx = "GFX_portrait_Soviet_Gregory_Nikita_Krushchev_General"
+						traits = { brilliant_strategist harsh_leader panzer_leader ranger trickster organizer urban_assault_specialist}
+						skill = 5
+						attack_skill = 6
+						defense_skill = 4
+						planning_skill = 5
+						logistics_skill = 4
+					}
+				}
+				#HUN = {
+				#	create_corps_commander = {
+				#		name = "Hungarys Pregrinded one"
+				#		gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				#		traits = { brilliant_strategist harsh_leader panzer_leader  trickster organizer cavalry_leader swamp_fox}
+				#		skill = 5
+				#		attack_skill = 4
+				#		defense_skill = 4
+				#		planning_skill = 3
+				#		logistics_skill = 5
+				#	}
+				#}
+				#ROM = {
+				#	create_corps_commander = {
+				#		name = "Romanias Pregrinded one"
+				#		gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				#		traits = { brilliant_strategist  ranger trickster organizer infantry_leader urban_assault_specialist commando}
+				#		skill = 5
+				#		attack_skill = 4
+				#		defense_skill = 4
+				#		planning_skill = 3
+				#		logistics_skill = 5
+				#	}
+				#}
+				#SPA = {
+				#	create_corps_commander = {
+				#		name = "Spanish Pregrinded one"
+				#		gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				#		traits = { brilliant_strategist harsh_leader panzer_leader ranger trickster organizer trait_engineer}
+				#		skill = 5
+				#		attack_skill = 6
+				#		defense_skill = 4
+				#		planning_skill = 3
+				#		logistics_skill = 5
+				#	}
+				#}
+				#BUL = {
+				#	create_corps_commander = {
+				#		name = "Bulgarian Pregrinded one"
+				#		gfx = "GFX_portrait_hol_godfried_van_voorst_tot_voorst"
+				#		traits = { brilliant_strategist harsh_leader panzer_leader cavalry_leader infantry_leader trickster organizer trait_mountaineer}
+				#		skill = 5
+				#		attack_skill = 4
+				#		defense_skill = 5
+				#		planning_skill = 1
+				#		logistics_skill = 5
+				#	}
+				#}
+			}
 		}
 	}
 }
