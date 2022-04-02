@@ -1,0 +1,15 @@
+add_namespace = tank_explanataions
+
+country_event  = {
+	id = tank_explanataions.1
+	title = tank_explanataions.1.t
+	desc = tank_explanataions.1.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tank_explanataions.1.a
+		add_political_power = 1
+	}
+}
