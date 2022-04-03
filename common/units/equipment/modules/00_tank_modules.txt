@@ -922,7 +922,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_medium_main_armament
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
