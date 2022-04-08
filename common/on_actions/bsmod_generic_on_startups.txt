@@ -94,4 +94,12 @@ on_actions = {
 			}
 		}
 	}
+	
+	on_startup = {
+		effect = {
+			GER = {
+				country_event = { days = 0 id = germany.1044 }
+			}
+		}
+	}
 }

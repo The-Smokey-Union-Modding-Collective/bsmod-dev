@@ -29,3 +29,6 @@
  tank_explanataions.1.t:0 "Halt, explanation time!"
  tank_explanataions.1.d:0 "It seems somone has changed the tank designer. We are currently trying to find the perpetrator, but whilst you are here let me explain what this dastardly person has done.\n Medium and Heavy hull 1 have had their turrets downgraded, so mediums can only use light turret types and Heavy 1 can only use medium and light turret types.\n Amphib tanks seem to be unable to mount anything other than light tank turrets.\n All the empty space in tier 1 and 2 hulls has been filled up with concrete, so now Hull 1 only has 2 special slots and hull 2 has 3 special slots.\n There seems to be a new weird slot that allows you to improve the armour profile, peculiar."
  tank_explanataions.1.a:0 "If you feel sad about theses changes, here have a cookie!"
+ germany.1044.t:0 "Increased funding for the military"
+ germany.1044.desc:0 "With our recent rise to power we have started funding the military and its production centers. This should result in a temporary increase in army equipment production."
+ germany.1044.a:0 "Wunderbar" 
