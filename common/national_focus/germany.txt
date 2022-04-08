@@ -2126,7 +2126,7 @@ focus_tree = {
 	focus = {
 		id = GER_form_the_reichskommissariats
 		icon = GFX_focus_ger_reichskommisariats
-		prerequisite = { focus = GER_german_war_economy focus = GER_integrate_war_economies }
+		prerequisite = { focus = GER_german_war_economy }
 		available = {
 			has_government = fascism
 		}
