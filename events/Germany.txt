@@ -7473,3 +7473,17 @@ country_event = { #Handed Over.. NOT
 		}
 	}
 }
+
+country_event = { #buildup event
+	id = germany.1044
+	title = germany.1044.t
+	desc = germany.1044.desc
+	picture = GFX_report_event_german_reichstag_gathering
+
+	is_triggered_only = yes
+
+	option = { #NOPE
+		name = germany.1044.a
+		add_timed_idea = { idea = GER_buildup_idea days = 160 } 
+	}
+}
