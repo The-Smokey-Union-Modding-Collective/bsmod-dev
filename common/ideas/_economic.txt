@@ -384,18 +384,6 @@ ideas = {
 				
 				if = {
 					limit = {
-						original_tag = GER
-					}
-					OR = {
-						FRA = {
-							 has_capitulated = yes
-						}
-						date > 1941.1.1
-					}
-				}
-				
-				if = {
-					limit = {
 						original_tag = SOV
 					}
 					has_war_with = GER
