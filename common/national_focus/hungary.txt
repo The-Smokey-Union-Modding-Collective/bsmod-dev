@@ -1143,7 +1143,7 @@ focus_tree = {
 		prerequisite = { focus = HUN_elect_a_king }
 		mutually_exclusive = { focus =  HUN_elect_a_democratic_king }
 		mutually_exclusive = { focus =  HUN_invite_the_habsburg_prince }
-		x = 3
+		x = 2
 		y = 1
 		relative_position_id = HUN_elect_a_king
 
