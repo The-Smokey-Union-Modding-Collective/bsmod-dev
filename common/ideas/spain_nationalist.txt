@@ -30,7 +30,7 @@ ideas = {
 			}
 			
 			modifier = {
-				send_volunteer_size = 9
+				send_volunteer_size = 19
 				air_volunteer_cap = 200
 			}
 		}

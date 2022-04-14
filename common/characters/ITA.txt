@@ -220,7 +220,7 @@ characters={
 		name=ITA_tommy
 		portraits={
 			army={
-				large=GFX_portrait_ITA_tommy
+				large=GFX_portrait_ita_tommy
 			}
 		}
 		
