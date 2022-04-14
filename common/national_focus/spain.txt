@@ -3518,6 +3518,10 @@ focus_tree = {
 				amount = 10000
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 15
+			}
 			add_ideas = SPA_volunteer_force
 			set_rule = {
 				can_send_volunteers = yes
