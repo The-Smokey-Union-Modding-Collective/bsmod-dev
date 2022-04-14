@@ -69,7 +69,7 @@
 		x = 1
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -292,7 +292,7 @@
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -318,7 +318,7 @@
 		available_if_capitulated = yes
         search_filters = { FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-		add_political_power = 120
+		add_political_power = 75
 		}
 	}
 
@@ -331,7 +331,7 @@
 		y = 1
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -435,7 +435,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -467,7 +467,7 @@
 		y = 3
 		relative_position_id = SAF_support_the_policy_of_appeasement
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 2
