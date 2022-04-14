@@ -1459,7 +1459,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_popularity = {
-			    ideology = neutrality
+			    ideology = fascism
 			    popularity = 0.05
 			}
 			add_stability = 0.1
@@ -4131,6 +4131,14 @@ focus_tree = {
 				swap_ideas = {
 					remove_idea = SPA_carlism_3
 					add_idea = SPA_carlism_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = fascism
 				}
 			}
 			custom_effect_tooltip = SPA_fuse_the_parties_tt
