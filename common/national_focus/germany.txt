@@ -3862,8 +3862,9 @@ focus_tree = {
 			}
 			unlock_decision_tooltip = GER_fall_gelb
 			FRA = {
-				remove_ideas = {
-					FRA_protected_by_the_maginot_line
+				swap_ideas = {
+					remove_idea = FRA_protected_by_the_maginot_line_2
+					add_idea = FRA_protected_by_the_maginot_line
 				}
 			}
 		}
