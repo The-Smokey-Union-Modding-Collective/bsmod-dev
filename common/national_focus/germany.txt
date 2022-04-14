@@ -4564,8 +4564,13 @@ focus_tree = {
 					has_dlc = "La Resistance"
 				}
 				SPA = {
+					hidden_effect = {
 					remove_ideas = SPA_recovering_from_civil_war
+					remove_ideas = SPA_recovering_from_civil_war_2
+					remove_ideas = SPA_recovering_from_civil_war_3
+					}
 					add_opinion_modifier = { target = GER modifier = ger_spa_alliance_focus }
+					custom_effect_tooltip = spain_will_be_fixed
 				}
 			}
 		}

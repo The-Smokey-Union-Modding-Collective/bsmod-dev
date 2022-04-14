@@ -1909,7 +1909,7 @@
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 23 # bsmod change vanilla = 26
+		x = 25 # bsmod change vanilla = 26
 		y = 0
 		offset = {
 			x = 0
@@ -3245,7 +3245,7 @@
 	focus = {
 		id = FRA_nationalize_key_industry
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
+		x = -3
 		y = 1
 		offset = {
 			x = 0
@@ -3620,7 +3620,7 @@
 	focus = {
 		id = FRA_the_blum_viollette_proposal
 		icon = GFX_goal_generic_improve_relations
-		x = 7
+		x = 4
 		y = 1
 
 		prerequisite = {
@@ -3857,7 +3857,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 3 # bsmod change
+		x = 0 # bsmod change
 		y = 1
 		offset = {
 			x = 0
