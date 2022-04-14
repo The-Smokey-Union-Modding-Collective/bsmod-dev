@@ -2620,6 +2620,7 @@
         search_filters = {  }
 
 		completion_reward = {
+			custom_effect_tooltip = general_warning
 			SAF_george_edwin_brink = {		
 				add_unit_leader_trait = panzer_leader
 			}

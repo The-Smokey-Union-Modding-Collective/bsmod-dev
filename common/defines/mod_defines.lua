@@ -1,3 +1,4 @@
+-- force update checksum
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 48	--vanilla=10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 48			--vanilla=25
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }

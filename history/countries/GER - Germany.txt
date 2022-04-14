@@ -575,6 +575,7 @@ if = {
 			suspension_type_slot = tank_christie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 			special_type_slot_1 = tank_radio_1
 		}
 		upgrades = {
@@ -590,14 +591,13 @@ if = {
 		parent_version = 0
 		modules = {
 			main_armament_slot = tank_close_support_gun
-			turret_type_slot = tank_heavy_three_man_tank_turret
+			turret_type_slot = tank_medium_three_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 			special_type_slot_1 = tank_radio_1
 			special_type_slot_2 = secondary_turret_hmg
-			special_type_slot_3 = secondary_turret_hmg
-			special_type_slot_4 = secondary_turret_hmg
 		}
 		upgrades = {
 			tank_nsb_engine_upgrade = 6
@@ -615,6 +615,7 @@ if = {
 			suspension_type_slot = tank_christie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
+			armor_profile_type_slot = basic_armor_profile
 			special_type_slot_1 = tank_radio_1
 		}
 		upgrades = {

@@ -20,3 +20,7 @@
  mod_scw_axis_minor_desc:0 "As an axis minor power we can send two volunteer division to fight Bolshevism in Spain."
  mod_scw_exp_gain:0 "Lessons of the Spanish Civil War"
  mod_scw_exp_gain_desc:0 "War has changed since the end of the Great War. The experiences our volunteers in spain gather are priceless, we have to adapt to the new ways of warfare before the next war reaches our nation."
+ GER_buildup_idea:0 "Increased Military Funding"
+ GER_buildup_idea_desc:0 "The recent increase in funding for the military has resulted in a temporary production increase."
+ GER_total_war:0 "Total War"
+ GER_total_war_desc:0 "Germany is at war with all powers now, and enemies armies strike on the east and west. To achieve total victory all of Germany's resources, men and factories must be used to maximum capicity. We will deliver the Fatherland a victory!"
