@@ -12,4 +12,16 @@ ideas = {
 			}
 		}
 	}
+
+	country = {
+		SOV_distrust_capitalists = {
+			name = SOV_distrust_capitalists
+
+			picture = eng_tackle_capitalism
+
+			modifier = {
+				license_production_speed = -0.25
+			}
+		}
+	}
 }
