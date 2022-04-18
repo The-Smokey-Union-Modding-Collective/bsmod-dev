@@ -1,0 +1,13 @@
+SOV_finnish_surrender_category = {
+	icon = generic_fascism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = SOV
+	}
+
+	visible = {
+		SOV = { has_war_with = FIN }
+	}
+}
