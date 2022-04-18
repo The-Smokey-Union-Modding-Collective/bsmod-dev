@@ -1909,7 +1909,7 @@
 	focus = {
 		id = FRA_form_the_popular_front
 		icon = GFX_goal_generic_intelligence_exchange
-		x = 23 # bsmod change vanilla = 26
+		x = 25 # bsmod change vanilla = 26
 		y = 0
 		offset = {
 			x = 0
@@ -3245,7 +3245,7 @@
 	focus = {
 		id = FRA_nationalize_key_industry
 		icon = GFX_goal_generic_construct_civ_factory
-		x = 0
+		x = -3
 		y = 1
 		offset = {
 			x = 0
@@ -3622,19 +3622,12 @@
 		icon = GFX_goal_generic_improve_relations
 		x = 4
 		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		allow_branch = {
-			always = no
-		}
+
 		prerequisite = {
 			focus = FRA_reform_the_labour_laws
-			focus = FRA_protect_the_rights_of_man
 		}
 		relative_position_id = FRA_reform_the_labour_laws
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3703,7 +3696,7 @@
 			focus = FRA_the_blum_viollette_proposal
 		}
 		relative_position_id = FRA_the_blum_viollette_proposal
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3839,7 +3832,7 @@
 		}
 		mutually_exclusive = { focus = FRA_france_undividable }
 		relative_position_id = FRA_expand_the_citizenship
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3864,7 +3857,7 @@
 	focus = {
 		id = FRA_review_foreign_policy
 		icon = GFX_goal_support_democracy
-		x = 3 # bsmod change
+		x = 0 # bsmod change
 		y = 1
 		offset = {
 			x = 0
