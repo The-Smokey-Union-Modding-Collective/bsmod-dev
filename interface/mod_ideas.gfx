@@ -105,4 +105,12 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_sov_for_the_republic.dds"
 	}
 	
+
+	### (Germany) Total War
+
+	spriteType = {
+		name ="GFX_idea_GER_total_war"
+		texturefile = "gfx/interface/ideas/idea_ger_total_war.dds"
+	}
+
 }

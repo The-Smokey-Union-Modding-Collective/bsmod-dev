@@ -24,3 +24,7 @@
  mod_trade_allies:0 "factionwide resource sharing"
  mod_trade_axis:0 "factionwide resource sharing"
  mod_trade_copro:0 "factionwide resource sharing"
+ GER_buildup_idea:0 "Increased Military Funding"
+ GER_buildup_idea_desc:0 "The recent increase in funding for the military has resulted in a temporary production increase."
+ GER_total_war:0 "Total War"
+ GER_total_war_desc:0 "Germany is at war with all powers now, and enemies armies strike on the east and west. To achieve total victory all of Germany's resources, men and factories must be used to maximum capicity. We will deliver the Fatherland a victory!"

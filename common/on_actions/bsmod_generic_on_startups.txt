@@ -80,4 +80,26 @@ on_actions = {
 			}
 		}
 	}
+	on_startup = {
+		effect = {
+			every_country = {
+				if = {
+					limit = {
+						NOT = {
+							is_ai = yes
+						}
+					}
+					country_event = { days = 0 id = tank_explanataions.1 }
+				}
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			GER = {
+				country_event = { days = 0 id = germany.1044 }
+			}
+		}
+	}
 }
