@@ -23,6 +23,8 @@ add_ideas = {
 	JAP_duplicate_research_efforts
 	JAP_militarism
 }
+add_ideas = mod_trade_copro
+
 
 609 = {
 	start_resistance = yes

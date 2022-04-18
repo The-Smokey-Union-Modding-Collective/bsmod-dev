@@ -55,6 +55,7 @@ add_ideas = SIA_the_thai_monarchy
 add_ideas = SIA_fascist_army_sympathies
 add_ideas = SIA_non_existent_ship_industry
 add_ideas = SIA_civil_war_3
+add_ideas = mod_trade_copro
 
 # Starting tech
 set_technology = {

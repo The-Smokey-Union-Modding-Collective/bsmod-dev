@@ -35,4 +35,74 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ast_third_emu_war.dds"
 	}
 	
+	### (Axis) Trade Spirit
+	
+	spriteType = {
+		name = "GFX_idea_axis_trade"
+		texturefile = "gfx/interface/ideas/idea_axis_trade.dds"
+	}
+	
+	### (Allies) Trade Spirit
+	
+	spriteType = {
+		name = "GFX_idea_allied_trade"
+		texturefile = "gfx/interface/ideas/idea_allied_trade.dds"
+	}
+	
+	### (Soviet) Trade Spirit
+	
+	spriteType = {
+		name = "GFX_idea_soviet_trade"
+		texturefile = "gfx/interface/ideas/idea_soviet_trade.dds"
+	}
+	
+	### (CoPro) Trade Spirit
+	
+	spriteType = {
+		name = "GFX_idea_copro_trade"
+		texturefile = "gfx/interface/ideas/idea_copro_trade.dds"
+	}
+	
+	### (Allied Volunteers) International Brigades
+	
+	spriteType = {
+		name = "GFX_idea_international_brigades"
+		texturefile = "gfx/interface/ideas/idea_international_brigades.dds"
+	}
+	
+	### (Allied Air-Volunteers) Escuadrilla Internacional
+	
+	spriteType = {
+		name = "GFX_idea_escuadrilla_internacional"
+		texturefile = "gfx/interface/ideas/idea_escuadrilla_internacional.dds"
+	}
+	
+	### (Axis Volunteers) Spanish Foreign Legion
+	
+	spriteType = {
+		name = "GFX_idea_spanish_foreign_legion"
+		texturefile = "gfx/interface/ideas/idea_spanish_foreign_legion.dds"
+	}
+	
+	### (Italian Volunteers) Corpo Truppe Volontarie
+	
+	spriteType = {
+		name = "GFX_idea_ita_corpo_truppe_volontarie"
+		texturefile = "gfx/interface/ideas/idea_ita_corpo_truppe_volontarie.dds"
+	}
+	
+	### (German Volunteers) Condor Legion
+	
+	spriteType = {
+		name = "GFX_idea_ger_condor_legion"
+		texturefile = "gfx/interface/ideas/idea_ger_condor_legion.dds"
+	}
+	
+	### (Soviet Volunteers) For the Republic
+	
+	spriteType = {
+		name = "GFX_idea_sov_for_the_republic"
+		texturefile = "gfx/interface/ideas/idea_sov_for_the_republic.dds"
+	}
+	
 }

@@ -376,6 +376,8 @@ add_ideas = {
 	partial_economic_mobilisation
 }
 add_ideas = GER_mefo_bills_1
+add_ideas = mod_scw_condor_legion
+add_ideas = mod_trade_axis
 
 activate_mission = GER_mefo_bills_mission
 

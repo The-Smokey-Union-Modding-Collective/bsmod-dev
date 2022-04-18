@@ -20,3 +20,7 @@
  mod_scw_axis_minor_desc:0 "As an axis minor power we can send two volunteer division to fight Bolshevism in Spain."
  mod_scw_exp_gain:0 "Lessons of the Spanish Civil War"
  mod_scw_exp_gain_desc:0 "War has changed since the end of the Great War. The experiences our volunteers in spain gather are priceless, we have to adapt to the new ways of warfare before the next war reaches our nation."
+ mod_trade_soviet:0 "factionwide resource sharing"
+ mod_trade_allies:0 "factionwide resource sharing"
+ mod_trade_axis:0 "factionwide resource sharing"
+ mod_trade_copro:0 "factionwide resource sharing"

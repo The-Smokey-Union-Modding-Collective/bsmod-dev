@@ -125,7 +125,8 @@ if = {
 	add_ideas = {
 		ROM_king_carol_ii_hedonist
 	}
-	add_ideas = mod_scw_axis_minor
+	add_ideas = mod_scw_spanish_foreign_legion
+	add_ideas = mod_trade_axis
 	give_guarantee = CZE
 	give_guarantee = GRE
 	give_guarantee = TUR

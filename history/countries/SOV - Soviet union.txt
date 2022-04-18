@@ -824,6 +824,9 @@ add_ideas = {
 
 	SOV_genrikh_yagoda #NKVD Chief (political advisor)
 }
+add_ideas = mod_scw_for_the_republic
+add_ideas = mod_scw_escuadrilla_internacional
+add_ideas = mod_trade_soviet
 
 1939.1.1 = {
 
