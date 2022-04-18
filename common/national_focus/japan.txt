@@ -22,7 +22,7 @@ focus_tree = {
 			focus = JAP_support_the_kodoha_faction
 			focus = JAP_strengthen_civilian_government
 		}
-		x = 3
+		x = 0
 		y = 0
 
 		cost = 10
@@ -950,7 +950,7 @@ focus_tree = {
 		id = JAP_purge_the_kodoha_faction
 		icon = GFX_goal_generic_major_war
 		mutually_exclusive = { focus = JAP_the_unthinkable_option focus = JAP_support_the_kodoha_faction focus = JAP_strengthen_civilian_government }
-		x = 8
+		x = 4
 		y = 0
 		relative_position_id = JAP_the_unthinkable_option
 		offset = {
@@ -4291,7 +4291,7 @@ focus_tree = {
 	focus = {
 		id = JAP_the_manchurian_project
 		icon = GFX_focus_jap_manchurian_project
-		x = 6
+		x = -2
 		y = 0
 		relative_position_id = JAP_strengthen_civilian_government
 		offset = {
