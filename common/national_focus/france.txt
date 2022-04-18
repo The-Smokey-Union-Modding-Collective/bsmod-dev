@@ -201,7 +201,7 @@
 			}
 			add_resource = {
 				type = rubber
-				amount = 60
+				amount = 25
 				state = 539
 			}
 		}

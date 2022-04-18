@@ -1925,8 +1925,8 @@ SOV_propaganda_campaigns = {
 			SOV_propaganda_poster_slot_available = yes
 
 			has_war = yes
-			surrender_progress < 0.01
 			any_enemy_country = {
+				surrender_progress > 0.05 # bsmod change
 				is_major = yes
 				ROOT = {
 					any_controlled_state = {
@@ -2629,7 +2629,7 @@ SOV_propaganda_campaigns = {
 		modifier = {
 			experience_gain_army_factor = 0.1
 			command_power_gain_mult = 0.15
-			breakthrough_factor = 0.075
+			breakthrough_factor = 0.05
 		}
 
 		complete_effect = {
@@ -3050,7 +3050,7 @@ SOV_propaganda_campaigns = {
 
 		available = {
 			SOV_propaganda_poster_slot_available = yes
-
+			surrender_progress > 0.4 # bsmod change - not in vanilla
 			any_country = {
 				has_government = fascism
 				OR = {
@@ -3489,8 +3489,8 @@ SOV_propaganda_campaigns = {
 		cost = SOV_propaganda_sweep_scum_out_cost
 
 		modifier = {
-			army_core_attack_factor = 0.1
-			army_core_defence_factor = 0.05
+			army_core_attack_factor = 0.025
+			army_core_defence_factor = 0.025
 		}
 
 		complete_effect = {
@@ -11805,10 +11805,10 @@ SOV_great_patriotic_war = {
 			has_civil_war = no
 		}
 
-		days_remove = 720
+		days_remove = 90 # Bsmod change -- vanilla = 720
 
 		modifier = {
-			army_core_defence_factor = 0.25
+			army_core_defence_factor = 0.15 # Bsmod change -- vanilla = 0.25
 			mobilization_speed = 0.15
 		}
 
