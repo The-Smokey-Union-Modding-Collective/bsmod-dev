@@ -102,4 +102,12 @@ on_actions = {
 			}
 		}
 	}
+
+	on_startup = {
+		effect = {
+			SOV = {
+				add_ideas = SOV_distrust_capitalists
+			}
+		}
+	}
 }
