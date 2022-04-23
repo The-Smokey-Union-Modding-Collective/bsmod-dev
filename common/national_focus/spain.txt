@@ -3541,6 +3541,7 @@ focus_tree = {
 				amount = 15
 			}
 			add_ideas = SPA_volunteer_force
+			add_ideas = mod_trade_axis
 			set_rule = {
 				can_send_volunteers = yes
 			}
