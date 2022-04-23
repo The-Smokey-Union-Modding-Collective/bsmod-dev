@@ -62,7 +62,8 @@ if = {
 		disarmed_nation
 		HUN_treaty_of_triannon
 	}
-	add_ideas = mod_scw_axis_minor
+	add_ideas = mod_scw_spanish_foreign_legion
+	add_ideas = mod_trade_axis
 }
 
 if = {

@@ -147,7 +147,8 @@ if = {
 		low_economic_mobilisation
 		limited_conscription
 	}
-	add_ideas = mod_scw_allies_minor
+	add_ideas = mod_scw_international_brigades
+	add_ideas = mod_trade_allies
 
 	
 	set_technology = {

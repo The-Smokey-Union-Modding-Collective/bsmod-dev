@@ -52,7 +52,8 @@ if = { #DLC
 		BUL_imro_01
 		volunteer_only
 	}
-	add_ideas = mod_scw_axis_minor
+	add_ideas = mod_scw_spanish_foreign_legion
+	add_ideas = mod_trade_axis
 
 	#Army limitations due to Treaty of Neuilly sur Seine
 	set_rule = { #DLC

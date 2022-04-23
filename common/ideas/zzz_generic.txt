@@ -102,6 +102,10 @@ ideas = {
 	# Special ones that can be applied on other countries through focus system.
 	country = {
 	
+#################
+### MOD - SCW ###
+#################
+	
 		mod_scw_exp_gain = {
 			allowed = {
 				always = no
@@ -116,14 +120,14 @@ ideas = {
 			}
 		}
 	
-		mod_scw_axis_minor = {
+		mod_scw_spanish_foreign_legion = { #AXIS MINORS 2 VOLUNTEERS
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_fascism_drift_bonus
+			picture = spanish_foreign_legion
 			modifier = {
 				send_volunteers_tension = -1
 				send_volunteer_size = 1
@@ -133,14 +137,67 @@ ideas = {
 			}
 		}
 		
-		mod_scw_allies_minor = {
+		mod_scw_condor_legion = { #GERMANY 4/6 VOLUNTEERS, 400/600 AIRVOLUNTEERS
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_democratic_drift_bonus
+			picture = ger_condor_legion
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 5
+				air_volunteer_cap = 600
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		mod_scw_corpo_truppe_volontarie = { #ITALY 2 VOLUNTEERS, 200 AIRVOLUNTEERS
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ita_corpo_truppe_volontarie
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 1
+				air_volunteer_cap = 200
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		mod_scw_for_the_republic = { #SOVIETS 4 VOLUNTEERS
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = sov_for_the_republic
+			modifier = {
+				send_volunteers_tension = -1
+				send_volunteer_size = 3
+			}
+			rule = {
+				can_send_volunteers = yes
+			}
+		}
+		
+		mod_scw_international_brigades = { #ALL ALLIES 1 VOLUNTEER
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = international_brigades
 			modifier = {
 				send_volunteers_tension = -1
 			}
@@ -149,22 +206,226 @@ ideas = {
 			}
 		}
 		
-		mod_scw_allies_major = {
+		mod_scw_escuadrilla_internacional = { #USA/UK/SOV 200 AIRVOLUNTEERS
 			allowed = {
 				always = no
 			}
 
 			removal_cost = -1
 
-			picture = generic_victors_of_ww1
+			picture = escuadrilla_internacional
 			modifier = {
-				send_volunteers_tension = -1
 				air_volunteer_cap = 200
 			}
-			rule = {
-				can_send_volunteers = yes
+		}
+		
+#################
+## MOD - TRADE ##
+#################
+
+		mod_trade_soviet = { #free trade for the USSR with the allies
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = soviet_trade
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = NZL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = MAL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SOV
+				trade_cost_for_target_factor = -1
 			}
 		}
+		
+		mod_trade_allies = { #free trade for any allied nation with the allies and USSR
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = allied_trade
+			
+			targeted_modifier = {
+				tag = ENG
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = CAN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SAF
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = RAJ
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = AST
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = NZL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = MAL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = FRA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = USA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SOV
+				trade_cost_for_target_factor = -1
+			}
+		}
+		
+		mod_trade_axis = { #free trade for the Axis and CoPro
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = axis_trade
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = HUN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = ROM
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SPR
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = MAN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SIA
+				trade_cost_for_target_factor = -1
+			}
+		}
+		
+		mod_trade_copro = { #free trade for the CoPro and Axis
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = copro_trade
+			
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = ITA
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = HUN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = ROM
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = BUL
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SPR
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = MAN
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = SIA
+				trade_cost_for_target_factor = -1
+			}
+		}
+
+#################
+### MOD - FIX ###
+#################
 
 		mod_improved_worker_conditions = {
 		

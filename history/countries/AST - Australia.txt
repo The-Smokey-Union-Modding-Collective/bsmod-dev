@@ -146,7 +146,8 @@ if = {
 		has_dlc = "Together for Victory"
 	}
 	add_ideas = AST_great_depression_1
-	add_ideas = mod_scw_allies_minor
+	add_ideas = mod_scw_international_brigades
+	add_ideas = mod_trade_allies
 
 	add_to_tech_sharing_group = commonwealth_research
 }

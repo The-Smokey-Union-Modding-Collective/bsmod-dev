@@ -33,6 +33,8 @@ add_ideas = {
 	limited_conscription
 	partial_economic_mobilisation
 }
+add_ideas = mod_scw_corpo_truppe_volontarie
+add_ideas = mod_trade_axis
 
 550 = {
 	start_resistance = yes
