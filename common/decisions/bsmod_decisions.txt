@@ -52,3 +52,35 @@ economy_decisions = {
 		}
     }
 }
+
+SOV_finnish_surrender_category = {
+    SOV_finnish_surrender = {
+        
+        icon = generic_form_nation
+        
+        allowed = {
+            original_tag = SOV
+        }
+        
+        available = {
+            NOT = { has_war_with = FIN }
+        }
+        
+        activation = {
+            has_war_with = FIN
+        }
+        
+        days_mission_timeout = 90
+        
+        timeout_effect = {
+            white_peace = FIN
+            transfer_state = 146
+            transfer_state = 147
+            transfer_state = 722
+            GER = { puppet = FIN }
+        }
+        
+        complete_effect = {
+        }
+    }
+}

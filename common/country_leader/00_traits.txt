@@ -1793,7 +1793,7 @@ leader_traits = {
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.05
 		dig_in_speed_factor = 0.05
-		max_dig_in = 5
+		max_dig_in = 2
 	}
 
 	incompetent_leader = { #Georgi Kyoseivanov
@@ -1870,7 +1870,7 @@ leader_traits = {
 		conscription_factor = 0.05
 		army_core_defence_factor = 0.05
 		dig_in_speed_factor = 0.05
-		max_dig_in = 5
+		max_dig_in = 2
 	}
 
 	political_manipulator_regency_council = { #Regency Council (led by Bogdan Filov)
@@ -5016,7 +5016,7 @@ leader_traits = {
 
 	army_chief_entrenchment_1 = {
 		sprite = 5
-		max_dig_in = 3
+		max_dig_in_factor = 0.05
 		mobilization_speed = -0.02
 		experience_gain_army = 0.06
 		
@@ -5029,7 +5029,7 @@ leader_traits = {
 
 	army_chief_entrenchment_2 = {
 		sprite = 5
-		max_dig_in = 5
+		max_dig_in_factor = 0.1
 		mobilization_speed = -0.04
 		experience_gain_army = 0.09
 		
@@ -5042,7 +5042,7 @@ leader_traits = {
 
 	army_chief_entrenchment_3 = {
 		sprite = 5
-		max_dig_in = 7
+		max_dig_in_factor = 0.15
 		mobilization_speed = -0.06
 		experience_gain_army = 0.12
 		

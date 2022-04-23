@@ -745,7 +745,7 @@ characters={
 		name=GER_hinrich_laudrup
 		portraits={
 			army={
-				large=GFX_Portrait_Germany_Hinrich_Laudrup
+				large=GFX_portrait_ger_hinrich_laudrup
 				small=GFX_Portrait_Germany_Hinrich_Laudrup_small
 			}
 		}
@@ -764,7 +764,7 @@ characters={
 		name=GER_klaus_hoffmann
 		portraits={
 			army={
-				large=GFX_Portrait_Germany_Klaus_Hoffmann
+				large=GFX_portrait_ger_klaus_hoffmann
 				small=GFX_Portrait_Germany_Klaus_Hoffmann_small
 			}
 		}
@@ -783,7 +783,7 @@ characters={
 		name=GER_ulrich_wrangel
 		portraits={
 			army={
-				large=GFX_Portrait_Germany_Ulrich_Wrangel
+				large=GFX_portrait_ger_ulrich_wrangel
 				small=GFX_Portrait_Germany_Ulrich_Wrangel_small
 			}
 		}
@@ -802,7 +802,7 @@ characters={
 		name=GER_johannes_vonreinhartz
 		portraits={
 			army={
-				large=GFX_Portrait_Germany_Johannes_vonReinhartz
+				large=GFX_portrait_ger_johannes_vonreinhartz
 				small=GFX_Portrait_Germany_Johannes_vonReinhartz
 			}
 		}
