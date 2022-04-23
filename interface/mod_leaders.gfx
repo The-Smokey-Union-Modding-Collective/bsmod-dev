@@ -62,9 +62,15 @@ spriteTypes = {
 		name = "GFX_portrait_Germany_Konrad_Adenauer_General"
 		texturefile = "gfx/leaders/GER/Portrait_Germany_Konrad_Adenauer_General.dds"
 	}
-
+	### SOV
 	spriteType = {
 		name = "GFX_portrait_Soviet_Gregory_Nikita_Krushchev_General"
 		texturefile = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Nikita_Krushchev_General.dds"
 	}
+	###SPA
+	spriteType = {
+		name = "GFX_portrait_SPA_super_heavy_lego"
+		texturefile = "gfx/leaders/SPR/Portrait_SPA_super_heavy_lego.dds"
+	}
+
 }

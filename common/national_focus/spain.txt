@@ -677,7 +677,25 @@ focus_tree = {
 		y = 1
 		relative_position_id = SPA_sin_paquito
 		cost = 5
-
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				OR = {
+					NOT = {
+						has_global_flag = spanish_civil_war
+					}
+					AND = {
+						NOT = { has_completed_focus = SPA_con_paquito }
+						has_global_flag = spanish_civil_war
+					}
+				}
+			}
+		}
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
@@ -919,7 +937,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
+		prerequisite = {  focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_focus_befriend_italy
 		x = 4
@@ -960,7 +978,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
+		prerequisite = { focus = SPA_unify_the_nationalist_front }
 		
 		icon = GFX_focus_chi_mission_to_germany
 		x = 6
@@ -1408,7 +1426,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = {  focus = SPA_extol_the_martyrs_of_the_war }
 		
 		icon = GFX_goal_generic_axis_build_infantry
 		x = 3
@@ -1429,7 +1447,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = { focus = SPA_extol_the_martyrs_of_the_war }
 		
 		icon = GFX_focus_generic_strike_at_democracy1
 		x = 5
@@ -1441,7 +1459,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_popularity = {
-			    ideology = neutrality
+			    ideology = fascism
 			    popularity = 0.05
 			}
 			add_stability = 0.1
@@ -1460,7 +1478,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_establish_the_directory focus = SPA_extol_the_martyrs_of_the_war }
+		prerequisite = {  focus = SPA_extol_the_martyrs_of_the_war }
 		
 		icon = GFX_goal_generic_fortify_city
 		x = 4
@@ -2433,13 +2451,13 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
+		prerequisite = {  focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_army_doctrines
 		x = 2
 		y = 1
 		relative_position_id = SPA_the_national_syndicalist_state
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		complete_tooltip = {
@@ -2555,7 +2573,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_army_of_africa_model }
+		prerequisite = { focus = SPA_the_national_and_popular_army_of_spain }
 		
 		icon = GFX_goal_generic_small_arms
 		x = -1
@@ -2696,7 +2714,6 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_motorization }
 		prerequisite = { focus = SPA_join_the_axis }
 		
 		icon = GFX_goal_generic_army_tanks
@@ -2749,7 +2766,7 @@ focus_tree = {
 				is_in_faction_with = ITA
 			}
 		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
+		prerequisite = {  focus = SPA_fuse_the_parties }
 
 		ai_will_do = {
 			factor = 1
@@ -2814,15 +2831,24 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = SPA_fascist_economic_aid
-			swap_ideas = {
-				remove_idea = SPA_recovering_from_civil_war
-				add_idea = SPA_recovering_from_civil_war_2
+			if = {
+				limit = {has_idea = SPA_recovering_from_civil_war}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war
+					add_idea = SPA_recovering_from_civil_war_2
+				}
 			}
 			add_tech_bonus = {
 				name = SPA_fascist_economic_aid
 				bonus = 1.0
 				uses = 1
 				category = industry
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war
+					add_idea = SPA_recovering_from_civil_war_2
+				}
 			}
 		}
 	}
@@ -2997,9 +3023,12 @@ focus_tree = {
 		}
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
-			swap_ideas = {
-				remove_idea = SPA_recovering_from_civil_war_2
-				add_idea = SPA_recovering_from_civil_war_3
+			if = {
+				limit = {has_idea = SPA_recovering_from_civil_war_2}
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war_2
+					add_idea = SPA_recovering_from_civil_war_3
+				}
 			}
 			random_owned_controlled_state = {
 				limit = {
@@ -3052,6 +3081,12 @@ focus_tree = {
 				}
 			}
 			custom_effect_tooltip = SPA_reduce_reliance_on_foreign_resources_tt
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SPA_recovering_from_civil_war_2
+					add_idea = SPA_recovering_from_civil_war_3
+				}
+			}
 		}
 	}
 
@@ -3186,7 +3221,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_the_national_syndicalist_state focus = SPA_fuse_the_parties }
+		prerequisite = {  focus = SPA_fuse_the_parties }
 		
 		icon = GFX_goal_generic_consumer_goods
 		x = 6
@@ -3241,7 +3276,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_national_recovery
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -3291,7 +3326,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_autarky
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3501,7 +3536,12 @@ focus_tree = {
 				amount = 10000
 				producer = GER
 			}
+			add_equipment_to_stockpile = {
+				type = train_equipment
+				amount = 15
+			}
 			add_ideas = SPA_volunteer_force
+			add_ideas = mod_trade_axis
 			set_rule = {
 				can_send_volunteers = yes
 			}
@@ -3553,10 +3593,11 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_POLITICAL}
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.15
+			add_manpower = 20000
 			add_popularity = {
 			    ideology = fascism
-			    popularity = 0.05
+			    popularity = 0.25
 			}
 		}
 	}
@@ -3617,12 +3658,13 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_martyrdom_for_primo_de_rivera
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_WAR_SUPPORT FOCUS_FILTER_SPA_CARLIST_UPRISING}
 		completion_reward = {
-			add_war_support = 0.1
+			add_war_support = 0.15
+			add_manpower = 20000
 		}
 	}
 
@@ -3644,8 +3686,10 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_unify_the_nationalist_front
-		cost = 10
+		cost = 5
 
+		cancel_if_invalid = no
+		continue_if_invalid = yes
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
@@ -3764,7 +3808,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_consolidate_the_north
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY FOCUS_FILTER_SPA_CARLIST_UPRISING}
@@ -3832,9 +3876,8 @@ focus_tree = {
 		bypass = {
 			has_global_flag = SPR_carlist_uprising_flag
 		}
-		prerequisite = { focus = SPA_tackle_the_vulnerable_fronts }
-		prerequisite = { focus = SPA_foment_a_carlist_split }
-		
+		prerequisite = { focus = SPA_tackle_the_vulnerable_fronts focus = SPA_foment_a_carlist_split}
+
 		icon = GFX_goal_generic_military_sphere
 		x = 0
 		y = 2
@@ -4111,6 +4154,14 @@ focus_tree = {
 				swap_ideas = {
 					remove_idea = SPA_carlism_3
 					add_idea = SPA_carlism_4
+				}
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = fascism
 				}
 			}
 			custom_effect_tooltip = SPA_fuse_the_parties_tt
@@ -4753,12 +4804,27 @@ focus_tree = {
 			}
 			if = {
 				limit = {
-					NOT = {
-						has_idea = war_economy
-						has_idea = tot_economic_mobilisation
-					}
+					has_idea = civilian_economy
+				}
+				add_ideas = low_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = low_economic_mobilisation
+				}
+				add_ideas = partial_economic_mobilisation
+			}
+			else_if = {
+				limit = {
+					has_idea = partial_economic_mobilisation
 				}
 				add_ideas = war_economy
+			}
+			else_if = {
+				limit = {
+					has_idea = war_economy
+				}
+				add_ideas = tot_economic_mobilisation
 			}
 			if = {
 				limit = {
@@ -4824,7 +4890,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_adopt_the_26_points
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_STABILITY}
@@ -4873,7 +4939,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_expand_spanish_bases focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_expand_spanish_bases focus = SPA_dictator_for_life  }
 		
 		icon = GFX_goal_generic_navy_doctrines_tactics
 		x = -3
@@ -5207,7 +5273,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_adopt_the_26_points focus = SPA_settle_the_succession_question }
+		prerequisite = {  focus = SPA_settle_the_succession_question }
 		mutually_exclusive = { focus = SPA_dictator_for_life }
 		
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
@@ -5245,13 +5311,13 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_dictator_for_life focus = SPA_restore_the_monarchy }
+		prerequisite = { focus = SPA_dictator_for_life  }
 		
 		icon = GFX_goal_generic_more_territorial_claims
-		x = 2
+		x = 0
 		y = 1
 		relative_position_id = SPA_dictator_for_life
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -5497,7 +5563,25 @@ focus_tree = {
 		}
 		prerequisite = { focus = SPA_negotiate_carlist_support }
 		mutually_exclusive = { focus = SPA_the_phalanx_ascendant focus = SPA_unify_the_nationalist_front }
-		
+		allow_branch = {
+			if = {
+				limit = {
+					has_game_rule = {
+						rule = obsolete_focus_branches_visibility
+						option = HIDE
+					}
+				}
+				OR = {
+					NOT = {
+						has_global_flag = spanish_civil_war
+					}
+					AND = {
+						NOT = { has_completed_focus = SPA_con_paquito }
+						has_global_flag = spanish_civil_war
+					}
+				}
+			}
+		}
 		icon = GFX_focus_spa_supremacy_of_the_communion
 		x = 9
 		y = 1

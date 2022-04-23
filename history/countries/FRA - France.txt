@@ -316,7 +316,7 @@ set_popularities = {
 add_ideas = {
 	FRA_victors_of_wwi
 	FRA_disjointed_government
-	FRA_protected_by_the_maginot_line
+	FRA_protected_by_the_maginot_line_2
 	limited_conscription
 	FRA_full_employment
 	FRA_political_violence

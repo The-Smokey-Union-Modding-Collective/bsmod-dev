@@ -294,6 +294,9 @@ country_event = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
 					}
 				}
 				SPD = {
@@ -544,12 +547,22 @@ country_event = {
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
 							infantry = { x = 2 y = 0 }
-							artillery_brigade = { x = 2 y = 1 }
-							artillery_brigade = { x = 2 y = 2 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 2 y = 3 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+							infantry = { x = 3 y = 3 }
+							artillery_brigade = { x = 0 y = 3 }
+							artillery_brigade = { x = 0 y = 4 }
+							artillery_brigade = { x = 1 y = 3 }
+							artillery_brigade = { x = 1 y = 4 }
 						}
 						support = {
 							recon = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
+							anti_air = { x = 0 y = 2 }		
 						}
 					}
 					290 = {
@@ -808,8 +821,11 @@ country_event = {
 						is_locked = yes
 						regiments = {
 							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
 						}
 					}
 					172 = {
@@ -853,6 +869,12 @@ country_event = {
 							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
 						}
 					}
 					random_state = {
@@ -1309,6 +1331,9 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
 						}
 					}
 					random_state = {
@@ -2536,6 +2561,9 @@ country_event = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
 					}
 				}
 				SPA = {
