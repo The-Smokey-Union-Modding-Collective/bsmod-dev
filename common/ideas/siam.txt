@@ -121,11 +121,11 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_3
 			research_bonus = {
-					naval_equipment = -1
-					naval_doctrine = -1
-				}
+				naval_equipment = -1
+			}
 			modifier = {
 				industrial_capacity_dockyard = -0.50
+				naval_doctrine_cost_factor = 10
 			}
 		}
 		
@@ -137,11 +137,11 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_1
 			research_bonus = {
-					naval_equipment = -0.35
-					naval_doctrine = -0.35
-				}
+				naval_equipment = -0.35
+			}
 			modifier = {
 				industrial_capacity_dockyard = -0.20
+				naval_doctrine_cost_factor = 0.2
 			}
 		}
 		
@@ -153,11 +153,11 @@ ideas = {
 			
 			picture = generic_naval_manufacturer_2
 			research_bonus = {
-					naval_equipment = 0.10
-					naval_doctrine = 0.10
-				}
+				naval_equipment = 0.10
+			}
 			modifier = {
 				industrial_capacity_dockyard = 0.10
+				naval_doctrine_cost_factor = -0.1
 			}
 		}
 		
