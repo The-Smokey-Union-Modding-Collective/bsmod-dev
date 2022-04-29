@@ -1228,6 +1228,8 @@ equipment_modules = {
 		multiply_stats = {
 			armor_value = -0.05
 			build_cost_ic = -0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 	}
 
@@ -1242,6 +1244,8 @@ equipment_modules = {
 		multiply_stats = {
 			armor_value = 0.1
 			build_cost_ic = 0.02
+			defense = 0.15
+			breakthrough = 0.15
 		}
 	}
 
@@ -1258,6 +1262,8 @@ equipment_modules = {
 			soft_attack = -0.05
 			armor_value = 0.15
 			build_cost_ic = 0.02
+			defense = 0.25
+			breakthrough = 0.25
 		}
 	}
 
@@ -1272,6 +1278,8 @@ equipment_modules = {
 		multiply_stats = {
 			armor_value = 0.25
 			build_cost_ic = 0.05
+			defense = 0.2
+			breakthrough = 0.2
 		}
 	}
 
