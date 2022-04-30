@@ -294,9 +294,8 @@ country_event = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
 					}
 				}
 				SPD = {
@@ -309,6 +308,8 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -543,26 +544,18 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-							infantry = { x = 2 y = 3 }
-							infantry = { x = 3 y = 0 }
-							infantry = { x = 3 y = 1 }
-							infantry = { x = 3 y = 2 }
-							infantry = { x = 3 y = 3 }
-							artillery_brigade = { x = 0 y = 3 }
-							artillery_brigade = { x = 0 y = 4 }
-							artillery_brigade = { x = 1 y = 3 }
-							artillery_brigade = { x = 1 y = 4 }
+							artillery_brigade = { x = 2 y = 0 }
+							artillery_brigade = { x = 2 y = 1 }
 						}
 						support = {
 							recon = { x = 0 y = 0 }
 							engineer = { x = 0 y = 1 }
-							anti_air = { x = 0 y = 2 }		
+							anti_air = { x = 0 y = 2 }
+							artillery = { x = 0 y = 3 }
 						}
 					}
 					290 = {
@@ -581,6 +574,10 @@ country_event = {
 						if = {
 							limit = {
 								ROOT = { NOT = { has_country_flag = SPR_disband_the_army_flag } }
+							}
+							create_unit = {
+								division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+								owner = SPA
 							}
 							create_unit = {
 								division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
@@ -796,6 +793,8 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 					172 = {
@@ -821,11 +820,10 @@ country_event = {
 						is_locked = yes
 						regiments = {
 							infantry = { x = 0 y = 0 }
-						infantry = { x = 0 y = 1 }
-						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 					172 = {
@@ -866,15 +864,13 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
-							infantry = { x = 2 y = 0 }
-							infantry = { x = 2 y = 1 }
-							infantry = { x = 2 y = 2 }
-							infantry = { x = 3 y = 0 }
-							infantry = { x = 3 y = 1 }
-							infantry = { x = 3 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 1 y = 4 }
 						}
 					}
 					random_state = {
@@ -945,6 +941,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -1331,9 +1329,8 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-							infantry = { x = 1 y = 1 }
-							infantry = { x = 1 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 					random_state = {
@@ -1464,9 +1461,14 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
+
 							}
 						}
 					}
@@ -1669,9 +1671,13 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 							infantry = { x = 1 y = 0 }
 							infantry = { x = 1 y = 1 }
 							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 1 y = 4 }
 						}
 					}
 					division_template = {
@@ -1683,6 +1689,8 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 	
@@ -1881,6 +1889,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -2155,6 +2165,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -2561,9 +2573,8 @@ country_event = {
 						infantry = { x = 0 y = 0 }
 						infantry = { x = 0 y = 1 }
 						infantry = { x = 0 y = 2 }
-						infantry = { x = 1 y = 0 }
-						infantry = { x = 1 y = 1 }
-						infantry = { x = 1 y = 2 }
+						infantry = { x = 0 y = 3 }
+						infantry = { x = 0 y = 4 }
 					}
 				}
 				SPA = {
@@ -2576,6 +2587,8 @@ country_event = {
 							infantry = { x = 0 y = 0 }
 							infantry = { x = 0 y = 1 }
 							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							infantry = { x = 0 y = 4 }
 						}
 					}
 				}
@@ -2594,16 +2607,18 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
-								infantry = { x = 1 y = 2 }
-								infantry = { x = 2 y = 0 }
+								artillery_brigade = { x = 2 y = 0 }
 								artillery_brigade = { x = 2 y = 1 }
-								artillery_brigade = { x = 2 y = 2 }
 							}
 							support = {
 								recon = { x = 0 y = 0 }
 								engineer = { x = 0 y = 1 }
+								anti_air = { x = 0 y = 2 }
+								artillery = { x = 0 y = 3 }
 							}
 						}
 						290 = {
@@ -2622,6 +2637,10 @@ country_event = {
 							if = {
 								limit = {
 									ROOT = { NOT = { has_country_flag = SPR_disband_the_army_flag } }
+								}
+								create_unit = {
+									division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
+									owner = SPA
 								}
 								create_unit = {
 									division = "division_template = \"División del Ejército de África\" start_experience_factor = 0.3" 
@@ -2915,6 +2934,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -2955,9 +2976,13 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
 							}
 						}
 					}
@@ -3029,6 +3054,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -3425,6 +3452,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -3556,9 +3585,13 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
 							}
 						}
 					}
@@ -3762,9 +3795,13 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 								infantry = { x = 1 y = 0 }
 								infantry = { x = 1 y = 1 }
 								infantry = { x = 1 y = 2 }
+								infantry = { x = 1 y = 3 }
+								infantry = { x = 1 y = 4 }
 							}
 						}
 						division_template = {
@@ -3776,6 +3813,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -3974,6 +4013,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 3 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
@@ -4177,6 +4218,8 @@ country_event = {
 								infantry = { x = 0 y = 0 }
 								infantry = { x = 0 y = 1 }
 								infantry = { x = 0 y = 2 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 4 }
 							}
 						}
 					}
