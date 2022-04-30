@@ -908,7 +908,7 @@ equipment_modules = {
 
 	tank_high_velocity_cannon = {
 		abbreviation = "hv1"
-		category = tank_medium_main_armament
+		category = tank_small_main_armament
 		sfx = sfx_ui_sd_module_turret
 		allow_equipment_type = anti_tank
 
@@ -922,7 +922,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_small_main_armament
 			convert_cost_ic = 4
 		}
 		build_cost_resources = {
@@ -1224,10 +1224,12 @@ equipment_modules = {
 
 		add_stats = {
 		}
-		xp_cost = 10
+		xp_cost = 2
 		multiply_stats = {
 			armor_value = -0.05
 			build_cost_ic = -0.02
+			defense = 0.1
+			breakthrough = 0.1
 		}
 	}
 
@@ -1238,10 +1240,12 @@ equipment_modules = {
 
 		add_stats = {
 		}
-		xp_cost = 10
+		xp_cost = 2
 		multiply_stats = {
 			armor_value = 0.1
 			build_cost_ic = 0.02
+			defense = 0.15
+			breakthrough = 0.15
 		}
 	}
 
@@ -1252,12 +1256,14 @@ equipment_modules = {
 
 		add_stats = {
 		}
-		xp_cost = 10
+		xp_cost = 2
 		multiply_stats = {
 			hard_attack = -0.05
 			soft_attack = -0.05
 			armor_value = 0.15
 			build_cost_ic = 0.02
+			defense = 0.25
+			breakthrough = 0.25
 		}
 	}
 
@@ -1268,10 +1274,12 @@ equipment_modules = {
 
 		add_stats = {
 		}
-		xp_cost = 10
+		xp_cost = 2
 		multiply_stats = {
 			armor_value = 0.25
 			build_cost_ic = 0.05
+			defense = 0.2
+			breakthrough = 0.2
 		}
 	}
 

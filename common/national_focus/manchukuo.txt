@@ -1536,7 +1536,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = weapons_bonus
-				bonus = 1
+				bonus = 0.50
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1629,7 +1629,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
+				bonus = 0.50
 				uses = 1
 				category = artillery
 			}
@@ -2443,6 +2443,7 @@
 				turret_type_slot = tank_light_two_man_tank_turret
 				suspension_type_slot = tank_christie_suspension
 				armor_type_slot = tank_riveted_armor
+				armor_profile_type_slot = basic_armor_profile
 				engine_type_slot = tank_gasoline_engine
 				special_type_slot_1 = tank_radio_1
 			}
@@ -2705,6 +2706,12 @@
 					level = 4
 					instant_build = yes
 				}
+			}
+			add_tech_bonus = {
+				name = artillery_bonus
+				bonus = 1
+				uses = 2
+				category = artillery
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = mukden_tank_yard
