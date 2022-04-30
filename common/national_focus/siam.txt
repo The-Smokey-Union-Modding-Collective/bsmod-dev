@@ -1130,10 +1130,10 @@ focus_tree = {
 		
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			add_tech_bonus = {
+			add_doctrine_cost_reduction = {
 				name = doctrine_bonus
-				bonus = 1
-				uses = 1
+				cost_reduction = 0.50
+				uses = 2
 				category = land_doctrine
 			}
 		}
@@ -1339,8 +1339,21 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			set_technology = {
-				gwtank = 1
-				basic_light_tank = 1
+				gwtank_chassis = 1
+				basic_light_tank_chassis = 1 
+			}
+			create_equipment_variant = {
+				name = "Type-1 tankette experimental"
+				type = light_tank_chassis_0
+				parent_version = 0
+				modules = {
+				main_armament_slot = tank_auto_cannon
+				turret_type_slot = tank_light_two_man_tank_turret
+				suspension_type_slot = tank_christie_suspension
+				armor_type_slot = tank_riveted_armor
+				armor_profile_type_slot = basic_armor_profile
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
 			}
 		}
 	}
@@ -1370,7 +1383,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			set_technology = {
-			motorised_infantry = 1
+				motorised_infantry = 1
 			}
 		}
 	}

@@ -113,4 +113,18 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/idea_ger_total_war.dds"
 	}
 
+	spriteType = {
+		name = "GFX_idea_crda_cost"
+		texturefile = "gfx/interface/ideas/idea_crda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_crda_raiding"
+		texturefile = "gfx/interface/ideas/idea_crda.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_crda_atlantic"
+		texturefile = "gfx/interface/ideas/idea_crda.dds"
+	}
 }
