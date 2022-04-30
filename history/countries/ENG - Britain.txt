@@ -142,7 +142,10 @@ if = {
 		ship_hull_super_heavy = 1
 	}
 	add_ideas = MTG_naval_treaty_adherent
-	add_ideas = mod_scw_allies_major
+	add_ideas = mod_scw_international_brigades
+	add_ideas = mod_scw_escuadrilla_internacional
+	add_ideas = mod_trade_allies
+	
 	set_global_flag = MTG_second_london_conference
 	set_global_flag = { flag = MTG_naval_treaty_signatories value = 5 }
 }

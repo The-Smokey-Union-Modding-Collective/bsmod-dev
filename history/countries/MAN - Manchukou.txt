@@ -33,6 +33,9 @@ if = {
 	add_ideas = MAN_opium_exports_1
 	add_ideas = MAN_army_against_bandits_3
 }
+add_ideas = mod_trade_copro
+
+
 recruit_character = MAN_masaomi_yasuoka
 recruit_character = MAN_wang_jingwei
 recruit_character = MAN_aisin_gioro_puyi

@@ -84,7 +84,8 @@ if = {
 	limit = { has_dlc = "Together for Victory" }
 	add_ideas = SAF_ossewabrandwag
 	add_ideas = SAF_history_of_segregation
-	add_ideas = mod_scw_allies_minor
+	add_ideas = mod_scw_international_brigades
+	add_ideas = mod_trade_allies
 
 	add_to_tech_sharing_group = commonwealth_research
 	add_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
