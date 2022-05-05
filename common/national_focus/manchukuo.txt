@@ -1807,6 +1807,7 @@
 					expire = "1959.1.1"
 					ideology = fascism_ideology
 					traits = {
+						national_traitor
 					}
 				}
 				promote_leader = yes

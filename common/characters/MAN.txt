@@ -385,6 +385,31 @@ characters={
 		}
 	}
 
+	MAN_songgotu_zhanshan = {
+		name=MAN_songgotu_zhanshan
+		portraits={
+			army={
+				small="GFX_idea_generic_political_advisor_asia_1"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = MAN_songgotu_zhanshan
+			cost = 150
+			allowed = {
+				original_tag = MAN
+			}
+			available = {
+				has_completed_focus = MAN_economic_development 
+			}
+			traits = {
+				captain_of_industry 
+			}
+			ai_will_do = {
+				factor = 2.000
+			}
+		}
+	}
 
 	### POLITICAL ADVISORS ###
 
