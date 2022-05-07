@@ -1782,12 +1782,6 @@ focus_tree = {
 						is_free_or_subject_of_root = yes
 					}
 				}
-				HUN = { 
-					country_event = { id = wtt_germany.72 }
-					add_ideas = {
-						trade_treaty_germany
-					}
-				}
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
@@ -1867,12 +1861,6 @@ focus_tree = {
 						is_free_or_subject_of_root = yes
 					}
 				}
-				ROM = { 
-					country_event = { id = wtt_germany.72 } 
-					add_ideas = {
-						trade_treaty_germany
-					}
-				}
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
@@ -1950,12 +1938,6 @@ focus_tree = {
 					BUL = {
 						is_in_faction_with = GER
 						is_free_or_subject_of_root = yes
-					}
-				}
-				BUL = { 
-					country_event = { id = wtt_germany.72 }
-					add_ideas = {
-						trade_treaty_germany
 					}
 				}
 				effect_tooltip = {
