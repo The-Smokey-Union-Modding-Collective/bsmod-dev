@@ -1,7 +1,30 @@
 ideas = {
 
 	country = {
-		
+		GER_mounted_crusaider_army_idea= {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = idea_MEX_church_power_5
+
+			removal_cost = -1
+
+			modifier = {
+				cavalry_attack_factor = 0.5
+				motorized_attack_factor = 0.5
+				mechanized_attack_factor = 0.5
+				army_speed_factor = 0.15
+				custom_trigger_tooltip = {
+					tooltip = Cav_to_inf_ratio
+				}
+			}
+		}
 		GER_buildup_idea = {
 			
 			allowed = {
