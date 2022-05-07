@@ -1782,12 +1782,6 @@ focus_tree = {
 						is_free_or_subject_of_root = yes
 					}
 				}
-				HUN = { 
-					country_event = { id = wtt_germany.72 }
-					add_ideas = {
-						trade_treaty_germany
-					}
-				}
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
@@ -1867,12 +1861,6 @@ focus_tree = {
 						is_free_or_subject_of_root = yes
 					}
 				}
-				ROM = { 
-					country_event = { id = wtt_germany.72 } 
-					add_ideas = {
-						trade_treaty_germany
-					}
-				}
 				effect_tooltip = {
 					random_owned_controlled_state = {
 						limit = {
@@ -1950,12 +1938,6 @@ focus_tree = {
 					BUL = {
 						is_in_faction_with = GER
 						is_free_or_subject_of_root = yes
-					}
-				}
-				BUL = { 
-					country_event = { id = wtt_germany.72 }
-					add_ideas = {
-						trade_treaty_germany
 					}
 				}
 				effect_tooltip = {
@@ -2768,6 +2750,40 @@ focus_tree = {
 				uses = 1
 				category = nuclear
 				category = rocketry
+			}
+		}
+	}
+	focus = {
+		id = GER_mounted_crusaider_army
+		icon =  GFX_focus_mex_restore_the_army_of_christ
+		prerequisite = { focus = GER_wunderwaffe }
+		x = 0
+		y = 2
+		relative_position_id = GER_rocketry_focus
+		cost = 10
+		ai_will_do = {
+			factor = 1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = crusaider_tooltip_mod
+				hidden_trigger = {
+					always = no
+				} 
+			}
+			custom_trigger_tooltip = {
+				tooltip = crusaider_tooltip_mod_2
+				hidden_trigger = {
+					always = no
+				} 
+			}
+		}
+		available_if_capitulated = yes
+		search_filters = { FOCUS_FILTER_RESEARCH }
+		completion_reward = {
+			custom_effect_tooltip = holy_reward_tt
+			hidden_effect = {
+			add_ideas = GER_mounted_crusaider_army_idea
 			}
 		}
 	}
