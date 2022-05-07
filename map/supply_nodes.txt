@@ -717,4 +717,6 @@
 1 1149 #Tripoli
 1 11954 #Benghazi
 1 1130 #Tobruk
+1 1060 #Giarabub
+1 4057 #El Agheila
 1 10908 #South Sudan

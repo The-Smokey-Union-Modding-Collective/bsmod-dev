@@ -2,24 +2,32 @@ spriteTypes = {
 	frameAnimatedSpriteType = {
 		name = "GFX_portrait_cuba_jose_barnet"
 		texturefile = "gfx/leaders/CUB/portrait_cub_jose_barnet.dds"
-		noOfFrames = 12
-		animation_rate_fps = 14
+		noOfFrames = 9
+		animation_rate_fps = 10
 		looping = yes
 		play_on_show = yes
 	}
 	frameAnimatedSpriteType = {
 		name = "GFX_Portrait_Europe_Generic_3"
 		texturefile = "gfx/leaders/Europe/Portrait_Europe_Generic_3.dds"
-		noOfFrames = 9
-		animation_rate_fps = 25
+		noOfFrames = 11
+		animation_rate_fps = 20
 		looping = yes
 		play_on_show = yes
 	}
 	frameAnimatedSpriteType = {
 		name = "GFX_portrait_JAP_emperor_hirohito"
 		texturefile = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
-		noOfFrames = 4
-		animation_rate_fps = 10
+		noOfFrames = 21
+		animation_rate_fps = 12
+		looping = yes
+		play_on_show = yes
+	}
+	frameAnimatedSpriteType = {
+		name = "GFX_portrait_CHI_chiang_kaishek"
+		texturefile = "gfx/leaders/CHI/Portrait_China_Chiang_Kai_Shek.dds"
+		noOfFrames = 21
+		animation_rate_fps = 12
 		looping = yes
 		play_on_show = yes
 	}

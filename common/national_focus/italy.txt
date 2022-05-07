@@ -760,7 +760,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 3
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -770,7 +770,17 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 2
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+			661 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 1
 						instant_build = yes
 					}
 				}
@@ -790,7 +800,7 @@ focus_tree = {
 					limit = { is_controlled_by = ROOT }
 					add_building_construction = {
 						type = infrastructure
-						level = 1
+						level = 2
 						instant_build = yes
 					}
 				}
@@ -816,13 +826,13 @@ focus_tree = {
 			448 = {
 				set_building_level = {
 					type = naval_base
-					level = 8
+					level = 10
 					province = 1149
 					instant_build = yes
 				}
 			}
 			build_railway = {
-				level = 2
+				level = 5
 				path = { 1149 4194 7209 9980 1118 1041 4047 10046 10117 12088 4057 1198 1127 4120 11954 }
 			}
 			build_railway = {
@@ -836,6 +846,14 @@ focus_tree = {
 			build_railway = {
 				level = 2
 				path = { 4120 7063 12079 1186 13078 1130 }
+			}
+			build_railway = {
+				level = 2
+				path = { 13078 7206 4962 12866 1060 }
+			}
+			build_railway = {
+				level = 2
+				path = { 1149 1189 12039 }
 			}
 		}
 	}		
@@ -1609,11 +1627,6 @@ focus_tree = {
 				owns_state = 271
 				ETH = { is_puppet_of = ITA }
 			}
-		}
-		
-		bypass = {
-			ETH = { exists = yes }
-			NOT = { has_war_with = ETH }
 		}
 
 		available_if_capitulated = yes
