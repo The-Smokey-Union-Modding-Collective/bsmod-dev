@@ -490,7 +490,7 @@ technologies = {
 	paratroopers2 = {
 
 		paratrooper = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			urban = {
@@ -537,7 +537,7 @@ technologies = {
 	paratroopers3 = {
 
 		paratrooper = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			urban = {
@@ -629,7 +629,7 @@ technologies = {
 	marines2 = {
 
 		marine = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			river = {
@@ -674,7 +674,7 @@ technologies = {
 	marines3 = {
 
 		marine = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			river = {
@@ -762,7 +762,7 @@ technologies = {
 	jaeger_forester = {
 
 		jaeger = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05	
 			
 			forest = {
@@ -811,7 +811,7 @@ technologies = {
 	jaeger_forester2 = {
 
 		jaeger = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05	
 			
 			forest = {
@@ -853,7 +853,7 @@ technologies = {
 	jaeger_jungle = {
 
 		jaeger = {
-			max_organisation = 5
+			max_organisation = 2
 		    soft_attack = 0.05
 			
 			desert = {
@@ -901,7 +901,7 @@ technologies = {
 	jaeger_jungle2 = {
 
 		jaeger = {
-			max_organisation = 5
+			max_organisation = 2
 		    soft_attack = 0.05
 			
 			desert = {
@@ -983,7 +983,7 @@ technologies = {
 	tech_mountaineers2 = {
 
 		mountaineers = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			hills = {
@@ -1018,7 +1018,7 @@ technologies = {
 	
 	tech_mountaineers3 = {	
 		mountaineers = {
-			max_organisation = 5
+			max_organisation = 2
 			soft_attack = 0.05
 			
 			hills = {

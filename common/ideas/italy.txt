@@ -114,7 +114,22 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { tank_manufacturer }
+			traits = { medium_tank_manufacturer }
+		}
+
+		ITA_ansaldo = {
+			
+			
+			allowed = {
+				original_tag = ITA
+			}
+			
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { heavy_tank_manufacturer }
 		}
 	}
 	
