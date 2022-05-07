@@ -10,7 +10,7 @@ state={
 		owner = ITA
 		
 		victory_points = {
-			1041 5
+			4047 1
 		}
 		victory_points = {
 			4057 1
@@ -18,8 +18,8 @@ state={
 		
 		buildings = {
 			infrastructure = 2
-			1041 = {
-				naval_base = 1
+			4047 = {
+				naval_base = 2
 			}
 		}
 		add_core_of = LBA
