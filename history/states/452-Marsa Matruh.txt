@@ -8,6 +8,17 @@ state={
 
 	history={
 		owner = ENG
+		
+		victory_points = {
+			1140 1
+		}
+		victory_points = {
+			11967 3
+		}
+		victory_points = {
+			7079 1
+		}
+		
 		buildings = {
 			infrastructure = 2
 			11967 = {
@@ -15,20 +26,13 @@ state={
 			}
 		}
 
-		victory_points = {
-			11967 5
-		}
-		victory_points = {
-			7079 1
-		}
-
 	add_core_of = EGY
 	}
 
 	provinces={
-		1143 1994 5004 5078 7079 7148 9989 10061 10104 10127 10884 10869 11910 11967 12022 12033 12082 12091 12764
+		1057 1140 1143 1994 5078 7079 7148 7216 9989 10104 10061 10127 10754 10785 10869 11910 11951 11967 12033 12091 12764
 	}
 
 
-	local_supplies=9.0 
+	local_supplies=0.0 
 }
