@@ -1610,11 +1610,6 @@ focus_tree = {
 				ETH = { is_puppet_of = ITA }
 			}
 		}
-		
-		bypass = {
-			ETH = { exists = yes }
-			NOT = { has_war_with = ETH }
-		}
 
 		available_if_capitulated = yes
 
