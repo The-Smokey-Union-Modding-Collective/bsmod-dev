@@ -80,3 +80,4 @@
  zaibatsu_yasuda_effect:0 "Modify §YZaibatsu Influence§! by \n§YCivillian Factory§! Construction Speed: §G+10%§! \n§YMilitary Factory§! Construction Speed: §G+10%§! \nProduction Efficiency Retention: §R-10%§! \nProduction Efficiency Base: §R-10%§!"
  two_zaibatsus_tt:0 "We have not invited Two Zaibatsus already"
  plant_in_progress_tt:0 "A Zaibatsu is not currently establishing itself"
+ zaibatsu_decisions:0 "Unlocks the ability to invite different §YZaibatsus§! to our country"
