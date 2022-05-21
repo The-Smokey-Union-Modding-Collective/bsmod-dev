@@ -255,10 +255,6 @@ ideas = {
 			
 			picture = jap_zaibatsu
 			modifier = {
-				consumer_goods_factor = 0.10
-				war_support_factor = -0.05
-				stability_factor = -0.05
-				production_speed_arms_factory_factor = 0.15
 			}
 		}
 		
@@ -272,8 +268,7 @@ ideas = {
 			
 			picture = man_five_year_plan_industry
 			modifier = {
-				production_speed_arms_factory_factor = 0.05
-				production_speed_industrial_complex_factor = 0.05
+				production_speed_industrial_complex_factor = 0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
@@ -290,8 +285,8 @@ ideas = {
 			picture = man_five_year_plan_industry
 			modifier = {
 				consumer_goods_factor = -0.05
-				production_speed_arms_factory_factor = 0.10
-				production_speed_industrial_complex_factor = 0.10
+				production_speed_arms_factory_factor = 0.05
+				production_speed_industrial_complex_factor = 0.15
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
 			}
@@ -306,8 +301,8 @@ ideas = {
 			picture = man_five_year_plan_tank
 			modifier = {
 				consumer_goods_factor = -0.10
-				production_speed_arms_factory_factor = 0.15
-				production_speed_industrial_complex_factor = 0.15
+				production_speed_arms_factory_factor = 0.10
+				production_speed_industrial_complex_factor = 0.2
 				industrial_capacity_factory = 0.15
 				industrial_capacity_dockyard = 0.15
 			}
