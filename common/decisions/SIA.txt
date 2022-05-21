@@ -100,3 +100,295 @@ SIA_free_thai_movement_category = {
 		}
 	}
 }
+
+SIA_zaibatsu_category = {
+	
+	invite_mitsubishi = {
+		icon = generic_construction
+
+		available = {
+			has_completed_focus = SIA_invite_the_zaibatsus
+			custom_trigger_tooltip = {
+				tooltip = two_zaibatsus_tt
+				NOT = {
+					has_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = plant_in_progress_tt
+				NOT = {
+					has_country_flag = SIA_plant_in_progress_flag
+				}
+			}	
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = SIA_two_zaibatsus_invited_flag
+			}
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			set_country_flag = SIA_plant_in_progress_flag
+		}
+		
+		remove_effect = {
+			add_to_variable = { SIA_zai_production_factory_max_efficiency_factor = 0.1 }			
+			add_to_variable = { SIA_zai_production_factory_efficiency_gain_factor = -0.1 }
+			add_to_variable = { SIA_zai_consumer_goods_factor = 0.05 }
+			hidden_effect = {
+				clr_country_flag = SIA_plant_in_progress_flag 
+				if = {
+					limit = { 
+						has_country_flag = SIA_one_zaibatsu_invited_flag 	
+					} 
+					set_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = SIA_one_zaibatsu_invited_flag
+						}
+					}
+					set_country_flag = SIA_one_zaibatsu_invited_flag
+				}
+			}
+			custom_effect_tooltip = zaibatsu_mitsubishi_effect
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	invite_mitsui = {
+		icon = generic_construction
+
+		available = {
+			has_completed_focus = SIA_invite_the_zaibatsus
+			custom_trigger_tooltip = {
+				tooltip = two_zaibatsus_tt
+				NOT = {
+					has_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = plant_in_progress_tt
+				NOT = {
+					has_country_flag = SIA_plant_in_progress_flag
+				}
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = SIA_two_zaibatsus_invited_flag
+			}
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			set_country_flag = SIA_plant_in_progress_flag
+		}
+		
+		remove_effect = {
+			add_to_variable = { SIA_zai_consumer_goods_factor = -0.05 }			
+			add_to_variable = { SIA_zai_industrial_capacity_factory  = -0.1 }
+			add_to_variable = { SIA_zai_industrial_capacity_dockyard  = -0.1}
+			hidden_effect = {
+				clr_country_flag = SIA_plant_in_progress_flag 
+				if = {
+					limit = { 
+						has_country_flag = SIA_one_zaibatsu_invited_flag 	
+					} 
+					set_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = SIA_one_zaibatsu_invited_flag
+						}
+					}
+					set_country_flag = SIA_one_zaibatsu_invited_flag
+				}
+			}
+			custom_effect_tooltip = zaibatsu_mitsui_effect
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	invite_sumitomo = {
+		icon = generic_construction
+
+		available = {
+			has_completed_focus = SIA_invite_the_zaibatsus
+			custom_trigger_tooltip = {
+				tooltip = two_zaibatsus_tt
+				NOT = {
+					has_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = plant_in_progress_tt
+				NOT = {
+					has_country_flag = SIA_plant_in_progress_flag
+				}
+			}
+		}
+		
+		visible = {
+			NOT = {
+				has_country_flag = SIA_two_zaibatsus_invited_flag
+			}
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			set_country_flag = SIA_plant_in_progress_flag
+		}
+		
+		remove_effect = {
+			add_to_variable = { SIA_zai_local_resources_factor = 0.1 }			
+			add_to_variable = { SIA_zai_research_speed_factor = 0.1 }
+			add_to_variable = { SIA_zai_production_factory_max_efficiency_factor = -0.1}
+			hidden_effect = {
+				clr_country_flag = SIA_plant_in_progress_flag 
+				if = {
+					limit = { 
+						has_country_flag = SIA_one_zaibatsu_invited_flag 	
+					} 
+					set_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = SIA_one_zaibatsu_invited_flag
+						}
+					}
+					set_country_flag = SIA_one_zaibatsu_invited_flag
+				}
+			}
+			custom_effect_tooltip = zaibatsu_sumitomo_effect
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			289 = {
+				add_resource = {
+					type = steel
+					amount = 16
+				}
+			}
+		}
+	}
+
+	invite_yasuda = {
+		icon = generic_construction
+
+		available = {
+			has_completed_focus = SIA_invite_the_zaibatsus
+			custom_trigger_tooltip = {
+				tooltip = two_zaibatsus_tt
+				NOT = {
+					has_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = plant_in_progress_tt
+				NOT = {
+					has_country_flag = SIA_plant_in_progress_flag
+				}
+			}
+		}
+	
+		visible = {
+			NOT = {
+				has_country_flag = SIA_two_zaibatsus_invited_flag
+			}
+		}
+
+		days_remove = 30
+		
+		fire_only_once = yes
+
+		cost = 50
+		
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = SIA_plant_in_progress_flag
+			}
+		}
+		
+		remove_effect = {
+			add_to_variable = { SIA_zai_production_speed_arms_factory_factor = 0.1 }			
+			add_to_variable = { SIA_zai_production_speed_industrial_complex_factor = 0.1 }
+			add_to_variable = { SIA_zai_line_change_production_efficiency_factor = -0.1}
+			add_to_variable = { SIA_zai_production_factory_start_efficiency_factor = -0.1 }
+			hidden_effect = {
+				clr_country_flag = SIA_plant_in_progress_flag 
+				if = {
+					limit = { 
+						has_country_flag = SIA_one_zaibatsu_invited_flag 	
+					} 
+					set_country_flag = SIA_two_zaibatsus_invited_flag
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_country_flag = SIA_one_zaibatsu_invited_flag
+						}
+					}
+					set_country_flag = SIA_one_zaibatsu_invited_flag
+				}
+			}
+			custom_effect_tooltip = zaibatsu_yasuda_effect
+			random_owned_state = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+}
