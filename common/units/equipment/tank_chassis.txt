@@ -1223,7 +1223,6 @@ equipments = {
 				allowed_module_categories = {
 					tank_small_main_armament
 					tank_medium_main_armament
-					tank_heavy_main_armament
 					tank_flamethrower
 				}
 			}
