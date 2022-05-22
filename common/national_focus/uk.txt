@@ -2727,7 +2727,25 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = anti_air_building
+					level = 3
+					instant_build = yes
+				}
+				set_building_level = {
+					type = air_base
 					level = 10
+					instant_build = yes
+				}
+			}
+			318 = {
+				set_building_level = {
+					type = coastal_bunker
+					level = 5
+					province = 1635
+					instant_build = yes
+				}
+				set_building_level = {
+					type = anti_air_building
+					level = 2
 					instant_build = yes
 				}
 				set_building_level = {

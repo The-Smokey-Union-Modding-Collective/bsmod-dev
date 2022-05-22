@@ -238,4 +238,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;adjacency_rule_name;Comment
 4135;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 13228;10094;impassable;-1;-1;-1;-1;-1;;Gibraltar
 13228;1048;impassable;-1;-1;-1;-1;-1;;Gibraltar
+12003;1635;sea;9013;-1;-1;-1;-1;;Malta-Gozo strait
 -1;-1;;-1;-1;-1;-1;-1;-1;
