@@ -1201,7 +1201,7 @@ guiTypes = {
 			
 				instantTextBoxType = {
 					name = "artillery_subtitle_rocket"
-					position = { x = 405 y = 460 }
+					position = { x = 30 y = 460 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1214,7 +1214,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_tank"
-					position = { x = 655 y = 160 }
+					position = { x = 270 y = 160 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1227,7 +1227,7 @@ guiTypes = {
 				
 				instantTextBoxType = {
 					name = "artillery_subtitle_artillery"
-					position = { x = 105 y = 55 }
+					position = { x = -270 y = 55 }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1240,7 +1240,7 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "artillery_subtitle_anti_air"
-					position = { x = -14 y = 160  }
+					position = { x = -380 y = 160  }
 					textureFile = ""
 					font = "hoi_33"
 					borderSize = {x = 0 y = 4}
@@ -1505,11 +1505,20 @@ guiTypes = {
 			
 			gridboxtype = {
 				name = "gw_artillery_tree"
-				position = { x = 10% y = 172 }
+				position = { x = -10% y = 172 }
 				size = { width = 80% height = 80% }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
 			}
+
+			gridboxtype = {
+				name = "pack_artillery_base_tree"
+				position = { x = 33% y = 172 }
+				size = { width = 80% height = 80% }
+				slotsize = { width = 70 height = 70 }
+				format = "UP"
+			}
+
 		}
 
 		containerWindowType = {

@@ -6,7 +6,7 @@ equipments = {
 		is_archetype = yes
 		picture = archetype_artillery_equipment		
 		type = {
-			pack_artillery
+			artillery
 			infantry #adding infantry type
 			#motorized #Removing motorized type
 		}
@@ -42,7 +42,7 @@ equipments = {
 	pack_artillery_equipment_1 = {
 		year = 1934
 
-		archetype = artillery_equipment
+		archetype = pack_artillery_equipment
 		priority = 50
 		visual_level = 0
 	}

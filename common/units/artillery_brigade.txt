@@ -1,7 +1,7 @@
 sub_units = {
 
 	pack_artillery_brigade = {
-		abbreviation = "PART"
+		abbreviation = "PARTB"
 		sprite = artillery
 		map_icon_category = infantry
 		priority = 1198
