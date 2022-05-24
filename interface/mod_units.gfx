@@ -56,11 +56,29 @@ spriteTypes = {
   }
 
   spriteType = {
-    name = "GFX_unit_jaeger_icon_small"
+    name = "GFX_unit_holding_infantry_icon_small"
     texturefile = "gfx/texticons/unit_line_infantry_icon_small.dds"
     legacy_lazy_load = no
     noOfFrames = 2		 
   }	
 
+  SpriteType = {
+    name = "GFX_unit_pack_artillery_brigade_icon_medium"
+    textureFile = "gfx/interface/counters/divisions_large/unit_pack_artillery_icon.dds"
+    noOfFrames = 2
+  }
+
+  SpriteType = { 
+    name = "GFX_unit_pack_artillery_brigade_icon_medium_white"						
+    textureFile = "gfx/interface/counters/divisions_small/onmap_unit_pack_artillery_icon.dds" 
+    noOfFrames = 2
+  }
+
+  spriteType = {
+    name = "GFX_unit_pack_artillery_brigade_icon_small"
+    texturefile = "gfx/texticons/unit_pack_artillery_icon_small.dds"
+    legacy_lazy_load = no
+    noOfFrames = 2		 
+  }	
 }
 	
