@@ -232,7 +232,7 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_factory_repairn4_medium"
+		name = "GFX_factory_repair4_medium"
 		textureFile = "gfx/interface/technologies/factory_repair4.dds"
 	}
 

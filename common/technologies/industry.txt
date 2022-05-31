@@ -110,7 +110,7 @@ technologies = {
 
 	simplified_production = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
 		path = {
 			leads_to_tech = simplified_production2
@@ -313,7 +313,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 3 }
@@ -329,13 +329,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            industrial_expansion = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 5 }
@@ -351,13 +358,20 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            optimised_dockyards = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 5 }
@@ -371,15 +385,22 @@ technologies = {
 
 	simplified_production2 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            simplified_production = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 5 }
@@ -396,13 +417,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            factory_repair = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 5 }
@@ -419,13 +447,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            standardised_industry = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 5 }
@@ -442,13 +477,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            massed_production = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 5 }
@@ -465,13 +507,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            streamlined_production = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 5 }
@@ -488,13 +537,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry2 = 1
+        }
+		dependencies = {
+            flexible_industry = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry3
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 5 }
@@ -558,7 +614,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 6 }
@@ -574,13 +630,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            industrial_expansion2 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 8 }
@@ -596,13 +659,20 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            optimised_dockyards2 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 8 }
@@ -616,15 +686,22 @@ technologies = {
 
 	simplified_production3 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            simplified_production2 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 8 }
@@ -641,13 +718,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            factory_repair2 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 8 }
@@ -664,13 +748,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            standardised_industry2 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 8 }
@@ -687,13 +778,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            massed_production2 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 8 }
@@ -710,13 +808,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            streamlined_production2 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 8 }
@@ -733,13 +838,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry3 = 1
+        }
+		dependencies = {
+            flexible_industry2 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry4
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1938
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 8 }
@@ -803,7 +915,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 9 }
@@ -819,13 +931,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            industrial_expansion3 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 11 }
@@ -841,13 +960,20 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            optimised_dockyards3 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 11 }
@@ -861,15 +987,22 @@ technologies = {
 
 	simplified_production4 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            simplified_production3 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 11 }
@@ -886,13 +1019,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            factory_repair3 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 11 }
@@ -909,13 +1049,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            standardised_industry3 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 11 }
@@ -932,13 +1079,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            massed_production3 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 11 }
@@ -955,13 +1109,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            streamlined_production3 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 11 }
@@ -978,13 +1139,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry4 = 1
+        }
+		dependencies = {
+            flexible_industry3 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry5
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1939
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 11 }
@@ -1048,7 +1216,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 12 }
@@ -1064,13 +1232,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            industrial_expansion4 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 14 }
@@ -1086,13 +1261,20 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            optimised_dockyards4 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 14 }
@@ -1106,15 +1288,22 @@ technologies = {
 
 	simplified_production5 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            simplified_production4 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 14 }
@@ -1131,13 +1320,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            factory_repair4 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 14 }
@@ -1154,13 +1350,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            standardised_industry4 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 14 }
@@ -1177,13 +1380,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            massed_production4 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 14 }
@@ -1200,13 +1410,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            streamlined_production4 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 14 }
@@ -1223,13 +1440,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry5 = 1
+        }
+		dependencies = {
+            flexible_industry4 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry6
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1940
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 14 }
@@ -1293,7 +1517,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 15 }
@@ -1309,13 +1533,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            industrial_expansion5 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 17 }
@@ -1331,13 +1562,20 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            optimised_dockyards5 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 17 }
@@ -1351,15 +1589,22 @@ technologies = {
 
 	simplified_production6 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            simplified_production5 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 17 }
@@ -1376,13 +1621,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            factory_repair5 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 17 }
@@ -1399,13 +1651,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            standardised_industry5 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 17 }
@@ -1422,13 +1681,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            massed_production5 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 17 }
@@ -1445,13 +1711,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            streamlined_production5 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 17 }
@@ -1468,13 +1741,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry6 = 1
+        }
+		dependencies = {
+            flexible_industry5 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry7
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1941
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 17 }
@@ -1538,7 +1818,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 18 }
@@ -1554,13 +1834,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            industrial_expansion6 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 20 }
@@ -1576,12 +1863,19 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            optimised_dockyards6 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards8
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 20 }
@@ -1595,15 +1889,22 @@ technologies = {
 
 	simplified_production7 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            simplified_production6 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 20 }
@@ -1620,13 +1921,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            factory_repair6 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 20 }
@@ -1643,13 +1951,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            standardised_industry6 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 20 }
@@ -1666,13 +1981,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            massed_production6 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 20 }
@@ -1689,13 +2011,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            streamlined_production6 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 20 }
@@ -1712,13 +2041,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry7 = 1
+        }
+		dependencies = {
+            flexible_industry6 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry8
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1942
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 20 }
@@ -1782,7 +2118,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 21 }
@@ -1798,13 +2134,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            industrial_expansion7 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 23 }
@@ -1820,12 +2163,19 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            optimised_dockyards7 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards9
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 23 }
@@ -1839,15 +2189,22 @@ technologies = {
 
 	simplified_production8 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            simplified_production7 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 23 }
@@ -1864,13 +2221,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            factory_repair7 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 23 }
@@ -1887,13 +2251,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            standardised_industry7 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 23 }
@@ -1910,13 +2281,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            massed_production7 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 23 }
@@ -1933,13 +2311,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            streamlined_production7 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 23 }
@@ -1956,13 +2341,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry8 = 1
+        }
+		dependencies = {
+            flexible_industry7 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry9
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1943
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 23 }
@@ -2026,7 +2418,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 24 }
@@ -2042,13 +2434,20 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            industrial_expansion8 = 1
+        }
+		
 		path = {
 			leads_to_tech = industrial_expansion10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 26 }
@@ -2064,12 +2463,19 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            optimised_dockyards8 = 1
+        }
+		
 		path = {
 			leads_to_tech = optimised_dockyards10
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 26 }
@@ -2083,15 +2489,22 @@ technologies = {
 
 	simplified_production9 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            simplified_production8 = 1
+        }
+		
 		path = {
 			leads_to_tech = simplified_production10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 26 }
@@ -2108,13 +2521,20 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            factory_repair8 = 1
+        }
+		
 		path = {
 			leads_to_tech = factory_repair10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 26 }
@@ -2131,13 +2551,20 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            standardised_industry8 = 1
+        }
+		
 		path = {
 			leads_to_tech = standardised_industry10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 26 }
@@ -2154,13 +2581,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            massed_production8 = 1
+        }
+		
 		path = {
 			leads_to_tech = massed_production10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 26 }
@@ -2177,13 +2611,20 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 		
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            streamlined_production8 = 1
+        }
+		
 		path = {
 			leads_to_tech = streamlined_production10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 26 }
@@ -2200,13 +2641,20 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 		
+		dependencies = {
+            optimised_industry9 = 1
+        }
+		dependencies = {
+            flexible_industry8 = 1
+        }
+		
 		path = {
 			leads_to_tech = flexible_industry10
 			research_cost_coeff = 1
 		}
 
 		research_cost = 1
-		start_year = 1936
+		start_year = 1944
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 26 }
@@ -2265,7 +2713,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 8 y = 27 }
@@ -2281,8 +2729,15 @@ technologies = {
 
 		global_building_slots_factor = 0.1
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            industrial_expansion9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 0 y = 29 }
@@ -2298,8 +2753,15 @@ technologies = {
 
 		industrial_capacity_dockyard = 0.1
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            optimised_dockyards9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 2 y = 29 }
@@ -2313,10 +2775,17 @@ technologies = {
 
 	simplified_production10 = {
 
-		production_lack_of_resource_penalty_factor = 0.1
+		production_lack_of_resource_penalty_factor = -0.05
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            simplified_production9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 4 y = 29 }
@@ -2333,8 +2802,15 @@ technologies = {
 		industry_repair_factor = 0.1
 		industry_air_damage_factor = -0.10
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            factory_repair9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 6 y = 29 }
@@ -2351,8 +2827,15 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.05
 		production_factory_start_efficiency_factor = 0.05
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            standardised_industry9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 10 y = 29 }
@@ -2369,8 +2852,15 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            massed_production9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 12 y = 29 }
@@ -2387,8 +2877,15 @@ technologies = {
 		industrial_capacity_factory = 0.025
 		production_factory_efficiency_gain_factor = 0.05
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            streamlined_production9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 14 y = 29 }
@@ -2405,8 +2902,15 @@ technologies = {
 		production_speed_arms_factory_factor = 0.05
 		line_change_production_efficiency_factor = 0.05
 
+		dependencies = {
+            optimised_industry10 = 1
+        }
+		dependencies = {
+            flexible_industry9 = 1
+        }
+		
 		research_cost = 1
-		start_year = 1936
+		start_year = 1945
 		folder = {
 			name = industry_folder
 			position = { x = 16 y = 29 }
