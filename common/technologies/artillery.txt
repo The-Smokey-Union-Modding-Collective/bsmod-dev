@@ -20,6 +20,11 @@ technologies = {
 			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = siege_artillery_tech
+			research_cost_coeff = 1
+		}
 		enable_equipment_modules = {
 			ship_anti_air_1
 			tank_small_cannon
@@ -102,6 +107,45 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 0 y = 2 }
+		}
+
+		categories = {
+			artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	siege_artillery_tech = {
+
+		research_cost = 1.5
+
+		enable_equipments = {
+			siege_artillery_equipment_1
+		}
+
+		start_year = 1936
+
+		folder = {
+			name = artillery_folder
+			position = { x = 3 y = 3 }
 		}
 
 		categories = {

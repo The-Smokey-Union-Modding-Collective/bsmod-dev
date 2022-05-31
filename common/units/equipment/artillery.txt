@@ -89,7 +89,7 @@ equipments = {
 	siege_artillery_equipment_1 = {
 		year = 1934
 
-		archetype = pack_artillery_equipment
+		archetype = siege_artillery_equipment
 		priority = 50
 		visual_level = 0
 	}
