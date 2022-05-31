@@ -36,7 +36,7 @@ horst_host_country = {
 	}
 	option = {
 		name = ENG
-		text = "Great Britain"
+		text = "United Kingdom"
 		desc = ""
 	}
 	option = {
