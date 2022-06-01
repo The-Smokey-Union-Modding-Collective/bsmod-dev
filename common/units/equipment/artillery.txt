@@ -47,6 +47,24 @@ equipments = {
 		visual_level = 0
 	}
 
+	pack_artillery_equipment_2 = {
+		year = 1940
+
+		archetype = pack_artillery_equipment
+		priority = 50
+		visual_level = 1
+
+		defense = 15
+		breakthrough = 21
+		soft_attack = 20
+		
+		build_cost_ic = 4.5
+		resources = {
+			tungsten = 1
+			steel = 2
+		}
+	}
+
 	siege_artillery_equipment = {
 		year = 1934
 

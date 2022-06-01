@@ -1584,7 +1584,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = pack_mountain_gun2
+			leads_to_tech = midwar_pack_artillery
 			research_cost_coeff = 1
 		}
 		
@@ -1643,11 +1643,11 @@ technologies = {
 		
 		research_cost = 1.5
 
-		start_year = 1940
+		start_year = 1942
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 6 }
+			position = { x = -1 y = 10 }
 		}
 
 		categories = {
@@ -1699,6 +1699,10 @@ technologies = {
 			position = { x = -1 y = 8 }
 		}
 
+		dependencies = {
+			pack_mountain_gun1 = 1
+		}
+
 		categories = {
 			artillery
 		}
@@ -1739,11 +1743,11 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1942
+		start_year = 1943
 
 		folder = {
 			name = artillery_folder
-			position = { x = -1 y = 10 }
+			position = { x = -1 y = 12 }
 		}
 
 		categories = {
@@ -1781,7 +1785,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = pack_artillery_damage2
+			leads_to_tech = midwar_pack_artillery
 			research_cost_coeff = 1
 		}
 
@@ -1796,6 +1800,56 @@ technologies = {
 		folder = {
 			name = artillery_folder
 			position = { x = 1 y = 4 }
+		}
+
+		categories = {
+			artillery
+			pack_artillery
+		}
+
+		ai_will_do = {
+			factor = 2
+
+			modifier = {
+				factor = 2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 5
+				date > "1939.1.1"
+			}
+		}
+	}
+
+	midwar_pack_artillery = {
+
+		enable_equipments = {
+			pack_artillery_equipment_2
+		}
+
+		path = {
+			leads_to_tech = pack_artillery_damage2
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = pack_mountain_gun2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1.5
+
+		start_year = 1940
+
+		folder = {
+			name = artillery_folder
+			position = { x = 0 y = 6 }
 		}
 
 		categories = {
@@ -1843,12 +1897,16 @@ technologies = {
 
 		folder = {
 			name = artillery_folder
-			position = { x = 1 y = 6 }
+			position = { x = 1 y = 8 }
 		}
 
 		categories = {
 			artillery
 			pack_artillery
+		}
+
+		dependencies = {
+			pack_artillery_damage1 = 1
 		}
 
 		ai_will_do = {
@@ -1887,11 +1945,11 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1941
+		start_year = 1942
 
 		folder = {
 			name = artillery_folder
-			position = { x = 1 y = 8 }
+			position = { x = 1 y = 10 }
 		}
 
 		categories = {
@@ -1935,11 +1993,11 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1942
+		start_year = 1943
 
 		folder = {
 			name = artillery_folder
-			position = { x = 1 y = 10 }
+			position = { x = 1 y = 12 }
 		}
 
 		categories = {
@@ -1976,11 +2034,11 @@ technologies = {
 
 		research_cost = 1.5
 
-		start_year = 1943
+		start_year = 1944
 
 		folder = {
 			name = artillery_folder
-			position = { x = 0 y = 12 }
+			position = { x = 0 y = 14 }
 		}
 
 		categories = {
