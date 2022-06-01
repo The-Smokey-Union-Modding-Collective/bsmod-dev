@@ -1,0 +1,269 @@
+spriteTypes = {
+
+### SONAR III
+	SpriteType = {
+		name = "GFX_advanced_sonar_medium"
+		texturefile = "gfx/interface/technologies/advanced_sonar.png"
+	}
+
+	spriteType = {
+		name = "GFX_SMI_ship_sonar_3"
+		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sonar_icn_3.png"
+	}
+
+### optimised_industry I-X
+	spriteType = {
+		name = "GFX_optimised_industry_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry2_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry3_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry4_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry5_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry6_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry7_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry8_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry9_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_industry10_medium"
+		textureFile = "gfx/interface/technologies/optimised_industry10.dds"
+	}
+
+### industrial_expansion I-X
+	spriteType = {
+		name = "GFX_industrial_expansion_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion2_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion3_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion4_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion5_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion6_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion7_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion8_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion9_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_industrial_expansion10_medium"
+		textureFile = "gfx/interface/technologies/industrial_expansion10.dds"
+	}
+
+### optimised_dockyards I-X
+	spriteType = {
+		name = "GFX_optimised_dockyards_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards2_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards3_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards4_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards5_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards6_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards7_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards8_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards9_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_optimised_dockyards10_medium"
+		textureFile = "gfx/interface/technologies/optimised_dockyards10.dds"
+	}
+
+### simplified_production I-X
+	spriteType = {
+		name = "GFX_simplified_production_medium"
+		textureFile = "gfx/interface/technologies/simplified_production.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production2_medium"
+		textureFile = "gfx/interface/technologies/simplified_production2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production3_medium"
+		textureFile = "gfx/interface/technologies/simplified_production3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production4_medium"
+		textureFile = "gfx/interface/technologies/simplified_production4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production5_medium"
+		textureFile = "gfx/interface/technologies/simplified_production5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production6_medium"
+		textureFile = "gfx/interface/technologies/simplified_production6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production7_medium"
+		textureFile = "gfx/interface/technologies/simplified_production7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production8_medium"
+		textureFile = "gfx/interface/technologies/simplified_production8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production9_medium"
+		textureFile = "gfx/interface/technologies/simplified_production9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_simplified_production10_medium"
+		textureFile = "gfx/interface/technologies/simplified_production10.dds"
+	}
+
+### factory_repair I-X
+	spriteType = {
+		name = "GFX_factory_repair_medium"
+		textureFile = "gfx/interface/technologies/factory_repair.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair2_medium"
+		textureFile = "gfx/interface/technologies/factory_repair2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair3_medium"
+		textureFile = "gfx/interface/technologies/factory_repair3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair4_medium"
+		textureFile = "gfx/interface/technologies/factory_repair4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair5_medium"
+		textureFile = "gfx/interface/technologies/factory_repair5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair6_medium"
+		textureFile = "gfx/interface/technologies/factory_repair6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair7_medium"
+		textureFile = "gfx/interface/technologies/factory_repair7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair8_medium"
+		textureFile = "gfx/interface/technologies/factory_repair8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair9_medium"
+		textureFile = "gfx/interface/technologies/factory_repair9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_factory_repair10_medium"
+		textureFile = "gfx/interface/technologies/factory_repair10.dds"
+	}
+}
+	
