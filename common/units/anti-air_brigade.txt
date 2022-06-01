@@ -4,7 +4,7 @@
 
 sub_units = {
 
-	anti_air_brigade = {
+	#anti_air_brigade = {
 		abbreviation = "ANA"
 		sprite = infantry
 		map_icon_category = infantry
@@ -64,7 +64,7 @@ sub_units = {
 			attack = -0.4
 		}
 	}
-	mot_anti_air_brigade = {
+	#mot_anti_air_brigade = {
 		abbreviation = "MAA"
 		sprite = infantry
 		map_icon_category = infantry
