@@ -58,7 +58,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 10
 		}
 		
 		
@@ -1388,6 +1388,10 @@ technologies = {
 			soft_attack = 0.10
 		}
 		
+		category_all_infantry = {
+			max_organisation = 10
+		}
+
 		enable_tactic = tactic_breakthrough
 		
 		path = {
@@ -1643,7 +1647,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 15
 			default_morale = 0.05
 		}
 		category_tanks = {
@@ -2241,7 +2245,7 @@ technologies = {
 		xp_unlock_cost = 100
 		land_reinforce_rate = 0.02
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -2295,7 +2299,7 @@ technologies = {
 			grand_mechanized_offensive
 		}
 		category_light_infantry = {
-			max_organisation = 5
+			max_organisation = 10
 			breakthrough = 0.1
 		}
 		
@@ -2511,7 +2515,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 5
+			max_organisation = 10
 		}
 		category_tanks = {
 			max_organisation = 1
@@ -2928,9 +2932,9 @@ technologies = {
 		xp_unlock_cost = 100
 		supply_consumption_factor = -0.10
 		
-		infantry = {
-			combat_width = -0.4
-		}
+		#infantry = {
+		#	combat_width = -0.4
+		#}
 
 		
 		enable_tactic = tactic_overwhelming_fire
@@ -3320,9 +3324,9 @@ technologies = {
 		conscription = 0.05
 		xp_research_type = army
 		xp_unlock_cost = 100
-		infantry = {
-			combat_width = -0.4
-		}
+		#infantry = {
+		#	combat_width = -0.4
+		#}
 
 		land_reinforce_rate = 0.15		
 		
@@ -3367,6 +3371,10 @@ technologies = {
 		out_of_supply_factor = -0.30
 		category_army = {
 			default_morale = 0.2
+		}
+
+		category_all_infantry = {
+			max_organisation = 5
 		}
 		
 		resistance_growth_on_our_occupied_states = 0.25 
