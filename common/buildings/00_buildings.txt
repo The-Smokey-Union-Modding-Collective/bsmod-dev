@@ -57,6 +57,18 @@ buildings = {
 		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
+	
+	industrial_complex = {
+		show_on_map = 6
+		base_cost = 10800
+		base_cost_conversion = 9000
+		general_production = 1
+		icon_frame = 1
+		max_level = 50
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+	}
 
 	arms_factory = {
 		show_on_map = 6
@@ -70,18 +82,6 @@ buildings = {
 		infrastructure_construction_effect = yes
 	}
 
-	industrial_complex = {
-		show_on_map = 6
-		base_cost = 10800
-		base_cost_conversion = 9000
-		general_production = 1
-		icon_frame = 1
-		max_level = 50
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-	}
-	
 	dockyard = {
 		show_on_map = 1
 		show_on_map_meshes = 3
@@ -109,29 +109,14 @@ buildings = {
 		show_modifier = yes
 		max_fuel_building = 100.0 #k
 	}
-
-	synthetic_refinery = {
-		show_on_map = 1
-		base_cost = 14500
-		icon_frame = 10
-		#local_resources_oil = 1 # May use local_resources_ + any resource name
-		local_resources_oil = 1 # May use local_resources_ + any resource name
-		refinery = yes
-		max_level = 1 # This is the max unlock level
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
-	}
 	
-	synthetic_rubber_refinery = {
+	steel_smelter = {
 		show_on_map = 1
 		base_cost = 14500
-		icon_frame = 17
-		local_resources_rubber = 1
+		icon_frame = 20
+		local_resources_steel = 1
 		refinery = yes
-		max_level = 1
+		max_level = 5
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -145,7 +130,7 @@ buildings = {
 		icon_frame = 18
 		local_resources_aluminium = 1
 		refinery = yes
-		max_level = 1
+		max_level = 5
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -159,21 +144,7 @@ buildings = {
 		icon_frame = 19
 		local_resources_tungsten = 1
 		refinery = yes
-		max_level = 1
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
-	}
-
-	steel_smelter = {
-		show_on_map = 1
-		base_cost = 14500
-		icon_frame = 20
-		local_resources_steel = 1
-		refinery = yes
-		max_level = 1
+		max_level = 5
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
@@ -187,7 +158,36 @@ buildings = {
 		icon_frame = 21
 		local_resources_chromium = 1
 		refinery = yes
-		max_level = 1
+		max_level = 5
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
+	
+	synthetic_refinery = {
+		show_on_map = 1
+		base_cost = 14500
+		icon_frame = 10
+		#local_resources_oil = 1 # May use local_resources_ + any resource name
+		local_resources_oil = 1 # May use local_resources_ + any resource name
+		refinery = yes
+		max_level = 5 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
+	
+	synthetic_rubber_refinery = {
+		show_on_map = 1
+		base_cost = 14500
+		icon_frame = 17
+		local_resources_rubber = 1
+		refinery = yes
+		max_level = 5
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
