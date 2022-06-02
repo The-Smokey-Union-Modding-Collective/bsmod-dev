@@ -11,6 +11,20 @@ spriteTypes = {
 		textureFile = "gfx/interface/equipmentdesigner/naval/modules/icons/sonar_icn_3.png"
 	}
 
+### Pack arty 
+	
+	spriteType = {
+		name = "GFX_pack_artillery_base_medium"
+		textureFile = "gfx/interface/technologies/pack_artillery_1.dds"
+	}
+
+### Siege arty
+
+	spriteType = {
+		name = "GFX_siege_artillery_tech_medium"
+		textureFile = "gfx/interface/technologies/siege_artillery_technology.dds"
+	}
+
 ### optimised_industry I-X
 	spriteType = {
 		name = "GFX_optimised_industry_medium"
