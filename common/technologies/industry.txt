@@ -2930,6 +2930,1212 @@ technologies = {
 
 
 
+	metallurgy = {
+
+		local_resources_factor = 0.05
+
+		path = {
+			leads_to_tech = steel_smelter
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = aluminium_smelter
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = tungsten_smelter
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = chromium_smelter
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 3 y = 0 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter = {
+
+		enable_building = {
+			building = steel_smelter
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter = {
+
+		enable_building = {
+			building = aluminium_smelter
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter = {
+
+		enable_building = {
+			building = tungsten_smelter
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter = {
+
+		enable_building = {
+			building = chromium_smelter
+			level = 1
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter2
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 2 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter2 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter2 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter2 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter2 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter3
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1937
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 5 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter3 = {
+
+		enable_building = {
+			building = steel_smelter
+			level = 2
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter3 = {
+
+		enable_building = {
+			building = aluminium_smelter
+			level = 2
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter3 = {
+		
+		enable_building = {
+			building = tungsten_smelter
+			level = 2
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter3 = {
+
+		enable_building = {
+			building = chromium_smelter
+			level = 2
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter4
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 8 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter4 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter4 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter4 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter4 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter5
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1939
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 11 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter5 = {
+
+		enable_building = {
+			building = steel_smelter
+			level = 3
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 14 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter5 = {
+
+		enable_building = {
+			building = aluminium_smelter
+			level = 3
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter5 = {
+
+		enable_building = {
+			building = tungsten_smelter
+			level = 3
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 14 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter5 = {
+
+		enable_building = {
+			building = chromium_smelter
+			level = 3
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter6
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1940
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 14 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter6 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 17 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter6 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 17 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter6 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 17 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter6 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter7
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1941
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 17 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter7 = {
+
+		enable_building = {
+			building = steel_smelter
+			level = 4
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 20 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter7 = {
+
+		enable_building = {
+			building = aluminium_smelter
+			level = 4
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 20 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter7 = {
+
+		enable_building = {
+			building = tungsten_smelter
+			level = 4
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 20 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter7 = {
+
+		enable_building = {
+			building = chromium_smelter
+			level = 4
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter8
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1942
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 20 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter8 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 23 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter8 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 23 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter8 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 23 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter8 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter9
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1943
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 23 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter9 = {
+
+		enable_building = {
+			building = steel_smelter
+			level = 5
+		}
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = steel_smelter10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 26 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter9 = {
+
+		enable_building = {
+			building = aluminium_smelter
+			level = 5
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = aluminium_smelter10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 26 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter9 = {
+
+		enable_building = {
+			building = tungsten_smelter
+			level = 5
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = tungsten_smelter10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 26 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter9 = {
+
+		enable_building = {
+			building = chro_smelter
+			level = 5
+		}
+		
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+		
+		path = {
+			leads_to_tech = chromium_smelter10
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1944
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 26 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	steel_smelter10 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = steel_smelter
+				resource = steel
+				amount = 1
+			}
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = industry_folder
+			position = { x = 0 y = 29 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	aluminium_smelter10 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = aluminium_smelter
+				resource = aluminium
+				amount = 1
+			}
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = industry_folder
+			position = { x = 2 y = 29 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	tungsten_smelter10 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = tungsten_smelter
+				resource = tungsten
+				amount = 1
+			}
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = industry_folder
+			position = { x = 4 y = 29 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+	chromium_smelter10 = {
+
+		on_research_complete = {
+			modify_building_resources = {
+				building = chromium_smelter
+				resource = chromium
+				amount = 1
+			}
+		}
+
+		research_cost = 1
+		start_year = 1945
+		folder = {
+			name = industry_folder
+			position = { x = 6 y = 29 }
+		}
+		
+		categories = {
+			industry
+			synth_resources
+		}
+	}
+
+
+
+
+	
 	fuel_silos = {
 
 		enable_building = {

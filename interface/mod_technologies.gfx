@@ -265,5 +265,322 @@ spriteTypes = {
 		name = "GFX_factory_repair10_medium"
 		textureFile = "gfx/interface/technologies/factory_repair10.dds"
 	}
+
+### metallurgy
+	spriteType = {
+		name = "GFX_metallurgy_medium"
+		textureFile = "gfx/interface/technologies/metallurgy.dds"
+	}
+
+### coal_liquefaction
+	spriteType = {
+		name = "GFX_coal_liquefaction2_medium"
+		textureFile = "gfx/interface/technologies/coal_liquefaction.dds"
+	}
+
+### steel_smelter I-X
+	spriteType = {
+		name = "GFX_steel_smelter_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter2_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter3_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter4_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter5_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter6_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter7_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter8_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter9_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_steel_smelter10_medium"
+		textureFile = "gfx/interface/technologies/steel_smelter10.dds"
+	}
+
+### aluminium_smelter I-X
+	spriteType = {
+		name = "GFX_aluminium_smelter_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter2_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter3_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter4_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter5_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter6_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter7_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter8_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter9_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_aluminium_smelter10_medium"
+		textureFile = "gfx/interface/technologies/aluminium_smelter10.dds"
+	}
+
+### tungsten_smelter I-X
+	spriteType = {
+		name = "GFX_tungsten_smelter_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter2_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter3_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter4_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter5_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter6_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter7_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter8_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter9_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_tungsten_smelter10_medium"
+		textureFile = "gfx/interface/technologies/tungsten_smelter10.dds"
+	}
+
+### chromium_smelter I-X
+	spriteType = {
+		name = "GFX_chromium_smelter_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter2_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter3_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter4_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter5_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter6_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter7_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter8_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter9_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_chromium_smelter10_medium"
+		textureFile = "gfx/interface/technologies/chromium_smelter10.dds"
+	}
+
+### synthetic_rubber I-X
+	spriteType = {
+		name = "GFX_synthetic_rubber_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber2_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber3_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber4_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber5_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber6_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber7_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber8_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber9_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_rubber10_medium"
+		textureFile = "gfx/interface/technologies/synthetic_rubber10.dds"
+	}
+
+### synthetic_fuel I-X
+	spriteType = {
+		name = "GFX_synthetic_fuel_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel2_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel3_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel4_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel5_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel6_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel7_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel8_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel9_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_synthetic_fuel10_medium"
+		textureFile = "gfx/interface/technologies/synthetic_fuel10.dds"
+	}
 }
-	
