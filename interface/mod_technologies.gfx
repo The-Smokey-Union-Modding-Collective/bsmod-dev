@@ -274,7 +274,7 @@ spriteTypes = {
 
 ### coal_liquefaction
 	spriteType = {
-		name = "GFX_coal_liquefaction2_medium"
+		name = "GFX_coal_liquefaction_medium"
 		textureFile = "gfx/interface/technologies/coal_liquefaction.dds"
 	}
 
@@ -582,5 +582,56 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_synthetic_fuel10_medium"
 		textureFile = "gfx/interface/technologies/synthetic_fuel10.dds"
+	}
+
+### fuel_refining I-X
+	spriteType = {
+		name = "GFX_fuel_refining_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining2_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining3_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining4_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining5_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining6_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining7_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining8_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining9_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fuel_refining10_medium"
+		textureFile = "gfx/interface/technologies/fuel_refining10.dds"
 	}
 }
