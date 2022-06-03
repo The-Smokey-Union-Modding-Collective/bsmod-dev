@@ -2736,11 +2736,11 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			318 = {
+			835 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 5
-					province = 1635
+					province = 5214
 					instant_build = yes
 				}
 				set_building_level = {
