@@ -165,6 +165,20 @@ buildings = {
 		
 		show_modifier = yes
 	}
+
+	synthetic_rubber_refinery = {
+		show_on_map = 1
+		base_cost = 14500
+		icon_frame = 17
+		local_resources_rubber = 1
+		refinery = yes
+		max_level = 5
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
 	
 	synthetic_refinery = {
 		show_on_map = 1
@@ -174,20 +188,6 @@ buildings = {
 		local_resources_oil = 1 # May use local_resources_ + any resource name
 		refinery = yes
 		max_level = 5 # This is the max unlock level
-		shares_slots = yes
-		value = 5
-		infrastructure_construction_effect = yes
-		
-		show_modifier = yes
-	}
-	
-	synthetic_rubber_refinery = {
-		show_on_map = 1
-		base_cost = 14500
-		icon_frame = 17
-		local_resources_rubber = 1
-		refinery = yes
-		max_level = 5
 		shares_slots = yes
 		value = 5
 		infrastructure_construction_effect = yes
