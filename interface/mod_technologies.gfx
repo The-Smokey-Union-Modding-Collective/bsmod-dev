@@ -272,10 +272,10 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/metallurgy.dds"
 	}
 
-### coal_liquefaction
+### fuel_silos (coal liquefaction)
 	spriteType = {
-		name = "GFX_coal_liquefaction_medium"
-		textureFile = "gfx/interface/technologies/coal_liquefaction.dds"
+		name = "GFX_fuel_silos_medium"
+		textureFile = "gfx/interface/technologies/fuel_silos.dds"
 	}
 
 ### steel_smelter I-X
