@@ -1,4 +1,3 @@
--- force update checksum
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 48	--vanilla=10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 48			--vanilla=25
 NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
@@ -17,7 +16,9 @@ NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0	--vanilla=0.1
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00007			--vanilla=0.0005
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
+NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5					--vanilla=4.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	--vanilla=100000
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1				--vanilla=30
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0					--vanilla=1
