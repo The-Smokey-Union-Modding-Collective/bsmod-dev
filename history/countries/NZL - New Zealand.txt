@@ -10,6 +10,9 @@ create_intelligence_agency = {
 }
 
 add_command_power = 100
+add_ideas = mod_scw_international_brigades
+add_ideas = mod_trade_allies
+add_manpower = 30000
 
 # Starting tech
 set_stability = 0.8
@@ -147,8 +150,6 @@ if = {
 		low_economic_mobilisation
 		limited_conscription
 	}
-	add_ideas = mod_scw_international_brigades
-	add_ideas = mod_trade_allies
 
 	
 	set_technology = {
