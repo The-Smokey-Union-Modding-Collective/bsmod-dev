@@ -2812,7 +2812,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "construction1_tree"
-				position = { x = 894 y = 312 }
+				position = { x = 1600 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
@@ -2820,7 +2820,7 @@ guiTypes = {
 
 			gridboxtype = {
 				name = "excavation1_tree"
-				position = { x = 900 y = 312 }
+				position = { x = 1750 y = 312 }
 				size = { width = 72 height = 650 }
 				slotsize = { width = 70 height = 70 }
 				format = "UP"
