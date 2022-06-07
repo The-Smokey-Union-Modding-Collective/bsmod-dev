@@ -266,6 +266,109 @@ spriteTypes = {
 		textureFile = "gfx/interface/technologies/factory_repair10.dds"
 	}
 
+	### construction I-X
+	spriteType = {
+		name = "GFX_construction1_medium"
+		textureFile = "gfx/interface/technologies/construction1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction2_medium"
+		textureFile = "gfx/interface/technologies/construction2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction3_medium"
+		textureFile = "gfx/interface/technologies/construction3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction4_medium"
+		textureFile = "gfx/interface/technologies/construction4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction5_medium"
+		textureFile = "gfx/interface/technologies/construction5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction6_medium"
+		textureFile = "gfx/interface/technologies/construction6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction7_medium"
+		textureFile = "gfx/interface/technologies/construction7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction8_medium"
+		textureFile = "gfx/interface/technologies/construction8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction9_medium"
+		textureFile = "gfx/interface/technologies/construction9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_construction10_medium"
+		textureFile = "gfx/interface/technologies/construction10.dds"
+	}
+
+### fuel_refining I-X
+	spriteType = {
+		name = "GFX_excavation1_medium"
+		textureFile = "gfx/interface/technologies/excavation1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation2_medium"
+		textureFile = "gfx/interface/technologies/excavation2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation3_medium"
+		textureFile = "gfx/interface/technologies/excavation3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation4_medium"
+		textureFile = "gfx/interface/technologies/excavation4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation5_medium"
+		textureFile = "gfx/interface/technologies/excavation5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation6_medium"
+		textureFile = "gfx/interface/technologies/excavation6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation7_medium"
+		textureFile = "gfx/interface/technologies/excavation7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation8_medium"
+		textureFile = "gfx/interface/technologies/excavation8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation9_medium"
+		textureFile = "gfx/interface/technologies/excavation9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_excavation10_medium"
+		textureFile = "gfx/interface/technologies/excavation10.dds"
+	}
+
+
 ### metallurgy
 	spriteType = {
 		name = "GFX_metallurgy_medium"

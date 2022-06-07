@@ -2630,7 +2630,7 @@ guiTypes = {
 				orientation = upper_right
 			
 				instantTextBoxType = {
-					name = "industry_year2"
+					name = "industry_year"
 					position = { x = 0 y = 140 }
 					textureFile = ""
 					font = "hoi_36header"
@@ -2641,23 +2641,10 @@ guiTypes = {
 					format = left
 					Orientation = "UPPER_LEFT"
 				}
-
-#				instantTextBoxType = {
-#					name = "industry_year3"
-#					position = { x = 0 y = 280 }
-#					textureFile = ""
-#					font = "hoi_36header"
-#					borderSize = {x = 0 y = 4}
-#					text = "1935"
-#					maxWidth = 130
-#					maxHeight = 32
-#					format = left
-#					Orientation = "UPPER_LEFT"
-#				}
-
+				
 				instantTextBoxType = {
-					name = "industry_year4"
-					position = { x = 0 y = 420 }
+					name = "industry_year2"
+					position = { x = 0 y = 350 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2669,8 +2656,21 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
-					name = "industry_year5"
+					name = "industry_year3"
 					position = { x = 0 y = 560 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1938"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "industry_year4"
+					position = { x = 0 y = 770 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2682,8 +2682,21 @@ guiTypes = {
 				}
 
 				instantTextBoxType = {
+					name = "industry_year5"
+					position = { x = 0 y = 980 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1940"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
 					name = "industry_year6"
-					position = { x = 0 y = 700 }
+					position = { x = 0 y = 1190 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2696,7 +2709,20 @@ guiTypes = {
 
 				instantTextBoxType = {
 					name = "industry_year7"
-					position = { x = 0 y = 840 }
+					position = { x = 0 y = 1400 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1942"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "industry_year8"
+					position = { x = 0 y = 1610 }
 					textureFile = ""
 					font = "hoi_36header"
 					borderSize = {x = 0 y = 4}
@@ -2707,19 +2733,31 @@ guiTypes = {
 					Orientation = "UPPER_LEFT"
 				}
 
-#				instantTextBoxType = {
-#					name = "industry_year8"
-#					position = { x = 0 y = 980 }
-#					textureFile = ""
-#					font = "hoi_36header"
-#					borderSize = {x = 0 y = 4}
-#					text = "1943"
-#					maxWidth = 130
-#					maxHeight = 32
-#					format = left
-#					Orientation = "UPPER_LEFT"
-#				}			
-			
+				instantTextBoxType = {
+					name = "industry_year9"
+					position = { x = 0 y = 1820 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1944"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}
+
+				instantTextBoxType = {
+					name = "industry_year10"
+					position = { x = 0 y = 2030 }
+					textureFile = ""
+					font = "hoi_36header"
+					borderSize = {x = 0 y = 4}
+					text = "1945"
+					maxWidth = 130
+					maxHeight = 32
+					format = left
+					Orientation = "UPPER_LEFT"
+				}	
 			}
 				
 			}			
