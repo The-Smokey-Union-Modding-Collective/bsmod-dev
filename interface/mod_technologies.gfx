@@ -737,4 +737,157 @@ spriteTypes = {
 		name = "GFX_fuel_refining10_medium"
 		textureFile = "gfx/interface/technologies/fuel_refining10.dds"
 	}
+
+	### radar I-X
+	spriteType = {
+		name = "GFX_radar1_medium"
+		textureFile = "gfx/interface/technologies/radar1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar2_medium"
+		textureFile = "gfx/interface/technologies/radar2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar3_medium"
+		textureFile = "gfx/interface/technologies/radar3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar4_medium"
+		textureFile = "gfx/interface/technologies/radar4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar5_medium"
+		textureFile = "gfx/interface/technologies/radar5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar6_medium"
+		textureFile = "gfx/interface/technologies/radar6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar7_medium"
+		textureFile = "gfx/interface/technologies/radar7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar8_medium"
+		textureFile = "gfx/interface/technologies/radar8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar9_medium"
+		textureFile = "gfx/interface/technologies/radar9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radar10_medium"
+		textureFile = "gfx/interface/technologies/radar10.dds"
+	}
+
+### radio I-X
+	spriteType = {
+		name = "GFX_radio1_medium"
+		textureFile = "gfx/interface/technologies/radio1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio2_medium"
+		textureFile = "gfx/interface/technologies/radio2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio3_medium"
+		textureFile = "gfx/interface/technologies/radio3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio4_medium"
+		textureFile = "gfx/interface/technologies/radio4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio5_medium"
+		textureFile = "gfx/interface/technologies/radio5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio6_medium"
+		textureFile = "gfx/interface/technologies/radio6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio7_medium"
+		textureFile = "gfx/interface/technologies/radio7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio8_medium"
+		textureFile = "gfx/interface/technologies/radio8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio9_medium"
+		textureFile = "gfx/interface/technologies/radio9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_radio10_medium"
+		textureFile = "gfx/interface/technologies/radio10.dds"
+	}
+
+### computing I-X
+	spriteType = {
+		name = "GFX_computing1_medium"
+		textureFile = "gfx/interface/technologies/computing1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing2_medium"
+		textureFile = "gfx/interface/technologies/computing2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing3_medium"
+		textureFile = "gfx/interface/technologies/computing3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing4_medium"
+		textureFile = "gfx/interface/technologies/computing4.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing5_medium"
+		textureFile = "gfx/interface/technologies/computing5.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing6_medium"
+		textureFile = "gfx/interface/technologies/computing6.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing7_medium"
+		textureFile = "gfx/interface/technologies/computing7.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing8_medium"
+		textureFile = "gfx/interface/technologies/computing8.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing9_medium"
+		textureFile = "gfx/interface/technologies/computing9.dds"
+	}
+
+	spriteType = {
+		name = "GFX_computing10_medium"
+		textureFile = "gfx/interface/technologies/computing10.dds"
+	}
 }
