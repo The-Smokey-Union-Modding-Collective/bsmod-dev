@@ -8,7 +8,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		path = {
-			leads_to_tech = radio1
+			leads_to_tech = radio
 			research_cost_coeff = 1
 		}
 		path = {
