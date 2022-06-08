@@ -791,8 +791,8 @@ spriteTypes = {
 
 ### radio I-X
 	spriteType = {
-		name = "GFX_radio1_medium"
-		textureFile = "gfx/interface/technologies/radio1.dds"
+		name = "GFX_radio_medium"
+		textureFile = "gfx/interface/technologies/radio.dds"
 	}
 
 	spriteType = {

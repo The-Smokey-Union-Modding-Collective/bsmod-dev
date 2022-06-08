@@ -303,7 +303,7 @@ technologies = {
 		}
 	}
 
-	radio1 = {
+	radio = {
 		land_reinforce_rate = 0.02
 		coordination_bonus = 0.01
 
