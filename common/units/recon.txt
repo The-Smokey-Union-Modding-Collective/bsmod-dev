@@ -29,7 +29,7 @@ sub_units = {
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
-		training_time = 120
+		training_time = 90
 
 		#Misc Abilities
 		weight = 0.1
@@ -113,7 +113,7 @@ sub_units = {
 		max_organisation 	= 20
 		default_morale 		= 0.3
 		manpower 			= 500
-		training_time 		= 120
+		training_time 		= 90
 
 		#Misc Abilities
 		weight 				= 0.1
@@ -198,7 +198,7 @@ sub_units = {
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
-		training_time = 120
+		training_time = 90
 
 		#Misc Abilities
 		weight = 0.1
@@ -279,7 +279,7 @@ sub_units = {
 		max_organisation = 20
 		default_morale = 0.3
 		manpower = 500
-		training_time = 120
+		training_time = 90
 
 		#Misc Abilities
 		weight = 0.1

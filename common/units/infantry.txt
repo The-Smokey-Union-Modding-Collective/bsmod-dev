@@ -151,7 +151,7 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 90
 		suppression = 2
 		weight = 0.5
 		
@@ -206,7 +206,7 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 90
 		suppression = 1
 		weight = 0.5
 		supply_consumption = 0.05
@@ -261,7 +261,7 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 90
 		suppression = 1
 		weight = 0.5
 		
@@ -317,7 +317,7 @@ sub_units = {
 		manpower = 1000
 
 		#Misc Abilities
-		training_time = 150
+		training_time = 90
 		suppression = 1
 		weight = 0.5
 		supply_consumption = 0.06
@@ -437,7 +437,7 @@ sub_units = {
 		manpower = 1200
 
 		#Misc Abilities
-		training_time = 120
+		training_time = 90
 		suppression = 2
 		weight = 1
 		
