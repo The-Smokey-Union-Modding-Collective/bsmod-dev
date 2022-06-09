@@ -7,14 +7,14 @@ state={
 	state_category = pastoral
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = BOL
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 0
-		}
+#		buildings = {
+#			infrastructure = 1
+#			industrial_complex = 0
+#		}
 #		add_core_of = BOL
 	}
 

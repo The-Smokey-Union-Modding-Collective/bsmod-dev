@@ -6,20 +6,20 @@ state={
 	
 	state_category = town
 	
-	resources={
-		tungsten=35 # was: 46
-		steel=6 # was: 8
-	}
+#	resources={
+#		tungsten=35 # was: 46
+#		steel=6 # was: 8
+#	}
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = ARG
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 0
-		}
+#		buildings = {
+#			infrastructure = 2
+#			industrial_complex = 0
+#		}
 #		add_core_of = ARG
 	}
 

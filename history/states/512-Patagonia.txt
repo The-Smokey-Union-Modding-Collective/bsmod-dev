@@ -6,21 +6,21 @@ state={
 	
 	state_category = rural
 	
-	resources={
-		oil=5 # was: 6
-	}
+#	resources={
+#		oil=5 # was: 6
+#	}
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = ARG
-		buildings = {
-			infrastructure = 2
-			10953 = {
-				naval_base = 1
-			}
-		}
+#		buildings = {
+#			infrastructure = 2
+#			10953 = {
+#				naval_base = 1
+#			}
+#		}
 #		add_core_of = ARG
 	}
 

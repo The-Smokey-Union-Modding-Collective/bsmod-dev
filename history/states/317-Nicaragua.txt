@@ -1,33 +1,33 @@
 state={
 	id=317
 	name="STATE_317"
-	resources={
-		chromium=1 # was: 1
-	}
+#	resources={
+#		chromium=1 # was: 1
+#	}
 
 	state_category = town
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = NIC
-		buildings = {
-			infrastructure = 2
-			arms_factory = 0
-			industrial_complex = 0
-			air_base = 1
-			12738 = {
-				naval_base = 1
-
-			}
-
-		}
+#		buildings = {
+#			infrastructure = 2
+#			arms_factory = 0
+#			industrial_complex = 0
+#			air_base = 1
+#			12738 = {
+#				naval_base = 1
+#
+#			}
+#
+#		}
 #		add_core_of = NIC
-		victory_points = {
-			12738 3
-		}
-
+#		victory_points = {
+#			12738 3
+#		}
+#
 	}
 
 	provinces={

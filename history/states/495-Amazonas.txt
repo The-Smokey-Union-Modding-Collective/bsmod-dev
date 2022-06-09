@@ -6,17 +6,17 @@ state={
 	
 	state_category = pastoral
 	
-	resources={
-		aluminium=4 # was: 4
-	}
+#	resources={
+#		aluminium=4 # was: 4
+#	}
 
 	history={
-		owner = BAD
-		buildings = {
-			infrastructure = 0
-
-		}
-		add_core_of = BAD
+#		owner = BAD
+#		buildings = {
+#			infrastructure = 0
+#
+#		}
+#		add_core_of = BAD
 	}
 
 	provinces={
