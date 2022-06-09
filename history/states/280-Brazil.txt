@@ -6,13 +6,13 @@ state={
 	state_category = pastoral
 
 	history={
-		owner = BAD
-		buildings = {
-			infrastructure = 1
-
-		}
-		add_core_of = BAD
-
+#		owner = BAD
+#		buildings = {
+#			infrastructure = 1
+#
+#		}
+#		add_core_of = BAD
+#
 	}
 
 	provinces={
