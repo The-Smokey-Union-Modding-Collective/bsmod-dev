@@ -5,26 +5,26 @@ state={
 	manpower = 1440000
 	
 	state_category = rural
-	resources={
-		oil=3 # was: 3
-	}
+#	resources={
+#		oil=3 # was: 3
+#	}
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = SAU
-		buildings = {
-			infrastructure = 1
-			arms_factory = 0
-			industrial_complex = 0
-			12702 = {
-				naval_base = 6
-			}
-		}
-		victory_points = {
-			12727 5
-		}
+#		buildings = {
+#			infrastructure = 1
+#			arms_factory = 0
+#			industrial_complex = 0
+#			12702 = {
+#				naval_base = 6
+#			}
+#		}
+#		victory_points = {
+#			12727 5
+#		}
 #		add_core_of = SAU
 	}
 

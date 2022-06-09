@@ -6,15 +6,15 @@ state={
 	state_category = rural
 
 	history={
-		owner = BAD
-		buildings = {
-			# infrastructure = 3
-			# industrial_complex = 2
-		}
-		victory_points = {
-			5029 1 
-		}
-		add_core_of = BAD
+#		owner = BAD
+#		buildings = {
+#			# infrastructure = 3
+#			# industrial_complex = 2
+#		}
+#		victory_points = {
+#			5029 1 
+#		}
+#		add_core_of = BAD
 	}
 
 	provinces={

@@ -1,28 +1,28 @@
 state={
 	id=492
 	name="STATE_492"
-	resources={
-		tungsten=2 # was: 2.000
-	}
+#	resources={
+#		tungsten=2 # was: 2.000
+#	}
 	
 	state_category = rural
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = PRU
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 0
-			air_base = 1
-
-		}
+#		buildings = {
+#			infrastructure = 2
+#			industrial_complex = 0
+#			air_base = 1
+#
+#		}
 #		add_core_of = PRU
-		victory_points = {
-			2210 1 
-		}
-
+#		victory_points = {
+#			2210 1 
+#		}
+#
 	}
 
 	provinces={

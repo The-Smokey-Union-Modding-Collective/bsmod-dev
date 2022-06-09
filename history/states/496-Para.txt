@@ -6,26 +6,26 @@ state={
 	
 	state_category = town
 	
-	resources={
-		steel=3 # was: 4
-	}
+#	resources={
+#		steel=3 # was: 4
+#	}
 
 	history={
-		owner = BAD
-		victory_points = {
-			7476 3
-		}
-		victory_points = {
-			10999 1
-		}
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 2
-			10999 = {
-				naval_base = 1
-			}
-		}
-		add_core_of = BAD
+#		owner = BAD
+#		victory_points = {
+#			7476 3
+#		}
+#		victory_points = {
+#			10999 1
+#		}
+#		buildings = {
+#			infrastructure = 2
+#			industrial_complex = 2
+#			10999 = {
+#				naval_base = 1
+#			}
+#		}
+#		add_core_of = BAD
 	}
 
 	provinces={

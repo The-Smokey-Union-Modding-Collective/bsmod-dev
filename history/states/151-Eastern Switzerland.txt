@@ -7,20 +7,20 @@ state={
 	
 	state_category = city
 	
-	resources={
-		aluminium=15 # was: 24
-	}
+#	resources={
+#		aluminium=15 # was: 24
+#	}
 
 	history={
-		owner = BAD
-		buildings = {
-			# infrastructure = 6
-			# industrial_complex = 3
-		}
-		victory_points = {
-			663 10 
-		}
-		add_core_of = BAD
+#		owner = BAD
+#		buildings = {
+#			# infrastructure = 6
+#			# industrial_complex = 3
+#		}
+#		victory_points = {
+#			663 10 
+#		}
+#		add_core_of = BAD
 	}
 
 	provinces={

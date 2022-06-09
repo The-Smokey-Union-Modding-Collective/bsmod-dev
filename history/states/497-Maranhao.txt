@@ -6,25 +6,25 @@ state={
 	
 	state_category = rural
 	
-	resources={
-		rubber=23 # was: 30
-	}
+#	resources={
+#		rubber=23 # was: 30
+#	}
 
 	history={
-		owner = BAD
-		buildings = {
-			infrastructure = 2
-			industrial_complex = 1
-			air_base = 1
-			12853 = {
-				naval_base = 2
-			}
-		}
-		add_core_of = BAD
-		victory_points = {
-			12853 1 
-		}
-
+#		owner = BAD
+#		buildings = {
+#			infrastructure = 2
+#			industrial_complex = 1
+#			air_base = 1
+#			12853 = {
+#				naval_base = 2
+#			}
+#		}
+#		add_core_of = BAD
+#		victory_points = {
+#			12853 1 
+#		}
+#
 	}
 
 	provinces={

@@ -8,19 +8,19 @@ state=
 	state_category = town
 
 	history= {
-		# owner = IRE
-		# 
-		owner = BAD
-		add_core_of = BAD
-		victory_points = {
-			9303 3 #Galway
-		}
-		victory_points = {
-			11371 1 #Sligo
-		}
-		buildings = {
-			infrastructure = 3 #was: 6
-		}
+#		# owner = IRE
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
+#		victory_points = {
+#			9303 3 #Galway
+#		}
+#		victory_points = {
+#			11371 1 #Sligo
+#		}
+#		buildings = {
+#			infrastructure = 3 #was: 6
+#		}
 #		add_core_of = IRE
 	}
 

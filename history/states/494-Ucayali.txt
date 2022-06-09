@@ -8,13 +8,13 @@ state={
 	
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = PRU
-		buildings = {
-			infrastructure = 2
-		}
+#		buildings = {
+#			infrastructure = 2
+#		}
 #		add_core_of = PRU
 	}
 

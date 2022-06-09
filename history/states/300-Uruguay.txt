@@ -6,32 +6,32 @@ state={
 	
 	state_category = large_city
 	
-	resources={
-		oil=1 # was: 2
-		steel=1 # was: 2
-	}
+#	resources={
+#		oil=1 # was: 2
+#		steel=1 # was: 2
+#	}
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = URG
-		buildings = {
-			infrastructure = 3 #was: 5
-			arms_factory = 0
-			industrial_complex = 0
-			dockyard = 0
-			air_base = 1
-			10362 = {
-				naval_base = 6
-				bunker = 1
-				coastal_bunker = 1
-			}
-		}
+#		buildings = {
+#			infrastructure = 3 #was: 5
+#			arms_factory = 0
+#			industrial_complex = 0
+#			dockyard = 0
+#			air_base = 1
+#			10362 = {
+#				naval_base = 6
+#				bunker = 1
+#				coastal_bunker = 1
+#			}
+#		}
 #		add_core_of = URG
-		victory_points = {
-			10362 5
-		}
-
+#		victory_points = {
+#			10362 5
+#		}
+#
 	}
 
 	provinces={
