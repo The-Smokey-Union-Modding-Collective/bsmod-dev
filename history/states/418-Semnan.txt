@@ -7,14 +7,14 @@ state={
 	state_category = wasteland
 
 	history={
-		owner = BAD
-		buildings = {
-			# infrastructure = 1
-		}
-		victory_points = {
-			8093 1 
-		}
-		add_core_of = BAD
+#		owner = BAD
+#		buildings = {
+#			# infrastructure = 1
+#		}
+#		victory_points = {
+#			8093 1 
+#		}
+#		add_core_of = BAD
 	}
 
 	provinces={

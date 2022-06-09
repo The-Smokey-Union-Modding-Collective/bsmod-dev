@@ -1,22 +1,22 @@
 state={
 	id=322
 	name="STATE_322"
-	resources={
-		tungsten=2.000
-	}
+#	resources={
+#		tungsten=2.000
+#	}
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = TIB
-		buildings = {
-			infrastructure = 1
-			industrial_complex = 0
-
-		}
+#		buildings = {
+#			infrastructure = 1
+#			industrial_complex = 0
+#
+#		}
 #		add_core_of = TIB
-
+#
 	}
 
 	provinces={

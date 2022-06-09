@@ -8,19 +8,19 @@ state={
 
 	history={
 #		owner = IRE
-		# 
-		owner = BAD
-		add_core_of = BAD
-		buildings = {
-			infrastructure = 3 #was: 6
-			industrial_complex = 0
-		}
-		victory_points = {
-			7394 5 #Cork
-		}
-		victory_points = {
-			6313 1 #Limerick
-		}
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
+#		buildings = {
+#			infrastructure = 3 #was: 6
+#			industrial_complex = 0
+#		}
+#		victory_points = {
+#			7394 5 #Cork
+#		}
+#		victory_points = {
+#			6313 1 #Limerick
+#		}
 #		add_core_of = IRE
 	}
 

@@ -6,25 +6,25 @@ state={
 	
 	state_category = rural
 	
-	resources={
-		oil=1 # was: 1
-	}
+#	resources={
+#		oil=1 # was: 1
+#	}
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = YEM
-		buildings = {
-			infrastructure = 2
-			arms_factory = 0
-			industrial_complex = 0
-			10840 = {
-				naval_base = 1
-			}
-		}
-		victory_points = {
-			10840 3 
-		}
+#		buildings = {
+#			infrastructure = 2
+#			arms_factory = 0
+#			industrial_complex = 0
+#			10840 = {
+#				naval_base = 1
+#			}
+#		}
+#		victory_points = {
+#			10840 3 
+#		}
 #		add_core_of = YEM
 	}
 

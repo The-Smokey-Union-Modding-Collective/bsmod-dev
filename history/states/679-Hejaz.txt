@@ -6,22 +6,22 @@ state={
 	state_category = pastoral
 
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = SAU
-		victory_points = {
-			12758 1 
-		}
-		victory_points = {
-			12883 1 
-		}
-		buildings = {
-			infrastructure = 2
-			12883 = {
-				naval_base = 5
-			}
-		}
+#		victory_points = {
+#			12758 1 
+#		}
+#		victory_points = {
+#			12883 1 
+#		}
+#		buildings = {
+#			infrastructure = 2
+#			12883 = {
+#				naval_base = 5
+#			}
+#		}
 #		add_core_of = SAU
 	}
 

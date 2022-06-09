@@ -8,15 +8,15 @@ state={
 	buildings_max_level_factor=1.000
 	state_category = pastoral
 	history={
-		# 
-		owner = BAD
-		add_core_of = BAD
+#		# 
+#		owner = BAD
+#		add_core_of = BAD
 #		owner = TIB
-		buildings = {
-			infrastructure = 1
-		}
+#		buildings = {
+#			infrastructure = 1
+#		}
 #		add_core_of = TIB
-
+#
 	}
 
 	local_supplies=0.0 
