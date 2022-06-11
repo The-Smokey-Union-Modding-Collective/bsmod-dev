@@ -9,11 +9,11 @@ GER = {
 	color_ui = rgb { 138 155 116 }
 }
 ENG = {
-	color = rgb { 201 56 93 }
+	color = rgb { 173 52 62 }
 	color_ui = rgb { 255 73 121 }
 }
 SOV = {
-	color = rgb { 125 13 24 }
+	color = rgb { 150 0 0}
 	color_ui = rgb { 163 17 31 }
 }
 SWE = {
@@ -21,7 +21,7 @@ SWE = {
 	color_ui = rgb { 47 172 255 }
 }
 FRA = {
-	color = rgb { 57 113 228 }
+	color = rgb { 42 76 128 }
 	color_ui = rgb { 74 147 255 }
 }
 LUX = {
@@ -186,7 +186,7 @@ IRQ = {
 	color_ui = rgb { 231 148 129 }
 }
 JAP = {
-	color = hsv { 0.05 0.3 1 }
+	color = rgb { 226 193 114 }
 	color_ui = hsv { 0.05 0.25 1.2 }
 }
 LIB = {
@@ -226,7 +226,7 @@ PRU = {
 	color_ui = rgb { 255 246 255 }
 }
 SAF = {
-	color = rgb { 195 107 160 }
+	color = rgb { 193 84 50 }
 	color_ui = rgb { 198 169 248 }
 }
 SAU = {
