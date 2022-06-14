@@ -146,6 +146,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -573,7 +577,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-		
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 
 		fuel_consumption = 0
 		maximum_speed = 4
@@ -1022,7 +1029,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-		
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 
 		fuel_consumption = 0
 		maximum_speed = 3.5
@@ -1556,6 +1566,11 @@ equipments = {
 			count < 2
 		}
 
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
+
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_modern_tank_turret
@@ -1731,6 +1746,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		module_count_limit = {
+			module = stabilizer
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_three_man_tank_turret
@@ -1882,6 +1901,11 @@ equipments = {
 		}
 		module_count_limit = {
 			module = auto_loader
+			count < 2
+		}
+
+		module_count_limit = {
+			module = stabilizer
 			count < 2
 		}
 
