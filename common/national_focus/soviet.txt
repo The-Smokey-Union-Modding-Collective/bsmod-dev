@@ -4527,7 +4527,7 @@ focus_tree = {
 			custom_effect_tooltip = SOV_strengthen_the_mobilization_plan_ns_tt
 			add_doctrine_cost_reduction = {
 				category = land_doctrine
-				uses = 4
+				uses = 3
 				cost_reduction = 0.5
 			}
 		}
@@ -6017,9 +6017,9 @@ focus_tree = {
 		available = {
 			OR = {
 				NOT = { has_idea = SOV_desperate_measures_ns }
-				AND = { # Must have a defensive war with Germany AND lose 1 million men
+				AND = { # Must have a defensive war with Germany AND lose 1.5 million men
 					has_defensive_war_with = GER
-					casualties_k > 1000
+					casualties_k > 1500
 				}
 				surrender_progress > 0.35
 			}
