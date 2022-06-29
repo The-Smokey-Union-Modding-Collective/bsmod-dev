@@ -2119,9 +2119,9 @@ technologies = {
 		mot_anti_tank_brigade = {
 			hardness = 1.0
 		}
-		mot_anti_air_brigade = {
-			hardness = 1.0
-		}
+		#mot_anti_air_brigade = {
+		#	hardness = 1.0
+		#}
 		mot_rocket_artillery_brigade = {
 			hardness = 1.0
 		}
