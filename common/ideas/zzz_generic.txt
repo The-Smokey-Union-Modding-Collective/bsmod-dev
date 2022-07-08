@@ -273,6 +273,10 @@ ideas = {
 				tag = SOV
 				trade_cost_for_target_factor = -1
 			}
+			targeted_modifier = {
+				tag = MEX
+				trade_cost_for_target_factor = -1
+			}
 		}
 		
 		mod_trade_allies = { #free trade for any allied nation with the allies and USSR
@@ -323,6 +327,10 @@ ideas = {
 			}
 			targeted_modifier = {
 				tag = SOV
+				trade_cost_for_target_factor = -1
+			}
+			targeted_modifier = {
+				tag = MEX
 				trade_cost_for_target_factor = -1
 			}
 		}
