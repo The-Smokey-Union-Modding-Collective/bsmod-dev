@@ -9,7 +9,7 @@ MAN_reorg = {
 }
 
 RAJ_UK = {
-	color = rgb { 150 30 20 }
+	color = rgb { 100 0 0 }
 	color_ui = rgb { 200  10  10 }
 }
 
