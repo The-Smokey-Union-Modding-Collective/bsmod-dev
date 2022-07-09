@@ -110,4 +110,21 @@ on_actions = {
 			}
 		}
 	}
+
+	#Mexican 
+	on_startup = {
+        effect = {
+            MEX = {
+                if ={
+                    limit = {
+                        is_ai = no
+                    }
+                }
+                add_ideas = {
+                    add_ideas = mod_scw_international_brigades
+                    add_ideas = mod_trade_allies
+                }
+            }
+        }
+    }
 }

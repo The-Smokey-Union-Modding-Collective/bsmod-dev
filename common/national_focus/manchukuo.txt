@@ -676,7 +676,10 @@
 		}
 
 		available = {
-			CHI = { exists = no }
+			controls_state = 608
+			controls_state = 614
+			controls_state = 597
+			controls_state = 743
 		}
 
 		bypass = {
@@ -949,9 +952,9 @@
 		}
 
 		available = {
-			controls_state = 325
-			controls_state = 602
-			controls_state = 592
+			owns_state = 325
+			owns_state = 602
+			owns_state = 592
 		}
 
 		bypass = {
@@ -1017,7 +1020,7 @@
 		}
 
 		available = {
-			controls_state = 613
+			owns_state = 613
 		}
 
 		bypass = {
@@ -2270,8 +2273,9 @@
 		}
 
 		available = {
-			owns_state = 608
-			owns_state = 613
+			controls_state = 608
+			controls_state = 613
+			controls_state = 592
 		}
 
 		bypass = {
