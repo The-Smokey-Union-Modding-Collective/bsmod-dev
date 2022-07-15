@@ -1,0 +1,239 @@
+spriteTypes = {
+
+### MOBILE WARFARE ###
+
+	SpriteType = {
+		name = "GFX_mobile_defense_tactics_medium"
+		texturefile = "gfx/interface/technologies/elastic_defence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_attack_tactics_medium"
+		texturefile = "gfx/interface/technologies/assault_concentration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_motorized_primacy_medium"
+		texturefile = "gfx/interface/technologies/mobile_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_defense_medium"
+		texturefile = "gfx/interface/technologies/mobile_defence.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_assault_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_medium_panzer_tactics_medium"
+		texturefile = "gfx/interface/technologies/armored_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_intercoordination_medium"
+		texturefile = "gfx/interface/technologies/combined_arms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_schwerpunkt_tactics_medium"
+		texturefile = "gfx/interface/technologies/schwerpunk.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_panzer_tactics_medium"
+		texturefile = "gfx/interface/technologies/armored_spearhead.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_breakthrough_tactics_medium"
+		texturefile = "gfx/interface/technologies/deep_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_heavy_armor_coordination_medium"
+		texturefile = "gfx/interface/technologies/mechanized_wave.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_blitzkrieg_tactics_medium"
+		texturefile = "gfx/interface/technologies/blitzkrieg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_assault_tactics_medium"
+		texturefile = "gfx/interface/technologies/operational_concentration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_all_out_assault_medium"
+		texturefile = "gfx/interface/technologies/continuous_offensive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_modern_blitzkrieg_medium"
+		texturefile = "gfx/interface/technologies/modern_blitzkrieg.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_defense_tactics_medium"
+		texturefile = "gfx/interface/technologies/firebrigades.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_kill_zones_medium"
+		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
+	}
+
+	### SUPERIOR FIREPOWER ###
+
+	SpriteType = {
+		name = "GFX_superior_firepower_defense_tactics_medium"
+		texturefile = "gfx/interface/technologies/delay.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_artillery_primacy_medium"
+		texturefile = "gfx/interface/technologies/centralized_fire_control.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_cavalry_tanks_medium"
+		texturefile = "gfx/interface/technologies/armored_spearhead.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_anti_armor_tactics_medium"
+		texturefile = "gfx/interface/technologies/large_front_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armored_assault_medium"
+		texturefile = "gfx/interface/technologies/armored_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fire_superiority_priority_medium"
+		texturefile = "gfx/interface/technologies/overwhelming_firepower.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_suppresive_barrage_medium"
+		texturefile = "gfx/interface/technologies/concentrated_fire_plans.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_assault_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_firepower_breakthrough_medium"
+		texturefile = "gfx/interface/technologies/forward_observers.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_assault_medium"
+		texturefile = "gfx/interface/technologies/operational_concentration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_tank_hunter_tactics_medium"
+		texturefile = "gfx/interface/technologies/deep_operations.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_advanced_breakthrough_tactics_medium"
+		texturefile = "gfx/interface/technologies/assault_concentration.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_troops_medium"
+		texturefile = "gfx/interface/technologies/mechanised_offensive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_mobile_artillery_medium"
+		texturefile = "gfx/interface/technologies/advanced_firebases.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fast_fire_superiority_medium"
+		texturefile = "gfx/interface/technologies/dispersed_support.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_integrated_support_medium"
+		texturefile = "gfx/interface/technologies/intergrated_support.dds"
+	}
+
+	### GREAT BATTLE PLAN ###
+
+	SpriteType = {
+		name = "GFX_traditional_defense_medium"
+		texturefile = "gfx/interface/technologies/defence_in_depth.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_meticulous_assault_medium"
+		texturefile = "gfx/interface/technologies/grand_assault.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_fortified_at_positions_medium"
+		texturefile = "gfx/interface/technologies/attritional_containment.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_defensive_infantry_training_medium"
+		texturefile = "gfx/interface/technologies/prepared_defense.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_tank_defense_medium"
+		texturefile = "gfx/interface/technologies/combined_arms.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_armor_artillery_coordination_medium"
+		texturefile = "gfx/interface/technologies/tactical_control.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_tank_assault_medium"
+		texturefile = "gfx/interface/technologies/vast_offensives.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_light_gun_tactics_medium"
+		texturefile = "gfx/interface/technologies/dispersed_support.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_infantry_assaulting_tactics_medium"
+		texturefile = "gfx/interface/technologies/infantry_offensive.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_focused_thrust_medium"
+		texturefile = "gfx/interface/technologies/assault_breakthrough.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_rapid_reinforcment_medium"
+		texturefile = "gfx/interface/technologies/firebrigades.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_covered_attack_medium"
+		texturefile = "gfx/interface/technologies/superior_firepower.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_elite_infantry_doctrine_medium"
+		texturefile = "gfx/interface/technologies/infiltration_in_depth.dds"
+	}
+
+}	

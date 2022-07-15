@@ -2041,9 +2041,9 @@ technologies = {
 		}
 	}
 
-	#	                  #
+	#                     #
 	#      GBP START      #
-	#					  #
+	#                     #
 
 	trench_warfare = {
 		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
@@ -2055,10 +2055,14 @@ technologies = {
 	
 		max_dig_in = 10
 		dig_in_speed_factor = 0.25 #25% bonus
-		
+		max_planning = 0.15
+
+		category_all_infantry = {
+			max_organisation = 10
+		}
 		
 		path = {
-			leads_to_tech = grand_battle_plan 
+			leads_to_tech = traditional_defense
 			research_cost_coeff = 1
 		}
 
@@ -2093,6 +2097,780 @@ technologies = {
 		}
 	}
 	
+	traditional_defense = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		holding_infantry = {
+			defense = 0.10
+		}
+		
+		enable_tactic = tactic_counterattack
+		enable_tactic = tactic_delay
+
+		path = {
+			leads_to_tech = meticulous_assault
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	meticulous_assault = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		infantry = {
+			soft_attack = 0.05
+		}
+		
+		enable_tactic = tactic_planned_attack
+
+		path = {
+			leads_to_tech = fortified_at_positions
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = infantry_assaulting_tactics
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	#                                 #
+	#      DEFENSE HEAVIES START      #
+	#                                 #
+
+	fortified_at_positions = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		xor = {
+			infantry_assaulting_tactics
+		}
+
+		holding_infantry = {
+			defense = 0.05
+		}
+		
+		anti_tank_brigade = {
+			defense = 0.10
+			hard_attack = 0.15
+			need = {
+				anti_tank_equipment = 5
+			}
+		}
+
+		path = {
+			leads_to_tech = defensive_infantry_training 
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	defensive_infantry_training = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		max_dig_in = 0.05
+		dig_in_speed_factor = 0.05
+
+		holding_infantry = {
+			max_organisation = 5
+		}
+
+		path = {
+			leads_to_tech = infantry_tank_defense
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	infantry_tank_defense = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		heavy_armor = {
+			max_organisation = 3
+			defense = 0.50
+		}
+
+		heavy_tank_destroyer_brigade = {
+			max_organisation = 1
+		}
+
+		heavy_sp_artillery_brigade = {
+			max_organisation = 1
+		}
+
+		#enable_tactic = tactic_armoured_defense
+
+		path = {
+			leads_to_tech = armor_artillery_coordination
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	armor_artillery_coordination = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		heavy_armor = {
+			breakthrough = 0.5
+		}
+
+		heavy_tank_destroyer_brigade = {
+			breakthrough = 0.5
+		}
+
+		heavy_sp_artillery_brigade = {
+			breakthrough = 0.5
+		}
+
+		category_artillery = {
+			breakthrough = 0.5
+		}
+
+		#enable_tactic = tactic_armoured_defense
+
+		path = {
+			leads_to_tech = infantry_tank_assault
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 12 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	infantry_tank_assault = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		heavy_armor = {
+			breakthrough = 0.5
+			default_morale = 0.05
+		}
+
+		heavy_tank_destroyer_brigade = {
+			breakthrough = 0.5
+		}
+
+		heavy_sp_artillery_brigade = {
+			breakthrough = 0.5
+		}
+
+		#enable_tactic = tactic_infantry_tank_assault
+
+		path = {
+			leads_to_tech = light_gun_tactics
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 14 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	light_gun_tactics = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		holding_infantry = {
+			max_organisation = 5
+		}
+
+		pack_artillery_brigade = {
+			soft_attack = 0.05
+			defense = 0.15
+		}
+		
+
+		path = {
+			leads_to_tech = c3i_theory
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = -2 y = 16 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	#                                  #
+	#      INFANTRY PACK SF START      #
+	#                                  #
+
+	infantry_assaulting_tactics = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		infantry = {
+			max_organisation = 5
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = focused_thrust
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	focused_thrust = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		pack_artillery_brigade = {
+			soft_attack = 0.10
+			hard_attack = 0.10
+		}
+
+		#enable_tactic = tactic_focused_thrust
+
+		path = {
+			leads_to_tech = rapid_reinforcment
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	rapid_reinforcment = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		infantry = {
+			default_morale = 0.05
+			soft_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = covered_attack
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	covered_attack = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		infantry = {
+			breakthrough = 0.10
+		}
+
+		rocket_artillery_brigade = {
+			breakthrough = 0.10
+		}
+
+		mot_rocket_artillery_brigade = {
+			breakthrough = 0.10
+		}
+
+		path = {
+			leads_to_tech = elite_infantry_doctrine
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	elite_infantry_doctrine = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		category_special_forces = {
+			breakthrough = 0.20
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		path = {
+			leads_to_tech = infiltration_assault
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 14 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	infiltration_assault = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		land_night_attack = 0.1
+
+		category_all_infantry = {
+			soft_attack = 0.05
+			hard_attack = 0.05
+		}
+
+		#enable_tactic = tactic_infiltration_assault
+
+		path = {
+			leads_to_tech = c3i_theory
+			research_cost_coeff = 1
+		}
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 2 y = 16 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
+	#               #
+	#      C3I      #
+	#               #
+
+	c3i_theory = {
+		doctrine_name = "GRAND_BATTLEPLAN_DOCTRINE"
+
+		xp_research_type = army
+		xp_unlock_cost = 100
+
+		category_all_infantry = {
+			max_organisation = 5
+		}
+
+		max_planning = 0.15
+		planning_speed = 0.15
+		land_reinforce_rate = 0.02
+
+		doctrine = yes	
+		research_cost = 2.25
+		
+		categories = {
+			land_doctrine
+			cat_grand_battle_plan
+		}
+
+		
+		folder = {
+			name = land_doctrine_folder
+			position = { x = 0 y = 18 }
+		}
+		
+		ai_will_do = {
+			modifier = {
+				not = {
+					has_army_experience > 120
+				}
+				factor = 0.8
+			}
+			factor = 20
+		}
+		
+		ai_research_weights = {
+			infantry_weapons = 1.5
+			motorized_equipment = 1.0
+		}
+	}
+
 	masterful_blitz = {
 		enable_tactic = tactic_masterful_blitz
 
