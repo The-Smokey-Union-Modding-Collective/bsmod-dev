@@ -562,7 +562,7 @@ focus_tree = {
 	focus = {
 		id = SIA_invite_the_zaibatsus 
 		icon = GFX_focus_jap_zaibatsu
-		prerequisite = { focus = SIA_begin_industry_buildup }
+		prerequisite = { focus = SIA_foreign_industry }
 		x = 0
 		y = 1
 		relative_position_id = SIA_foreign_industry
