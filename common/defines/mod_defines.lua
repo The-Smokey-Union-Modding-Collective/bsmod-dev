@@ -1,6 +1,6 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 48	--vanilla=10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 48			--vanilla=25
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.1, 0.0 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.15, 0.08 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0	--vanilla=0.05
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0		--vanilla=0.05
