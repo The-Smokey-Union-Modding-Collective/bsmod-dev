@@ -584,7 +584,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			custom_effect_tooltip = zaibatsu_decisions
-			add_dynamic_modifier = { modifier = SIA_zaibatsu_influence }
 			hidden_effect ={
 				set_variable = { SIA_zai_production_factory_max_efficiency_factor = 0 }
 				set_variable = { SIA_zai_production_factory_efficiency_gain_factor = 0 }
@@ -598,6 +597,7 @@ focus_tree = {
 				set_variable = { SIA_zai_production_speed_industrial_complex_factor = 0 }
 				set_variable = { SIA_zai_line_change_production_efficiency_factor = 0 }
 				set_variable = { SIA_zai_production_factory_start_efficiency_factor = 0 }	
+				add_dynamic_modifier = { modifier = SIA_zaibatsu_influence }
 			}
 			
 		}
