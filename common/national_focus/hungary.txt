@@ -4173,7 +4173,6 @@ focus_tree = {
 		id = HUN_mobile_focus
 		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_home_defense }
 		x = -2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
@@ -4474,7 +4473,6 @@ focus_tree = {
 		id = HUN_home_defense
 		icon = GFX_goal_generic_fortify_city
 		prerequisite = { focus = HUN_army_maneuvers }
-		mutually_exclusive = { focus = HUN_mobile_focus }
 		x = 2
 		y = 1
 		relative_position_id = HUN_army_maneuvers
