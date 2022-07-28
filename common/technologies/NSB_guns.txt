@@ -1,0 +1,1275 @@
+technologies = {
+
+
+	@1918 = 0
+	@1936 = 2
+	@1938 = 4
+	@1939 = 6
+	@1940 = 7
+	@1941 = 8
+	@1942 = 9
+	@1943 = 10
+	@1944 = 11
+	@1945 = 12
+	@1946 = 20
+
+	gw_tank_weapons = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_heavy_machine_gun
+			tank_small_cannon
+		}
+
+		path = {
+			leads_to_tech = small_caliber_auto_cannon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = advanced_small_cannon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1918
+		folder = {
+			name = armour_support_folder
+			position = { x = -2 y = 1 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### AUTO CANNONS ###
+
+	small_caliber_auto_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_auto_cannon
+		}
+
+		path = {
+			leads_to_tech = small_caliber_aa_cannon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = improved_shells
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1934
+		folder = {
+			name = armour_support_folder
+			position = { x = -4 y = 3 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	small_caliber_aa_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_anti_air_cannon
+		}
+
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -6 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	improved_shells = { #WW1 Tank weapons
+
+		path = {
+			leads_to_tech = advanced_small_caliber_auto_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = armour_support_folder
+			position = { x = -4 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_small_caliber_auto_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_auto_cannon_2
+		}
+
+		path = {
+			leads_to_tech = advanced_light_cannon_design
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = advanced_small_caliber_aa_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1938
+		folder = {
+			name = armour_support_folder
+			position = { x = -4 y = 11 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_small_caliber_aa_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_anti_air_cannon_2
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -6 y = 12 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_light_cannon_design = { #WW1 Tank weapons
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -4 y = 14 }
+		}
+
+		path = {
+			leads_to_tech = medium_caliber_auto_cannon
+			research_cost_coeff = 1
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	medium_caliber_auto_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_anti_air_cannon_3
+		}
+
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -4 y = 17 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### MEDIUM CANNONS ###
+
+	advanced_small_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_small_cannon_2
+		}
+
+		path = {
+			leads_to_tech = basic_metalurgy
+			research_cost_coeff = 1
+		}
+		
+		path = {
+			leads_to_tech = small_high_velocity_gun
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = close_support_gun
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	basic_metalurgy = { #WW1 Tank weapons
+
+		path = {
+			leads_to_tech = medium_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	medium_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_medium_cannon
+		}
+
+		path = {
+			leads_to_tech = advanced_metalurgy
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_metalurgy = { #WW1 Tank weapons
+
+		path = {
+			leads_to_tech = advanced_medium_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_medium_cannon = { #WW1 Tank weapons
+
+		path = {
+			leads_to_tech = advanced_high_velocity_medium_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 15 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_high_velocity_medium_cannon = { #WW1 Tank weapons
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -1 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### HIGH VELOCITY MEDIUM ###
+
+	small_high_velocity_gun = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon
+		}
+
+		path = {
+			leads_to_tech = medium_high_velocity_gun
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -3 y = 7 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	medium_high_velocity_gun = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_2
+		}
+
+		path = {
+			leads_to_tech = advanced_high_velocity_medium_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = -3 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### CSG ###
+
+	close_support_gun = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_close_support_gun
+		}
+
+		path = {
+			leads_to_tech = close_support_cannon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = tank_howitzer
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 1 y = 4 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	close_support_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_close_support_cannon
+		}
+
+		path = {
+			leads_to_tech = close_support_howitzer
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 1 y = 9 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	close_support_howitzer = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_close_support_howitzer
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 1 y = 14 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### HOWITZERS ###
+
+	tank_howitzer = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_medium_howitzer
+		}
+
+		path = {
+			leads_to_tech = advanced_tank_howitzer
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 3 y = 6 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_tank_howitzer = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_medium_howitzer_2
+		}
+
+		path = {
+			leads_to_tech = heavy_howitzer
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 3 y = 13 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	heavy_howitzer = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_heavy_howitzer
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 3 y = 17 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	### HEAVY CANNONS ###
+
+	heavy_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_heavy_cannon
+		}
+
+		path = {
+			leads_to_tech = improved_heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 5 y = 5 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	improved_heavy_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_heavy_cannon_2
+		}
+
+		path = {
+			leads_to_tech = advanced_heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = high_velocity_heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 5 y = 10 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	advanced_heavy_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_heavy_cannon_3
+		}
+
+		path = {
+			leads_to_tech = super_heavy_cannon
+			research_cost_coeff = 1
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 5 y = 18 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	high_velocity_heavy_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_high_velocity_cannon_3
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 6 y = 16 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+
+	super_heavy_cannon = { #WW1 Tank weapons
+
+		enable_equipment_modules = {
+			tank_super_heavy_cannon
+		}
+
+		research_cost = 1
+		start_year = 1936
+		folder = {
+			name = armour_support_folder
+			position = { x = 5 y = 24 }
+		}
+
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 2
+				is_major = yes
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1937.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1938.1.1"
+			}
+
+			modifier = {
+				factor = 1.2
+				date > "1939.1.1"
+			}
+		}
+
+		categories = {
+			armor
+		}
+	}
+}
