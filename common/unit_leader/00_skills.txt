@@ -1,0 +1,355 @@
+leader_skills = {
+
+	### NAVY ###
+	1 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.05
+			naval_damage_factor = 0.05 
+			naval_coordination = 0.02
+			positioning = 0.025
+			naval_retreat_speed = 0.01
+			naval_defense_factor  = 0.05
+		}
+	}
+
+	2 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.1
+			naval_damage_factor = 0.10
+			naval_coordination = 0.04
+			positioning = 0.05
+			naval_retreat_speed = 0.02
+			naval_defense_factor  = 0.10
+		}
+	}
+
+	3 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.15
+			naval_damage_factor = 0.15
+			naval_coordination = 0.06
+			positioning = 0.075
+			naval_retreat_speed = 0.03
+			naval_defense_factor  = 0.15
+		}
+	}
+
+	4 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.2
+			naval_damage_factor = 0.20
+			naval_coordination = 0.08
+			positioning = 0.1
+			naval_retreat_speed = 0.04
+			naval_defense_factor  = 0.20
+		}
+	}
+
+	5 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.25
+			naval_damage_factor = 0.25
+			naval_coordination = 0.10
+			positioning = 0.125
+			naval_retreat_speed = 0.05
+			naval_defense_factor  = 0.25
+		}
+	}
+
+	6 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.3
+			naval_damage_factor = 0.30
+			naval_coordination = 0.12
+			positioning = 0.15
+			naval_retreat_speed = 0.06
+			naval_defense_factor  = 0.30
+		}
+	}
+
+	7 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.35
+			naval_damage_factor = 0.35
+			naval_coordination = 0.14
+			positioning = 0.175
+			naval_retreat_speed = 0.07
+			naval_defense_factor  = 0.35
+		}
+	}
+
+	8 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.40
+			naval_damage_factor = 0.40
+			naval_coordination = 0.16
+			positioning = 0.2
+			naval_retreat_speed = 0.08
+			naval_defense_factor  = 0.40
+		}
+	}
+
+	9 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.45
+			naval_damage_factor = 0.45
+			naval_coordination = 0.18
+			positioning = 0.225
+			naval_retreat_speed = 0.09
+			naval_defense_factor  = 0.45
+		}
+	}
+
+	10 = {
+		cost = 34
+		type = navy
+		modifier = {
+			naval_hit_chance = 0.50
+			naval_damage_factor = 0.50
+			naval_coordination = 0.2
+			positioning = 0.25
+			naval_retreat_speed = 0.1
+			naval_defense_factor  = 0.50
+		}
+	}
+
+	### Corps Commander ###
+	1 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.025 
+			defence = 0.025
+			max_planning = 0.02 
+			supply_consumption_factor = -0.025
+		}
+	}
+		
+	2 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.05 
+			defence = 0.05 
+			max_planning = 0.04
+			supply_consumption_factor = -0.05
+		}
+	}
+	
+	3 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.075
+			defence = 0.075
+			max_planning = 0.06
+			supply_consumption_factor = -0.075
+		}
+	}
+	
+	4 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.1 
+			defence = 0.1
+			max_planning = 0.08
+			supply_consumption_factor = -0.10
+		}
+	}
+	
+	5 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.125
+			defence = 0.125
+			max_planning = 0.1
+			supply_consumption_factor = -0.125
+		}
+	}
+
+	6 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.15 
+			defence = 0.15
+			max_planning = 0.12
+			supply_consumption_factor = -0.15
+		}
+	}
+
+	7 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.175 
+			defence = 0.175
+			max_planning = 0.14
+			supply_consumption_factor = -0.175
+		}
+	}
+
+	8 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.2 
+			defence = 0.2
+			max_planning = 0.16
+			supply_consumption_factor = -0.20
+		}
+	}
+
+	9 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.225 
+			defence = 0.225
+			max_planning = 0.18 
+			supply_consumption_factor = -0.225
+		}
+	}
+	
+	10 = {
+		cost = 34
+		type = corps_commander
+		modifier = {
+			offence = 0.25
+			defence = 0.25
+			max_planning = 0.2
+			supply_consumption_factor = -0.25
+		}
+	}
+	
+	### Field Marshal ###
+	1 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.025 
+			defence = 0.025
+			max_planning = 0.02 
+			supply_consumption_factor = -0.025
+		}
+	}
+		
+	2 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.05 
+			defence = 0.05 
+			max_planning = 0.04
+			supply_consumption_factor = -0.05
+		}
+	}
+	
+	3 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.075
+			defence = 0.075
+			max_planning = 0.06
+			supply_consumption_factor = -0.075
+		}
+	}
+	
+	4 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.1 
+			defence = 0.1
+			max_planning = 0.08
+			supply_consumption_factor = -0.10
+		}
+	}
+	
+	5 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.125
+			defence = 0.125
+			max_planning = 0.1
+			supply_consumption_factor = -0.125
+		}
+	}
+
+	6 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.15 
+			defence = 0.15
+			max_planning = 0.12
+			supply_consumption_factor = -0.15
+		}
+	}
+
+	7 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.175 
+			defence = 0.175
+			max_planning = 0.14
+			supply_consumption_factor = -0.175
+		}
+	}
+
+	8 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.2 
+			defence = 0.2
+			max_planning = 0.16
+			supply_consumption_factor = -0.20
+		}
+	}
+
+	9 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.225 
+			defence = 0.225
+			max_planning = 0.18 
+			supply_consumption_factor = -0.225
+		}
+	}
+	
+	10 = {
+		cost = 34
+		type = field_marshal
+		modifier = {
+			offence = 0.25
+			defence = 0.25
+			max_planning = 0.2
+			supply_consumption_factor = -0.25
+		}
+	}
+}

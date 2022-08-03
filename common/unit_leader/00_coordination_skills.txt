@@ -1,0 +1,53 @@
+leader_coordination_skills = {
+
+	### NAVY ###
+	1 = {
+		cost = 100
+		type = navy
+	}
+
+	2 = {
+		cost = 200
+		type = navy
+	}
+
+	3 = {
+		cost = 400
+		type = navy
+	}
+
+	4 = {
+		cost = 800
+		type = navy
+	}
+
+	5 = {
+		cost = 1600
+		type = navy
+	}
+
+	6 = {
+		cost = 3200
+		type = navy
+	}
+
+	7 = {
+		cost = 6400
+		type = navy
+	}
+
+	8 = {
+		cost = 12800
+		type = navy
+	}
+
+	9 = {
+		cost = 25600
+		type = navy
+	}
+	
+	10 = {
+		cost = 51200
+		type = navy
+	}
+}
