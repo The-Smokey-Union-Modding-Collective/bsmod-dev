@@ -49,7 +49,7 @@ equipments = {
 			aluminium = 2
 			rubber = 1
 		}
-		fuel_consumption = 0.36
+		fuel_consumption = 0.50
 	}
 	
 	jet_tac_bomber_equipment = {
@@ -146,7 +146,7 @@ equipments = {
 		}
 		
 		manpower = 40
-		fuel_consumption = 0.26
+		fuel_consumption = 0.45
 	}
 	
 
