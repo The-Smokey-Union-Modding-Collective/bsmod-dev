@@ -201,6 +201,58 @@ equipment_modules = {
 	###Turret Types - light
 	### turrets are split by chassis to make it easier to control which guns they can mount
 
+	### Interwar turret ###
+
+	tank_light_interwar_turret = {
+		abbreviation = "gar1"
+		category = tank_interwar_light_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = tank_destroyer
+		forbid_equipment_type = flame
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_interwar_main_armament 
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 0.2
+			breakthrough = 1
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+
+	tank_medium_interwar_turret = {
+		abbreviation = "gar2"
+		category = tank_interwar_medium_turret_type
+		sfx = sfx_ui_sd_module_turret
+		forbid_equipment_type = anti_air
+		forbid_equipment_type = tank_destroyer
+		forbid_equipment_type = flame
+		
+		allowed_module_categories = {
+			main_armament_slot = {
+				tank_interwar_main_armament 
+			}
+		}
+
+		add_stats = {
+			build_cost_ic = 0.4
+			breakthrough = 2
+		}
+		xp_cost = 1
+		multiply_stats = {
+			
+		}
+	}
+
+	### light turrets ###
+
 	tank_light_one_man_tank_turret = {
 		abbreviation = "l1m"
 		category = tank_light_turret_type
@@ -320,7 +372,7 @@ equipment_modules = {
 		category = tank_advanced_light_turret_type
 		sfx = sfx_ui_sd_module_turret
 		forbid_equipment_type = anti_air
-		forbid_equipment_type = tank_destroyer
+		forbid_equipment_type = light_tank_destroyer
 
 
 		add_stats = {
@@ -924,7 +976,7 @@ equipment_modules = {
 			build_cost_ic = 0.5
 		}
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_interwar_main_armament
 			convert_cost_ic = 1
 		}
 		xp_cost = 1
@@ -944,7 +996,7 @@ equipment_modules = {
 			reliability = -0.15
 		}
 		can_convert_from = {
-			module_category = tank_medium_main_armament
+			module_category = tank_interwar_main_armament
 			convert_cost_ic = 1
 		}
 		xp_cost = 1
@@ -1117,7 +1169,7 @@ equipment_modules = {
 		}
 		xp_cost = 1
 		can_convert_from = {
-			module_category = tank_small_main_armament
+			module_category = tank_interwar_main_armament
 			convert_cost_ic = 4
 		}
 	}

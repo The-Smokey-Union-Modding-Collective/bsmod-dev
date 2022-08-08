@@ -42,6 +42,8 @@ technologies = {
 			extra_ammo_storage
 			smoke_launchers
 			basic_armor_profile
+			tank_light_interwar_turret
+			tank_medium_interwar_turret
 		}
 		enable_subunits = {
 			light_armor

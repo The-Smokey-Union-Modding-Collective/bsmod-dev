@@ -179,16 +179,13 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
-					tank_flamethrower
 				}
 			}
 
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
-					tank_light_fixed_turret_type
+					tank_interwar_light_turret_type
 				}
 			}
 			suspension_type_slot = {
@@ -239,7 +236,13 @@ equipments = {
 			}
 
 		}
-
+		default_modules = {
+			main_armament_slot = empty
+			turret_type_slot = tank_light_interwar_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+		}
 		upgrades = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
@@ -599,15 +602,14 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
-					tank_flamethrower
 				}
 			}
 
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
+					tank_interwar_light_turret_type
+					tank_interwar_medium_turret_type
 				}
 			}
 
@@ -659,7 +661,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_light_one_man_tank_turret
+			turret_type_slot = tank_medium_interwar_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
@@ -880,6 +882,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_medium_turret_type
 					tank_medium_fixed_turret_type
+					tank_advanced_medium_turret_type
 				}
 			}
 
@@ -1049,16 +1052,14 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_small_main_armament
-					tank_flamethrower
 				}
 			}
 
 			turret_type_slot = {
 				required = yes
 				allowed_module_categories = {
-					tank_light_turret_type
-					tank_light_fixed_turret_type
+					tank_interwar_light_turret_type
+					tank_interwar_medium_turret_type
 				}
 			}
 
@@ -1111,7 +1112,7 @@ equipments = {
 		}
 		default_modules = {
 			main_armament_slot = empty
-			turret_type_slot = tank_light_one_man_tank_turret
+			turret_type_slot = tank_medium_interwar_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
@@ -1334,6 +1335,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_heavy_turret_type
 					tank_heavy_fixed_turret_type
+					tank_advanced_heavy_turret_type
 				}
 			}
 
