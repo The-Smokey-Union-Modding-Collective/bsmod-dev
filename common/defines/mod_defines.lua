@@ -106,6 +106,6 @@ NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30 -- max infrastru
 NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2	-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above. # Vanilla = 2.2
 NDefines.NSupply.NAVAL_BASE_FLOW = 5.0 -- max output/input of a naval node is limited by this base value + additional ratio for each level # Vanilla = 15.0 
 
---NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 1 				-- num stats gained on level up
---NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 0, 0, 0} 	-- level up stat random base weights attack, defense, planning, logistics
---NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 0, 0, 0} -- level up stat random base weights attack, defense, maneuvering, coordination
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4 				-- num stats gained on level up
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
+NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination

@@ -93,9 +93,6 @@ leader_traits = {
 		
 		attack_skill = 1
 		planning_skill = 1
-		
-		attack_skill_factor = 1
-		planning_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -122,9 +119,6 @@ leader_traits = {
 		
 		defense_skill = 1
 		logistics_skill = 1
-		
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -176,9 +170,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 
 	war_hero = { 
@@ -193,8 +184,7 @@ leader_traits = {
 		new_commander_weight = {
 			factor = 0  # Scripted starting leaders only
 		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
+
 	}
 	
 	career_officer = { 
@@ -221,9 +211,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		planning_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 
 	trait_cautious = { 
@@ -256,10 +243,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		
-		defense_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 
 	trait_reckless = { 
@@ -291,10 +274,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		attack_skill_factor = 1
-		defense_skill_factor = -1
-		planning_skill_factor = 1
 	}
 
 	media_personality = { 
@@ -304,9 +283,6 @@ leader_traits = {
 		non_shared_modifier = {
 			reassignment_duration_factor = 1   # +100% cost to replace leader
 		}
-		
-		attack_skill_factor = 1
-		defense_skill_factor = 1
 
 		new_commander_weight = {
 			factor = 1
@@ -352,9 +328,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 
 	bearer_of_artillery = {
@@ -400,8 +373,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		defense_skill_factor = 1
-		planning_skill_factor = 1
 	}
 	
 	cavalry_officer = { 
@@ -428,9 +399,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		
-		attack_skill_factor = 1
-		logistics_skill_factor = 1
 	}
 	
 	armor_officer = { 
@@ -461,8 +429,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
 	}
 
 	engineer_officer = { 
@@ -489,8 +455,6 @@ leader_traits = {
 				factor = 0
 			}
 		}
-		attack_skill_factor = 1
-		planning_skill_factor = 1
 	}
 
 
@@ -850,7 +814,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		logistics_skill_factor = 2
 		
 		gui_row = 15
 		
@@ -1000,8 +963,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		
-		attack_skill_factor = 2
 		
 		gui_row = 1
 		
