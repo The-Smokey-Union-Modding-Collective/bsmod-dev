@@ -48,7 +48,7 @@ leader_attack_skills = {
 
 	10 = {
 		cost = 51200
-		type = navy	 
+		type = navy
 	}
 
 	### Corps Commander ###
@@ -141,7 +141,7 @@ leader_attack_skills = {
 			army_morale_factor = 0.025
 		}
 	}
-		
+	
 	2 = {
 		cost = 200
 		type = field_marshal
@@ -150,7 +150,7 @@ leader_attack_skills = {
 		}
 	}
 	
-	3 = {
+  3 = {
 		cost = 400
 		type = field_marshal
 		modifier = {
@@ -180,7 +180,7 @@ leader_attack_skills = {
 		modifier = {
 			army_morale_factor = 0.15
 		}
-	}
+	}	
 
 	7 = {
 		cost = 6400
@@ -188,7 +188,7 @@ leader_attack_skills = {
 		modifier = {
 			army_morale_factor = 0.175
 		}
-	}
+	}	
 
 	8 = {
 		cost = 12800
@@ -196,7 +196,7 @@ leader_attack_skills = {
 		modifier = {
 			army_morale_factor = 0.2
 		}
-	}
+	}	
 
 	9 = {
 		cost = 25600
@@ -204,7 +204,7 @@ leader_attack_skills = {
 		modifier = {
 			army_morale_factor = 0.225
 		}
-	}
+	}	
 	
 	10 = {
 		cost = 51200
