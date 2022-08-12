@@ -51,7 +51,10 @@ NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.02, 0.15, 0.225, 0.35, 0.5, 0.7, 0.925, 1.15 } --vanilla={0.1, 0.3, 0.75, 0.9}
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.107 --vanilla=0.25
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 200 --vanilla=96 ( this / ARMY_FUEL_COST_MULT ) * fuel_consumption = total capacity
-NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0,	-- how much enemy combat width we are allowed to engage per width of our own, Vanilla is 2.0
+NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0	-- how much enemy combat width we are allowed to engage per width of our own, Vanilla is 2.0
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4				-- num stats gained on level up
+NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
+NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
@@ -106,7 +109,4 @@ NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_PENALTY = 0	--vanilla=-100
 NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30 -- max infrastructure level will reduce the supply flow drop off by this ratio # Vanilla = 0.30
 NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2	-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above. # Vanilla = 2.2
 NDefines.NSupply.NAVAL_BASE_FLOW = 5.0 -- max output/input of a naval node is limited by this base value + additional ratio for each level # Vanilla = 15.0 
-
-NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4 				-- num stats gained on level up
-NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
-NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
