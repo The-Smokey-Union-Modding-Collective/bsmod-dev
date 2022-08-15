@@ -51,7 +51,7 @@ NDefines.NMilitary.ARMY_TRAINING_FUEL_MULT = 0	--vanilla=1.
 NDefines.NMilitary.UNIT_EXP_LEVELS = { 0.02, 0.15, 0.225, 0.35, 0.5, 0.7, 0.925, 1.15 } --vanilla={0.1, 0.3, 0.75, 0.9}
 NDefines.NMilitary.EXPERIENCE_COMBAT_FACTOR = 0.107 --vanilla=0.25
 NDefines.NMilitary.FUEL_CAPACITY_DEFAULT_HOURS = 200 --vanilla=96 ( this / ARMY_FUEL_COST_MULT ) * fuel_consumption = total capacity
-NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0,	-- how much enemy combat width we are allowed to engage per width of our own, Vanilla is 2.0
+NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0	-- how much enemy combat width we are allowed to engage per width of our own, Vanilla is 2.0
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission

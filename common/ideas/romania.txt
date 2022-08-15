@@ -550,6 +550,32 @@ ideas = {
 			}
 		}
 
+		ROM_joint_oil_exploitation = {
+
+			picture = generic_exploit_mines
+
+			removal_cost = -1
+			
+			allowed = {
+				original_tag = ROM
+			}
+
+			allowed_civil_war = {
+
+			}
+			
+			research_bonus = {
+				synth_resources = 0.25
+			}
+
+			modifier = {
+				fuel_gain_factor = 0.15
+				production_speed_fuel_silo_factor = 0.20
+				stability_factor = -0.10
+				consumer_goods_factor = -0.02
+			}
+		}
+
 		ROM_balkans_dominance = {
 
 			removal_cost = -1
