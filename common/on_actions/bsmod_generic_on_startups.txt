@@ -121,8 +121,8 @@ on_actions = {
                     }
                 }
                 add_ideas = {
-                    add_ideas = mod_scw_international_brigades
-                    add_ideas = mod_trade_allies
+                    mod_scw_international_brigades
+                    mod_trade_allies
                 }
             }
         }
