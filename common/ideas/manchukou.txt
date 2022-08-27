@@ -632,7 +632,10 @@ ideas = {
 			picture = generic_manpower_bonus
 			
 			modifier = {
-				special_forces_cap = 0.04
+				special_forces_cap = 0.05
+				special_forces_attack_factor = 0.05
+				special_forces_defence_factor = 0.05
+				army_org_factor = 0.05
 			}
 		}
 	}

@@ -4201,7 +4201,7 @@ focus_tree = {
 				name = HUN_mobile_focus
 				cost_reduction = 0.25
 				uses = 1
-				category = cat_mobile_warfare
+				category = land_doctrine
 			}
 		}
 	}
@@ -4501,7 +4501,7 @@ focus_tree = {
 				name = HUN_home_defense
 				cost_reduction = 0.25
 				uses = 1
-				category = cat_grand_battle_plan
+				category = land_doctrine
 			}
 		}
 	}

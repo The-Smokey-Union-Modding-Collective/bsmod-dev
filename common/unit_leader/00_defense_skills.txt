@@ -4,81 +4,51 @@ leader_defense_skills = {
 	1 = {
 		cost = 100
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.05
-		}
 	}
 
 	2 = {
 		cost = 200
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.10
-		}
 	}
 
 	3 = {
 		cost = 400
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.15
-		}
 	}
 
 	4 = {
 		cost = 800
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.20
-		}
 	}
 
 	5 = {
 		cost = 1600
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.25
-		}
 	}
 
 	6 = {
 		cost = 3200
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.30
-		}
 	}
 
 	7 = {
 		cost = 6400
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.35
-		}
 	}
 
 	8 = {
 		cost = 12800
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.40
-		}
 	}
 
 	9 = {
 		cost = 25600
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.45
-		}
 	}
 	
 	10 = {
 		cost = 51200
 		type = navy
-		modifier = {
-			naval_defense_factor = 0.50
-		}
 	}
 
 	### Corps Commander ###
@@ -86,7 +56,7 @@ leader_defense_skills = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			defence = 0.025
+			dig_in_speed_factor = 0.025
 		}
 	}
 		
@@ -94,7 +64,7 @@ leader_defense_skills = {
 		cost = 200
 		type = corps_commander
 		modifier = {
-			defence = 0.05
+			dig_in_speed_factor = 0.05
 		}
 	}
 	
@@ -103,7 +73,7 @@ leader_defense_skills = {
 		cost = 400
 		type = corps_commander
 		modifier = {
-			defence = 0.075
+			dig_in_speed_factor = 0.075
 		}
 	}
 	
@@ -111,7 +81,7 @@ leader_defense_skills = {
 		cost = 800
 		type = corps_commander
 		modifier = {
-			defence = 0.10
+			dig_in_speed_factor = 0.10
 		}
 	}
 	
@@ -119,7 +89,7 @@ leader_defense_skills = {
 		cost = 1600
 		type = corps_commander
 		modifier = {
-			defence = 0.125
+			dig_in_speed_factor = 0.125
 		}
 	}
 
@@ -127,7 +97,7 @@ leader_defense_skills = {
 		cost = 3200
 		type = corps_commander
 		modifier = {
-			defence = 0.15
+			dig_in_speed_factor = 0.15
 		}
 	}
 
@@ -135,7 +105,7 @@ leader_defense_skills = {
 		cost = 6400
 		type = corps_commander
 		modifier = {
-			defence = 0.175
+			dig_in_speed_factor = 0.175
 		}
 	}
 
@@ -143,7 +113,7 @@ leader_defense_skills = {
 		cost = 12800
 		type = corps_commander
 		modifier = {
-			defence = 0.20
+			dig_in_speed_factor = 0.20
 		}
 	}
 
@@ -151,7 +121,7 @@ leader_defense_skills = {
 		cost = 25600
 		type = corps_commander
 		modifier = {
-			defence = 0.225
+			dig_in_speed_factor = 0.225
 		}
 	}
 	
@@ -159,7 +129,7 @@ leader_defense_skills = {
 		cost = 51200
 		type = corps_commander
 		modifier = {
-			defence = 0.25
+			dig_in_speed_factor = 0.25
 		}
 	}
 	
@@ -168,7 +138,7 @@ leader_defense_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			defence = 0.025
+			dig_in_speed_factor = 0.025
 		}
 	}
 	
@@ -177,7 +147,7 @@ leader_defense_skills = {
 		cost = 200
 		type = field_marshal
 		modifier = {
-			defence = 0.05
+			dig_in_speed_factor = 0.05
 		}
 	}
 	
@@ -186,7 +156,7 @@ leader_defense_skills = {
 		cost = 400
 		type = field_marshal
 		modifier = {
-			defence = 0.075
+			dig_in_speed_factor = 0.075
 		}
 	}
 	
@@ -194,7 +164,7 @@ leader_defense_skills = {
 		cost = 800
 		type = field_marshal
 		modifier = {
-			defence = 0.10
+			dig_in_speed_factor = 0.10
 		}
 	}
 	
@@ -202,7 +172,7 @@ leader_defense_skills = {
 		cost = 1600
 		type = field_marshal
 		modifier = {
-			defence = 0.125
+			dig_in_speed_factor = 0.125
 		}
 	}
 
@@ -210,7 +180,7 @@ leader_defense_skills = {
 		cost = 3200
 		type = field_marshal
 		modifier = {
-			defence = 0.15
+			dig_in_speed_factor = 0.15
 		}
 	}	
 
@@ -218,7 +188,7 @@ leader_defense_skills = {
 		cost = 6400
 		type = field_marshal
 		modifier = {
-			defence = 0.175
+			dig_in_speed_factor = 0.175
 		}
 	}	
 
@@ -226,7 +196,7 @@ leader_defense_skills = {
 		cost = 12800
 		type = field_marshal
 		modifier = {
-			defence = 0.20
+			dig_in_speed_factor = 0.20
 		}
 	}	
 
@@ -234,7 +204,7 @@ leader_defense_skills = {
 		cost = 25600
 		type = field_marshal
 		modifier = {
-			defence = 0.225
+			dig_in_speed_factor = 0.225
 		}
 	}	
 	
@@ -242,7 +212,7 @@ leader_defense_skills = {
 		cost = 51200
 		type = field_marshal
 		modifier = {
-			defence = 0.25
+			dig_in_speed_factor = 0.25
 		}
 	}
 }

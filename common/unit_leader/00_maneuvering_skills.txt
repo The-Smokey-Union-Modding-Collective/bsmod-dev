@@ -1,4 +1,4 @@
-leader_coordination_skills = {
+leader_maneuvering_skills = {
 
 	### NAVY ###
 	1 = {
@@ -45,7 +45,7 @@ leader_coordination_skills = {
 		cost = 25600
 		type = navy
 	}
-	
+
 	10 = {
 		cost = 51200
 		type = navy

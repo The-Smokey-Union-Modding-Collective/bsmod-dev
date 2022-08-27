@@ -1,4 +1,4 @@
-leader_logistics_skills = {
+leader_planning_skills = {
 
 	### NAVY ###
 	1 = {
@@ -90,13 +90,13 @@ leader_logistics_skills = {
 			naval_coordination = 0.20
 		}
 	}
-	
+
 	### Corps Commander ###
 	1 = {
 		cost = 100
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 2
+			planning_speed = 0.05
 		}
 	}
 		
@@ -104,7 +104,7 @@ leader_logistics_skills = {
 		cost = 200
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 4
+			planning_speed = 0.1
 		}
 	}
 	
@@ -113,7 +113,7 @@ leader_logistics_skills = {
 		cost = 400
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 6
+			planning_speed = 0.15
 		}
 	}
 	
@@ -121,7 +121,7 @@ leader_logistics_skills = {
 		cost = 800
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 8
+			planning_speed = 0.2
 		}
 	}
 	
@@ -129,7 +129,7 @@ leader_logistics_skills = {
 		cost = 1600
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 10
+			planning_speed = 0.25
 		}
 	}
 
@@ -137,7 +137,7 @@ leader_logistics_skills = {
 		cost = 3200
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 12
+			planning_speed = 0.3
 		}
 	}
 
@@ -145,7 +145,7 @@ leader_logistics_skills = {
 		cost = 6400
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 14
+			planning_speed = 0.35
 		}
 	}
 
@@ -153,7 +153,7 @@ leader_logistics_skills = {
 		cost = 12800
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 16
+			planning_speed = 0.4
 		}
 	}
 
@@ -161,15 +161,15 @@ leader_logistics_skills = {
 		cost = 25600
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 18
+			planning_speed = 0.45
 		}
 	}
-
+	
 	10 = {
 		cost = 51200
 		type = corps_commander
 		modifier = {
-			no_supply_grace = 24
+			planning_speed = 0.5
 		}
 	}
 	
@@ -178,7 +178,7 @@ leader_logistics_skills = {
 		cost = 100
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 2
+			planning_speed = 0.05
 		}
 	}
 		
@@ -186,7 +186,7 @@ leader_logistics_skills = {
 		cost = 200
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 4
+			planning_speed = 0.1
 		}
 	}
 	
@@ -195,7 +195,7 @@ leader_logistics_skills = {
 		cost = 400
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 6
+			planning_speed = 0.15
 		}
 	}
 	
@@ -203,7 +203,7 @@ leader_logistics_skills = {
 		cost = 800
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 8
+			planning_speed = 0.2
 		}
 	}
 	
@@ -211,7 +211,7 @@ leader_logistics_skills = {
 		cost = 1600
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 10
+			planning_speed = 0.25
 		}
 	}
 
@@ -219,7 +219,7 @@ leader_logistics_skills = {
 		cost = 3200
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 12
+			planning_speed = 0.3
 		}
 	}
 
@@ -227,7 +227,7 @@ leader_logistics_skills = {
 		cost = 6400
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 14
+			planning_speed = 0.35
 		}
 	}
 
@@ -235,7 +235,7 @@ leader_logistics_skills = {
 		cost = 12800
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 16
+			planning_speed = 0.4
 		}
 	}
 
@@ -243,15 +243,15 @@ leader_logistics_skills = {
 		cost = 25600
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 18
+			planning_speed = 0.45
 		}
 	}
-
+	
 	10 = {
 		cost = 51200
 		type = field_marshal
 		modifier = {
-			no_supply_grace = 24
+			planning_speed = 0.5
 		}
 	}
 }
