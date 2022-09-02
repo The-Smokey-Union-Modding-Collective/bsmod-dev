@@ -134,4 +134,11 @@ spriteTypes = {
 		name = "GFX_idea_ITA_ansaldo"
 		texturefile = "gfx/interface/ideas/idea_ita_ansaldo.dds"
 	}
+
+	### Japan misc ###
+
+	spriteType = {
+		name = "GFX_idea_osaka_arsenal"
+		texturefile = "gfx/interface/ideas/idea_generic_artillery_manufacturer_2.dds"
+	}
 }
