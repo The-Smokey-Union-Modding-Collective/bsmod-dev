@@ -74,3 +74,40 @@ country_event = {
 		add_ideas = MAN_protectionism
 	}
 }
+
+country_event = {
+	id = manchuria.3
+	title = manchuria.3.t
+	desc = manchuria.3.d
+	picture = GFX_report_event_tur_industry
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = manchuria.3.a
+		
+		annex_country = {
+			target = SIA
+			transfer_troops = yes
+		}
+
+		289 = {
+			set_compliance = 100
+		}
+		724 = {
+			set_compliance = 100
+		}
+		741 = {
+			set_compliance = 100
+		}
+		671 = {
+			set_compliance = 100
+		}
+		670  = {
+			set_compliance = 100
+		}
+		286 = {
+			set_compliance = 100
+		}
+	}
+}
