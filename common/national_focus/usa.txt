@@ -5252,7 +5252,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_armored_infantry
-				uses = 2
+				uses = 3
 				bonus = 1.0
 				category = motorized_equipment
 			}

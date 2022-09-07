@@ -215,6 +215,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = motorized_bonus
 				bonus = 1.00
+				uses = 2
 				category = motorized_equipment
 			}
 		}
