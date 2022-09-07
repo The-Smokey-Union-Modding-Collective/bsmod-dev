@@ -68,7 +68,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 0.0, -- NAVAL_KAMIKAZE
 0.0, -- PORT_STRIKE
 300, -- ATTACK_LOGISTICS vanilla=0.0
-0.2, -- AIR_SUPPLY
+0.0, -- AIR_SUPPLY
 0.0, -- TRAINING
 300, -- NAVAL_MINES_PLANTING vanilla=0.0
 300, -- NAVAL_MINES_SWEEPING vanilla=0.0
