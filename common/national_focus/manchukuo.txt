@@ -2844,7 +2844,7 @@
 				else_if = {
 					add_tech_bonus = {
 						name = mechanized_bonus
-						bonus = 0.50
+						bonus = 1.00
 						uses = 1
 						category = cat_mechanized_equipment
 					}
@@ -2852,7 +2852,7 @@
 			}
 			add_tech_bonus = {
 				name = mechanized_bonus
-				bonus = 1
+				bonus = 1.5
 				uses = 1
 				category = cat_mechanized_equipment
 			}

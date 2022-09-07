@@ -1020,6 +1020,12 @@ focus_tree = {
 				uses = 2
 				category = land_doctrine
 			}
+			add_tech_bonus = {
+				name = mechanized_bonus
+				bonus = 1
+				uses = 3
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 

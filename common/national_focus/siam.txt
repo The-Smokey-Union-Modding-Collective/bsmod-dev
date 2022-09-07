@@ -1493,6 +1493,12 @@ focus_tree = {
 			set_technology = {
 				motorised_infantry = 1
 			}
+			add_tech_bonus = {
+				name = mechanized_bonus
+				bonus = 1.00
+				uses = 2
+				category = cat_mechanized_equipment
+			}
 		}
 	}
 	

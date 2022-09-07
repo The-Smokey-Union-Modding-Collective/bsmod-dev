@@ -1011,6 +1011,12 @@ focus_tree = {
 				uses = 1
 				category = armor
 			}
+			add_tech_bonus = {
+				name = mechanized_bonus
+				bonus = 2
+				uses = 1
+				category = cat_mechanized_equipment
+			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = SPA_wilhelm_ritter_von_thoma
 		}
@@ -2701,7 +2707,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = SPA_equipment_modernization
-				bonus = 2.0
+				bonus = 1.00
 				uses = 1
 				category = motorized_equipment
 			}

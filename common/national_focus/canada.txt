@@ -2078,6 +2078,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_tech_bonus = {
+				name = mechanized_bonus
+				bonus = 1.00
+				uses = 1
+				category = cat_mechanized_equipment
+			}
+			add_tech_bonus = {
 				name = CAN_a_motorized_army
 				bonus = 1.0
 				uses = 1
