@@ -6,6 +6,12 @@ technology_categories = {
 	medium_air
 	heavy_air
 	armor
+	tank_light_guns
+	medium_tank_guns
+	high_velocity_guns
+	tank_howitzers
+	heavy_tank_cannons
+	tank_flamethrowers
 	cat_light_armor
 	cat_medium_armor
 	cat_heavy_armor

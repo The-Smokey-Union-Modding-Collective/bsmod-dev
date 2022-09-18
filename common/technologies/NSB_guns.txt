@@ -68,7 +68,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
@@ -122,52 +122,53 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
-	small_caliber_aa_cannon = { #WW1 Tank weapons
-
-		enable_equipment_modules = {
-			tank_anti_air_cannon
-		}
-
-
-		research_cost = 2.5
-		start_year = 1935
-		folder = {
-			name = armour_support_folder
-			position = { x = -5 y = 6 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-		}
-	}
+	#small_caliber_aa_cannon = { #WW1 Tank weapons
+	#
+	#	enable_equipment_modules = {
+	#		tank_anti_air_cannon
+	#	}
+	#
+	#
+	#	research_cost = 2.5
+	#	start_year = 1935
+	#	folder = {
+	#		name = armour_support_folder
+	#		position = { x = -5 y = 6 }
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 1
+	#
+	#		modifier = {
+	#			factor = 2
+	#			is_major = yes
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1937.1.1"
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1938.1.1"
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1939.1.1"
+	#		}
+	#	}
+	#
+	#	categories = {
+	#		armor
+	#		light_tank_guns
+	#	}
+	#}
 
 	improved_shells = { #WW1 Tank weapons
 
@@ -208,7 +209,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
@@ -260,51 +261,51 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
-	advanced_small_caliber_aa_cannon = { #WW1 Tank weapons
-
-		enable_equipment_modules = {
-			tank_anti_air_cannon_2
-		}
-
-		research_cost = 2.5
-		start_year = 1936
-		folder = {
-			name = armour_support_folder
-			position = { x = -5 y = 16 }
-		}
-
-		ai_will_do = {
-			factor = 1
-
-			modifier = {
-				factor = 2
-				is_major = yes
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1937.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1938.1.1"
-			}
-
-			modifier = {
-				factor = 1.2
-				date > "1939.1.1"
-			}
-		}
-
-		categories = {
-			armor
-		}
-	}
+	#advanced_small_caliber_aa_cannon = { #WW1 Tank weapons
+	#
+	#	enable_equipment_modules = {
+	#		tank_anti_air_cannon_2
+	#	}
+	#
+	#	research_cost = 2.5
+	#	start_year = 1936
+	#	folder = {
+	#		name = armour_support_folder
+	#		position = { x = -5 y = 16 }
+	#	}
+	#
+	#	ai_will_do = {
+	#		factor = 1
+	#
+	#		modifier = {
+	#			factor = 2
+	#			is_major = yes
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1937.1.1"
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1938.1.1"
+	#		}
+	#
+	#		modifier = {
+	#			factor = 1.2
+	#			date > "1939.1.1"
+	#		}
+	#	}
+	#
+	#	categories = {
+	#		armor
+	#	}
+	#}
 
 	advanced_light_cannon_design = { #WW1 Tank weapons
 
@@ -345,7 +346,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
@@ -388,7 +389,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
@@ -447,7 +448,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			light_tank_guns
 		}
 	}
 
@@ -491,6 +492,7 @@ technologies = {
 
 		categories = {
 			armor
+			medium_tank_guns
 		}
 	}
 
@@ -537,7 +539,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			medium_tank_guns
 		}
 	}
 
@@ -580,7 +582,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			medium_tank_guns
 		}
 	}
 
@@ -627,7 +629,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			medium_tank_guns
 		}
 	}
 
@@ -665,7 +667,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			medium_tank_guns
 		}
 	}
 
@@ -714,7 +716,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			high_velocity_guns
 		}
 	}
 
@@ -761,7 +763,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			high_velocity_guns
 		}
 	}
 
@@ -815,7 +817,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -862,7 +864,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -904,7 +906,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -953,7 +955,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -1000,7 +1002,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -1042,7 +1044,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_howitzers
 		}
 	}
 
@@ -1091,7 +1093,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1143,7 +1145,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1186,7 +1188,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1233,7 +1235,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1276,7 +1278,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 	
@@ -1318,7 +1320,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1360,7 +1362,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			heavy_tank_cannons
 		}
 	}
 
@@ -1407,7 +1409,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_flamethrowers
 		}
 	}
 
@@ -1449,7 +1451,7 @@ technologies = {
 		}
 
 		categories = {
-			armor
+			tank_flamethrowers
 		}
 	}
 
