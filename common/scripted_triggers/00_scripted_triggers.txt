@@ -282,21 +282,21 @@ ai_air_doctrine_tier_3_trigger = {
 
 ai_land_doctrine_tier_1_trigger = {
 	OR = {
-		has_tech = elastic_defence
-		has_tech = mobile_defence
-		has_tech = grand_assault
-		has_tech = defence_in_depth
+		has_tech = artillery_primacy
+		has_tech = mobile_attack_tactics
+		has_tech = grand_battle_plan
 	}
 }
 
 ai_land_doctrine_tier_2_trigger = {
 	OR = {
-		has_tech = kampfgruppe
-		has_tech = mechanised_offensive
-		has_tech = branch_interoperation
-		has_tech = infiltration_assault
-		has_tech = vast_offensives
-		has_tech = large_front_offensive
+		has_tech = mobile_assault
+		has_tech = schwerpunk
+		has_tech = heavy_armor_coordination
+		has_tech = armored_assault
+		has_tech = infantry_assault
+		has_tech = infantry_tank_defense
+		has_tech = rapid_reinforcment
 	}
 }
 

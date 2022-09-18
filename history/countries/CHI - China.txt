@@ -222,8 +222,6 @@ set_convoys = 40
 
 		#doctrines
 		air_superiority = 1
-		pocket_defence = 1
-		defence_in_depth = 1
 		battlefleet_concentration = 1
 		convoy_sailing = 1
 

@@ -196,7 +196,7 @@ characters = {
 				}
 			}
 			traits = {
-				mass_assault_expert
+				military_theorist
 			}
 		}		
 	}
@@ -547,7 +547,7 @@ characters = {
 				}
 			}
 			traits = {
-				mass_assault_expert
+				military_theorist
 			}
 		}
 

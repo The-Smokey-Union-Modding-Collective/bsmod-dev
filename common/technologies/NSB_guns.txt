@@ -36,7 +36,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1918
 		folder = {
 			name = armour_support_folder
@@ -90,7 +90,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1934
 		folder = {
 			name = armour_support_folder
@@ -133,8 +133,8 @@ technologies = {
 		}
 
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1935
 		folder = {
 			name = armour_support_folder
 			position = { x = -5 y = 6 }
@@ -176,8 +176,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1938
+		research_cost = 2.5
+		start_year = 1937
 		folder = {
 			name = armour_support_folder
 			position = { x = -4 y = 10 }
@@ -228,8 +228,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1938
+		research_cost = 2.5
+		start_year = 1940
 		folder = {
 			name = armour_support_folder
 			position = { x = -4 y = 15 }
@@ -270,7 +270,7 @@ technologies = {
 			tank_anti_air_cannon_2
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = armour_support_folder
@@ -308,8 +308,8 @@ technologies = {
 
 	advanced_light_cannon_design = { #WW1 Tank weapons
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1941
 		folder = {
 			name = armour_support_folder
 			position = { x = -4 y = 19 }
@@ -356,8 +356,8 @@ technologies = {
 		}
 
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1943
 		folder = {
 			name = armour_support_folder
 			position = { x = -4 y = 22 }
@@ -415,7 +415,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = armour_support_folder
@@ -458,8 +458,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1937
 		folder = {
 			name = armour_support_folder
 			position = { x = -1 y = 10 }
@@ -505,8 +505,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1939
 		folder = {
 			name = armour_support_folder
 			position = { x = -1 y = 14 }
@@ -548,8 +548,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1942
 		folder = {
 			name = armour_support_folder
 			position = { x = -1 y = 19 }
@@ -595,8 +595,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1943
 		folder = {
 			name = armour_support_folder
 			position = { x = -1 y = 21 }
@@ -633,8 +633,8 @@ technologies = {
 
 	advanced_high_velocity_medium_cannon = { #WW1 Tank weapons
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1944
 		folder = {
 			name = armour_support_folder
 			position = { x = -1 y = 23 }
@@ -682,8 +682,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1939
 		folder = {
 			name = armour_support_folder
 			position = { x = -3 y = 13 }
@@ -729,8 +729,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1942
 		folder = {
 			name = armour_support_folder
 			position = { x = -3 y = 19 }
@@ -783,8 +783,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1934
 		folder = {
 			name = armour_support_folder
 			position = { x = 1 y = 4 }
@@ -830,8 +830,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1938
 		folder = {
 			name = armour_support_folder
 			position = { x = 1 y = 12 }
@@ -872,8 +872,8 @@ technologies = {
 			tank_close_support_howitzer
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1941
 		folder = {
 			name = armour_support_folder
 			position = { x = 1 y = 18 }
@@ -921,7 +921,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = armour_support_folder
@@ -968,8 +968,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1940
 		folder = {
 			name = armour_support_folder
 			position = { x = 3 y = 15 }
@@ -1010,8 +1010,8 @@ technologies = {
 			tank_heavy_howitzer
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1942
 		folder = {
 			name = armour_support_folder
 			position = { x = 3 y = 20 }
@@ -1059,8 +1059,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1935
 		folder = {
 			name = armour_support_folder
 			position = { x = 5 y = 5 }
@@ -1111,8 +1111,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1937
 		folder = {
 			name = armour_support_folder
 			position = { x = 5 y = 10 }
@@ -1154,8 +1154,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1940
 		folder = {
 			name = armour_support_folder
 			position = { x = 5 y = 14 }
@@ -1201,7 +1201,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = armour_support_folder
@@ -1244,8 +1244,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1943
 		folder = {
 			name = armour_support_folder
 			position = { x = 5 y = 22 }
@@ -1286,8 +1286,8 @@ technologies = {
 			tank_high_velocity_cannon_3
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1940
 		folder = {
 			name = armour_support_folder
 			position = { x = 6 y = 16 }
@@ -1328,8 +1328,8 @@ technologies = {
 			tank_super_heavy_cannon
 		}
 
-		research_cost = 1
-		start_year = 1936
+		research_cost = 2.5
+		start_year = 1944
 		folder = {
 			name = armour_support_folder
 			position = { x = 5 y = 24 }
@@ -1375,7 +1375,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1939
 		folder = {
 			name = armour_support_folder
@@ -1417,7 +1417,7 @@ technologies = {
 			heavy_flamethrower
 		}
 
-		research_cost = 1
+		research_cost = 2.5
 		start_year = 1942
 		folder = {
 			name = armour_support_folder

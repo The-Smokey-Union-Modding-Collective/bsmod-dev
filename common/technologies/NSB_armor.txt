@@ -40,7 +40,6 @@ technologies = {
 			tank_bogie_suspension
 			tank_interleaved_suspension
 			extra_ammo_storage
-			smoke_launchers
 			basic_armor_profile
 			tank_light_interwar_turret
 			tank_medium_interwar_turret
@@ -342,8 +341,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1918
+		research_cost = 2.5
+		start_year = 1939
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -5 y = 12 }
@@ -472,7 +471,7 @@ technologies = {
 		}
 
 		research_cost = 2
-		start_year = 1937
+		start_year = 1935
 
 		folder = {
 			name = nsb_armour_folder
@@ -532,6 +531,7 @@ technologies = {
 			tank_medium_fixed_superstructure_turret
 			tank_medium_two_man_open_top_tank_turret
 			tank_medium_three_man_open_top_tank_turret	
+			smoke_launchers	
 		}
 
 		path = {
@@ -544,8 +544,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1918
+		research_cost = 2.5
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = 9 }
@@ -657,7 +657,8 @@ technologies = {
 			tank_advanced_medium_two_man_tank_turret
 			tank_advanced_medium_three_man_tank_turret
 			tank_advanced_medium_two_man_open_top_tank_turret
-			tank_advanced_medium_three_man_open_top_tank_turret	
+			tank_advanced_medium_three_man_open_top_tank_turret
+			wet_ammo_storage
 		}
 
 		path = {
@@ -665,8 +666,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1918
+		research_cost = 2.5
+		start_year = 1942
 		folder = {
 			name = nsb_armour_folder
 			position = { x = -2 y = 17 }
@@ -709,9 +710,6 @@ technologies = {
 			medium_tank_destroyer_chassis_3
 			medium_tank_artillery_chassis_3
 			medium_tank_aa_chassis_3
-		}
-		enable_equipment_modules = {
-			wet_ammo_storage
 		}
 		path = {
 			leads_to_tech = main_battle_tank_chassis
@@ -889,6 +887,7 @@ technologies = {
 			tank_heavy_two_man_tank_turret
 			tank_heavy_three_man_tank_turret
 			tank_heavy_fixed_superstructure_turret
+			smoke_launchers	
 		}
 
 		path = {
@@ -896,8 +895,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1918
+		research_cost = 2.5
+		start_year = 1938
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 0 y = 9 }
@@ -994,6 +993,7 @@ technologies = {
 		enable_equipment_modules = {
 			tank_advanced_heavy_two_man_tank_turret
 			tank_advanced_heavy_three_man_tank_turret
+			wet_ammo_storage
 		}
 
 		path = {
@@ -1001,8 +1001,8 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
-		start_year = 1918
+		research_cost = 2.5
+		start_year = 1942
 		folder = {
 			name = nsb_armour_folder
 			position = { x = 0 y = 17 }
@@ -1045,9 +1045,6 @@ technologies = {
 			heavy_tank_destroyer_chassis_3
 			heavy_tank_artillery_chassis_3
 			heavy_tank_aa_chassis_3
-		}
-		enable_equipment_modules = {
-			wet_ammo_storage
 		}
 		path = {
 			leads_to_tech = main_battle_tank_chassis

@@ -3988,14 +3988,14 @@ leader_traits = {
 		}
 	}
 	
-	mass_assault_expert = {
-		sprite = 14
-		cat_mass_assault_cost_factor = -0.15
-		
-		ai_will_do = {
-			factor = 1
-		}
-	}
+	#mass_assault_expert = {
+	#	sprite = 14
+	#	cat_mass_assault_cost_factor = -0.15
+	#	
+	#	ai_will_do = {
+	#		factor = 1
+	#	}
+	#}
 	
 	air_warfare_theorist = {
 		sprite = 14

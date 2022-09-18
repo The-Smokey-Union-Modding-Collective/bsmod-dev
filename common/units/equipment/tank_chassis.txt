@@ -146,6 +146,14 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
+			module = heavy_flamethrower
+			count < 1
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_light_one_man_tank_turret
@@ -156,7 +164,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 4
-		build_cost_ic = 1
+		build_cost_ic = 2
 		reliability = 0.8
 		hardness = 0.8
 		armor_value = 5
@@ -179,6 +187,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
+					tank_interwar_main_armament
 				}
 			}
 
@@ -323,7 +332,7 @@ equipments = {
 
 		}
 		maximum_speed = 4
-		build_cost_ic = 1.25
+		build_cost_ic = 4
 		reliability = 0.95
 		armor_value = 10
 		hardness = 0.05
@@ -409,7 +418,7 @@ equipments = {
 				}
 			}
 		}
-		build_cost_ic = 1.6
+		build_cost_ic = 6
 		maximum_speed = 4.5
 		reliability = 1.1
 		armor_value = 15
@@ -508,7 +517,7 @@ equipments = {
 				}
 			}
 		}
-		build_cost_ic = 2
+		build_cost_ic = 8
 		maximum_speed = 5
 		reliability = 1.3
 		armor_value = 20
@@ -580,11 +589,18 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-		
+		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
+			module = heavy_flamethrower
+			count < 1
+		}
 
 		fuel_consumption = 0
 		maximum_speed = 4
-		build_cost_ic = 2
+		build_cost_ic = 6
 		reliability = 1
 		armor_value = 15
 		hardness = 0.85
@@ -606,6 +622,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
+					tank_interwar_main_armament
 				}
 			}
 
@@ -675,7 +692,7 @@ equipments = {
 			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
-		build_cost_ic = 2.5
+		build_cost_ic = 8
 		reliability = 0.75
 		armor_value = 25
 		resources = {
@@ -766,7 +783,7 @@ equipments = {
 		}
 		armor_value = 35
 		hardness = 0.05
-		build_cost_ic = 2.5
+		build_cost_ic = 8
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -858,7 +875,7 @@ equipments = {
 			engine_type_slot = tank_gasoline_engine
 		}
 		maximum_speed = 4
-		build_cost_ic = 3.2
+		build_cost_ic = 12
 		reliability = 1.3
 		armor_value = 45
 		hardness = 0.1
@@ -967,7 +984,7 @@ equipments = {
 			engine_type_slot = tank_gasoline_engine
 		}
 		maximum_speed = 4.5
-		build_cost_ic = 4
+		build_cost_ic = 14
 		reliability = 1.6
 		armor_value = 50
 		hardness = 0.15
@@ -1033,14 +1050,21 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
-		
+		module_count_limit = {
+			module = smoke_launchers
+			count < 2
+		}
+		module_count_limit = {
+			module = heavy_flamethrower
+			count < 2
+		}
 
 		fuel_consumption = 0
 		maximum_speed = 3.5
-		build_cost_ic = 10
+		build_cost_ic = 14
 		reliability = 1
-		armor_value = 25
-		hardness = 0.95
+		armor_value = 15
+		hardness = 0
 		resources = {
 			steel = 1
 		}
@@ -1060,6 +1084,7 @@ equipments = {
 			main_armament_slot = {
 				required = yes
 				allowed_module_categories = {
+					tank_interwar_main_armament
 				}
 			}
 
@@ -1130,9 +1155,9 @@ equipments = {
 			tank_nsb_armor_upgrade
 		}
 		maximum_speed = 4
-		build_cost_ic = 10
+		build_cost_ic = 14
 		reliability = 1
-		armor_value = 30
+		armor_value = 10
 		hardness = 0.05
 	}
 
@@ -1217,6 +1242,7 @@ equipments = {
 			engine_type_slot = tank_gasoline_engine
 		}
 		armor_value = 35
+		build_cost_ic = 16
 		hardness = 0.10
 	}
 
@@ -1312,7 +1338,7 @@ equipments = {
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 		}
-		build_cost_ic = 10
+		build_cost_ic = 22
 		maximum_speed = 4
 		reliability = 1.15
 		armor_value = 55
@@ -1423,7 +1449,7 @@ equipments = {
 			armor_type_slot = tank_riveted_armor
 			engine_type_slot = tank_gasoline_engine
 		}
-		build_cost_ic = 12
+		build_cost_ic = 26
 		maximum_speed = 4
 		reliability = 1.3
 		armor_value = 75
@@ -1569,6 +1595,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		module_count_limit = {
+			module = heavy_flamethrower
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -1580,7 +1610,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 4.5
-		build_cost_ic = 6
+		build_cost_ic = 24
 		reliability = 1.6
 		armor_value = 75
 		hardness = 0.25
@@ -1745,6 +1775,10 @@ equipments = {
 			module = auto_loader
 			count < 2
 		}
+		module_count_limit = {
+			module = heavy_flamethrower
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_three_man_tank_turret
@@ -1755,7 +1789,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 2.5
-		build_cost_ic = 24
+		build_cost_ic = 44
 		reliability = 1.3
 		armor_value = 85
 		hardness = 0.25
@@ -1909,7 +1943,7 @@ equipments = {
 
 		fuel_consumption = 0
 		maximum_speed = 4
-		build_cost_ic = 4.5
+		build_cost_ic = 12
 		reliability = 1.1
 		armor_value = 15
 		hardness = 0.1
