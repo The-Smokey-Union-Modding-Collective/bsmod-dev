@@ -491,7 +491,6 @@ technologies = {
 		}
 
 		categories = {
-			armor
 			medium_tank_guns
 		}
 	}

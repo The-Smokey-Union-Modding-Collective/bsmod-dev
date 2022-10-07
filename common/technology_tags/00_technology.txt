@@ -6,7 +6,7 @@ technology_categories = {
 	medium_air
 	heavy_air
 	armor
-	tank_light_guns
+	light_tank_guns
 	medium_tank_guns
 	high_velocity_guns
 	tank_howitzers
