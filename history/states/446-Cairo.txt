@@ -1,7 +1,7 @@
 state=
 {
 	id=446
-	name="STATE_446"
+	name="STATE_446" # Suez
 	manpower = 6586596
 	
 	state_category = town
