@@ -1,12 +1,17 @@
 ﻿capital = 284
 
 oob = "NZL_1936"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "NZL_1936_air_bba"
+	else = {
+		set_air_oob = "NZL_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			naval_bomber1 = 1
 
-set_research_slots = 3
-
-create_intelligence_agency = {
-	name = "BS Agency"
-	icon = "GFX_intelligence_agency_logo_bs"
+		}
+	}
 }
 
 add_command_power = 100
@@ -25,8 +30,6 @@ set_technology = {
 	tech_support = 1		
 	tech_engineers = 1
 	tech_recon = 1
-	early_fighter = 1
-	naval_bomber1 = 1
 	trench_warfare = 1
 	fleet_in_being = 1
 }
@@ -64,8 +67,6 @@ if = {
 		basic_torpedo = 1
 		basic_depth_charges = 1
 		mtg_transport = 1
-		ship_hull_super_heavy = 1
-		basic_heavy_battery = 1
 	}
 }
 
@@ -111,6 +112,13 @@ if = {
 	add_political_power = 1198
 	add_command_power = 100
 	oob = "NZL_1939"
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "NZL_1939_air_bba"
+		else = {
+			set_air_oob = "NZL_1939_air_legacy"
+		}
+	}
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "NZL_1939_naval_mtg"

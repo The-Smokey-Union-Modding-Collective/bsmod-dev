@@ -1,10 +1,21 @@
-capital = 43
+﻿capital = 43
 
 oob = "HUN_1936"
-
-create_intelligence_agency = {
-	name = "BS Agency"
-	icon = "GFX_intelligence_agency_logo_bs"
+if = {
+	limit = { has_dlc = "By Blood Alone" }
+		set_air_oob = "HUN_1936_air_bba"
+		set_technology = {
+			iw_small_airframe = 1
+			engines_1 = 1
+			early_bombs = 1
+		}
+	else = {
+		set_air_oob = "HUN_1936_air_legacy"
+		set_technology = {
+			early_fighter = 1
+			CAS1 = 1
+		}
+	}
 }
 
 add_command_power = 100
@@ -20,17 +31,8 @@ set_technology = {
 	tech_recon = 1
 	gw_artillery = 1
 
-	early_fighter = 1
-	CAS1 = 1
 	fuel_silos = 1
 	basic_train = 1
-}
-if = {
-	limit = { has_dlc = "Man the Guns" }
-	set_technology = {
-		ship_hull_super_heavy = 1
-		basic_heavy_battery = 1
-	}
 }
 
 if = {
@@ -45,9 +47,7 @@ if = {
 }
 if = {
 	limit = {
-		
 		has_dlc = "No Step Back"
-		
 	}
 	set_technology = {
 		gwtank_chassis = 1
@@ -64,6 +64,20 @@ if = {
 	}
 	add_ideas = mod_scw_spanish_foreign_legion
 	add_ideas = mod_trade_axis
+}
+if = {
+	limit = {
+		has_dlc = "By Blood Alone"
+	}
+	create_equipment_variant = {
+		name = "WM-16"
+		type = small_plane_cas_airframe_0
+		modules = {
+			fixed_main_weapon_slot = bomb_locks
+			engine_type_slot = engine_1_1x
+			special_type_slot_1 = empty
+		}
+	}
 }
 
 if = {
@@ -138,9 +152,6 @@ if = {
 	}
 	
 	set_technology = {
-		fighter1 = 1
-		early_bomber = 1
-		tactical_bomber1 = 1
 		interwar_artillery = 1
 		interwar_antitank = 1
 		interwar_antiair = 1
@@ -174,6 +185,18 @@ if = {
 		dispersed_industry = 1
 		dispersed_industry2 = 1
 		fuel_refining = 1
+	}
+	if = {
+		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "HUN_1939_air_bba"
+		else = {
+			set_air_oob = "HUN_1939_air_legacy"
+			set_technology = {
+				fighter1 = 1
+				early_bomber = 1
+				tactical_bomber1 = 1
+			}
+		}
 	}
 	if = {
 		limit = {
