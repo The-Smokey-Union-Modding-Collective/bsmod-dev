@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # USA Events
 ###########################
 
@@ -1420,6 +1420,7 @@ country_event = {
 				size = 0.7
 				capital = 357
 				states = { 357 685 }
+				keep_unit_leaders = { 57 }
 			}
 			division_template = {
 				name = "Local Volunteers"
@@ -1463,12 +1464,6 @@ country_event = {
 					set_variable = { var = quorum_low value = 39 }
 					set_variable = { var = quorum_medium value = 49 }
 					set_variable = { var = quorum_high value = 58 }
-				}
-				every_unit_leader = {
-					limit = {
-						has_id = 57
-					}
-					set_nationality = USA
 				}
 			}
 			if = {
@@ -2359,6 +2354,7 @@ country_event = {
 		
 		USA_douglas_macarthur = {
 			#Non-Aligned country leader role
+			
 			add_country_leader_role = {
 				country_leader = {
 					expire = "1965.1.1"
@@ -2460,15 +2456,17 @@ country_event = {
 			factor = 30
 		}
 		name = mtg_usa_civil_war_democrats.41.d
-		create_country_leader = {
-			name = "Charles Lindbergh"
-			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
-			picture = GFX_portrait_USA_charles_lindbergh
-			expire = "1965.1.1"
-			ideology = fascism_ideology
-			traits = {
-				famous_aviator
+
+		add_country_leader_role  = {
+			character = USA_charles_lindbergh
+			country_leader = {
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits = {
+					famous_aviator
+				}
 			}
+			promote_leader = yes
 		}
 	}
 }
@@ -2564,6 +2562,7 @@ country_event = {
 				transfer_state = 473
 				transfer_state = 739
 				transfer_state = 471
+				transfer_state = 864
 			}
 		}
 	}
@@ -2596,7 +2595,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state
 					target = CAN
-					generator = { 740 473 739 471 }
+					generator = { 740 473 739 471 864}
 				}
 			}
 		}
@@ -2617,6 +2616,7 @@ country_event = {
 		transfer_state = 473
 		transfer_state = 739
 		transfer_state = 471
+		transfer_state = 864
 	}
 }
 
@@ -2640,7 +2640,7 @@ country_event = {
 		create_wargoal = {
 			type = take_state
 			target = CAN
-			generator = { 740 473 739 471 }
+			generator = { 740 473 739 471 864 }
 		}
 	}
 	option = { #no war!

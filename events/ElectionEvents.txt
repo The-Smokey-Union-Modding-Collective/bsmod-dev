@@ -1,4 +1,4 @@
-﻿###########################
+###########################
 # Election Events
 ###########################
 
@@ -554,6 +554,10 @@ country_event = {
 			AND = {
 				original_tag = TUR
 				has_dlc = "Battle for the Bosporus"
+			}
+			AND = {
+				original_tag = SWI
+				has_dlc = "By Blood Alone"
 			}
 		}
 	}
