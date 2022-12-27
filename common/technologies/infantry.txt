@@ -2387,4 +2387,28 @@ technologies = {
 			maximum_speed = 1.25 #TODO_TA for testing only, remove
 		}
 	}
+
+	SWI_mountaineer_paratroopers_tech = { #Unlocked in Swiss Focus SWI_mountaneer_paratroopers
+
+		research_cost = 1
+
+		allow = {
+			always = no
+		}
+
+		paratrooper = {  # CHANGE TOOLTIP WHEN NEEDED
+			mountain = {
+				attack = 0.35
+				defence = 0.1
+				movement = 0.2
+			}
+			hills = {
+				attack = 0.2
+				defence = 0.05
+				movement = 0.1
+			}
+		}
+
+	}
+
 }
