@@ -1103,4 +1103,18 @@ opinion_modifiers = {
 	POR_iberian_communism = {
 		value = 30
 	}
+
+	SOV_chose_NATO_neutrality = { 
+		value = 30
+		decay = 1
+	}
+	
+	SOV_joined_NATO = { 
+		value = -30
+		decay = 1
+	}
+
+	broken_naval_treaty_opinion_mod = {
+		value = -30
+	}
 }
