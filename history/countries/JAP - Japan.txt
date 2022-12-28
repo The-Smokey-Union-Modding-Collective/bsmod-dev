@@ -546,6 +546,7 @@ if = {
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
+			armor_profile_type_slot = basic_armor_profile
 			engine_type_slot = tank_gasoline_engine
 			armor_profile_type_slot = basic_armor_profile
 		}
@@ -565,6 +566,7 @@ if = {
 			turret_type_slot = tank_medium_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
+			armor_profile_type_slot = basic_armor_profile
 			engine_type_slot = tank_diesel_engine
 			armor_profile_type_slot = basic_armor_profile
 		}
@@ -583,6 +585,7 @@ if = {
 			turret_type_slot = tank_light_one_man_tank_turret
 			suspension_type_slot = tank_bogie_suspension
 			armor_type_slot = tank_riveted_armor
+			armor_profile_type_slot = basic_armor_profile
 			engine_type_slot = tank_diesel_engine
 			armor_profile_type_slot = basic_armor_profile
 		}
@@ -1477,6 +1480,7 @@ if = {
 					turret_type_slot = tank_medium_two_man_tank_turret
 					suspension_type_slot = tank_bogie_suspension
 					armor_type_slot = tank_riveted_armor
+					armor_profile_type_slot = basic_armor_profile
 					engine_type_slot = tank_diesel_engine
 					special_type_slot_1 = tank_radio_1
 				}
