@@ -483,46 +483,46 @@ units = {
 }
 	
 	
-air_wings = {
-	### 1 USAAF Wing -- Los Angeles
-	378 = {
-		fighter_equipment_0 =  {
-			owner = "USA" 
-			amount = 384
-		}
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="Big"
-			surname="Smokes"
-			callsign="ARCADEELITIST"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-		# 7th Bombardment Group 
-		# 19th Bombardment Group 
-		tac_bomber_equipment_0 = {
-			owner = "USA" 
-			amount = 204
-		}
-		# 17th Attack Group 
-		CAS_equipment_1 = {
-			owner = "USA" 
-			amount = 96
-		}
-		nav_bomber_equipment_1 =  {
-			owner = "USA" 
-			amount = 108
-		}
-	}
-
-	### Philippines Composite Group -- Manilla
-#	327 = { 
+#air_wings = {
+#	### 1 USAAF Wing -- Los Angeles
+#	378 = {
+#		fighter_equipment_0 =  {
+#			owner = "USA" 
+#			amount = 384
+#		}
+#		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+##			modifier="fighter_genius"
+#			name="Big"
+#			surname="Smokes"
+#			callsign="ARCADEELITIST"
+#			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+#		}
+#		# 7th Bombardment Group 
+#		# 19th Bombardment Group 
+#		tac_bomber_equipment_0 = {
+#			owner = "USA" 
+#			amount = 204
+#		}
+#		# 17th Attack Group 
+#		CAS_equipment_1 = {
+#			owner = "USA" 
+#			amount = 96
+#		}
+#		nav_bomber_equipment_1 =  {
+#			owner = "USA" 
+#			amount = 108
+##		}
+#	}
+#
+#	### Philippines Composite Group -- Manilla
+##	327 = { 
 #		# 4th Composite Group 
 #		fighter_equipment_0 =  {
 #			owner = "USA" 
 #			amount = 36
 #		}
 #	}
-}
+#}
 
 
 #########################
@@ -560,15 +560,15 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = cv_fighter_equipment_0
-			creator = "USA" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = cv_fighter_equipment_0
+#			creator = "USA" 
+#		}
+##		requested_factories = 1
+#		progress = 0.15
+#		efficiency = 50
+#	}
 
 }
 #####################

@@ -1812,40 +1812,40 @@ units = {
 }					
 
 ### Air Wings
-air_wings = {
-	# MVO Aviatsya Komandovaniya
-	219 = {
-		# 15ya Istrebitel'nye Aviabrigada
-		fighter_equipment_0 = {
-			owner = "SOV" 
-			amount = 470
-		}
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="N7"
-			surname="Konstantine"
-			callsign="SIEBOSGIRLFRIEND"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-				fighter_equipment_1 = {
-			owner = "SOV" 
-			amount = 188
-		}
-		strat_bomber_equipment_1 =  {
-			owner = "SOV" 
-			amount = 72
-		}
-		# 16ya Bombardirovochnye Aviabrigada
-		tac_bomber_equipment_0 =  {
-			owner = "SOV" 
-			amount = 240
-		}
-		nav_bomber_equipment_1 = {
-			owner = "SOV" 
-			amount = 108
-		}
-	}
-}
+#air_wings = {
+#	# MVO Aviatsya Komandovaniya
+#	219 = {
+#		# 15ya Istrebitel'nye Aviabrigada
+#		fighter_equipment_0 = {
+#			owner = "SOV" 
+##			amount = 470
+#		}
+#		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+#			modifier="fighter_genius"
+#			name="N7"
+##			surname="Konstantine"
+#			callsign="SIEBOSGIRLFRIEND"
+#			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+#		}
+#				fighter_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 188
+#		}
+#		strat_bomber_equipment_1 =  {
+#			owner = "SOV" 
+#			amount = 72
+#		}
+#		# 16ya Bombardirovochnye Aviabrigada
+##		tac_bomber_equipment_0 =  {
+#			owner = "SOV" 
+#			amount = 240
+#		}
+#		nav_bomber_equipment_1 = {
+#			owner = "SOV" 
+#			amount = 108
+#		}
+#	}
+#}
 
 
 		
@@ -1906,25 +1906,25 @@ instant_effect = {
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
+#	add_equipment_production = {
+#		equipment = {
+##			type = fighter_equipment_1
+#			creator = "SOV" 
+#		}
+#		requested_factories = 1
+#		progress = 0.15
+#		efficiency = 50
+#	}
 
-	add_equipment_production = {
-		equipment = {
-			type = strat_bomber_equipment_1
-			creator = "SOV" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = strat_bomber_equipment_1
+#			creator = "SOV" 
+#		}
+#		requested_factories = 1
+#		progress = 0.2
+#		efficiency = 50
+#	}
 }
 
 	#####################
