@@ -2324,6 +2324,23 @@ equipment_modules = {
 			convert_cost_ic = 25
 		}
 	}
+
+	ship_sonar_3 = {
+		abbreviation = "sdb"
+		category = ship_sonar
+		gfx = ship_sonar_3
+		sfx = sfx_ui_sd_module_sonar
+		parent = ship_sonar_1
+		add_stats = {
+			sub_detection = 20.0
+			build_cost_ic = 75
+		}
+		can_convert_from = {
+			module_category = ship_sonar
+			convert_cost_ic = 25
+		}
+	}
+
  ##  ###  #   #  ##  ###       ##  ##  #  # ### #   # ###  ## 
 #  # #  # ## ## #  # #  #     #   #  # #  # #   ## ## #   #   
 #### ###  # # # #  # ###       #  #    #### ##  # # # ##   #  

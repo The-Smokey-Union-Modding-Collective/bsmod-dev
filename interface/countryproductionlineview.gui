@@ -4190,6 +4190,21 @@ guiTypes = {
 			position = { x = 230 y = 10 }
 		}
 
+		containerWindowType = {
+			name = "missions"
+			position = { x = 67 y = 60 }
+			size = { width = 150 height = 20 }
+			Orientation = upper_left
+
+			gridboxtype = {
+				name = "mission_grid"
+				size = { width = 150 height = 20 }
+				slotsize = { width = 25 height = 20 }
+				max_slots = { x = 6 y = 2 }
+				format = "LOWER_LEFT"
+			}
+		}
+
 		iconType = {
 			name ="equipment_designer"
 			spriteType = "GFX_tech_idea_bg"
@@ -4372,6 +4387,26 @@ guiTypes = {
 			maxHeight = 30
 			format = left
 			alwaystransparent = yes
+		}
+
+		containerWindowType = { #Currently unused, but we might put something in here eventually.
+			name = "missions"
+			position = { x = 72 y = 58 }
+			size = { width = 200 height = 20 }
+			Orientation = upper_left
+			
+			# background = {
+			# 	name = "Background"
+			# 	quadTextureSprite ="GFX_tiled_window_transparent"
+			# }
+			
+			gridboxtype = {
+				name = "mission_grid"
+				size = { width = 200 height = 20 }
+				slotsize = { width = 25 height = 20 }
+				max_slots = { x = 8 y = 2 }
+				format = "UPPER_LEFT"
+			}
 		}
 
 		gridBoxType = {
