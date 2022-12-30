@@ -22,7 +22,6 @@ if = {
 
 recruit_character = CHI_chiang_kaishek
 recruit_character = CHI_zhang_guotao
-recruit_character = CHI_wang_jingwei
 recruit_character = CHI_weng_wenhao
 recruit_character = CHI_tu_yuming
 recruit_character = CHI_hsueh_yueh
@@ -65,8 +64,6 @@ set_technology = {
 	infantry_weapons = 1
 	gw_artillery = 1
 	interwar_antiair = 1
-	early_fighter = 1
-	early_bomber = 1
 	mass_assault = 1
 	fleet_in_being = 1
 	basic_train = 1
