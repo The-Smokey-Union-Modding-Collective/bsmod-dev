@@ -12,30 +12,12 @@ units = {
 			name = "1 Kantai"
 			location = 1092  #Yokosuka
 			ship = { name = "Ryujo" definition = carrier equipment = { ship_hull_carrier_1 = { amount = 1 owner = JAP version_name = "Ryujo Class" } } 				
-				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 24 } # historical 24
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 	# historical 12
-				}
 			}
 			ship = { name = "Kaga" definition = carrier start_experience_factor = 0.35 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Kaga Class"} } 			
-				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 16 } # historical 16
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 16 } # historical 16
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 28 } # historical 28
-				}
 			}
 			ship = { name = "Akagi" definition = carrier start_experience_factor = 0.5 equipment = { ship_hull_carrier_conversion_bb = {amount = 1 owner = JAP version_name = "Akagi Class"} } 				
-				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 12 } 	# historical 12
-					cv_CAS_equipment_1 = { owner = "JAP" amount = 12 } 			# historical 18
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 36 } 	# historical 36
-				}
 			}	
 			ship = { name = "Hosho" definition = carrier equipment = { ship_hull_carrier_conversion_ca = {amount = 1 owner = JAP version_name = "Hosho Class"} } 				
-				air_wings = { 
-					cv_fighter_equipment_0 =  { owner = "JAP" amount = 10 } 	
-					cv_nav_bomber_equipment_1 =  { owner = "JAP" amount = 5 } 	
-				}
 			}
 			#Dai 1 Sentai
 			ship = { name = "Nagato"  pride_of_the_fleet = yes definition = battleship start_experience_factor = 0.5 equipment = { ship_hull_heavy_1 = {amount = 1 owner = JAP version_name = "Nagato Class" } } }

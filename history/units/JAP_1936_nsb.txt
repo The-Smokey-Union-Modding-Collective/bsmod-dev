@@ -652,50 +652,50 @@ units = {
 
 
 #AIRCRAFT
-air_wings = {
-	### IJA Air Forces ###
-	# 1 Hikodan -- Tokyo
-	282 = { 
-		# 1 Hiko Rentai -- Kawasaki Ki-10
-		fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 216
-		}
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="Arghos"
-			surname="Longgun"
-			callsign="CHIHA"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-		# 6 Hiko Rentai -- Mitsubishi Ki-2
-		CAS_equipment_1 =  {
-			owner = "JAP" 
-			amount = 162
-		}
-		# 9 Hiko Rentai -- Mitsubishi Ki-1
-		tac_bomber_equipment_0 =  {
-			owner = "JAP" 
-			amount = 54
-		}
-
-		# 12 Kokutai -- Nakajima A4N1
-		cv_fighter_equipment_0 = {
-			owner = "JAP" 
-			amount = 84
-		}
-		# Kizarazu Kokutai -- Aichi D1A2
-		cv_CAS_equipment_1 = {
-			owner = "JAP" 
-			amount = 129
-		}
-		# 13 Kokutai -- Mitsubishi B2M2
-		cv_nav_bomber_equipment_1 = {
-			owner = "JAP" 
-			amount = 57
-		}
-	}
-}
+#air_wings = {
+#	### IJA Air Forces ###
+#	# 1 Hikodan -- Tokyo
+#	282 = { 
+#		# 1 Hiko Rentai -- Kawasaki Ki-10
+#		fighter_equipment_0 = {
+#			owner = "JAP" 
+#			amount = 216
+#		}
+#		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+#			modifier="fighter_genius"
+#			name="Arghos"
+##			surname="Longgun"
+#			callsign="CHIHA"
+#			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+#		}
+#		# 6 Hiko Rentai -- Mitsubishi Ki-2
+##		CAS_equipment_1 =  {
+#			owner = "JAP" 
+#			amount = 162
+#		}
+##		# 9 Hiko Rentai -- Mitsubishi Ki-1
+#		tac_bomber_equipment_0 =  {
+#			owner = "JAP" 
+#			amount = 54
+##		}
+#
+#		# 12 Kokutai -- Nakajima A4N1
+#		cv_fighter_equipment_0 = {
+#			owner = "JAP" 
+##			amount = 84
+#		}
+#		# Kizarazu Kokutai -- Aichi D1A2
+#		cv_CAS_equipment_1 = {
+#			owner = "JAP" 
+##			amount = 129
+#		}
+#		# 13 Kokutai -- Mitsubishi B2M2
+#		cv_nav_bomber_equipment_1 = {
+#			owner = "JAP" 
+#			amount = 57
+##		}
+#	}
+#}
 
 
 #########################
@@ -744,23 +744,23 @@ instant_effect =
 		efficiency = 50
 	}
 
-	add_equipment_production = {
-		equipment = {
-			type = fighter_equipment_0
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.15
-		efficiency = 50
-	}
-
-	add_equipment_production = {
-		equipment = {
-			type = cv_nav_bomber_equipment_1
-			creator = "JAP" 
-		}
-		requested_factories = 1
-		progress = 0.2
-		efficiency = 50
-	}
+#	add_equipment_production = {
+#		equipment = {
+#			type = fighter_equipment_0
+#			creator = "JAP" 
+#		}
+#		requested_factories = 1
+#		progress = 0.15
+#		efficiency = 50
+#	}
+#
+#	add_equipment_production = {
+#		equipment = {
+#			type = cv_nav_bomber_equipment_1
+##			creator = "JAP" 
+#		}
+#		requested_factories = 1
+#		progress = 0.2
+#		efficiency = 50
+#	}
 }
