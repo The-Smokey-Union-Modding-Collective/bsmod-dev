@@ -1,7 +1,7 @@
 state=
 {
 	id=909
-	name="STATE_835"
+	name="STATE_909"
 	manpower = 13938
 	state_category = small_island
 	history= {
