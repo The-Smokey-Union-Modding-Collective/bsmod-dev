@@ -8177,9 +8177,8 @@ focus_tree = {
 		id = ITA_the_abyssinian_fiasco
 		icon = GFX_focus_generic_anti_fascist_diplomacy
 		mutually_exclusive = { focus = ITA_solid_progress focus = ITA_struggle_in_ethiopia }
-		x = 29
+		x = 48
 		y = 0
-		relative_position_id = ITA_naval_power_projection
 		cost = 5
 
 		allow_branch = {
@@ -8196,17 +8195,17 @@ focus_tree = {
 			}
 		}
 
-		offset = {
-			x = -14
-			y = 0
-			trigger = {
-				has_game_rule = {
-					rule = obsolete_focus_branches_visibility
-					option = HIDE
-				}
-				has_completed_focus = ITA_defy_the_duce
-			}
-		}
+		# offset = {
+		# 	x = 0
+		# 	y = 0
+		# 	trigger = {
+		# 		has_game_rule = {
+		# 			rule = obsolete_focus_branches_visibility
+		# 			option = HIDE
+		# 		}
+		# 		has_completed_focus = ITA_defy_the_duce
+		# 	}
+		# }
 
 		available = {
 			custom_trigger_tooltip = {
@@ -8232,25 +8231,25 @@ focus_tree = {
 		mutually_exclusive = { focus = ITA_the_abyssinian_fiasco focus = ITA_struggle_in_ethiopia }
 		x = 2
 		y = 0
-		offset = {
-			x = -20
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "By Blood Alone" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						OR = {
-							has_completed_focus = ITA_culto_del_duce
-							has_completed_focus = ITA_convene_the_grand_council
-						}
-					}
-				}
-			}
-		}
+		# offset = {
+		# 	x = -20
+		# 	y = 0
+		# 	trigger = {
+		# 		OR = {
+		# 			NOT = { has_dlc = "By Blood Alone" }
+		# 			AND = {
+		# 				has_game_rule = {
+		# 					rule = obsolete_focus_branches_visibility
+		# 					option = HIDE
+		# 				}
+		# 				OR = {
+		# 					has_completed_focus = ITA_culto_del_duce
+		# 					has_completed_focus = ITA_convene_the_grand_council
+		# 				}
+		# 			}
+		# 		}
+		# 	}
+		# }
 
 		relative_position_id = ITA_the_abyssinian_fiasco
 		cost = 5
@@ -8319,6 +8318,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -8558,6 +8558,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -10560,6 +10561,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -12551,6 +12553,7 @@ focus_tree = {
 		allow_branch = {
 			has_dlc = "By Blood Alone"
 			has_dlc = "No Step Back"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -13642,6 +13645,11 @@ focus_tree = {
 				}
 			}
 		}
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+
 		#relative_position_id = ITA_setting_course #Better to use the other one for hiding branches
 		relative_position_id = ITA_towards_a_greater_italy
 		cost = 5
@@ -14699,24 +14707,24 @@ focus_tree = {
 			}
 		}
 
-		x = 50
+		x = 15
 		y = 1
-		offset = {
-			x = -29
-			y = 0
-			trigger = {
-				OR = {
-					NOT = { has_dlc = "By Blood Alone" }
-					AND = {
-						has_game_rule = {
-							rule = obsolete_focus_branches_visibility
-							option = HIDE
-						}
-						has_completed_focus = ITA_culto_del_duce
-					}
-				}
-			}
-		}
+		# offset = {
+		# 	x = -29
+		# 	y = 0
+		# 	trigger = {
+		# 		OR = {
+		# 			NOT = { has_dlc = "By Blood Alone" }
+		# 			AND = {
+		# 				has_game_rule = {
+		# 					rule = obsolete_focus_branches_visibility
+		# 					option = HIDE
+		# 				}
+		# 				has_completed_focus = ITA_culto_del_duce
+		# 			}
+		# 		}
+		# 	}
+		# }
 		offset = {
 			x = -12
 			y = 0
@@ -14759,13 +14767,13 @@ focus_tree = {
 		prerequisite = { focus = ITA_foreign_affairs }
 		mutually_exclusive = { focus = ITA_potential_allies_in_the_balkans }
 
-		x = -1
+		x = -2
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
 		}
-
+		
 		search_filters = {}
 
 		completion_reward = {
@@ -14818,6 +14826,10 @@ focus_tree = {
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
 		available = {
+		}
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
 		}
 
 		search_filters = {}
@@ -14899,7 +14911,7 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
 
-		x = -12
+		x = -6
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
@@ -15164,6 +15176,10 @@ focus_tree = {
 			country_exists = AUS
 			NOT = { has_war_with = AUS }
 		}		 
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
 
 		search_filters = {} 
 
@@ -15531,7 +15547,7 @@ focus_tree = {
 		icon = GFX_goal_support_fascism
 		prerequisite = { focus = ITA_potential_allies_in_the_balkans focus = ITA_balkan_ambition }
 		mutually_exclusive = { focus = ITA_guarantee_austrian_independence focus = ITA_italy_first }
-		x = -4
+		x = -3
 		y = 1
 		relative_position_id = ITA_potential_allies_in_the_balkans
 		cost = 5
@@ -15580,7 +15596,7 @@ focus_tree = {
 		icon = GFX_focus_ger_oppose_hitler
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -3
+		x = 0
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -15660,7 +15676,7 @@ focus_tree = {
 		icon = GFX_focus_generic_diplomatic_treaty
 		prerequisite = { focus = ITA_pact_of_steel }
 
-		x = -1
+		x = 2
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -15700,7 +15716,7 @@ focus_tree = {
 		prerequisite = { focus = ITA_pact_of_steel }
 		prerequisite = { focus = ITA_italian_irredentism }
 		mutually_exclusive = { focus = ITA_war_with_france }
-		x = 0
+		x = 3
 		y = 2
 		relative_position_id = ITA_pact_of_steel
 		cost = 5
@@ -15767,6 +15783,10 @@ focus_tree = {
 		bypass = {
 			is_in_faction = yes
 			NOT = { is_in_faction_with = GER }
+		}
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
 		}
 
 		available = {
@@ -15858,6 +15878,10 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+
 		completion_reward = {
 			add_relation_modifier = {
 				target = JAP
@@ -15879,7 +15903,7 @@ focus_tree = {
 		icon = GFX_focus_ITA_italian_irredentism
 		prerequisite = { focus = ITA_pact_of_steel focus = ITA_italy_first }
 
-		x = 3
+		x = 4
 		y = 1
 		relative_position_id = ITA_pact_of_steel
 		cost = 10
@@ -15982,6 +16006,10 @@ focus_tree = {
 			NOT = { FRA = { is_subject_of = ROOT } }
 		}
 
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+
 		will_lead_to_war_with = FRA
 
 		search_filters = {}
@@ -16031,7 +16059,7 @@ focus_tree = {
 			focus = ITA_request_control_of_french_territories 
 		}
 
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ITA_war_with_france
 		cost = 10
@@ -16050,6 +16078,10 @@ focus_tree = {
 			735 = {
 				is_controlled_by = ITA
 			}
+		}
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
 		}
 
 		will_lead_to_war_with = SWI
@@ -16131,8 +16163,8 @@ focus_tree = {
 		icon = GFX_focus_generic_attack_greece
 		prerequisite = { focus = ITA_italian_irredentism }
 		mutually_exclusive = { focus = ITA_befriend_greece }
-		x = 0
-		y = 2
+		x = 1
+		y = 1
 		relative_position_id = ITA_italian_irredentism
 		cost = 5
 
@@ -16242,6 +16274,10 @@ focus_tree = {
 			}
 		}
 		
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+
 		will_lead_to_war_with = TUR
 
 		search_filters = {}
@@ -16287,6 +16323,10 @@ focus_tree = {
 
 		search_filters = {}
 
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+
 		completion_reward = {
 			TUR = {
 				add_opinion_modifier = { target = ITA modifier = ita_diplomacy_focus }
@@ -16321,7 +16361,7 @@ focus_tree = {
 		icon = GFX_goal_generic_military_deal
 		prerequisite = { focus = ITA_foreign_affairs }
 
-		x = 4
+		x = 0
 		y = 1
 		relative_position_id = ITA_foreign_affairs
 		cost = 5
@@ -16539,8 +16579,8 @@ focus_tree = {
 		icon = GFX_goal_generic_more_territorial_claims
 		prerequisite = { focus = ITA_corpo_di_truppe_volontarie }
 		mutually_exclusive = { focus = ITA_spanish_italian_alliance }
-		x = 1
-		y = 2
+		x = 0
+		y = 1
 		relative_position_id = ITA_corpo_di_truppe_volontarie
 		cost = 5
 		available = {
@@ -16604,8 +16644,8 @@ focus_tree = {
 		icon = GFX_focus_generic_befriend_portugal
 		prerequisite = { focus = ITA_spanish_italian_alliance focus = ITA_demand_balearic_islands_bba }
 
-		x = 1
-		y = 1
+		x = 2
+		y = 0
 		relative_position_id = ITA_spanish_italian_alliance
 		cost = 5
 		available = {
@@ -16614,6 +16654,10 @@ focus_tree = {
 			NOT = {
 				has_war_with = POR
 			}
+		}
+
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
 		}
 
 		search_filters = {}
@@ -18300,6 +18344,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -18370,6 +18415,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
@@ -18487,6 +18533,7 @@ focus_tree = {
 
 		allow_branch = {
 			has_dlc = "By Blood Alone"
+			ITA = { has_focus_tree = generic_focus }
 			if = {
 				limit = {
 					has_game_rule = {
