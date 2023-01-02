@@ -4,3 +4,4 @@
  crusaider_tooltip_mod_2:0 "Government Type = §Y Theocracy §!"
  Cav_to_inf_ratio:0 "Cavalry to Infantry-Ratio : §G+50%§!"
  holy_reward_tt:0 "Add §YMounted Crusader Army§!. which grants: \nDivisions speed : §G+15.00%§!\nCavalry Attack: §G+50.00%§!\nMotorized Attack: §G+50.00%§!\nMechanized Attack: §G+50.00%§!\nCavalry to Infantry-Ratio : §G+50%§! "
+ railwagun_ic_fix_tt:0 "Increases Railwaygunconstructioncost by 20% due to funny Paradoxmatehmatics."

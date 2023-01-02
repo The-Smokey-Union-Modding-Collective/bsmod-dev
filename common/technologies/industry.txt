@@ -523,6 +523,13 @@ technologies = {
 		industry_air_damage_factor = -0.15
 		global_building_slots_factor = 0.2
 		
+		on_research_complete = {
+			custom_effect_tooltip = railwagun_ic_fix_tt
+			hidden_effect = {
+				add_ideas = railway_gun_idea
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry2 
 			research_cost_coeff = 1
@@ -597,6 +604,16 @@ technologies = {
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
+		on_research_complete = {
+			custom_effect_tooltip = railwagun_ic_fix_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = railway_gun_idea
+					add_idea = railway_gun_idea2
+				}	
+			}	
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry3 
 			research_cost_coeff = 1
@@ -638,6 +655,16 @@ technologies = {
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
+		on_research_complete = {
+			custom_effect_tooltip = railwagun_ic_fix_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = railway_gun_idea2
+					add_idea = railway_gun_idea3
+				}
+			}		
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry4 
 			research_cost_coeff = 1
@@ -679,6 +706,16 @@ technologies = {
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
+		on_research_complete = {
+			custom_effect_tooltip = railwagun_ic_fix_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = railway_gun_idea3
+					add_idea = railway_gun_idea4
+				}
+			}		
+		}
+
 		path = {
 			leads_to_tech = dispersed_industry5 
 			research_cost_coeff = 1
@@ -720,7 +757,16 @@ technologies = {
 		industry_air_damage_factor = -0.10
 		global_building_slots_factor = 0.2
 		
-		
+		on_research_complete = {
+			custom_effect_tooltip = railwagun_ic_fix_tt
+			hidden_effect = {
+				swap_ideas = {
+					remove_idea = railway_gun_idea4
+					add_idea = railway_gun_idea5
+				}
+			}		
+		}
+
 		research_cost = 2
 		start_year = 1943
 		

@@ -1,6 +1,72 @@
 ideas = {
 
 	hidden_ideas = {
+		
+		railway_gun_idea = {
+			name= railwaygunincrease_ic			
+			allowed = {
+				
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 0.2 instant = yes
+				}
+			}
+		}	
+		railway_gun_idea2 = {	
+			name= railwaygunincrease_ic			
+			allowed = {
+				
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 0.4 instant = yes
+				}
+			}
+		}
+		railway_gun_idea3 = {
+			name= railwaygunincrease_ic				
+			allowed = {
+				
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 0.6 instant = yes
+				}
+			}
+		}
+		railway_gun_idea4 = {	
+			name= railwaygunincrease_ic			
+			allowed = {
+				
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 0.8 instant = yes
+				}
+			}
+		}
+		railway_gun_idea5 = {
+			name= railwaygunincrease_ic				
+			allowed = {
+				
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				railway_gun_equipment  = {
+					build_cost_ic = 1 instant = yes
+				}
+			}
+		}
 
 		league_of_nations_member_idea = { 
 			allowed = {
