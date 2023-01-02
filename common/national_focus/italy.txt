@@ -4422,17 +4422,25 @@ focus_tree = {
 				uses = 2
 				category = cat_special_forces_generic
 			}
-
-			set_technology = { bicycle_infantry = 1 popup = no }
+			
+			if = {
+				if = {
+					limit = { NOT = { has_tech = jaeger } }
+					set_technology = {
+						jaeger = 1
+						popup = no
+					}
+				}
+			}
 
 			division_template = { 
 				name = "Reggimento Bersaglieri" 
 				division_names_group = ITA_INF_01 #TODO_Manu: Namelist: 1º,2º... Reggimento Bersaglieri
 				regiments = { 
-					bicycle_battalion = { x = 0 y = 0 }
-					bicycle_battalion = { x = 0 y = 1 }
-					bicycle_battalion = { x = 1 y = 0 }
-					bicycle_battalion = { x = 1 y = 1 }
+					jaeger = { x = 0 y = 0 }
+					jaeger = { x = 0 y = 1 }
+					jaeger = { x = 1 y = 0 }
+					jaeger = { x = 1 y = 1 }
 				}
 				support = { 
 					engineer = { x = 0 y = 0 }
@@ -5166,7 +5174,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
+			#add_to_variable = { ITA_ra_air_mission_efficiency = 0.05 }
 			add_to_variable = { ITA_ra_air_mission_xp_gain_factor = 0.05 }
 			add_to_variable = { ITA_ra_air_doctrine_cost_factor = -0.1 }
 			custom_effect_tooltip = ITA_superaereo_ra_tt
@@ -5231,7 +5239,7 @@ focus_tree = {
 				callsign = "Postino" #Totally made up
 			}
 
-			custom_effect_tooltip = ITA_reduced_chance_of_air_accidents_tt
+			#custom_effect_tooltip = ITA_reduced_chance_of_air_accidents_tt
 		}
 	}
 
@@ -5544,10 +5552,10 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_AIR_XP}
 
 		completion_reward = {
-			add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
-			add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
-			add_to_variable = { ITA_ra_air_intercept_efficiency = 0.05 }
-			custom_effect_tooltip = ITA_supremacy_in_the_skies_ra_tt
+			# add_to_variable = { ITA_ra_air_superiority_bonus_in_combat = 0.05 }
+			# add_to_variable = { ITA_ra_air_superiority_efficiency = 0.05 }
+			# add_to_variable = { ITA_ra_air_intercept_efficiency = 0.05 }
+			# custom_effect_tooltip = ITA_supremacy_in_the_skies_ra_tt
 
 			air_experience = 50
 
@@ -6193,9 +6201,6 @@ focus_tree = {
 		relative_position_id = ITA_expand_naval_facilities
 		cost = 5
 		available = {
-			any_enemy_country = {
-				is_major_not_original_tag_root = yes
-			}
 		}
 
 		search_filters = {FOCUS_FILTER_NAVY_XP}
@@ -6781,6 +6786,9 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 10
 		available = {
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -6871,6 +6879,9 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_leggeri
 		cost = 10
 		available = {
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -6978,6 +6989,9 @@ focus_tree = {
 				has_tech = improved_destroyer
 			}
 			has_tech = decimetric_radar
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -7121,6 +7135,9 @@ focus_tree = {
 		available = {
 			has_tech = improved_depth_charges
 			has_tech = sonar
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -7271,6 +7288,9 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_pesanti
 		cost = 5
 		available = {
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -7385,6 +7405,9 @@ focus_tree = {
 			}
 			else = { #Non-MTG tech
 				has_tech = early_carrier
+			}
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
 			}
 		}
 
@@ -7501,6 +7524,9 @@ focus_tree = {
 		relative_position_id = ITA_incrociatori_pesanti
 		cost = 10
 		available = {
+			any_enemy_country = {
+				is_major_not_original_tag_root = yes
+			}
 		}
 
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_NAVY_XP FOCUS_FILTER_RESEARCH}
@@ -8402,7 +8428,7 @@ focus_tree = {
 			}
 		}
 		relative_position_id = ITA_solid_progress
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -8939,7 +8965,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = ITA_triumph_in_africa_bba
-		cost = 10
+		cost = 5
 		available = {
 			has_country_leader = {
 				character = ITA_benito_mussolini
@@ -9107,7 +9133,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 		available = {
 		}
 
@@ -9126,7 +9152,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = ITA_culto_del_duce
-		cost = 10
+		cost = 5
 		available = {
 		}
 

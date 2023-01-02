@@ -4484,18 +4484,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		original_tag = ITA
-		#date > 1940.01.01
-		NOT = {
-			has_completed_focus = ITA_italo_balbo_focus
-			focus_progress = {
-				focus = ITA_italo_balbo_focus
-				progress > 0
-			}
-		}
-		any_enemy_country = {
-			is_major = yes
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
@@ -4678,11 +4667,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		original_tag = ITA
-		#date > 1940.01.01
-		any_controlled_state = {
-			is_core_of = FRA
-		}
+		always = no
 	}
 
 	mean_time_to_happen = {
