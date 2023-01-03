@@ -7264,6 +7264,7 @@ focus_tree = {
 			controls_half_ethiopian_owned_states = yes 
 			has_global_flag = second_italo_ethiopian_war_flag
 			ITA = { has_civil_war = no }
+			always = no
 		}
 		ai_will_do = {
 			base = 0
