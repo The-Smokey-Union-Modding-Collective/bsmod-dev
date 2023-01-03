@@ -321,10 +321,10 @@ on_actions = {
 					}
 				}	
 				FRA = {
-					transfer_state = 124
+					transfer_state = 695
 				}	
 				ENG = {
-					transfer_state = 136
+					transfer_state = 309
 				}
 				if = {
 					limit = {
