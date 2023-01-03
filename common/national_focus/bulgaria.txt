@@ -6694,7 +6694,7 @@ focus_tree = {
 
 		icon = GFX_goal_generic_small_arms #GFX_goal_generic_army_artillery2
 		relative_position_id = BUL_found_the_brannik
-		x = 0
+		x = -1
 		y = 2
 		cost = 10
 
@@ -6786,7 +6786,9 @@ focus_tree = {
 
 	focus = {
 		id = BUL_plot_against_boris
-
+		allow_branch = {
+			BUL = { has_focus_tree = generic_focus }
+		}
 		prerequisite = { focus = BUL_liberalization_of_trade_policies }
 
 		dynamic = yes
@@ -6819,7 +6821,9 @@ focus_tree = {
 
 	focus = {
 		id = BUL_the_return_of_ferdinand_i
-
+		allow_branch = {
+			BUL = { has_focus_tree = generic_focus }
+		}
 		prerequisite = { focus = BUL_plot_against_boris }
 
 		icon = GFX_focus_BUL_the_return_of_ferdinand
@@ -7078,7 +7082,9 @@ focus_tree = {
 
 	focus = {
 		id = BUL_the_fate_of_the_balkans
-
+		allow_branch = {
+			BUL = { has_focus_tree = generic_focus }
+		}
 		prerequisite = { focus = BUL_form_a_regency_council focus = BUL_the_return_of_ferdinand_i focus = BUL_military_dictatorship }
 
 		icon = GFX_focus_BUL_the_fate_of_the_balkans
@@ -7750,7 +7756,7 @@ focus_tree = {
 		icon = GFX_goal_generic_political_pressure
 		relative_position_id = BUL_depose_the_tsar
 		x = 0
-		y = 3
+		y = 2
 		cost = 10
 
 		available = {
@@ -8318,14 +8324,14 @@ focus_tree = {
 	focus = {
 		id = BUL_join_the_tripartite_pact
 
-		prerequisite = { focus = BUL_approach_germany }
+		prerequisite = { focus = BUL_approach_germany focus = BUL_strengthen_the_royal_dictatorship}
 
 		dynamic = yes
 
 		icon = GFX_goal_support_fascism
 		relative_position_id = BUL_approach_germany
-		x = 0
-		y = 4
+		x = -2
+		y = 2
 		cost = 5
 		mutually_exclusive = { focus = BUL_the_fate_of_the_balkans focus = BUL_join_the_allies }
 
