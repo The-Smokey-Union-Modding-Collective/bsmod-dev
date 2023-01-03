@@ -108,7 +108,21 @@ on_actions = {
 				}
 				if = {
 					limit = {
-						HOL = has_c
+						HOL = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 7
+						transfer_state = 35
+						transfer_state = 36
+					}
+				}
+				if = {
+					limit = {
+						BEl = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 6
+						transfer_state = 34
 					}
 				}
 			}
@@ -305,6 +319,16 @@ on_actions = {
 				ENG = {
 					transfer_state = 136
 				}
+				if = {
+					limit = {
+						FRA = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 7
+						transfer_state = 35
+						transfer_state = 36
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -319,6 +343,16 @@ on_actions = {
 				BEL = {
 					   transfer_navy = {
 						target = ENG
+					}
+				}
+
+				if = {
+					limit = {
+						FRA = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 6
+						transfer_state = 34
 					}
 				}	
 			}
