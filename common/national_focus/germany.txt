@@ -1918,8 +1918,14 @@ focus_tree = {
 		
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
+				uses = 1
+				category = cat_air_engine
+			}
+
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 			
 			air_experience = 25
@@ -2023,8 +2029,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+				category = medium_air			
 			}
 		}
 	}
@@ -2044,12 +2049,74 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+			air_experience = 20
+			Hidden_effect = {
+				if = {
+					limit = {
+						has_tech = basic_medium_airframe
+						AND  = {
+							NOT = {
+								has_tech = improved_medium_airframe
+							}
+							NOT = {
+								has_tech = advanced_medium_airframe
+							}
+						}
+					}
+					create_equipment_variant = {
+						name = "Bf 110"
+						type = medium_plane_airframe_1
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							special_type_slot_1 = lmg_defense_turret
+							engine_type_slot = engine_2_2x
+						}
+						icon = "GFX_GER_heavy_fighter1_medium"
+					}
+				}
+				else_if = {
+					limit = { 
+						has_tech = basic_medium_airframe
+						has_tech = improved_medium_airframe
+						NOT = {
+							has_tech = advanced_medium_airframe
+						}
+					}
+					create_equipment_variant = {
+						name = "Me 410"
+						type = medium_plane_airframe_2
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+							special_type_slot_1 = hmg_defense_turret_2x
+							engine_type_slot = engine_3_2x
+						}
+						icon = "GFX_GER_heavy_fighter2_medium"
+					}
+				}
+				else_if = {
+					limit = { 
+						has_tech = advanced_medium_airframe
+					}
+					create_equipment_variant = {
+						name = "Ju 388"
+						type = medium_plane_airframe_3
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							special_type_slot_1 = hmg_defense_turret_2x
+							engine_type_slot = engine_4_2x
+						}
+						icon = "GFX_GER_heavy_fighter3_medium"
+					}
+				}
 			}
+			custom_effect_tooltip = GER_heavy_fighter_designs_tt
 		}
 	}
 	
@@ -2106,7 +2173,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 		}
 	}
@@ -2347,6 +2414,17 @@ focus_tree = {
 				SOV = {
 					country_event = { id = germany.78 days = 1 }
 				}
+			}
+
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_air_engine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 		}
 	}

@@ -8972,8 +8972,8 @@
 			add_tech_bonus = {
 				name = FRA_fighter_focus
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
+				uses = 1
+				category = light_air
 			}
 		}
 	}
@@ -8993,8 +8993,8 @@
 			add_tech_bonus = {
 				name = FRA_heavy_fighter_focus
 				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+				uses = 1
+				category = medium_air
 			}
 		}
 	}
@@ -9016,7 +9016,8 @@
 				name = FRA_bomber_focus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
+				category = medium_air
+				category = heavy_air
 			}
 		}
 	}
@@ -9062,8 +9063,8 @@
 			add_tech_bonus = {
 				name = FRA_heavy_bomber_focus
 				bonus = 1.0
-				uses = 2
-				category = cat_strategic_bomber
+				uses = 1
+				category = heavy_air
 			}
 		}
 	}
@@ -9076,6 +9077,10 @@
 		y = 1
 		relative_position_id = FRA_bomber_focus
 		cost = 10
+
+		allow_branch = {
+			FRA = { has_focus_tree = generic_focus }
+		}
 
 		available_if_capitulated = yes
 

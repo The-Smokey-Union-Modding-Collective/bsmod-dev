@@ -963,6 +963,31 @@ ideas = {
 			}
 		}
 
+		USA_escort_fighters_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = USA_air_war_plans_division
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				heavy_fighter_equipment = {
+					air_range = 0.2
+					air_attack = 0.15
+					air_defence = 0.05
+					build_cost_ic = 0.15 instant = yes
+					air_agility = -0.15 
+				}
+			}
+		}
+
 		escort_effort_focus = {
 			
 			allowed = {
