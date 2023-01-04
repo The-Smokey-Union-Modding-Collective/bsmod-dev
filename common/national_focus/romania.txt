@@ -3147,7 +3147,7 @@ focus_tree = {
 				name = ROM_medium_bombers
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
+				category = medium_air
 			}
 		}
 	}
@@ -3315,7 +3315,9 @@ focus_tree = {
 		ai_will_do = {
 			factor = 1
 		}
-
+		allow_branch = {
+			ROM = { has_focus_tree = generic_focus }
+		}
 		available = {
 
 		}
@@ -3342,7 +3344,7 @@ focus_tree = {
 		id = ROM_iar_80
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = ROM_air_superiority }
-		x = -1
+		x = 0
 		y = 1
 		relative_position_id = ROM_air_superiority
 
@@ -3368,14 +3370,14 @@ focus_tree = {
 			#Give generic fighter bonus if fighter_2 already researched
 			if = {
 				limit = {
-					has_tech = fighter2
+					has_tech = improved_small_airframe
 				}
 				add_tech_bonus = {
 					name = ROM_iar_80
 					bonus = 1.0
 					ahead_reduction = 2
 					uses = 1
-					category = light_fighter
+					category = light_air
 				}
 				else = {
 					add_tech_bonus = {
@@ -3383,7 +3385,7 @@ focus_tree = {
 						bonus = 1.0
 						ahead_reduction = 2
 						uses = 1
-						technology = fighter2
+						category = light_air
 					}
 				}
 			}
@@ -3422,7 +3424,7 @@ focus_tree = {
 				name = ROM_strategic_bomber_force
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 		}
 	}
@@ -3458,7 +3460,7 @@ focus_tree = {
 				name = ROM_heavy_bombers
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 		}
 	}

@@ -1169,11 +1169,14 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
-				name = fighter_command_focus
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
-				category = cat_heavy_fighter
+				uses = 1
+				category = cat_air_engine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 		}
 	}
@@ -1197,8 +1200,8 @@ focus_tree = {
 				name = bomber_command_focus
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber
-				category = tactical_bomber
+				category = medium_air
+				category = heavy_air
 			}
 		}
 	}
@@ -1214,17 +1217,44 @@ focus_tree = {
 			factor = 1
 		}
 
+		available = {
+			has_tech = improved_small_airframe
+		}
+
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
-			air_experience = 25
-			add_tech_bonus = {
-				name = coastal_command_focus
-				bonus = 1.0
-				uses = 2
-				category = naval_bomber
-				category = cas_bomber
+			hidden_effect = {
+				if = {
+					limit = {
+						has_tech = improved_small_airframe
+					}
+					create_equipment_variant = {
+						name = "Fairey Barracuda"
+						type = small_plane_airframe_2
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = torpedo_mounting
+							special_type_slot_1 = lmg_defense_turret
+							engine_type_slot = engine_3_1x
+						}
+						icon = "GFX_ENG_naval_bomber3_medium"
+					}
+					create_equipment_variant = {
+						name = "Fairey Barracuda"
+						type = cv_small_plane_airframe_2
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = torpedo_mounting
+							special_type_slot_1 = lmg_defense_turret
+							engine_type_slot = engine_3_1x
+						}
+						icon = "GFX_ENG_naval_bomber3_medium"
+					}
+					air_experience = 50
+				}
 			}
+			custom_effect_tooltip = ENG_coastal_command_tt
 		}
 	}
 	focus = {
@@ -1243,6 +1273,16 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_fighter_discount
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_air_engine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
+			}
 		}
 	}
 	focus = {

@@ -42,4 +42,8 @@
  ROM_joint_oil_exploitation:0 "Joint German Oil Exploitation"
  ROM_joint_oil_exploitation_desc:0 "The Germans have taken a great interest in our native fuel production and are willing to give us great technological and economic assistance in the interest of securing as much oil production as possible."
  osaka_arsenal:0 "Osaka Arsenal"
+ USA_escort_fighters_idea:0 "Escort Fighters"
+ USA_escort_fighters_idea_desc:0 "None of the Axis nations are close to the continental Unites states, as such any attempt at bombing will be done over long distances. For our bombers this is not an issue but for our escort planes it will be, as such a lot of effort must be spent for the creation of long rance escorts for our vulnerable bombers."
+ JAP_the_zero_idea:0 "The Great Zero"
+ Jap_the_zero_idea_desc:0 "As the might of carriers grows so must grow the might of the fighter that it houses. Unlike other nations, we shall focus on the might of agility for our carrier fighters, making them invincible in combat. We must also increase their range, as it benefits our long term goals"
  

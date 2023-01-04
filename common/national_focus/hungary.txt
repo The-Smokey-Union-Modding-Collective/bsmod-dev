@@ -3728,7 +3728,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_fighter
 		prerequisite = { focus = HUN_indigenous_designs }
 		mutually_exclusive = { focus = HUN_light_fighter_effort }
-		x = -3
+		x = -2
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
@@ -3737,6 +3737,10 @@ focus_tree = {
 		ai_will_do = {
 			factor = 40
 		}
+		allow_branch = {
+			HUN = { has_focus_tree = generic_focus }
+		}
+		
 
 		available = {
 
@@ -3757,9 +3761,7 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = heavy_fighter1
-				technology = heavy_fighter2
-				technology = heavy_fighter3
+				category = medium_air
 			}
 		}
 	}
@@ -3798,10 +3800,7 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_air
 			}
 		}
 	}
@@ -3811,7 +3810,7 @@ focus_tree = {
 		icon = GFX_goal_generic_CAS
 		prerequisite = { focus = HUN_indigenous_designs }
 		mutually_exclusive = { focus = HUN_tac_focus }
-		x = 1
+		x = -1
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
@@ -3820,7 +3819,11 @@ focus_tree = {
 		ai_will_do = {
 			factor = 50
 		}
-
+		
+		allow_branch = {
+			ITA = { has_focus_tree = generic_focus }
+		}
+		
 		available = {
 
 		}
@@ -3852,7 +3855,7 @@ focus_tree = {
 		icon = GFX_goal_generic_air_bomber
 		prerequisite = { focus = HUN_indigenous_designs }
 		mutually_exclusive = { focus = HUN_cas_focus }
-		x = 3
+		x = 1
 		y = 1
 		relative_position_id = HUN_indigenous_designs
 
@@ -3881,7 +3884,7 @@ focus_tree = {
 				bonus = 1.0
 				ahead_reduction = 2
 				uses = 1
-				category = tactical_bomber
+				category = medium_air
 			}
 		}
 	}

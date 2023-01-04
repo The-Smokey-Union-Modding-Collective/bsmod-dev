@@ -1199,6 +1199,28 @@ ideas = {
 				}
 			}
 		}
+
+		JAP_the_zero_idea = {
+			removal_cost = -1
+			
+			allowed = {
+				always = no # Added via focus
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_air_research
+
+			equipment_bonus = {
+				cv_fighter_equipment = {
+					air_agility = 0.2 instant = yes
+					air_range = 0.2
+				}
+			}
+		}
+
 		JAP_prioritize_naval_aircraft_construction = {
 			removal_cost = -1
 			

@@ -5,3 +5,7 @@
  Cav_to_inf_ratio:0 "Cavalry to Infantry-Ratio : §G+50%§!"
  holy_reward_tt:0 "Add §YMounted Crusader Army§!. which grants: \nDivisions speed : §G+15.00%§!\nCavalry Attack: §G+50.00%§!\nMotorized Attack: §G+50.00%§!\nMechanized Attack: §G+50.00%§!\nCavalry to Infantry-Ratio : §G+50%§! "
  railwagun_ic_fix_tt:0 "Increases Railwaygunconstructioncost by 20% due to funny Paradoxmatehmatics."
+ GER_heavy_fighter_designs_tt:0 "We will receive §YHeavy Figher§! designs depending on researched airframes."
+ ENG_coastal_command_tt:0 "We will receive §YNaval Bomber§! designs as well as a large amount of §RAir Experience§! once we research §YImproved Small Airframes§!."
+ USA_p47_focus_tt:0 "We will receive the §YP-47§! design and a §GVery Large Amount§! of §RAir Experience§! if we research §YImproved Small Airframes§! and §YEngine Tier 3§!."
+ JAP_zero_tt:0 "We will receive the §gA6M2§! §YCarrier Fighter§! after we complete the focus alongside some §RAir Experience§!."
