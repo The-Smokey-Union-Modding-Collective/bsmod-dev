@@ -32,3 +32,18 @@ SIA_zaibatsu_category ={
         has_completed_focus = SIA_invite_the_zaibatsus
 	}
 }
+
+SIA_co_pro_category = {
+	icon = GFX_decision_category_generic_fascism
+
+	picture = GFX_decision_cat_picture_government_in_exile
+
+	allowed = {
+		tag = SIA
+	}
+
+	visible = {
+		tag = SIA
+		has_completed_focus = SIA_purge_the_opposition
+	}
+}
