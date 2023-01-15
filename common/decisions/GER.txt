@@ -25,6 +25,7 @@ GER_operations_category = {
 				target = POL
 				type = annex_everything
 			}
+			ENG = { add_to_faction = POL }
 			POL = {
 				FRA = {
 					add_to_war = { 

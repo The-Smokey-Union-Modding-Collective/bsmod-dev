@@ -109,5 +109,8 @@ country_event = {
 		286 = {
 			set_compliance = 100
 		}
+		868 = {
+			set_compliance = 100
+		}
 	}
 }

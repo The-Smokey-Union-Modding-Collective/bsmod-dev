@@ -104,48 +104,54 @@ JAP_operations_category = {
 					type = annex_everything
 				}
 			}
-			SIA = {
-				declare_war_on = {
-					target = USA
-					type = annex_everything
+			if = {
+				limit = {
+					country_exists = SIA
 				}
-				declare_war_on = {
-					target = ENG
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = FRA
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = CAN
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = SAF
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = RAJ
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = AST
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = NZL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = MAL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = INS
-					type = annex_everything
+				SIA = {
+					declare_war_on = {
+						target = USA
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = ENG
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = FRA
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = CAN
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = SAF
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = RAJ
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = AST
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = NZL
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = MAL
+						type = annex_everything
+					}
+					declare_war_on = {
+						target = INS
+						type = annex_everything
+					}
 				}
 			}
+			ENG = { add_to_faction = USA }
 		}
 	}
 }

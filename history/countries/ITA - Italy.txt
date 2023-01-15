@@ -17,7 +17,7 @@ if = {
 
 starting_train_buffer = 1.5
 
-set_research_slots = 4
+set_research_slots = 5
 set_stability = 0.6
 set_war_support = 0.7
 add_ideas = {
@@ -26,6 +26,8 @@ add_ideas = {
 	limited_exports
 	limited_conscription
 	partial_economic_mobilisation
+	mod_trade_axis
+	mod_scw_corpo_truppe_volontarie
 }
 
 # RESISTANCE / COMPLIANCE

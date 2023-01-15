@@ -258,7 +258,7 @@ ideas = {
 			modifier = {
 				send_volunteers_tension = -1
 				send_volunteer_size = 5
-				air_volunteer_cap = 600
+				air_volunteer_cap = 3
 			}
 			rule = {
 				can_send_volunteers = yes
@@ -276,7 +276,7 @@ ideas = {
 			modifier = {
 				send_volunteers_tension = -1
 				send_volunteer_size = 1
-				air_volunteer_cap = 200
+				air_volunteer_cap = 2
 			}
 			rule = {
 				can_send_volunteers = yes
@@ -325,7 +325,7 @@ ideas = {
 
 			picture = escuadrilla_internacional
 			modifier = {
-				air_volunteer_cap = 200
+				air_volunteer_cap = 1
 			}
 		}
 		

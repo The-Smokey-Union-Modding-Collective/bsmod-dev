@@ -1404,6 +1404,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		cost = 10
 
 		ai_will_do = {
@@ -1441,6 +1445,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		will_lead_to_war_with = PHI
 
@@ -1503,14 +1511,14 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_on_the_southern_resource_area
 		icon = GFX_focus_jap_strike_south
-		prerequisite = { focus = JAP_secure_the_philippines focus = JAP_bypass_the_philippines }
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
 		x = 1
 		y = 1
-		relative_position_id = JAP_bypass_the_philippines
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		will_lead_to_war_with = ENG
-		will_lead_to_war_with = MAL
-		will_lead_to_war_with = INS
+		# will_lead_to_war_with = ENG
+		# will_lead_to_war_with = MAL
+		# will_lead_to_war_with = INS
 
 		cost = 10
 
