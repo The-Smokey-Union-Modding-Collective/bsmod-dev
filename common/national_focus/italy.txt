@@ -5481,12 +5481,12 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ITA_add_fighter_designs_templates = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "By Blood Alone"
+			# 	}
+			# 	ITA_add_fighter_designs_templates = yes
+			# }
 		}
 	}
 
@@ -5576,12 +5576,12 @@ focus_tree = {
 				}
 			}
 
-			if = {
-				limit = {
-					has_dlc = "By Blood Alone"
-				}
-				ITA_add_supremacy_in_the_skies_templates = yes
-			}
+			# if = {
+			# 	limit = {
+			# 		has_dlc = "By Blood Alone"
+			# 	}
+			# 	ITA_add_supremacy_in_the_skies_templates = yes
+			# }
 		}
 	}
 
