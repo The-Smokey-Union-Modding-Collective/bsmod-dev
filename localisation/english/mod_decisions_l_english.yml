@@ -75,3 +75,7 @@
  join_axis_category_ITA:0 "The Axis Powers"
  join_axis_category_ITA_desc:0 "Our ambition is to dominate the mediterranean but our military is not mighty enough to defeat the allies alone (despite what we write in the newspapers. If we wish to achieve our glorious place as the leader of africa and southern europe we need to ally with the mighty Germans against the allies!"
  join_the_axis_ITA:0 "Join the Axis Powers"
+
+ join_allies_category:0 "The Allied Powers"
+ join_allies_category_desc:0 "The Germans are again threatening the peace in Europe. As a nation that claims to follow democratic virtues and as an enemy of the Germans we should naturally search for allies. England and her colonies are the natural allies we need."
+ join_the_allies:0 "Join the Allied Powers"
