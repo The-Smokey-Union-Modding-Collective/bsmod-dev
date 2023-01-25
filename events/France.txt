@@ -223,6 +223,7 @@ country_event = {
 					NOT = { state = 1 }
 					NOT = { state = 735 }
 					NOT = { state = 21 }
+					NOT = { state = 851 }
 					NOT = { state = 31 }
 					is_owned_by = ROOT
 					is_controlled_by = PREV
@@ -388,6 +389,7 @@ country_event = {
 		set_country_flag = become_vichy
 		set_global_flag = fall_of_france
 		save_global_event_target_as = vichy_france
+
 		GER = { country_event = france.14 }
 		custom_effect_tooltip = france.10.a_tt
 		# Switches to Vichy if GER accepts
@@ -1127,6 +1129,7 @@ country_event = {
 						OR = {
 							state = 735
 							state = 21
+							state = 851
 							state = 32
 							state = 20
 							state = 26
@@ -1163,6 +1166,7 @@ country_event = {
 								state = 21
 								state = 1
 								state = 735
+								state = 851
 							}
 							has_state_flag = vichy_italian_conquest
 						}
@@ -1172,11 +1176,20 @@ country_event = {
 					if = {
 						limit = {
 							21 = { is_controlled_by = ITA }
+							851 = { is_controlled_by = ITA }
 							735 = { is_controlled_by = ITA } 
 						}
 						ITA = { transfer_state = 32 }
 					}
 					
+				}
+				every_owned_state = {
+					limit = {
+						NOT = {
+							is_core_of = FRA
+						}
+					}
+					FRA = { add_state_claim = PREV } #Free France gets claims on all of Vichy, primarily so they can demand that shit back in a peacedeal
 				}
 				set_rule = { 
 					can_join_factions = no 
@@ -1594,7 +1607,7 @@ country_event = {
 			limit = {
 				ITA = {
 					OR = {
-						NOT = { has_completed_focus = ITA_yugoslavia_friend }						
+						NOT = { has_completed_focus = ITA_balkan_ambition }						
 						is_in_faction_with = GER
 						exists = no
 					}
@@ -1608,7 +1621,7 @@ country_event = {
 		if = {
 			limit = { 
 				ITA = {
-					has_completed_focus = ITA_yugoslavia_friend
+					has_completed_focus = ITA_balkan_ambition
 					NOT = { is_in_faction_with = GER }
 					NOT = { has_war_with = YUG }
 				}
@@ -1644,7 +1657,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
-					generator = { 102 }
+					generator = { 102 853 }
 				}
 			}
 		}
@@ -1762,7 +1775,7 @@ country_event = {
 				create_wargoal = {
 					type = take_state_focus
 					target = YUG
-					generator = { 102 }
+					generator = { 102 853 }
 				}
 			}
 		}		

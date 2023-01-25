@@ -1,4 +1,4 @@
-﻿add_namespace = lar_spain 
+add_namespace = lar_spain 
 
 # Election of 1936 - La Resistance Edition
 country_event = {
@@ -11116,7 +11116,9 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			SPA_francisco_franco = {
-				set_leader_portrait = "GFX_portrait_spain_francisco_franco_old"
+				set_portraits = {
+					civilian = { large =  GFX_portrait_spain_francisco_franco_old }
+				}
 			}
 		}
 	}

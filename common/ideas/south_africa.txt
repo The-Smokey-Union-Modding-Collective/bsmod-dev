@@ -572,7 +572,7 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				fighter_equipment = {
+				small_plane_airframe = {
 					air_range = 0.1
 					air_attack = 0.05
 					instant = yes
@@ -652,19 +652,7 @@ ideas = {
 				super_heavy_tank_chassis = {
 					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
 				}
-				super_heavy_tank_artillery_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				super_heavy_tank_destroyer_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				super_heavy_tank_aa_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
 				heavy_tank_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				heavy_tank_aa_chassis = {
 					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
 				}
 				heavy_tank_artillery_chassis = {
@@ -676,16 +664,6 @@ ideas = {
 				modern_tank_chassis = {
 					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
 				}
-				modern_tank_destroyer_chassis= {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				modern_tank_artillery_chassis= {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				modern_tank_aa_chassis= {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-
 			}
 		}
 		quality_gun_design_philsophy = {
@@ -710,20 +688,8 @@ ideas = {
 				super_heavy_tank_chassis = {
 					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
 				}
-				super_heavy_tank_aa_chassis = {
-					build_cost_ic = 0.05 reliability = 0.05 air_attack = 0.1 
-				}
-				super_heavy_tank_destroyer_chassis = {
-					build_cost_ic = 0.05 hard_attack = 0.05 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				super_heavy_tank_artillery_chassis = {
-					build_cost_ic = 0.05 hard_attack = -0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.075
-				}
 				heavy_tank_chassis = {
 					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				heavy_tank_aa_chassis = {
-					build_cost_ic = 0.05 reliability = 0.05 air_attack = 0.1 
 				}
 				heavy_tank_destroyer_chassis = {
 					build_cost_ic = 0.05 hard_attack = 0.05 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
@@ -733,15 +699,6 @@ ideas = {
 				}
 				modern_tank_chassis= {
 					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				modern_tank_destroyer_chassis = {
-					build_cost_ic = 0.05 hard_attack = 0.05 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				modern_tank_artillery_chassis= {
-					build_cost_ic = 0.05 hard_attack = -0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.075
-				}
-				modern_tank_aa_chassis= {
-					build_cost_ic = 0.05 reliability = 0.05 air_attack = 0.1 
 				}
 			}
 		}
@@ -765,37 +722,16 @@ ideas = {
 				super_heavy_tank_chassis = {
 				build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
 				}
-				super_heavy_tank_destroyer_chassis = {
-				build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-				}
-				super_heavy_tank_aa_chassis = {
-				build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-				}
-				super_heavy_tank_artillery_chassis = {
-				build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-				}
 				heavy_tank_chassis = {
 					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
 				}
 				heavy_tank_destroyer_chassis = {
 					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
 				}
-				heavy_tank_aa_chassis = {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
-				}
 				heavy_tank_artillery_chassis = {
 					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
 				}
 				modern_tank_chassis= {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-					}
-				modern_tank_destroyer_chassis= {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-					}
-				modern_tank_artillery_chassis= {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-					}
-				modern_tank_aa_chassis= {
 					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
 					}
 			}
@@ -820,9 +756,6 @@ ideas = {
 				light_tank_chassis = {
 				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
 				}
-				light_tank_aa_chassis = {
-				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
-				}
 				light_tank_artillery_chassis = {
 				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
 				}
@@ -830,9 +763,6 @@ ideas = {
 				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
 				}
 				medium_tank_chassis = {
-				build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-				}
-				medium_tank_aa_chassis = {
 				build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
 				}
 				medium_tank_artillery_chassis = {
@@ -843,16 +773,7 @@ ideas = {
 				}
 				modern_tank_chassis= {
 					build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-					}
-				modern_tank_destroyer_chassis= {
-					build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-					}
-				modern_tank_artillery_chassis = {
-					build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-					}
-				modern_tank_aa_chassis= {
-					build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-					}
+				}
 			}
 		}
 		saf_combat_cruiser_tanks = {
@@ -875,9 +796,6 @@ ideas = {
 				light_tank_chassis = {
 				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
 				}
-				light_tank_aa_chassis = {
-				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
-				}
 				light_tank_artillery_chassis = {
 				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
 				}
@@ -887,9 +805,6 @@ ideas = {
 				medium_tank_chassis = {
 				reliability = 0.05 soft_attack = 0.075  hard_attack = 0.05 maximum_speed = 0.05
 				}
-				medium_tank_aa_chassis = {
-				reliability = 0.05 soft_attack = 0.05  air_attack = 0.15 
-				}
 				medium_tank_artillery_chassis = {
 				reliability = 0.05 soft_attack = 0.10  hard_attack = 0.05
 				}
@@ -898,16 +813,7 @@ ideas = {
 				}
 				modern_tank_chassis= {
 					reliability = 0.05 soft_attack = 0.075  hard_attack = 0.05 maximum_speed = 0.05
-					}
-				modern_tank_destroyer_chassis= {
-					reliability = 0.05 soft_attack = 0.05  hard_attack = 0.10
-					}
-				modern_tank_artillery_chassis= {
-					reliability = 0.05 soft_attack = 0.10  hard_attack = 0.05
-					}
-				modern_tank_aa_chassis= {
-					reliability = 0.05 soft_attack = 0.05  air_attack = 0.15 
-					}
+				}
 			}
 		}
 	} 

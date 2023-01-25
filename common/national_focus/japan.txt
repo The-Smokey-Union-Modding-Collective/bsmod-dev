@@ -1090,6 +1090,9 @@ focus_tree = {
 		completion_reward = {
 			set_rule = { can_create_factions = yes }
 			create_faction = JAP_greater_east_asian_co_prosperity_sphere
+			hidden_effect = {
+				JAP = { add_to_faction = MAN }
+			}
 		}
 	}
 
@@ -1401,6 +1404,10 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
+		allow_branch = {
+			always = no # bsmod change
+		}
+
 		cost = 10
 
 		ai_will_do = {
@@ -1438,6 +1445,10 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
+
+		allow_branch = {
+			always = no # bsmod change
+		}
 
 		will_lead_to_war_with = PHI
 
@@ -1500,14 +1511,14 @@ focus_tree = {
 	focus = {
 		id = JAP_strike_on_the_southern_resource_area
 		icon = GFX_focus_jap_strike_south
-		prerequisite = { focus = JAP_secure_the_philippines focus = JAP_bypass_the_philippines }
+		prerequisite = { focus = JAP_non_aggression_pact_with_the_soviet_union }
 		x = 1
 		y = 1
-		relative_position_id = JAP_bypass_the_philippines
+		relative_position_id = JAP_non_aggression_pact_with_the_soviet_union
 
-		will_lead_to_war_with = ENG
-		will_lead_to_war_with = MAL
-		will_lead_to_war_with = INS
+		# will_lead_to_war_with = ENG
+		# will_lead_to_war_with = MAL
+		# will_lead_to_war_with = INS
 
 		cost = 10
 
@@ -5057,13 +5068,13 @@ focus_tree = {
 				name = JAP_fighter_modernization
 				bonus = 1.0
 				uses = 1
-				category = light_fighter		
+				category = light_air		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
 				bonus = 1.0
 				uses = 1
-				category = cat_heavy_fighter	
+				category = cat_air_engine
 			}
 		}
 	}
@@ -5158,7 +5169,7 @@ focus_tree = {
 		}
 
 		available = {
-			date > 1939.09.01
+			has_tech = improved_small_airframe
 		}
 
 		bypass = {
@@ -5171,8 +5182,22 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			custom_effect_tooltip = JAP_the_trio_tt
-			hidden_effect = { set_technology = { cv_fighter3 = 1 } }
+			add_ideas = JAP_the_zero_idea
+			hidden_effect = { 
+				create_equipment_variant = {
+					name = "A6M2"
+					type = cv_small_plane_airframe_2
+					parent_version = 0
+					modules = {
+						fixed_main_weapon_slot = light_mg_2x
+						fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+						engine_type_slot = engine_2_1x
+					}
+					icon = "GFX_JAP_cv_fighter2_medium"
+				}
+				air_experience = 50
+			}
+			custom_effect_tooltip = JAP_zero_tt
 		}
 	}
 
@@ -5208,8 +5233,7 @@ focus_tree = {
 				name = JAP_bomber_modernization
 				bonus = 1.0
 				uses = 1
-				category = cas_bomber
-				category = tactical_bomber					
+				category = medium_air					
 			}
 		}
 	}
@@ -5247,7 +5271,7 @@ focus_tree = {
 				name = JAP_strategic_bomber_effort
 				bonus = 1.0
 				uses = 2
-				category = cat_strategic_bomber	
+				category = heavy_air
 			}
 		}
 	}
@@ -5268,7 +5292,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1940.01.01
 		}
 
 		bypass = {
@@ -5285,7 +5309,12 @@ focus_tree = {
 			add_tech_bonus = {
 				bonus = 1.0
 				uses = 1
-				category = light_fighter		
+				category = light_air	
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_air_engine
 			}
 		}
 	}

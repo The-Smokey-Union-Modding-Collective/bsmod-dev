@@ -781,8 +781,8 @@ ideas = {
 			picture = generic_air_bonus
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
-					air_range = 0.5 instant = yes
+				large_plane_airframe = {
+					air_range = 0.1 instant = yes
 				}	
 			}
 		}
@@ -935,10 +935,10 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				CAS_equipment = {
+				small_plane_cas_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
-				tac_bomber_equipment = {
+				medium_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
 				}
 			}
@@ -957,8 +957,33 @@ ideas = {
 			removal_cost = -1
 			
 			equipment_bonus = {
-				strat_bomber_equipment = {
+				large_plane_airframe = {
 					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		USA_escort_fighters_idea = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = USA_air_war_plans_division
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				heavy_fighter_equipment = {
+					air_range = 0.2
+					air_attack = 0.15
+					air_defence = 0.05
+					build_cost_ic = 0.15 instant = yes
+					air_agility = -0.15 
 				}
 			}
 		}

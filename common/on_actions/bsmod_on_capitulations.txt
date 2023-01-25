@@ -1,0 +1,452 @@
+on_actions = {
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = DEN }
+				}
+				DEN = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+				}	
+				ENG = {  
+					transfer_state = 100
+					transfer_state = 101
+				}	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = NOR }
+				}
+				NOR = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				ENG = {
+					country_event = britain.9
+				}
+				   every_state = {
+					   limit = {
+						   is_core_of = NOR
+					   }	
+					   GER = { transfer_state = PREV }
+				   }	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = DEN }
+				}
+				DEN = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				GER = {
+					transfer_state = 99
+					transfer_state = 37
+				}	
+				ENG = {  
+					transfer_state = 100
+					transfer_state = 101
+				}	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = JAP 
+							is_in_faction_with = JAP
+						}
+					}
+					ROOT = {tag = INS}
+				}
+				INS = {
+						transfer_navy = {
+						target = ENG
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = DEI
+					}	
+					JAP = { transfer_state = PREV }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER 
+							is_in_faction_with = GER
+						}
+					}
+					ROOT = {tag = FRA} 
+				}
+				if = {
+					limit = {
+						HOL = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 7
+						transfer_state = 35
+						transfer_state = 36
+					}
+				}
+				if = {
+					limit = {
+						BEL = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 6
+						transfer_state = 34
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = LUX }
+				}
+				LUX = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				GER = {
+					transfer_state = 8
+				}	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = NOR }
+				}
+				NOR = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				every_state = {
+					limit = {
+						is_core_of = NOR
+					}	
+					GER = { transfer_state = PREV }
+				}	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = JAP
+							is_in_faction_with = JAP 
+						} 
+					}
+					ROOT = { tag = CHI }
+				}
+				CHI = {
+					   transfer_navy = {
+						target = JAP
+					}
+				}
+				if = {
+					limit = {
+						MAN = {
+							is_ai = no
+						}
+					}	
+					every_state = {
+						limit = {
+							is_core_of = CHI
+						}	
+						MAN = { transfer_state = PREV }
+					}
+				}
+			}
+			if = {
+				limit = {
+					From = {tag = ITA}
+					ROOT = {tag = ETH}
+				}
+				every_state = {
+					limit = {
+						is_core_of = ETH
+					}	
+					ITA = { transfer_state = PREV }
+					
+				}
+				ITA = {	
+					add_offsite_building = { type = industrial_complex level = 3 }
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+							tag = ITA 
+						} 
+					}
+					ROOT = { tag = YUG }
+				}
+				YUG = {
+					   transfer_navy = {
+						target = ITA
+					}
+				}
+			
+				GER = {
+					transfer_state = 102
+				}
+				
+					
+				ITA = {
+					transfer_state = 103
+					transfer_state = 105
+					transfer_state = 109	
+					transfer_state = 104
+					transfer_state = 107
+					transfer_state = 108
+					transfer_state = 106
+					transfer_state = 764
+					transfer_state = 853
+					transfer_state = 45
+					transfer_state = 803
+					transfer_state = 804
+				}
+				if = {
+					limit = {
+						HUN = {
+							is_ai = no
+						}
+					}	
+					HUN = {
+						transfer_state = 45
+						transfer_state = 764
+					}
+				}
+				if = {
+					limit = {
+						BUL = {
+							is_ai = no
+						}
+					}	
+					BUL = {
+						transfer_state = 106	
+						transfer_state = 803
+					}
+				}			   			
+			}
+			if = {
+				limit = {
+					From = {tag = SPR}
+					ROOT = {tag = POR}
+				}	
+				SPR = {
+						transfer_state = 112
+						transfer_state = 179
+						transfer_state = 180 
+						transfer_state = 181 
+						transfer_state = 795 
+					}
+				SPR = {	
+					add_offsite_building = { type = industrial_complex level = 2 }
+					add_offsite_building = { type = arms_factory level = 2}
+				}
+				SAF = {
+						transfer_state = 540 
+						transfer_state = 891
+						transfer_state = 892
+						transfer_state = 544
+						transfer_state = 896
+						transfer_state = 897
+				}
+				FRA = {
+						transfer_state = 796
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = HOL }
+				}
+				HOL = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				ENG = {
+					set_autonomy = {
+						target = INS
+						autonomous_state = autonomy_puppet
+						freedom_level = 0.4
+					}
+				}	
+				FRA = {
+					transfer_state = 695
+				}	
+				ENG = {
+					transfer_state = 309
+				}
+				if = {
+					limit = {
+						FRA = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 7
+						transfer_state = 35
+						transfer_state = 36
+					}
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+							tag = ITA 
+						} 
+					}
+					ROOT = { tag = GRE }
+				}
+				GRE = {
+					   transfer_navy = {
+						target = ITA
+					}
+				}
+					
+				ITA = {
+					transfer_state = 185
+					transfer_state = 184
+					transfer_state = 186	
+					transfer_state = 187
+					transfer_state = 47
+					transfer_state = 731
+					transfer_state = 182
+				}
+				ITA = {	
+					add_offsite_building = { type = industrial_complex level = 1 }
+				}
+				if = {
+					limit = {
+						BUL = {
+							is_ai = no
+						}
+					}	
+					BUL = {
+						transfer_state = 731	
+						transfer_state = 184
+					}
+					BUL = {	
+						add_offsite_building = { type = industrial_complex level = 1 }
+					}
+				}	
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = POL }
+				}
+				POL = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+					
+				GER = {
+					transfer_state = 85
+					transfer_state = 807
+					transfer_state = 86	
+					transfer_state = 87
+					transfer_state = 98
+					transfer_state = 762
+					transfer_state = 10
+					transfer_state = 72
+					transfer_state = 88
+					transfer_state = 92
+					transfer_state = 97
+				}
+			}
+			if = {
+				limit = {
+					FROM = {
+						OR = {
+							tag = GER
+							is_in_faction_with = GER 
+						} 
+					}
+					ROOT = { tag = BEL }
+				}
+				BEL = {
+					   transfer_navy = {
+						target = ENG
+					}
+				}
+				FRA = {
+						transfer_state = 295
+						transfer_state = 538
+						transfer_state = 718
+						transfer_state = 888
+						transfer_state = 890
+						transfer_state = 889
+						transfer_state = 768
+						transfer_state = 769
+				}
+				if = {
+					limit = {
+						FRA = {has_capitulated = yes}
+					}
+					GER = {
+						transfer_state = 6
+						transfer_state = 34
+					}
+				}	
+			}
+		}
+	}
+}

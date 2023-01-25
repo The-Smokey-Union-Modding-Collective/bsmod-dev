@@ -11,10 +11,6 @@ units= {
 			location = 3552 # Dunkerque			
 			# 8e Division des Contre-Torpilleurs
 			ship = { name = "Béarn" definition = carrier equipment = { ship_hull_carrier_conversion_bb = { amount = 1 owner = FRA version_name = "Béarn Class" } } 
-				air_wings = {
-					cv_fighter_equipment_0 =  { owner = "FRA" amount = 18 }
-					cv_nav_bomber_equipment_1 =  { owner = "FRA" amount = 18 }
-				}
 			}
 			ship = { name = "Le Terrible" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }
 			ship = { name = "L'Audacieux" definition = destroyer equipment = { ship_hull_light_1 = { amount = 1 owner = FRA version_name = "Le Fantasque Class" } } }

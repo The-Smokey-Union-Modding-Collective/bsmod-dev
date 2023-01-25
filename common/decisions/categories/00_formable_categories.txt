@@ -327,3 +327,14 @@ form_idel_ural_category = {
 		has_dlc = "No Step Back"
 	}
 }
+
+form_horn_of_africa_africa_category = {
+
+	icon = generic_formable_nations
+
+	#picture = GFX_decision_cat_picture_form_turan
+	
+	allowed = {
+		has_dlc = "By Blood Alone"
+	}
+}

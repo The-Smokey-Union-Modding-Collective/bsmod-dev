@@ -84,3 +84,125 @@ SOV_finnish_surrender_category = {
         }
     }
 }
+
+#ITA_ethiopian_surrender_category = {
+#	ITA_ethiopian_surrender = {
+#	
+#		icon = generic_form_nation
+#	
+#		allowed = {
+#			original_tag = ITA
+#		}
+#		
+#		available = {
+#			NOT = { has_war_with = ETH }
+#		}
+#		
+#		activation = {
+#			has_war_with = ETH
+#		}
+#		
+#		days_mission_timeout = 182
+#		
+#		complete_effect = {
+#		}
+#	}
+#}
+
+ITA_yugoslavian_surrender_category = {
+	ITA_yugoslavian_surrender = {
+		
+		icon = generic_form_nation
+		
+		allowed = {
+			original_tag = ITA
+		}
+		
+		available = {
+			NOT = { has_war_with = YUG }
+		}
+		
+		activation = {
+			has_war_with = YUG
+		}
+		
+		days_mission_timeout = 180
+		
+		timeout_effect = {
+			annex_country = { target = YUG }
+		}
+		
+		complete_effect = {
+		}
+	}
+}
+
+ITA_greek_surrender_category = {
+	ITA_greek_surrender = {
+		
+		icon = generic_form_nation
+		
+		allowed = {
+			original_tag = ITA
+		}
+		
+		available = {
+			NOT = { has_war_with = GRE }
+		}
+		
+		activation = {
+			has_war_with = GRE
+		}
+		
+		days_mission_timeout = 90
+		
+		timeout_effect = {
+			annex_country = { target = GRE }
+		}
+		
+		complete_effect = {
+		}
+	}
+}
+
+#ETH_ethiopian_surrender_category = {
+#	
+#	ETH_ethiopian_surrender = {
+#
+#		allowed = {
+#			original_tag = ETH
+#		}
+#
+#		available = {
+#			has_war_with = ITA
+#			date > 1936.6.31
+#		}
+#
+#		visible = {
+#			has_war_with = ITA
+#		}
+		
+#		fire_only_once = yes
+#
+#		cost = 0
+#
+#		days_remove = -1
+#		ai_will_do = {
+#			factor = 100
+#		}
+#
+#		modifier = {
+#			forced_surrender_limit = -1.0
+#		}
+#
+#		remove_effect = {
+#		}
+#
+#		remove_trigger = {
+#			has_war = no
+#		}
+#		
+#		complete_effect = {
+#		}
+#	}
+#}

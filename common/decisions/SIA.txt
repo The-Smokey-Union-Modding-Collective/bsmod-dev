@@ -392,3 +392,28 @@ SIA_zaibatsu_category = {
 		}
 	}
 }
+
+SIA_co_pro_category = {
+
+	join_the_co_pro = {
+		icon = generic_decision
+
+		allowed = { 
+		} 
+
+		available = {
+			has_completed_focus = SIA_purge_the_opposition
+			JAP = {
+				has_completed_focus = JAP_greater_east_asian_co_prosperity_sphere
+			}
+		}
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			JAP = { add_to_faction = SIA }
+		}
+	}
+}

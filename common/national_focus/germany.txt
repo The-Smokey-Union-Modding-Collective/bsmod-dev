@@ -1918,8 +1918,14 @@ focus_tree = {
 		
 			add_tech_bonus = {
 				bonus = 1.0
-				uses = 2
-				category = light_fighter
+				uses = 1
+				category = cat_air_engine
+			}
+
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 			
 			air_experience = 25
@@ -2023,8 +2029,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber			
+				category = medium_air			
 			}
 		}
 	}
@@ -2044,12 +2049,74 @@ focus_tree = {
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_RESEARCH }
 		completion_reward = {
-			add_tech_bonus = {
-				name = GER_long_range_escorts
-				bonus = 1.0
-				uses = 2
-				category = cat_heavy_fighter
+			air_experience = 20
+			Hidden_effect = {
+				if = {
+					limit = {
+						has_tech = basic_medium_airframe
+						AND  = {
+							NOT = {
+								has_tech = improved_medium_airframe
+							}
+							NOT = {
+								has_tech = advanced_medium_airframe
+							}
+						}
+					}
+					create_equipment_variant = {
+						name = "Bf 110"
+						type = medium_plane_airframe_1
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = light_mg_4x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_1_2x
+							special_type_slot_1 = lmg_defense_turret
+							engine_type_slot = engine_2_2x
+						}
+						icon = "GFX_GER_heavy_fighter1_medium"
+					}
+				}
+				else_if = {
+					limit = { 
+						has_tech = basic_medium_airframe
+						has_tech = improved_medium_airframe
+						NOT = {
+							has_tech = advanced_medium_airframe
+						}
+					}
+					create_equipment_variant = {
+						name = "Me 410"
+						type = medium_plane_airframe_2
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = light_mg_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_2 = aircraft_cannon_2_2x
+							special_type_slot_1 = hmg_defense_turret_2x
+							engine_type_slot = engine_3_2x
+						}
+						icon = "GFX_GER_heavy_fighter2_medium"
+					}
+				}
+				else_if = {
+					limit = { 
+						has_tech = advanced_medium_airframe
+					}
+					create_equipment_variant = {
+						name = "Ju 388"
+						type = medium_plane_airframe_3
+						parent_version = 0
+						modules = {
+							fixed_main_weapon_slot = aircraft_cannon_2_2x
+							fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+							special_type_slot_1 = hmg_defense_turret_2x
+							engine_type_slot = engine_4_2x
+						}
+						icon = "GFX_GER_heavy_fighter3_medium"
+					}
+				}
 			}
+			custom_effect_tooltip = GER_heavy_fighter_designs_tt
 		}
 	}
 	
@@ -2106,7 +2173,7 @@ focus_tree = {
 				name = bomber_bonus
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 		}
 	}
@@ -2347,6 +2414,17 @@ focus_tree = {
 				SOV = {
 					country_event = { id = germany.78 days = 1 }
 				}
+			}
+
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = cat_air_engine
+			}
+			add_tech_bonus = {
+				bonus = 1.0
+				uses = 1
+				category = light_air
 			}
 		}
 	}
@@ -2657,6 +2735,7 @@ focus_tree = {
 		completion_reward = {
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
+			set_global_flag = rhineland_remilitarized
 			custom_effect_tooltip = GER_rhineland_ultimatum
 			add_political_power = 120
 			army_experience = 5
@@ -3092,6 +3171,7 @@ focus_tree = {
 					owns_state = 4
 					owns_state = 152
 					owns_state = 153
+					owns_state = 848
 				}
 			}
 		}
@@ -3107,14 +3187,48 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
 						}
 					}
+					ITA = {
+						NOT = {
+							has_completed_focus = ITA_guarantee_austrian_independence
+						}
+					}
+					
 				}
 
 				AUS = {
-					country_event = germany.28
+					country_event = {
+						id = germany.28
+						days = 1
+					}
 				}				
 				custom_effect_tooltip = anschluss_mefo_bills_tt
+			}
+			if = {
+				limit = {
+					country_exists = AUS
+					AUS = {
+						has_civil_war = no
+						OR = {
+							owns_state = 4
+							owns_state = 152
+							owns_state = 153
+							owns_state = 848 #Vorarlberg 
+						}
+					}
+					ITA = {
+						has_completed_focus = ITA_guarantee_austrian_independence
+					}
+				}
+ 
+				ITA = {
+					country_event = {
+						id = BBA_italy_interaction_events.24
+						days = 1
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -3125,6 +3239,13 @@ focus_tree = {
 							owns_state = 4
 							owns_state = 152
 							owns_state = 153
+							owns_state = 848
+						}
+						
+					}
+					ITA = {
+						NOT = {
+							has_completed_focus = ITA_guarantee_austrian_independence
 						}
 					}
 				}
@@ -3202,6 +3323,21 @@ focus_tree = {
 					}
 				}
 				add_state_core = 153
+			}
+			if = {
+				limit = {
+					848 = {
+						owner = {
+							NOT = {
+								tag = AUS
+							}
+							NOT = {
+								is_in_faction_with = ROOT
+							}
+						}
+					}
+				}
+				add_state_core = 848
 			}
 		}
 	}
@@ -4159,15 +4295,30 @@ focus_tree = {
 		prerequisite = { focus = GER_second_vienna_award }
 		available = {
 			NOT = { has_war_with = ITA }
+			ITA = {
+				has_country_leader = {
+					character = ITA_benito_mussolini
+					ruling_only = yes
+				}
+			}
 			NOT = { has_country_flag = ENG_ditched_the_italians_flag }
 		}
 
 		bypass = {
-			
 			OR = {
 				is_in_faction_with = ITA
 				has_war_with = ITA
 				NOT = { country_exists = ITA }
+				ITA = {
+					NOT = {
+						ITA = {
+							has_country_leader = {
+								character = ITA_benito_mussolini
+								ruling_only = yes
+							}
+						}
+					}
+				}
 			}
 		}
 
@@ -5321,9 +5472,15 @@ focus_tree = {
 		bypass = {
 			OR = {
 				NOT = {
-					OR = {
-						YUG = { owns_state = 102 }
-						102 = { owner = { is_subject_of = YUG } }
+					AND = {
+						OR = {
+							YUG = { owns_state = 102 }
+							102 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							YUG = { owns_state = 853 }
+							853 = { owner = { is_subject_of = YUG } }
+						}
 					}
 				}
 				has_war_with = YUG
@@ -5394,39 +5551,43 @@ focus_tree = {
 				}
 				custom_trigger_tooltip = {
 					tooltip = GER_first_ljubljana_award_tt
-				AND = {
-					NOT = { country_exists = YUG }
-					OR = {
-						owns_state = 102
-						102 = { owner = { is_subject_of = YUG } }
-					}
-					OR = {
-						owns_state = 45
-						45 = { owner = { is_subject_of = YUG } }
-					}
-					OR = { #Macedonia
-						owns_state = 106
-						106 = { owner = { is_subject_of = YUG } }
-					}
-					OR = { #New Southern Serbia state
-						owns_state = 803
-						803 = { owner = { is_subject_of = YUG } }
-					}
-					OR = { #Herzegovina
-						owns_state = 803
-						804 = { owner = { is_subject_of = YUG } }
-					}
-					OR = { #Kosovo
-						owns_state = 803
-						802 = { owner = { is_subject_of = YUG } }
-					}
-					OR = {
-						owns_state = 103
-						103 = { owner = { is_subject_of = YUG } }
-					}
-					OR = {
-						owns_state = 105
-						105 = { owner = { is_subject_of = YUG } }
+					AND = {
+						NOT = { country_exists = YUG }
+						OR = {
+							owns_state = 102
+							102 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 853
+							853 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 45
+							45 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Macedonia
+							owns_state = 106
+							106 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #New Southern Serbia state
+							owns_state = 803
+							803 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Herzegovina
+							owns_state = 804
+							804 = { owner = { is_subject_of = YUG } }
+						}
+						OR = { #Kosovo
+							owns_state = 802
+							802 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 103
+							103 = { owner = { is_subject_of = YUG } }
+						}
+						OR = {
+							owns_state = 105
+							105 = { owner = { is_subject_of = YUG } }
 						}
 					}
 				}
@@ -5585,7 +5746,7 @@ focus_tree = {
 				limit = {
 					ITA = {
 						OR = {
-							has_completed_focus = ITA_slovenia_dalmatia_claims
+							has_completed_focus = ITA_balkan_ambition
 							owns_state = 44
 						}
 						is_friend_or_potential_friend_of_GER = yes
@@ -5602,7 +5763,7 @@ focus_tree = {
 					ITA = {
 						add_opinion_modifier = { target = GER modifier = GER_first_ljubljana_award_GER }
 						if = {
-							limit = { has_completed_focus = ITA_slovenia_dalmatia_claims }
+							limit = { has_completed_focus = ITA_balkan_ambition }
 							transfer_state = 103
 						}
 						if = {
@@ -5754,7 +5915,7 @@ focus_tree = {
 					ITA = {
 						NOT = { has_war_with = GRE }
 						country_exists = ITA
-						has_completed_focus = ITA_greece_war_goal
+						has_completed_focus = ITA_war_with_greece
 						OR = {
 							is_in_faction_with = GER
 							is_in_faction = no							
@@ -6812,6 +6973,9 @@ focus_tree = {
 		available = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
+			ITA = {
+				has_government = fascism
+			}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -6820,6 +6984,16 @@ focus_tree = {
 		cost = 10
 		ai_will_do = {
 			factor = 10
+		}
+
+		select_effect = {
+			ITA = {
+				country_event = {
+				    id = wtt_germany.1006
+				    days = 1
+				    random = 2
+				}
+			}
 		}
 		
 		completion_reward = {
@@ -6843,6 +7017,13 @@ focus_tree = {
 			is_subject = no
 			NOT = { has_war_with = ITA }
 			ITA = { has_country_leader = { ruling_only = yes character = ITA_benito_mussolini } }
+			NOT = {	ITA = {	has_completed_focus = ITA_banda_carita } }
+			custom_trigger_tooltip = {
+				tooltip = GER_italy_declined_assassination_tt
+				NOT = {
+					has_country_flag = GER_italy_declined_assassination_of_mussolini_flag
+				}
+			}
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -6863,13 +7044,13 @@ focus_tree = {
 					add_popularity = { ideology = neutrality popularity = 0.1 }
 					effect_tooltip = {
 						create_country_leader = {
-							name = "Victor Emmanuel III"
-							desc = "POLITICS_VICTOR_EMMANUEL_III_DESC"
-							picture = "GFX_portrait_italy_victor_emmanuel_iii"
+							name = "vittorio Emanuele III"
+							desc = "POLITICS_VITTORIO_EMANUELE_III_DESC"
+							picture = "GFX_portrait_italy_vittorio_emanuele_iii"
 							expire = "1965.1.1"
 							ideology = despotism
 							traits = {
-						
+								the_soldier_king
 							}
 						}
 					}
@@ -7196,7 +7377,7 @@ focus_tree = {
 		
 		completion_reward = {
 			188 = { add_claim_by = GER }
-			add_named_threat = { threat = 3 name = GER_demand_memel_threat }
+			add_named_threat = { threat = 4 name = GER_demand_memel_threat }
 			random_other_country = {
 				limit = {
 					owns_state = 188
@@ -7750,7 +7931,11 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_war = no
-			SOV = { has_government = communism }
+			SOV = { 
+				NOT = {
+					has_government = democratic 
+				}
+			}
 			has_added_tension_amount < 15
 		}
 		cancel_if_invalid = yes
@@ -7811,6 +7996,10 @@ focus_tree = {
 		available = {
 			is_subject = no
 			has_war = no
+		}
+
+		bypass = {
+			is_faction_leader = yes
 		}
 		cancel_if_invalid = yes
 		x = 0
@@ -7943,6 +8132,7 @@ focus_tree = {
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = AUS }
 			NOT = { has_war_with = CZE }
 			NOT = { has_war_with = HUN }
@@ -7951,18 +8141,19 @@ focus_tree = {
 			OR = {
 				NOT = { country_exists = AUS }
 				AUS = { is_subject = yes }
-					is_in_faction_with = AUS
+				is_in_faction_with = AUS
 			}
 			OR = {
 				NOT = { country_exists = CZE }
 				CZE = { is_subject = yes }
-					is_in_faction_with = HUN
-				}
+				is_in_faction_with = HUN
+			}
 			OR = {
-					NOT = { country_exists = HUN }
+				NOT = { country_exists = HUN }
 				HUN = { is_subject = yes }
 				is_in_faction_with = HUN
 			}
+
 		}
 		cancel_if_invalid = yes
 		x = -2
@@ -7982,9 +8173,10 @@ focus_tree = {
 							has_government = communism
 							has_government = fascism
 						}
+						exists = yes
+						is_subject = no
 					}
-					exists = yes
-					is_subject = no
+					
 				}
 				AUS = {
 					country_event = { id = generic.5 }
@@ -7997,9 +8189,9 @@ focus_tree = {
 							has_government = communism
 							has_government = fascism
 						}
-					}
-					exists = yes
-					is_subject = no
+						exists = yes
+						is_subject = no
+					}					
 				}
 				CZE = {
 					country_event = { id = generic.5 }
@@ -8012,9 +8204,10 @@ focus_tree = {
 							has_government = communism
 							has_government = fascism
 						}
+						exists = yes
+						is_subject = no
 					}
-					exists = yes
-					is_subject = no
+					
 				}
 				HUN = {
 					country_event = { id = generic.5 }
@@ -8029,21 +8222,20 @@ focus_tree = {
 		prerequisite = { focus = GER_danubian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = YUG }
 			NOT = { has_war_with = ROM }
 		}
 		bypass = {
 			OR = {
-				OR = {
-					NOT = { country_exists = YUG }
-					YUG = { is_subject = yes }
-					is_in_faction_with = YUG
-				}
-				OR = {
-					NOT = { country_exists = ROM }
-					ROM = { is_subject = yes }
-					is_in_faction_with = ROM
-				}
+				NOT = { country_exists = YUG }
+				YUG = { is_subject = yes }
+				is_in_faction_with = YUG
+			}
+			OR = {
+				NOT = { country_exists = ROM }
+				ROM = { is_subject = yes }
+				is_in_faction_with = ROM
 			}
 		}
 		cancel_if_invalid = yes
@@ -8080,10 +8272,10 @@ focus_tree = {
 							has_government = communism
 							has_government = fascism
 						}
+						is_in_faction = no
+						exists = yes
+						is_subject = no
 					}
-					is_in_faction = no
-					exists = yes
-					is_subject = no
 				}
 				ROM = {
 					country_event = { id = generic.5 }
@@ -8232,27 +8424,26 @@ focus_tree = {
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = HOL }
 			NOT = { has_war_with = BEL }
 			NOT = { has_war_with = LUX }
 		}
 		bypass = {
 			OR = {
-				OR = {
-					NOT = { country_exists = HOL }
-					HOL = { is_subject = yes }
-					is_in_faction_with = HOL
-				}
-				OR = {
-					NOT = { country_exists = BEL }
-					BEL = { is_subject = yes }
-					is_in_faction_with = BEL
-				}
-				OR = {
-					NOT = { country_exists = LUX }
-					LUX = { is_subject = yes }
-					is_in_faction_with = LUX
-				}
+				NOT = { country_exists = HOL }
+				HOL = { is_subject = yes }
+				is_in_faction_with = HOL
+			}
+			OR = {
+				NOT = { country_exists = BEL }
+				BEL = { is_subject = yes }
+				is_in_faction_with = BEL
+			}
+			OR = {
+				NOT = { country_exists = LUX }
+				LUX = { is_subject = yes }
+				is_in_faction_with = LUX
 			}
 		}
 		cancel_if_invalid = yes
@@ -8451,27 +8642,26 @@ focus_tree = {
 		prerequisite = { focus = GER_central_european_alliance }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = NOR }
 			NOT = { has_war_with = SWE }
 			NOT = { has_war_with = DEN }
 		}
 		bypass = {
 			OR = {
-				OR = {
-					NOT = { country_exists = NOR }
-					NOR = { is_subject = yes }
-					is_in_faction_with = NOR
-				}
-				OR = {
-					NOT = { country_exists = SWE }
-					SWE = { is_subject = yes }
-					is_in_faction_with = SWE
-				}
-				OR = {
-					NOT = { country_exists = DEN }
-					DEN = { is_subject = yes }
-					is_in_faction_with = DEN
-				}
+				NOT = { country_exists = NOR }
+				NOR = { is_subject = yes }
+				is_in_faction_with = NOR
+			}
+			OR = {
+				NOT = { country_exists = SWE }
+				SWE = { is_subject = yes }
+				is_in_faction_with = SWE
+			}
+			OR = {
+				NOT = { country_exists = DEN }
+				DEN = { is_subject = yes }
+				is_in_faction_with = DEN
 			}
 		}
 		cancel_if_invalid = yes
@@ -8536,6 +8726,7 @@ focus_tree = {
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = EST }
 			NOT = { has_war_with = LAT }
 			NOT = { has_war_with = LIT }
@@ -8669,6 +8860,7 @@ focus_tree = {
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = POL }
 			SOV = { NOT = { has_war_with = POL } }
 		}
@@ -8754,6 +8946,7 @@ focus_tree = {
 		prerequisite = { focus = GER_scandinavian_membership }
 		available = {
 			is_subject = no
+			is_faction_leader = yes
 			NOT = { has_war_with = FIN }
 			SOV = { NOT = { has_war_with = FIN } }
 		}

@@ -938,34 +938,34 @@ units = {
 }
 
 ### Air Wings
-air_wings = {
-	# Z.d'Op. Aériennes Est -- Reims
-	18 = {
-		fighter_equipment_0 = {
-			owner = "FRA" 
-			amount = 432
-		}
-		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
-			modifier="fighter_genius"
-			name="Too"
-			surname="Puppies"
-			callsign="MANY"
-			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
-		}
-		tac_bomber_equipment_0 =  {
-			owner = "FRA" 
-			amount = 24
-		}
-		tac_bomber_equipment_1 =  {
-			owner = "FRA" 
-			amount = 180
-		}
-		nav_bomber_equipment_1 = {
-			owner = "FRA" 
-			amount = 24
-		}
-	}
-}
+#air_wings = {
+#	# Z.d'Op. Aériennes Est -- Reims
+#	18 = {
+#		fighter_equipment_0 = {
+#			owner = "FRA" 
+##			amount = 432
+#		}
+#		ace={ # Order is important. Ace will be assigned to the wing above (fighter_equipment_0).
+#			modifier="fighter_genius"
+#			name="Too"
+#			surname="Puppies"
+##			callsign="MANY"
+#			portrait=1 # Pick random index here, or make special GFX_GER_ace_Erich_Hartmann to override.
+#		}
+#		tac_bomber_equipment_0 =  {
+#			owner = "FRA" 
+#			amount = 24
+#		}
+#		tac_bomber_equipment_1 =  {
+##			owner = "FRA" 
+#			amount = 180
+#		}
+#		nav_bomber_equipment_1 = {
+#			owner = "FRA" 
+##			amount = 24
+#		}
+#	}
+#}
 
 #########################
 ## STARTING PRODUCTION ##

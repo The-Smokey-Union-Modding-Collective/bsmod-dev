@@ -68,3 +68,14 @@
 
  dockyard_expansion_flag_not_set:0 "Dockyards already expanded!"
  dockyard_expansion_flag:0 "Dockyards have not been expanded!"
+
+ join_axis_category:0 "The Axis Powers"
+ join_axis_category_desc:0 "Germany is turning rapidly towards militarism, and europe now faces a new war. In the east the great bolshevik threat grows stronger as we speak, threatening to destroy all we love. As the Allied nations do not desire war we need to look towards Germany as a protector nation as they are the only ones that can protect us!"
+ join_the_axis:0 "Join the Axis Powers"
+ join_axis_category_ITA:0 "The Axis Powers"
+ join_axis_category_ITA_desc:0 "Our ambition is to dominate the mediterranean but our military is not mighty enough to defeat the allies alone (despite what we write in the newspapers. If we wish to achieve our glorious place as the leader of africa and southern europe we need to ally with the mighty Germans against the allies!"
+ join_the_axis_ITA:0 "Join the Axis Powers"
+
+ join_allies_category:0 "The Allied Powers"
+ join_allies_category_desc:0 "The Germans are again threatening the peace in Europe. As a nation that claims to follow democratic virtues and as an enemy of the Germans we should naturally search for allies. England and her colonies are the natural allies we need."
+ join_the_allies:0 "Join the Allied Powers"

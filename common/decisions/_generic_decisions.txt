@@ -3432,3 +3432,93 @@ foreign_support = {
 		}
 	}
 }
+
+join_axis_category = {
+
+	join_the_axis = {
+		icon = generic_decision
+
+		allowed = { 
+		} 
+
+		available = {
+			NOT = {
+				is_ai = yes
+			}
+			OR = {
+				tag = HUN
+				tag = ROM
+				tag = BUL
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			GER = { add_to_faction = ROOT }
+		}
+	}
+}
+
+join_axis_category_ITA = {
+
+	join_the_axis_ITA = {
+		icon = generic_decision
+
+		allowed = { 
+		} 
+
+		available = {
+			tag = ITA
+			NOT = {
+				is_ai = yes
+			}
+			NOT = {
+				is_in_faction_with = GER
+			}
+		}
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			GER = { add_to_faction = ROOT }
+		}
+	}
+}
+
+join_allies_category = {
+	
+	join_the_allies = {
+		icon = generic_decision
+
+		allowed = { 
+		} 
+
+		available = {
+			tag = FRA
+			NOT = {
+				is_ai = yes
+			}
+			NOT = {
+				is_in_faction_with = ENG
+			}
+		}
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			ENG = { add_to_faction = ROOT }
+		}
+	}
+}
+
+

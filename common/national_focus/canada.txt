@@ -3796,10 +3796,7 @@ focus_tree = {
 				name = CAN_we_have_the_hurricane
 				bonus = 1.0
 				uses = 1
-				technology = early_fighter
-				technology = fighter1
-				technology = fighter2
-				technology = fighter3
+				category = light_air
 			}
 		}
 	}
@@ -4107,8 +4104,7 @@ focus_tree = {
 				name = CAN_fund_fairchilds_development
 				bonus = 1.0
 				uses = 1
-				category = tactical_bomber
-				category = cas_bomber
+				category = medium_air
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_fairchild_aircraft_ltd
@@ -4151,7 +4147,7 @@ focus_tree = {
 				name = CAN_cookie_carriers
 				bonus = 1.0
 				uses = 1
-				category = cat_strategic_bomber
+				category = heavy_air
 			}
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = CAN_handley_page

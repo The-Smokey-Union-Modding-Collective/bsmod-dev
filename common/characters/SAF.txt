@@ -538,18 +538,16 @@ characters={
 		advisor={
 			slot = political_advisor
 			idea_token = SAF_abram_fischer
-
 			allowed = {
-				always = no # bsmod change to remove communist guy
 				original_tag = SAF
 			}
 			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					#has_completed_focus = SAF_empower_the_workers 
-				}
+				# if = {
+				# 	limit = {
+				# 		has_dlc = "Together for Victory"
+				# 	}
+				# 	has_completed_focus = SAF_empower_the_workers 
+				# }
 				if = {
 					limit = {
 						has_dlc = "Man the Guns"

@@ -11,3 +11,58 @@ SOV_finnish_surrender_category = {
 		SOV = { has_war_with = FIN }
 	}
 }
+
+ITA_ethiopian_surrender_category = {
+	icon = generic_fascism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		date < 1937.01.01
+	}
+}
+
+ITA_yugoslavian_surrender_category = {
+	icon = generic_fascism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		ITA = { has_war_with = YUG }
+	}
+}
+
+ITA_greek_surrender_category = {
+	icon = generic_fascism
+	
+	priority = 10
+	
+	allowed = {
+		original_tag = ITA
+	}
+
+	visible = {
+		ITA = { has_war_with = GRE }
+	}
+}
+
+ETH_ethiopian_surrender_category = {
+	
+	allowed = {
+		original_tag = ETH
+	}
+
+	visible = {
+		has_war_with = ITA
+	}
+	
+	priority = 10
+}

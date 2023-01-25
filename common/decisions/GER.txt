@@ -25,6 +25,7 @@ GER_operations_category = {
 				target = POL
 				type = annex_everything
 			}
+			ENG = { add_to_faction = POL }
 			POL = {
 				FRA = {
 					add_to_war = { 
@@ -1519,7 +1520,7 @@ GER_military_buildup = {
 					size < 750
 				}
 				has_equipment = {
-					fighter_equipment < 250
+					small_plane_airframe < 250
 				}
 			}
 			NOT = {
@@ -1541,7 +1542,7 @@ GER_military_buildup = {
 					size < 750
 				}
 				has_equipment = {
-					fighter_equipment < 250
+					small_plane_airframe < 250
 				}
 			}
 			NOT = {
