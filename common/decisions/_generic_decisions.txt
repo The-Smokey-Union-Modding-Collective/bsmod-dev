@@ -3489,6 +3489,7 @@ join_axis_category_ITA = {
 
 		complete_effect = {
 			GER = { add_to_faction = ROOT }
+			complete_national_focus = ITA_pact_of_steel
 		}
 	}
 }
