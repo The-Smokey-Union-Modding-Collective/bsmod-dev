@@ -295,7 +295,15 @@ technologies = {
 		industrial_capacity_factory = 0.15
 		industrial_capacity_dockyard = 0.1
 		global_building_slots_factor = 0.20
-		
+		on_research_complete = {
+			hidden_effect = {
+					remove_idea = remove_idea
+					remove_idea = railway_gun_idea2
+					remove_idea = railway_gun_idea3
+					remove_idea = railway_gun_idea4
+					remove_idea = railway_gun_idea5
+			}		
+		}
 		path = {
 			leads_to_tech = concentrated_industry2 
 			research_cost_coeff = 1
