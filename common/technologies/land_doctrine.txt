@@ -58,7 +58,7 @@ technologies = {
 		xp_unlock_cost = 100
 		
 		category_all_infantry = {
-			max_organisation = 15
+			max_organisation = 5
 		}
 		
 		
@@ -249,7 +249,7 @@ technologies = {
 		xp_research_type = army
 		xp_unlock_cost = 100
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 4
 		}	
 		
 		
@@ -301,14 +301,14 @@ technologies = {
 		xp_unlock_cost = 100
 
 		motorized = {
-			max_organisation = 15
+			max_organisation = 7
 			
 		}
 		mechanized = {
-			max_organisation = 15
+			max_organisation = 7
 		}
 		amphibious_mechanized = {
-			max_organisation = 15
+			max_organisation = 7
 		}
 		
 		armored_car = {
@@ -562,7 +562,7 @@ technologies = {
 		xp_unlock_cost = 100
 		category_all_infantry = {
 			default_morale = 0.2
-			max_organisation = 10
+			max_organisation = 6
 		}
 		# faster planning
 		planning_speed = 0.2
@@ -624,7 +624,7 @@ technologies = {
 		}
 		
 		category_all_infantry = {
-			max_organisation = 10
+			max_organisation = 6
 		}
 		category_tanks = {
 			max_organisation = 2
