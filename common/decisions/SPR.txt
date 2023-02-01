@@ -18197,12 +18197,12 @@ SPR_recovering_from_civil_war = {
 
 		available = {
 			FROM = {
-				compliance > 35
+				compliance > 5
 			}
 			has_equipment = {
-			    infantry_equipment > 2000
+			    infantry_equipment > 2
 			}
-			has_army_experience > 10
+			has_army_experience > 1
 		}
 
 		state_target = yes
@@ -18226,7 +18226,7 @@ SPR_recovering_from_civil_war = {
 			}
 		}
 
-		cost = 40
+		cost = 20
 
 		fire_only_once = yes
 
@@ -18237,7 +18237,7 @@ SPR_recovering_from_civil_war = {
 		}
 
 		modifier = {
-			weekly_manpower = -300
+			weekly_manpower = -1
 		}
 
 		visible = {
@@ -18254,9 +18254,9 @@ SPR_recovering_from_civil_war = {
 		complete_effect = {
 			add_equipment_to_stockpile = {
 			    type = infantry_equipment
-			    amount = -2000
+			    amount = -2
 			}
-			army_experience = -10
+			army_experience = -1
 		}
 
 		remove_effect = {
