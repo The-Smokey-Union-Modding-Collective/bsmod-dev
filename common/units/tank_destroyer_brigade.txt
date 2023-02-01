@@ -27,7 +27,7 @@ sub_units = {
 			light_tank_destroyer_chassis = 50
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -0.3
 		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 90
@@ -95,7 +95,7 @@ sub_units = {
 			medium_tank_destroyer_chassis = 50
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -0.3
 		default_morale = 0.3
 		max_strength = 0.6
 		training_time = 90
@@ -166,7 +166,7 @@ sub_units = {
 			heavy_tank_destroyer_chassis = 40
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -0.3
 		default_morale = 0.3
 		max_strength = 0.6
 		weight = 1.5
