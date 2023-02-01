@@ -219,7 +219,8 @@ leader_traits = {
 		
 		modifier = {
 			planning_speed = -0.20
-			wounded_chance_factor = -0.5
+			org_loss_when_moving = -0.1
+			army_speed_factor = -0.05
 		}
 		
 		
@@ -251,7 +252,7 @@ leader_traits = {
 		
 		modifier = {
 			planning_speed = 0.20
-			wounded_chance_factor = 100.0  # +50% chance to get wounded
+			org_loss_when_moving = 0.2
 		}
 		
 		new_commander_weight = {
