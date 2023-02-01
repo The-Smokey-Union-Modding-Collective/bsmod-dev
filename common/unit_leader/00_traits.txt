@@ -251,7 +251,7 @@ leader_traits = {
 		
 		modifier = {
 			planning_speed = 0.20
-			wounded_chance_factor = 0.5  # +50% chance to get wounded
+			wounded_chance_factor = 100.0  # +50% chance to get wounded
 		}
 		
 		new_commander_weight = {
