@@ -27,10 +27,10 @@ NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.25		--vanilla=-0.25
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = 0	--vanilla=-0.05
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0	--vanilla=-0.1
 NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1	--vanilla=2
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 2.0			--vanilla=2	
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 3.0		--vanilla=3	
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 1.0		--vanilla=1
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 1.0		--vanilla=1
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0			--vanilla=2	
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0		--vanilla=3	
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0		--vanilla=1
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=0.01
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
@@ -74,6 +74,8 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 300, -- NAVAL_MINES_SWEEPING vanilla=0.0
 0.0, -- MISSION_RECON
 }
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0 --vanilla 1.0
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75 --vanilla 0.75
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
