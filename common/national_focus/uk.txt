@@ -1231,18 +1231,7 @@ focus_tree = {
 					}
 					create_equipment_variant = {
 						name = "Fairey Barracuda"
-						type = small_plane_airframe_2
-						parent_version = 0
-						modules = {
-							fixed_main_weapon_slot = torpedo_mounting
-							special_type_slot_1 = lmg_defense_turret
-							engine_type_slot = engine_3_1x
-						}
-						icon = "GFX_ENG_naval_bomber3_medium"
-					}
-					create_equipment_variant = {
-						name = "Fairey Barracuda"
-						type = cv_small_plane_airframe_2
+						type = cv_small_plane_naval_bomber_airframe_2
 						parent_version = 0
 						modules = {
 							fixed_main_weapon_slot = torpedo_mounting
