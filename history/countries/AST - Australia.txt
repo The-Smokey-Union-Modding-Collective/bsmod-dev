@@ -117,6 +117,7 @@ recruit_character = AST_horace_robertson
 recruit_character = AST_john_northcott
 recruit_character = AST_harold_farncomb
 recruit_character = AST_victor_crutchley
+recruit_character = AST_john_hank
 recruit_character = AST_clive_caldwell
 recruit_character = AST_sydney_rowell
 recruit_character = AST_richard_williams
