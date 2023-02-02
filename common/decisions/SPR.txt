@@ -18196,9 +18196,6 @@ SPR_recovering_from_civil_war = {
 		}
 
 		available = {
-			FROM = {
-				compliance > 5
-			}
 			has_equipment = {
 			    infantry_equipment > 2
 			}
