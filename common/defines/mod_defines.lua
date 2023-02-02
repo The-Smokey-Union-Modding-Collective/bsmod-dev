@@ -55,6 +55,8 @@ NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0	-- how much enemy combat wid
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4				-- num stats gained on level up
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
 NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.002,    -- vanilla 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.002,    -- vanilla 0.032
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
