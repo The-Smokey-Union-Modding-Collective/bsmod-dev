@@ -170,6 +170,19 @@ buildings = {
 		fuel_gain_from_states = 2.0 #per hour
 	}
 
+	resource_depot = {
+		show_on_map = 0
+		base_cost = 25000
+		icon_frame = 10
+		refinery = yes
+		max_level = 3 # This is the max unlock level
+		shares_slots = yes
+		value = 5
+		infrastructure_construction_effect = yes
+		
+		show_modifier = yes
+	}
+
 	fuel_silo = {
 		show_on_map = 1
 		base_cost = 5000
