@@ -2720,7 +2720,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_join_the_axis }
+		prerequisite = { focus = SPA_the_army_of_africa_model }
 		
 		icon = GFX_goal_generic_army_tanks
 		x = 1
@@ -2814,16 +2814,8 @@ focus_tree = {
 
 	focus = {
 		id = SPA_fascist_economic_aid
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
 		bypass = {
 		}
-		prerequisite = { focus = SPA_join_the_axis }
 		prerequisite = { focus = SPA_national_recovery }
 		mutually_exclusive = { focus = SPA_autarky }
 		
@@ -2868,10 +2860,6 @@ focus_tree = {
 			has_full_control_of_state = 176
 			has_full_control_of_state = 792
 			has_full_control_of_state = 41
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
 		}
 		bypass = {
 		}
@@ -2952,10 +2940,6 @@ focus_tree = {
 	focus = {
 		id = SPA_improve_cross_country_railways
 		available = {
-			any_allied_country = {
-				is_major = yes
-				has_government = fascism
-			}
 			has_full_control_of_state = 169
 			has_full_control_of_state = 789
 			has_full_control_of_state = 175
@@ -2996,13 +2980,6 @@ focus_tree = {
 
 	focus = {
 		id = SPA_support_the_war_industry
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_facilitate_pyrenees_freight_transports }
@@ -3098,9 +3075,6 @@ focus_tree = {
 
 	focus = {
 		id = SPA_italian_shipbuilding_expertise
-		available = {
-			is_in_faction_with = ITA
-		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry }
@@ -3126,13 +3100,6 @@ focus_tree = {
 
 	focus = {
 		id = SPA_the_duty_to_work
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry }
@@ -3152,13 +3119,6 @@ focus_tree = {
 
 	focus = {
 		id = SPA_expand_the_war_industry
-		available = {
-			any_country = {
-				is_in_faction_with = ROOT
-				has_government = fascism
-				is_major = yes
-			}
-		}
 		bypass = {
 		}
 		prerequisite = { focus = SPA_support_the_war_industry focus = SPA_expand_the_axis_gold_trade }
