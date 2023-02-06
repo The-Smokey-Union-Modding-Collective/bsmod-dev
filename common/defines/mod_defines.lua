@@ -18,7 +18,9 @@ NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
+NDefines.NProduction.BASE_FACTORY_SPEED = 5					--vanilla=5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5					--vanilla=4.5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5				--vanilla=2.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	--vanilla=100000
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1				--vanilla=30
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0					--vanilla=1
