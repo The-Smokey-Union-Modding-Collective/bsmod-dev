@@ -4796,9 +4796,9 @@ country_event = {
 						advisor = {
 							slot = air_chief
 							idea_token = ITA_aldo_pellegrini
-							allowed = {
-								original_tag = ITA
-							}
+							# allowed = {
+							# 	original_tag = ITA
+							# }
 							traits = {
 								air_chief_ground_support_2
 							}
@@ -4823,9 +4823,9 @@ country_event = {
 						advisor = {
 							slot = air_chief
 							idea_token = ITA_aldo_pellegrini
-							allowed = {
-								original_tag = ITA
-							}
+							# allowed = {
+							# 	original_tag = ITA
+							# }
 							traits = {
 								air_chief_ground_support_2
 							}
