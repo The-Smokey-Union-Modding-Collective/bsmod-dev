@@ -532,7 +532,7 @@ technologies = {
 		global_building_slots_factor = 0.2
 		
 		on_research_complete = {
-			custom_effect_tooltip = railwagun_ic_fix_tt
+			custom_effect_tooltip = railwaygun_ic_fix_tt
 			hidden_effect = {
 				add_ideas = railway_gun_idea
 			}	
