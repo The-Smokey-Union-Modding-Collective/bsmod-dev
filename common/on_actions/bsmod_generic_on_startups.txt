@@ -111,6 +111,74 @@ on_actions = {
 		}
 	}
 
+	on_startup = {
+		effect = {
+			645 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			648 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			646 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			638 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			684 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			647 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			633 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			639 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			725 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			643 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			632 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			631 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			630 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			727 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			642 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			734 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			635 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			636 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			726 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			641 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+			270 = {
+				add_dynamic_modifier = { modifier = mod_small_island }
+			}
+		}
+	}
+
 	#Mexican 
 	on_startup = {
         effect = {

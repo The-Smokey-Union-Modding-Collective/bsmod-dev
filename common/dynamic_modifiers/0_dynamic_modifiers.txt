@@ -1261,3 +1261,9 @@ RAJ_industrialized_personnel = {
 	state_resources_factor = 0.15
 	state_production_speed_buildings_factor = 0.15
 }
+
+mod_small_island = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_production_speed_air_base_factor = -10
+}
