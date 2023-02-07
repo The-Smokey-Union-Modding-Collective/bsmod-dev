@@ -297,11 +297,11 @@ technologies = {
 		global_building_slots_factor = 0.20
 		on_research_complete = {
 			hidden_effect = {
-					remove_idea = railway_gun_idea
-					remove_idea = railway_gun_idea2
-					remove_idea = railway_gun_idea3
-					remove_idea = railway_gun_idea4
-					remove_idea = railway_gun_idea5
+				remove_ideas = railway_gun_idea
+				remove_ideas = railway_gun_idea2
+				remove_ideas = railway_gun_idea3
+				remove_ideas = railway_gun_idea4
+				remove_ideas = railway_gun_idea5
 			}		
 		}
 		path = {
