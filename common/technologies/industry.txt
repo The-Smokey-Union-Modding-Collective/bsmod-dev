@@ -2080,18 +2080,58 @@ technologies = {
 	}
 	#####################################
 	
+	
+	general_construction = {
+		
+		production_speed_buildings_factor = 0.1
+		
+		path = {
+			leads_to_tech = civilian_construction1
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = military_construction1
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1936
+		categories = {
+			industry
+			construction_tech
+		}
+		
+		folder = {
+			name = industry_folder
+			position = { x = -3 y = -2 }
+		}
+		
+		ai_will_do = {
+			factor = 50
+			
+			modifier = {
+				factor = 5
+				date > "1937.1.1"
+			}
+		}
+	}
+
 	civilian_construction1 = {
 		
 		production_speed_industrial_complex_factor = 0.10
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.10
 
 		path = {
 			leads_to_tech = civilian_construction2
 			research_cost_coeff = 1
 		}
 		
-
+		XOR = {
+			military_construction1
+		}
 		
 		research_cost = 2
 		start_year = 1936
@@ -2120,6 +2160,7 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.10
 		
 		path = {
 			leads_to_tech = civilian_construction3 
@@ -2155,6 +2196,7 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.10
 		
 		path = {
 			leads_to_tech = civilian_construction4
@@ -2200,6 +2242,7 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.10
 		
 		path = {
 			leads_to_tech = civilian_construction5
@@ -2234,6 +2277,7 @@ technologies = {
 		production_speed_industrial_complex_factor = 0.1
 		production_speed_buildings_factor = 0.05
 		industry_repair_factor = 0.10
+		global_building_slots_factor = 0.10
 		
 		path = {
 			research_cost_coeff = 1
@@ -2265,7 +2309,7 @@ technologies = {
 
 	military_construction1 = {
 
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.15
 		production_speed_supply_node_factor = 0.05
 
@@ -2278,6 +2322,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
+		XOR = {
+			civilian_construction1
+		}
 		
 		research_cost = 2
 		start_year = 1938
@@ -2304,7 +2351,7 @@ technologies = {
 
 	military_construction2 = {
 
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.15
 		production_speed_supply_node_factor = 0.05
 		path = {
@@ -2342,7 +2389,7 @@ technologies = {
 
 	military_construction3 = {
 
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.15
 		production_speed_supply_node_factor = 0.05
 		path = {
@@ -2380,7 +2427,7 @@ technologies = {
 
 	military_construction4 = {
 
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.15
 		production_speed_supply_node_factor = 0.05
 		path = {
@@ -2418,7 +2465,7 @@ technologies = {
 
 	military_construction5 = {
 
-		production_speed_arms_factory_factor = 0.15
+		production_speed_arms_factory_factor = 0.1
 		production_speed_dockyard_factor = 0.15
 		production_speed_supply_node_factor = 0.05
 
