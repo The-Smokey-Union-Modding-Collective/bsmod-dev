@@ -34,6 +34,7 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0		--vanilla=3
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=0.01
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 2 -- vanilla = 1 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
