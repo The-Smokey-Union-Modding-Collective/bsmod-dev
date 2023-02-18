@@ -39,32 +39,39 @@ sub_units = {
 		hard_attack = -0.3
 		suppression = 1.0
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+			attack = -0.2
 		}
-		mountain = 	{
-		    attack = -0.1
-		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.3 
-			movement = -0.1
+		hills = {
+			attack = -0.2
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
-		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
-		}
-		amphibious = { 
 			attack = -0.6
 		}
+		jungle = {
+			attack = -0.3
+		}
+		marsh = {
+			attack = -0.4
+		}
+		mountain = {
+			attack = -0.35
+		}
+		river = {
+			attack = -0.60
+		}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	medium_tank_destroyer_brigade = {
@@ -106,35 +113,39 @@ sub_units = {
 		
 		suppression = 1.25
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+			attack = -0.3
 		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
+		hills = {
+			attack = -0.3
 		}
 		urban = {
+			attack = -0.5
+		}
+		jungle = {
 			attack = -0.4
-			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
+		marsh = {
+			attack = -0.5
 		}
-		amphibious = { 
-			attack = -0.7
+		mountain = {
+			attack = -0.55
 		}
+		river = {
+			attack = -0.40
+		}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	heavy_tank_destroyer_brigade = {
@@ -176,38 +187,39 @@ sub_units = {
 
 		suppression = 1.25
 		
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.40
-			movement = -0.40
+			attack = -0.4
 		}
 		hills = {
-		    attack = -0.20
-		}
-		mountain = 	{
-		    attack = -0.3
-		}
-		jungle = {
-		    attack = -0.6
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.4 
-			movement = -0.2
+			attack = -0.4
 		}
 		urban = {
+			attack = -0.3
+		}
+		jungle = {
 			attack = -0.5
-			defence = -0.2
 		}
-		river = { 
-			attack = -0.4 
-			movement = -0.4
+		marsh = {
+			attack = -0.6
 		}
-		amphibious = { 
-			attack = -0.8 
+		mountain = {
+			attack = -0.65
 		}
-		fort = {
-			attack = 0.05
+		river = {
+			attack = -0.10
 		}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	super_heavy_tank_destroyer_brigade = {
@@ -248,37 +260,38 @@ sub_units = {
 
 		suppression = 1.25
 
+		plains = {
+			attack = 0.15
+		}
+		desert = {
+			attack = 0.15
+		}
 		forest = {
-		    attack = -0.5
-			movement = -0.4
+		    attack = -0.50
 		}
 		hills = {
-		    attack = -0.3
-		}
-		mountain = 	{
-		    attack = -0.4
-		}
-		jungle = {
-		    attack = -0.7
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.5 
-			movement = -0.2
+			attack = -0.50
 		}
 		urban = {
-			attack = -0.6
-			defence = -0.2
+		    attack = -0.1
+		}
+		jungle = {
+		    attack = -0.8
+		}
+		marsh = {
+			attack = -0.9
+		}
+		mountain = {
+		    attack = -0.8 
 		}
 		river = { 
-			attack = -0.5
-			movement = -0.5
+			attack = 0.1
 		}
 		amphibious = { 
-			attack = -1.0
+			attack = -0.9
 		}
 		fort = {
-			attack = 0.3
+			attack = 0.35
 		}
 	}
 	
@@ -321,35 +334,39 @@ sub_units = {
 
 		suppression = 1.25
 		
+		plains = {
+			attack = 0.15
+		}
+		desert = {
+			attack = 0.15
+		}
 		forest = {
-		    attack = -0.3
-			movement = -0.4
+			attack = -0.25
 		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
+		hills = {
+			attack = -0.35
 		}
 		urban = {
+			attack = -0.2
+		}
+		jungle = {
+			attack = -0.6
+		}
+		marsh = {
+			attack = -0.5
+		}
+		mountain = {
 			attack = -0.4
-			defence = -0.1
 		}
 		river = { 
-			attack = -0.2 
-			movement = -0.2
+			attack = -0.25
 		}
 		amphibious = { 
-			attack = -0.7
+			attack = -0.6
 		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 
 
