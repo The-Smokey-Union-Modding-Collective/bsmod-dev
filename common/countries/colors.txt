@@ -819,3 +819,7 @@ CHU = {
 	color = rgb { 191 128 64 }
 	color_ui = rgb { 134 89 45 }
 }
+AOI = {
+	color = rgb { 0 153 51 }
+	color_ui = rgb { 0 153 51 }
+}

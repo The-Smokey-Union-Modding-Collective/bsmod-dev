@@ -5494,7 +5494,7 @@ focus_tree = {
 					}
 					create_equipment_variant = {
 						name = "Republic P-47 'Thunderbolt"
-						type = small_plane_airframe_2
+						type = small_plane_cas_airframe_2
 						parent_version = 0
 						modules = {
 							fixed_main_weapon_slot = bomb_locks

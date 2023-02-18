@@ -239,6 +239,7 @@ focus_tree = {
 				uses = 1
 				category = industry
 			}
+			add_ideas = CAN_dollar_a_year_men
 		}
 	}
 

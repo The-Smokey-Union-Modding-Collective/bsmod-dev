@@ -5524,6 +5524,8 @@ leader_traits = {
 		equipment_bonus = {
 			armor = {
 				reliability = 0.05
+				hard_attack = 0.02
+				soft_attack = 0.02
 			}
 		}
 

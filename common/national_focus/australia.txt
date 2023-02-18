@@ -1916,8 +1916,7 @@
 	focus = {
 		id = AST_western_australian_government_railways
 		icon = GFX_goal_generic_construct_infrastructure
-		prerequisite = { focus = AST_standard_gauge_railway }
-		prerequisite = { focus = AST_industries_assistance_corporation }
+		prerequisite = { focus = AST_standard_gauge_railway focus = AST_industries_assistance_corporation }
 		x = 1
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
@@ -3330,7 +3329,7 @@
 		id = AST_CSIR
 		icon = GFX_goal_tfv_generic_tech_sharing
 		prerequisite = { focus = AST_adopt_westminster }
-		x = -1
+		x = 0
 		y = 3
 		relative_position_id = AST_support_the_policy_of_appeasement
 
@@ -3386,6 +3385,10 @@
 				NOT = { AST = { has_completed_focus = AST_the_singapore_strategy } } #ENG can defend its own stuff!
 				factor = 0.2
 			}
+		}
+
+		allow_branch = {
+			AST = { has_focus_tree = generic_focus }
 		}
 
 		available = {
@@ -3518,7 +3521,7 @@
 	focus = {
 		id = AST_empire_air_training_scheme
 		icon = GFX_goal_generic_air_fighter2
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
+		prerequisite = { focus = AST_CSIR  }
 		x = -1
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement
@@ -3556,7 +3559,7 @@
 	focus = {
 		id = AST_commonwealth_aircraft_corporation
 		icon = GFX_goal_generic_air_fighter
-		prerequisite = { focus = AST_CSIR focus = AST_swpa_protector }
+		prerequisite = { focus = AST_CSIR  }
 		x = 1
 		y = 4
 		relative_position_id = AST_support_the_policy_of_appeasement

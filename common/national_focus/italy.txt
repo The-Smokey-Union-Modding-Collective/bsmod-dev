@@ -8571,6 +8571,111 @@ focus_tree = {
 				unlock_decision_tooltip = ITA_bop_slander_the_duce
 				unlock_decision_tooltip = ITA_bop_criticize_the_war
 			}
+			
+			custom_effect_tooltip = aoi_founded_tt
+
+			hidden_effect = {
+				set_global_flag = italian_east_africa_flag
+
+				# Shewa
+				AOI = {
+					transfer_state = 271
+				}
+
+				# Wello
+				AOI = {
+					transfer_state = 843
+				}
+
+				# Afar
+				AOI = {
+					transfer_state = 908
+				}
+
+				# Tigray
+				AOI = {
+					transfer_state = 842
+				}
+
+				# Begemder
+				AOI = {
+					transfer_state = 841
+				}
+
+				# Eritrea
+				AOI = {
+					transfer_state = 550
+				}
+
+				# Gojjam
+				AOI = {
+					transfer_state = 840
+				}
+
+				# Welega
+				AOI = {
+					transfer_state = 839
+				}
+
+				# Illubabor-Kaffa
+				AOI = {
+					transfer_state = 838
+				}
+
+				# Sidamo
+				AOI = {
+					transfer_state = 837
+				}
+
+				# Bale
+				AOI = {
+					transfer_state = 836
+				}
+
+				# Hararghe
+				AOI = {
+					transfer_state = 835
+				}
+
+				# Somaliland
+				AOI = {
+					transfer_state = 559
+				}
+
+				# Jubaland
+				AOI = {
+					transfer_state = 844
+				}
+
+				set_autonomy = {
+				    target = AOI
+				    autonomy_state = autonomy_puppet
+				    end_wars = no
+				    end_civil_wars = no
+				}
+
+				AOI = {
+					add_manpower = 100000
+					add_ideas = {
+						AOI_enrico_cerulli
+						AOI_africa_orientale_italiana_idea
+					}
+					add_offsite_building = { type = industrial_complex level = 4 }
+					add_offsite_building = { type = arms_factory level = 4 }
+					add_equipment_to_stockpile = {
+					    type = infantry_equipment
+					    amount = 5000
+					    producer = ITA
+					}
+					if = {
+						limit = {
+							has_dlc = "La Resistance"
+						}
+						create_intelligence_agency = yes
+					}
+					set_cosmetic_tag = AOI_Italian
+				}
+			}
 		}
 	}
 
@@ -14808,35 +14913,9 @@ focus_tree = {
 			add_state_claim = 103 #DALMATIA
 			add_state_claim = 105 #MONTENEGRO
 
-			if = {
-				limit = {
-					country_exists = CRO
-					OR = {
-						103 = { is_fully_controlled_by = CRO }
-						105 = { is_fully_controlled_by = CRO }
-					}
-				}
-				activate_targeted_decision = { target = CRO decision = ITA_send_ultimatum_to_country_balkan }
-			}
-			if = {
-				limit = {
-					country_exists = MNT
-					OR = {
-						103 = { is_fully_controlled_by = MNT }
-						105 = { is_fully_controlled_by = MNT }
-					}
-				}
-				activate_targeted_decision = { target = MNT decision = ITA_send_ultimatum_to_country_balkan }
-			}
-			if = {
-				limit = {
-					country_exists = YUG
-					OR = {
-						103 = { is_fully_controlled_by = YUG }
-						105 = { is_fully_controlled_by = YUG }
-					}
-				}
-				activate_targeted_decision = { target = YUG decision = ITA_send_ultimatum_to_country_balkan }
+			create_wargoal = {
+				target = YUG
+				type = annex_everything
 			}	
 		}
 	}

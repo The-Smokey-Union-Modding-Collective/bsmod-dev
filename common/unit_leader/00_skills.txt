@@ -136,10 +136,10 @@ leader_skills = {
 		cost = 500
 		type = corps_commander
 		modifier = {
-			offence = 0.01 
-			defence = 0.01
-			max_planning = 0.02 
-			supply_consumption_factor = -0.01
+			offence = 0.025 
+			defence = 0.025
+			max_planning = 0.04 
+			supply_consumption_factor = -0.025
 		}
 	}
 		
@@ -147,10 +147,10 @@ leader_skills = {
 		cost = 500
 		type = corps_commander
 		modifier = {
-			offence = 0.02 
-			defence = 0.02 
-			max_planning = 0.04
-			supply_consumption_factor = -0.02
+			offence = 0.05 
+			defence = 0.05 
+			max_planning = 0.08
+			supply_consumption_factor = -0.05
 		}
 	}
 	
@@ -158,10 +158,10 @@ leader_skills = {
 		cost = 1000
 		type = corps_commander
 		modifier = {
-			offence = 0.03
-			defence = 0.03
-			max_planning = 0.06
-			supply_consumption_factor = -0.03
+			offence = 0.075
+			defence = 0.075
+			max_planning = 0.12
+			supply_consumption_factor = -0.075
 		}
 	}
 	
@@ -169,10 +169,10 @@ leader_skills = {
 		cost = 1000
 		type = corps_commander
 		modifier = {
-			offence = 0.04 
-			defence = 0.04
-			max_planning = 0.08
-			supply_consumption_factor = -0.04
+			offence = 0.1 
+			defence = 0.1
+			max_planning = 0.16
+			supply_consumption_factor = -0.1
 		}
 	}
 	
@@ -180,10 +180,10 @@ leader_skills = {
 		cost = 2000
 		type = corps_commander
 		modifier = {
-			offence = 0.05
-			defence = 0.05
-			max_planning = 0.1
-			supply_consumption_factor = -0.05
+			offence = 0.125
+			defence = 0.125
+			max_planning = 0.2
+			supply_consumption_factor = -0.125
 		}
 	}
 
@@ -191,10 +191,10 @@ leader_skills = {
 		cost = 2000
 		type = corps_commander
 		modifier = {
-			offence = 0.06 
-			defence = 0.06
-			max_planning = 0.12
-			supply_consumption_factor = -0.06
+			offence = 0.15 
+			defence = 0.15
+			max_planning = 0.24
+			supply_consumption_factor = -0.15
 		}
 	}
 
@@ -202,10 +202,10 @@ leader_skills = {
 		cost = 4000
 		type = corps_commander
 		modifier = {
-			offence = 0.07 
-			defence = 0.07
-			max_planning = 0.14
-			supply_consumption_factor = -0.07
+			offence = 0.175 
+			defence = 0.175
+			max_planning = 0.28
+			supply_consumption_factor = -0.175
 		}
 	}
 
@@ -213,10 +213,10 @@ leader_skills = {
 		cost = 4000
 		type = corps_commander
 		modifier = {
-			offence = 0.08 
-			defence = 0.08
-			max_planning = 0.16
-			supply_consumption_factor = -0.08
+			offence = 0.2 
+			defence = 0.2
+			max_planning = 0.32
+			supply_consumption_factor = -0.2
 		}
 	}
 
@@ -224,10 +224,10 @@ leader_skills = {
 		cost = 8000
 		type = corps_commander
 		modifier = {
-			offence = 0.09 
-			defence = 0.09
-			max_planning = 0.18 
-			supply_consumption_factor = -0.09
+			offence = 0.225 
+			defence = 0.225
+			max_planning = 0.36 
+			supply_consumption_factor = -0.225
 		}
 	}
 	
@@ -235,10 +235,10 @@ leader_skills = {
 		cost = 8000
 		type = corps_commander
 		modifier = {
-			offence = 0.1
-			defence = 0.1
-			max_planning = 0.2
-			supply_consumption_factor = -0.1
+			offence = 0.25
+			defence = 0.25
+			max_planning = 0.4
+			supply_consumption_factor = -0.25
 		}
 	}
 	
@@ -247,10 +247,10 @@ leader_skills = {
 		cost = 500
 		type = field_marshal
 		modifier = {
-			offence = 0.01 
-			defence = 0.01
-			max_planning = 0.02 
-			supply_consumption_factor = -0.01
+			offence = 0.025 
+			defence = 0.025
+			max_planning = 0.04 
+			supply_consumption_factor = -0.025
 		}
 	}
 		
@@ -258,10 +258,10 @@ leader_skills = {
 		cost = 500
 		type = field_marshal
 		modifier = {
-			offence = 0.02 
-			defence = 0.02 
-			max_planning = 0.04
-			supply_consumption_factor = -0.02
+			offence = 0.05 
+			defence = 0.05 
+			max_planning = 0.08
+			supply_consumption_factor = -0.05
 		}
 	}
 	
@@ -269,10 +269,10 @@ leader_skills = {
 		cost = 1000
 		type = field_marshal
 		modifier = {
-			offence = 0.03
-			defence = 0.03
-			max_planning = 0.06
-			supply_consumption_factor = -0.03
+			offence = 0.075
+			defence = 0.075
+			max_planning = 0.12
+			supply_consumption_factor = -0.075
 		}
 	}
 	
@@ -280,10 +280,10 @@ leader_skills = {
 		cost = 1000
 		type = field_marshal
 		modifier = {
-			offence = 0.04 
-			defence = 0.04
-			max_planning = 0.08
-			supply_consumption_factor = -0.04
+			offence = 0.1 
+			defence = 0.1
+			max_planning = 0.16
+			supply_consumption_factor = -0.1
 		}
 	}
 	
@@ -291,10 +291,10 @@ leader_skills = {
 		cost = 2000
 		type = field_marshal
 		modifier = {
-			offence = 0.05
-			defence = 0.05
-			max_planning = 0.1
-			supply_consumption_factor = -0.05
+			offence = 0.125
+			defence = 0.125
+			max_planning = 0.2
+			supply_consumption_factor = -0.125
 		}
 	}
 
@@ -302,10 +302,10 @@ leader_skills = {
 		cost = 2000
 		type = field_marshal
 		modifier = {
-			offence = 0.06 
-			defence = 0.06
-			max_planning = 0.12
-			supply_consumption_factor = -0.06
+			offence = 0.15 
+			defence = 0.15
+			max_planning = 0.24
+			supply_consumption_factor = -0.15
 		}
 	}
 
@@ -313,10 +313,10 @@ leader_skills = {
 		cost = 4000
 		type = field_marshal
 		modifier = {
-			offence = 0.07 
-			defence = 0.07
-			max_planning = 0.14
-			supply_consumption_factor = -0.07
+			offence = 0.175 
+			defence = 0.175
+			max_planning = 0.28
+			supply_consumption_factor = -0.175
 		}
 	}
 
@@ -324,10 +324,10 @@ leader_skills = {
 		cost = 4000
 		type = field_marshal
 		modifier = {
-			offence = 0.08 
-			defence = 0.08
-			max_planning = 0.16
-			supply_consumption_factor = -0.08
+			offence = 0.2 
+			defence = 0.2
+			max_planning = 0.32
+			supply_consumption_factor = -0.2
 		}
 	}
 
@@ -335,10 +335,10 @@ leader_skills = {
 		cost = 8000
 		type = field_marshal
 		modifier = {
-			offence = 0.09 
-			defence = 0.09
-			max_planning = 0.18 
-			supply_consumption_factor = -0.09
+			offence = 0.225 
+			defence = 0.225
+			max_planning = 0.36 
+			supply_consumption_factor = -0.225
 		}
 	}
 	
@@ -346,10 +346,10 @@ leader_skills = {
 		cost = 8000
 		type = field_marshal
 		modifier = {
-			offence = 0.1
-			defence = 0.1
-			max_planning = 0.2
-			supply_consumption_factor = -0.1
+			offence = 0.25
+			defence = 0.25
+			max_planning = 0.4
+			supply_consumption_factor = -0.25
 		}
 	}
 }

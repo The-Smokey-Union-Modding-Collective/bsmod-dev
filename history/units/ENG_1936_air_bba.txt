@@ -1,0 +1,127 @@
+﻿
+
+
+air_wings = {
+	### RAF Fighter Command ###
+	126 = { 
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Hawker Fury"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Fairey Gordon"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Fairey Gordon"
+		}
+		small_plane_cas_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Fairey Gordon"
+		}
+		medium_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Handley Page Heyford"
+		}
+		medium_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 100
+			version_name = "Handley Page Heyford"
+		}
+		medium_plane_airframe_0 = {
+			owner = "ENG" 
+			amount = 50
+			version_name = "Handley Page Heyford"
+		}
+		small_plane_naval_bomber_airframe_0 = {
+			owner = "ENG" 
+			amount = 50
+			version_name = "Vickers Vildebeest"
+		}
+	}
+	
+	### carriers ###
+	"HMS Furious"  = {
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 version_name = "Hawker Nimrod" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 2 version_name = "Blackburn Shark" }
+	}
+	"HMS Courageous"  = {
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 9 version_name = "Hawker Nimrod" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 4 version_name = "Blackburn Shark" }
+	}
+	"HMS Glorious"  = {
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 6 version_name = "Hawker Nimrod" } #historical 9
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 4 version_name = "Blackburn Shark" } #historical 36
+	}
+	"HMS Eagle"  = {
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Hawker Nimrod" }
+		cv_small_plane_airframe_0 =  { owner = "ENG" amount = 8 version_name = "Hawker Nimrod" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 10 version_name = "Blackburn Shark" }
+		cv_small_plane_naval_bomber_airframe_0 =  { owner = "ENG" amount = 8 version_name = "Blackburn Shark" }
+	}
+}
+
+	#########################
+	## STARTING PRODUCTION ##
+	#########################
+instant_effect = {
+
+	add_equipment_production = {
+		equipment = {
+			type = small_plane_airframe_0
+			creator = "ENG" 
+			version_name = "Gloster Gladiator"
+		}
+		requested_factories = 1
+		progress = 0.15
+		efficiency = 50
+	}
+
+	add_equipment_production = {
+		equipment = {
+			type = medium_plane_airframe_1
+			creator = "ENG" 
+			version_name = "Bristol Blenheim"
+		}
+		requested_factories = 1
+		progress = 0.1
+		efficiency = 50
+	}
+}
+	#####################

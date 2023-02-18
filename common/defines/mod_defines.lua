@@ -1,6 +1,6 @@
 NDefines.NGame.LAG_DAYS_FOR_LOWER_SPEED = 48	--vanilla=10
 NDefines.NGame.LAG_DAYS_FOR_PAUSE = 48			--vanilla=25
-NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.15, 0.08 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
+NDefines.NGame.GAME_SPEED_SECONDS = { 2.0, 0.5, 0.2, 0.08, 0.05 }	--vanilla={ 2.0, 0.5, 0.2, 0.1, 0.0 }
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NDiplomacy.VOLUNTEERS_PER_TARGET_PROVINCE = 0	--vanilla=0.05
 NDefines.NDiplomacy.VOLUNTEERS_PER_COUNTRY_ARMY = 0		--vanilla=0.05
@@ -27,14 +27,15 @@ NDefines.NProduction.LICENSE_EQUIPMENT_BASE_SPEED = -0.25		--vanilla=-0.25
 NDefines.NProduction.LICENSE_EQUIPMENT_TECH_SPEED_PER_YEAR = 0	--vanilla=-0.05
 NDefines.NProduction.LICENSE_EQUIPMENT_SPEED_NOT_FACTION = 0	--vanilla=-0.1
 NDefines.NProduction.LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 1	--vanilla=2
-NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 2.0			--vanilla=2	
-NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 3.0		--vanilla=3	
-NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 1.0		--vanilla=1
-NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 1.0		--vanilla=1
+NDefines.NProduction.EQUIPMENT_MODULE_ADD_XP_COST = 0			--vanilla=2	
+NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0		--vanilla=3	
+NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0		--vanilla=1
+NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=0.01
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
+NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 --vanilla = 200
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
@@ -55,6 +56,8 @@ NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0	-- how much enemy combat wid
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4				-- num stats gained on level up
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
 NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.02    -- vanilla 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.02    -- vanilla 0.032
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
@@ -74,6 +77,8 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 300, -- NAVAL_MINES_SWEEPING vanilla=0.0
 0.0, -- MISSION_RECON
 }
+NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0 --vanilla 1.0
+NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75 --vanilla 0.75
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
