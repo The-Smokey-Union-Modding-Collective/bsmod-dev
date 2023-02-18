@@ -57,7 +57,7 @@ sub_units = {
 			attack = -0.2
 		}
 		marsh = {
-			attack = -0.45
+			attack = -0.1
 		}
 		mountain = {
 			attack = -0.35
@@ -133,7 +133,7 @@ sub_units = {
 			attack = -0.2
 		}
 		marsh = {
-			attack = -0.45
+			attack = -0.1
 		}
 		mountain = {
 			attack = -0.35
@@ -204,7 +204,7 @@ sub_units = {
 			attack = -0.2
 		}
 		marsh = {
-			attack = -0.45
+			attack = -0.1
 		}
 		mountain = {
 			attack = -0.35
@@ -276,7 +276,7 @@ sub_units = {
 			attack = -0.2
 		}
 		marsh = {
-			attack = -0.45
+			attack = -0.1
 		}
 		mountain = {
 			attack = -0.35
@@ -350,7 +350,7 @@ sub_units = {
 			attack = -0.2
 		}
 		marsh = {
-			attack = -0.45
+			attack = -0.1
 		}
 		mountain = {
 			attack = -0.35
