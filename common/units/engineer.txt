@@ -55,36 +55,38 @@ sub_units = {
 		}
 
 		can_be_parachuted = yes
-		forest = {
-			defence = 0.25
-			movement = 0.05
+		plains = {
+			defence = 0.1
 		}
-
+		desert = {
+			defence = 0.1
+		}
+		forest = {
+			defence = 0.1
+		}
 		hills = {
 			defence = 0.1
 		}
-
+		urban = {
+			defence = 0.1
+		}
 		jungle = {
-			defence = 0.25
+			defence = 0.1
 		}
-
 		marsh = {
-			defence = 0.25
-			movement = 0.2
+			defence = 0.1
 		}
-
+		mountain = {
+			defence = 0.1
+		}
+		river = {
+			defence = 0.1
+		}
+		amphibious = {
+			attack = 0.20
+		}
 		fort = {
 			attack = 0.1
-			defence = 0.25
-		}
-
-		river = {
-			defence = 0.25
-			movement = 0.25
-		}
-
-		amphibious = {
-			attack = 0.25
 		}
 	}
 }
