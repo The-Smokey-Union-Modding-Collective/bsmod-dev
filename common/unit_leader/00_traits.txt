@@ -220,7 +220,6 @@ leader_traits = {
 		modifier = {
 			planning_speed = -0.20
 			org_loss_when_moving = -0.1
-			army_speed_factor = -0.05
 		}
 		
 		

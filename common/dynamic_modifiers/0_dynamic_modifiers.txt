@@ -415,6 +415,10 @@ unplanned_offensive = {
 	local_org_regain = -0.5
 }
 
+slowed_offensive = {
+	icon = GFX_MODIFIER_ARMY_SPEED_FACTOR
+	army_speed_factor = -0.75
+}
 
 ####
 #### SOVIET STATE MODIFIERS ####

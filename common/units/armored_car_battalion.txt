@@ -37,34 +37,38 @@ sub_units = {
 		#WE GOOD AT SUPPRESS 
 		suppression = 2.5
 
-		forest = {
-		    attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-		    attack = -0.1
-		    movement = -0.1
-		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.5
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.2
+		plains = {
+			attack = 0.1
 		}
 		desert = {
-			movement = 0.15
+			attack = 0.1
+		}
+		forest = {
+		    attack = -0.2
+		}
+		hills = {
+			attack = -0.2
 		}
 		urban = {
-			attack = -0.3
+			attack = -0.6
+		}
+		jungle = {
+			attack = -0.2
+		}
+		marsh = {
+			attack = -0.35
+		}
+		mountain = {
+			attack = -0.2
 		}
 		river = { 
-			attack = -0.2 
-			movement = -0.2
+			attack = -0.5
 		}
 		amphibious = { 
-			attack = -0.4
+			attack = -0.7
 		}	
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 }

@@ -24,7 +24,7 @@ sub_units = {
 		combat_width = 2
 
 		need = {
-			super_heavy_tank_chassis = 40
+			super_heavy_tank_chassis = 50
 		}
 
 		manpower = 500
@@ -43,37 +43,38 @@ sub_units = {
 
 		breakthrough = 0.15	
 
+		plains = {
+			attack = 0.15
+		}
+		desert = {
+			attack = 0.15
+		}
 		forest = {
-		    attack = -0.5
-			movement = -0.4
+		    attack = -0.50
 		}
 		hills = {
-		    attack = -0.3
-		}
-		mountain = 	{
-		    attack = -0.4
-		}
-		jungle = {
-		    attack = -0.7
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.5 
-			movement = -0.2
+			attack = -0.50
 		}
 		urban = {
-			attack = -0.6
-			defence = -0.2
+		    attack = -0.1
+		}
+		jungle = {
+		    attack = -0.8
+		}
+		marsh = {
+			attack = -0.9
+		}
+		mountain = {
+		    attack = -0.8 
 		}
 		river = { 
-			attack = -0.5
-			movement = -0.5
+			attack = 0.1
 		}
 		amphibious = { 
-			attack = -1.0
+			attack = -0.9
 		}
 		fort = {
-			attack = 0.5
+			attack = 0.35
 		}
 	}
 }

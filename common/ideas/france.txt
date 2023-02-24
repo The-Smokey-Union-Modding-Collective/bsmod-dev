@@ -291,7 +291,7 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.5
+				conversion_cost_civ_to_mil_factor = -0.35
 			}
 		}
 		FRA_expanded_citizenship = {
@@ -1148,7 +1148,7 @@ ideas = {
 			modifier = {
 				conscription = -0.003
 				war_support_factor = -0.05
-				land_doctrine_cost_factor = 0.5
+				experience_gain_army_factor = -0.2
 			}
 		}
 

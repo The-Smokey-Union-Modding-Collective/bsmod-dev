@@ -251,6 +251,9 @@ news_event = {
 					remove_dynamic_modifier = {
 						modifier = unplanned_offensive
 					}
+					remove_dynamic_modifier = {
+						modifier = slowed_offensive
+					}	
 				}
 			}
 		}
@@ -725,6 +728,9 @@ news_event = {
 					remove_dynamic_modifier = {
 						modifier = unplanned_offensive
 					}
+					remove_dynamic_modifier = {
+						modifier = slowed_offensive
+					}	
 				}
 				if = {
 					limit = {

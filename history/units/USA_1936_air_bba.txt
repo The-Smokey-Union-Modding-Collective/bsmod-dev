@@ -1,5 +1,5 @@
 ﻿air_wings = {
-	361 = { 
+	378 = { 
 		small_plane_airframe_0 =  {
 			owner = "USA" 
 			amount = 100

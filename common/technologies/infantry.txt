@@ -495,7 +495,7 @@ technologies = {
 			soft_attack = 0.05
 			
 			urban = {
-				attack = 0.15
+				attack = 0.2
 			}
 		}
 		
@@ -543,7 +543,7 @@ technologies = {
 			soft_attack = 0.05
 			
 			urban = {
-				attack = 0.15
+				attack = 0.25
 			}
 		}
 		
@@ -637,10 +637,10 @@ technologies = {
 			soft_attack = 0.05
 			
 			river = {
-				attack = 0.15
+				attack = 0.10
 			}
 			amphibious = {
-				attack = 0.25
+				attack = 0.10
 			}
 		}
 		path = {
@@ -683,10 +683,10 @@ technologies = {
 			soft_attack = 0.05
 			
 			river = {
-				attack = 0.15
+				attack = 0.2
 			}
 			amphibious = {
-				attack = 0.25
+				attack = 0.2
 			}
 		}
 
@@ -776,7 +776,7 @@ technologies = {
 			}
 		    
 			marsh = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		path = {
@@ -821,7 +821,7 @@ technologies = {
 			soft_attack = 0.05	
 			
 			forest = {
-				attack = 0.1
+				attack = 0.15
 			}
 		    
 			marsh = {
@@ -867,7 +867,7 @@ technologies = {
 		    }
 		    
 			jungle = {
-				attack = 0.2
+				attack = 0.25
 		    }
 		}
 		xor = {
@@ -915,7 +915,7 @@ technologies = {
 		    }
 		    
 			jungle = {
-				attack = 0.2
+				attack = 0.25
 		    }
 		}
 

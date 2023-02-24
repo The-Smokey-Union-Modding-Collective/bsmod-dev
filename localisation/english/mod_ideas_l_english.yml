@@ -51,3 +51,5 @@
  mod_small_island:0 "Small Island"
  modifier_state_production_speed_air_base_factor:0 "§Y$air_base$§! construction speed"
  modifier_state_production_speed_air_base_factor_desc:0 "Modifies the speed of §Y$air_base$§! construction in this state." 
+
+ slowed_offensive:0 "Spanish Infrastructure"

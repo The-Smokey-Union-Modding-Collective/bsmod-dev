@@ -4855,7 +4855,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 46
+		x = 48
 		y = 0
 		offset = {
 			x = -26
@@ -4890,7 +4890,7 @@ focus_tree = {
 	focus = {
 		id = USA_selective_training_act
 		icon = GFX_focus_generic_military_mission
-		x = -5
+		x = -7
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5107,7 +5107,7 @@ focus_tree = {
 	focus = {
 		id = USA_support_rock_island
 		icon = GFX_goal_generic_army_artillery
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = USA_selective_training_act
 		cost = 10
@@ -5124,7 +5124,6 @@ focus_tree = {
 				uses = 2
 				bonus = 1.0
 				category = artillery
-				category = support_tech
 			}
 		}
 	}
@@ -5132,8 +5131,8 @@ focus_tree = {
 		id = USA_tank_experiments
 		icon = GFX_goal_generic_army_tanks
 		x = 2
-		y = 2
-		prerequisite = { focus = USA_support_rock_island }
+		y = 1
+		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
 		cost = 10
 
@@ -5166,7 +5165,7 @@ focus_tree = {
 		id = USA_tank_destroyer_doctrine
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		x = 2
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
@@ -5197,7 +5196,7 @@ focus_tree = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms
 		x = 4
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
@@ -5228,7 +5227,7 @@ focus_tree = {
 		id = USA_armored_infantry
 		icon = GFX_goal_generic_build_tank
 		x = 2
-		y = 4
+		y = 3
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
 		cost = 10
