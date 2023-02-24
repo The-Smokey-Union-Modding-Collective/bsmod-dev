@@ -304,7 +304,53 @@ JAP_intervene_in_china = {
 		}
 	}
 
+	JAP_attack_China = {
 	
+		icon = generic_air
+		
+		allowed = {
+			original_tag = JAP
+		}
+		
+		visible = {
+			has_completed_focus = JAP_intervene_in_china
+		}
+		available = {
+			date > 1939.01.01
+		}
+
+		fire_only_once = yes
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		complete_effect = {
+			declare_war_on = {
+				target = CHI
+				type = annex_everything
+			}
+			MAN = {
+				declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+			}
+			if = {
+				limit = {
+					SIA = {
+					is_in_faction_with = JAP
+					}
+				}
+				SIA = {
+					declare_war_on = {
+						target = CHI
+						type = annex_everything
+					}
+				}
+			}
+		}
+	}
 }
 
 JAP_interservice_rivalry = {

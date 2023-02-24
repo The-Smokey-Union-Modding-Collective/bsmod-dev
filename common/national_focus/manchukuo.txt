@@ -3630,9 +3630,18 @@
 		}
 
 		available = {
-			has_full_control_of_state = 605
-			has_full_control_of_state = 608
-			has_full_control_of_state = 613
+			if = {
+				limit = {
+					has_completed_focus = MAN_the_wang_jingwei_regime
+				}
+				has_full_control_of_state = 608
+			}
+			if = {
+				limit = {
+					has_completed_focus = MAN_maintain_the_puppet_emperor
+				}
+				has_full_control_of_state = 605
+			}
 			has_idea = MAN_unintegrated_industries
 		}
 
@@ -3649,6 +3658,7 @@
 		}
 
 		completion_reward = {
+			custom_effect_tooltip = MAN_integrate_chinese_industry_explain_tt
 			remove_ideas = MAN_unintegrated_industries
 		}
 	}

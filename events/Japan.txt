@@ -48,53 +48,32 @@ country_event = {
 	
 	option = {
 		name = japan.2.a
+		add_war_support = 0.05
 		effect_tooltip = {
 			set_truce = { target = FROM days = 180 }
 		}
 		hidden_effect = {
 			country_event = { days = 5 id = news.2 }
 		}
-		if = {
-			limit = {
-				608 = {
-					is_controlled_by = FROM
-				}
-			}
-			JAP = {
-				transfer_state = 608
-			}
+		MAN = {
+			transfer_state = 608
+			transfer_state = 597
+			transfer_state = 614
+			transfer_state = 615
+			transfer_state = 622
+			transfer_state = 621
+			transfer_state = 746
+			transfer_state = 743
+			transfer_state = 592
+			transfer_state = 593
+			transfer_state = 599
+			transfer_state = 594
+			transfer_state = 591
+			transfer_state = 729
 		}
-		if = {
-			limit = {
-				597 = {
-					is_controlled_by = FROM
-				}
-			}
-			JAP = {
-				transfer_state = 597
-			}
+		MAN = {
+			country_event = { id = manchuria.1 days = 1 }
 		}
-		if = {
-			limit = {
-				614 = {
-					is_controlled_by = FROM
-				}
-			}
-			JAP = {
-				transfer_state = 614
-			}
-		}
-		if = {
-			limit = {
-				743 = {
-					is_controlled_by = FROM
-				}
-			}
-			JAP = {
-				transfer_state = 743
-			}
-		}
-		add_state_claim = 613
 		if = {
 			limit = {
 				has_country_leader = { id = 700 ruling_only = yes }
