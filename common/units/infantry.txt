@@ -309,7 +309,7 @@ sub_units = {
 			attack = -0.40
 		}
 		river = {
-			attack = -0.20
+			attack = 0.1
 		}
 		amphibious = {
 			attack = 0.20

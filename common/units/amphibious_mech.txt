@@ -80,11 +80,11 @@ sub_units = {
 		mountain = {
 			attack = -0.4
 		}
-		#river = {
-		#	attack = -0.3
-		#}
+		river = {
+			attack = 0.1
+		}
 		amphibious = {
-			attack = -0.2
+			attack = 0.2
 		}
 		#fort = {
 		#	movement = -0.05

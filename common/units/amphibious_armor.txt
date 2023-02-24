@@ -64,7 +64,7 @@ sub_units = {
 		#	attack = -0.5
 		#}
 		amphibious = {
-			attack = -0.15
+			attack = 0.15
 		}
 		#fort = {
 		#	movement = -0.05
@@ -133,10 +133,10 @@ sub_units = {
 			attack = -0.2
 		}
 		river = {
-			attack = -0.5
+			attack = 0.1
 		}
 		amphibious = {
-			attack = -0.7
+			attack = 0.1
 		}	
 		#fort = {
 		#	movement = -0.05
@@ -204,11 +204,11 @@ sub_units = {
 		mountain = {
 			attack = -0.4
 		}
-		#river = {
-		#	attack = -0.35
-		#}
+		river = {
+			attack = 0.15
+		}
 		amphibious = {
-			attack = -0.2
+			attack = 0.15
 		}	
 		#fort = {
 		#	movement = -0.05
@@ -276,14 +276,14 @@ sub_units = {
 		mountain = {
 			attack = -0.4
 		}
-		#river = {
-		#	attack = -0.25
-		#}
+		river = {
+			attack = 0.25
+		}
 		amphibious = {
-			attack = -0.3
+			attack = 0.25
 		}
 		fort = {
-			attack = 0.15
+			attack = 0.05
 		}	
 	}
 }
