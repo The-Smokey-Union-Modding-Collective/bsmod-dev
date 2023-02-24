@@ -1087,8 +1087,8 @@ leader_traits = {
 		}
 		cost = 1000
 		modifier = {
-			# offence = 0.1
-			terrain_penalty_reduction = 0.10 # bsmod change vanilla = 0.30
+			offence = 0.05
+			#terrain_penalty_reduction = 0.10 # bsmod change vanilla = 0.30
 			acclimatization_cold_climate_gain_factor = 0.1
 			acclimatization_hot_climate_gain_factor = 0.1
 		}
