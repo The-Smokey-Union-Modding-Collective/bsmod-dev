@@ -312,7 +312,7 @@ sub_units = {
 			attack = -0.20
 		}
 		amphibious = {
-			attack = -0.30
+			attack = 0.20
 		}
 		#fort = {
 		#	movement = -0.05
