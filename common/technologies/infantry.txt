@@ -640,7 +640,7 @@ technologies = {
 				attack = 0.10
 			}
 			amphibious = {
-				attack = 0.10
+				attack = 0.20
 			}
 		}
 		path = {
