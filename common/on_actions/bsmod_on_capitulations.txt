@@ -411,6 +411,7 @@ on_actions = {
 					transfer_state = 88
 					transfer_state = 92
 					transfer_state = 97
+					transfer_state = 90
 				}
 			}
 			if = {
