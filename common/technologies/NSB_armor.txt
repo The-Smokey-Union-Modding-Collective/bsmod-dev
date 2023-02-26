@@ -58,6 +58,7 @@ technologies = {
 			wet_ammo_storage
 			smoke_launchers
 			basic_armor_profile
+			expanded_fuel_tank
 		}
 		enable_subunits = {
 			light_armor

@@ -3329,9 +3329,9 @@ technologies = {
 		conscription = 0.05
 		xp_research_type = army
 		xp_unlock_cost = 100
-		infantry = {
-			combat_width = -0.4
-		}
+		#infantry = {
+		#	combat_width = -0.4
+		#}
 
 		land_reinforce_rate = 0.15		
 		
