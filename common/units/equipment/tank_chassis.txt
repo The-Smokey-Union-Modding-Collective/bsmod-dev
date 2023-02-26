@@ -556,7 +556,7 @@ equipments = {
 
 		module_count_limit = {
 			module = squeezebore_adaptor
-			count < 2
+			count < 1
 		}
 
 		module_count_limit = {
@@ -1008,7 +1008,7 @@ equipments = {
 
 		module_count_limit = {
 			module = squeezebore_adaptor
-			count < 2
+			count < 1
 		}
 
 		module_count_limit = {
@@ -1545,7 +1545,7 @@ equipments = {
 
 		module_count_limit = {
 			module = squeezebore_adaptor
-			count < 2
+			count < 0
 		}
 
 		module_count_limit = {
@@ -1726,7 +1726,7 @@ equipments = {
 
 		module_count_limit = {
 			module = squeezebore_adaptor
-			count < 2
+			count < 1
 		}
 
 		module_count_limit = {
