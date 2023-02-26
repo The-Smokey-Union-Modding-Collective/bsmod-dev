@@ -1274,7 +1274,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			max_strength = -1
+			max_strength = -2
 			breakthrough = 1
 			defense = 1
 		}
