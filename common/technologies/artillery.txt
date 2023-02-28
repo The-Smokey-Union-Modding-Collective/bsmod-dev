@@ -497,9 +497,9 @@ technologies = {
 		mot_rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
+		# motorized_rocket_brigade = {
+		# 	soft_attack = 0.15
+		# }
 
 		path = {
 			leads_to_tech = rocket_artillery3
@@ -540,9 +540,9 @@ technologies = {
 		mot_rocket_artillery_brigade = {
 			soft_attack = 0.15
 		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.15
-		}
+		# motorized_rocket_brigade = {
+		# 	soft_attack = 0.15
+		# }
 
 		path = {
 			leads_to_tech = rocket_artillery4
@@ -577,9 +577,9 @@ technologies = {
 		enable_equipments = {
 			rocket_artillery_equipment_2
 		}
-		motorized_rocket_brigade = {
-			soft_attack = 0.3
-		}
+		# motorized_rocket_brigade = {
+		# 	soft_attack = 0.3
+		# }
 		enable_equipment_modules = {
 			tank_rocket_launcher_2
 		}
