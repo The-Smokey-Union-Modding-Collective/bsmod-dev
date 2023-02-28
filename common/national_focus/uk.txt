@@ -5821,7 +5821,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_the_raj
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 		x = 0
 		y = 1
 		relative_position_id = uk_colonial_focus
@@ -5852,7 +5852,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_pacific_dominions
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus

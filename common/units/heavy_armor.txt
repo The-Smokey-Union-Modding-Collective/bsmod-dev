@@ -30,10 +30,10 @@ sub_units = {
 			attack = 0.1
 		}
 		forest = {
-		    attack = -0.40
+		    attack = -0.5
 		}
 		hills = {
-			attack = -0.40
+			attack = -0.5
 		}
 		urban = {
 		    attack = -0.3
@@ -45,7 +45,7 @@ sub_units = {
 			attack = -0.8
 		}
 		mountain = {
-		    attack = -0.4 
+		    attack = -0.5 
 		}
 		river = { 
 			attack = -0.25
@@ -66,7 +66,7 @@ sub_units = {
 		manpower = 500
 		max_organisation = 10
 		default_morale = 0.3
-		max_strength = 3
+		max_strength = 2
 		weight = 1.5
 		
 		supply_consumption = 0.32

@@ -1864,9 +1864,9 @@ technologies = {
 			position = { x = 7 y = 9 }
 		}
 		
-		sub_technologies = {
-			motorized_rocket_unit
-		}
+		# sub_technologies = {
+		# 	motorized_rocket_unit
+		# }
 		
 		categories = {
 			motorized_equipment
