@@ -5259,7 +5259,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_tank_expertise
-		icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_focus_generic_tank_air_support
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
@@ -5271,16 +5271,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				16 = {
-					CONTROLLER = {
-						NOT = {
-							original_tag = FRA
-						}
-					}
-				}
-				date > 1940.07.01
-			}
 		}
 		
 		bypass = {
