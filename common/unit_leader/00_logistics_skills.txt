@@ -176,7 +176,7 @@ leader_logistics_skills = {
 	### Field Marshal ###
 	1 = {
 		cost = 100
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 4
 		}
@@ -184,7 +184,7 @@ leader_logistics_skills = {
 		
 	2 = {
 		cost = 200
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 8
 		}
@@ -193,7 +193,7 @@ leader_logistics_skills = {
 	
 	3 = {
 		cost = 400
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 12
 		}
@@ -201,7 +201,7 @@ leader_logistics_skills = {
 	
 	4 = {
 		cost = 800
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 16
 		}
@@ -209,7 +209,7 @@ leader_logistics_skills = {
 	
 	5 = {
 		cost = 1600
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 20
 		}
@@ -217,7 +217,7 @@ leader_logistics_skills = {
 
 	6 = {
 		cost = 3200
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 24
 		}
@@ -225,7 +225,7 @@ leader_logistics_skills = {
 
 	7 = {
 		cost = 6400
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 28
 		}
@@ -233,7 +233,7 @@ leader_logistics_skills = {
 
 	8 = {
 		cost = 12800
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 32
 		}
@@ -241,7 +241,7 @@ leader_logistics_skills = {
 
 	9 = {
 		cost = 25600
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 36
 		}
@@ -249,7 +249,7 @@ leader_logistics_skills = {
 
 	10 = {
 		cost = 51200
-		type = corps_commander
+		type = field_marshal
 		modifier = {
 			no_supply_grace = 48
 		}
