@@ -82,31 +82,31 @@ on_actions = {
 		}
 	}
 	
-	on_declare_war = { 
-		effect = {
-			if = {
-				limit = {
-					ROOT = { tag = SPR }
-					FROM = { tag = POR }
-				}
-				SAF = {
-					country_event = { id = tfv_south_africa.201 hours = 6 }
-				}
-			}
-		}
-	}
-	
-	on_declare_war = { 
-		effect = {
-			if = {
-				limit = {
-					ROOT = { tag = GER }
-					FROM = { tag = BEL }
-				}
-				SAF = {
-					country_event = { id = tfv_south_africa.202 hours = 6 }
-				}
-			}
-		}
-	}
+#	on_declare_war = { 
+#		effect = {
+#			if = {
+#				limit = {
+#					ROOT = { tag = SPR }
+#					FROM = { tag = POR }
+#				}
+#				SAF = {
+#					country_event = { id = tfv_south_africa.201 hours = 6 }
+#				}
+#			}
+#		}
+#	}
+#	
+#	on_declare_war = { 
+#		effect = {
+#			if = {
+#				limit = {
+#					ROOT = { tag = GER }
+#					FROM = { tag = BEL }
+#				}
+#				SAF = {
+#					country_event = { id = tfv_south_africa.202 hours = 6 }
+#				}
+#			}
+#		}
+#	}
 }

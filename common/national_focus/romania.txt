@@ -3165,7 +3165,7 @@ focus = {
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_local_development }
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10
@@ -3388,7 +3388,7 @@ focus = {
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_acquire_licenses }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10
