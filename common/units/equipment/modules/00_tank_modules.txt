@@ -551,6 +551,26 @@ equipment_modules = {
 		}
 	}
 
+	hull_flamethrower = { #Hans, hol den Flammenwerfer!
+		abbreviation = "flt"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+		allow_equipment_type = flame
+
+		add_stats = {
+			soft_attack = 15
+			build_cost_ic = 2.5
+			reliability = -0.15
+		}
+		multiply_stats = {
+			build_cost_ic = 0.02
+		}
+		can_convert_from = {
+			module_category = tank_special_module
+			convert_cost_ic = 1
+		}
+	}
+
 	tank_auto_cannon = {
 		abbreviation = "ac1"
 		category = tank_small_main_armament
@@ -1274,7 +1294,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			max_strength = -2
+			max_strength = -1
 			breakthrough = 1
 			defense = 1
 		}
@@ -1295,7 +1315,7 @@ equipment_modules = {
 			build_cost_ic = 1
 		}
 		multiply_stats = {
-			build_cost_ic = 0.02
+			build_cost_ic = 0.05
 		}
 	}
 
@@ -1372,7 +1392,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			fuel_capacity = 125
+			fuel_capacity = 200
 			build_cost_ic = 1
 			maximum_speed = -0.1
 			max_strength = -1

@@ -44,10 +44,10 @@ sub_units = {
 		breakthrough = 0.15	
 
 		plains = {
-			attack = 0.15
+			attack = 0.2
 		}
 		desert = {
-			attack = 0.15
+			attack = 0.2
 		}
 		forest = {
 		    attack = -0.50

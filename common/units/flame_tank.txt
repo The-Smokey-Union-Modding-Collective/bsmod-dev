@@ -43,7 +43,7 @@ sub_units = {
 		breakthrough = -0.15
 
 		# Support nerfs to combat abilities
-		armor_value = -0.5
+		armor_value = -0.3
 
 		need = {
 			light_tank_flame_chassis = 60
@@ -118,7 +118,7 @@ sub_units = {
 		breakthrough = -0.05
 
 		# Support nerfs to combat abilities
-		armor_value = -0.7
+		armor_value = -0.45
 
 		need = {
 			medium_tank_flame_chassis = 50
@@ -179,7 +179,7 @@ sub_units = {
 		breakthrough = 0.1
 
 		# Support nerfs to combat abilities
-		armor_value = -0.9
+		armor_value = -0.55
 
 		need = {
 			heavy_tank_flame_chassis = 40

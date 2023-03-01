@@ -45,10 +45,10 @@ sub_units = {
 		suppression = 2.5
 		
 		plains = {
-			attack = 0.15
+			attack = 0.2
 		}
 		desert = {
-			attack = 0.15
+			attack = 0.2
 		}
 		forest = {
 			attack = -0.25
