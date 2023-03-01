@@ -1775,7 +1775,7 @@ focus_tree = {
 					}
 					any_country = {
 						is_in_faction_with = GER
-						controls_state = 450
+						controls_state = 451
 					}
 					any_country = {
 						is_in_faction_with = GER

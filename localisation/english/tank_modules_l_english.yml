@@ -439,3 +439,6 @@
 
  expanded_fuel_tank:0 "Fuel Drum"
  expanded_fuel_tank_desc:0 "An externally mounted fuel drum designed to extend the operational range of an armored vehicle."
+
+ hull_flamethrower:0 "Hull Mounted Flamethrower"
+ hull_flamethrower_desc:0 "A larger and more potent flamethrower mounted in the hull of the vehicle, leaving space in the turret for weaponry."
