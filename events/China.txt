@@ -51,8 +51,6 @@ country_event = {
 		name = china.1.b
 		ai_chance = { factor = 10 }
 		JAP = {
-			set_truce = { target = ROOT days = 180 }
-			
 			country_event = { id = japan.2 }
 		}
 		ai_chance = {

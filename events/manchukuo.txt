@@ -12,10 +12,11 @@ country_event = {
 	
 	option = {
 		name = manchuria.1.a
-		
+		remove_ideas = MAN_unintegrated_industries_1		
 		add_ideas = MAN_unintegrated_industries 
 	}
 }
+
 
 country_event = {
 	id = manchuria.2
