@@ -1397,7 +1397,6 @@ equipment_modules = {
 			maximum_speed = -0.1
 			max_strength = -1
 		}
-		xp_cost = 3
 		multiply_stats = {
 			
 		}
