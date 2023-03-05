@@ -2790,6 +2790,7 @@ focus = {
 				has_war = yes
 				threat > 0.25
 			}
+			date > 1944.01.01
 		}
 
 		bypass = {
