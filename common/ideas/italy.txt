@@ -4129,7 +4129,13 @@ ideas = {
 			}
 
 			available = {
-				has_idea = ITA_cantiere_oto
+				custom_trigger_tooltip = {
+					tooltip = ITA_has_crda_tt
+					OR = {
+						has_idea = crda
+						has_idea = ITA_crda_improved
+					}
+				}
 				controls_State = 736 #LITORALE (Trieste)
 				ITA_is_northern_designer_improved = yes
 			}
