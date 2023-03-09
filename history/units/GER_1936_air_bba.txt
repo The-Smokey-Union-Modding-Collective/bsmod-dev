@@ -2,7 +2,6 @@
 ### Air oob
 air_wings = {
 	64 = { 
-		name = "Kampfgeschwader 153"
 		# TODO: REMOVE THIS LATER ???
 		transport_plane_equipment_1 = {
 			owner = "GER" 

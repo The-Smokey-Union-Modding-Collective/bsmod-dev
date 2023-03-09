@@ -107,6 +107,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5  -- vanilla = 3; Default convoy p
 NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3     -- vanilla = 4; Default convoy priority for export trade
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2     -- vanilla = 5; Default convoy priority for resources shipped internally
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = 0 -- vanilla = -0.7; Naval invasion penalty
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = -100	--vanilla=20

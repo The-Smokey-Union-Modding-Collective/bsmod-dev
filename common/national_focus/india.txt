@@ -1652,7 +1652,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = RAJ_chindits
-				bonus = 3.0
+				bonus = 1.0
 				uses = 2
 				category = marine_tech
 				category = para_tech
