@@ -5034,9 +5034,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			annex_country = {
-				target = MAL
-			}
+			#annex_country = {
+			#	target = MAL
+			#}
 			
 			336 = {
 				set_building_level = {
@@ -5103,9 +5103,9 @@ focus_tree = {
 				}
 				add_compliance = 70
 			}
-			333 = {
-				add_compliance = 70
-			}
+			#333 = {
+			#	add_compliance = 70
+			#}
 		}
 	}
 		

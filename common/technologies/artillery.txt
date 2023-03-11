@@ -1029,11 +1029,11 @@ technologies = {
 			ap_attack = 0.2
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.15
+			hard_attack = 0.05
 			ap_attack = 0.2
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.15
+			hard_attack = 0.10
 			ap_attack = 0.2
 		}
 		heavy_tank_destroyer_brigade = {
@@ -1201,11 +1201,11 @@ technologies = {
 			ap_attack = 0.1
 		}
 		light_tank_destroyer_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.05
 			ap_attack = 0.05
 		}
 		medium_tank_destroyer_brigade = {
-			hard_attack = 0.1
+			hard_attack = 0.05
 			ap_attack = 0.05
 		}
 		heavy_tank_destroyer_brigade = {
@@ -1296,10 +1296,10 @@ technologies = {
 			hard_attack = 0.05
 			ap_attack = 0.1
 		}
-		light_tank_destroyer_brigade = {
-			hard_attack = 0.05
-			ap_attack = 0.05
-		}
+		#light_tank_destroyer_brigade = {
+		#	hard_attack = 0.05
+		#	ap_attack = 0.05
+		#}
 		medium_tank_destroyer_brigade = {
 			hard_attack = 0.05
 			ap_attack = 0.05
