@@ -50,21 +50,27 @@ sub_units = {
 		}
 		forest = {
 		    attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.6
+			defence = -0.30
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.35
+			defence = -0.3
 		}
 		mountain = {
 			attack = -0.2
+			defence = -0.2
 		}
 		river = { 
 			attack = -0.5

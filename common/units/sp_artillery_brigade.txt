@@ -45,21 +45,27 @@ sub_units = {
 		#}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.1
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.15
 		}
 		#river = {
 		#	attack = -0.20
@@ -116,21 +122,27 @@ sub_units = {
 		#}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.1
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.15
 		}
 		#river = {
 		#	attack = -0.20
@@ -188,21 +200,27 @@ sub_units = {
 		#}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.1
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.1
 		}
 		#river = {
 		#	attack = -0.20
@@ -261,21 +279,27 @@ sub_units = {
 		#}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.1
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.15
 		}
 		#river = {
 		#	attack = -0.20
@@ -333,21 +357,27 @@ sub_units = {
 		#}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.1
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.2
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.1
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.15
 		}
 		#river = {
 		#	attack = -0.20
