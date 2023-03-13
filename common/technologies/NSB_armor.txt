@@ -55,9 +55,9 @@ technologies = {
 			tank_super_heavy_three_man_tank_turret
 			tank_modern_tank_turret
 			extra_ammo_storage
-			wet_ammo_storage
 			smoke_launchers
 			basic_armor_profile
+			expanded_fuel_tank
 		}
 		enable_subunits = {
 			light_armor
@@ -647,6 +647,10 @@ technologies = {
 			medium_tank_aa_chassis_3
 		}
 
+		enable_equipment_modules = {
+			wet_ammo_storage
+		}
+
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
@@ -881,6 +885,10 @@ technologies = {
 			heavy_tank_destroyer_chassis_3
 			heavy_tank_artillery_chassis_3
 			heavy_tank_aa_chassis_3
+		}
+
+		enable_equipment_modules = {
+			wet_ammo_storage
 		}
 
 		path = {

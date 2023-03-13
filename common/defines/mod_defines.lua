@@ -56,8 +56,8 @@ NDefines.NMilitary.ENGAGEMENT_WIDTH_PER_WIDTH = 4.0	-- how much enemy combat wid
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_COUNT = 4				-- num stats gained on level up
 NDefines.NMilitary.COMMANDER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} 	-- level up stat random base weights attack, defense, planning, logistics
 NDefines.NMilitary.NAVY_LEADER_LEVEL_UP_STAT_WEIGHTS = {1, 1, 1, 1} -- level up stat random base weights attack, defense, maneuvering, coordination
-NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.02    -- vanilla 0.032
-NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.02    -- vanilla 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.026    -- vanilla 0.032
+NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.026    -- vanilla 0.032
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
@@ -107,6 +107,7 @@ NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5  -- vanilla = 3; Default convoy p
 NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3     -- vanilla = 4; Default convoy priority for export trade
 NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2     -- vanilla = 5; Default convoy priority for resources shipped internally
 NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
+NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = 0 -- vanilla = -0.7; Naval invasion penalty
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = -100	--vanilla=20
@@ -116,3 +117,6 @@ NDefines.NSupply.SUPPLY_FLOW_DROP_REDUCTION_AT_MAX_INFRA = 0.30 -- max infrastru
 NDefines.NSupply.SUPPLY_HUB_FULL_MOTORIZATION_BONUS = 2.2	-- The range bonus added to a fully motorized hub. This supply is added on top of the XXX_INITIAL_SUPPLY_FLOW defined above. # Vanilla = 2.2
 NDefines.NSupply.NAVAL_BASE_FLOW = 5.0 -- max output/input of a naval node is limited by this base value + additional ratio for each level # Vanilla = 15.0 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NCharacter.SPECIALIST_ADVISOR_MIN_RANK = 3
+NDefines.NCharacter.EXPERT_ADVISOR_MIN_RANK = 5
+NDefines.NCharacter.GENIUS_ADVISOR_MIN_RANK = 7

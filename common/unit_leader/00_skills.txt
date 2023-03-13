@@ -138,7 +138,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.025 
 			defence = 0.025
-			max_planning = 0.04 
+			max_planning = 0.02
 			supply_consumption_factor = -0.025
 		}
 	}
@@ -149,7 +149,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.05 
 			defence = 0.05 
-			max_planning = 0.08
+			max_planning = 0.04
 			supply_consumption_factor = -0.05
 		}
 	}
@@ -160,7 +160,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.075
 			defence = 0.075
-			max_planning = 0.12
+			max_planning = 0.06
 			supply_consumption_factor = -0.075
 		}
 	}
@@ -171,7 +171,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.1 
 			defence = 0.1
-			max_planning = 0.16
+			max_planning = 0.08
 			supply_consumption_factor = -0.1
 		}
 	}
@@ -182,7 +182,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.125
 			defence = 0.125
-			max_planning = 0.2
+			max_planning = 0.1
 			supply_consumption_factor = -0.125
 		}
 	}
@@ -193,7 +193,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.15 
 			defence = 0.15
-			max_planning = 0.24
+			max_planning = 0.12
 			supply_consumption_factor = -0.15
 		}
 	}
@@ -204,7 +204,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.175 
 			defence = 0.175
-			max_planning = 0.28
+			max_planning = 0.14
 			supply_consumption_factor = -0.175
 		}
 	}
@@ -215,7 +215,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.2 
 			defence = 0.2
-			max_planning = 0.32
+			max_planning = 0.16
 			supply_consumption_factor = -0.2
 		}
 	}
@@ -226,7 +226,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.225 
 			defence = 0.225
-			max_planning = 0.36 
+			max_planning = 0.18
 			supply_consumption_factor = -0.225
 		}
 	}
@@ -237,7 +237,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.25
 			defence = 0.25
-			max_planning = 0.4
+			max_planning = 0.2
 			supply_consumption_factor = -0.25
 		}
 	}
@@ -249,7 +249,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.025 
 			defence = 0.025
-			max_planning = 0.04 
+			max_planning = 0.02
 			supply_consumption_factor = -0.025
 		}
 	}
@@ -260,7 +260,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.05 
 			defence = 0.05 
-			max_planning = 0.08
+			max_planning = 0.04
 			supply_consumption_factor = -0.05
 		}
 	}
@@ -271,7 +271,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.075
 			defence = 0.075
-			max_planning = 0.12
+			max_planning = 0.06
 			supply_consumption_factor = -0.075
 		}
 	}
@@ -282,7 +282,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.1 
 			defence = 0.1
-			max_planning = 0.16
+			max_planning = 0.08
 			supply_consumption_factor = -0.1
 		}
 	}
@@ -293,7 +293,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.125
 			defence = 0.125
-			max_planning = 0.2
+			max_planning = 0.1
 			supply_consumption_factor = -0.125
 		}
 	}
@@ -304,7 +304,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.15 
 			defence = 0.15
-			max_planning = 0.24
+			max_planning = 0.12
 			supply_consumption_factor = -0.15
 		}
 	}
@@ -315,7 +315,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.175 
 			defence = 0.175
-			max_planning = 0.28
+			max_planning = 0.14
 			supply_consumption_factor = -0.175
 		}
 	}
@@ -326,7 +326,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.2 
 			defence = 0.2
-			max_planning = 0.32
+			max_planning = 0.16
 			supply_consumption_factor = -0.2
 		}
 	}
@@ -337,7 +337,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.225 
 			defence = 0.225
-			max_planning = 0.36 
+			max_planning = 0.18
 			supply_consumption_factor = -0.225
 		}
 	}
@@ -348,7 +348,7 @@ leader_skills = {
 		modifier = {
 			offence = 0.25
 			defence = 0.25
-			max_planning = 0.4
+			max_planning = 0.2
 			supply_consumption_factor = -0.25
 		}
 	}

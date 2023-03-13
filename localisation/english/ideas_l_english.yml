@@ -2675,3 +2675,16 @@
  ALREADY_HAS_ADVISOR_WITH_TRAIT:0 "There is already an appointed advisor with this trait."
  POL_investments_monarchist:0 "Monarchist Investments"
  CHANGE_ADVISOR:1 "\nYou can replace this advisor by clicking here and selecting a replacement."
+ league_of_nations_member_idea:0 "League of Nations Member"
+ LoN_disbanded_flag:0 "The League of Nations is no longer active"
+
+ organization_of_african_unity_member_idea:0 "Organization of African Unity Member"
+ RAJ_industrialized_personnel:0 "Integrated Rural Workforce"
+ ROM_white_squadron:0 "White Squadron"
+ ROM_white_squadron_desc:0 "The White squadron is a service of air ambulances piloted exclusively by women. Merely the notion that rescue might be close at hand keeps our soldiers in high spirits."
+ MAN_hoankyoku_idea:0 "Hoankyoku"
+ MAN_hoankyoku_idea_desc:0 "A secretive organization dedicated to dealing with undesired elements in society."
+ AST_central_bureau_idea:0 "Central Bureau"
+ AST_central_bureau_idea_desc:0 "A joint intelligence taskforce established and coordinated with the USA, which aims to counter the efforts of our enemies in the pacific theater."
+ ROM_national_christian_party_in_power:0 "National Christian Party"
+

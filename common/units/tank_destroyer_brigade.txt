@@ -35,8 +35,8 @@ sub_units = {
 		supply_consumption = 0.2
 
 		breakthrough = -0.90
-		soft_attack = -0.3
-		hard_attack = -0.3
+		#soft_attack = -0.3
+		#hard_attack = -0.3
 		suppression = 1.0
 
 		plains = {
@@ -47,21 +47,27 @@ sub_units = {
 		}
 		forest = {
 			attack = -0.2
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.2
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.6
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.3
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.4
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.35
+			defence = -0.1
 		}
 		river = {
 			attack = -0.60
@@ -121,21 +127,27 @@ sub_units = {
 		}
 		forest = {
 			attack = -0.3
+			defence = -0.15
 		}
 		hills = {
 			attack = -0.3
+			defence = -0.15
 		}
 		urban = {
 			attack = -0.5
+			defence = -0.15
 		}
 		jungle = {
 			attack = -0.4
+			defence = -0.15
 		}
 		marsh = {
 			attack = -0.5
+			defence = -0.15
 		}
 		mountain = {
 			attack = -0.55
+			defence = -0.15
 		}
 		river = {
 			attack = -0.40
@@ -195,21 +207,27 @@ sub_units = {
 		}
 		forest = {
 			attack = -0.4
+			defence = -0.1
 		}
 		hills = {
 			attack = -0.4
+			defence = -0.1
 		}
 		urban = {
 			attack = -0.3
+			defence = -0.1
 		}
 		jungle = {
 			attack = -0.5
+			defence = -0.1
 		}
 		marsh = {
 			attack = -0.6
+			defence = -0.1
 		}
 		mountain = {
 			attack = -0.65
+			defence = -0.1
 		}
 		river = {
 			attack = -0.10
@@ -268,21 +286,27 @@ sub_units = {
 		}
 		forest = {
 		    attack = -0.50
+			defence = -0.15
 		}
 		hills = {
 			attack = -0.50
+			defence = -0.15
 		}
 		urban = {
 		    attack = -0.1
+			defence = -0.15
 		}
 		jungle = {
 		    attack = -0.8
+			defence = -0.15
 		}
 		marsh = {
 			attack = -0.9
+			defence = -0.15
 		}
 		mountain = {
 		    attack = -0.8 
+			defence = -0.15
 		}
 		river = { 
 			attack = 0.1
@@ -342,21 +366,27 @@ sub_units = {
 		}
 		forest = {
 			attack = -0.25
+			defence = -0.15
 		}
 		hills = {
 			attack = -0.35
+			defence = -0.15
 		}
 		urban = {
 			attack = -0.2
+			defence = -0.15
 		}
 		jungle = {
 			attack = -0.6
+			defence = -0.15
 		}
 		marsh = {
 			attack = -0.5
+			defence = -0.15
 		}
 		mountain = {
 			attack = -0.4
+			defence = -0.15
 		}
 		river = { 
 			attack = -0.25

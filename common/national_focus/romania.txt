@@ -2632,12 +2632,6 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		hidden_effect = {
-			remove_country_leader_role = {
-				character = ROM_octavian_goga
-				ideology = fascism_ideology
-			}
-		}
 		ROM_octavian_goga = {
 			promote_character = {
 				ideology = fascism_ideology
@@ -2790,6 +2784,7 @@ focus = {
 				has_war = yes
 				threat > 0.25
 			}
+			date > 1944.01.01
 		}
 
 		bypass = {
@@ -3165,7 +3160,7 @@ focus = {
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_local_development }
 		x = -2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10
@@ -3388,7 +3383,7 @@ focus = {
 		prerequisite = { focus = ROM_expand_the_air_force }
 		mutually_exclusive = { focus = ROM_acquire_licenses }
 		x = 2
-		y = 1
+		y = 2
 		relative_position_id = ROM_expand_the_air_force
 
 		cost = 10

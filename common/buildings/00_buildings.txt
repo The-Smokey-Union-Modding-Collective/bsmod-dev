@@ -50,7 +50,7 @@ buildings = {
 		air_base = yes
 		max_level = 10
 		value = 1
-		damage_factor = 0.5
+		damage_factor = -1
 		allied_build = yes
 		infrastructure_construction_effect = yes
 	}
