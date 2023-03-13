@@ -322,6 +322,7 @@ GER_spanish_civil_war_category = {
 					civilwar_veterans
 				}
 			}
+			SOV_manage_spanish_generals_exiled_in_ussr_effect = yes
 		}
 	}
 }
