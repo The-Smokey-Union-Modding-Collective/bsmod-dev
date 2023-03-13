@@ -312,6 +312,16 @@ GER_spanish_civil_war_category = {
 					mod_scw_exp_gain
 				}
 			}
+			SPR = {
+				remove_ideas = {
+					SPA_a_methodical_approach
+				}
+			}
+			SOV = {
+				add_ideas = {
+					civilwar_veterans
+				}
+			}
 		}
 	}
 }
