@@ -48,7 +48,8 @@
  Jap_the_zero_idea_desc:0 "As the might of carriers grows so must grow the might of the fighter that it houses. Unlike other nations, we shall focus on the might of agility for our carrier fighters, making them invincible in combat. We must also increase their range, as it benefits our long term goals"
  civilwar_veterans:0 "Veterans of the Civil War"
  civilwar_veterans_desc:0 "Due to our glorius Victory in the SCW we have lots of experienced Soldiers in our Army, Officiers and the Reserves we can expect to keep a highly experienced Core of oure Armed Forces."
-
+ SPA_plunder_economy:0 "Plunder Economy"
+ SPA_plunder_economy_desc:0 "Due to our decisive and quick victory against the rebels we managed to capture their supplys and can plunder these to benefit our warindustry."
  #State mods/dynamic mods#
  mod_small_island:0 "Small Island"
  modifier_state_production_speed_air_base_factor:0 "§Y$air_base$§! construction speed"
