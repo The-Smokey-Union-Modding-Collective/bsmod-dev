@@ -308,7 +308,7 @@ GER_spanish_civil_war_category = {
 		complete_effect = {
 			SPR = { 
 				country_event = { id = germany.1100 } 
-				country_event = { id = spain.1100 } 
+				country_event = { days = 2 id = lar_spain.1100 } 
 			}
 			every_country = {
 				remove_ideas = {

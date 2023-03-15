@@ -11792,11 +11792,10 @@ country_event = {
 	}
 }
 country_event = {
-	id = spain.1100
-	title = spain.1100.t
-	desc = spain.1100.desc
+	id = lar_spain.1100
+	title = lar_spain.1100.t
+	desc = lar_spain.1100.desc
 	picture = GFX_report_event_generic_parliament
-	hours = 36
 
 	trigger = {
 		tag = SPR
@@ -11810,7 +11809,7 @@ country_event = {
 
 
 	option = { # Ok
-		name = spain.1100.a
+		name = lar_spain.1100.a
 		hidden_effect = {
 			delete_unit_template_and_units = { division_template = "Guarnición Nacionalista" }
 			delete_unit_template_and_units = { division_template = "Guarnición Republicana" }
