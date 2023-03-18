@@ -2161,7 +2161,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = JAP_guide_the_zaibatsus
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 3
@@ -4824,7 +4824,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_small_arms_modernization
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
@@ -4835,7 +4835,7 @@ focus_tree = {
 		}
 
 		available = {
-
+			date > 1939.01.01
 		}
 
 		bypass = {
@@ -5787,7 +5787,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = JAP_new_naval_estimates
 
-		cost = 5
+		cost = 10
 
 		ai_will_do = {
 			factor = 1
