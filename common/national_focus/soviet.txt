@@ -324,7 +324,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -462,7 +462,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_finish_the_five_year_plan
-		cost = 10
+		cost = 5
 
 		available = {
 			SOV_third_five_year_plan_available = yes
@@ -524,7 +524,7 @@ focus_tree = {
 		x = -2
 		y = 2
 		relative_position_id = SOV_third_five_year_plan
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_shift_to_armaments_production }
 
@@ -541,7 +541,7 @@ focus_tree = {
 
 		completion_reward = {
 			hidden_effect = {
-				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.02 }
+				add_to_variable = { SOV_fyp_consumer_goods_factor = -0.05 }
 			}
 			custom_effect_tooltip = SOV_reorganize_the_pc_of_heavy_industry_ns_tt
 			if = {
@@ -813,7 +813,7 @@ focus_tree = {
 		x = 2
 		y = 1
 		relative_position_id = SOV_reorganize_the_pc_of_heavy_industry
-		cost = 10
+		cost = 5
 
 		available = {
 			any_owned_state = {
@@ -3884,7 +3884,7 @@ focus_tree = {
 		x = -5
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -3893,7 +3893,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 
 		completion_reward = {
-			#add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
+			add_to_variable = { SOV_defense_industry_production_factory_max_efficiency_factor = 0.05 }
 			add_to_variable = { SOV_defense_industry_production_factory_efficiency_gain_factor = -0.05 }
 			custom_effect_tooltip = SOV_pc_of_mechanical_engineering_ns_tt
 
@@ -3953,7 +3953,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			if = {
@@ -4091,7 +4091,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -4120,7 +4120,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_superior_war_machines
-		cost = 10
+		cost = 5
 
 		available = {
 		}
@@ -4366,7 +4366,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_pc_of_mechanical_engineering
-		cost = 10
+		cost = 5
 
 		available = {
 			has_full_control_of_state = 219 #MOSCOW
@@ -4427,7 +4427,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_the_means_to_wage_war
-		cost = 10
+		cost = 5
 
 		available = {
 			custom_trigger_tooltip = {
@@ -4554,7 +4554,7 @@ focus_tree = {
 		id = SOV_military_engineering_university
 		icon = GFX_focus_generic_military_academy
 		prerequisite = { focus = SOV_found_the_pcdi }
-		prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
+		#prerequisite = { focus = SOV_strengthen_the_mobilization_plan }
 		x = 2
 		y = 1
 		relative_position_id = SOV_found_the_pcdi
@@ -5910,7 +5910,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_strengthen_the_mobilization_plan
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_country_flag = SOV_paranoia_system_active_flag }
@@ -11206,7 +11206,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_collectivist_propaganda }
 
@@ -11237,7 +11237,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_positive_heroism
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11257,7 +11257,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_revive_the_stakhanovite_movement
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11344,7 +11344,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_expand_the_agitprop
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = SOV_positive_heroism }
 
@@ -11372,7 +11372,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_collectivist_propaganda
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -11392,7 +11392,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_socialist_emulation
-		cost = 10
+		cost = 5
 
 		available = {
 

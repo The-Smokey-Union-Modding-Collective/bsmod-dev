@@ -1652,7 +1652,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = RAJ_chindits
-				bonus = 3.0
+				bonus = 1.0
 				uses = 2
 				category = marine_tech
 				category = para_tech
@@ -1708,7 +1708,7 @@ focus_tree = {
 		x = 20
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -1749,7 +1749,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2015,7 +2015,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_lessons_of_the_great_war
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2052,7 +2052,7 @@ focus_tree = {
 		y = 0
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -2078,6 +2078,12 @@ focus_tree = {
 				uses = 1
 				category = infantry_weapons
 			}
+			add_tech_bonus = {
+				name = RAJ_vickers_berthier_gun
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -2089,7 +2095,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2116,6 +2122,12 @@ focus_tree = {
 				uses = 1
 				category = artillery
 			}
+			add_tech_bonus = {
+				name = RAJ_royal_indian_artillery
+				bonus = 0.5
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 
@@ -2127,7 +2139,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2164,7 +2176,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2200,7 +2212,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -2242,7 +2254,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = RAJ_the_bangalore_torpedo
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -2737,6 +2749,12 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = RAJ_industrial_expansion_IC
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = industry
 			}
 		}
 	}
@@ -3461,7 +3479,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_east_india_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 25
@@ -3600,21 +3618,14 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_integrate_princely_railways
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
 		}
 
 		available = {
-			if = {
-				limit = { NOT = { has_government = fascism } }
-				compare_autonomy_state > autonomy_colony
-			}
-			if = {
-				limit = { has_government = fascism }
-				compare_autonomy_state > autonomy_reichsprotectorate
-			}
+			num_of_civilian_factories > 25
 		}
 
 		bypass = {
@@ -3638,7 +3649,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_clamp_down_on_corruption
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -3647,7 +3658,7 @@ focus_tree = {
 		available = {
 			OR = {
 				is_subject = no
-				date > 1940.01.01
+				date > 1939.06.01
 			}
 			
 		}
@@ -3674,7 +3685,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_administrative_oversight
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30
@@ -3712,7 +3723,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = RAJ_administrative_oversight
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 30

@@ -415,6 +415,10 @@ unplanned_offensive = {
 	local_org_regain = -0.5
 }
 
+slowed_offensive = {
+	icon = GFX_MODIFIER_ARMY_SPEED_FACTOR
+	army_speed_factor = -0.75
+}
 
 ####
 #### SOVIET STATE MODIFIERS ####
@@ -1260,4 +1264,10 @@ RAJ_industrialized_personnel = {
 	icon = GFX_modifiers_generic_military_plans
 	state_resources_factor = 0.15
 	state_production_speed_buildings_factor = 0.15
+}
+
+mod_small_island = {
+	enable = { always = yes }
+	icon = GFX_modifiers_SOV_civilian_labor_in_defense
+	state_production_speed_air_base_factor = -5
 }

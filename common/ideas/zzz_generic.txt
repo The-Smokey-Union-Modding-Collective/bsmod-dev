@@ -328,6 +328,35 @@ ideas = {
 				air_volunteer_cap = 1
 			}
 		}
+		civilwar_veterans = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = SPR_nationalist_remnants
+			modifier = {
+				experience_loss_factor = -0.1
+				air_wing_xp_loss_when_killed_factor = -0.1
+			}
+		} 
+		SPA_plunder_economy = {
+
+			picture = SPA_duty_to_work
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
 		
 #################
 ## MOD - TRADE ##

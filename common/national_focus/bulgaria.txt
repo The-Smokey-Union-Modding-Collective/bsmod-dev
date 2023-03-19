@@ -446,9 +446,9 @@ focus_tree = {
 		prerequisite = { focus = BUL_improve_the_road_system }
 		icon = GFX_goal_generic_construct_infrastructure
 		relative_position_id = BUL_improve_the_road_system
-		x = 2
+		x = 3
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -505,13 +505,68 @@ focus_tree = {
 	}
 
 	focus = {
-		id = BUL_steel_plant_in_pernik
+		id = BUL_all_that_glitters
 
 		prerequisite = { focus = BUL_national_railway_lines }
+		icon = GFX_focus_usa_reestablish_the_gold_standard
+		relative_position_id = BUL_national_railway_lines
+		mutually_exclusive = { focus = BUL_light_metal_exploitation }
+		x = -1
+		y = 1
+		cost = 5
+
+		available = {
+			controls_state = 48
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			add_stability = 0.05
+			48 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_light_metal_exploitation
+
+		prerequisite = { focus = BUL_national_railway_lines }
+		icon = GFX_goal_generic_construct_civilian
+		relative_position_id = BUL_national_railway_lines
+		mutually_exclusive = { focus = BUL_all_that_glitters }
+		x = 1
+		y = 1
+		cost = 5
+
+		available = {
+			controls_state = 48
+		}
+		
+		search_filters = {FOCUS_FILTER_INDUSTRY}
+		completion_reward = {
+			48 = {
+				add_resource = {
+					type = aluminium
+					amount = 8 #At least one factory's worth
+				}
+			}
+		}
+	}
+	
+	focus = {
+		id = BUL_steel_plant_in_pernik
+
+		prerequisite = { focus = BUL_all_that_glitters focus = BUL_light_metal_exploitation }
 		icon = GFX_focus_generic_steel
 		relative_position_id = BUL_national_railway_lines
 		x = 0
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {
@@ -627,7 +682,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_air_production
 		relative_position_id = BUL_acquire_modern_tools
-		x = -5
+		x = -3
 		y = 1
 		cost = 10
 
@@ -713,7 +768,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_focus_generic_combined_arms
 		relative_position_id = BUL_acquire_modern_tools
-		x = 0
+		x = 1
 		y = 1
 		cost = 5
 
@@ -739,7 +794,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
 		icon = GFX_focus_generic_tank_production
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 0
+		x = 2
 		y = 2
 		cost = 10
 
@@ -925,7 +980,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_goal_generic_construct_mil_factory
 		relative_position_id = BUL_reorganize_the_military_industry
-		x = 1
+		x = 0
 		y = 1
 		cost = 10
 
@@ -1000,7 +1055,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_focus_generic_license_production
 		relative_position_id = BUL_reorganize_the_military_industry
-		x = 3
+		x = 2
 		y = 1
 		cost = 5
 
@@ -1058,7 +1113,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_reorganize_the_military_industry }
 		icon = GFX_focus_generic_little_entente
 		relative_position_id = BUL_reorganize_the_military_industry
-		x = 5
+		x = 4
 		y = 1
 		cost = 10
 
@@ -1176,7 +1231,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
 		icon = GFX_focus_generic_military_academy
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 7
+		x = 6
 		y = 1
 		cost = 5
 
@@ -1247,7 +1302,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_war_logistics }
 		icon = GFX_goal_generic_construct_military
 		relative_position_id = BUL_war_logistics
-		x = 0
+		x = 2
 		y = 1
 		cost = 10
 		mutually_exclusive = { focus = BUL_reinforce_naval_bases }
@@ -1330,7 +1385,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_negotiate_bulgarian_rearmament }
 		icon = GFX_focus_generic_destroyer
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
-		x = 12
+		x = 14
 		y = 1
 		cost = 10
 
@@ -2155,7 +2210,7 @@ focus_tree = {
 		prerequisite = { focus = BUL_acquire_modern_tools }
 		icon = GFX_goal_generic_build_navy
 		relative_position_id = BUL_acquire_modern_tools
-		x = 15
+		x = 17
 		y = 2
 		cost = 10
 
@@ -6075,7 +6130,7 @@ focus_tree = {
 
 		icon = GFX_focus_BUL_power_to_the_tsar
 		relative_position_id = BUL_oppose_the_royal_dictatorship
-		x = 3
+		x = 5
 		y = 0
 		cost = 10
 		mutually_exclusive = { focus = BUL_oppose_the_royal_dictatorship }

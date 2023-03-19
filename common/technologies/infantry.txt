@@ -495,7 +495,7 @@ technologies = {
 			soft_attack = 0.05
 			
 			urban = {
-				attack = 0.15
+				attack = 0.2
 			}
 		}
 		
@@ -543,16 +543,16 @@ technologies = {
 			soft_attack = 0.05
 			
 			urban = {
-				attack = 0.15
+				attack = 0.25
 			}
 		}
 		
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 2 y = @1943 }
+			position = { x = 2 y = @1942 }
 		}
 		
 		categories = {
@@ -637,12 +637,60 @@ technologies = {
 			soft_attack = 0.05
 			
 			river = {
-				attack = 0.15
+				attack = 0.10
 			}
 			amphibious = {
-				attack = 0.25
+				attack = 0.10
 			}
 		}
+		
+		amphibious_mechanized = {
+			soft_attack = 0.05
+			
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.10
+			}
+		}
+
+		amphibious_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.10
+			}
+		}
+
+		amphibious_light_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.10
+			}
+		}
+
+		amphibious_medium_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.10
+			}
+		}
+
+		amphibious_heavy_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.10
+			}
+		}
+
 		path = {
 			leads_to_tech = marines3
 			research_cost_coeff = 1
@@ -683,18 +731,65 @@ technologies = {
 			soft_attack = 0.05
 			
 			river = {
-				attack = 0.15
+				attack = 0.2
 			}
 			amphibious = {
 				attack = 0.25
 			}
 		}
 
+		amphibious_mechanized = {
+			soft_attack = 0.05
+			
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.2
+			}
+		}
+
+		amphibious_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.15
+			}
+		}
+
+		amphibious_light_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.15
+			}
+		}
+
+		amphibious_medium_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.15
+			}
+		}
+
+		amphibious_heavy_armor = {
+			river = {
+				attack = 0.10
+			}
+			amphibious = {
+				attack = 0.15
+			}
+		}
+
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 3 y = @1943 }
+			position = { x = 3 y = @1942 }
 		}
 		
 		categories = {
@@ -776,7 +871,7 @@ technologies = {
 			}
 		    
 			marsh = {
-				attack = 0.2
+				attack = 0.1
 			}
 		}
 		path = {
@@ -821,7 +916,7 @@ technologies = {
 			soft_attack = 0.05	
 			
 			forest = {
-				attack = 0.1
+				attack = 0.15
 			}
 		    
 			marsh = {
@@ -830,10 +925,10 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 4 y = @1943 }
+			position = { x = 4 y = @1942 }
 		}
 		
 		categories = {
@@ -867,7 +962,7 @@ technologies = {
 		    }
 		    
 			jungle = {
-				attack = 0.2
+				attack = 0.25
 		    }
 		}
 		xor = {
@@ -915,15 +1010,15 @@ technologies = {
 		    }
 		    
 			jungle = {
-				attack = 0.2
+				attack = 0.25
 		    }
 		}
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 6 y = @1943 }
+			position = { x = 6 y = @1942 }
 		}
 		
 		categories = {
@@ -1036,10 +1131,10 @@ technologies = {
 		}
 
 		research_cost = 2.0
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = infantry_folder
-			position = { x = 5 y = @1943 }
+			position = { x = 5 y = @1942 }
 		}
 		
 		categories = {
@@ -1864,9 +1959,9 @@ technologies = {
 			position = { x = 7 y = 9 }
 		}
 		
-		sub_technologies = {
-			motorized_rocket_unit
-		}
+		# sub_technologies = {
+		# 	motorized_rocket_unit
+		# }
 		
 		categories = {
 			motorized_equipment

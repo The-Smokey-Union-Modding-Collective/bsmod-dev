@@ -67,7 +67,7 @@
 		x = 2
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1853,7 +1853,7 @@
 		x = 16
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 4
@@ -1884,7 +1884,7 @@
 		y = 0
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -1921,7 +1921,7 @@
 		y = 1
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2056,7 +2056,7 @@
 		y = 2
 		relative_position_id = AST_standard_gauge_railway
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -2374,48 +2374,48 @@
 		}
 	}
 	
-	focus = {
-		id = AST_third_emu_war
-		icon = GFX_focus_ast_third_emu_war
-		prerequisite = { focus = AST_uranium_mining }
-		x = 0
-		y = 1
-		relative_position_id = AST_uranium_mining
+	# focus = {
+	# 	id = AST_third_emu_war
+	# 	icon = GFX_focus_ast_third_emu_war
+	# 	prerequisite = { focus = AST_uranium_mining }
+	# 	x = 0
+	# 	y = 1
+	# 	relative_position_id = AST_uranium_mining
 
-		cost = 10
+	# 	cost = 10
 
-		ai_will_do = {
-			factor = 1
-		}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
 
-		available = {
-			has_tech = nuclear_reactor
-		}
+	# 	available = {
+	# 		has_tech = nuclear_reactor
+	# 	}
 		
-		bypass = {
+	# 	bypass = {
 
-		}
+	# 	}
 
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-		search_filters = { FOCUS_FILTER_RESEARCH }
+	# 	cancel_if_invalid = yes
+	# 	continue_if_invalid = no
+	# 	available_if_capitulated = no
+	# 	search_filters = { FOCUS_FILTER_RESEARCH }
 
-		completion_reward = {
-			annex_country = {
-				target = EMU
-			}
-			add_ideas = AST_third_emu_war
-			674 = {
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = nuclear_reactor
-					level = 1
-					instant_build = yes
-				}
-			}
-		}
-	}
+	# 	completion_reward = {
+	# 		annex_country = {
+	# 			target = EMU
+	# 		}
+	# 		add_ideas = AST_third_emu_war
+	# 		674 = {
+	# 			add_extra_state_shared_building_slots = 1
+	# 			add_building_construction = {
+	# 				type = nuclear_reactor
+	# 				level = 1
+	# 				instant_build = yes
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	############################
 	#### WAR PREP SECTION ######
@@ -2427,7 +2427,7 @@
 		x = 24
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 3
@@ -2462,7 +2462,7 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 8
@@ -2497,7 +2497,7 @@
 		y = 1
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2528,7 +2528,7 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 10
@@ -2627,7 +2627,7 @@
 		y = 2
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -2933,7 +2933,7 @@
 		y = 3
 		relative_position_id = AST_establish_advisory_war_council
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5

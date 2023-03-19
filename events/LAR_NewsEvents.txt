@@ -125,90 +125,90 @@ news_event = {
 						disband = yes
 					}
 				}
-				if = {
-					limit = {
-						tag = SPA
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_nationalists_flag
-						}
-						remove_core_of = SPB
-						remove_core_of = SPC
-						remove_core_of = SPD
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_republicans_flag
-						}
-						remove_core_of = SPA
-						remove_core_of = SPB
-						remove_core_of = SPC
-						remove_core_of = SPD
-						start_resistance = yes
-					}
-					118 = {
-						if = {
-							limit = {
-								is_controlled_by = ROOT
-							}
-							remove_core_of = SPB
-							remove_core_of = SPD
-							remove_core_of = SPC
-							add_core_of = ROOT
-						}
-						else = {
-							remove_claim_by = SPB
-							remove_claim_by = SPC
-							remove_claim_by = SPD
-							add_claim_by = SPA
-						}
-					}
-				}
-				if = {
-					limit = {
-						tag = SPB
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_nationalists_flag
-						}
-						remove_core_of = SPA
-						remove_core_of = SPC
-						remove_core_of = SPD
-					}
-					every_state = {
-						limit = {
-							has_state_flag = SPR_core_of_spain_flag
-							has_state_flag = SPR_sided_with_republicans_flag
-						}
-						remove_core_of = SPB
-						remove_core_of = SPA
-						remove_core_of = SPC
-						remove_core_of = SPD
-						start_resistance = yes
-					}
-					118 = {
-						if = {
-							limit = {
-								is_controlled_by = ROOT
-							}
-							remove_core_of = SPA
-							remove_core_of = SPD
-							remove_core_of = SPC
-							add_core_of = ROOT							
-						}
-						else = {
-							remove_claim_by = SPA
-							remove_claim_by = SPC
-							remove_claim_by = SPD
-							add_claim_by = SPB
-						}
-					}
-				}
+				# if = {
+				# 	limit = {
+				# 		tag = SPA
+				# 	}
+				# 	every_state = {
+				# 		limit = {
+				# 			has_state_flag = SPR_core_of_spain_flag
+				# 			has_state_flag = SPR_sided_with_nationalists_flag
+				# 		}
+				# 		remove_core_of = SPB
+				# 		remove_core_of = SPC
+				# 		remove_core_of = SPD
+				# 	}
+				# 	every_state = {
+				# 		limit = {
+				# 			has_state_flag = SPR_core_of_spain_flag
+				# 			has_state_flag = SPR_sided_with_republicans_flag
+				# 		}
+				# 		remove_core_of = SPA
+				# 		remove_core_of = SPB
+				# 		remove_core_of = SPC
+				# 		remove_core_of = SPD
+				# 		start_resistance = yes
+				# 	}
+				# 	118 = {
+				# 		if = {
+				# 			limit = {
+				# 				is_controlled_by = ROOT
+				# 			}
+				# 			remove_core_of = SPB
+				# 			remove_core_of = SPD
+				# 			remove_core_of = SPC
+				# 			add_core_of = ROOT
+				# 		}
+				# 		else = {
+				# 			remove_claim_by = SPB
+				# 			remove_claim_by = SPC
+				# 			remove_claim_by = SPD
+				# 			add_claim_by = SPA
+				# 		}
+				# 	}
+				# }
+				# if = {
+				# 	limit = {
+				# 		tag = SPB
+				# 	}
+				# 	every_state = {
+				# 		limit = {
+				# 			has_state_flag = SPR_core_of_spain_flag
+				# 			has_state_flag = SPR_sided_with_nationalists_flag
+				# 		}
+				# 		remove_core_of = SPA
+				# 		remove_core_of = SPC
+				# 		remove_core_of = SPD
+				# 	}
+				# 	every_state = {
+				# 		limit = {
+				# 			has_state_flag = SPR_core_of_spain_flag
+				# 			has_state_flag = SPR_sided_with_republicans_flag
+				# 		}
+				# 		remove_core_of = SPB
+				# 		remove_core_of = SPA
+				# 		remove_core_of = SPC
+				# 		remove_core_of = SPD
+				# 		start_resistance = yes
+				# 	}
+				# 	118 = {
+				# 		if = {
+				# 			limit = {
+				# 				is_controlled_by = ROOT
+				# 			}
+				# 			remove_core_of = SPA
+				# 			remove_core_of = SPD
+				# 			remove_core_of = SPC
+				# 			add_core_of = ROOT							
+				# 		}
+				# 		else = {
+				# 			remove_claim_by = SPA
+				# 			remove_claim_by = SPC
+				# 			remove_claim_by = SPD
+				# 			add_claim_by = SPB
+				# 		}
+				# 	}
+				# }
 				remove_ideas = SPA_death_before_surrender
 				add_timed_idea = { idea = SPA_recovering_from_civil_war days = 1825 }
 				if = {
@@ -251,6 +251,9 @@ news_event = {
 					remove_dynamic_modifier = {
 						modifier = unplanned_offensive
 					}
+					remove_dynamic_modifier = {
+						modifier = slowed_offensive
+					}	
 				}
 			}
 		}
@@ -725,6 +728,9 @@ news_event = {
 					remove_dynamic_modifier = {
 						modifier = unplanned_offensive
 					}
+					remove_dynamic_modifier = {
+						modifier = slowed_offensive
+					}	
 				}
 				if = {
 					limit = {

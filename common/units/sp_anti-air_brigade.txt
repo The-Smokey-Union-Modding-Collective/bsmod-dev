@@ -37,32 +37,45 @@ sub_units = {
 
 		suppression = 0.75
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-		    attack = -0.1
-		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
+			attack = -0.1
 			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
+		hills = {
+			attack = -0.1
+			defence = -0.1
 		}
-		amphibious = { 
-			attack = -0.6
+		urban = {
+			attack = -0.5
+			defence = -0.15
 		}
+		jungle = {
+			attack = -0.2
+			defence = -0.1
+		}
+		marsh = {
+			attack = -0.3
+			defence = -0.15
+		}
+		mountain = {
+			attack = -0.35
+			defence = -0.15
+		}
+		#river = {
+		#	attack = -0.20
+		#}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	medium_sp_anti_air_brigade = {
@@ -102,35 +115,45 @@ sub_units = {
 
 		suppression = 0.8
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
+			attack = -0.2
 			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
+		hills = {
+			attack = -0.2
+			defence = -0.1
 		}
-		amphibious = { 
-			attack = -0.7
+		urban = {
+			attack = -0.3
+			defence = -0.15
 		}
+		jungle = {
+			attack = -0.2
+			defence = -0.1
+		}
+		marsh = {
+			attack = -0.3
+			defence = -0.15
+		}
+		mountain = {
+			attack = -0.35
+			defence = -0.15
+		}
+		#river = {
+		#	attack = -0.20
+		#}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	heavy_sp_anti_air_brigade = {
@@ -170,35 +193,45 @@ sub_units = {
 
 		suppression = 0.75
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.40
-			movement = -0.40
-		}
-		hills = {
-		    attack = -0.20
-		}
-		mountain = 	{
-		    attack = -0.3
-		}
-		jungle = {
-		    attack = -0.6
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.4 
-			movement = -0.2
-		}
-		urban = {
-			attack = -0.5
+			attack = -0.4
 			defence = -0.2
 		}
-		river = { 
-			attack = -0.4 
-			movement = -0.4
+		hills = {
+			attack = -0.4
+			defence = -0.2
 		}
-		amphibious = { 
-			attack = -0.8 
+		urban = {
+			attack = -0.2
+			defence = -0.1
 		}
+		jungle = {
+			attack = -0.4
+			defence = -0.2
+		}
+		marsh = {
+			attack = -0.5
+			defence = -0.25
+		}
+		mountain = {
+			attack = -0.55
+			defence = -0.2
+		}
+		#river = {
+		#	attack = -0.20
+		#}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	super_heavy_sp_anti_air_brigade = {
@@ -237,35 +270,45 @@ sub_units = {
 
 		suppression = 0.75
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.5
-			movement = -0.4
-		}
-		hills = {
-		    attack = -0.3
-		}
-		mountain = 	{
-		    attack = -0.4
-		}
-		jungle = {
-		    attack = -0.7
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.5 
-			movement = -0.2
-		}
-		urban = {
-			attack = -0.6
+			attack = -0.4
 			defence = -0.2
 		}
-		river = { 
-			attack = -0.5
-			movement = -0.4
+		hills = {
+			attack = -0.4
+			defence = -0.2
 		}
-		amphibious = { 
-			attack = -1.0
+		urban = {
+			attack = -0.1
+			defence = -0.1
 		}
+		jungle = {
+			attack = -0.6
+			defence = -0.3
+		}
+		marsh = {
+			attack = -0.3
+			defence = -0.15
+		}
+		mountain = {
+			attack = -0.65
+			defence = -0.3
+		}
+		#river = {
+		#	attack = -0.20
+		#}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 	
 	modern_sp_anti_air_brigade = {
@@ -305,35 +348,45 @@ sub_units = {
 
 		suppression = 2
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
-		    attack = -0.3
-			movement = -0.4
-		}
-		hills = 	{
-		    attack = -0.1
-		}
-		mountain = 	{
-		    attack = -0.2
-		}
-		jungle = {
-		    attack = -0.4
-			movement = -0.4
-		}
-		marsh = {
-		    attack = -0.1 
-			movement = -0.1
-		}
-		urban = {
-			attack = -0.4
+			attack = -0.2
 			defence = -0.1
 		}
-		river = { 
-			attack = -0.2 
-			movement = -0.2
+		hills = {
+			attack = -0.2
+			defence = -0.1
 		}
-		amphibious = { 
-			attack = -0.7
+		urban = {
+			attack = -0.3
+			defence = -0.15
 		}
+		jungle = {
+			attack = -0.4
+			defence = -0.2
+		}
+		marsh = {
+			attack = -0.2
+			defence = -0.1
+		}
+		mountain = {
+			attack = -0.4
+			defence = -0.2
+		}
+		#river = {
+		#	attack = -0.20
+		#}
+		amphibious = {
+			attack = -0.70
+		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 
 

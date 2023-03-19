@@ -5034,9 +5034,9 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
-			annex_country = {
-				target = MAL
-			}
+			#annex_country = {
+			#	target = MAL
+			#}
 			
 			336 = {
 				set_building_level = {
@@ -5103,9 +5103,9 @@ focus_tree = {
 				}
 				add_compliance = 70
 			}
-			333 = {
-				add_compliance = 70
-			}
+			#333 = {
+			#	add_compliance = 70
+			#}
 		}
 	}
 		
@@ -5821,7 +5821,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_the_raj
+		icon = GFX_focus_RAJ_all_india_forward_bloc
 		x = 0
 		y = 1
 		relative_position_id = uk_colonial_focus
@@ -5842,10 +5842,6 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			set_autonomy = {
-				target = RAJ
-				autonomy_state = autonomy_dominion
-			}
 		}
 	}
 	
@@ -5856,7 +5852,7 @@ focus_tree = {
 		}
 		bypass = {
 		}
-		icon = GFX_focus_eng_develop_pacific_dominions
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
 		x = 4
 		y = 1
 		relative_position_id = uk_colonial_focus

@@ -1228,7 +1228,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
@@ -1269,7 +1269,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_MANPOWER FOCUS_FILTER_INDUSTRY FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
 			USA_great_depression_level_down = yes
-			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 230 }
+			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
 		}
@@ -1939,7 +1939,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_arsenal_of_democracy
-		icon = GFX_focus_usa_arsenal_of_democracy
+		icon = GFX_focus_generic_the_giant_wakes
 		prerequisite = { focus = USA_neutrality_act }
 		x = 0
 		y = 2
@@ -2069,7 +2069,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_the_giant_wakes
-		icon = GFX_focus_usa_giant_wakes
+		icon = GFX_focus_generic_industry_3
 		prerequisite = { focus = USA_arsenal_of_democracy }
 		available = {
 			date > 1938.1.1
@@ -2134,6 +2134,7 @@ focus_tree = {
 		available_if_capitulated = yes
 		available = {
 			democratic > 0.95
+			date > 1940.06.01
 		}
 		completion_reward = {
 			add_ideas = wartime_industry_focus
@@ -4855,7 +4856,7 @@ focus_tree = {
 	focus = {
 		id = USA_war_department
 		icon = GFX_goal_generic_army_doctrines
-		x = 46
+		x = 48
 		y = 0
 		offset = {
 			x = -26
@@ -4890,7 +4891,7 @@ focus_tree = {
 	focus = {
 		id = USA_selective_training_act
 		icon = GFX_focus_generic_military_mission
-		x = -5
+		x = -7
 		y = 1
 		prerequisite = { focus = USA_war_department }
 		relative_position_id = USA_war_department
@@ -5107,7 +5108,7 @@ focus_tree = {
 	focus = {
 		id = USA_support_rock_island
 		icon = GFX_goal_generic_army_artillery
-		x = 2
+		x = 4
 		y = 1
 		relative_position_id = USA_selective_training_act
 		cost = 10
@@ -5124,7 +5125,6 @@ focus_tree = {
 				uses = 2
 				bonus = 1.0
 				category = artillery
-				category = support_tech
 			}
 		}
 	}
@@ -5132,8 +5132,8 @@ focus_tree = {
 		id = USA_tank_experiments
 		icon = GFX_goal_generic_army_tanks
 		x = 2
-		y = 2
-		prerequisite = { focus = USA_support_rock_island }
+		y = 1
+		prerequisite = { focus = USA_selective_training_act }
 		relative_position_id = USA_selective_training_act
 		cost = 10
 
@@ -5166,7 +5166,7 @@ focus_tree = {
 		id = USA_tank_destroyer_doctrine
 		icon = GFX_focus_usa_tank_destroyer_doctrine
 		x = 2
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_main_battle_tanks }
 		relative_position_id = USA_selective_training_act
@@ -5197,7 +5197,7 @@ focus_tree = {
 		id = USA_main_battle_tanks
 		icon = GFX_focus_generic_combined_arms
 		x = 4
-		y = 3
+		y = 2
 		prerequisite = { focus = USA_tank_experiments }
 		mutually_exclusive = { focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
@@ -5228,7 +5228,7 @@ focus_tree = {
 		id = USA_armored_infantry
 		icon = GFX_goal_generic_build_tank
 		x = 2
-		y = 4
+		y = 3
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
 		relative_position_id = USA_selective_training_act
 		cost = 10
@@ -5260,7 +5260,7 @@ focus_tree = {
 	}
 	focus = {
 		id = USA_tank_expertise
-		icon = GFX_focus_YUG_safeguard_bosnia
+		icon = GFX_focus_generic_tank_air_support
 		x = 0
 		y = 1
 		prerequisite = { focus = USA_main_battle_tanks focus = USA_tank_destroyer_doctrine }
@@ -5272,16 +5272,6 @@ focus_tree = {
 		}
 
 		available = {
-			OR = {
-				16 = {
-					CONTROLLER = {
-						NOT = {
-							original_tag = FRA
-						}
-					}
-				}
-				date > 1940.07.01
-			}
 		}
 		
 		bypass = {

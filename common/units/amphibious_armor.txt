@@ -36,34 +36,39 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		forest = {
-			attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-			attack = -0.1
-		}
 		plains = {
-			attack = -0.1
-			movement = -0.1
+			attack = 0.1
 		}
-		jungle = {
-			attack = -0.3
-			movement = -0.4
+		desert = {
+			attack = 0.1
+		}
+		forest = {
+			attack = -0.25
+		}
+		hills = {
+			attack = -0.25
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.65
+		}
+		jungle = {
+			attack = -0.5
 		}
 		marsh = {
-			attack = 0.3
+			attack = -0.35
+		}
+		mountain = {
+			attack = -0.5
 		}
 		river = {
-			attack = 0.4
+			attack = 0.5
 		}
 		amphibious = {
-			attack = 0.6
+			attack = -0.15
 		}
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 
 	amphibious_light_armor = {
@@ -103,34 +108,39 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
+		plains = {
+			attack = 0.1
+		}
+		desert = {
+			attack = 0.1
+		}
 		forest = {
 		    attack = -0.2
-			movement = -0.4
 		}
-		mountain = 	{
-		    attack = -0.1
-		}
-		plains = {
-			attack = -0.1
-			movement = -0.1
-		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		hills = {
+			attack = -0.2
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.6
+		}
+		jungle = {
+			attack = -0.2
 		}
 		marsh = {
-			attack = 0.3
+			attack = -0.35
+		}
+		mountain = {
+			attack = -0.2
 		}
 		river = {
-			attack = 0.4
+			attack = 0.1
 		}
 		amphibious = {
-			attack = 0.6
+			attack = -0.15
 		}	
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 
 	amphibious_medium_armor = {
@@ -170,34 +180,39 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		forest = {
-		    attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-		    attack = -0.1
-		}
 		plains = {
-			attack = -0.1
-			movement = -0.1
+			attack = 0.1
 		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		desert = {
+			attack = 0.1
+		}
+		forest = {
+			attack = -0.35
+		}
+		hills = {
+			attack = -0.35
 		}
 		urban = {
 			attack = -0.4
-			defence = -0.1
+		}
+		jungle = {
+			attack = -0.7
 		}
 		marsh = {
-			attack = 0.3
+			attack = -0.6
+		}
+		mountain = {
+			attack = -0.4
 		}
 		river = {
-			attack = 0.4
+			attack = 0.15
 		}
 		amphibious = {
-			attack = 0.6
+			attack = -0.25
 		}	
+		#fort = {
+		#	movement = -0.05
+		#}
 	}
 
 	amphibious_heavy_armor = {
@@ -237,33 +252,38 @@ sub_units = {
 		weight = 1
 		supply_consumption = 0.2
 
-		forest = {
-		    attack = -0.2
-			movement = -0.4
-		}
-		mountain = 	{
-		    attack = -0.1
-		}
 		plains = {
-			attack = -0.1
-			movement = -0.1
+			attack = 0.1
 		}
-		jungle = {
-		    attack = -0.3
-			movement = -0.4
+		desert = {
+			attack = 0.1
+		}
+		forest = {
+			attack = -0.40
+		}
+		hills = {
+			attack = -0.40
 		}
 		urban = {
-			attack = -0.4
-			defence = -0.1
+			attack = -0.3
+		}
+		jungle = {
+			attack = -0.6
 		}
 		marsh = {
-			attack = 0.3
+			attack = -0.8
+		}
+		mountain = {
+			attack = -0.4
 		}
 		river = {
-			attack = 0.4
+			attack = 0.25
 		}
 		amphibious = {
-			attack = 0.6
+			attack = -0.3
+		}
+		fort = {
+			attack = 0.05
 		}	
 	}
 }
