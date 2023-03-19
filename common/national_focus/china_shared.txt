@@ -3415,6 +3415,9 @@ shared_focus = {
 			is_controlled_by = ROOT
 			is_coastal = yes
 		}
+		NOT = {
+			is_ai = yes
+		}
 #		OR = {
 #			USA_will_support = yes
 #			JAP_will_support = yes

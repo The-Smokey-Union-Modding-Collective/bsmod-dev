@@ -341,6 +341,22 @@ ideas = {
 				air_wing_xp_loss_when_killed_factor = -0.1
 			}
 		} 
+		SPA_plunder_economy = {
+
+			picture = SPA_duty_to_work
+
+			allowed = {
+				original_tag = SPR
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+		}
 		
 #################
 ## MOD - TRADE ##

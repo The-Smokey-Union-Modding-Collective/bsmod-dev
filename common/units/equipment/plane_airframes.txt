@@ -37,7 +37,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 28
+		build_cost_ic = 5
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -230,7 +230,7 @@ equipments = {
 		weight = 4
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 31
+		build_cost_ic = 8
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -307,7 +307,7 @@ equipments = {
 		weight = 5
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 34
+		build_cost_ic = 10
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -411,7 +411,7 @@ equipments = {
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 38
+		build_cost_ic = 12
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -522,7 +522,7 @@ equipments = {
 		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 40
+		build_cost_ic = 14
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -659,7 +659,7 @@ equipments = {
 		lend_lease_cost = 8
 		manpower = 20
 		fuel_consumption = 0.05
-		build_cost_ic = 30
+		build_cost_ic = 7
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -853,7 +853,7 @@ equipments = {
 		weight = 6
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 33
+		build_cost_ic = 9
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -929,7 +929,7 @@ equipments = {
 		weight = 7
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 40
+		build_cost_ic = 12
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1032,7 +1032,7 @@ equipments = {
 		weight = 8
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 40
+		build_cost_ic = 14
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1141,7 +1141,7 @@ equipments = {
 		weight = 9
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 44
+		build_cost_ic = 16
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1257,6 +1257,7 @@ equipments = {
 			tactical_bomber
 			fighter
 			scout_plane
+			naval_bomber
 		}
 		allow_mission_type = training
 		group_by = archetype
@@ -1272,7 +1273,7 @@ equipments = {
 		lend_lease_cost = 10
 		manpower = 40
 		fuel_consumption = 0
-		build_cost_ic = 45
+		build_cost_ic = 20
 		resources = {
 			aluminium = 2
 			rubber = 1
@@ -1285,6 +1286,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon
 				}
 			}
 
@@ -1416,7 +1418,7 @@ equipments = {
 
 		module_count_limit = {
 			module = torpedo_mounting
-			count < 3
+			count < 4
 		}
 
 		module_count_limit = {
@@ -1512,7 +1514,7 @@ equipments = {
 		weight = 10
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 51
+		build_cost_ic = 24
 		resources = {
 			aluminium = 3
 			rubber = 1
@@ -1524,6 +1526,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon
 				}
 			}
 
@@ -1639,7 +1642,7 @@ equipments = {
 		weight = 12
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 54
+		build_cost_ic = 26
 		resources = {
 			aluminium = 4
 			rubber = 1
@@ -1651,6 +1654,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon
 				}
 			}
 
@@ -1782,7 +1786,7 @@ equipments = {
 		weight = 14
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 58
+		build_cost_ic = 28
 		resources = {
 			aluminium = 5
 			rubber = 1
@@ -1794,6 +1798,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon
 				}
 			}
 
@@ -1937,7 +1942,7 @@ equipments = {
 		weight = 16
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 61
+		build_cost_ic = 30
 		resources = {
 			aluminium = 5
 			rubber = 1
@@ -1949,6 +1954,7 @@ equipments = {
 					tac_weapon
 					fighter_weapon
 					recon_camera
+					nav_bomber_weapon
 				}
 			}
 
@@ -2109,7 +2115,7 @@ equipments = {
 		lend_lease_cost = 10
 		manpower = 80
 		fuel_consumption = 0.16
-		build_cost_ic = 67
+		build_cost_ic = 35
 		resources = {
 			aluminium = 3
 			rubber = 2
@@ -2339,7 +2345,7 @@ equipments = {
 		weight = 25
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 72
+		build_cost_ic = 38
 		resources = {
 			aluminium = 3
 			rubber = 2
@@ -2474,7 +2480,7 @@ equipments = {
 		weight = 30
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 76
+		build_cost_ic = 41
 		resources = {
 			aluminium = 4
 			rubber = 2
@@ -2634,7 +2640,7 @@ equipments = {
 		weight = 35
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 80
+		build_cost_ic = 44
 		resources = {
 			aluminium = 5
 			rubber = 2
@@ -2794,7 +2800,7 @@ equipments = {
 		weight = 42
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
-		build_cost_ic = 86
+		build_cost_ic = 46
 		resources = {
 			aluminium = 6
 			rubber = 2

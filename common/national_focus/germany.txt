@@ -3200,6 +3200,7 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
 			army_experience = 10
+			add_research_slot = 1
 			if = {
 				limit = {
 					country_exists = AUS
