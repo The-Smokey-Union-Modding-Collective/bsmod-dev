@@ -10,7 +10,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = flexibility_tech
+			leads_to_tech = dispersed_industry
 			research_cost_coeff = 1
 		}
 
@@ -20,7 +20,7 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = productivity_tech
+			leads_to_tech = concentrated_industry
 			research_cost_coeff = 1
 		}
 
@@ -53,6 +53,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1937
 		
 		folder = {
 			name = industry_folder
@@ -63,12 +64,12 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = USA
 			}
 			
@@ -78,18 +79,8 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
 			}
 						
 			modifier = {
@@ -100,7 +91,7 @@ technologies = {
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_transport_tech
 		}
 		
 		ai_research_weights = {
@@ -108,7 +99,7 @@ technologies = {
 		}
 	}
 
-	flexibility_tech = {
+	dispersed_industry = {
 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.1
@@ -119,6 +110,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1937
 		
 		folder = {
 			name = industry_folder
@@ -129,35 +121,25 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
 			}
 
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
 			modifier = {
 				factor = 5
 				date > "1937.1.1"
@@ -166,7 +148,7 @@ technologies = {
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_flexibility_tech
 		}
 		
 		ai_research_weights = {
@@ -174,7 +156,7 @@ technologies = {
 		}
 	}
 
-	productivity_tech = {
+	concentrated_industry = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
@@ -185,6 +167,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1937
 		
 		folder = {
 			name = industry_folder
@@ -195,35 +178,25 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
 
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
 			modifier = {
 				factor = 5
 				date > "1937.1.1"
@@ -232,7 +205,7 @@ technologies = {
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_productivity_tech
 		}
 		
 		ai_research_weights = {
@@ -242,7 +215,7 @@ technologies = {
 
 	organisation_tech = {
 
-		global_building_slots_factor = 0.10
+		global_building_slots_factor = 0.25
 		
 		path = {
 			leads_to_tech = improved_machine_tools
@@ -250,6 +223,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1937
 		
 		folder = {
 			name = industry_folder
@@ -260,35 +234,25 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
+		
 			modifier = {
 				factor = 5
 				date > "1937.1.1"
@@ -297,7 +261,7 @@ technologies = {
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_organisation_tech
 		}
 		
 		ai_research_weights = {
@@ -316,12 +280,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = flexibility_tech_2
+			leads_to_tech = dispersed_industry2
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = productivity_tech_2
+			leads_to_tech = concentrated_industry2
 			research_cost_coeff = 1
 		}
 
@@ -331,7 +295,7 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1937
+		start_year = 1938
 		
 		folder = {
 			name = industry_folder
@@ -365,6 +329,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1939
 		
 		folder = {
 			name = industry_folder
@@ -375,12 +340,12 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = USA
 			}
 			
@@ -390,29 +355,19 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
 			}
 						
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1939.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_transport_tech
 		}
 		
 		ai_research_weights = {
@@ -420,7 +375,7 @@ technologies = {
 		}
 	}
 
-	flexibility_tech_2 = {
+	dispersed_industry2 = {
 
 		line_change_production_efficiency_factor = 0.1
 		production_factory_start_efficiency_factor = 0.1
@@ -431,6 +386,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1939
 		
 		folder = {
 			name = industry_folder
@@ -441,44 +397,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1939.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_flexibility_tech
 		}
 		
 		ai_research_weights = {
@@ -486,7 +432,7 @@ technologies = {
 		}
 	}
 
-	productivity_tech_2 = {
+	concentrated_industry2 = {
 
 		industrial_capacity_factory = 0.1
 		industrial_capacity_dockyard = 0.1
@@ -497,6 +443,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1939
 		
 		folder = {
 			name = industry_folder
@@ -507,44 +454,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1939.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_productivity_tech
 		}
 		
 		ai_research_weights = {
@@ -554,7 +491,7 @@ technologies = {
 
 	organisation_tech_2 = {
 
-		global_building_slots_factor = 0.1
+		global_building_slots_factor = 0.25
 		
 		path = {
 			leads_to_tech = advanced_machine_tools
@@ -562,6 +499,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1939
 		
 		folder = {
 			name = industry_folder
@@ -572,44 +510,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
+		
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1939.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_organisation_tech
 		}
 		
 		ai_research_weights = {
@@ -619,7 +547,7 @@ technologies = {
 
 	advanced_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
 		
 		path = {
 			leads_to_tech = transportation_tech_3
@@ -627,12 +555,12 @@ technologies = {
 		}
 
 		path = {
-			leads_to_tech = flexibility_tech_3
+			leads_to_tech = dispersed_industry3
 			research_cost_coeff = 1
 		}
 
 		path = {
-			leads_to_tech = productivity_tech_3
+			leads_to_tech = concentrated_industry3
 			research_cost_coeff = 1
 		}
 
@@ -642,7 +570,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1940
 		
 		folder = {
 			name = industry_folder
@@ -666,7 +594,7 @@ technologies = {
 	
 	transportation_tech_3 = {
 
-		production_speed_infrastructure_factor = 0.1
+		production_speed_infrastructure_factor = 0.2
 		supply_node_range = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 
@@ -676,6 +604,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1941
 		
 		folder = {
 			name = industry_folder
@@ -686,12 +615,12 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = USA
 			}
 			
@@ -701,29 +630,19 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
 			}
 						
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_transport_tech
 		}
 		
 		ai_research_weights = {
@@ -731,10 +650,10 @@ technologies = {
 		}
 	}
 
-	flexibility_tech_3 = {
+	dispersed_industry3 = {
 
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.15
+		production_factory_start_efficiency_factor = 0.15
 		
 		path = {
 			leads_to_tech = assembly_line_production
@@ -742,6 +661,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1941
 		
 		folder = {
 			name = industry_folder
@@ -752,44 +672,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_flexibility_tech
 		}
 		
 		ai_research_weights = {
@@ -797,10 +707,10 @@ technologies = {
 		}
 	}
 
-	productivity_tech_3 = {
+	concentrated_industry3 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		
 		path = {
 			leads_to_tech = assembly_line_production
@@ -808,6 +718,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1941
 		
 		folder = {
 			name = industry_folder
@@ -818,44 +729,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_productivity_tech
 		}
 		
 		ai_research_weights = {
@@ -865,7 +766,7 @@ technologies = {
 
 	organisation_tech_3 = {
 
-		global_building_slots_factor = 0.15
+		global_building_slots_factor = 0.25
 		
 		path = {
 			leads_to_tech = assembly_line_production
@@ -873,6 +774,7 @@ technologies = {
 		}
 		
 		research_cost = 2
+		start_year = 1941
 		
 		folder = {
 			name = industry_folder
@@ -883,44 +785,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
+		
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1941.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_organisation_tech
 		}
 		
 		ai_research_weights = {
@@ -930,7 +822,7 @@ technologies = {
 
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
 		
 		#path = {
 		#	leads_to_tech = improved_machine_tools 
@@ -943,12 +835,12 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = flexibility_tech_4
+			leads_to_tech = dispersed_industry4
 			research_cost_coeff = 1
 		}
 		
 		path = {
-			leads_to_tech = productivity_tech_4
+			leads_to_tech = concentrated_industry4
 			research_cost_coeff = 1
 		}
 
@@ -958,7 +850,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1942
 		
 		folder = {
 			name = industry_folder
@@ -982,11 +874,12 @@ technologies = {
 	
 	transportation_tech_4 = {
 
-		production_speed_infrastructure_factor = 0.1
-		supply_node_range = 0.05
-		production_factory_efficiency_gain_factor = 0.05
+		production_speed_infrastructure_factor = 0.2
+		supply_node_range = 0.1
+		production_factory_efficiency_gain_factor = 0.1
 	
 		research_cost = 2
+		start_year = 1943
 		
 		folder = {
 			name = industry_folder
@@ -997,12 +890,12 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = USA
 			}
 			
@@ -1012,29 +905,19 @@ technologies = {
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
-			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
 			}
 						
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1943.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_transport_tech
 		}
 		
 		ai_research_weights = {
@@ -1042,12 +925,13 @@ technologies = {
 		}
 	}
 
-	flexibility_tech_4 = {
+	dispersed_industry4 = {
 
-		line_change_production_efficiency_factor = 0.1
-		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.15
+		production_factory_start_efficiency_factor = 0.15
 		
 		research_cost = 2
+		start_year = 1943
 		
 		folder = {
 			name = industry_folder
@@ -1058,44 +942,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1943.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_flexibility_tech
 		}
 		
 		ai_research_weights = {
@@ -1103,12 +977,13 @@ technologies = {
 		}
 	}
 
-	productivity_tech_4 = {
+	concentrated_industry4 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		
 		research_cost = 2
+		start_year = 1943
 		
 		folder = {
 			name = industry_folder
@@ -1119,44 +994,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
+				factor = 1
 				NOT = { tag = GER }
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 1
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
 
 			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
-			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1943.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_productivity_tech
 		}
 		
 		ai_research_weights = {
@@ -1166,9 +1031,10 @@ technologies = {
 
 	organisation_tech_4 = {
 
-		global_building_slots_factor = 0.15
+		global_building_slots_factor = 0.25
 		
 		research_cost = 2
+		start_year = 1943
 		
 		folder = {
 			name = industry_folder
@@ -1179,44 +1045,34 @@ technologies = {
 			factor = 25
 
 			modifier = {
-				factor = 2
-				NOT = { tag = GER }
+				factor = 10
+				tag = GER 
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 10
 				tag = USA
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = ENG
 			}
 			
 			modifier = {
-				factor = 2
+				factor = 5
 				tag = JAP
 			}
-
-			modifier = {
-				factor = 0
-				has_tech = dispersed_industry
-			}
-			
-			modifier = {
-				factor = 0
-				is_researching_technology = dispersed_industry
-			}
-						
+		
 			modifier = {
 				factor = 5
-				date > "1937.1.1"
+				date > "1943.1.1"
 			}
 		}
 		
 		categories = {
 			industry
-			concentrated_industry_category
+			cat_organisation_tech
 		}
 		
 		ai_research_weights = {
@@ -1245,7 +1101,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = industry_folder
-			position = { x = -4 y = 0 }
+			position = { x = 0 y = 0 }
 		}
 		
 		categories = {
@@ -1335,7 +1191,7 @@ technologies = {
 		start_year = 1936
 		folder = {
 			name = industry_folder
-			position = { x = -2 y = 2 }
+			position = { x = 2 y = 2 }
 		}
 		
 		categories = {
@@ -1400,7 +1256,7 @@ technologies = {
 		start_year = 1937
 		folder = {
 			name = industry_folder
-			position = { x = -2 y = 4 }
+			position = { x = 2 y = 4 }
 		}
 		
 		categories = {
@@ -1456,7 +1312,7 @@ technologies = {
 		start_year = 1939
 		folder = {
 			name = industry_folder
-			position = { x = -2 y = 6 }
+			position = { x = 2 y = 7 }
 		}
 		
 		categories = {
@@ -1503,7 +1359,7 @@ technologies = {
 		start_year = 1941
 		folder = {
 			name = industry_folder
-			position = { x = -2 y = 8 }
+			position = { x = 2 y = 10 }
 		}
 		
 		categories = {
@@ -1543,10 +1399,10 @@ technologies = {
 		fuel_gain_factor_from_states = 0.1
 
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1942
 		folder = {
 			name = industry_folder
-			position = { x = -2 y = 10 }
+			position = { x = 2 y = 13 }
 		}
 		
 		categories = {
@@ -1597,10 +1453,10 @@ technologies = {
 		}
 		
 		research_cost = 3
-		start_year = 1936
+		start_year = 1937
 		folder = {
 			name = industry_folder
-			position = { x = -5 y = 2 }
+			position = { x = -2 y = 2 }
 		}
 		
 		categories = {
@@ -1651,10 +1507,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
+		start_year = 1938
 		
 		folder = {
 			name = industry_folder
-			position = { x = -6 y = 4 }
+			position = { x = -1 y = 4 }
 		}
 		
 		categories = {
@@ -1709,7 +1566,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -6 y = 6 }
+			position = { x = -1 y = 7 }
 		}
 		
 		categories = {
@@ -1769,7 +1626,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -6 y = 8 }
+			position = { x = -1 y = 10 }
 		}
 		
 		categories = {
@@ -1815,11 +1672,11 @@ technologies = {
 		fuel_gain_factor_from_states = 0.5
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1942
 		
 		folder = {
 			name = industry_folder
-			position = { x = -6 y = 10 }
+			position = { x = -1 y = 13 }
 		}
 		
 		categories = {
@@ -1868,11 +1725,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1937
+		start_year = 1938
 		
 		folder = {
 			name = industry_folder
-			position = { x = -4 y = 4 }
+			position = { x = -3 y = 4 }
 		}
 		
 		categories = {
@@ -1932,7 +1789,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -4 y = 6 }
+			position = { x = -3 y = 7 }
 		}
 		
 		categories = {
@@ -1992,7 +1849,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = -4 y = 8 }
+			position = { x = -3 y = 10 }
 		}
 		
 		categories = {
@@ -2043,11 +1900,11 @@ technologies = {
 		}
 		
 		research_cost = 1.5
-		start_year = 1943
+		start_year = 1942
 		
 		folder = {
 			name = industry_folder
-			position = { x = -4 y = 10 }
+			position = { x = -3 y = 13 }
 		}
 		
 		categories = {
@@ -2100,7 +1957,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 0 }
+			position = { x = 0 y = -2 }
 		}
 		
 		ai_will_do = {
@@ -2124,7 +1981,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1938
 		categories = {
 			industry
 			construction_tech
@@ -2156,7 +2013,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1940
 		categories = {
 			industry
 			construction_tech
@@ -2164,7 +2021,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -2188,7 +2045,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1942
 		categories = {
 			industry
 			construction_tech
@@ -2196,7 +2053,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 6 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -2215,7 +2072,7 @@ technologies = {
 		industry_repair_factor = 0.10
 		
 		research_cost = 2
-		start_year = 1936
+		start_year = 1943
 		categories = {
 			industry
 			construction_tech
@@ -2223,7 +2080,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 0 y = 8 }
+			position = { x = 0 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2239,7 +2096,12 @@ technologies = {
 	###Excav techs###
 	excavation1 = {
 		
-		local_resources_factor = 0.15
+		enable_building = {
+			building = resource_depot
+			level = 50
+		}
+
+		local_resources_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation2
@@ -2252,6 +2114,7 @@ technologies = {
 		}
 
 		research_cost = 2
+		start_year = 1936
 		
 		categories = {
 			industry
@@ -2261,7 +2124,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = -2 }
+			position = { x = 0 y = -2 }
 		}
 		
 		ai_will_do = {
@@ -2295,7 +2158,7 @@ technologies = {
 	
 	excavation2 = {
 		
-		local_resources_factor = 0.15
+		local_resources_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation3
@@ -2303,7 +2166,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1937
+		start_year = 1938
 		
 		categories = {
 			industry
@@ -2313,7 +2176,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 2 }
+			position = { x = 0 y = 2 }
 		}
 		
 		ai_will_do = {
@@ -2347,7 +2210,7 @@ technologies = {
 	
 	excavation3 = {
 		
-		local_resources_factor = 0.15
+		local_resources_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation4
@@ -2355,7 +2218,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1939
+		start_year = 1940
 		
 		categories = {
 			industry
@@ -2365,7 +2228,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 4 }
+			position = { x = 0 y = 6 }
 		}
 		
 		ai_will_do = {
@@ -2399,7 +2262,7 @@ technologies = {
 
 	excavation4 = {
 		
-		local_resources_factor = 0.15
+		local_resources_factor = 0.05
 		
 		path = {
 			leads_to_tech = excavation5
@@ -2407,7 +2270,7 @@ technologies = {
 		}
 		
 		research_cost = 2
-		start_year = 1941
+		start_year = 1942
 		
 		categories = {
 			industry
@@ -2417,7 +2280,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 6 }
+			position = { x = 0 y = 10 }
 		}
 		
 		ai_will_do = {
@@ -2451,7 +2314,7 @@ technologies = {
 	
 	excavation5 = {
 		
-		local_resources_factor = 0.15
+		local_resources_factor = 0.05
 		
 		path = {
 			research_cost_coeff = 1
@@ -2468,7 +2331,7 @@ technologies = {
 		
 		folder = {
 			name = industry_folder
-			position = { x = 4 y = 8 }
+			position = { x = 0 y = 12 }
 		}
 		
 		ai_will_do = {
@@ -2500,38 +2363,57 @@ technologies = {
 		}
 	}
 
-	resource_depot_tech1 = {
-		
-		enable_building = {
-			building = resource_depot
-			level = 1
-		}
+	#DEAD TECHS#
 
+	streamlined_line = {
 		path = {
 			research_cost_coeff = 1
 		}
-
 		
-		research_cost = 8
-		start_year = 1937
+		research_cost = 2
+		start_year = 1943
 		
 		categories = {
 			industry
-			construction_tech
+		}
+	}
+
+	flexible_line = {
+		path = {
+			research_cost_coeff = 1
 		}
 		
-		folder = {
-			name = industry_folder
-			position = { x = 6 y = 0 }
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			industry
+		}
+	}
+
+	dispersed_industry5 = {
+		path = {
+			research_cost_coeff = 1
 		}
 		
-		ai_will_do = {
-			factor = 4
-			
-			modifier = {
-				factor = 10
-				date > "1943.1.1"
-			}
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			industry
+		}
+	}
+
+	concentrated_industry5 = {
+		path = {
+			research_cost_coeff = 1
+		}
+		
+		research_cost = 2
+		start_year = 1943
+		
+		categories = {
+			industry
 		}
 	}
 }
