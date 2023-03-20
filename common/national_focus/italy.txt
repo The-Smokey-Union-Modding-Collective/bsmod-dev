@@ -3297,6 +3297,13 @@ focus_tree = {
 				category = train_tech
 			}
 
+			add_tech_bonus = {
+				name = ITA_railway_innovations
+				bonus = 1.0
+				uses = 2
+				category = cat_transport_tech
+			}
+
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT
@@ -3406,6 +3413,12 @@ focus_tree = {
 						instant_build = yes
 					}
 				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_organisation_tech
 			}
 		}
 	}
@@ -3686,6 +3699,12 @@ focus_tree = {
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_productivity_tech
+			}
 		}
 	}
 
@@ -3713,6 +3732,12 @@ focus_tree = {
 
 			add_to_variable = { ITA_iri_consumer_goods_factor = 0.01 }
 			custom_effect_tooltip = ITA_ricostruzione_industriale_cg_penalty_tt
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_flexibility_tech
+			}
 		}
 	}
 

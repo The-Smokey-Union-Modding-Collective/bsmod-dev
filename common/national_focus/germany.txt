@@ -48,7 +48,13 @@ focus_tree = {
 				name = GER_four_year_plan
 				bonus = 1.0
 				uses = 2
-				category = industry
+				category = cat_production
+			}
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
@@ -1488,6 +1494,12 @@ focus_tree = {
 						}
 					}
 				}
+			}
+			add_tech_bonus = {
+				name = GER_autobahn
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
 			}		
 		}
 	}

@@ -2751,6 +2751,12 @@ focus_tree = {
 				limit = { country_exists = CZE }
 				reverse_add_opinion_modifier = { target = CZE modifier = HUN_reintegrate_the_railroads }
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_transport_tech
+			}
 		}
 	}
 
@@ -2916,9 +2922,15 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_announce_the_gyor_program
+				bonus = 0.5
+				uses = 2
+				category = cat_production
+			}
+			add_tech_bonus = {
+				name = HUN_announce_the_gyor_program
 				bonus = 1.0
 				uses = 2
-				category = industry
+				category = cat_productivity_tech
 			}
 		}
 	}

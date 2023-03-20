@@ -515,7 +515,7 @@ focus_tree = {
 				name = assembly_bonus
 				bonus = 0.5
 				uses = 2
-				category = industry
+				category = cat_organisation_tech
 			}
 			289 = {
 				add_extra_state_shared_building_slots = 9
@@ -736,9 +736,9 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = assembly_bonus
-				bonus = 1.0
-				uses = 1
-				category = industry
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
 			}
 		}
 	}
@@ -812,11 +812,7 @@ focus_tree = {
 				name = assembly_bonus
 				bonus = 0.5
 				uses = 2
-				technology = improved_machine_tools	
-				technology = advanced_machine_tools
-				technology = assembly_line_production
-				technology = flexible_line
-				technology = streamlined_line
+				category = cat_production
 			}
 		}
 	}
@@ -863,6 +859,12 @@ focus_tree = {
 				#level = 1
 				start_province = 10438
 				target_province = 7516
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
 			}
 		}
 	}

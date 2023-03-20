@@ -96,6 +96,22 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
+			if = {
+				limit  = {
+					NOT = {
+						has_tech = transportation_tech
+					}
+				}
+				set_technology = {
+					transportation_tech = 1
+				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
+			}
 		}
 	}
 
@@ -1232,6 +1248,12 @@ focus_tree = {
 			USA_congress_medium_opposition = yes
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			unlock_decision_tooltip = { decision = USA_pay_farm_subsidies show_effect_tooltip = yes }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_organisation_tech
+			}
 		}
 	}
 	focus = {
@@ -1272,6 +1294,12 @@ focus_tree = {
 			set_country_flag = { flag = USA_great_depression_cooldown value = 1 days = 210 }
 			custom_effect_tooltip = USA_great_depression_cooldown_tt
 			USA_congress_medium_opposition = yes
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_organisation_tech
+			}
 		}
 	}
 	focus = {
@@ -1378,6 +1406,12 @@ focus_tree = {
 					add_extra_state_shared_building_slots = 1
 					set_state_flag = USA_federal_housing_act
 				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_organisation_tech
 			}
 		}
 	}
@@ -2065,6 +2099,18 @@ focus_tree = {
 				set_state_flag = USA_arsenal_of_democracy_3AF
 			}
 			play_arsenal_of_democracy_effect = yes
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_productivity_tech
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_flexibility_tech
+			}
 		}
 	}
 	focus = {
@@ -2097,6 +2143,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = isolation
 			set_country_flag = USA_the_giant_wakes_added_civ_eco
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_production
+			}
 		}
 	}
 #			if = {
@@ -2140,6 +2192,12 @@ focus_tree = {
 			add_ideas = wartime_industry_focus
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = USA_general_motors
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 2.0
+				uses = 1
+				category = cat_productivity_tech
+			}
 		}
 	}
 	

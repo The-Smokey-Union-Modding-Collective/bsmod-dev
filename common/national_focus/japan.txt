@@ -2149,6 +2149,12 @@ focus_tree = {
 				remove_idea = JAP_zaibatsus
 				add_idea = JAP_guide_the_zaibatsus
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
+			}
 		}
 	}
 
@@ -2565,7 +2571,7 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 0.5
 				uses = 2
-				category = industry
+				category = cat_production
 			}
 		}
 	}

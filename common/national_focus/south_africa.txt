@@ -1014,9 +1014,9 @@
 		completion_reward = {			
 			add_tech_bonus = {
 				name = SAF_heavy_engineering
-				bonus = 1.0
-				uses = 1
-				category = industry
+				bonus = 0.5
+				uses = 2
+				category = cat_production
 			}
 		}
 	}
@@ -1052,6 +1052,12 @@
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SAF_south_african_railways
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
+			}
 		}
 	}
 

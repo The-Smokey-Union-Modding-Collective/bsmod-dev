@@ -2934,9 +2934,9 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = SPA_fascist_economic_aid
-				bonus = 1.0
-				uses = 1
-				category = industry
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
 			}
 			effect_tooltip = {
 				swap_ideas = {
@@ -3166,6 +3166,12 @@ focus_tree = {
 					add_idea = SPA_recovering_from_civil_war_3
 				}
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_organisation_tech
+			}
 		}
 	}
 
@@ -3322,6 +3328,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_production
+			}
 		}
 	}
 
@@ -3428,6 +3440,12 @@ focus_tree = {
 					remove_idea = SPA_recovering_from_civil_war_2
 					add_idea = SPA_recovering_from_civil_war_3
 				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_productivity_tech
 			}
 		}
 	}
@@ -3562,6 +3580,12 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = cat_organisation_tech
 			}
 		}
 	}

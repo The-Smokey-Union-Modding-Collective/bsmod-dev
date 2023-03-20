@@ -3250,6 +3250,12 @@
 				}
 				remove_ideas = FRA_factory_strikes
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 2
+				category = cat_organisation_tech
+			}
 		}
 	}
 	focus = {
@@ -3446,6 +3452,12 @@
 				}
 				remove_ideas = { FRA_inefficient_economy_2 }
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_productivity_tech
+			}
 		}
 	}
 	focus = {
@@ -3481,6 +3493,12 @@
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
 			add_ideas = { FRA_dirigisme }
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_organisation_tech
+			}
 		}
 	}
 	focus = {
