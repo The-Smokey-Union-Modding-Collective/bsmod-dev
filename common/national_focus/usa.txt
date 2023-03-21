@@ -96,19 +96,9 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_POLITICAL}
 		completion_reward = {
 			add_political_power = 150
-			if = {
-				limit  = {
-					NOT = {
-						has_tech = transportation_tech
-					}
-				}
-				set_technology = {
-					transportation_tech = 1
-				}
-			}
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 0.5
+				bonus = 2
 				uses = 2
 				category = cat_transport_tech
 			}
@@ -1296,7 +1286,7 @@ focus_tree = {
 			USA_congress_medium_opposition = yes
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cat_organisation_tech
 			}
@@ -2101,13 +2091,13 @@ focus_tree = {
 			play_arsenal_of_democracy_effect = yes
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cat_productivity_tech
 			}
 			add_tech_bonus = {
 				name = industrial_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = cat_flexibility_tech
 			}

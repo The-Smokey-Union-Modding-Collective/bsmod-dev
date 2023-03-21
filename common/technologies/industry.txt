@@ -43,7 +43,7 @@ technologies = {
 
 	transportation_tech = {
 
-		production_speed_infrastructure_factor = 0.1
+		production_speed_infrastructure_factor = 0.2
 		supply_node_range = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 
@@ -319,7 +319,7 @@ technologies = {
 	
 	transportation_tech_2 = {
 
-		production_speed_infrastructure_factor = 0.1
+		production_speed_infrastructure_factor = 0.2
 		supply_node_range = 0.05
 		production_factory_efficiency_gain_factor = 0.05
 		
