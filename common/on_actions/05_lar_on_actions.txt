@@ -639,6 +639,11 @@ on_actions = {
 						SPA_plunder_economy
 					}
 				}
+				GER = {
+					add_ideas = {
+						civilwar_veterans
+					}
+				}
 
 				country_event = { id = lar_news.1 hours = 2}
 			}
