@@ -98,7 +98,7 @@ characters={
 				armor_officer
 				trickster
 				career_officer
-
+				panzer_leader
 			}
 			skill = 4
 			attack_skill = 4
@@ -117,6 +117,7 @@ characters={
 		}
 		corps_commander = {
 			traits = {
+				cavalry_leader
 				infantry_officer
 				desert_fox
 				trickster
