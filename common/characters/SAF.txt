@@ -609,6 +609,43 @@ characters={
 		}		
 	}
 	
+	SAF_j_g_n_strauss = {
+		name=SAF_j_g_n_strauss
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_j_g_n_strauss
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				minister_of_agriculutre_and_forestry 
+			}
+		}	
+	}
+
+	SAF_c_f_steyn = {
+		name=SAF_c_f_steyn
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_c_f_steyn
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				war_industrialist 
+			}
+		}	
+	}
 
 	#Illusive Gentleman auto-generated
 }

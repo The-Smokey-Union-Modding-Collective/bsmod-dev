@@ -20,7 +20,6 @@ SAF_south_african_army_modifier = {
 	legitimacy_gain_factor  = SAF_legitimacy_gain_factor_var
 	experience_gain_army  = SAF_experience_gain_army_var
 	send_volunteers_tension = SAF_send_volunteers_tension_var
-	send_volunteer_divisions_required = SAF_send_volunteer_divisions_required_var
 	conscription  = SAF_conscription_var
 	army_core_attack_factor = SAF_army_core_attack_factor
 	army_core_defence_factor = SAF_army_core_defence_factor
