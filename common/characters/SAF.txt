@@ -175,7 +175,21 @@ characters={
 		name = SAF_leonard_beyers
 		portraits = {
 			army = {
-				large = "Portrait_Africa_Generic_land_1.dds"
+				small = "GFX_idea_SAF_leonard_beyers"
+			}
+		}
+		advisor={
+			slot = army_chief
+			idea_token = SAF_leonard_beyers
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_chief_defensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
 			}
 		}
 		corps_commander = {
@@ -369,29 +383,6 @@ characters={
 			}
 			traits = {
 				army_chief_maneuver_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
-
-	SAF_leonard_beyers={
-		name=SAF_leonard_beyers
-		portraits={
-			army={
-				small="GFX_idea_SAF_leonard_beyers" #small="GFX_idea_generic_army_europe_4"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = SAF_leonard_beyers
-			allowed = {
-				original_tag = SAF
-			}
-			traits = {
-				army_chief_defensive_2
 			}
 			cost = 100
 			ai_will_do = {
