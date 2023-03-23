@@ -57,7 +57,605 @@
 #		}
 #	}
 
+########################
+##new 2023 stuff#######
+#####################
 
+focus = {
+	id = SAF_status_of_the_union_act
+	icon = GFX_goal_develop_saf
+	x = 7
+	y = 0
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+focus = {
+	id = SAF_apeal
+	icon = GFX_goal_develop_saf
+	prerequisite = { focus = SAF_status_of_the_union_act }
+		x = -1
+		y = 1
+		relative_position_id = SAF_status_of_the_union_act
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+focus = {
+	id = SAF_apeal_other
+	icon = GFX_goal_develop_saf
+	prerequisite = { focus = SAF_status_of_the_union_act }
+		x = 1
+		y = 1
+		relative_position_id = SAF_status_of_the_union_act
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+focus = {
+	id = SAF_a_policy_of_neutrality
+	icon = GFX_goal_develop_saf
+	prerequisite = { focus = SAF_apeal }
+	prerequisite = {focus = SAF_apeal_other}
+		x = 0
+		y = 2
+		relative_position_id = SAF_status_of_the_union_act
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+
+focus = {
+	id = SAF_voortrekker_monument
+	icon = GFX_goal_generic_national_unity
+	prerequisite = { focus = SAF_a_policy_of_neutrality }
+	x = -4
+	y = 3
+	relative_position_id = SAF_status_of_the_union_act
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = SAF_voortrekker_monument
+	}
+}
+
+focus = {
+	id = SAF_police_windhoek_new
+	icon = GFX_goal_generic_political_pressure
+	prerequisite = { focus = SAF_voortrekker_monument }
+	x = -1
+	y = 1
+	relative_position_id = SAF_voortrekker_monument
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 2
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {			
+		swap_ideas = {
+			remove_idea = SAF_ossewabrandwag
+			add_idea = SAF_ossewabrandwag_2
+		}
+		remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+	}
+}
+
+focus = {
+	id = SAF_politics_fix_1
+	icon = GFX_goal_develop_saf
+	prerequisite = { focus = SAF_voortrekker_monument }
+		x = 1
+		y = 1
+	relative_position_id = SAF_voortrekker_monument
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+focus = {
+	id = SAF_politics_fix_2
+	icon = GFX_goal_develop_saf
+	prerequisite = { focus = SAF_politics_fix_1 }
+	prerequisite = {focus = SAF_police_windhoek_new}
+		x = 0
+		y = 2
+	relative_position_id = SAF_voortrekker_monument
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_political_power = 120
+	}
+}
+focus = {
+	id = SAF_transvaal_urbanization
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = SAF_a_policy_of_neutrality }
+	x = 0
+	y = 1
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_transvaal_urbanization_IC
+		}
+	}
+}
+focus = {
+	id = SAF_transvaal_urbanization_2
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = SAF_transvaal_urbanization }
+	x = -1
+	y = 2
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_transvaal_urbanization_IC
+		}
+	}
+}
+focus = {
+	id = SAF_transvaal_urbanization_3
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = SAF_transvaal_urbanization }
+	x = 1
+	y = 2
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_transvaal_urbanization_IC
+		}
+	}
+}
+focus = {
+	id = SAF_transvaal_urbanization_4
+	icon = GFX_goal_generic_construct_civ_factory
+	prerequisite = { focus = SAF_transvaal_urbanization_3 }
+	prerequisite = { focus = SAF_transvaal_urbanization_2 }
+	x = 0
+	y = 3
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_transvaal_urbanization_IC
+		}
+	}
+}
+
+focus = {
+	id = SAF_representation_of_natives_act
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = SAF_a_policy_of_neutrality }
+	x = 4
+	y = 1
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = -0.05
+	}
+}
+focus = {
+	id = SAF_representation_of_natives_act_2
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus =SAF_representation_of_natives_act }
+	x = 3
+	y = 2
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = -0.05
+	}
+}
+focus = {
+	id = SAF_representation_of_natives_act_3
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus =SAF_representation_of_natives_act }
+	x = 5
+	y = 2
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = -0.05
+	}
+}
+focus = {
+	id = SAF_representation_of_natives_act_4
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus =SAF_representation_of_natives_act_2 }
+	prerequisite = { focus =SAF_representation_of_natives_act_3 }
+	x = 4
+	y = 3
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = -0.05
+	}
+}
+focus = {
+	id = SAF_prime_minister_jan_smuts
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_politics_fix_2 }
+	prerequisite = { focus = SAF_transvaal_urbanization_4 }
+	prerequisite = { focus = SAF_representation_of_natives_act_4 }
+	x = 0
+	y = 4
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		create_country_leader = {
+			name = "Jan Smuts"
+			desc = "POLITICS_JAN_SMUTS_DESC"
+			picture = "Portrait_SouthAfrica_Jan_Smuts.dds"
+			expire = "1965.1.1"
+			ideology = conservatism
+			traits = {
+				friend_of_churchill
+				#OAK_military_leader Idea?
+			}
+		}
+	}
+}
 
 	############################
 	#### WAR PREP SECTION ######
@@ -66,7 +664,7 @@
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory
-		x = 1
+		x = 21
 		y = 0
 
 		cost = 5
@@ -289,7 +887,7 @@
 	focus = {
 		id = SAF_support_the_policy_of_appeasement
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 5
+		x = 25
 		y = 0
 
 		cost = 5
@@ -615,7 +1213,7 @@
 	focus = {
 		id = SAF_smoll_infrastruktur_cape
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 8
+		x = 28
 		y = 0
 
 		cost = 5
@@ -1401,7 +1999,7 @@
 	focus = {
 		id = SAF_smol_armytrainingeffort
 		icon = GFX_goal_generic_army_doctrines
-		x = 24
+		x = 44
 		y = 0
 
 		cost = 5
@@ -1994,7 +2592,7 @@
 	focus = {
 		id = SAF_mobile_warfaretheory
 		icon = GFX_goal_generic_army_tanks
-		x = 34
+		x = 54
 		y = 0
 
 
@@ -3067,7 +3665,7 @@
 	focus = {
 		id = SAF_seaward_defence_force
 		icon = GFX_goal_generic_navy_doctrines_tactics
-		x = 18
+		x = 38
 		y = 0		
 
 		cost = 5
