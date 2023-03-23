@@ -11,7 +11,7 @@ SAF_end_of_neutrality = {
 		fire_only_once = yes
 		activation = {
 				AND = {
-					has_completed_focus = SAF_support_the_policy_of_appeasement
+					has_completed_focus = SAF_a_policy_of_neutrality
 				}	
 		}
 
