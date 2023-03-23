@@ -298,7 +298,7 @@ SAF_colonial_Rule = {
 		available = { NOT = {
               check_variable = {
                 var = SAF_colonial_temp3
-				value = 3
+				value = 4
                 compare = greater_than_or_equals
 			    }
 		    }

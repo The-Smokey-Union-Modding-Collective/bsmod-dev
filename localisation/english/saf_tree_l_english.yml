@@ -129,3 +129,6 @@ SAF_colonial_rule_decision_strategic_region_natal:0 "Development of the Natal Re
 SAF_colonial_rule_decision_strategic_region_transvaal:0 "Development of the Transvaal Region"
 SAF_colonial_rule_decision_research_speed_factor:0 "Mass Education Programms"
 research_speed_tooltip:0 "Modify the Colonial Rule by +2.5% Research Speed"
+SAF_colonial_rule_modifier:0 "Colonial Rule"
+SAF_south_african_army_modifier:0 "The South African Army"
+SAF_politics_modifier:0 "The State of South African Politics and Economy"
