@@ -209,6 +209,10 @@ focus = {
 
 	completion_reward = {
 		add_ideas = SAF_voortrekker_monument
+		add_days_mission_timeout = {
+			mission = SAF_end_of_neutrality_timeout
+			days = 100
+		}
 	}
 }
 
@@ -350,6 +354,10 @@ focus = {
 				instant_build = yes
 			}
 			set_state_flag = SAF_transvaal_urbanization_IC
+		}
+		add_days_mission_timeout = {
+			mission = SAF_end_of_neutrality_timeout
+			days = 100
 		}
 	}
 }
@@ -518,6 +526,10 @@ focus = {
 
 	completion_reward = {
 		add_stability = -0.05
+		add_days_mission_timeout = {
+			mission = SAF_end_of_neutrality_timeout
+			days = 100
+		}
 	}
 }
 focus = {
@@ -548,6 +560,7 @@ focus = {
 
 	completion_reward = {
 		add_stability = -0.05
+		
 	}
 }
 focus = {
