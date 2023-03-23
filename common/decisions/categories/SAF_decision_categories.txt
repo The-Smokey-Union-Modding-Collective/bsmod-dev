@@ -1,0 +1,27 @@
+################
+##### FRA ######
+################
+
+
+
+SAF_end_of_neutrality = {
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+	}
+	priority = 98
+}
+
+SAF_colonial_Rule = {
+	priority = 99
+    picture = GFX_decision_cat_colonial_rule
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+	}
+}
+
