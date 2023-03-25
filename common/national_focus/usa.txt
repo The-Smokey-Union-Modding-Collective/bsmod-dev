@@ -5671,7 +5671,7 @@ focus_tree = {
 			}
 			controls_state = 378
 			controls_state = 358
-			date > 1940.07.01
+			date > 1938.01.01
 		}
 		
 		bypass = {
