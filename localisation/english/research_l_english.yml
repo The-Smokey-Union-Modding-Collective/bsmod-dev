@@ -1086,7 +1086,7 @@
  COLLABORATION_EFFECTS_OTHER_SIDE_TOOLTIP:0 "$OTHER_COUNTRY|H$ have $COLLABORATION|+%.0$ collaboration in $COUNTRY|H$. This will reduce $COUNTRY|H$'s surrender level by $SURRENDER|+%.0$ and will give $COMPLIANCE|+%.0$ compliance when the enemy capitulates which will be used for unlocking additional compliance modifiers."
  train_tech:0 "Trains and Railways"
  SUPPORT_TITLE_TRAINS:0 "Trains"
- cat_production:0 "Efficiency Technology"
+ cat_production:0 "Tools"
  cat_transport_tech:0 "Transportation Technology"
  cat_flexibility_tech:0 "Flexible Industry"
  cat_productivity_tech:0 "Productivity Technology"
