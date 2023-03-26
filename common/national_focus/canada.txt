@@ -130,6 +130,12 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = CAN_c_d_howe
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 1.0
+				uses = 1
+				category = cat_production
+			}
 		}
 	}
 
@@ -236,8 +242,8 @@ focus_tree = {
 			add_tech_bonus = {
 				name = CAN_dollar_a_year_men
 				bonus = 1.0
-				uses = 1
-				category = industry
+				uses = 2
+				category = cat_organisation_tech
 			}
 			add_ideas = CAN_dollar_a_year_men
 		}
@@ -726,6 +732,12 @@ focus_tree = {
 
 		completion_reward = {
 			add_ideas = CAN_bits_and_pieces_program
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_productivity_tech
+			}
 		}
 	}
 

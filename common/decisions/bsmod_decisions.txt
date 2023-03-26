@@ -51,6 +51,70 @@ economy_decisions = {
 			factor = 1
 		}
     }
+
+	# state_wide_development = {
+
+	# 	icon = generic_naval
+
+    #     allowed = {
+    #         always = yes
+    #     }
+
+    #     cost = 25
+
+	# 	modifier = {
+	# 		civilian_factory_use = 5
+	# 	}
+
+    #     fire_only_once = no
+
+    #     days_re_enable = 0
+	# 	days_remove = 60
+
+	# 	available = {
+	# 		any_core_state = {
+	# 			OR = {
+	# 				NOT = {
+	# 					has_state_category = megalopolis		
+	# 				}
+	# 				NOT = {
+	# 					has_state_flag = state_developed_twice
+	# 				}
+	# 			}
+	# 			infrastructure > 5
+	# 			NOT = {
+	# 				OR = {
+	# 					has_state_category = wasteland
+	# 					has_state_category = enclave
+	# 					has_state_category = tiny_island
+	# 					has_state_category = pastoral
+	# 					has_state_category = small_island
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+
+    #     remove_effect = {
+	# 		random_owned_state = {
+	# 			limit = {
+	# 				NOT = { has_state_flag = dockyard_expansion_flag }
+	# 				is_core_of = ROOT
+	# 				is_fully_controlled_by = ROOT
+	# 				dockyard > 0
+	# 				is_coastal = yes
+	# 			}
+	# 			add_extra_state_shared_building_slots = 1
+	# 			add_building_construction = {
+	# 				type = dockyard
+	# 				level = 1
+	# 			}
+	# 			set_state_flag = dockyard_expansion_flag
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 	}
+	# }
 }
 
 SOV_finnish_surrender_category = {

@@ -18,7 +18,9 @@ NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
+NDefines.NProduction.BASE_FACTORY_SPEED = 5					--vanilla=5
 NDefines.NProduction.BASE_FACTORY_SPEED_MIL = 5					--vanilla=4.5
+NDefines.NProduction.BASE_FACTORY_SPEED_NAV = 2.5				--vanilla=2.5
 NDefines.NProduction.MIN_POSSIBLE_TRAINING_MANPOWER = 10000000	--vanilla=100000
 NDefines.NProduction.MIN_LICENSE_ACTIVE_DAYS = 1				--vanilla=30
 NDefines.NProduction.BASE_LICENSE_IC_COST = 0					--vanilla=1
@@ -32,10 +34,12 @@ NDefines.NProduction.EQUIPMENT_MODULE_REPLACE_XP_COST = 0		--vanilla=3
 NDefines.NProduction.EQUIPMENT_MODULE_CONVERT_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_MODULE_REMOVE_XP_COST = 0		--vanilla=1
 NDefines.NProduction.EQUIPMENT_LEND_LEASE_WEIGHT_FACTOR = 0.005 	--vanilla=0.01
+NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 2 -- vanilla = 1 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 --vanilla = 200
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1 --vanilla = 0.2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24

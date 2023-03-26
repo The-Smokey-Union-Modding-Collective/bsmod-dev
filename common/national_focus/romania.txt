@@ -911,9 +911,9 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_civil_works
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
-				category = industry
+				category = cat_production
 			}
 			46 = {
 				add_extra_state_shared_building_slots = 2
@@ -1146,6 +1146,12 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
+			}
 		}
 	}
 
@@ -1192,6 +1198,12 @@ focus_tree = {
 					level = 2
 					instant_build = yes
 				}
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_productivity_tech
 			}
 		}
 	}

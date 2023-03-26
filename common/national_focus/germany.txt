@@ -48,7 +48,13 @@ focus_tree = {
 				name = GER_four_year_plan
 				bonus = 1.0
 				uses = 2
-				category = industry
+				category = cat_production
+			}
+			add_tech_bonus = {
+				name = GER_four_year_plan
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
 			}
 			custom_effect_tooltip = available_political_advisor
 			show_ideas_tooltip = hjalmar_schacht
@@ -1445,49 +1451,52 @@ focus_tree = {
 		}
 		search_filters = { FOCUS_FILTER_INDUSTRY }
 		completion_reward = {
-			custom_effect_tooltip = GER_autobahn_tt
-			hidden_effect = {
-				64 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
+			64 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
 					}
 				}
-				59 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
+			}
+			59 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
 
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
 					}
 				}
-				60 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
+			}
+			60 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
 					}
 				}
-				54 = {
-					if = {
-						limit = { is_controlled_by = ROOT }
-						add_building_construction = {
-							type = infrastructure
-							level = 5
-							instant_build = yes
-						}
+			}
+			54 = {
+				if = {
+					limit = { is_controlled_by = ROOT }
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
 					}
 				}
+			}
+			add_tech_bonus = {
+				name = GER_autobahn
+				bonus = 0.5
+				uses = 2
+				category = cat_transport_tech
 			}		
 		}
 	}

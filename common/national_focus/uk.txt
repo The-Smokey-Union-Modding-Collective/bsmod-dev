@@ -635,7 +635,7 @@ focus_tree = {
 				name = industrial_bonus
 				bonus = 1.0
 				uses = 2
-				category = industry
+				category = cat_production
 			}
 		}
 	}
@@ -697,6 +697,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}	
 		completion_reward = {
 			add_ideas = british_austerity_idea
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_productivity_tech
+			}
 		}
 	}
 
@@ -853,6 +859,12 @@ focus_tree = {
 					instant_build = yes
 				}
 				set_state_flag = royal_ordinance_focus_2AF
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_flexibility_tech
 			}
 		}
 	}

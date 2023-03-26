@@ -91,6 +91,10 @@ technology_categories = {
 	cat_scout_plane
 	train_tech
 	cat_production
+	cat_transport_tech
+	cat_flexibility_tech
+	cat_productivity_tech
+	cat_organisation_tech
 	cat_synth_rubber
 	cat_synth_oil
 	cat_armored_cars
