@@ -605,7 +605,7 @@ equipments = {
 
 		module_count_limit = {
 			module = hull_flamethrower
-			count < 1
+			count < 2
 		}
 
 		fuel_consumption = 0

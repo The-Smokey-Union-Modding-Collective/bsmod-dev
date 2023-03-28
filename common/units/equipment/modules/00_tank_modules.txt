@@ -1302,6 +1302,7 @@ equipment_modules = {
 			soft_attack = 0.1
 			hard_attack = 0.1
 			build_cost_ic = 0.02
+			air_attack = 0.1
 		}
 	}
 
@@ -1383,6 +1384,7 @@ equipment_modules = {
 		multiply_stats = {
 			soft_attack = 0.15
 			hard_attack = 0.15
+			air_attack = 0.15
 		}
 	}
 
