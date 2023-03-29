@@ -9,12 +9,6 @@
 			tag = SAF
 			has_dlc = "Together for Victory"
 		}
-		
-		#modifier = {
-		#	add = 10
-		#	original_tag = SAF
-		#	has_dlc = "Together for Victory"
-		#}
 	}
 	
 	default = no
@@ -660,7 +654,219 @@ focus = {
 		retire_character = SAF_j_b_m_hertzog
 	}
 }
+focus = {
+	id = SAF_conscription_act
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_prime_minister_jan_smuts }
+	x = -1
+	y = 5
+	relative_position_id = SAF_a_policy_of_neutrality
 
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_mobilization_of_industry_act
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_prime_minister_jan_smuts }
+	x = 1
+	y = 5
+	relative_position_id = SAF_a_policy_of_neutrality
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_lenz_bomb_factory
+	icon = GFX_goal_generic_construct_mil_factory
+	prerequisite = { focus = SAF_conscription_act }
+	prerequisite = { focus = SAF_mobilization_of_industry_act }
+	x = -1
+	y = 1
+	relative_position_id = SAF_conscription_act
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = arms_factory
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = arms_factory
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_lenz_bomb_factory_AF
+		}
+	}
+}
+
+focus = {
+	id = SAF_allied_machine_tools
+	icon = GFX_goal_generic_production
+	prerequisite = { focus = SAF_lenz_bomb_factory }
+	x = -1
+	y = 1
+	relative_position_id = SAF_lenz_bomb_factory
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_new_machine_tools
+			bonus = 0.5
+			uses = 1
+			technology = advanced_machine_tools
+			technology = assembly_line_production
+			technology = modern_tools
+		}
+	}
+}
+focus = {
+	id = SAF_allied_research_effort
+	icon = GFX_focus_research
+	prerequisite = { focus = SAF_lenz_bomb_factory }
+	x = 1
+	y = 1
+	relative_position_id = SAF_lenz_bomb_factory
+
+	cost = 7.15
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+focus = {
+	id = SAF_field_marshall_jan_smuts
+	icon = GFX_goal_generic_construction2
+	prerequisite = { focus = SAF_conscription_act }
+	prerequisite = { focus = SAF_mobilization_of_industry_act }
+	x = 1
+	y = 1
+	relative_position_id = SAF_conscription_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = SAF_jan_smuts_tt
+	}
+}
 	############################
 	#### WAR PREP SECTION ######
 	############################
