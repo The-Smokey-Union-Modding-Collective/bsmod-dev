@@ -52,7 +52,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = BUL_acquire_modern_tools
-				bonus = 0.5
+				bonus = 1
 				uses = 1
 				category = industry
 			}
@@ -500,7 +500,13 @@ focus_tree = {
 					level = 2
 					path = { 949 935 907 3882 }
 				}
-			}				
+			}
+			add_tech_bonus = {
+				name = BUL_acquire_modern_tools
+				bonus = 1
+				uses = 1
+				category = industry
+			}			
 		}
 	}
 
