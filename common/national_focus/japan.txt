@@ -1514,7 +1514,7 @@ focus_tree = {
 	focus = {
 		id = JAP_army_expansion_law
 		icon = GFX_goal_generic_major_war
-		x = 22
+		x = 20
 		y = 0
 
 		cost = 5
@@ -1545,7 +1545,7 @@ focus_tree = {
 		id = JAP_state_of_imperial_army
 		icon = GFX_goal_generic_major_war
 		prerequisite = { focus = JAP_army_expansion_law }
-		x = -2
+		x = 0
 		y = 1
 
 		relative_position_id = JAP_army_expansion_law
@@ -2221,6 +2221,1125 @@ focus_tree = {
 		y = 1
 
 		relative_position_id = JAP_armored_car_development 
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#####################NAVAL TREE##############################################
+	
+	focus = {
+		id = JAP_new_naval_estimates
+		icon = GFX_goal_generic_major_war
+		x = 37
+		y = 0
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_develop_the_naval_yards
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_new_naval_estimates }
+		x = 0
+		y = 2
+
+		relative_position_id = JAP_new_naval_estimates
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#########################CARRIERS DEVELOPMENT#####################
+
+	focus = {
+		id = JAP_first_air_fleet 
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_new_naval_estimates }
+		x = -1
+		y = 1
+
+		relative_position_id = JAP_new_naval_estimates
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	########################BATTLESHIP FOCUS#########################
+
+	focus = {
+		id = JAP_kantai_kesssen_doctrine
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_new_naval_estimates }
+		x = 1
+		y = 1
+
+		relative_position_id = JAP_new_naval_estimates
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	########################FULL NAVAL AVIATION#####################
+
+	focus = {
+		id = JAP_naval_aviation_doctrine
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_first_air_fleet }
+		x = -1
+		y = 2
+
+		mutually_exclusive = { focus = JAP_strict_adherence }
+
+		relative_position_id = JAP_first_air_fleet
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_the_shokaku
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_naval_aviation_doctrine }
+		x = -1
+		y = 1
+
+		relative_position_id = JAP_naval_aviation_doctrine
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_increase_production
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_the_shokaku }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_the_shokaku
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_the_shinano
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_increase_production }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_increase_production
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	########################FULL KANTAI KESSEN###########################
+
+	focus = {
+		id = JAP_strict_adherence
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_kantai_kesssen_doctrine }
+		x = 1
+		y = 2
+
+		mutually_exclusive = { focus = JAP_naval_aviation_doctrine }
+
+		relative_position_id = JAP_kantai_kesssen_doctrine
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_new_age_battleships
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_strict_adherence }
+		x = 1
+		y = 1
+
+		relative_position_id = JAP_strict_adherence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_improved_battleship_construction
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_new_age_battleships }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_new_age_battleships
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_modern_battleship
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_improved_battleship_construction }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_improved_battleship_construction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	######################LIGHT SHIP DOCTRINE########################
+
+	focus = {
+		id = JAP_developing_the_destroyer_arm
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_strict_adherence focus = JAP_naval_aviation_doctrine }
+		x = -3
+		y = 1
+
+		relative_position_id = JAP_strict_adherence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_cruiser_modernization
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_developing_the_destroyer_arm }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_developing_the_destroyer_arm
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_long_lance
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_cruiser_modernization }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_cruiser_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_long_lance
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_cruiser_modernization }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_cruiser_modernization
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_torpedo_cruisers
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_long_lance }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_long_lance
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	########################SUBMARINE TREE#################################
+
+	focus = {
+		id = JAP_silent_hunting_doctrine
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_strict_adherence focus = JAP_naval_aviation_doctrine }
+		x = -1
+		y = 1
+
+		relative_position_id = JAP_strict_adherence
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_improved_submarine_construction
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_silent_hunting_doctrine }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_silent_hunting_doctrine
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_improved_submarines
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_improved_submarine_construction }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_improved_submarine_construction
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_long_range_submarines
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_improved_submarines }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_improved_submarines
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+	
+	########################ULTIMATE BATTLESHIP############################
+
+	focus = {
+		id = JAP_ultimate_battleship
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_the_shinano focus = JAP_modern_battleship }
+		x = 3
+		y = 2
+
+		relative_position_id = JAP_the_shinano
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	########################AVIATION TREEE#################################
+
+	focus = {
+		id = JAP_aviation_development
+		icon = GFX_goal_generic_major_war
+		x = 29
+		y = 1
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#############################ARMY AVIATION###################################
+
+	focus = {
+		id = JAP_army_aviation
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_aviation_development }
+		prerequisite = { focus = JAP_state_of_imperial_army }
+		x = -2
+		y = 1
+
+		relative_position_id = JAP_aviation_development
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_dive_bombers
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_army_aviation }
+		x = -1
+		y = 2
+
+		relative_position_id = JAP_army_aviation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_land_based_fighters
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_favour_the_army }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_favour_the_army
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_long_range_bombing
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_army_aviation }
+		x = 0
+		y = 3
+
+		relative_position_id = JAP_army_aviation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#################################NAVAL AVIATION###################################
+
+	focus = {
+		id = JAP_naval_aviation
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_aviation_development }
+		prerequisite = { focus = JAP_first_air_fleet }
+		x = 2
+		y = 1
+
+		relative_position_id = JAP_aviation_development
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_universal_naval_bomber
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_naval_aviation }
+		x = 1
+		y = 2
+
+		relative_position_id = JAP_naval_aviation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_zero_primacy 
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_favour_the_navy }
+		x = 0
+		y = 1
+
+		relative_position_id = JAP_favour_the_navy
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_carrier_strike_doctrine
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_naval_aviation }
+		x = 0
+		y = 3
+
+		relative_position_id = JAP_naval_aviation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	#################################NAVAL AIR/ARMY AIR CHOICE#####################################
+
+	focus = {
+		id = JAP_favour_the_army
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_aviation_development }
+		prerequisite = { focus = JAP_army_aviation }
+		x = 1
+		y = 1
+
+		mutually_exclusive = { focus = JAP_favour_the_navy }
+
+		relative_position_id = JAP_army_aviation
+
+		cost = 5
+
+		ai_will_do = {
+			factor = 4
+		}
+
+		available = {
+
+		}
+
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+		}
+	}
+
+	focus = {
+		id = JAP_favour_the_navy
+		icon = GFX_goal_generic_major_war
+		prerequisite = { focus = JAP_aviation_development }
+		prerequisite = { focus = JAP_naval_aviation }
+		x = -1
+		y = 1
+
+		mutually_exclusive = { focus = JAP_favour_the_army }
+
+		relative_position_id = JAP_naval_aviation
 
 		cost = 5
 
