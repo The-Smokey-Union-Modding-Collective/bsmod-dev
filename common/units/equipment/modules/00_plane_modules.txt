@@ -823,7 +823,7 @@ equipment_modules = {
 		add_equipment_type = { cas tactical_bomber }
 
 		add_stats = {
-			build_cost_ic = 9
+			build_cost_ic = 2
 			air_agility = -5
 			weight = 6
 		}
@@ -863,7 +863,7 @@ equipment_modules = {
 		add_equipment_type = strategic_bomber
 
 		add_stats = {
-			build_cost_ic = 19
+			build_cost_ic = 6
 			air_agility = -10
 			weight = 10
 		}

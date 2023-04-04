@@ -50,9 +50,17 @@
  civilwar_veterans_desc:0 "Due to our glorius Victory in the SCW we have lots of experienced Soldiers in our Army, Officiers and the Reserves we can expect to keep a highly experienced Core of oure Armed Forces."
  SPA_plunder_economy:0 "Plunder Economy"
  SPA_plunder_economy_desc:0 "Due to our decisive and quick victory against the rebels we managed to capture their supplys and can plunder these to benefit our warindustry."
+ allies_won_africa:0 "Victory in Africa"
+ allies_won_africa_desc:0 "With the Italians contained due to our victory in Africa we can now focus our energy on preparing to either bring the war to continental european soil, or deal with the Japanese."
+ battle_for_africa:0 "The Battle for Africa"
+ battle_for_africa_desc:0 "The war in africa may not be the ultimate goal but it has major strategic importance. Denying the British the easy ability to attack the southern axis as well as the resources that can be gained are key to winning the war."
+ axis_won_africa_3:0 "Victory in Africa"
+ axis_won_africa_3_desc:0 "All major locations in Egypt proper our ours, giving us strategic and economic benefits. Now, on to the Suez and Beyond!"
  #State mods/dynamic mods#
  mod_small_island:0 "Small Island"
  modifier_state_production_speed_air_base_factor:0 "§Y$air_base$§! construction speed"
  modifier_state_production_speed_air_base_factor_desc:0 "Modifies the speed of §Y$air_base$§! construction in this state." 
 
  slowed_offensive:0 "Spanish Infrastructure"
+
+ ENG_john_simon:0 "John Simon"

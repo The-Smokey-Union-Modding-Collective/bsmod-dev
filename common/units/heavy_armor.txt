@@ -30,11 +30,11 @@ sub_units = {
 			attack = 0.15
 		}
 		forest = {
-		    attack = -0.5
+		    attack = -0.65
 			defence = -0.25
 		}
 		hills = {
-			attack = -0.5
+			attack = -0.65
 			defence = -0.25
 		}
 		urban = {
@@ -50,7 +50,7 @@ sub_units = {
 			defence = -0.4
 		}
 		mountain = {
-		    attack = -0.5 
+		    attack = -0.7
 			defence = -0.25
 		}
 		river = { 

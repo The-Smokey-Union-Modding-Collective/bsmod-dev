@@ -1,0 +1,76 @@
+axis_africa_bonus_up = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = axis_won_africa_1
+				has_idea = axis_won_africa_2
+			}
+		}
+		add_ideas = axis_won_africa_1
+	}
+	else_if = {
+		limit = { 
+			has_idea = axis_won_africa_1
+		}
+		swap_ideas = {
+			remove_idea = axis_won_africa_1
+			add_idea = axis_won_africa_2
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = axis_won_africa_2
+		}
+		swap_ideas = {
+			remove_idea = axis_won_africa_2
+			add_idea = axis_won_africa_3
+		}
+	}
+}
+
+axis_africa_bonus_down = {
+	if = {
+		limit = {
+			has_idea = axis_won_africa_1
+		}
+		remove_ideas = axis_won_africa_1
+	}
+	else_if = {
+		limit = { 
+			has_idea = axis_won_africa_2
+		}
+		swap_ideas = {
+			remove_idea = axis_won_africa_2
+			add_idea = axis_won_africa_1
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = axis_won_africa_3
+		}
+		swap_ideas = {
+			remove_idea = axis_won_africa_3
+			add_idea = axis_won_africa_2
+		}
+	}
+}
+
+allies_won_africa = {
+	if = {
+		limit = {
+			NOT = {
+				has_idea = allies_won_africa
+			}
+		}
+		add_ideas = allies_won_africa
+	}
+}
+
+allies_lost_africa = {
+	if = {
+		limit = {
+			has_idea = allies_won_africa
+		}
+		remove_ideas = allies_won_africa
+	}
+}

@@ -637,6 +637,7 @@ focus_tree = {
 				uses = 2
 				category = cat_production
 			}
+			activate_advisor = ENG_john_simon
 		}
 	}
 

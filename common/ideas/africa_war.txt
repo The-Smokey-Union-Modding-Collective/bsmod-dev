@@ -1,0 +1,90 @@
+ideas = {
+
+	country = {
+		allies_won_africa = {
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_volunteer_expedition_bonus
+
+			modifier = {
+				naval_invasion_planning_bonus_speed = 0.8
+			}
+		}
+
+		axis_won_africa_1 = {
+
+			name = battle_for_africa
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				industrial_capacity_factory = 0.04
+				local_resources_factor = 0.06
+				base_fuel_gain_factor = 0.04
+			}
+		}
+
+		axis_won_africa_2 = {
+
+			name = battle_for_africa
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				industrial_capacity_factory = 0.06
+				local_resources_factor = 0.08
+				base_fuel_gain_factor = 0.06
+			}
+		}
+
+		axis_won_africa_3 = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture =generic_fascism_drift_2
+
+			modifier = {
+				industrial_capacity_factory = 0.08
+				local_resources_factor = 0.12
+				base_fuel_gain_factor = 0.08
+			}
+		}
+	}
+}

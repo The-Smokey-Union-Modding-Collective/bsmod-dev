@@ -495,6 +495,7 @@ recruit_character = ENG_arthur_percival
 recruit_character = ENG_merton_beckwithsmith
 recruit_character = ENG_henry_pownall
 recruit_character = ENG_john_vereker
+recruit_character = ENG_john_simon
 recruit_character = ENG_henry_wilson
 recruit_character = ENG_william_gott
 recruit_character = ENG_jock_campbell
