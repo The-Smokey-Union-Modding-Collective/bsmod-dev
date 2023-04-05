@@ -1251,6 +1251,107 @@ SIA_zaibatsu_influence = {
 	production_factory_start_efficiency_factor = SIA_zai_production_factory_start_efficiency_factor
 }
 
+JAP_politica_instability = {
+	enable { always = yes }
+	icon = GFX_generic_disjointed_gov
+	
+	political_power_factor = JAP_pol_political_power_gain
+	stability_factor = JAP_pol_stability_factor
+	war_support_factor = JAP_pol_war_support_factor
+}
+
+JAP_iraa = {
+	enable { always = yes }
+	icon = GFX_generic_pp_unity_bonus
+	
+	political_power_factor = JAP_pol_political_power_gain
+	stability_factor = JAP_pol_stability_factor
+	war_support_factor = JAP_pol_war_support_factor
+}
+
+JAP_zaibatsus = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu
+
+	production_speed_arms_factory_factor = JAP_zai_production_speed_arms_factory_factor
+
+	production_speed_industrial_complex_factor = JAP_zai_production_speed_industrial_complex_factor
+
+	consumer_goods_factor = JAP_zai_consumer_goods_factor
+
+	production_factory_max_efficiency_factor = JAP_zai_production_factory_max_efficiency_factor
+
+	line_change_production_efficiency_factor = JAP_zai_line_change_production_efficiency_factor
+
+	production_factory_start_efficiency_factor = JAP_zai_production_factory_start_efficiency_factor
+
+	production_factory_efficiency_gain_factor = JAP_zai_production_factory_efficiency_gain_factor
+
+	industrial_capacity_factory = JAP_zai_industrial_capacity_factory 
+
+	industrial_capacity_dockyard = JAP_zai_industrial_capacity_dockyard
+
+	research_speed_factor = JAP_zai_research_speed_factor
+
+}
+
+JAP_zaibatsus_guided = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu_ally
+
+	production_speed_arms_factory_factor = JAP_zai_production_speed_arms_factory_factor
+
+	production_speed_industrial_complex_factor = JAP_zai_production_speed_industrial_complex_factor
+
+	consumer_goods_factor = JAP_zai_consumer_goods_factor
+
+	production_factory_max_efficiency_factor = JAP_zai_production_factory_max_efficiency_factor
+
+	line_change_production_efficiency_factor = JAP_zai_line_change_production_efficiency_factor
+
+	production_factory_start_efficiency_factor = JAP_zai_production_factory_start_efficiency_factor
+
+	production_factory_efficiency_gain_factor = JAP_zai_production_factory_efficiency_gain_factor
+
+	industrial_capacity_factory = JAP_zai_industrial_capacity_factory 
+
+	industrial_capacity_dockyard = JAP_zai_industrial_capacity_dockyard
+
+	research_speed_factor = JAP_zai_research_speed_factor
+
+}
+
+JAP_zaibatsus_challenged = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu_control
+
+	production_speed_arms_factory_factor = JAP_zai_production_speed_arms_factory_factor
+
+	production_speed_industrial_complex_factor = JAP_zai_production_speed_industrial_complex_factor
+
+	consumer_goods_factor = JAP_zai_consumer_goods_factor
+
+	production_factory_max_efficiency_factor = JAP_zai_production_factory_max_efficiency_factor
+
+	line_change_production_efficiency_factor = JAP_zai_line_change_production_efficiency_factor
+
+	production_factory_start_efficiency_factor = JAP_zai_production_factory_start_efficiency_factor
+
+	production_factory_efficiency_gain_factor = JAP_zai_production_factory_efficiency_gain_factor
+
+	industrial_capacity_factory = JAP_zai_industrial_capacity_factory 
+
+	industrial_capacity_dockyard = JAP_zai_industrial_capacity_dockyard
+
+	research_speed_factor = JAP_zai_research_speed_factor
+
+	
+}
+
+JAP_tank_development = {
+	
+}
+
 RAJ_agrarian_society_dynamic = { #NATIONAL SPIRIT
 	enable = { always = yes }
 
