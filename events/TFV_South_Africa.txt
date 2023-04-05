@@ -107,6 +107,15 @@ country_event = {
 				
 				transfer_state = 770
 				770 = { set_compliance = 80 }
+
+				transfer_state = 904
+				904 = { set_compliance = 80 }
+
+				transfer_state = 905
+				905 = { set_compliance = 80 }
+
+				transfer_state = 903
+				903 = { set_compliance = 80 }
 			}
 		}
 		hidden_effect = {
@@ -260,6 +269,12 @@ country_event = {
 			}
 			transfer_state = 547
 			547 = { set_compliance = 80 }
+			transfer_state = 904
+			904 = { set_compliance = 80 }
+			transfer_state = 905
+			905 = { set_compliance = 80 }
+			transfer_state = 903
+			903 = { set_compliance = 80 }
 		}
 		if = {
 			limit = { 
