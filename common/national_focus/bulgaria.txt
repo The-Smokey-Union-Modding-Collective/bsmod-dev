@@ -59,13 +59,13 @@ focus_tree = {
 						name = BUL_acquire_modern_tools
 						bonus = 0.5
 						uses = 1
-						category = industry
+						category = cat_production
 					}
 				}
 				else_if = {
 					limit = {
 						NOT = {
-							has_technology = basic_machine_tools
+							has_tech = basic_machine_tools
 						}
 					}
 					set_technology = {
