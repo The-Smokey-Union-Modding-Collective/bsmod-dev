@@ -15837,6 +15837,7 @@ focus_tree = {
 					category = armor
 				}
 			}
+			add_research_slot = 1
 		}
 	}
 
