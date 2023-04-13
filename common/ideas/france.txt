@@ -91,8 +91,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.1
-				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
 			}
 		}
 		FRA_inefficient_economy_2 = {
@@ -110,8 +110,8 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				industrial_capacity_factory = -0.2
-				industrial_capacity_dockyard = -0.2
+				industrial_capacity_factory = -0.3
+				industrial_capacity_dockyard = -0.3
 			}
 		}
 		FRA_political_violence = {
@@ -291,7 +291,9 @@ ideas = {
 			
 			modifier = {
 				economy_cost_factor = -0.5
-				conversion_cost_civ_to_mil_factor = -0.35
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_efficiency_gain_factor = -0.2
 			}
 		}
 		FRA_expanded_citizenship = {
@@ -1148,7 +1150,7 @@ ideas = {
 			modifier = {
 				conscription = -0.003
 				war_support_factor = -0.05
-				experience_gain_army_factor = -0.2
+				experience_gain_army_factor = -0.3
 			}
 		}
 

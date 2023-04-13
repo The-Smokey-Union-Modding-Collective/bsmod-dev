@@ -1417,6 +1417,7 @@ focus_tree = {
 		}
 		
 		allow_branch = {
+			ROM = { has_focus_tree = generic_focus }
 		}
 
 		bypass = {
