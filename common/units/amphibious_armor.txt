@@ -107,7 +107,7 @@ sub_units = {
 		max_strength = 2
 		weight = 1
 		supply_consumption = 0.2
-
+		breakthrough = 0.15
 		plains = {
 			attack = 0.1
 		}
@@ -179,7 +179,7 @@ sub_units = {
 		max_strength = 2
 		weight = 1
 		supply_consumption = 0.2
-
+		breakthrough = 0.15
 		plains = {
 			attack = 0.1
 		}
@@ -251,7 +251,7 @@ sub_units = {
 		max_strength = 2
 		weight = 1
 		supply_consumption = 0.2
-
+		breakthrough = 0.15
 		plains = {
 			attack = 0.1
 		}

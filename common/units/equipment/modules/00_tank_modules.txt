@@ -1347,7 +1347,7 @@ equipment_modules = {
 		sfx = sfx_ui_sd_module_turret
 
 		add_stats = {
-			armor_value = 2
+			armor_value = 5
 			breakthrough = 3
 			build_cost_ic = 0.5
 			hardness = 0.05
