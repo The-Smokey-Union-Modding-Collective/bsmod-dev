@@ -656,7 +656,7 @@ focus = {
 }
 focus = {
 	id = SAF_conscription_act
-	icon = GFX_goal_jans_smut
+	icon = GFX_focus_chi_army_reform
 	prerequisite = { focus = SAF_prime_minister_jan_smuts }
 	x = -1
 	y = 5
@@ -690,7 +690,7 @@ focus = {
 }
 focus = {
 	id = SAF_mobilization_of_industry_act
-	icon = GFX_goal_jans_smut
+	icon = GFX_goal_generic_construct_mil_factory
 	prerequisite = { focus = SAF_prime_minister_jan_smuts }
 	x = 1
 	y = 5
@@ -838,7 +838,7 @@ focus = {
 }
 focus = {
 	id = SAF_field_marshall_jan_smuts
-	icon = GFX_goal_generic_construction2
+	icon = GFX_focus_ETH_freedom_at_gunpoint
 	prerequisite = { focus = SAF_conscription_act }
 	prerequisite = { focus = SAF_mobilization_of_industry_act }
 	x = 1
@@ -869,7 +869,7 @@ focus = {
 }
 focus = {
 	id = SAF_mass_weapons_imports
-	icon = GFX_goal_jans_smut
+	icon = GFX_goal_generic_improve_relations
 	prerequisite = { focus = SAF_mobilization_of_industry_act }
 	x = 1
 	y = 1
@@ -903,7 +903,7 @@ focus = {
 }
 focus = {
 	id = SAF_contracts_with_USA
-	icon = GFX_goal_jans_smut
+	icon = GFX_focus_chi_mission_to_the_us
 	prerequisite = { focus = SAF_mass_weapons_imports }
 	x = 0
 	y = 2
@@ -937,7 +937,7 @@ focus = {
 }
 focus = {
 	id = SAF_contracts_with_ENG
-	icon = GFX_goal_jans_smut
+	icon = GFX_focus_chi_british_cooperation
 	prerequisite = { focus = SAF_mass_weapons_imports }
 	x = 2
 	y = 2
@@ -971,7 +971,7 @@ focus = {
 }
 focus = {
 	id = SAF_mass_tank_imports
-	icon = GFX_goal_jans_smut
+	icon = GFX_focus_generic_tank_production
 	prerequisite = { focus = SAF_contracts_with_USA }
 	prerequisite = { focus = SAF_contracts_with_ENG }
 	x = 1
@@ -1069,7 +1069,7 @@ focus = {
 }
 focus = {
 	id = SAF_an_army_worthy_of_africa
-	icon = GFX_goal_generic_military_sphere
+	icon = GFX_focus_generic_manpower
 	prerequisite = { focus = SAF_union_defense_force }
 	x = 1
 	y = 1
@@ -1104,7 +1104,7 @@ focus = {
 }
 focus =  {
 	id = SAF_armoured_warfare_development
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_goal_generic_army_tanks
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF__south_african_military_college}
 	prerequisite = { focus = SAF_an_army_worthy_of_africa
@@ -1129,7 +1129,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_a_headstart_in_development
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_armoured_warfare_development}
 	x = -3
@@ -1152,7 +1152,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_the_infantry_support_tank
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_focus_generic_tank_production
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_headstart_in_development}
 	x = -4
@@ -1175,7 +1175,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_the_6_pounder
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_goal_generic_army_artillery2
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_headstart_in_development}
 	x = -2
@@ -1198,7 +1198,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_a_cruiser_tank
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_goal_generic_army_tanks
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_6_pounder}
 	x = -2
@@ -1221,7 +1221,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_the_art_of_sloaping
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_focus_generic_military_mission
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_infantry_support_tank }
 	x = -4
@@ -1244,12 +1244,81 @@ focus =  {
 }
 focus =  {
 	id = SAF_a_true_british_tankman
-	icon = GFX_goal_doctrine_tank_warfare
+	icon = GFX_focus_eng_the_sun_never_sets
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_art_of_sloaping }
 	prerequisite = { focus = SAF_a_cruiser_tank }
 	x = -3
 	y = 5
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_a_native_design_project
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_armoured_warfare_development}
+	x = 1
+	y = 2
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_retool_the_train_factories
+	icon = GFX_focus_generic_railroad
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_a_native_design_project}
+	x = 0
+	y = 3
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_american_experts
+	icon = GFX_focus_chi_mission_to_the_us
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_retool_the_train_factories}
+	x = 0
+	y = 4
 	cost = 5
 	ai_will_do = {
 	   factor = 47
