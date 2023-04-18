@@ -199,11 +199,13 @@ division_template = {
 	template_counter = 66
 	force_allow_recruiting = yes
 	division_cap = 12 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var ITA_militias_cap set in history file
+	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
 		irregular_infantry = { x = 0 y = 1 }
 		irregular_infantry = { x = 1 y = 0 }
 		irregular_infantry = { x = 1 y = 1 }
+		irregular_infantry = { x = 0 y = 2 }
 	}
 	priority = 0 
 }
@@ -281,6 +283,7 @@ division_template = {
 	}
 	priority = 0 
 }
+
 
 ####### OOB #######
 units = {
@@ -763,55 +766,56 @@ units = {
 
 
 
+
+
 ####### Starting Production Queue #######
 instant_effect = { 
 	if = { 
-		limit = { is_tutorial = no }
+		limit = { is_tutorial = no } 
 
 		##### Equipments #####
 		add_equipment_production = { 
 			equipment = { 
 				type = infantry_equipment_1 
 				creator = "ITA" 
-			}
+			} 
 
 			requested_factories = 4 
 			progress = 0.1 
 			efficiency = 50 
-		}
+		} 
 
 		add_equipment_production = { 
 			equipment = { 
 				type = support_equipment_1 
 				creator = "ITA" 
-			}
+			} 
 
 			requested_factories = 1 
 			progress = 0.3 
 			efficiency = 50 
-		}
+		} 
 
 		add_equipment_production = { 
 			equipment = { 
-				type = light_tank_chassis_1 
+				type = light_tank_equipment_1 
 				creator = "ITA" 
-				version_name = "L3/35"
-			}
+			} 
 
 			requested_factories = 1 
 			progress = 0.4 
 			efficiency = 50 
-		}
+		} 
 
 		add_equipment_production = { 
 			equipment = { 
 				type = motorized_equipment_1 
 				creator = "ITA" 
-			}
+			} 
 
 			requested_factories = 2 
 			progress = 0.4 
 			efficiency = 50 
-		}
+		} 
 	}
-}
+} 

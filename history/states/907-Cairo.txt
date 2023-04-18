@@ -4,6 +4,11 @@ state={
 	manpower = 6454865
 	state_category=town
 
+	resources = {
+		tungsten = 40
+		steel = 40
+	}
+
 	history={
 		owner = ENG
 		buildings = {

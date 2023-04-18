@@ -31,7 +31,7 @@ upgrades = {
 			}
 		}
 		
-		build_cost_ic = 0.015
+		build_cost_ic = 0.01
 		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
@@ -65,7 +65,7 @@ upgrades = {
 			}
 		}
 
-		build_cost_ic = 0.015
+		build_cost_ic = 0.01
 		reliability = -0.015
 		add_stats = {
 			fuel_consumption = 0.05
@@ -112,7 +112,7 @@ upgrades = {
 			}
 		}
 
-		build_cost_ic = 0.015
+		build_cost_ic = 0.01
 		reliability = -0.015
 		add_stats = {
 			breakthrough = 1.25
@@ -151,7 +151,7 @@ upgrades = {
 			}
 		}
 
-		build_cost_ic = 0.015
+		build_cost_ic = 0.01
 		reliability = -0.015
 		add_stats = {
 			breakthrough = 1.25

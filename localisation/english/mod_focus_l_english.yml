@@ -10,3 +10,4 @@
  condor_legion_tt:0 "We will receive §G200§! §Y"BF 109 A"§! fighters and §G200§! §Y"JU 87"§! CAS from Germany" 
  CTV_tt:0 "We will receive §G200§! §Y"SM.81"§! bombers from Italy"
  BUL_tools_tech_free_tt:0 "We will receive §YBasic Machine Tools§! for free if we are not currently researching it.\nIf we are researching it we will receive a §G50%§! §YIndustry§! tech bonus.\n"
+ ITA_strengthen_the_blackshirts_template_mod_tt:0 "The blackshirts will become proper formations with §Y11 Infantry§!, §Y2 Artillery§! and §Y2 Anti tank§! regiments.\nThey shall also receive §YEngineers§!, §YRecon§!, §YSupport Artillery§!, §YSupport Anti Air§! and §YSupport Anti Tank§! as support companies."
