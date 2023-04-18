@@ -867,6 +867,206 @@ focus = {
 		custom_effect_tooltip = SAF_jan_smuts_tt
 	}
 }
+focus = {
+	id = SAF_mass_weapons_imports
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_mobilization_of_industry_act }
+	x = 1
+	y = 1
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_contracts_with_USA
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_mass_weapons_imports }
+	x = 0
+	y = 2
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_contracts_with_ENG
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_mass_weapons_imports }
+	x = 2
+	y = 2
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_mass_tank_imports
+	icon = GFX_goal_jans_smut
+	prerequisite = { focus = SAF_contracts_with_USA }
+	prerequisite = { focus = SAF_contracts_with_ENG }
+	x = 1
+	y = 3
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		OR = {
+			has_war = yes
+			date > 1939.10.1
+		}
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		promote_character = SAF_jan_smuts
+		retire_character = SAF_j_b_m_hertzog
+	}
+}
+focus = {
+	id = SAF_union_defense_force
+	icon = GFX_goal_generic_army_doctrines
+	x = 15
+	y = 0
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		army_experience = 25
+	}
+}
+focus = {
+	id = SAF__south_african_military_college
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = SAF_union_defense_force }
+	x = 0
+	y = 1
+	relative_position_id = SAF_union_defense_force
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
 	############################
 	#### WAR PREP SECTION ######
 	############################
