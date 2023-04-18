@@ -1007,7 +1007,7 @@ focus = {
 focus = {
 	id = SAF_union_defense_force
 	icon = GFX_goal_generic_army_doctrines
-	x = 15
+	x = 19
 	y = 0
 
 	cost = 5
@@ -1036,7 +1036,7 @@ focus = {
 	id = SAF__south_african_military_college
 	icon = GFX_goal_generic_military_sphere
 	prerequisite = { focus = SAF_union_defense_force }
-	x = 0
+	x = -1
 	y = 1
 	relative_position_id = SAF_union_defense_force
 
@@ -1067,6 +1067,205 @@ focus = {
 		}
 	}
 }
+focus = {
+	id = SAF_an_army_worthy_of_africa
+	icon = GFX_goal_generic_military_sphere
+	prerequisite = { focus = SAF_union_defense_force }
+	x = 1
+	y = 1
+	relative_position_id = SAF_union_defense_force
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+	}
+}
+focus =  {
+	id = SAF_armoured_warfare_development
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF__south_african_military_college}
+	prerequisite = { focus = SAF_an_army_worthy_of_africa
+	}
+	x = -1
+	y = 1
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_a_headstart_in_development
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_armoured_warfare_development}
+	x = -3
+	y = 2
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_the_infantry_support_tank
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_a_headstart_in_development}
+	x = -4
+	y = 3
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_the_6_pounder
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_a_headstart_in_development}
+	x = -2
+	y = 3
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_a_cruiser_tank
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_the_6_pounder}
+	x = -2
+	y = 4
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_the_art_of_sloaping
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_the_infantry_support_tank }
+	x = -4
+	y = 4
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_a_true_british_tankman
+	icon = GFX_goal_doctrine_tank_warfare
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_the_art_of_sloaping }
+	prerequisite = { focus = SAF_a_cruiser_tank }
+	x = -3
+	y = 5
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
 	############################
 	#### WAR PREP SECTION ######
 	############################
@@ -1074,7 +1273,7 @@ focus = {
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory
-		x = 21
+		x = 30
 		y = 0
 
 		cost = 5
