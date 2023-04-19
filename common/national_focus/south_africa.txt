@@ -723,6 +723,39 @@ focus = {
 	}
 }
 focus = {
+	id = SAF_smol_rand_mines
+	icon = GFX_goal_generic_consumer_goods
+prerequisite = {
+	focus = SAF_mobilization_of_industry_act
+}
+	x = 4
+	y = 1
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_INDUSTRY }
+
+	completion_reward = {
+		add_ideas = SAF_gold_exports
+	}
+}
+focus = {
 	id = SAF_lenz_bomb_factory
 	icon = GFX_goal_generic_construct_mil_factory
 	prerequisite = { focus = SAF_conscription_act }
@@ -1007,7 +1040,7 @@ focus = {
 focus = {
 	id = SAF_union_defense_force
 	icon = GFX_goal_generic_army_doctrines
-	x = 19
+	x = 21
 	y = 0
 
 	cost = 5
@@ -1036,7 +1069,7 @@ focus = {
 	id = SAF__south_african_military_college
 	icon = GFX_goal_generic_military_sphere
 	prerequisite = { focus = SAF_union_defense_force }
-	x = -1
+	x = -2
 	y = 1
 	relative_position_id = SAF_union_defense_force
 
@@ -1068,10 +1101,41 @@ focus = {
 	}
 }
 focus = {
-	id = SAF_an_army_worthy_of_africa
+	id = SAF_smol__military_university
+	icon = GFX_focus_research
+	prerequisite = { focus = SAF__south_african_military_college focus = SAF_deploy_the_coastal_artillery }
+	x = 2
+	y = 1
+	relative_position_id = SAF__south_african_military_college
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 45
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_research_slot = 1
+	}
+}
+focus = {
+	id = SAF_deploy_the_coastal_artillery
 	icon = GFX_focus_generic_manpower
 	prerequisite = { focus = SAF_union_defense_force }
-	x = 1
+	x = 2
 	y = 1
 	relative_position_id = SAF_union_defense_force
 
@@ -1107,9 +1171,9 @@ focus =  {
 	icon = GFX_goal_generic_army_tanks
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF__south_african_military_college}
-	prerequisite = { focus = SAF_an_army_worthy_of_africa
+	prerequisite = { focus = SAF_deploy_the_coastal_artillery
 	}
-	x = -1
+	x = -2
 	y = 1
 	cost = 5
 	ai_will_do = {
@@ -1132,7 +1196,7 @@ focus =  {
 	icon = GFX_goal_tfv_strengthen_commonwealth_ties
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_armoured_warfare_development}
-	x = -3
+	x = -4
 	y = 2
 	cost = 5
 	ai_will_do = {
@@ -1155,7 +1219,7 @@ focus =  {
 	icon = GFX_focus_generic_tank_production
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_headstart_in_development}
-	x = -4
+	x = -5
 	y = 3
 	cost = 5
 	ai_will_do = {
@@ -1178,7 +1242,7 @@ focus =  {
 	icon = GFX_goal_generic_army_artillery2
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_headstart_in_development}
-	x = -2
+	x = -3
 	y = 3
 	cost = 5
 	ai_will_do = {
@@ -1201,7 +1265,7 @@ focus =  {
 	icon = GFX_goal_generic_army_tanks
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_6_pounder}
-	x = -2
+	x = -3
 	y = 4
 	cost = 5
 	ai_will_do = {
@@ -1224,7 +1288,7 @@ focus =  {
 	icon = GFX_focus_generic_military_mission
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_infantry_support_tank }
-	x = -4
+	x = -5
 	y = 4
 	cost = 5
 	ai_will_do = {
@@ -1248,7 +1312,7 @@ focus =  {
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_art_of_sloaping }
 	prerequisite = { focus = SAF_a_cruiser_tank }
-	x = -3
+	x = -4
 	y = 5
 	cost = 5
 	ai_will_do = {
@@ -1271,7 +1335,7 @@ focus =  {
 	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_armoured_warfare_development}
-	x = 1
+	x = 0
 	y = 2
 	cost = 5
 	ai_will_do = {
@@ -1294,7 +1358,7 @@ focus =  {
 	icon = GFX_focus_generic_railroad
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_native_design_project}
-	x = 0
+	x = -1
 	y = 3
 	cost = 5
 	ai_will_do = {
@@ -1317,7 +1381,7 @@ focus =  {
 	icon = GFX_focus_chi_mission_to_the_us
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_retool_the_train_factories}
-	x = 0
+	x = -1
 	y = 4
 	cost = 5
 	ai_will_do = {
@@ -1335,6 +1399,525 @@ focus =  {
 		army_experience = 25
 	}
 }
+focus =  {
+	id = SAF_heavy_arty_focus
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_a_native_design_project}
+	x = 1
+	y = 3
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_navy_guns_for_tanks
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_heavy_arty_focus}
+	x = 1
+	y = 4
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_desert_tanks
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_navy_guns_for_tanks }
+	prerequisite = {
+		focus = SAF_american_experts
+	}
+	mutually_exclusive = {
+		focus = SAF_durabale_tanks
+	}
+	x = -1
+	y = 5
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_durabale_tanks
+	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF_navy_guns_for_tanks }
+	prerequisite = {
+		focus = SAF_american_experts
+	}
+	mutually_exclusive = {
+		focus = SAF_desert_tanks
+	}
+	x = 1
+	y = 5
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus =  {
+	id = SAF_an_army_worthy_of_africa
+	icon = GFX_goal_generic_army_tanks
+	relative_position_id = SAF__south_african_military_college
+	prerequisite = { focus = SAF__south_african_military_college}
+	prerequisite = { focus = SAF_deploy_the_coastal_artillery
+	}
+	x = 6
+	y = 1
+	cost = 5
+	ai_will_do = {
+	   factor = 47
+	}
+   available = {
+   }
+	completion_reward = {
+		add_doctrine_cost_reduction = {
+			name = land_doc_bonus
+			cost_reduction = 0.5
+			uses = 1
+			category = land_doctrine
+		}
+		army_experience = 25
+	}
+}
+focus = {
+	id = SAF_millions_strong
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_an_army_worthy_of_africa }
+	x = -2
+	y = 1
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+focus = {
+	id = SAF_quality_over_quantity 
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_an_army_worthy_of_africa }
+	x = 2
+	y = 1
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+focus = {
+	id = SAF_heavy_funding_for_arty_development 
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = SAF_quality_over_quantity }
+	x = 1
+	y = 2
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_heavy_funding_for_arty_development
+			bonus = 1.5
+			uses = 2
+			category = artillery
+		}			
+	}
+}
+focus = {
+	id = SAF_ranger_forces
+	icon = GFX_focus_por_luso_tropicalism
+	prerequisite = { focus = SAF_heavy_funding_for_arty_development }
+	x = 0
+	y = 1
+	relative_position_id = SAF_heavy_funding_for_arty_development
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_smol_special_forces
+			bonus = 1.5
+			uses = 1
+			category = jaeger_tech
+		}
+	}
+}
+focus = {
+	id = SAF_modern_machine_gun 
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = SAF_quality_over_quantity }
+	x = 3
+	y = 2
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_heavy_funding_for_arty_development
+			bonus = 1.5
+			uses = 2
+			category = artillery
+		}			
+	}
+}
+focus = {
+	id = SAF_mass_motorization_of_the_supplychain 
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = SAF_modern_machine_gun }
+	x = 3
+	y = 3
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_heavy_funding_for_arty_development
+			bonus = 1.5
+			uses = 2
+			category = artillery
+		}			
+	}
+}
+focus = {
+	id = SAF_infantry_training_school
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_millions_strong }
+	x = -1
+	y = 1
+	relative_position_id = SAF_millions_strong
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}	
+focus = {
+	id = SAF_colonial_troops
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_infantry_training_school }
+	x = -1
+	y = 2
+	relative_position_id = SAF_millions_strong
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+focus = {
+	id = SAF_great_war_stockpiles
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_millions_strong }
+	x = 1
+	y = 1
+	relative_position_id = SAF_millions_strong
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+focus = {
+	id = SAF_refit_the_old_guns
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_great_war_stockpiles }
+	x = 1
+	y = 2
+	relative_position_id = SAF_millions_strong
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+focus = {
+	id = SAF_the_weapons_of_new_great_war
+	icon = GFX_focus_chi_army_reform
+	prerequisite = { focus = SAF_refit_the_old_guns}
+	prerequisite = {
+		focus = SAF_colonial_troops
+	}
+	x = 0
+	y = 3
+	relative_position_id = SAF_millions_strong
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_infantry_training_school
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}			
+	}
+}
+	
 	############################
 	#### WAR PREP SECTION ######
 	############################
@@ -1565,7 +2148,7 @@ focus =  {
 	focus = {
 		id = SAF_support_the_policy_of_appeasement
 		icon = GFX_goal_tfv_strengthen_commonwealth_ties
-		x = 25
+		x = 45
 		y = 0
 
 		cost = 5
@@ -2369,37 +2952,6 @@ focus =  {
 		}
 	}
 	focus = {
-		id = SAF_smol_rand_mines
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SAF_smoll_civ_natal focus = SAF_smoll_south_west }
-		x = 5
-		y = 2
-		relative_position_id = SAF_smoll_infrastruktur_cape
-
-		cost = 5
-
-		ai_will_do = {
-			factor = 15
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-        search_filters = { FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			add_ideas = SAF_gold_exports
-		}
-	}
-	focus = {
 		id = SAF_smol_south_african_steel
 		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = SAF_smoll_south_west }
@@ -2524,9 +3076,9 @@ focus =  {
 		id = SAF_smol_armament_effort_2
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = SAF_smol_rand_mines }
-		x = 5
-		y = 3
-		relative_position_id = SAF_smoll_infrastruktur_cape
+		x = 4
+		y = 2
+		relative_position_id = SAF_mobilization_of_industry_act
 
 		cost = 5
 
@@ -2566,6 +3118,69 @@ focus =  {
 					level = 2
 					instant_build = yes
 				}
+			}
+		}
+	}
+	focus = {
+		id = SAF_pegging_act
+		icon = GFX_focus_generic_treaty
+		prerequisite = { focus = SAF_mobilization_of_industry_act }
+		x = -6
+		y = 1
+		relative_position_id = SAF_mobilization_of_industry_act
+
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 15
+		}
+
+		available = {
+			
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			add_stability = -0.10
+		}
+	}
+	focus = {
+		id = SAF_outlaw_strikes
+		icon = GFX_goal_generic_consumer_goods
+		prerequisite = { focus = SAF_pegging_act }
+		x = 0
+		y = 1
+		relative_position_id = SAF_pegging_act
+
+		cost = 7.15
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+
+		}
+		
+		bypass = {
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = no
+
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SAF_cheap_labor_2
+				add_idea = SAF_cheap_labor_3
 			}
 		}
 	}
