@@ -80,7 +80,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_political_power = 120
+		add_political_power = 100
 	}
 }
 focus = {
@@ -159,6 +159,7 @@ focus = {
 	}
 
 	available = {
+
 
 	}
 	
@@ -831,11 +832,10 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_new_machine_tools
-			bonus = 0.5
-			uses = 1
+			bonus = 1
+			uses = 2
 			technology = advanced_machine_tools
 			technology = assembly_line_production
-			technology = modern_tools
 		}
 	}
 }
@@ -1559,7 +1559,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus = {
@@ -1873,12 +1872,66 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_tech_bonus = {
-			name = SAF_infantry_training_school
-			bonus = 0.5
-			uses = 2
-			category = infantry_weapons
-		}			
+		custom_effect_tooltip = SAF_infantry_tt_2
+		hidden_effect = {
+			division_template = {
+					  name = "Colonial Brigade"  
+					  division_names_group = FRA_INF_01
+
+						regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+						
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+							infantry = { x = 2 y = 2 }
+
+							infantry = { x = 3 y = 0 }
+							infantry = { x = 3 y = 1 }
+							infantry = { x = 3 y = 2 }
+							infantry = { x = 3 y = 3 }
+							
+							artillery_brigade = { x = 4 y = 0 }
+							artillery_brigade = { x = 4 y = 1 }
+						}
+							support = {
+										recon = { x = 0 y = 0 }
+									  engineer = { x = 0  y = 1 }
+							}
+			}
+						every_state = {
+							limit = { state = 681 }
+							create_unit = {
+									division = "name = \"4.Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								} 
+							 create_unit = {
+									division = "name = \"5. Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								}
+								create_unit = {
+									division = "name = \"6. Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								}
+								create_unit = {
+									division = "name = \"7. Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								}
+								create_unit = {
+									division = "name = \"8. Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								}
+								create_unit = {
+									division = "name = \"9. Military Division\" division_template = \"Colonial Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+									owner = SAF
+								}
+						}  
+		}  		
 	}
 }
 focus = {
