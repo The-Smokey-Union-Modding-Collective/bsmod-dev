@@ -13,7 +13,7 @@
 	
 	default = no
 
-
+	continuous_focus_position = { x = 55 y = 1500 }
 
 #	focus = {
 #		id = SAF_
@@ -1158,12 +1158,50 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
+		custom_effect_tooltip = SAF_infantry_tt
+				hidden_effect = {
+					division_template = {
+							  name = "Costal Artillery Brigade"  
+							  division_names_group = FRA_INF_01
+
+								regiments = {
+									infantry = { x = 0 y = 0 }
+									infantry = { x = 0 y = 1 }
+									infantry = { x = 0 y = 2 }
+								
+									infantry = { x = 1 y = 0 }
+									infantry = { x = 1 y = 1 }
+									infantry = { x = 1 y = 2 }
+									
+									infantry = { x = 2 y = 0 }
+									infantry = { x = 2 y = 1 }
+									infantry = { x = 2 y = 2 }
+
+									artillery_brigade = { x = 3 y = 0 }
+									artillery_brigade = { x = 3 y = 1 }
+									artillery_brigade = { x = 3 y = 2 }
+									artillery_brigade = { x = 3 y = 3 }
+									
+									artillery_brigade = { x = 4 y = 0 }
+									artillery_brigade = { x = 4 y = 1 }
+								}
+									support = {
+												recon = { x = 0 y = 0 }
+											  engineer = { x = 0  y = 1 }
+									}
+					}
+								every_state = {
+									limit = { state = 681 }
+									create_unit = {
+											division = "name = \"4.Military Division\" division_template = \"Costal Artillery Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+											owner = SAF
+										} 
+									 create_unit = {
+											division = "name = \"5. Military Division\" division_template = \"Costal Artillery Brigade\" start_experience_factor = 0 start_equipment_factor = 1" 
+											owner = SAF
+										}
+								}  
+				}  
 	}
 }
 focus =  {
@@ -1196,6 +1234,7 @@ focus =  {
 	icon = GFX_goal_tfv_strengthen_commonwealth_ties
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_armoured_warfare_development}
+	mutually_exclusive = {focus = SAF_a_native_design_project }
 	x = -4
 	y = 2
 	cost = 5
@@ -1234,7 +1273,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1303,11 +1341,10 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
-	id = SAF_a_true_british_tankman
+	id = SAF_a_true_british_tank
 	icon = GFX_focus_eng_the_sun_never_sets
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_the_art_of_sloaping }
@@ -1327,7 +1364,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1335,6 +1371,7 @@ focus =  {
 	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_armoured_warfare_development}
+	mutually_exclusive = {focus = SAF_a_headstart_in_development }
 	x = 0
 	y = 2
 	cost = 5
@@ -1350,7 +1387,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1442,7 +1478,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1471,7 +1506,6 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1535,6 +1569,7 @@ focus = {
 	x = -2
 	y = 1
 	relative_position_id = SAF_an_army_worthy_of_africa
+	mutually_exclusive = {focus = SAF_quality_over_quantity }
 
 	cost = 5
 
@@ -1567,6 +1602,7 @@ focus = {
 	id = SAF_quality_over_quantity 
 	icon = GFX_focus_chi_army_reform
 	prerequisite = { focus = SAF_an_army_worthy_of_africa }
+	mutually_exclusive = {focus = SAF_millions_strong }
 	x = 2
 	y = 1
 	relative_position_id = SAF_an_army_worthy_of_africa
@@ -1710,6 +1746,42 @@ focus = {
 	prerequisite = { focus = SAF_modern_machine_gun }
 	x = 3
 	y = 3
+	relative_position_id = SAF_an_army_worthy_of_africa
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_heavy_funding_for_arty_development
+			bonus = 1.5
+			uses = 2
+			category = artillery
+		}			
+	}
+}
+focus = {
+	id = SAF_the_elite_of_the_empire 
+	icon = GFX_goal_generic_army_artillery
+	prerequisite = { focus = SAF_mass_motorization_of_the_supplychain }
+	prerequisite = { focus = SAF_ranger_forces }
+	x = 2
+	y = 4
 	relative_position_id = SAF_an_army_worthy_of_africa
 
 	cost = 5
@@ -1925,7 +1997,7 @@ focus = {
 	focus = {
 		id = SAF_war_measures_act
 		icon = GFX_goal_generic_demand_territory
-		x = 30
+		x = 50
 		y = 0
 
 		cost = 5
@@ -2474,7 +2546,7 @@ focus = {
 	focus = {
 		id = SAF_smoll_infrastruktur_cape
 		icon = GFX_goal_generic_construct_infrastructure
-		x = 28
+		x = 48
 		y = 0
 
 		cost = 5
