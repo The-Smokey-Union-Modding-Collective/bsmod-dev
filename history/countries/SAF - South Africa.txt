@@ -26,7 +26,7 @@ set_war_support = 0.1
 set_research_slots = 3
 
 create_intelligence_agency = {
-	name = "BS Agency"
+	name = "MI6 SAF"
 	icon = "GFX_intelligence_agency_logo_bs"
 }
 
@@ -87,8 +87,6 @@ if = {
 
 if = {
 	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_ossewabrandwag
-	add_ideas = SAF_history_of_segregation
 	add_ideas = mod_scw_international_brigades
 	add_ideas = mod_trade_allies
 
@@ -108,31 +106,31 @@ if = {
 			set_air_oob = "SAF_1939_air_legacy"
 		}
 	}
-	if = {
-		limit = { has_dlc = "Together for Victory" }
-		complete_national_focus = SAF_special_service_battalion
-		complete_national_focus = SAF_improve_the_three_oh_three
-		complete_national_focus = SAF_q_services_corps
-		complete_national_focus = SAF_commit_to_the_five_year_plan
-		complete_national_focus = SAF_seaward_defence_force
-		complete_national_focus = SAF_protect_the_trade
-		complete_national_focus = SAF_south_african_railways
-		complete_national_focus = SAF_expand_the_mining_industry
-		complete_national_focus = SAF_heavy_engineering	
-		
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
+#	if = {
+#		limit = { has_dlc = "Together for Victory" }
+#		complete_national_focus = SAF_special_service_battalion
+#		complete_national_focus = SAF_improve_the_three_oh_three
+#		complete_national_focus = SAF_q_services_corps
+#		complete_national_focus = SAF_commit_to_the_five_year_plan
+#		complete_national_focus = SAF_seaward_defence_force
+#		complete_national_focus = SAF_protect_the_trade
+#		complete_national_focus = SAF_south_african_railways
+#		complete_national_focus = SAF_expand_the_mining_industry
+#		complete_national_focus = SAF_heavy_engineering	
+#		
+#		else = {
+#			#generic focuses
+#			complete_national_focus = army_effort
+#			complete_national_focus = equipment_effort
+#			complete_national_focus = motorization_effort
+#			complete_national_focus = aviation_effort
+#			complete_national_focus = naval_effort
+#			complete_national_focus = large_navy
+#			complete_national_focus = industrial_effort
+#			complete_national_focus = construction_effort
+#			complete_national_focus = production_effort
+#		}
+#	}
 
 	add_ideas = {
 		#laws

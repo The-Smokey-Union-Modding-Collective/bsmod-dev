@@ -897,7 +897,16 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		custom_effect_tooltip = SAF_jan_smuts_tt
+		create_corps_commander = {
+			name = "Jan Smuts"
+			gfx = "GFX_RAJ_krishna_pillai"
+			traits = {old_guard brilliant_strategist media_personality desert_fox trickster urban_assault_specialist panzer_leader infantry_leader }
+			skill = 4
+			attack_skill = 5
+			defense_skill = 4
+			planning_skill = 5
+			logistics_skill = 6
+		}
 	}
 }
 focus = {
@@ -1220,11 +1229,11 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
+		add_tech_bonus = {
+			name = mechanized_bonus
+			bonus = 1
 			uses = 1
-			category = land_doctrine
+			category = cat_mechanized_equipment
 		}
 		army_experience = 25
 	}
@@ -1512,6 +1521,9 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
+		set_technology = { 
+			SAF_desert_tanks_tech = 1
+		}
 	}
 }
 focus =  {
@@ -1534,11 +1546,8 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
+		set_technology = { 
+			SAF_durable_tanks_tech = 1
 		}
 		army_experience = 25
 	}
@@ -1738,11 +1747,14 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = SAF_heavy_funding_for_arty_development
-			bonus = 1.5
-			uses = 2
-			category = artillery
-		}			
+			name = SAF_modern_machine_gun
+			bonus = 0.5
+			uses = 4
+			technology = support_weapons
+			technology = support_weapons2
+			technology = support_weapons3
+			technology = support_weapons4
+		}
 	}
 }
 focus = {

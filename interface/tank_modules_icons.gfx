@@ -571,4 +571,9 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
+	spriteType = {
+		name = "GFX_EMI_boiling_vessel"
+		textureFile = "gfx/interface/equipmentdesigner/tanks/modules/boiling_vessel.dds"
+		legacy_lazy_load = no
+	}
 }

@@ -33,6 +33,34 @@ technologies = {
 			boiling_vessel
 		}
 	}
+	SAF_desert_tanks_tech = {
 
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+	
+	
+		armor = {
+			desert = {
+				attack = 0.1
+				movement = 0.15
+			}
+		}
+	}
+	SAF_durable_tanks_tech= {
+
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+	
+	
+		armor = {
+			max_strength = 1
+		}
+	}
 
 }
