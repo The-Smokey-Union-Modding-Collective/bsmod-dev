@@ -1,7 +1,7 @@
 SAF_south_african_army_modifier = {
     enable = { always = yes }
 
-    icon = GFX_FRA_national_mobilization_focus
+    icon = eng_service_overseas
 
     max_planning_factor = SAF_max_planning_factor_var
     army_attack_factor  = SAF_army_attack_factor_var
@@ -21,6 +21,7 @@ SAF_south_african_army_modifier = {
 	experience_gain_army  = SAF_experience_gain_army_var
 	send_volunteers_tension = SAF_send_volunteers_tension_var
 	conscription  = SAF_conscription_var
+	conscription_factor = SAF_conscription_factor_var
 	army_core_attack_factor = SAF_army_core_attack_factor
 	army_core_defence_factor = SAF_army_core_defence_factor
 
@@ -28,7 +29,7 @@ SAF_south_african_army_modifier = {
 SAF_politics_modifier = {
     enable = { always = yes }
 
-    icon = GFX_stiff_upper_lip
+    icon = por_colonial_assimilation
 
     fascism_drift = SAF_fascism_drift_modifier
     communism_drift = SAF_communism_drift_modifier
@@ -52,7 +53,7 @@ SAF_politics_modifier = {
 
 SAF_colonial_rule_modifier = { #used as National Spirit
     enable = { always = yes }
-	Icon = GFX_hol_caved_to_the_british
+	Icon = hol_caved_to_the_british
 	production_factory_max_efficiency_factor = SAF_colonial_rule_production_factory_max_efficiency_modifier 
 	production_factory_efficiency_gain_factor = SAF_colonial_rule_production_factory_efficiency_gain_factor_modifier 
 	industrial_capacity_factory = SAF_colonial_rule_industrial_capacity_factory_modifier 

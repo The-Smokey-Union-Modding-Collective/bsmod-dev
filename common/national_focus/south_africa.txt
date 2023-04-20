@@ -1619,7 +1619,8 @@ focus = {
 			bonus = 0.5
 			uses = 2
 			category = infantry_weapons
-		}			
+		}	
+		add_to_variable = { SAF_conscription_factor_var = 0.25 }		
 	}
 }
 focus = {
@@ -2067,7 +2068,9 @@ focus = {
 			bonus = 0.5
 			uses = 2
 			category = infantry_weapons
-		}			
+		}
+		add_to_variable = { SAF_conscription_factor_var = 0.2 }			
+		add_to_variable = { SAF_conscription_var = 0.02 }
 	}
 }
 	
@@ -2258,40 +2261,6 @@ focus = {
 		}
 	}
 
-	focus = {
-		id = SAF_outlaw_strikes
-		icon = GFX_goal_generic_consumer_goods
-		prerequisite = { focus = SAF_work_for_all_poor }
-		x = 2
-		y = 5
-		relative_position_id = SAF_war_measures_act
-
-		cost = 10
-
-		ai_will_do = {
-			factor = 1
-		}
-
-		available = {
-
-		}
-		
-		bypass = {
-
-		}
-
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = no
-
-		search_filters = { FOCUS_FILTER_INDUSTRY }
-		completion_reward = {
-			swap_ideas = {
-				remove_idea = SAF_cheap_labor_2
-				add_idea = SAF_cheap_labor_3
-			}
-		}
-	}
 
 
 	############################
