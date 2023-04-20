@@ -212,11 +212,12 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_ideas = SAF_voortrekker_monument
+		add_to_variable = {SAF_collapsing_government_stability_factor_modifier = 0.1}
 		add_days_mission_timeout = {
 			mission = SAF_end_of_neutrality_timeout
 			days = 100
 		}
+		custom_effect_tooltip = SAF_politics_tt_1
 	}
 }
 
@@ -247,17 +248,19 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {			
-		swap_ideas = {
-			remove_idea = SAF_ossewabrandwag
-			add_idea = SAF_ossewabrandwag_2
+		add_to_variable = {
+			SAF_fascism_drift_modifier = -0.08
 		}
-		remove_opinion_modifier = { target = ENG modifier = SAF_anti_british_sentiment }
+		add_to_variable = {
+			SAF_democratic_drift_modifier = 0.05
+		}
+		custom_effect_tooltip = SAF_politics_tt_2
 	}
 }
 
 focus = {
-	id = SAF_politics_fix_1
-	icon = GFX_goal_develop_saf
+	id = SAF_1937_wage_act
+	icon = GFX_focus_usa_reestablish_the_gold_standard
 	prerequisite = { focus = SAF_voortrekker_monument }
 		x = 1
 		y = 1
@@ -282,13 +285,25 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_political_power = 120
+		add_to_variable = {
+			SAF_communism_drift_modifier = -0.05
+		}
+		add_to_variable = {
+			SAF_collapsing_government_stability_factor_modifier = 0.05
+		}
+		add_to_variable = {
+			SAF_industry_consumer_goods_modifier = 0.02
+		}
+		add_to_variable ={
+			SAF_stability_weekly_modifier = 0.001
+		}
+		custom_effect_tooltip = SAF_politics_tt_3
 	}
 }
 focus = {
 	id = SAF_politics_fix_2
 	icon = GFX_goal_develop_saf
-	prerequisite = { focus = SAF_politics_fix_1 }
+	prerequisite = { focus = SAF_1937_wage_act }
 	prerequisite = {focus = SAF_police_windhoek_new}
 		x = 0
 		y = 2
@@ -732,6 +747,9 @@ focus = {
 
 	completion_reward = {
 		add_war_support = 0.2
+		add_to_variable = {
+			 SAF_industry_production_efficiency_max_modifier = 0.05
+		}
 		if = {
 			limit = {
 				NOT = { has_idea = partial_economic_mobilisation }
@@ -1050,10 +1068,6 @@ focus = {
 	}
 
 	available = {
-		OR = {
-			has_war = yes
-			date > 1939.10.1
-		}
 	}
 	
 	bypass = {
