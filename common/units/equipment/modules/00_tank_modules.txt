@@ -1429,4 +1429,16 @@ equipment_modules = {
 			
 		}
 	}
+	boiling_vessel = {
+		abbreviation = "tea"
+		category = tank_special_module
+		sfx = sfx_ui_sd_module_turret
+		add_stats = {
+			max_organisation = 2
+			build_cost_ic = 1
+		}
+		multiply_stats = {
+			soft_attack = 0.05
+		}
+	}
 }

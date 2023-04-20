@@ -1244,13 +1244,14 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
-		}
-		army_experience = 25
+		set_technology = { 
+			armored_car1 = 1
+			basic_heavy_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			basic_light_tank_chassis = 1
+			armor_tech_1 = 1
+			engine_tech_1 = 1
+		}		
 	}
 }
 focus =  {
@@ -1267,11 +1268,11 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
+		add_tech_bonus = {
+			name = infantry_support_tank
+			bonus = 1.01
 			uses = 1
-			category = land_doctrine
+			category = cat_heavy_armor
 		}
 	}
 }
@@ -1289,13 +1290,12 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
+		add_tech_bonus = {
+			name = the_6_pounder
+			bonus = 1
 			uses = 1
-			category = land_doctrine
+			category = artillery
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1312,11 +1312,12 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
+		add_tech_bonus = {
+			name = SAF_a_cruiser_tank
+			bonus = 0.75
 			uses = 1
-			category = land_doctrine
+			category = cat_heavy_armor
+			category = cat_medium_armor
 		}
 		army_experience = 25
 	}
@@ -1335,11 +1336,13 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
+		add_tech_bonus = {
+			name = SAF_the_art_of_sloaping
+			bonus = 0.8
+			uses = 3
+			technology = armor_tech_2
+			technology = armor_tech_3
+			technology = armor_tech_4
 		}
 	}
 }
@@ -1364,6 +1367,9 @@ focus =  {
 			uses = 1
 			category = land_doctrine
 		}
+		set_technology = { 
+			boiling_vessel_tank_module = 1
+		}	
 	}
 }
 focus =  {
@@ -1699,7 +1705,7 @@ focus = {
 		add_tech_bonus = {
 			name = SAF_smol_special_forces
 			bonus = 1.5
-			uses = 1
+			uses = 2
 			category = jaeger_tech
 		}
 	}
