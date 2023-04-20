@@ -176,7 +176,7 @@ focus = {
 			character = SAF_j_b_m_hertzog
 			country_leader = {
 				expire = "1959.1.1"
-				ideology = democratic
+				ideology = democracy
 				traits = {
 					staunch_neutrality_trait
 				}
@@ -680,10 +680,6 @@ focus = {
 	}
 
 	available = {
-		OR = {
-			has_war = yes
-			date > 1939.10.1
-		}
 	}
 	
 	bypass = {
@@ -695,8 +691,18 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		promote_character = SAF_jan_smuts
-		retire_character = SAF_j_b_m_hertzog
+		if = {
+			limit = {
+				NOT = { has_idea = extensive_conscription }
+			}
+			add_ideas = extensive_conscription
+		}
+		else_if = {
+			limit = {
+				has_idea = extensive_conscription 
+			}
+			add_political_power = 150 				
+		}
 	}
 }
 focus = {
@@ -714,10 +720,6 @@ focus = {
 	}
 
 	available = {
-		OR = {
-			has_war = yes
-			date > 1939.10.1
-		}
 	}
 	
 	bypass = {
@@ -729,8 +731,19 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		promote_character = SAF_jan_smuts
-		retire_character = SAF_j_b_m_hertzog
+		add_war_support = 0.2
+		if = {
+			limit = {
+				NOT = { has_idea = partial_economic_mobilisation }
+			}
+			add_ideas = partial_economic_mobilisation
+		}
+		else_if = {
+			limit = {
+				has_idea = partial_economic_mobilisation 
+			}
+			add_political_power = 150 				
+		}
 	}
 }
 focus = {
@@ -1620,7 +1633,8 @@ focus = {
 			uses = 2
 			category = infantry_weapons
 		}	
-		add_to_variable = { SAF_conscription_factor_var = 0.25 }		
+		add_to_variable = { SAF_conscription_factor_var = 0.25 }	
+		custom_effect_tooltip = SAF_manpower_1
 	}
 }
 focus = {
@@ -2071,6 +2085,7 @@ focus = {
 		}
 		add_to_variable = { SAF_conscription_factor_var = 0.2 }			
 		add_to_variable = { SAF_conscription_var = 0.02 }
+		custom_effect_tooltip = SAF_manpower_2
 	}
 }
 	

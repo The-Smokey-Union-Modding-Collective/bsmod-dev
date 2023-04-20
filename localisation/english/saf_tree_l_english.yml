@@ -226,3 +226,5 @@ boiling_vessel_desc:0 "If we enable the tankcrews to make and drink their tea in
 boiling_vessel_tank_module:0 "Boiling Vessel"
 SAF_desert_tanks_tech:0 "Desert Tanks"
 SAF_durable_tanks_tech:0 "Durable Tanks"
+SAF_manpower_1:0 "Adds 25% Recruitable Population Factor."
+SAF_manpower_2:0 "Adds 15% Recruitable Population Factor and 1% Conscription Factor."
