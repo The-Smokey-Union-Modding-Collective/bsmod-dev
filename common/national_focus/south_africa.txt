@@ -560,7 +560,7 @@ focus = {
 }
 focus = {
 	id = SAF_representation_of_natives_act_3
-	icon = GFX_goal_generic_construction2
+	icon = GFX_focus_generic_land_reclamation
 	prerequisite = { focus =SAF_representation_of_natives_act }
 	x = 5
 	y = 2
@@ -621,7 +621,7 @@ focus = {
 }
 focus = {
 	id = SAF_prime_minister_jan_smuts
-	icon = GFX_goal_jans_smut
+	icon = GFX_focus_hol_war_on_pacifism
 	prerequisite = { focus = SAF_politics_fix_2 }
 	prerequisite = { focus = SAF_transvaal_urbanization_4 }
 	prerequisite = { focus = SAF_representation_of_natives_act_4 }
@@ -1437,7 +1437,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_heavy_arty_focus
-	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	icon = GFX_goal_generic_army_artillery
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_a_native_design_project}
 	x = 1
@@ -1460,7 +1460,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_navy_guns_for_tanks
-	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	icon = GFX_focus_SOV_organize_wreckers
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_heavy_arty_focus}
 	x = 1
@@ -1482,7 +1482,7 @@ focus =  {
 }
 focus =  {
 	id = SAF_desert_tanks
-	icon = GFX_focus_SOV_the_glory_of_the_red_army_alternative
+	icon = GFX_focus_ETH_scavenging_tactics
 	relative_position_id = SAF__south_african_military_college
 	prerequisite = { focus = SAF_navy_guns_for_tanks }
 	prerequisite = {
@@ -1563,7 +1563,7 @@ focus =  {
 }
 focus = {
 	id = SAF_millions_strong
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_focus_ETH_freedom_at_gunpoint
 	prerequisite = { focus = SAF_an_army_worthy_of_africa }
 	x = -2
 	y = 1
@@ -1635,7 +1635,7 @@ focus = {
 }
 focus = {
 	id = SAF_heavy_funding_for_arty_development 
-	icon = GFX_goal_generic_army_artillery
+	icon = GFX_goal_generic_army_artillery2
 	prerequisite = { focus = SAF_quality_over_quantity }
 	x = 1
 	y = 2
@@ -1706,7 +1706,7 @@ focus = {
 }
 focus = {
 	id = SAF_modern_machine_gun 
-	icon = GFX_goal_generic_army_artillery
+	icon = GFX_goal_generic_military_sphere
 	prerequisite = { focus = SAF_quality_over_quantity }
 	x = 3
 	y = 2
@@ -1741,7 +1741,7 @@ focus = {
 }
 focus = {
 	id = SAF_mass_motorization_of_the_supplychain 
-	icon = GFX_goal_generic_army_artillery
+	icon = GFX_focus_generic_truck
 	prerequisite = { focus = SAF_modern_machine_gun }
 	x = 3
 	y = 3
@@ -1776,7 +1776,7 @@ focus = {
 }
 focus = {
 	id = SAF_the_elite_of_the_empire 
-	icon = GFX_goal_generic_army_artillery
+	icon = GFX_focus_generic_monarchy_2
 	prerequisite = { focus = SAF_mass_motorization_of_the_supplychain }
 	prerequisite = { focus = SAF_ranger_forces }
 	x = 2
@@ -1812,7 +1812,7 @@ focus = {
 }
 focus = {
 	id = SAF_infantry_training_school
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_focus_generic_commonwealth_build_infantry
 	prerequisite = { focus = SAF_millions_strong }
 	x = -1
 	y = 1
@@ -1847,7 +1847,7 @@ focus = {
 }	
 focus = {
 	id = SAF_colonial_troops
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_focus_RAJ_lions_of_the_great_war
 	prerequisite = { focus = SAF_infantry_training_school }
 	x = -1
 	y = 2
@@ -1936,7 +1936,7 @@ focus = {
 }
 focus = {
 	id = SAF_great_war_stockpiles
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_goal_rhineland
 	prerequisite = { focus = SAF_millions_strong }
 	x = 1
 	y = 1
@@ -1971,7 +1971,7 @@ focus = {
 }
 focus = {
 	id = SAF_refit_the_old_guns
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_goal_continuous_reduce_training_time
 	prerequisite = { focus = SAF_great_war_stockpiles }
 	x = 1
 	y = 2
@@ -2006,7 +2006,7 @@ focus = {
 }
 focus = {
 	id = SAF_the_weapons_of_new_great_war
-	icon = GFX_focus_chi_army_reform
+	icon = GFX_focus_generic_combined_arms
 	prerequisite = { focus = SAF_refit_the_old_guns}
 	prerequisite = {
 		focus = SAF_colonial_troops
@@ -4010,7 +4010,7 @@ focus = {
 	focus = {
 		id = SAF_mobile_warfaretheory
 		icon = GFX_goal_generic_army_tanks
-		x = 54
+		x = 74
 		y = 0
 
 
