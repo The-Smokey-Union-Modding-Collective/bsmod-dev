@@ -224,3 +224,5 @@ SAF_mass_motorization_of_the_supplychain_desc:0 "Would be a shame if somebody wo
 boiling_vessel:0 "Boiling Vessel"
 boiling_vessel_desc:0 "If we enable the tankcrews to make and drink their tea inside the tank we should be able to reduce the time outside the tank massivly and enable more attacks."
 boiling_vessel_tank_module:0 "Boiling Vessel"
+SAF_desert_tanks_tech:0 "Desert Tanks"
+SAF_durable_tanks_tech:0 "Durable Tanks"

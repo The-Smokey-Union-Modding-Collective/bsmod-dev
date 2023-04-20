@@ -42,7 +42,7 @@ technologies = {
 		}
 	
 	
-		armor = {
+		category_tanks = {
 			desert = {
 				attack = 0.1
 				movement = 0.15
@@ -58,7 +58,7 @@ technologies = {
 		}
 	
 	
-		armor = {
+		category_tanks = {
 			max_strength = 1
 		}
 	}
