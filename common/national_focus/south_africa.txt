@@ -172,15 +172,8 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		add_country_leader_role = {
-			character = SAF_j_b_m_hertzog
-			country_leader = {
-				expire = "1959.1.1"
-				ideology = democracy
-				traits = {
-					staunch_neutrality_trait
-				}
-			}
+		swap_ruler_traits = {
+			add = staunch_neutrality_trait
 		}
 	}
 }
@@ -255,6 +248,7 @@ focus = {
 			SAF_democratic_drift_modifier = 0.05
 		}
 		custom_effect_tooltip = SAF_politics_tt_2
+		add_political_power = 50
 	}
 }
 
@@ -792,9 +786,14 @@ prerequisite = {
 	continue_if_invalid = no
 	available_if_capitulated = no
 	search_filters = { FOCUS_FILTER_INDUSTRY }
-
-	completion_reward = {
+	complete_tooltip = {
 		add_ideas = SAF_gold_exports
+		}
+	
+	completion_reward = {
+		add_to_variable = {
+			SAF_industry_consumer_goods_modifier = -0.05
+		}
 	}
 }
 focus = {
@@ -1501,13 +1500,12 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
+		add_tech_bonus = {
+			name = the_6_pounder
+			bonus = 1
 			uses = 1
-			category = land_doctrine
+			category = artillery
 		}
-		army_experience = 25
 	}
 }
 focus =  {
@@ -1719,7 +1717,11 @@ focus = {
 			bonus = 1.5
 			uses = 2
 			category = artillery
-		}			
+		}	
+		add_to_variable = {
+			SAF_industry_consumer_goods_modifier = 0.04
+		}		
+		custom_effect_tooltip = SAF_politics_tt_4
 	}
 }
 focus = {
@@ -1824,10 +1826,19 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-			name = SAF_heavy_funding_for_arty_development
-			bonus = 1.5
+			name = mechanized_bonus
+			bonus = 1
+			uses = 1
+			category = cat_mechanized_equipment
+		}
+		add_tech_bonus = {
+			name = logistics
+			bonus = 0.75
 			uses = 2
-			category = artillery
+			technology =  tech_logistics_company
+			technology =  tech_logistics_company2
+			technology =  tech_logistics_company3
+			technology =  tech_logistics_company4
 		}			
 	}
 }
@@ -3327,11 +3338,18 @@ focus = {
 		cancel_if_invalid = yes
 		continue_if_invalid = no
 		available_if_capitulated = no
-
-		completion_reward = {
+		complete_tooltip = {
 			swap_ideas = {
 				remove_idea = SAF_cheap_labor_2
 				add_idea = SAF_cheap_labor_3
+			}
+		}
+		completion_reward = {
+			add_to_variable = {
+				SAF_industry_consumer_goods_modifier = -0.05
+			}
+			add_to_variable = {
+			SAF_industry_industrial_capacity_factory_modifier = 0.06
 			}
 		}
 	}
