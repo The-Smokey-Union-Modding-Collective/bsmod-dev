@@ -179,6 +179,35 @@ on_actions = {
 		}
 	}
 
+	on_startup = {
+		effect = {
+			672 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			335 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			334 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			673 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			667 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			668 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			669 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+			738 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
+		}
+	}
+
 	#Mexican 
 	on_startup = {
         effect = {

@@ -4,7 +4,7 @@
  core_south:0 "We will §Gcore§! all of the states §Ysouth of the Yangtze river§! but not on the eastern coast.\n"
  core_coast:0 "We will §Gcore§! all of the states §Yon the eastern coast§!.\n"
  tank_addition:0 "We will gain §Ygreat war tank§! technology if we don't already posses it.\n" 
- imperial_guards:0 "We will raise large infantry divisions consisting of §Y14 infantry§! and §Y4 artillery§!.\n"
+ imperial_guards:0 "We will raise large infantry divisions consisting of §Y11 infantry§! and §Y4 artillery§!.\n"
  mech_addition:0 "We will gain §YMotorized technology§! if we don't already possess it, otherwise we gain a §G50% mech§! bonus.\n" 
  armoured_scouts:0 "We will gain §G500 units§! of light tanks depending on our current §YLight tank tech level§!.\n"
  unintegrated_industries:0 "We will gain decisions to §Gintegrate§! the newly conquered industries.\n"

@@ -15,6 +15,12 @@ NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0.4		--vanilla=0.2
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0.4	--vanilla=0.1
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00007			--vanilla=0.0005
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
+NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
+NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0 --vanilla = 0.15
+NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --vanilla = 0.1
+NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --vanilla = 0.1
+NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
+NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
@@ -132,13 +138,13 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00	--vanilla=0.02
-NDefines.NNavy.NAVAL_INVASION_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval invasions
-NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval transports
-NDefines.NNavy.SUPPLY_PRIORITY = 1              -- vanilla = 2; Default convoy priority for supplying units via sea
-NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5  -- vanilla = 3; Default convoy priority for export lend lease
-NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3     -- vanilla = 4; Default convoy priority for export trade
-NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2     -- vanilla = 5; Default convoy priority for resources shipped internally
-NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
+--NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1      -- vanilla = 1; Default convoy priority for naval invasions
+--NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1      -- vanilla = 1; Default convoy priority for naval transports
+--NDefines.NNavy.SUPPLY_PRIORITY = 2              -- vanilla = 2; Default convoy priority for supplying units via sea
+--NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3  -- vanilla = 3; Default convoy priority for export lend lease
+--NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 4     -- vanilla = 4; Default convoy priority for export trade
+--NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 5     -- vanilla = 5; Default convoy priority for resources shipped internally
+--NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = 0 -- vanilla = -0.7; Naval invasion penalty
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50

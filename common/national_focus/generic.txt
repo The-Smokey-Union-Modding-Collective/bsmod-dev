@@ -2043,6 +2043,14 @@ focus_tree = {
 
 		available_if_capitulated = yes
 
+		available = {
+			NOT = {
+				has_idea = neutrality_idea
+			}
+			NOT = {
+				is_ai = yes
+			}
+		}
 
 		ai_will_do = {
 			factor = 1
