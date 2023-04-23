@@ -57,7 +57,7 @@
 
 focus = {
 	id = SAF_status_of_the_union_act
-	icon = GFX_goal_develop_saf
+	icon = GFX_goal_tfv_strengthen_commonwealth_ties
 	x = 7
 	y = 0
 
@@ -85,7 +85,7 @@ focus = {
 }
 focus = {
 	id = SAF_apeal
-	icon = GFX_goal_develop_saf
+	icon = GFX_focus_hol_the_foundations_of_defense
 	prerequisite = { focus = SAF_status_of_the_union_act }
 		x = -1
 		y = 1
@@ -115,7 +115,7 @@ focus = {
 }
 focus = {
 	id = SAF_apeal_other
-	icon = GFX_goal_develop_saf
+	icon = GFX_focus_generic_self_management
 	prerequisite = { focus = SAF_status_of_the_union_act }
 		x = 1
 		y = 1
@@ -145,7 +145,7 @@ focus = {
 }
 focus = {
 	id = SAF_a_policy_of_neutrality
-	icon = GFX_goal_develop_saf
+	icon = GFX_goal_tripartite_pact
 	prerequisite = { focus = SAF_apeal }
 	prerequisite = {focus = SAF_apeal_other}
 		x = 0
@@ -296,7 +296,7 @@ focus = {
 }
 focus = {
 	id = SAF_politics_fix_2
-	icon = GFX_goal_develop_saf
+	icon = GFX_focus_generic_court
 	prerequisite = { focus = SAF_1937_wage_act }
 	prerequisite = {focus = SAF_police_windhoek_new}
 		x = 0
@@ -609,7 +609,7 @@ focus = {
 }
 focus = {
 	id = SAF_representation_of_natives_act_4
-	icon = GFX_goal_generic_construction2
+	icon = GFX_focus_generic_energy
 	prerequisite = { focus =SAF_representation_of_natives_act_2 }
 	prerequisite = { focus =SAF_representation_of_natives_act_3 }
 	x = 4
