@@ -18,7 +18,9 @@ technologies = {
 			leads_to_tech = basic_small_airframe
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			engines_1 = 1
+		}
 		
 		research_cost = 2
 		start_year = 1926
@@ -66,7 +68,9 @@ technologies = {
 			leads_to_tech = improved_small_airframe
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			engines_2 = 1
+		}
 		research_cost = 2
 		start_year = 1936
 
@@ -136,7 +140,9 @@ technologies = {
 			research_cost_coeff = 1
 		}
 				
-
+		dependencies = {
+			engines_3 = 1
+		}
 		research_cost = 2
 		start_year = 1940
 		folder = {
@@ -210,7 +216,9 @@ technologies = {
 			leads_to_tech = modern_small_airframe
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			engines_4 = 1
+		}
 		research_cost = 2
 		start_year = 1944
 
@@ -318,7 +326,9 @@ technologies = {
 			leads_to_tech = basic_medium_airframe
 			research_cost_coeff = 1
 		}
-		
+		dependencies = {
+			engines_1 = 1
+		}
 		research_cost = 2
 		start_year = 1926
 		folder = {
@@ -350,7 +360,9 @@ technologies = {
 			leads_to_tech = improved_medium_airframe
 			research_cost_coeff = 1
 		}
-
+		dependencies = {
+			engines_2 = 1
+		}
 		research_cost = 2
 		start_year = 1936
 
@@ -414,7 +426,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 6 }
 		}
-		
+		dependencies = {
+			engines_3 = 1
+		}
 		categories = {
 			medium_air
 			tactical_bomber
@@ -470,7 +484,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 2 y = 8 }
 		}
-		
+		dependencies = {
+			engines_4 = 1
+		}
 		categories = {
 			medium_air
 			tactical_bomber
@@ -555,7 +571,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 2 }
 		}
-		
+		dependencies = {
+			engines_1 = 1
+		}
 		categories = {
 			heavy_air
 			air_equipment
@@ -588,7 +606,9 @@ technologies = {
 			leads_to_tech = improved_large_airframe
 			research_cost_coeff = 1
 		}
-
+		dependencies = {
+			engines_2 = 1
+		}
 		research_cost = 2
 		start_year = 1936
 		folder = {
@@ -635,7 +655,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 6 }
 		}
-		
+		dependencies = {
+			engines_3 = 1
+		}
 		categories = {
 			heavy_air
 			air_equipment
@@ -675,7 +697,9 @@ technologies = {
 			name = bba_air_techs_folder
 			position = { x = 0 y = 8 }
 		}
-		
+		dependencies = {
+			engines_4 = 1
+		}
 		categories = {
 			heavy_air
 			air_equipment
@@ -1224,7 +1248,7 @@ technologies = {
 			engine_4_4x
 			engine_4_6x	
 		}
-		
+
 		research_cost = 1
 		start_year = 1943
 
