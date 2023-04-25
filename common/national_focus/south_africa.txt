@@ -964,10 +964,6 @@ focus = {
 	}
 
 	available = {
-		OR = {
-			has_war = yes
-			date > 1939.10.1
-		}
 	}
 	
 	bypass = {
@@ -979,8 +975,27 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		promote_character = SAF_jan_smuts
-		retire_character = SAF_j_b_m_hertzog
+		completion_reward = {
+			add_equipment_to_stockpile = {
+       		type = infantry_equipment_1
+       		amount = 1500
+   			}
+			add_equipment_to_stockpile = {
+			type = support_equipment_1
+			amount = 250
+			}
+			if = {
+				limit = {
+					GER = {
+						has_tech = interwar_antiair
+					}
+				}
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment_1
+					amount = 150
+					}
+			}
+		}
 	}
 }
 focus = {
@@ -1522,11 +1537,24 @@ focus =  {
    available = {
    }
 	completion_reward = {
-		add_doctrine_cost_reduction = {
-			name = land_doc_bonus
-			cost_reduction = 0.5
-			uses = 1
-			category = land_doctrine
+		add_to_variable = {
+			SAF_industry_industrial_capacity_factory_modifier = 0.075
+		}
+		add_to_variable = {
+			SAF_industrial_capacity_dockyard_modifier = -0.5	
+		}
+	}
+	custom_effect_tooltip = SAF_politics_tt_5
+	random_owned_controlled_state = {
+		limit = {
+			is_core_of = SAF
+			has_building = {
+				type = dockyard
+			}
+		}
+		remove_building = {
+			type = dockyard
+			level = 1
 		}
 	}
 }
