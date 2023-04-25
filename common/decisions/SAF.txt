@@ -66,7 +66,6 @@ SAF_colonial_Rule = {
 				 add_extra_state_shared_building_slots = 2
 				}
 				set_country_flag = { flag = SAF_colonial_rule_strategic_region_windhoek_flag value = 1 }
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 			}
 			else_if = {
 				limit = { 
@@ -98,7 +97,6 @@ SAF_colonial_Rule = {
 						instant_build = yes
 					}
 				}
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 				add_to_variable = { SAF_colonial_rule_decision_strategic_region_windhoek_counter = +1 }
 			}
 			else = {
@@ -156,7 +154,6 @@ SAF_colonial_Rule = {
 				 add_extra_state_shared_building_slots = 2
 				}
 				set_country_flag = { flag = SAF_colonial_rule_strategic_region_natal_flag value = 1 }
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 			}
 			else_if = {
 				limit = { 
@@ -188,7 +185,6 @@ SAF_colonial_Rule = {
 						instant_build = yes
 					}
 				}
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 				add_to_variable = { SAF_colonial_rule_decision_strategic_region_natal_counter = +1 }
 			}
 			else = {
@@ -246,7 +242,6 @@ SAF_colonial_Rule = {
 				 add_extra_state_shared_building_slots = 2
 				}
 				set_country_flag = { flag = SAF_colonial_rule_strategic_region_transvaal_flag value = 1 }
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 			}
 			else_if = {
 				limit = { 
@@ -278,7 +273,6 @@ SAF_colonial_Rule = {
 						instant_build = yes
 					}
 				}
-				set_country_flag = { flag = SAF_colonial_rule_decision_powerup_flag value = 0 }
 				add_to_variable = { SAF_colonial_rule_decision_strategic_region_transvaal_counter = +1 }
 			}
 			else = {

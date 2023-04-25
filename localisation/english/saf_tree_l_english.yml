@@ -246,3 +246,13 @@ SAF_1937_wage_act_desc:0 "This is an amendment to the Wage Act of 1925. Together
 SAF_politics_tt_3:0 "Adds +0.1 Weekly Stability \nAdds +2% Consumergoods \nAdds + 5% Stability \nAdds -0.05% Daily Comunism"
 SAF_politics_tt_4:0 "Adds +4% Consumergoods"
 SAF_politics_tt_5:0 "Adds + 7.5 Factoryoutput. \n Adds -50% Dockyardoutput."
+SAF_apeal:0 "Appeal to Settlers."
+SAF_apeal_desc:0 ""
+SAF_apeal_other:0 "Appeal to the Natives"
+SAF_apeal_other_desc:0 ""
+SAF_representation_of_natives_act_2:0 "Renegotiate Landdeals"
+SAF_representation_of_natives_act_2_desc:0 "If we renegotiate landdeals withe the Natives we can try to trade farmland for Mineable resources to expand our resource output."
+SAF_representation_of_natives_act_4:0 "Rural Infrastructure Programm"
+SAF_politics_tt_6:0 "Adds -2% Stability \nAdds -0.05 Daily PP gain\nPowers up the colonial Development Decision Rewards"
+SAF_representation_of_natives_act_3:0 "Farmlandcultivation Effort
+SAF_representation_of_natives_act_3_desc:0 ""
