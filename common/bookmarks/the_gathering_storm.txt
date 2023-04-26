@@ -221,9 +221,7 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-				SAF_secure_interests_in_africa
-				saf_smol_the_british_army_in_exile
-				train_our_comander
+				
 			}
 		}
 		"RAJ"={

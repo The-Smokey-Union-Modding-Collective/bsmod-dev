@@ -22,7 +22,26 @@ ideas = {
 				local_resources_factor = 0.15
 			} 
 		}
+		saf_expand_tank_production = {
+			allowed = {
+				always = no
+			}
 
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_production_bonus
+
+			equipment_bonus = {
+				armor = {
+					build_cost_ic = -0.05 instant = yes 
+				}
+
+			}	
+		}
 		saf_smol_free_trade_reform = {
 			allowed = {
 				always = no
@@ -630,193 +649,125 @@ ideas = {
 	}
 
 	tank_manufacturer = {
-		saf_mass_produktion_design_philsophy = {
-			
-			picture = generic_tank_manufacturer_1
-
-			allowed = {
-				original_TAG = SAF
-				has_dlc = "Together for Victory"
-			}
-			
-			available = {
-				has_completed_focus = saf_mass_produktion_design_philsophy
-			}
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			
-			equipment_bonus = {
-				super_heavy_tank_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				heavy_tank_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				heavy_tank_artillery_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				heavy_tank_destroyer_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-				modern_tank_chassis = {
-					build_cost_ic = -0.1 hard_attack = 0.025 reliability = 0.05
-				}
-			}
-		}
-		quality_gun_design_philsophy = {
-			
-			picture = generic_tank_manufacturer_2
-
-			allowed = {
-				original_TAG = SAF
-				has_dlc = "Together for Victory"
-			}
-			available = {
-				has_completed_focus = quality_gun_design_philsophy
-			}
-
-			
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			
-			equipment_bonus = {
-				super_heavy_tank_chassis = {
-					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				heavy_tank_chassis = {
-					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				heavy_tank_destroyer_chassis = {
-					build_cost_ic = 0.05 hard_attack = 0.05 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-				heavy_tank_artillery_chassis = {
-					build_cost_ic = 0.05 hard_attack = -0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.075
-				}
-				modern_tank_chassis= {
-					build_cost_ic = 0.05 hard_attack = 0.1 reliability = 0.05 ap_attack = 0.1 soft_attack = 0.05
-				}
-			}
-		}
-		quality_armor_design_philsophy = {
+		saf_iscor = {
 			
 			picture = generic_tank_manufacturer_3
 
 			allowed = {
 				original_TAG = SAF
 				has_dlc = "Together for Victory"
-			}
-			available = {
-				has_completed_focus = quality_armor_design_philsophy
-			}
+			}			
 
-			research_bonus = {
-				armor = 0.15
-			}
 			
 			equipment_bonus = {
-				super_heavy_tank_chassis = {
-				build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
+				armor = {
+					soft_attack = 0.15
+					hard_attack = 0.15
+                    defense = -0.3
+					reliability = -0.15
+			    }
+				medium_tank_destroyer_chassis = {
+					defense = -0.7
 				}
-				heavy_tank_chassis = {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
+				medium_tank_artillery_chassis = {
+					defense = -0.7
 				}
 				heavy_tank_destroyer_chassis = {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
+					defense = -0.7
 				}
 				heavy_tank_artillery_chassis = {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.10
+					defense = -0.7
 				}
-				modern_tank_chassis= {
-					build_cost_ic = 0.075 hard_attack = 0.05 reliability = 0.05 armor_value = 0.06
-					}
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
+		}
+		
+		saf_english_electric_tank = {
+			
+			allowed = {
+				OR = {
+					original_tag = SAF	
+				}
+			}
+
+			picture = english_electric
+
+			name = english_electric
+
+			
+			equipment_bonus = {
+				armor = {
+                    breakthrough = 0.3
+					maximum_speed = 0.1
+					reliability = -0.3
+				}
+				medium_tank_destroyer_chassis = {
+					hard_attack = 0.1 
+				}
+				medium_tank_artillery_chassis = {
+					soft_attack = 0.1 
+				}
+			}
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
+		}				
+
+		saf_vauxhall = {
+			
+			allowed = {
+				OR = {
+					original_tag = SAF	
+				}
+			}
+
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
+			equipment_bonus = {
+				armor = {
+					armor_value = 0.05
+					maximum_speed = -0.1
+					build_cost_ic = 0.05
+				}
+				heavy_tank_chassis = {
+					armor_value = 0.05
+					soft_attack = 0.15
+					maximum_speed = -0.1
+					build_cost_ic = 0.05	
+				}
+				heavy_tank_destroyer_chassis = {
+					armor_value = 0.1
+					hard_attack = 0.1
+					maximum_speed = -0.1
+					build_cost_ic = 0.05	
+				}
+				heavy_tank_artillery_chassis = {
+					armor_value = 0.1
+					soft_attack = 0.1
+					maximum_speed = -0.1
+					build_cost_ic = 0.05	
+				}						
 			}
 		}
-		saf_speed_and_mass_philosophy = {
-			
-			picture = generic_tank_manufacturer_4
 
+		saf_vickers_armstrong_eng = {
+			
 			allowed = {
-				original_TAG = SAF
-				has_dlc = "Together for Victory"
+				original_tag = SAF
+			
 			}
 			available = {
-				has_completed_focus = saf_speed_and_mass_philosophy
-			}
-
-			research_bonus = {
-				armor = 0.15
 			}
 			
 			equipment_bonus = {
-				light_tank_chassis = {
-				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
-				}
-				light_tank_artillery_chassis = {
-				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
-				}
-				light_tank_destroyer_chassis = {
-				build_cost_ic = -0.15  reliability = 0.05 maximum_speed = 0.1
-				}
-				medium_tank_chassis = {
-				build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-				}
-				medium_tank_artillery_chassis = {
-				build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-				}
-				medium_tank_destroyer_chassis = {
-				build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
-				}
-				modern_tank_chassis= {
-					build_cost_ic = -0.1  reliability = 0.05 maximum_speed = 0.1 soft_attack = 0.05
+				armor = {
+					supply_consumption = -0.05
+					reliability = 0.15
+					ap_attack = 0.1
 				}
 			}
+			modifier = { tank_manufacturer_cost_factor = -0.5 }
 		}
-		saf_combat_cruiser_tanks = {
-			
-			picture = generic_tank_manufacturer_5
 
-			allowed = {
-				original_TAG = SAF
-				has_dlc = "Together for Victory"
-			}
-			available = {
-				has_completed_focus = saf_combat_cruiser_tanks
-			}
-
-			research_bonus = {
-				armor = 0.15
-			}
-			
-			equipment_bonus = {
-				light_tank_chassis = {
-				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
-				}
-				light_tank_artillery_chassis = {
-				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
-				}
-				light_tank_destroyer_chassis = {
-				reliability = 0.05 maximum_speed = 0.05 soft_attack = 0.05
-				}
-				medium_tank_chassis = {
-				reliability = 0.05 soft_attack = 0.075  hard_attack = 0.05 maximum_speed = 0.05
-				}
-				medium_tank_artillery_chassis = {
-				reliability = 0.05 soft_attack = 0.10  hard_attack = 0.05
-				}
-				medium_tank_destroyer_chassis = {
-				reliability = 0.05 soft_attack = 0.05  hard_attack = 0.10
-				}
-				modern_tank_chassis= {
-					reliability = 0.05 soft_attack = 0.075  hard_attack = 0.05 maximum_speed = 0.05
-				}
-			}
-		}
-	} 
+	}
+	 
 
 	materiel_manufacturer = {
 	

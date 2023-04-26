@@ -291,13 +291,13 @@ set_variable = { var = SAF_production_speed_industrial_complex_factor_var value 
 
 ################# SOUTh AFRICAN ARMY 
 set_variable = { var = SAF_army_attack_factor_var value = -0.05  }
-set_variable = { var = SAF_planning_speed_var value = -0.15 } 
-set_variable = { var = SAF_max_planning_factor_var value = 0.1 }
-set_variable = { var = SAF_max_command_power_var value = -20 } 
-set_variable = { var = SAF_command_power_gain_mult_var value = -0.25 } 
+set_variable = { var = SAF_planning_speed_var value = 0 } 
+set_variable = { var = SAF_max_planning_factor_var value = 0 }
+set_variable = { var = SAF_max_command_power_var value = 0 } 
+set_variable = { var = SAF_command_power_gain_mult_var value = 0 } 
 set_variable = { var = SAF_land_doctrine_cost_factor_var value = 0.0 } 
 set_variable = { var = SAF_army_speed_factor_var value = -0.05 } 
-set_variable = { var = SAF_army_morale_factor_var value = -0.15 } 
+set_variable = { var = SAF_army_morale_factor_var value = -0.10 } 
 set_variable = { var = SAF_max_dig_in_var value = 0 } 
 set_variable = { var = SAF_army_armor_attack_factor_var value = 0 } 
 set_variable = { var = SAF_air_ace_generation_chance_factor_var value = 0 } 

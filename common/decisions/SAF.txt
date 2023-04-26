@@ -22,7 +22,115 @@ SAF_end_of_neutrality = {
 		}
 	}	
 }
+SAF_military_industrial_complex = {
+	SAF_sell_artillery_scematics = {
+		available = {
+			has_completed_focus = SAF_heavy_funding_for_arty_development
+			has_tech = artillery1
+		}
+		visible = {
+			has_completed_focus = SAF_quality_over_quantity
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
 
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_industry_consumer_goods_modifier = -0.02
+			}
+			custom_effect_tooltip = SAF_politics_tt_17
+
+		}
+	}
+	SAF_buy_shermans = {
+		available = {
+			has_completed_focus = SAF_contracts_with_USA
+			has_tech = basic_medium_tank_chassis
+		}
+		visible = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+				add_political_power = -50
+				}
+			remove_effect = {
+			
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+						amount = 100
+						producer = SAF
+				}
+			
+
+		}
+	}
+	SAF_buy_churchills = {
+		available = {
+			has_completed_focus = SAF_contracts_with_ENG
+			has_tech = basic_heavy_tank_chassis
+		}
+		visible = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			add_political_power = -50
+			}
+		remove_effect = {
+		
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis
+					amount = 100
+					producer = SAF
+			}
+		
+
+	}
+	}
+	SAF_contact_soviet_engineers = {
+		available = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		visible = {
+			has_tech = improved_heavy_tank_chassis
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = SAF_native_design
+				ahead_reduction = 2
+				bonus = 1.25
+				uses = 1
+				technology = super_heavy_tank_chassis
+			}
+			}
+	}
+	SAF_buy_KV6_behemoths = {
+		available = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		visible = {
+			has_tech = super_heavy_tank_chassis
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			add_political_power = -50
+			}
+		remove_effect = {
+		
+			add_equipment_to_stockpile = {
+				type = super_heavy_tank_chassis
+					amount = 100
+					producer = SAF
+			}		
+		}
+	}
+}
 SAF_colonial_Rule = {
 	SAF_colonial_rule_decision_strategic_region_windhoek = {
 		available = { 

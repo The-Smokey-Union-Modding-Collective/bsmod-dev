@@ -162,7 +162,7 @@ bookmarks = {
 				SAF_history_of_segregation
 			}
 			focuses = {
-				SAF_secure_interests_in_africa
+				
 			}
 		}
 		"RAJ"={

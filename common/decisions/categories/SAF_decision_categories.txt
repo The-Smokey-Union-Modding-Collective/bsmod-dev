@@ -25,3 +25,16 @@ SAF_colonial_Rule = {
 	}
 }
 
+SAF_military_industrial_complex = {
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+		or = {
+			has_completed_focus = SAF_mass_weapons_imports
+			has_completed_focus = SAF_heavy_funding_for_arty_development
+		}
+	}
+	priority = 97
+}
