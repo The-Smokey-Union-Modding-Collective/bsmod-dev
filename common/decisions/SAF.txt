@@ -18,6 +18,7 @@ SAF_end_of_neutrality = {
 		is_good = yes
 
 		timeout_effect = {
+			set_country_flag = saf_mission_timed_out
 		}
 	}	
 }

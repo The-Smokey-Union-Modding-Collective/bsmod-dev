@@ -285,6 +285,8 @@ set_variable = { var = SAF_colonial_rule_decision_strategic_region_madagascar_co
 set_variable = { var = SAF_colonial_rule_decision_strategic_region_caledonia_counter value = 0.0 }
 set_variable = { var = SAF_research_speed_factor_var value = 0  }
 set_variable = { var = SAF_industrial_capacity_dockyard_modifier value = 0  }
+set_variable = { var = SAF_production_speed_arms_factory_factor_var value = 0  }
+set_variable = { var = SAF_production_speed_industrial_complex_factor_var value = 0  }
 
 
 ################# SOUTh AFRICAN ARMY 

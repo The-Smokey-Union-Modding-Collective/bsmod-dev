@@ -43,6 +43,9 @@ SAF_politics_modifier = {
 	industrial_capacity_dockyard = SAF_industrial_capacity_dockyard_modifier
 	production_factory_max_efficiency_factor = SAF_industry_production_efficiency_max_modifier
     production_factory_efficiency_gain_factor = SAFA_production_factory_efficiency_gain_factor_modifier
+	production_speed_arms_factory_factor = SAF_production_speed_arms_factory_factor_var
+	production_speed_industrial_complex_factor = SAF_production_speed_industrial_complex_factor_var
+
 
     stability_weekly = SAF_stability_weekly_modifier
     democratic_drift = SAF_democratic_drift_modifier
