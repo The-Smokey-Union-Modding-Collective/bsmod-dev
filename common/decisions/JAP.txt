@@ -7,6 +7,7 @@ JAP_operations_category = {
 		
 		allowed = {
 			original_tag = JAP
+			date > 1940.12.31
 		}
 		
 		visible = {

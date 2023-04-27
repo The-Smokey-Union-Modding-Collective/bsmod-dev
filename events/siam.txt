@@ -109,6 +109,8 @@ country_event  = {
 			ideology = fascism
 			popularity = 0.4
 		}
+
+		add_ideas = free_trade
 	}
 }
 

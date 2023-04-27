@@ -75,19 +75,31 @@ GER_operations_category = {
 						hostility_reason = asked_to_join
 					}
 				}
-				NZL = {
-					add_to_war = { 
-						targeted_alliance = PREV 
-						enemy = GER 
-						hostility_reason = asked_to_join
-					}
+			}
+			hidden_effect = {
+				672 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
 				}
-				MAL = {
-					add_to_war = { 
-						targeted_alliance = PREV 
-						enemy = GER 
-						hostility_reason = asked_to_join
-					}
+				335 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				334 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				673 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				667 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				668 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				669 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
+				}
+				738 = {
+					remove_dynamic_modifier = { modifier = peace_time_resources }
 				}
 			}
 		}
@@ -160,16 +172,6 @@ GER_operations_category = {
 		}
 		
 		complete_effect = {
-			declare_war_on = {
-				target = HOL
-				type = annex_everything
-			}
-			ENG = { add_to_faction = HOL }
-			declare_war_on = {
-				target = BEL
-				type = annex_everything
-			}
-			ENG = { add_to_faction = BEL }
 			declare_war_on = {
 				target = LUX
 				type = annex_everything

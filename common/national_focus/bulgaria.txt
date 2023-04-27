@@ -49,12 +49,29 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = BUL_national_industry_01
-
-			add_tech_bonus = {
-				name = BUL_acquire_modern_tools
-				bonus = 0.5
-				uses = 1
-				category = industry
+			custom_effect_tooltip = BUL_tools_tech_free_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						is_researching_technology = basic_machine_tools
+					}
+					add_tech_bonus = {
+						name = BUL_acquire_modern_tools
+						bonus = 0.5
+						uses = 1
+						category = cat_production
+					}
+				}
+				else_if = {
+					limit = {
+						NOT = {
+							has_tech = basic_machine_tools
+						}
+					}
+					set_technology = {
+						basic_machine_tools = 1
+					}
+				}
 			}
 		}
 	}
@@ -94,6 +111,12 @@ focus_tree = {
 					level = 1
 					instant_build = yes
 				}
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+			    bonus = 1.0
+			    uses = 1
+			    category = cat_transport_tech
 			}
 		}
 	}
@@ -165,6 +188,12 @@ focus_tree = {
 				activate_targeted_decision = { target = GER decision = BUL_german_industrial_agreements }
 				activate_targeted_decision = { target = ENG decision = BUL_british_industrial_agreements }
 				activate_targeted_decision = { target = SOV decision = BUL_soviet_industrial_agreements }
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+			    bonus = 1
+			    uses = 2
+			    category = cat_flexibility_tech
 			}
 		}
 	}
@@ -437,6 +466,12 @@ focus_tree = {
 				}
 			}
 			BUL_replace_national_industrial_designer = yes
+			add_tech_bonus = {
+				name = industry_bonus
+			    bonus = 0.5
+			    uses = 2
+			    category = cat_productivity_tech
+			}
 		}
 	}
 
@@ -577,10 +612,10 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_mineral_extraction_in_the_rhodopes
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 			    bonus = 1.0
 			    uses = 1
-			    category = industry
+			    category = cat_production
 			}
 			48 = {
 				add_resource = {
@@ -621,7 +656,7 @@ focus_tree = {
 				name = BUL_mineral_extraction_in_the_rhodopes
 			    bonus = 1.0
 			    uses = 1
-			    category = industry
+			    category = excavation_tech
 			}
 			set_variable = { var = BUL_plovdiv_chromium_duration value = 15 }
 			unlock_decision_tooltip = BUL_mineral_extraction_in_the_rhodopes
@@ -636,7 +671,7 @@ focus_tree = {
 		icon = GFX_goal_generic_secret_weapon
 		relative_position_id = BUL_utmost_optimization
 		x = 1
-		y = 1
+		y = 2
 		cost = 10
 
 		available = {

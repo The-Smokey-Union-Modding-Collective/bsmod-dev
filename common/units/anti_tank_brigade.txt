@@ -27,9 +27,9 @@ sub_units = {
 			anti_tank_equipment = 40
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -2
 		default_morale = 0
-		max_strength = 0.6
+		max_strength = -2
 		training_time = 90
 		weight = 0.5
 
@@ -101,9 +101,9 @@ sub_units = {
 			motorized_equipment = 50
 		}
 		manpower = 500
-		max_organisation = 0
+		max_organisation = -2
 		default_morale = 0
-		max_strength = 0.6
+		max_strength = -2
 		training_time = 90
 		weight = 0.5
 

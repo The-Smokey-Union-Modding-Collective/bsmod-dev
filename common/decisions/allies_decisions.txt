@@ -1,0 +1,185 @@
+allied_commonwealth_assistance_category = {
+	
+	combined_research_effort = {
+		icon = generic_research
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		available = {
+			has_war_with = GER
+			OR = {
+				original_tag = CAN
+				original_tag = AST
+				original_tag = FRA
+				original_tag = SAF
+				original_tag = RAJ
+			}
+			custom_trigger_tooltip = {
+				tooltip = allied_research_slots
+				NOT = {
+					amount_research_slots > 4
+				}
+				NOT = {
+					amount_research_slots < 4
+				}
+			}
+		}
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_research_slot = 1
+		}
+	}
+
+	allied_armor_assistance = {
+		icon = generic_tank
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+			AND = {
+				OR = {
+					has_tech = basic_medium_tank
+					has_tech = basic_heavy_tank
+					has_tech = advanced_light_tank
+				}
+				OR = {
+					has_tech = artillery1
+					has_tech = antitank2
+				}
+			}
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = armor_bonus
+				bonus = 1.0
+				uses = 1
+				category = armor
+			}
+		}
+	}
+
+	allied_small_arms_assistance = {
+		icon = generic_prepare_civil_war
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+			AND = {
+				has_tech = improved_infantry_weapons
+				has_tech = artillery1
+			}
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = infantry_bonus
+				bonus = 1.0
+				uses = 1
+				category = infantry_weapons
+			}
+		}
+	}
+
+	allied_motorization_assistance = {
+		icon = generic_trucks
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+			has_tech = mechanised_infantry
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = truck_bonus
+				bonus = 1.0
+				uses = 1
+				category = motorized_equipment
+			}
+		}
+	}
+
+	american_industrial_assistance = {
+		icon = generic_industry
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 0
+
+		complete_effect = {
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_production
+			}
+			add_tech_bonus = {
+				name = industry_bonus
+				bonus = 0.5
+				uses = 2
+				category = cat_productivity_tech
+			}
+		}
+	}
+}

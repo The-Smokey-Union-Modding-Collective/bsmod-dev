@@ -74,58 +74,58 @@ on_actions = {
 					transfer_state = 101
 				}	
 			}
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							tag = JAP 
-							is_in_faction_with = JAP
-						}
-					}
-					ROOT = {tag = INS}
-				}
-				INS = {
-						transfer_navy = {
-						target = ENG
-					}
-				}
-				every_state = {
-					limit = {
-						is_core_of = DEI
-					}	
-					JAP = { transfer_state = PREV }
-				}
-			}
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							tag = GER 
-							is_in_faction_with = GER
-						}
-					}
-					ROOT = {tag = FRA} 
-				}
-				if = {
-					limit = {
-						HOL = {has_capitulated = yes}
-					}
-					GER = {
-						transfer_state = 7
-						transfer_state = 35
-						transfer_state = 36
-					}
-				}
-				if = {
-					limit = {
-						BEL = {has_capitulated = yes}
-					}
-					GER = {
-						transfer_state = 6
-						transfer_state = 34
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		FROM = {
+			# 			OR = {
+			# 				tag = JAP 
+			# 				is_in_faction_with = JAP
+			# 			}
+			# 		}
+			# 		ROOT = {tag = INS}
+			# 	}
+			# 	INS = {
+			# 			transfer_navy = {
+			# 			target = ENG
+			# 		}
+			# 	}
+			# 	every_state = {
+			# 		limit = {
+			# 			is_core_of = DEI
+			# 		}	
+			# 		JAP = { transfer_state = PREV }
+			# 	}
+			# }
+			# if = {
+			# 	limit = {
+			# 		FROM = {
+			# 			OR = {
+			# 				tag = GER 
+			# 				is_in_faction_with = GER
+			# 			}
+			# 		}
+			# 		ROOT = {tag = FRA} 
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			HOL = {has_capitulated = yes}
+			# 		}
+			# 		GER = {
+			# 			transfer_state = 7
+			# 			transfer_state = 35
+			# 			transfer_state = 36
+			# 		}
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			BEL = {has_capitulated = yes}
+			# 		}
+			# 		GER = {
+			# 			transfer_state = 6
+			# 			transfer_state = 34
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					FROM = {
@@ -137,12 +137,17 @@ on_actions = {
 					ROOT = { tag = LUX }
 				}
 				LUX = {
-					   transfer_navy = {
+					transfer_navy = {
 						target = ENG
 					}
 				}
 				GER = {
 					transfer_state = 8
+					transfer_state = 7
+					transfer_state = 35
+					transfer_state = 36
+					transfer_state = 6
+					transfer_state = 34
 				}	
 			}
 			if = {
@@ -300,45 +305,73 @@ on_actions = {
 						transfer_state = 796
 				}
 			}
-			if = {
-				limit = {
-					FROM = {
-						OR = {
-							tag = GER
-							is_in_faction_with = GER 
-						} 
-					}
-					ROOT = { tag = HOL }
-				}
-				HOL = {
-					   transfer_navy = {
-						target = ENG
-					}
-				}
-				ENG = {
-					set_autonomy = {
-						target = INS
-						autonomous_state = autonomy_puppet
-						freedom_level = 0.4
-					}
-				}	
-				FRA = {
-					transfer_state = 695
-				}	
-				ENG = {
-					transfer_state = 309
-				}
-				if = {
-					limit = {
-						FRA = {has_capitulated = yes}
-					}
-					GER = {
-						transfer_state = 7
-						transfer_state = 35
-						transfer_state = 36
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		FROM = {
+			# 			OR = {
+			# 				tag = GER
+			# 				is_in_faction_with = GER 
+			# 			} 
+			# 		}
+			# 		ROOT = { tag = HOL }
+			# 	}
+			# 	HOL = {
+			# 		transfer_navy = {
+			# 			target = ENG
+			# 		}
+			# 	}
+			# 	ENG = {
+			# 		annex_country = {
+			# 			target = INS
+			# 			transfer_troops = yes
+			# 		}
+			# 		672 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		335 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		334 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		667 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		673 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		668 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		669 = {
+			# 			add_compliance = 70
+			# 		}
+			# 		738 = {
+			# 			add_compliance = 70
+			# 		}
+			# 	}
+			# 	INS = {
+			# 		transfer_navy = {
+			# 			target = ENG
+			# 		}
+			# 	}	
+			# 	FRA = {
+			# 		transfer_state = 695
+			# 	}	
+			# 	ENG = {
+			# 		transfer_state = 309
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			FRA = {has_capitulated = yes}
+			# 		}
+			# 		GER = {
+			# 			transfer_state = 7
+			# 			transfer_state = 35
+			# 			transfer_state = 36
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					FROM = {

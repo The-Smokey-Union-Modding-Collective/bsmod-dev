@@ -3961,15 +3961,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			if = {
-				limit = {
-					has_dlc = "No Step Back"
-				}
-				has_tech = improved_medium_tank_chassis
-			}
-			else = {
-				has_tech = improved_medium_tank
-			}
 		}
 		
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -3995,6 +3986,7 @@ focus_tree = {
 							has_tech = artillery3
 							has_tech = antitank3
 						}
+						has_tech = improved_medium_tank_chassis
 					}
 					create_equipment_variant = {
 						name = "T-34"
@@ -4021,6 +4013,7 @@ focus_tree = {
 							has_tech = artillery1
 							has_tech = antitank1
 						}
+						has_tech = improved_medium_tank_chassis
 					}
 					create_equipment_variant = {
 						name = "T-34"
@@ -4044,6 +4037,7 @@ focus_tree = {
 				else_if = { #Why? You ruined your T-34
 					limit = {
 						has_tech = interwar_artillery
+						has_tech = improved_medium_tank_chassis
 					}
 					create_equipment_variant = {
 						name = "T-34"
@@ -4065,24 +4059,24 @@ focus_tree = {
 					}
 				}
 				else = { #Don't do this to yourself dude
-					create_equipment_variant = {
-						name = "T-34"
-						type = medium_tank_chassis_2
-						parent_version = 0
-						modules = {
-							main_armament_slot = tank_small_cannon
-							turret_type_slot = tank_medium_two_man_tank_turret
-							suspension_type_slot = tank_christie_suspension
-							armor_type_slot = tank_welded_armor
-							engine_type_slot = tank_diesel_engine
-							special_type_slot_1 = sloped_armor
-						}
-						upgrades = {
-							tank_nsb_engine_upgrade = 10
-							tank_nsb_armor_upgrade = 7
-						}
-						icon = "GFX_SOV_improved_medium_tank_medium"
-					}
+					#create_equipment_variant = {
+					#	name = "T-34"
+					#	type = medium_tank_chassis_2
+					#	parent_version = 0
+					#	modules = {
+					#		main_armament_slot = tank_small_cannon
+					#		turret_type_slot = tank_medium_two_man_tank_turret
+					#		suspension_type_slot = tank_christie_suspension
+					#		armor_type_slot = tank_welded_armor
+					#		engine_type_slot = tank_diesel_engine
+					#		special_type_slot_1 = sloped_armor
+					#	}
+					#	upgrades = {
+					#		tank_nsb_engine_upgrade = 10
+					#		tank_nsb_armor_upgrade = 7
+					#	}
+					#	icon = "GFX_SOV_improved_medium_tank_medium"
+					#}
 				}
 			}
 		}
@@ -7794,6 +7788,7 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = SOV_leader_of_the_party_and_the_people_trait_tt
 			}
+			add_research_slot = 1
 		}
 	}
 
