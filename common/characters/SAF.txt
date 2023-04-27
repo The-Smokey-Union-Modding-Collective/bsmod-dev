@@ -516,32 +516,32 @@ characters={
 			}
 		}		
 	}
-	SAF_Edward_Puttick	={
-		name=SAF_Edward_Puttick
-		portraits={
-			army={
-				small="GFX_idea_generic_army_europe_1"
-			}
-		}
-		advisor={
-			slot = high_command
-			idea_token = SAF_Edward_Puttick
-			ledger = army
-			allowed = {
-				original_tag = SAF
-			}
-			available = {
-				has_completed_focus = invite_new_zealand_designers
-			}
-			traits = {
-				army_chief_maneuver_3
-			}
-			cost = 200
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
+#	SAF_Edward_Puttick	={
+#		name=SAF_Edward_Puttick
+#		portraits={
+#			army={
+#				small="GFX_idea_generic_army_europe_1"
+#			}
+#		}
+#		advisor={
+#			slot = high_command
+#			idea_token = SAF_Edward_Puttick
+#			ledger = army
+#			allowed = {
+#				original_tag = SAF
+#			}
+#			available = {
+#				has_completed_focus = invite_new_zealand_designers
+#			}
+#			traits = {
+#				army_chief_maneuver_3
+#			}
+#			cost = 200
+#			ai_will_do = {
+#				factor = 1.000
+#			}
+#		}		
+#	}
 	SAF_c_de_weenburg_du_toit={
 		name=SAF_c_de_weenburg_du_toit
 		portraits={
@@ -634,22 +634,7 @@ characters={
 			allowed = {
 				original_tag = SAF
 			}
-			available = {
-				if = {
-					limit = {
-						has_dlc = "Together for Victory"
-					}
-					has_completed_focus = SAF_support_the_policy_of_appeasement 
-				}
-				if = {
-					limit = {
-						has_dlc = "Man the Guns"
-					}
-					NOT = {
-						has_autonomy_state = autonomy_supervised_state
-					}
-				}
-			}
+
 			traits = {
 				democratic_reformer 
 			}

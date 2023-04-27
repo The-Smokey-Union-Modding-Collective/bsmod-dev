@@ -699,13 +699,13 @@ ideas = {
 				armor = {
                     breakthrough = 0.3
 					maximum_speed = 0.1
-					reliability = -0.3
+					reliability = -0.15
 				}
 				medium_tank_destroyer_chassis = {
-					hard_attack = 0.1 
+					hard_attack = 0.05
 				}
 				medium_tank_artillery_chassis = {
-					soft_attack = 0.1 
+					soft_attack = 0.05 
 				}
 			}
 			modifier = { tank_manufacturer_cost_factor = -0.5 }
@@ -718,16 +718,17 @@ ideas = {
 					original_tag = SAF	
 				}
 			}
+			picture = vauxhall
 
 			modifier = { tank_manufacturer_cost_factor = -0.5 }
 			equipment_bonus = {
 				armor = {
-					armor_value = 0.05
+					armor_value = 0.1
 					maximum_speed = -0.1
 					build_cost_ic = 0.05
 				}
 				heavy_tank_chassis = {
-					armor_value = 0.05
+					armor_value = 0.1
 					soft_attack = 0.15
 					maximum_speed = -0.1
 					build_cost_ic = 0.05	
@@ -755,7 +756,7 @@ ideas = {
 			}
 			available = {
 			}
-			
+			picture = vickers_armstrong_eng
 			equipment_bonus = {
 				armor = {
 					supply_consumption = -0.05
@@ -774,25 +775,25 @@ ideas = {
 		designer = yes
 
 
-		SAF_anti_tonk_designer = {
-			picture = artillery_manufacturer
-			allowed = {
-				original_tag = SAF
-				has_dlc = "Death or Dishonor"
-			}
-			cost = 100
-			available = {
-				has_completed_focus = SAF_our_own_equipmnt_designs
-			}	
-			research_bonus = {
-				artillery = 0.15
-			}
-			equipment_bonus = {
-				anti_tank_equipment = {
-					build_cost_ic = 0.075 ap_attack = 0.1 hard_attack = 0.05 reliability = 0.05 
-				}
-			}
-		}
+#		SAF_anti_tonk_designer = {
+#			picture = artillery_manufacturer
+#			allowed = {
+#				original_tag = SAF
+#				has_dlc = "Death or Dishonor"
+#			}
+#			cost = 100
+#			available = {
+#				has_completed_focus = SAF_our_own_equipmnt_designs
+#			}	
+#			research_bonus = {
+#				artillery = 0.15
+#			}
+#			equipment_bonus = {
+#				anti_tank_equipment = {
+#					build_cost_ic = 0.075 ap_attack = 0.1 hard_attack = 0.05 reliability = 0.05 
+#				}
+#			}
+#		}
 	}
 
 	industrial_concern = {
@@ -806,7 +807,7 @@ ideas = {
 			}
 			
 			available = {
-				has_completed_focus = SAF_south_african_railways
+#				has_completed_focus = SAF_south_african_railways
 			}
 			cost = 75
 			research_bonus = {
