@@ -22,6 +22,36 @@ leader_traits = {
 			factor = 1
 		}
 	}
+	SAF_minister_of_native_affairs = {
+		random = no
+		stability_weekly = 0.002
+		recruitable_population_factor = 0.15
+		political_power_cost = 0.15
+		production_speed_infrastructure_factor = 0.2
+	}
+	SAF_minister_of_labour = {
+		random = no 
+		consumer_goods_factor = 0.03
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
+		communism_drift = 0.02
+	}
+	SAF_minister_of_finance = {
+		random = no
+		consumer_goods_factor = -0.05
+		political_power_cost = 0.15
+		production_speed_buildings_factor = 0.1
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	SAF_minister_of_commerce_and_industry = {
+		random = no
+		min_export = -0.15
+		industrial_capacity_factory = 0.1
+		political_power_cost = -0.1
+		stability_weekly = -0.001
+	}
 	minister_of_agriculutre_and_forestry = {
 		random = no
 		political_power_factor = 0.1

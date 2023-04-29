@@ -516,6 +516,52 @@ characters={
 			}
 		}		
 	}
+	SAF_J_N_Bierman={
+		name=SAF_J_N_Bierman
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_J_N_Bierman
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
+	SAF_B_F_Armstrong={
+		name=SAF_B_F_Armstrong
+		portraits={
+			army={
+				small="GFX_idea_generic_army_europe_2"
+			}
+		}
+		advisor={
+			slot = high_command
+			idea_token = SAF_B_F_Armstrong
+			ledger = army
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}		
+	}
 #	SAF_Edward_Puttick	={
 #		name=SAF_Edward_Puttick
 #		portraits={
@@ -767,6 +813,77 @@ characters={
 			}
 		}	
 	}
-
+	SAF_j_f_h_hofmeyr = {
+		name=SAF_j_f_h_hofmeyr
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_j_f_h_hofmeyr
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				SAF_minister_of_finance 
+			}
+		}	
+	}
+	SAF_Walter_madeley = {
+		name=SAF_Walter_madeley
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_Walter_madeley
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				SAF_minister_of_labour 
+			}
+		}	
+	}
+	SAF_deneys_reitz = {
+		name=SAF_deneys_reitz
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_deneys_reitz
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				SAF_minister_of_native_affairs 
+			}
+		}	
+	}
+	SAF_sidney_waterson = {
+		name=SAF_sidney_waterson
+		portraits = {
+			army={
+				small="GFX_idea_generic_navy_europe_2"
+			}
+		}
+		advisor={
+			slot = political_advisor
+			idea_token = SAF_sidney_waterson
+			allowed = {
+				original_tag = SAF
+			}
+			traits = {
+				SAF_minister_of_commerce_and_industry 
+			}
+		}	
+	}
 	#Illusive Gentleman auto-generated
 }

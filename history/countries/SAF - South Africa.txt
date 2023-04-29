@@ -236,6 +236,12 @@ recruit_character = SAF_Nick_Bierman
 recruit_character = SAF_Christiaan_du_Toit
 recruit_character = SAF_Pieter_de_Waal
 recruit_character = SAF_jan_smuts
+recruit_character = SAF_j_f_h_hofmeyr
+recruit_character = SAF_Walter_madeley
+recruit_character = SAF_deneys_reitz
+recruit_character = SAF_sidney_waterson
+recruit_character = SAF_B_F_Armstrong
+recruit_character = SAF_J_N_Bierman
 
 1939.1.1 = {
 	set_politics = {
