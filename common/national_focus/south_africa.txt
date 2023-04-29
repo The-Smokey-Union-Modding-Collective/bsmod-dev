@@ -920,9 +920,8 @@ focus = {
 focus = {
 	id = SAF_smol_rand_mines
 	icon = GFX_goal_generic_consumer_goods
-prerequisite = {
-	focus = SAF_mobilization_of_industry_act
-}
+	prerequisite = { focus = SAF_conscription_act }
+	prerequisite = { focus = SAF_mobilization_of_industry_act }
 	x = 4
 	y = 1
 	relative_position_id = SAF_mobilization_of_industry_act
@@ -1155,6 +1154,7 @@ focus = {
 focus = {
 	id = SAF_mass_weapons_imports
 	icon = GFX_goal_generic_improve_relations
+	prerequisite = { focus = SAF_conscription_act }
 	prerequisite = { focus = SAF_mobilization_of_industry_act }
 	x = 1
 	y = 1
@@ -2448,6 +2448,7 @@ focus = {
 focus = {
 	id = SAF_pegging_act
 	icon = GFX_focus_generic_treaty
+	prerequisite = { focus = SAF_conscription_act }
 	prerequisite = { focus = SAF_mobilization_of_industry_act }
 	x = -6
 	y = 1
