@@ -813,7 +813,7 @@ focus = {
 			SAF_industry_production_efficiency_max_modifier = 0.05
 		}
 		add_to_variable = {
-			SAF_fascism_drift_modifier = -0.08
+			SAF_fascism_drift_modifier = -0.12
 		}
 		add_to_variable ={
 			SAF_stability_weekly_modifier = 0.002
