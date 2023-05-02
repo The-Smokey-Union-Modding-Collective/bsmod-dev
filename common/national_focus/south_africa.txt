@@ -887,7 +887,7 @@ focus = {
 	completion_reward = {
 		add_war_support = 0.2
 		add_to_variable = {
-			 SAF_industry_production_efficiency_max_modifier = 0.05
+			 SAF_industry_production_efficiency_max_modifier = 0.09
 		}
 		add_to_variable = {
 			SAF_production_speed_arms_factory_factor_var = 0.05
@@ -904,7 +904,11 @@ focus = {
 		}
 		else_if = {
 			limit = {
-				has_idea = partial_economic_mobilisation 
+				or = {
+					has_idea = partial_economic_mobilisation 
+					has_idea = war_economy
+					has_idea = tot_economic_mobilisation
+				}
 			}
 			add_political_power = 150 				
 		}
