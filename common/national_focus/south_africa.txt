@@ -2587,7 +2587,7 @@ focus = {
 	x = 36
 	y = 0
 
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2636,7 +2636,7 @@ focus = {
 	prerequisite = { focus = SAF_set_the_south_african_shipyards_on_war_footing }
 	mutually_exclusive = { focus = SAF_focus_on_countering_surface_raiders }
 	relative_position_id = SAF_set_the_south_african_shipyards_on_war_footing
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2672,7 +2672,7 @@ focus = {
 
 	prerequisite = { focus = SAF_focus_on_antisubmarine_warfare }
 	relative_position_id = SAF_focus_on_antisubmarine_warfare
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2729,7 +2729,7 @@ focus = {
 
 	prerequisite = { focus = SAF_destroyer_mass_production }
 	relative_position_id = SAF_destroyer_mass_production
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2765,7 +2765,7 @@ focus = {
 
 	prerequisite = { focus = SAF_focus_on_antisubmarine_warfare }
 	relative_position_id = SAF_focus_on_antisubmarine_warfare
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2831,7 +2831,7 @@ focus = {
 
 	prerequisite = { focus = SAF_escort_carriers }
 	relative_position_id = SAF_escort_carriers
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2882,7 +2882,7 @@ focus = {
 
 	prerequisite = { focus = SAF_focus_on_antisubmarine_warfare focus = SAF_focus_on_countering_surface_raiders }
 	relative_position_id = SAF_set_the_south_african_shipyards_on_war_footing
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -2989,7 +2989,7 @@ focus = {
 	prerequisite = { focus = SAF_the_tribal_class }
 	prerequisite = { focus = SAF_transfer_british_light_cruisers focus = SAF_modernize_older_british_vessels}
 	relative_position_id = SAF_the_tribal_class
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3058,7 +3058,7 @@ focus = {
 	prerequisite = { focus = SAF_set_the_south_african_shipyards_on_war_footing }
 	relative_position_id = SAF_set_the_south_african_shipyards_on_war_footing
 	mutually_exclusive = { focus = SAF_focus_on_antisubmarine_warfare }
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3094,7 +3094,7 @@ focus = {
 
 	prerequisite = { focus = SAF_focus_on_countering_surface_raiders }
 	relative_position_id = SAF_focus_on_countering_surface_raiders
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3139,7 +3139,7 @@ focus = {
 
 	prerequisite = { focus = SAF_pacific_naval_responsibilities }
 	relative_position_id = SAF_pacific_naval_responsibilities
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3284,7 +3284,7 @@ focus = {
 
 	prerequisite = { focus = SAF_focus_on_countering_surface_raiders }
 	relative_position_id = SAF_focus_on_countering_surface_raiders
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3324,7 +3324,7 @@ focus = {
 
 	prerequisite = { focus = SAF_commandeer_a_battlecruiser }
 	relative_position_id = SAF_commandeer_a_battlecruiser
-	cost = 3
+	cost = 5
 
 	ai_will_do = {
 		factor = 3
@@ -3355,6 +3355,522 @@ focus = {
 			bonus = 1
 			uses = 2
 			category = naval_equipment
+		}
+	}
+}
+focus = {
+	id = SAF_commit_to_the_five_year_plan
+	icon = GFX_goal_generic_build_airforce
+	relative_position_id = SAF_set_the_south_african_shipyards_on_war_footing
+	x = 0
+	y = 6	
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	complete_tooltip = {
+		air_experience = 25
+		random_state = {				
+			limit = {
+				has_state_flag = SAF_commit_to_the_five_year_plan_AB
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+		}
+		add_doctrine_cost_reduction = {
+			name = SAF_commit_to_the_five_year_plan
+			cost_reduction = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+	}
+
+	completion_reward = {
+		air_experience = 25
+		random_owned_controlled_state = {
+			limit = {
+				free_building_slots = {
+					building = air_base
+					size > 1
+				}
+			}
+			add_building_construction = {
+				type = air_base
+				level = 2
+				instant_build = yes
+			}
+			set_state_flag = SAF_commit_to_the_five_year_plan_AB
+		}
+		add_doctrine_cost_reduction = {
+			name = SAF_commit_to_the_five_year_plan
+			cost_reduction = 0.5
+			uses = 1
+			category = air_doctrine
+		}
+	}
+}
+
+focus = {
+	id = SAF_improve_the_hawker_hartbees
+	icon = GFX_goal_generic_air_fighter
+	prerequisite = { focus = SAF_commit_to_the_five_year_plan }
+	mutually_exclusive = { focus = SAF_replace_the_blenheim  }
+	x = -3
+	y = 1
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0.4
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_improve_the_hawker_hartbees
+			bonus = 0.75
+			uses = 1
+			category = light_fighter
+		}
+	}
+}
+
+focus = {
+	id = SAF_replace_the_blenheim
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = { focus = SAF_commit_to_the_five_year_plan }
+	mutually_exclusive = { focus = SAF_improve_the_hawker_hartbees  }
+	x = 3
+	y = 1
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0.6
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_replace_the_blenheim
+			bonus = 0.75
+			uses = 1
+			category = tactical_bomber
+		}
+	}
+}
+focus = {
+	id = SAF_heavy_bombers
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = { focus = SAF_replace_the_blenheim }
+	x = 2
+	y = 2
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0.6
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_replace_the_blenheim
+			bonus = 0.75
+			uses = 1
+			category = heavy_air
+		}
+	}
+}
+focus = {
+	id = SAF_domestic_experts
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = { focus = SAF_replace_the_blenheim }
+	x = 4
+	y = 2
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0.6
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		custom_effect_tooltip = available_designer
+		show_ideas_tooltip = saf_hawker
+	}
+}
+focus = {
+	id = SAF_heavy_engine
+	icon = GFX_goal_generic_occupy_start_war
+	prerequisite = { focus = SAF_domestic_experts }
+	x = 4
+	y = 3
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 0.6
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_air_engine
+		}
+	}
+}
+
+focus = {
+	id = SAF_perfect_the_cab_rank_technique
+	icon = GFX_goal_generic_air_doctrine
+	prerequisite = { focus = SAF_improve_the_hawker_hartbees focus = SAF_replace_the_blenheim }
+
+	x = 0
+	y = 2
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		air_experience = 25
+		add_doctrine_cost_reduction = {
+			name = SAF_perfect_the_cab_rank_technique
+			cost_reduction = 0.5
+			uses = 1
+			category = cat_battlefield_support
+		}
+	}
+}
+
+focus = {
+	id = SAF_desert_air_force
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = SAF_perfect_the_cab_rank_technique  }
+	x = -1
+	y = 3
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_air_engine
+		}
+	}
+}
+focus = {
+	id = SAF_canons_in_the_sky
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = SAF_improve_the_hawker_hartbees }
+	x = -2
+	y = 2
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			technology = aa_cannon_2
+			technology = aa_cannon_1
+			technology = aa_hmg
+			technology = aa_lmg
+		}
+	}
+}
+focus = {
+	id = SAF_engine_rushing
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = SAF_improve_the_hawker_hartbees }
+	x = -4
+	y = 2
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.75
+			uses = 1
+			category = cat_air_engine
+		}
+	}
+}
+focus = {
+	id = SAF_range_improvments
+	icon = GFX_goal_generic_CAS
+	prerequisite = { focus = SAF_engine_rushing }
+	x = -4
+	y = 3
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1.0
+			uses = 2
+			technology = range_improvements
+			technology = aircraft_construction
+			technology = survivability_studies
+		}
+	}
+}
+
+focus = {
+	id = SAF_secure_the_cape_sea_route
+	icon = GFX_goal_generic_air_bomber 
+	prerequisite = { focus = SAF_perfect_the_cab_rank_technique  }
+	x = 1
+	y = 3
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_secure_the_cape_sea_route
+			bonus = 1.0
+			uses = 1
+			category = naval_bomber
+		}
+		add_tech_bonus = {
+			name = SAF_secure_the_cape_sea_route
+			bonus = 1.0
+			uses = 1
+			category = asw_tech
+		}
+	}
+}
+
+focus = {
+	id = SAF_retain_experienced_pilots
+	icon = GFX_goal_generic_air_doctrine
+	prerequisite = { focus = SAF_desert_air_force  }
+	prerequisite = {focus = SAF_secure_the_cape_sea_route}
+	x = 0
+	y = 4
+	relative_position_id = SAF_commit_to_the_five_year_plan
+
+	cost = 5
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = yes
+	search_filters = { FOCUS_FILTER_RESEARCH }
+
+	completion_reward = {
+		air_experience = 35
+		add_doctrine_cost_reduction = {
+			name = SAF_retain_experienced_pilots
+			cost_reduction = 0.5
+			uses = 1
+			category = air_doctrine
 		}
 	}
 }
