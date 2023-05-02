@@ -42,6 +42,87 @@ ideas = {
 
 			}	
 		}
+		SAF_shipbuilding_investments = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				naval_equipment = 0.25
+			}
+
+			modifier = {
+				industrial_capacity_dockyard = 0.25
+				consumer_goods_factor = 0.02
+			}
+		}
+
+		SAF_rcn_expansion = {
+					
+			allowed = {
+				always = no
+			}
+			picture = escort_effort_focus
+
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			equipment_bonus = {
+				destroyer = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+		}
+
+		SAF_cruiser_rcn_expansion = {
+					
+			allowed = {
+				always = no
+			}
+			picture = escort_effort_focus
+
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+			
+			equipment_bonus = {
+				ship_hull_cruiser = {
+					build_cost_ic = -0.3 instant = yes
+				}
+			}
+		}
+
+		SAF_fleet_modernization = {
+
+			picture = generic_coastal_defense_ships
+			
+			allowed = {
+				always = no
+			}
+						
+			modifier = {
+				refit_ic_cost = -0.4
+				refit_speed = 0.6
+				repair_speed_factor = 0.3
+				industrial_capacity_dockyard = 0.1
+			}
+		}
 		saf_smol_free_trade_reform = {
 			allowed = {
 				always = no
