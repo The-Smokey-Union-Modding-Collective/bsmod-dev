@@ -324,9 +324,6 @@ set_variable = { var = SAF_conscription_factor_var value = -0.55}
 
 
 SAF = {
-    add_dynamic_modifier = {
-	   modifier = SAF_colonial_rule_modifier
-    }
 	add_dynamic_modifier = {
 	   modifier = SAF_south_african_army_modifier
     }

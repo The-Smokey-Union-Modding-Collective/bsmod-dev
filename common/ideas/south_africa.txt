@@ -42,6 +42,28 @@ ideas = {
 
 			}	
 		}
+		SAF_air_investments = {
+
+			picture = generic_air_bonus
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = { has_government = communism }
+			}
+			
+			removal_cost = -1
+
+			research_bonus = {
+				air_equipment = 0.25
+			}
+
+			modifier = {
+				consumer_goods_factor = 0.07
+			}
+		}
 		SAF_shipbuilding_investments = {
 
 			picture = generic_coastal_defense_ships
@@ -852,12 +874,12 @@ ideas = {
 		
 		designer = yes
 		
-		yarrow_shipbuilders = {
+		SAF_yarrow_shipbuilders = {
 			
 			allowed = {
-				original_TAG = ENG
+				original_TAG = SAF
 			}
-						
+			picture = yarrow_shipbuilders			
 			research_bonus = {
 				naval_equipment = 0.15
 			}
@@ -866,13 +888,13 @@ ideas = {
 
 		}
 		
-		harland_wolff = {
+		SAF_harland_wolff = {
 			
 			allowed = {
-				original_TAG = ENG
+				original_TAG = SAF
 			}
 			
-
+			picture = harland_wolff
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -881,13 +903,13 @@ ideas = {
 			traits = { pacific_fleet_naval_manufacturer }
 		}
 		
-		cammell_laird = {
+		SAF_cammell_laird = {
 			
 			allowed = {
-				original_TAG = ENG
+				original_TAG = SAF
 			}
 			
-
+			picture = cammell_laird
 			
 			research_bonus = {
 				naval_equipment = 0.15
@@ -899,12 +921,12 @@ ideas = {
 			}
 		}
 		
-		john_brown_company = {
+		SAF_john_brown_company = {
 			
 			allowed = {
-				original_TAG = ENG
+				original_TAG = SAF
 			}
-			
+			picture = john_brown_company
 
 			
 			research_bonus = {

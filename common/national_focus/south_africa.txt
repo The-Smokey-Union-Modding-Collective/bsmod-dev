@@ -13,7 +13,7 @@
 	
 	default = no
 
-	continuous_focus_position = { x = 55 y = 1500 }
+	continuous_focus_position = { x = 55 y = 2000 }
 
 #	focus = {
 #		id = SAF_
@@ -1298,6 +1298,273 @@ focus = {
 	}
 
 	available = {
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_engage_in_total_war
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_secure_interests_in_africa }
+	prerequisite = { focus = SAF_mass_tank_imports }
+	x = -1
+	y = 4
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_buy_tank_variants
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_engage_in_total_war }
+	x = -3
+	y = 5
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_total_mobilization_of_industry
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_engage_in_total_war }
+	x = 1
+	y = 5
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_total_methods_of_war
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_engage_in_total_war }
+	x = 0
+	y = 6
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_total_controll_of_the_state
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_engage_in_total_war }
+	x = -2
+	y = 6
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_war_bonds
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_engage_in_total_war }
+	x = -1
+	y = 5
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
+	}
+	
+	bypass = {
+
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_tech_bonus = {
+			name = SAF_native_design
+			ahead_reduction = 1
+			bonus = 2
+			uses = 1
+			category = armor
+		}
+		add_ideas = saf_expand_tank_production
+		
+	}
+}
+focus = {
+	id = SAF_total_victory
+	icon = GFX_focus_generic_tank_production
+	prerequisite = { focus = SAF_war_bonds }
+	x = -1
+	y = 7
+	relative_position_id = SAF_mobilization_of_industry_act
+
+	cost = 10
+
+	ai_will_do = {
+		factor = 15
+	}
+
+	available = {
+		has_war_with = GER
 	}
 	
 	bypass = {
@@ -3402,6 +3669,7 @@ focus = {
 			uses = 1
 			category = air_doctrine
 		}
+		add_timed_idea = { idea = SAF_air_investments days = 180 }
 	}
 
 	completion_reward = {
@@ -3426,6 +3694,7 @@ focus = {
 			uses = 1
 			category = air_doctrine
 		}
+		add_timed_idea = { idea = SAF_air_investments days = 180 }
 	}
 }
 
@@ -3506,7 +3775,7 @@ focus = {
 }
 focus = {
 	id = SAF_heavy_bombers
-	icon = GFX_goal_generic_occupy_start_war
+	icon = GFX_focus_generic_long_range_aircraft
 	prerequisite = { focus = SAF_replace_the_blenheim }
 	x = 2
 	y = 2
@@ -3542,7 +3811,7 @@ focus = {
 }
 focus = {
 	id = SAF_domestic_experts
-	icon = GFX_goal_generic_occupy_start_war
+	icon = GFX_focus_generic_multi_role_aircraft
 	prerequisite = { focus = SAF_replace_the_blenheim }
 	x = 4
 	y = 2
@@ -3574,7 +3843,7 @@ focus = {
 }
 focus = {
 	id = SAF_heavy_engine
-	icon = GFX_goal_generic_occupy_start_war
+	icon = GFX_focus_generic_aircraft_production
 	prerequisite = { focus = SAF_domestic_experts }
 	x = 4
 	y = 3
@@ -3649,7 +3918,7 @@ focus = {
 
 focus = {
 	id = SAF_desert_air_force
-	icon = GFX_goal_generic_CAS
+	icon = GFX_goal_generic_air_production
 	prerequisite = { focus = SAF_perfect_the_cab_rank_technique  }
 	x = -1
 	y = 3
@@ -3722,7 +3991,7 @@ focus = {
 }
 focus = {
 	id = SAF_engine_rushing
-	icon = GFX_goal_generic_CAS
+	icon = GFX_focus_generic_aircraft_production
 	prerequisite = { focus = SAF_improve_the_hawker_hartbees }
 	x = -4
 	y = 2
@@ -3757,7 +4026,7 @@ focus = {
 }
 focus = {
 	id = SAF_range_improvments
-	icon = GFX_goal_generic_CAS
+	icon = GFX_goal_expand_the_luftwaffe
 	prerequisite = { focus = SAF_engine_rushing }
 	x = -4
 	y = 3

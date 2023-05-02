@@ -50,13 +50,6 @@ SAF_politics_modifier = {
     stability_weekly = SAF_stability_weekly_modifier
     democratic_drift = SAF_democratic_drift_modifier
 	research_speed_factor = SAF_research_speed_factor_var
-
-     
-}
-
-SAF_colonial_rule_modifier = { #used as National Spirit
-    enable = { always = yes }
-	Icon = hol_caved_to_the_british
 	production_factory_max_efficiency_factor = SAF_colonial_rule_production_factory_max_efficiency_modifier 
 	production_factory_efficiency_gain_factor = SAF_colonial_rule_production_factory_efficiency_gain_factor_modifier 
 	industrial_capacity_factory = SAF_colonial_rule_industrial_capacity_factory_modifier 
@@ -65,3 +58,4 @@ SAF_colonial_rule_modifier = { #used as National Spirit
 	stability_factor = SAF_colonial_rule_stability_factor_modifier 
 	research_speed_factor = SAF_colonial_rule_research_speed_factor
 }
+
