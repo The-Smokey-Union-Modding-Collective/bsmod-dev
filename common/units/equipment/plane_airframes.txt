@@ -103,6 +103,11 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = armor_plate_small
+			count < 2
+		}
+
+		module_count_limit = {
 			module = fixed_explosive_charge
 			count < 2
 		}
@@ -304,7 +309,7 @@ equipments = {
 		maximum_speed = 0
 		air_agility = 65
 		air_defence = 11
-		weight = 5
+		weight = 0
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 10
@@ -408,7 +413,7 @@ equipments = {
 		maximum_speed = 0
 		air_agility = 80
 		air_defence = 12
-		weight = 6
+		weight = 0
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 12
@@ -519,7 +524,7 @@ equipments = {
 		maximum_speed = 0
 		air_agility = 85
 		air_defence = 18
-		weight = 7
+		weight = 0
 		naval_strike_attack = 1
 		naval_strike_targetting = 1
 		build_cost_ic = 14
@@ -722,6 +727,11 @@ equipments = {
 
 		module_count_limit = {
 			module = guided_anti_ship_missile
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_plate_small
 			count < 2
 		}
 
@@ -1388,6 +1398,11 @@ equipments = {
 
 		module_count_limit = {
 			module = fixed_explosive_charge
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_plate_medium
 			count < 2
 		}
 
@@ -2235,6 +2250,11 @@ equipments = {
 
 		module_count_limit = {
 			module = fixed_explosive_charge
+			count < 2
+		}
+
+		module_count_limit = {
+			module = armor_plate_large
 			count < 2
 		}
 

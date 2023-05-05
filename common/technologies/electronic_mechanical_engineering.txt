@@ -2,7 +2,7 @@ technologies = {
 	electronic_mechanical_engineering = {
 
 		# small boost to research speed
-		research_speed_factor = 0.03
+		research_speed_factor = 0.10
 		
 		path = {
 			leads_to_tech = radio 
@@ -395,7 +395,7 @@ technologies = {
 	computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.05
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = improved_computing_machine 
@@ -446,7 +446,7 @@ technologies = {
 	improved_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		enable_equipment_modules = {
 			stabilizer
 			bomb_sights_2
@@ -507,7 +507,7 @@ technologies = {
 	advanced_computing_machine = {
 
 		# small boost to research speed
-		research_speed_factor = 0.08
+		research_speed_factor = 0.1
 		
 		path = {
 			leads_to_tech = advanced_encryption 
@@ -980,10 +980,6 @@ technologies = {
 			leads_to_tech = improved_rocket_engines 
 			research_cost_coeff = 1
 		}
-		path = {
-			leads_to_tech = jet_engines 
-			research_cost_coeff = 1
-		}
 		
 		research_cost = 2
 		start_year = 1944
@@ -1110,49 +1106,6 @@ technologies = {
 		
 		categories = {
 			rocketry
-		}
-	}
-	
-	jet_engines = {
-	
-		folder = {
-			name = electronics_folder
-			position = { x = 2 y = 2 }
-		}
-		
-		start_year = 1944
-		research_cost = 2
-		enable_equipment_modules = {
-			tank_gas_turbine_engine
-			jet_engine_1x
-			jet_engine_2x
-			jet_engine_3x
-			jet_engine_4x
-			jet_engine_6x
-		}
-		folder = {
-			name = air_techs_folder
-			position = { x = 2 y = 11 }
-		}
-
-		folder = {
-			name = bba_air_techs_folder
-			position = { x = -1 y = 11 }
-		}
-		
-		desc = "JET_ENGINES_SPECIAL"
-
-		on_research_complete = {
-			custom_effect_tooltip = JET_ENGINES_RESEARCHED
-		}
-		
-		ai_will_do = {
-			factor = 1
-		}
-		
-		categories = {
-			rocketry
-			jet_technology
 		}
 	}
 	
