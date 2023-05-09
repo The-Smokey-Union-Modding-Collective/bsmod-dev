@@ -2018,6 +2018,7 @@ focus_tree = {
 			navy_experience = 50
 			army_experience = 50
 			air_experience = 10
+			add_ideas = USA_arsenal_of_democracy_idea
 			random_owned_controlled_state = {
 				limit = {
 					is_core_of = ROOT

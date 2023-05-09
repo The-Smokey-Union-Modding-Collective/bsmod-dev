@@ -7788,6 +7788,7 @@ focus_tree = {
 			else = {
 				custom_effect_tooltip = SOV_leader_of_the_party_and_the_people_trait_tt
 			}
+			add_research_slot = 1
 		}
 	}
 

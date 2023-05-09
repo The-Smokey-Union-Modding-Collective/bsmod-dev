@@ -15,6 +15,12 @@ NDefines.NCountry.AIR_VOLUNTEER_PLANES_LIMIT = 0.4		--vanilla=0.2
 NDefines.NCountry.AIR_VOLUNTEER_BASES_CAPACITY_LIMIT = 0.4	--vanilla=0.1
 NDefines.NCountry.FUEL_LEASE_CONVOY_RATIO = 0.00007			--vanilla=0.0005
 NDefines.NCountry.ATTACHE_XP_SHARE = 0.2	--vanilla=0.15
+NDefines.NCountry.COUNTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
+NDefines.NCountry.ARMY_SCORE_MULTIPLIER = 0 --vanilla = 0.15
+NDefines.NCountry.AIR_SCORE_MULTIPLIER = 0 --vanilla = 0.1
+NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --vanilla = 0.1
+NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
+NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
@@ -39,7 +45,7 @@ NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 2 -- vanilla = 1
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 --vanilla = 200
-NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.1 --vanilla = 0.2
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.12 --vanilla = 0.2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
@@ -64,6 +70,32 @@ NDefines.NMilitary.LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.026    -- vanilla 0.0
 NDefines.NMilitary.LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.026    -- vanilla 0.032
 NDefines.NMilitary.PEN_VS_AVERAGE = 0.06 -- vanilla 0.4
 NDefines.NMilitary.ARMOR_VS_AVERAGE = 0.14 -- vanilla 0.4
+NDefines.NMilitary.PIERCING_THRESHOLDS = {					-- Our piercing / their armor must be this value to deal damage fraction equal to the index in the array below [higher number = higher penetration]. If armor is 0, 1.00 will be returned.
+1.00,
+0.90,
+0.80,
+0.70,
+0.60,
+0.50,
+0.40,
+0.30,
+0.20,
+0.10,
+0.00, --there isn't much point setting this higher than 0
+}
+NDefines.NMilitary.PIERCING_THRESHOLD_DAMAGE_VALUES = {	-- 0 armor will always receive maximum damage (so add overmatching at your own peril). the system expects at least 2 values, with no upper limit.
+1.00,
+0.85,
+0.75,
+0.65,
+0.55,
+0.50,
+0.45,
+0.40,
+0.35,
+0.30,
+0.25,
+}
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAir.AIR_WING_MAX_SIZE = 1600	--vanilla=1000
 NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane to create a mission
@@ -106,13 +138,13 @@ NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for differe
 		1.0, -- NAVAL_INVASION_SUPPORT
 	}
 NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00	--vanilla=0.02
-NDefines.NNavy.NAVAL_INVASION_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval invasions
-NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 4      -- vanilla = 1; Default convoy priority for naval transports
-NDefines.NNavy.SUPPLY_PRIORITY = 1              -- vanilla = 2; Default convoy priority for supplying units via sea
-NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 5  -- vanilla = 3; Default convoy priority for export lend lease
-NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 3     -- vanilla = 4; Default convoy priority for export trade
-NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 2     -- vanilla = 5; Default convoy priority for resources shipped internally
-NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
+--NDefines.NNavy.NAVAL_INVASION_PRIORITY = 1      -- vanilla = 1; Default convoy priority for naval invasions
+--NDefines.NNavy.NAVAL_TRANSFER_PRIORITY = 1      -- vanilla = 1; Default convoy priority for naval transports
+--NDefines.NNavy.SUPPLY_PRIORITY = 2              -- vanilla = 2; Default convoy priority for supplying units via sea
+--NDefines.NNavy.RESOURCE_LENDLEASE_PRIORITY = 3  -- vanilla = 3; Default convoy priority for export lend lease
+--NDefines.NNavy.RESOURCE_EXPORT_PRIORITY = 4     -- vanilla = 4; Default convoy priority for export trade
+--NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 5     -- vanilla = 5; Default convoy priority for resources shipped internally
+--NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = 0 -- vanilla = -0.7; Naval invasion penalty
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50

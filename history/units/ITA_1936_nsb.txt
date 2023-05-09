@@ -197,7 +197,8 @@ division_template = {
 	override_model = ITA_irregular_infantry_alt_1_entity
 	is_locked = yes
 	template_counter = 66
-	# Note: Represents irregular infantry from the colonies (daskalian, dubats and other "bands")
+	force_allow_recruiting = yes
+	division_cap = 12 #WARNING THIS VALUE NEEDS TOP MATCH THE value in var ITA_militias_cap set in history file
 	regiments = {
 		irregular_infantry = { x = 0 y = 0 }
 		irregular_infantry = { x = 0 y = 1 }
@@ -678,7 +679,7 @@ units = {
 			name_order = 1
 		} 
 		location = 8043 
-		division_template = "Banda Irregolare Libica"
+		division_template = "Banda Indigena Irregolare"
 		start_experience_factor = 0.1
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
@@ -690,7 +691,7 @@ units = {
 			name_order = 1
 		} 
 		location = 13251 
-		division_template = "Truppe Irregolari a Cavallo"
+		division_template = "Reggimento di Cavalleria"
 		start_experience_factor = 0.1 
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
@@ -703,7 +704,7 @@ units = {
 			name_order = 1
 		} 
 		location = 8043 
-		division_template = "Banda Irregolare Eritrea"
+		division_template = "Banda Indigena Irregolare"
 		start_experience_factor = 0.05 
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
@@ -715,7 +716,7 @@ units = {
 			name_order = 1
 		} 
 		location = 12766 
-		division_template = "Banda Irregolare Eritrea"
+		division_template = "Banda Indigena Irregolare"
 		start_experience_factor = 0.05
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
@@ -728,7 +729,7 @@ units = {
 			name_order = 1
 		} 
 		location = 2020 
-		division_template = "Truppe Irregolari a Cavallo"
+		division_template = "Reggimento di Cavalleria"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }} 
@@ -740,7 +741,7 @@ units = {
 			name_order = 1
 		} 
 		location = 1964 
-		division_template = "Banda Irregolare Somala"
+		division_template = "Banda Indigena Irregolare"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}
@@ -752,7 +753,7 @@ units = {
 			name_order = 1
 		} 
 		location = 1964 
-		division_template = "Banda Irregolare Somala"
+		division_template = "Banda Indigena Irregolare"
 		start_experience_factor = 0.2
 		start_equipment_factor = 0.7
 		force_equipment_variants = { infantry_equipment_0 = { owner = "ITA" }}

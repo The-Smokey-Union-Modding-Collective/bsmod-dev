@@ -173,6 +173,8 @@ focus_tree = {
 			transfer_state = 708
 			transfer_state = 543
 			transfer_state = 706
+			transfer_state = 899
+			transfer_state = 898
 			
 			add_timed_idea = { idea = FRA_economic_recuperation days = 365 }
 			

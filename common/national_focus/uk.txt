@@ -637,6 +637,7 @@ focus_tree = {
 				uses = 2
 				category = cat_production
 			}
+			activate_advisor = ENG_john_simon
 		}
 	}
 
@@ -5011,6 +5012,7 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_RESEARCH}
 		completion_reward = {
 			add_ideas = { ENG_colonial_elite }
+			add_research_slot = 1
 		}
 	}
 

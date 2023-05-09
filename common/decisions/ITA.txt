@@ -4128,411 +4128,517 @@ ITA_colonial_management_dec_cat = {
 		}
 	}
 
-	#Re-organize Irregulars
-	ITA_reorganize_irregulars = {
+	ITA_mountain_focused_irregulars = {
+		icon = GFX_decision_generic_reorganize_irregulars
+		allowed = {
+			tag = ITA
+			
+		}
+
+		available = {
+			has_tech = interwar_antitank
+		}
+
+		visible = {
+			has_completed_focus = ITA_strengthen_ascari_corps
+			NOT = { has_country_flag = ITA_mountain_focused_irregulars }
+			NOT = { has_country_flag = ITA_desert_focused_irregulars}
+		}
+
+		cost = 25
+
+		complete_effect = {
+			custom_effect_tooltip = ITA_mountain_improved_irregulars
+			hidden_effect = {
+				set_technology = {
+					irregular_mountain_troops = 1
+				}
+				set_country_flag = ITA_mountain_focused_irregulars
+				add_units_to_division_template = {
+					template_name = "Banda Indigena Irregolare"
+					regiments = {
+						irregular_infantry = 0
+						irregular_infantry = 0
+						irregular_infantry = 0
+						irregular_infantry = 1
+						artillery_brigade = 1
+						artillery_brigade = 1
+						irregular_infantry = 2
+						irregular_infantry = 2
+						irregular_infantry = 2
+						artillery_brigade = 2
+						anti_tank_brigade = 2
+					}
+					support = {
+						engineer = 0
+						recon = 0
+						artillery = 0
+						anti_tank = 0
+						anti_air = 0
+					}
+				}
+			}
+		}
+	}
+
+	ITA_desert_focused_irregulars = {
 		icon = GFX_decision_generic_reorganize_irregulars
 		allowed = {
 			tag = ITA
 		}
 
-		visible = {
-			has_completed_focus = ITA_ministry_of_italian_africa
-			NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
-		}
-
 		available = {
-			has_tech = tech_recon
-		}
-
-		ai_hint_pp_cost = 50
-		custom_cost_trigger = {
-			command_power > 49
-			has_political_power > 49
-			has_army_experience > 14
-		}
-		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
-
-		days_remove = ITA_reorganize_irregulars_days
-
-		complete_effect = {
-			hidden_effect = {
-				add_command_power = -50
-				add_political_power = -50
-				army_experience = -15
-			}
-		}
-
-		remove_effect = {
-			set_country_flag = ITA_improved_irregular_templates_flag
-
-			custom_effect_tooltip = ITA_reorganize_irregulars_tt
-
-			hidden_effect = {
-				add_units_to_division_template = {
-					template_name = "Banda Indigena Irregolare"
-					regiments = {
-						irregular_infantry = 0
-						irregular_infantry = 1
-
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				add_units_to_division_template = {
-					template_name = "Truppe Irregolari a Cavallo"
-					regiments = {
-						cavalry = 0
-						cavalry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				add_units_to_division_template = {
-					template_name = "Truppe Irregolari di Cammelli"
-					regiments = {
-						camelry = 0
-						camelry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				add_units_to_division_template = {
-					template_name = "Banda Irregolare Eritrea"
-					regiments = {
-						irregular_infantry = 0
-						irregular_infantry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				add_units_to_division_template = {
-					template_name = "Banda Irregolare Libica"
-					regiments = {
-						irregular_infantry = 0
-						irregular_infantry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				add_units_to_division_template = {
-					template_name = "Banda Irregolare Somala"
-					regiments = {
-						irregular_infantry = 0
-						irregular_infantry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-			}
-		}
-
-		ai_will_do = {
-			base = 0.5
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = ITA_comandante_diavolo
-					has_completed_focus = ITA_irregulars
-				}
-			}
-		}
-	}
-
-	#Re-organize Ascari
-	ITA_reorganize_ascari = {
-		icon = GFX_decision_ITA_reorganize_ascari
-		allowed = {
-			tag = ITA
+			has_tech = interwar_antitank
 		}
 
 		visible = {
 			has_completed_focus = ITA_strengthen_ascari_corps
-			NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
+			NOT = { has_country_flag = ITA_mountain_focused_irregulars }
+			NOT = { has_country_flag = ITA_desert_focused_irregulars}
 		}
 
-		available = {
-			has_tech = tech_recon
-		}
-
-		ai_hint_pp_cost = 50
-		custom_cost_trigger = {
-			command_power > 49
-			has_political_power > 49
-			has_army_experience > 14
-		}
-		custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
-
-		days_remove = ITA_reorganize_ascari_days
+		cost = 25
 
 		complete_effect = {
+			custom_effect_tooltip = ITA_desert_improved_irregulars
 			hidden_effect = {
-				add_command_power = -50
-				add_political_power = -50
-				army_experience = -15
-			}
-		}
-
-		remove_effect = {
-			set_country_flag = ITA_improved_ascari_templates_flag
-
-			custom_effect_tooltip = ITA_reorganize_ascari_tt
-
-			hidden_effect = {
-				if = {
-					limit = {
-						NOT = { has_template = "Divisione Coloniale" }
-					}
-					division_template = {
-						name = "Divisione Coloniale"
-						division_names_group = ITA_COL_01
-						template_counter = 67
-
-						# Represents lesser-equipped colonial units
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-						}
-
-						priority = 0
-					}
+				set_technology = {
+					irregular_desert_troops = 1
 				}
-				if = {
-					limit = {
-						has_dlc = "La Resistance"
-					}
-					add_units_to_division_template = {
-						template_name = "Divisione Coloniale"
-						support = {
-							armored_car_recon = 0
-							artillery = 0
-						}
-					}
-				}
-				else = {
-					add_units_to_division_template = {
-						template_name = "Divisione Coloniale"
-						support = {
-							artillery = 0
-						}
-					}
-				}
-
-				if = {
-					limit = {
-						NOT = { has_template = "Cavalleria Coloniale" }
-					}
-					division_template = {
-						name = "Cavalleria Coloniale"
-						division_names_group = ITA_CAV_03
-						override_model = ITA_cavalry_alt_1_entity
-						is_locked = yes
-
-						# Represents lesser-equipped colonial units
-						regiments = {
-							cavalry = { x = 0 y = 0 }
-							cavalry = { x = 0 y = 1 }
-							cavalry = { x = 1 y = 0 }
-							cavalry = { x = 1 y = 1 }
-						}
-
-						priority = 0
-					}
-				}
+				set_country_flag = ITA_desert_focused_irregulars
 				add_units_to_division_template = {
-					template_name = "Cavalleria Coloniale"
+					template_name = "Banda Indigena Irregolare"
 					regiments = {
-						cavalry = 0
-						cavalry = 1
+						irregular_infantry = 0
+						irregular_infantry = 0
+						irregular_infantry = 0
+						irregular_infantry = 1
+						artillery_brigade = 1
+						anti_tank_brigade = 1
+						irregular_infantry = 2
+						irregular_infantry = 2
+						irregular_infantry = 2
+						anti_tank_brigade = 2
+						anti_tank_brigade = 2
 					}
 					support = {
+						engineer = 0
 						recon = 0
-					}
-				}
-
-				if = {
-					limit = {
-						NOT = { has_template = "Reggimento Meharista" }
-					}
-					division_template = {
-						name = "Reggimento Meharista"
-						division_names_group = ITA_CAM_01
-						override_model = ITA_camelry_alt_1_entity
-						regiments = {
-							camelry = { x = 0 y = 0 }
-							camelry = { x = 0 y = 1 }
-							camelry = { x = 1 y = 0 }
-							camelry = { x = 1 y = 1 }
-						}
-					}
-				}
-				add_units_to_division_template = {
-					template_name = "Reggimento Meharista"
-					regiments = {
-						camelry = 0
-						camelry = 1
-					}
-					support = {
-						recon = 0
-					}
-				}
-
-				if = {
-					limit = {
-						NOT = { has_template = "Divisione Ascari Libica" }
-					}
-					division_template = {
-						name = "Divisione Ascari Libica"
-						division_names_group = ITA_COL_01
-						override_model = ITA_infantry_alt_0_entity
-						template_counter = 67
-						#is_locked = yes
-						obsolete = yes
-
-						# Represents lesser-equipped colonial units
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-						}
-
-						priority = 0
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "La Resistance"
-					}
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Libica"
-						support = {
-							armored_car_recon = 0
-							artillery = 0
-						}
-					}
-				}
-				else = {
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Libica"
-						support = {
-							artillery = 0
-						}
-					}
-				}
-
-				if = {
-					limit = {
-						NOT = { has_template = "Divisione Ascari Eritrea" }
-					}
-					division_template = {
-						name = "Divisione Ascari Eritrea"
-						division_names_group = ITA_COL_01
-						template_counter = 67
-						#is_locked = yes
-						obsolete = yes
-
-						# Represents lesser-equipped colonial units
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-						}
-
-						priority = 0
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "La Resistance"
-					}
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Eritrea"
-						support = {
-							armored_car_recon = 0
-							artillery = 0
-						}
-					}
-				}
-				else = {
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Eritrea"
-						support = {
-							artillery = 0
-						}
-					}
-				}
-				
-				if = {
-					limit = {
-						NOT = { has_template = "Divisione Ascari Somala" }
-					}
-					division_template = {
-						name = "Divisione Ascari Somala"
-						division_names_group = ITA_COL_01
-						override_model = ITA_infantry_alt_1_entity
-						template_counter = 67
-						#is_locked = yes
-						obsolete = yes
-
-						# Represents lesser-equipped colonial units
-						regiments = {
-							infantry = { x = 0 y = 0 }
-							infantry = { x = 0 y = 1 }
-							infantry = { x = 0 y = 2 }
-							infantry = { x = 1 y = 0 }
-						}
-
-						priority = 0
-					}
-				}
-				if = {
-					limit = {
-						has_dlc = "La Resistance"
-					}
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Somala"
-						support = {
-							armored_car_recon = 0
-							artillery = 0
-						}
-					}
-				}
-				else = {
-					add_units_to_division_template = {
-						template_name = "Divisione Ascari Somala"
-						support = {
-							artillery = 0
-						}
+						artillery = 0
+						anti_tank = 0
+						anti_air = 0
 					}
 				}
 			}
-		}
-
-		ai_will_do = {
-			base = 1
-			modifier = {
-				factor = 3
-				OR = {
-					has_completed_focus = ITA_strengthen_ascari_corps
-					has_completed_focus = ITA_ascari
-				}
-			}
+			
 		}
 	}
+
+	#Re-organize Irregulars
+	# ITA_reorganize_irregulars = {
+	# 	icon = GFX_decision_generic_reorganize_irregulars
+	# 	allowed = {
+	# 		tag = ITA
+	# 	}
+
+	# 	visible = {
+	# 		has_completed_focus = ITA_ministry_of_italian_africa
+	# 		NOT = { has_country_flag = ITA_improved_irregular_templates_flag }
+	# 	}
+
+	# 	available = {
+	# 		has_tech = tech_recon
+	# 	}
+
+	# 	ai_hint_pp_cost = 50
+	# 	custom_cost_trigger = {
+	# 		command_power > 49
+	# 		has_political_power > 49
+	# 		has_army_experience > 14
+	# 	}
+	# 	custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+	# 	days_remove = ITA_reorganize_irregulars_days
+
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			add_command_power = -50
+	# 			add_political_power = -50
+	# 			army_experience = -15
+	# 		}
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_country_flag = ITA_improved_irregular_templates_flag
+
+	# 		custom_effect_tooltip = ITA_reorganize_irregulars_tt
+
+	# 		hidden_effect = {
+	# 			add_units_to_division_template = {
+	# 				template_name = "Banda Indigena Irregolare"
+	# 				regiments = {
+	# 					irregular_infantry = 0
+	# 					irregular_infantry = 1
+
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			add_units_to_division_template = {
+	# 				template_name = "Truppe Irregolari a Cavallo"
+	# 				regiments = {
+	# 					cavalry = 0
+	# 					cavalry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			add_units_to_division_template = {
+	# 				template_name = "Truppe Irregolari di Cammelli"
+	# 				regiments = {
+	# 					camelry = 0
+	# 					camelry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			add_units_to_division_template = {
+	# 				template_name = "Banda Irregolare Eritrea"
+	# 				regiments = {
+	# 					irregular_infantry = 0
+	# 					irregular_infantry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			add_units_to_division_template = {
+	# 				template_name = "Banda Irregolare Libica"
+	# 				regiments = {
+	# 					irregular_infantry = 0
+	# 					irregular_infantry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			add_units_to_division_template = {
+	# 				template_name = "Banda Irregolare Somala"
+	# 				regiments = {
+	# 					irregular_infantry = 0
+	# 					irregular_infantry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		base = 0.5
+	# 		modifier = {
+	# 			factor = 3
+	# 			OR = {
+	# 				has_completed_focus = ITA_comandante_diavolo
+	# 				has_completed_focus = ITA_irregulars
+	# 			}
+	# 		}
+	# 	}
+	# }
+
+	#Re-organize Ascari
+	# ITA_reorganize_ascari = {
+	# 	icon = GFX_decision_ITA_reorganize_ascari
+	# 	allowed = {
+	# 		tag = ITA
+	# 	}
+
+	# 	visible = {
+	# 		has_completed_focus = ITA_strengthen_ascari_corps
+	# 		NOT = { has_country_flag = ITA_improved_ascari_templates_flag }
+	# 	}
+
+	# 	available = {
+	# 		has_tech = tech_recon
+	# 	}
+
+	# 	ai_hint_pp_cost = 50
+	# 	custom_cost_trigger = {
+	# 		command_power > 49
+	# 		has_political_power > 49
+	# 		has_army_experience > 14
+	# 	}
+	# 	custom_cost_text = decision_cost_CP_50_pp_50_ArmXP_15
+
+	# 	days_remove = ITA_reorganize_ascari_days
+
+	# 	complete_effect = {
+	# 		hidden_effect = {
+	# 			add_command_power = -50
+	# 			add_political_power = -50
+	# 			army_experience = -15
+	# 		}
+	# 	}
+
+	# 	remove_effect = {
+	# 		set_country_flag = ITA_improved_ascari_templates_flag
+
+	# 		custom_effect_tooltip = ITA_reorganize_ascari_tt
+
+	# 		hidden_effect = {
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Divisione Coloniale" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Divisione Coloniale"
+	# 					division_names_group = ITA_COL_01
+	# 					template_counter = 67
+
+	# 					# Represents lesser-equipped colonial units
+	# 					regiments = {
+	# 						infantry = { x = 0 y = 0 }
+	# 						infantry = { x = 0 y = 1 }
+	# 						infantry = { x = 0 y = 2 }
+	# 						infantry = { x = 1 y = 0 }
+	# 					}
+
+	# 					priority = 0
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_dlc = "La Resistance"
+	# 				}
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Coloniale"
+	# 					support = {
+	# 						armored_car_recon = 0
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+	# 			else = {
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Coloniale"
+	# 					support = {
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Cavalleria Coloniale" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Cavalleria Coloniale"
+	# 					division_names_group = ITA_CAV_03
+	# 					override_model = ITA_cavalry_alt_1_entity
+	# 					is_locked = yes
+
+	# 					# Represents lesser-equipped colonial units
+	# 					regiments = {
+	# 						cavalry = { x = 0 y = 0 }
+	# 						cavalry = { x = 0 y = 1 }
+	# 						cavalry = { x = 1 y = 0 }
+	# 						cavalry = { x = 1 y = 1 }
+	# 					}
+
+	# 					priority = 0
+	# 				}
+	# 			}
+	# 			add_units_to_division_template = {
+	# 				template_name = "Cavalleria Coloniale"
+	# 				regiments = {
+	# 					cavalry = 0
+	# 					cavalry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Reggimento Meharista" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Reggimento Meharista"
+	# 					division_names_group = ITA_CAM_01
+	# 					override_model = ITA_camelry_alt_1_entity
+	# 					regiments = {
+	# 						camelry = { x = 0 y = 0 }
+	# 						camelry = { x = 0 y = 1 }
+	# 						camelry = { x = 1 y = 0 }
+	# 						camelry = { x = 1 y = 1 }
+	# 					}
+	# 				}
+	# 			}
+	# 			add_units_to_division_template = {
+	# 				template_name = "Reggimento Meharista"
+	# 				regiments = {
+	# 					camelry = 0
+	# 					camelry = 1
+	# 				}
+	# 				support = {
+	# 					recon = 0
+	# 				}
+	# 			}
+
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Divisione Ascari Libica" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Divisione Ascari Libica"
+	# 					division_names_group = ITA_COL_01
+	# 					override_model = ITA_infantry_alt_0_entity
+	# 					template_counter = 67
+	# 					#is_locked = yes
+	# 					obsolete = yes
+
+	# 					# Represents lesser-equipped colonial units
+	# 					regiments = {
+	# 						infantry = { x = 0 y = 0 }
+	# 						infantry = { x = 0 y = 1 }
+	# 						infantry = { x = 0 y = 2 }
+	# 						infantry = { x = 1 y = 0 }
+	# 					}
+
+	# 					priority = 0
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_dlc = "La Resistance"
+	# 				}
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Libica"
+	# 					support = {
+	# 						armored_car_recon = 0
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+	# 			else = {
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Libica"
+	# 					support = {
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Divisione Ascari Eritrea" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Divisione Ascari Eritrea"
+	# 					division_names_group = ITA_COL_01
+	# 					template_counter = 67
+	# 					#is_locked = yes
+	# 					obsolete = yes
+
+	# 					# Represents lesser-equipped colonial units
+	# 					regiments = {
+	# 						infantry = { x = 0 y = 0 }
+	# 						infantry = { x = 0 y = 1 }
+	# 						infantry = { x = 0 y = 2 }
+	# 						infantry = { x = 1 y = 0 }
+	# 					}
+
+	# 					priority = 0
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_dlc = "La Resistance"
+	# 				}
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Eritrea"
+	# 					support = {
+	# 						armored_car_recon = 0
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+	# 			else = {
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Eritrea"
+	# 					support = {
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+				
+	# 			if = {
+	# 				limit = {
+	# 					NOT = { has_template = "Divisione Ascari Somala" }
+	# 				}
+	# 				division_template = {
+	# 					name = "Divisione Ascari Somala"
+	# 					division_names_group = ITA_COL_01
+	# 					override_model = ITA_infantry_alt_1_entity
+	# 					template_counter = 67
+	# 					#is_locked = yes
+	# 					obsolete = yes
+
+	# 					# Represents lesser-equipped colonial units
+	# 					regiments = {
+	# 						infantry = { x = 0 y = 0 }
+	# 						infantry = { x = 0 y = 1 }
+	# 						infantry = { x = 0 y = 2 }
+	# 						infantry = { x = 1 y = 0 }
+	# 					}
+
+	# 					priority = 0
+	# 				}
+	# 			}
+	# 			if = {
+	# 				limit = {
+	# 					has_dlc = "La Resistance"
+	# 				}
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Somala"
+	# 					support = {
+	# 						armored_car_recon = 0
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+	# 			else = {
+	# 				add_units_to_division_template = {
+	# 					template_name = "Divisione Ascari Somala"
+	# 					support = {
+	# 						artillery = 0
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+
+	# 	ai_will_do = {
+	# 		base = 1
+	# 		modifier = {
+	# 			factor = 3
+	# 			OR = {
+	# 				has_completed_focus = ITA_strengthen_ascari_corps
+	# 				has_completed_focus = ITA_ascari
+	# 			}
+	# 		}
+	# 	}
+	# }
 
 	#Infrastructure Program in State
 	ITA_regional_development_in_state = {

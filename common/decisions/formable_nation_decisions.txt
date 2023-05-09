@@ -674,6 +674,8 @@ form_united_netherlands_category = {
 				controls_state = 6
 				controls_state = 34
 			}
+			NOT = { has_global_flag = form_united_netherlands_flag }
+			NOT = { has_global_flag = HOL_benelux_formed }
 		}
 
 		visible = {
@@ -703,17 +705,14 @@ form_united_netherlands_category = {
 				34 = { add_core_of = ROOT }
 			}
 			hidden_effect = {
-				news_event = { id = wtt_news.58 hours = 6 }
+				#news_event = { id = wtt_news.58 hours = 6 }
 				set_global_flag = form_united_netherlands_flag
 			}
+			set_capital = {state = 7 }
 		}
 
 		ai_will_do = {
 			factor = 200
-			modifier = {
-				factor = 0
-				is_historical_focus_on = yes
-			}
 		}
 	}
 }

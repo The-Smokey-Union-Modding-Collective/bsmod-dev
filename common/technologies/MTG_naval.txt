@@ -443,6 +443,7 @@ technologies = {
 	improved_sonar = {
 		enable_equipment_modules = {
 			ship_sonar_2
+			plane_sonar_1
 		}
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
@@ -484,6 +485,7 @@ technologies = {
 	advanced_sonar = {
 		enable_equipment_modules = { 
 			ship_sonar_3
+			plane_sonar_2
 		}
 		on_research_complete = {
 			custom_effect_tooltip = sonar_advice_tt
