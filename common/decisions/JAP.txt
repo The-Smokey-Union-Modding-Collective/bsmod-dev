@@ -7,9 +7,13 @@ JAP_operations_category = {
 		
 		allowed = {
 			original_tag = JAP
-			date > 1940.12.31
+			
 		}
 		
+		available = {
+			date > 1941.01.01
+		}
+
 		visible = {
 			has_completed_focus = JAP_strike_on_the_southern_resource_area
 		}
@@ -50,18 +54,6 @@ JAP_operations_category = {
 					target = AST
 					type = annex_everything
 				}
-				declare_war_on = {
-					target = NZL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = MAL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = INS
-					type = annex_everything
-				}
 			}
 			MAN = {
 				declare_war_on = {
@@ -90,18 +82,6 @@ JAP_operations_category = {
 				}
 				declare_war_on = {
 					target = AST
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = NZL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = MAL
-					type = annex_everything
-				}
-				declare_war_on = {
-					target = INS
 					type = annex_everything
 				}
 			}
@@ -136,18 +116,6 @@ JAP_operations_category = {
 					}
 					declare_war_on = {
 						target = AST
-						type = annex_everything
-					}
-					declare_war_on = {
-						target = NZL
-						type = annex_everything
-					}
-					declare_war_on = {
-						target = MAL
-						type = annex_everything
-					}
-					declare_war_on = {
-						target = INS
 						type = annex_everything
 					}
 				}
