@@ -733,6 +733,7 @@ GER_case_anton_category = {
 				transfer_state = 32
 				transfer_state = 33
 				transfer_state = 735
+				transfer_state = 851
 			}
 			26 = {
 				set_resistance = 5
@@ -770,7 +771,10 @@ GER_case_anton_category = {
 				set_resistance = 5
 				set_compliance = 70
 			}
-
+			851 = {
+				set_resistance = 5
+				set_compliance = 70
+			}
 		}
 	}
 }
