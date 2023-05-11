@@ -722,6 +722,28 @@ GER_case_anton_category = {
 				VIC = { is_ai = no }
 			}
 		}
+		days_remove = 1
+		remove_effect = {
+			every_state = {
+				limit = {
+					has_state_flag = FRA_thats_my_territory
+				}
+				FRA = {
+					transfer_state = PREV
+				}
+			}
+			every_state = {
+				limit = {
+					has_state_flag = ITA_thats_my_territory
+				}
+				ITA = {
+					transfer_state = PREV
+				}
+				set_resistance = 5
+				set_compliance = 70
+			}
+
+		}
 		complete_effect = {
 			GER = {
 				transfer_state = 26
@@ -774,6 +796,71 @@ GER_case_anton_category = {
 			851 = {
 				set_resistance = 5
 				set_compliance = 70
+			}
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							state = 665
+							state = 458
+							state = 460
+							state = 513
+							state = 459
+							state = 461
+							state = 462
+							state = 677
+							state = 680
+							state = 554
+							state = 553
+						}
+						NOT = {
+							OR = {
+								is_controlled_by = GER
+								is_controlled_by = ITA
+								is_controlled_by = HUN
+								is_controlled_by = ROM
+								is_controlled_by = SPR
+								is_controlled_by = BUL
+								is_controlled_by = SLO
+
+							}
+						}
+					}
+				}
+				set_state_flag = FRA_thats_my_territory  
+			}
+			every_state = {
+				limit = {
+					AND = {
+						OR = {
+							state = 665
+							state = 458
+							state = 460
+							state = 513
+							state = 459
+							state = 461
+							state = 462
+							state = 677
+							state = 680
+							state = 554
+							state = 553
+						}
+						NOT = {
+							OR = {
+								is_controlled_by = FRA
+								is_controlled_by = USA
+								is_controlled_by = ENG
+								is_controlled_by = AST
+								is_controlled_by = CAN
+								is_controlled_by = RAJ
+								is_controlled_by = SAF
+								is_controlled_by = NZL
+
+							}
+						}
+					}
+				}
+				set_state_flag = ITA_thats_my_territory  
 			}
 		}
 	}
