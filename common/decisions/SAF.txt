@@ -441,3 +441,105 @@ SAF_colonial_Rule = {
 		}
 	}
 }
+SAF_mobilization_measures = {
+	SAF_increase_shifts = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_industry_industrial_capacity_factory_modifier = 0.05
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_29
+
+		}
+	}
+	SAF_increase_shifts_2 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_industry_production_efficiency_max_modifier = 0.02
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_28
+
+		}
+	}
+	SAF_increase_shifts_3 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_production_speed_arms_factory_factor_var = 0.05
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_27
+
+		}
+	}
+	SAF_increase_shifts_4 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = 0.1
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_26
+		}
+	}
+}

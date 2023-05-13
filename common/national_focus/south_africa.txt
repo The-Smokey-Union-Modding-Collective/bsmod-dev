@@ -1384,7 +1384,10 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		
+		swap_ideas = {
+			remove_idea = saf_expand_tank_production
+			add_idea = saf_expand_tank_production_2
+		}
 	}
 }
 focus = {
@@ -1414,14 +1417,7 @@ focus = {
 	available_if_capitulated = no
 
 	completion_reward = {
-		719 = {
-			add_extra_state_shared_building_slots = 3
-			add_building_construction = {
-				type = arms_factory
-				level = 3
-				instant_build = yes
-			}
-		}
+		custom_effect_tooltip = SAF_politics_fix_25
 		
 	}
 }
@@ -2860,8 +2856,8 @@ focus = {
 focus = {
 	id = SAF_set_the_south_african_shipyards_on_war_footing
 	icon = GFX_goal_generic_construct_naval_dockyard
-	x = 36
-	y = 0
+	x = 21
+	y = 7
 
 	cost = 5
 
@@ -3639,7 +3635,7 @@ focus = {
 	icon = GFX_goal_generic_build_airforce
 	relative_position_id = SAF_set_the_south_african_shipyards_on_war_footing
 	x = 0
-	y = 6	
+	y = 5	
 
 	cost = 5
 
