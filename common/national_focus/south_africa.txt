@@ -230,7 +230,7 @@ focus = {
 		add_to_variable = {SAF_collapsing_government_stability_factor_modifier = 0.12}
 		add_days_mission_timeout = {
 			mission = SAF_end_of_neutrality_timeout
-			days = 100
+			days = 50
 		}
 		custom_effect_tooltip = SAF_politics_tt_1
 	}

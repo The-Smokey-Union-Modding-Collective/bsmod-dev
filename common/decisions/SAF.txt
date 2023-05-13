@@ -6,7 +6,7 @@ SAF_end_of_neutrality = {
 		available = {
 			hidden_trigger = { always = no }
 		}
-		days_mission_timeout = 575
+		days_mission_timeout = 500
 		selectable_mission = no
 		fire_only_once = yes
 		activation = {
