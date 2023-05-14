@@ -112,7 +112,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits={ logistics_wizard offensive_doctrine }
+			traits={ logistics_wizard offensive_doctrine winter_specialist }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -131,7 +131,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ hill_fighter }
+			traits={cavalry_leader hill_fighter }
 			skill=3
 			attack_skill=2
 			defense_skill=3
@@ -214,7 +214,7 @@ characters={
 		}
 
 		corps_commander={
-			traits={ infantry_expert }
+			traits={ infantry_leader naval_invader ranger }
 			skill=3
 			attack_skill=3
 			defense_skill=2
@@ -252,7 +252,7 @@ characters={
 		}
 		
 		field_marshal={
-			traits={ offensive_doctrine }
+			traits={organizer skilled_staffer cavalry_officer }
 			skill=4
 			attack_skill=4
 			defense_skill=4
@@ -400,8 +400,9 @@ characters={
 
 		corps_commander={
 			skill=3
+			traits={ bearer_of_artillery infantry_officer   }
 			attack_skill=3
-			defense_skill=2
+			defense_skill=4
 			planning_skill=2
 			logistics_skill=3
 			legacy_id=-1

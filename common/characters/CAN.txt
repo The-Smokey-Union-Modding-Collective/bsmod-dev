@@ -84,7 +84,7 @@ characters={
 			}
 		}
 		field_marshal={
-			traits = {infantry_leader invader organizer career_officer}
+			traits = {infantry_leader naval_invader organizer career_officer}
 			skill=4
 			attack_skill=4
 			defense_skill=2
@@ -161,7 +161,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ motorized_leader trickster politically_connected trait_engineer}
+			traits={ cavalry_leader trickster politically_connected trait_engineer}
 			skill=3
 			attack_skill=3
 			defense_skill=4
