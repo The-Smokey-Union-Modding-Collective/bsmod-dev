@@ -103,6 +103,7 @@ characters={
 			}
 		}
 		corps_commander={
+			traits = {politically_connected }
 			skill=3
 			attack_skill=1
 			defense_skill=1
@@ -123,7 +124,7 @@ characters={
 		corps_commander={
 			traits={ hill_fighter panzer_leader brilliant_strategist trait_engineer }
 			skill=4
-			attack_skill=6
+			attack_skill=5
 			defense_skill=3
 			planning_skill=4
 			logistics_skill=3
