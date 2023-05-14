@@ -32,7 +32,6 @@ SAF_military_industrial_complex = {
 			has_completed_focus = SAF_quality_over_quantity
 		}
 		days_remove = 90
-		days_re_enable = 90
 		complete_effect = {
 
 				}
@@ -41,7 +40,6 @@ SAF_military_industrial_complex = {
 				SAF_industry_consumer_goods_modifier = -0.02
 			}
 			custom_effect_tooltip = SAF_politics_tt_17
-
 		}
 	}
 	SAF_buy_shermans = {
@@ -164,12 +162,12 @@ SAF_colonial_Rule = {
 				541 = {
 			     add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes 
 				  }
 				 add_building_construction = {
 				    type = industrial_complex
-				    level = 1
+				    level = 2
 				    instant_build = yes
 				   }
 				 add_extra_state_shared_building_slots = 2
@@ -257,12 +255,12 @@ SAF_colonial_Rule = {
 				719 = {
 			     add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes 
 				  }
 				 add_building_construction = {
 				    type = industrial_complex
-				    level = 1
+				    level = 2
 				    instant_build = yes
 				   }
 				 add_extra_state_shared_building_slots = 2
@@ -350,7 +348,7 @@ SAF_colonial_Rule = {
 				275 = {
 			     add_building_construction = {
 					type = infrastructure
-					level = 1
+					level = 2
 					instant_build = yes 
 				  }
 				 add_building_construction = {
@@ -487,7 +485,7 @@ SAF_mobilization_measures = {
 				SAF_collapsing_government_stability_factor_modifier = -0.05
 			}
 			add_to_variable = {
-				SAF_industry_production_efficiency_max_modifier = 0.02
+				SAF_industry_production_efficiency_max_modifier = 0.025
 			}
 			clr_country_flag = SAF_currently_mobilizing
 			custom_effect_tooltip = SAF_politics_fix_28
@@ -513,7 +511,7 @@ SAF_mobilization_measures = {
 				SAF_collapsing_government_stability_factor_modifier = -0.05
 			}
 			add_to_variable = {
-				SAF_production_speed_arms_factory_factor_var = 0.05
+				SAF_production_factory_efficiency_gain_factor_modifier  = 0.15
 			}
 			clr_country_flag = SAF_currently_mobilizing
 			custom_effect_tooltip = SAF_politics_fix_27

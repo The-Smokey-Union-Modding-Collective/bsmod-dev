@@ -804,7 +804,9 @@ ideas = {
 				original_TAG = SAF
 				has_dlc = "Together for Victory"
 			}			
-
+			research_bonus = {
+				armour = 0.15
+			}
 			
 			equipment_bonus = {
 				armor = {
@@ -840,7 +842,9 @@ ideas = {
 			picture = english_electric
 
 			name = english_electric
-
+			research_bonus = {
+				armour = 0.15
+			}
 			
 			equipment_bonus = {
 				armor = {
@@ -866,7 +870,9 @@ ideas = {
 				}
 			}
 			picture = vauxhall
-
+			research_bonus = {
+				armour = 0.15
+			}
 			modifier = { tank_manufacturer_cost_factor = -0.5 }
 			equipment_bonus = {
 				armor = {
@@ -895,7 +901,9 @@ ideas = {
 		}
 
 		saf_vickers_armstrong_eng = {
-			
+			research_bonus = {
+				armour = 0.15
+			}
 			allowed = {
 				original_tag = SAF
 			
