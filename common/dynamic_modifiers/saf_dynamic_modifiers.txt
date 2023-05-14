@@ -1,7 +1,7 @@
 SAF_south_african_army_modifier = {
     enable = { always = yes }
 
-    icon = eng_service_overseas
+    icon = GFX_idea_eng_service_overseas
 
     max_planning_factor = SAF_max_planning_factor_var
     army_attack_factor  = SAF_army_attack_factor_var
@@ -29,7 +29,7 @@ SAF_south_african_army_modifier = {
 SAF_politics_modifier = {
     enable = { always = yes }
 
-    icon = por_colonial_assimilation
+    icon = GFX_idea_por_colonial_assimilation
 
     fascism_drift = SAF_fascism_drift_modifier
     communism_drift = SAF_communism_drift_modifier

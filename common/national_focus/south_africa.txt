@@ -195,7 +195,7 @@ focus = {
 			SAF_stability_weekly_modifier = 0.004
 		}
 		custom_effect_tooltip = SAF_politics_tt_11
-
+		add_political_power = 100
 	}
 }
 
