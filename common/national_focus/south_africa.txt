@@ -2397,6 +2397,12 @@ focus = {
 			technology = support_weapons3
 			technology = support_weapons4
 		}
+		add_tech_bonus = {
+			category = support_tech
+			uses = 1
+			bonus = 1
+			name = SAF_support_tech
+		}
 	}
 }
 focus = {
