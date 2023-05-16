@@ -162,6 +162,10 @@ equipments = {
 			module = hull_flamethrower
 			count < 1
 		}
+		module_count_limit = {
+			module = boiling_vessel
+			count < 2
+		}
 
 		default_modules = {
 			main_armament_slot = empty
@@ -607,6 +611,10 @@ equipments = {
 
 		module_count_limit = {
 			module = hull_flamethrower
+			count < 2
+		}
+		module_count_limit = {
+			module = boiling_vessel
 			count < 2
 		}
 
@@ -1074,7 +1082,10 @@ equipments = {
 			module = hull_flamethrower
 			count < 2
 		}
-
+		module_count_limit = {
+			module = boiling_vessel
+			count < 2
+		}
 		fuel_consumption = 0
 		maximum_speed = 3.5
 		build_cost_ic = 7.5
@@ -1620,7 +1631,10 @@ equipments = {
 			module = extra_ammo_storage
 			count < 2
 		}
-
+		module_count_limit = {
+			module = boiling_vessel
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_modern_tank_turret
@@ -1808,7 +1822,10 @@ equipments = {
 			module = extra_ammo_storage
 			count < 2
 		}
-
+		module_count_limit = {
+			module = boiling_vessel
+			count < 2
+		}
 		default_modules = {
 			main_armament_slot = empty
 			turret_type_slot = tank_super_heavy_three_man_tank_turret
@@ -1980,6 +1997,10 @@ equipments = {
 		module_count_limit = {
 			module = hull_flamethrower
 			count < 1
+		}
+		module_count_limit = {
+			module = boiling_vessel
+			count < 2
 		}
 
 		default_modules = {

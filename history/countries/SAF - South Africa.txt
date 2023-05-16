@@ -26,7 +26,7 @@ set_war_support = 0.1
 set_research_slots = 3
 
 create_intelligence_agency = {
-	name = "BS Agency"
+	name = "MI6 SAF"
 	icon = "GFX_intelligence_agency_logo_bs"
 }
 
@@ -79,17 +79,21 @@ if = {
 	}
 	set_technology = {
 		early_ship_hull_light = 1
+		basic_ship_hull_light = 1
+		early_ship_hull_cruiser = 1
+		basic_ship_hull_cruiser = 1
+		early_ship_hull_heavy = 1
+		basic_ship_hull_heavy = 1
 		basic_battery = 1
+		basic_light_battery = 1
 		basic_torpedo = 1
-		mtg_transport = 1
+		basic_depth_charges = 1
+		mtg_transport = 1 
 	}
 }
-
 if = {
 	limit = { has_dlc = "Together for Victory" }
-	add_ideas = SAF_ossewabrandwag
-	add_ideas = SAF_history_of_segregation
-	add_ideas = mod_scw_international_brigades
+#	add_ideas = mod_scw_international_brigades
 	add_ideas = mod_trade_allies
 
 	add_to_tech_sharing_group = commonwealth_research
@@ -108,31 +112,31 @@ if = {
 			set_air_oob = "SAF_1939_air_legacy"
 		}
 	}
-	if = {
-		limit = { has_dlc = "Together for Victory" }
-		complete_national_focus = SAF_special_service_battalion
-		complete_national_focus = SAF_improve_the_three_oh_three
-		complete_national_focus = SAF_q_services_corps
-		complete_national_focus = SAF_commit_to_the_five_year_plan
-		complete_national_focus = SAF_seaward_defence_force
-		complete_national_focus = SAF_protect_the_trade
-		complete_national_focus = SAF_south_african_railways
-		complete_national_focus = SAF_expand_the_mining_industry
-		complete_national_focus = SAF_heavy_engineering	
-		
-		else = {
-			#generic focuses
-			complete_national_focus = army_effort
-			complete_national_focus = equipment_effort
-			complete_national_focus = motorization_effort
-			complete_national_focus = aviation_effort
-			complete_national_focus = naval_effort
-			complete_national_focus = large_navy
-			complete_national_focus = industrial_effort
-			complete_national_focus = construction_effort
-			complete_national_focus = production_effort
-		}
-	}
+#	if = {
+#		limit = { has_dlc = "Together for Victory" }
+#		complete_national_focus = SAF_special_service_battalion
+#		complete_national_focus = SAF_improve_the_three_oh_three
+#		complete_national_focus = SAF_q_services_corps
+#		complete_national_focus = SAF_commit_to_the_five_year_plan
+#		complete_national_focus = SAF_seaward_defence_force
+#		complete_national_focus = SAF_protect_the_trade
+#		complete_national_focus = SAF_south_african_railways
+#		complete_national_focus = SAF_expand_the_mining_industry
+#		complete_national_focus = SAF_heavy_engineering	
+#		
+#		else = {
+#			#generic focuses
+#			complete_national_focus = army_effort
+#			complete_national_focus = equipment_effort
+#			complete_national_focus = motorization_effort
+#			complete_national_focus = aviation_effort
+#			complete_national_focus = naval_effort
+#			complete_national_focus = large_navy
+#			complete_national_focus = industrial_effort
+#			complete_national_focus = construction_effort
+#			complete_national_focus = production_effort
+#		}
+#	}
 
 	add_ideas = {
 		#laws
@@ -219,7 +223,6 @@ recruit_character = SAF_s_p_le_roux
 recruit_character = SAF_adolf_malan
 recruit_character = SAF_marinus_van_osterkamp
 recruit_character = SAF_robert_palmer
-recruit_character = SAF_leonard_beyers
 recruit_character = SAF_c_de_weenburg_du_toit
 recruit_character = SAF_james_mitchell_baker
 recruit_character = SAF_jeannot_de_la_tourier
@@ -227,8 +230,24 @@ recruit_character = SAF_j_f_van_rensburg
 recruit_character = SAF_e_g_jansen
 recruit_character = SAF_nicolaas_havenga
 recruit_character = SAF_sir_patrick_duncan
-recruit_character = SAF_abram_fischer
-recruit_character = SAF_Edward_Puttick
+#recruit_character = SAF_abram_fischer
+#recruit_character = SAF_Edward_Puttick
+recruit_character = SAF_j_g_n_strauss
+recruit_character = SAF_c_f_steyn
+recruit_character = SAF_Evered_Poole
+recruit_character = SAF_Dan_Pienaar
+recruit_character = SAF_Isaac_de_Villiers
+recruit_character = SAF_leonard_beyers
+recruit_character = SAF_Nick_Bierman
+recruit_character = SAF_Christiaan_du_Toit
+recruit_character = SAF_Pieter_de_Waal
+recruit_character = SAF_jan_smuts
+recruit_character = SAF_j_f_h_hofmeyr
+recruit_character = SAF_Walter_madeley
+recruit_character = SAF_deneys_reitz
+recruit_character = SAF_sidney_waterson
+recruit_character = SAF_B_F_Armstrong
+recruit_character = SAF_J_N_Bierman
 
 1939.1.1 = {
 	set_politics = {
@@ -246,4 +265,183 @@ recruit_character = SAF_Edward_Puttick
 	recruit_character = SAF_jan_smuts
 	promote_character = SAF_jan_smuts
 	retire_character = SAF_j_b_m_hertzog
+}
+
+set_variable = { var = SAF_collapsing_government_political_power_gain_modifier value = 0 }
+set_variable = { var = SAF_collapsing_government_stability_factor_modifier value = -0.6 }
+set_variable = { var = SAF_stability_weekly_modifier value = -0.005 }
+set_variable = { var = SAF_industry_consumer_goods_modifier value = 0.2 } 
+
+set_variable = { var = SAF_industry_construction_speed_modifier value = 0 }
+set_variable = { var = SAF_industry_industrial_capacity_factory_modifier value = -0.05 } 
+set_variable = { var = SAF_industry_production_efficiency_max_modifier value = -0.14 }
+set_variable = { var = SAF_production_factory_efficiency_gain_factor_modifier value = 0 }
+
+set_variable = { var = SAF_communism_drift_modifier value = 0.02 }
+set_variable = { var = SAF_democratic_drift_modifier value = -0.05 }
+set_variable = { var = SAF_fascism_drift_modifier value = 0.10 }
+
+
+set_variable = { var = SAF_colonial_rule_production_factory_max_efficiency_modifier value = 0.000 }
+set_variable = { var = SAF_colonial_rule_production_factory_efficiency_gain_factor_modifier value = 0.00 }
+set_variable = { var = SAF_colonial_rule_industrial_capacity_factory_modifier value = 0.00 }
+set_variable = { var = SAF_colonial_rule_compliance_growth_modifier value= 0.000 }
+set_variable = { var = SAF_colonial_rule_local_resources_factor_modifier value = 0.000 }
+set_variable = { var = SAF_colonial_rule_stability_factor_modifier value = 0.000 }
+set_variable = { var = SAF_colonial_rule_research_speed_factor value = 0.000 }
+set_variable = { var = SAF_colonial_temp1 value = 0.0 }
+set_variable = { var = SAF_colonial_temp2 value = 0.0 }
+set_variable = { var = SAF_colonial_temp3 value = 0.0 }
+set_variable = { var = SAF_colonial_rule_decision_strategic_region_mali_counter value = 0.0 }
+set_variable = { var = SAF_colonial_rule_decision_strategic_region_madagascar_counter value = 0.0 }
+set_variable = { var = SAF_colonial_rule_decision_strategic_region_caledonia_counter value = 0.0 }
+set_variable = { var = SAF_research_speed_factor_var value = 0  }
+set_variable = { var = SAF_industrial_capacity_dockyard_modifier value = 0  }
+set_variable = { var = SAF_production_speed_arms_factory_factor_var value = 0  }
+set_variable = { var = SAF_production_speed_industrial_complex_factor_var value = 0  }
+
+
+################# SOUTh AFRICAN ARMY 
+set_variable = { var = SAF_army_attack_factor_var value = -0.05  }
+set_variable = { var = SAF_planning_speed_var value = 0 } 
+set_variable = { var = SAF_max_planning_factor_var value = 0 }
+set_variable = { var = SAF_max_command_power_var value = 0 } 
+set_variable = { var = SAF_command_power_gain_mult_var value = 0 } 
+set_variable = { var = SAF_land_doctrine_cost_factor_var value = 0.0 } 
+set_variable = { var = SAF_army_speed_factor_var value = -0.05 } 
+set_variable = { var = SAF_army_morale_factor_var value = -0.10 } 
+set_variable = { var = SAF_max_dig_in_var value = 0 } 
+set_variable = { var = SAF_army_armor_attack_factor_var value = 0 } 
+set_variable = { var = SAF_air_ace_generation_chance_factor_var value = 0 } 
+set_variable = { var = SAF_resistance_growth_on_our_occupied_states_var value = 0 } 
+set_variable = { var = SAF_intel_network_gain_factor_var value = 0 } 
+set_variable = { var = SAF_intel_from_operatives_factor_var value = 0 } 
+set_variable = { var = SAF_legitimacy_gain_factor_var value = 0 } 
+set_variable = { var = SAF_experience_gain_army_var value = -0.3 } 
+set_variable = { var = SAF_send_volunteers_tension_var value = -1 } 
+set_variable = { var = SAF_conscription_var value = 0 } 
+set_variable = { var = SAF_conscription_factor_var value = -0.55}
+
+
+SAF = {
+	add_dynamic_modifier = {
+	   modifier = SAF_south_african_army_modifier
+    }
+	add_dynamic_modifier = {
+	   modifier = SAF_politics_modifier
+    }
+}
+
+
+if = {
+	limit = { has_dlc = "Man the Guns" } 
+	### Ship Variants ###
+	# Destroyers #
+	create_equipment_variant = {
+		name = "S Class"
+		type = ship_hull_light_1
+		name_group = CAN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_1
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_1
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_anti_air_1
+			rear_1_custom_slot = ship_depth_charge_1
+		}
+		obsolete = yes
+	}
+	create_equipment_variant = {
+		name = "Sanguenay Class"
+		type = ship_hull_light_1
+		name_group = CAN_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_anti_air_slot = empty
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = empty
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_torpedo_1
+			rear_1_custom_slot = ship_anti_air_1
+		}
+	}
+
+
+	create_equipment_variant = {
+		name = "Crown Colony Class"
+		type = ship_hull_cruiser_2
+		name_group = ENG_CL_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_medium_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = cruiser_ship_engine_2
+			fixed_ship_armor_slot = ship_armor_cruiser_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_2
+			front_1_custom_slot = ship_light_medium_battery_2
+			mid_1_custom_slot = ship_torpedo_2
+			mid_2_custom_slot = ship_light_medium_battery_2
+			rear_1_custom_slot = ship_light_medium_battery_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "E/F/G/H Class"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_2
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_torpedo_slot = ship_torpedo_1
+			mid_1_custom_slot = ship_depth_charge_2
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Repulse Class"
+		name_group = CAN_BB_HISTORICAL
+		type = ship_hull_heavy_2
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_heavy_battery_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_2
+			fixed_ship_radar_slot = ship_radar_2
+			fixed_ship_engine_slot = heavy_ship_engine_2
+			fixed_ship_secondaries_slot = dp_ship_secondaries_1
+			fixed_ship_armor_slot = ship_armor_bc_2
+			front_1_custom_slot = ship_heavy_battery_2
+			mid_1_custom_slot = ship_anti_air_2
+			mid_2_custom_slot = ship_anti_air_2
+			rear_1_custom_slot = ship_heavy_battery_2
+		}
+	}
+
+	create_equipment_variant = {
+		name = "Tribal Class"
+		type = ship_hull_light_2
+		name_group = ENG_DD_HISTORICAL
+		parent_version = 0
+		modules = {
+			fixed_ship_battery_slot = ship_light_battery_2
+			fixed_ship_torpedo_slot = ship_torpedo_2
+			fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+			fixed_ship_radar_slot = ship_sonar_2
+			fixed_ship_engine_slot = light_ship_engine_2
+			fixed_ship_anti_air_slot = ship_anti_air_2
+			mid_1_custom_slot = ship_light_battery_2
+			rear_1_custom_slot = ship_depth_charge_2
+		}
+	}		
 }

@@ -25,5 +25,42 @@ technologies = {
 			}
 		}
 	}
+	boiling_vessel_tank_module= {
+		allow = {
+			always = no
+		}
+		enable_equipment_modules = {
+			boiling_vessel
+		}
+	}
+	SAF_desert_tanks_tech = {
+
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+	
+	
+		category_tanks = {
+			desert = {
+				attack = 0.1
+				movement = 0.15
+			}
+		}
+	}
+	SAF_durable_tanks_tech= {
+
+		research_cost = 1
+	
+		allow = {
+			always = no
+		}
+	
+	
+		category_tanks = {
+			max_strength = 1
+		}
+	}
 
 }

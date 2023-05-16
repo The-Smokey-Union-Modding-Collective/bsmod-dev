@@ -1,0 +1,543 @@
+SAF_end_of_neutrality = {
+	SAF_end_of_neutrality_timeout = {
+		
+		priority = 10
+		icon = generic_prepare_civil_war
+		available = {
+			hidden_trigger = { always = no }
+		}
+		days_mission_timeout = 500
+		selectable_mission = no
+		fire_only_once = yes
+		activation = {
+				AND = {
+					has_completed_focus = SAF_a_policy_of_neutrality
+				}	
+		}
+
+		is_good = yes
+
+		timeout_effect = {
+			set_country_flag = saf_mission_timed_out
+		}
+	}	
+}
+SAF_military_industrial_complex = {
+	SAF_sell_artillery_scematics = {
+		available = {
+			has_completed_focus = SAF_heavy_funding_for_arty_development
+			has_tech = artillery1
+		}
+		visible = {
+			has_completed_focus = SAF_quality_over_quantity
+		}
+		days_remove = 90
+		complete_effect = {
+
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_industry_consumer_goods_modifier = -0.02
+			}
+			custom_effect_tooltip = SAF_politics_tt_17
+		}
+	}
+	SAF_buy_shermans = {
+		available = {
+			has_completed_focus = SAF_contracts_with_USA
+			has_tech = basic_medium_tank_chassis
+		}
+		visible = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+				add_political_power = -50
+				}
+			remove_effect = {
+			
+				add_equipment_to_stockpile = {
+					type = medium_tank_chassis
+						amount = 100
+						producer = SAF
+				}
+			
+
+		}
+	}
+	SAF_buy_churchills = {
+		available = {
+			has_completed_focus = SAF_contracts_with_ENG
+			has_tech = basic_heavy_tank_chassis
+		}
+		visible = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			add_political_power = -50
+			}
+		remove_effect = {
+		
+			add_equipment_to_stockpile = {
+				type = heavy_tank_chassis
+					amount = 100
+					producer = SAF
+			}
+		
+
+	}
+	}
+	SAF_contact_soviet_engineers = {
+		available = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		visible = {
+			has_tech = improved_heavy_tank_chassis
+		}
+		complete_effect = {
+			add_tech_bonus = {
+				name = SAF_native_design
+				ahead_reduction = 2
+				bonus = 1.25
+				uses = 1
+				technology = super_heavy_tank_chassis
+			}
+			}
+	}
+	SAF_buy_KV6_behemoths = {
+		available = {
+			has_completed_focus = SAF_mass_weapons_imports
+		}
+		visible = {
+			has_tech = super_heavy_tank_chassis
+		}
+		days_remove = 90
+		days_re_enable = 90
+		complete_effect = {
+			add_political_power = -50
+			}
+		remove_effect = {
+		
+			add_equipment_to_stockpile = {
+				type = super_heavy_tank_chassis
+					amount = 100
+					producer = SAF
+			}		
+		}
+	}
+}
+SAF_colonial_Rule = {
+	SAF_colonial_rule_decision_strategic_region_windhoek = {
+		available = { 
+			num_of_civilian_factories_available_for_projects > 1
+			NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_windhoek_flag
+		    } 
+	    }
+		visible = { NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_windhoek_flag
+		    }
+		}
+       days_remove = 180
+	   days_re_enable = 185
+	   complete_effect = {
+		custom_effect_tooltip = SAF_colonial_rule_strategic_region_development_tooltip
+	   }
+	   modifier = {
+		civilian_factory_use = 2
+	    }
+	   remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_windhoek_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				541 = {
+			     add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				  }
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				   }
+				 add_extra_state_shared_building_slots = 2
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_windhoek_flag value = 1 }
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_windhoek_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+				}
+				541 = {
+			     add_extra_state_shared_building_slots = 2
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				   }
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_windhoek_flag value = 1 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				541 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					   }
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_windhoek_counter = +1 }
+			}
+			else = {
+				541 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+					}
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_windhoek_counter = +1 }
+			}
+		}
+	}
+	SAF_colonial_rule_decision_strategic_region_natal = {
+		available = { 
+			num_of_civilian_factories_available_for_projects > 1
+			NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_natal_flag
+		    } 
+	    }
+		visible = { NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_natal_flag
+		    }
+		}
+       days_remove = 180
+	   days_re_enable = 185
+	   modifier = {
+		civilian_factory_use = 2
+	    }
+	   complete_effect = {
+		custom_effect_tooltip = SAF_colonial_rule_strategic_region_development_tooltip
+	   }
+	   remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_natal_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				719 = {
+			     add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				  }
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				   }
+				 add_extra_state_shared_building_slots = 2
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_natal_flag value = 1 }
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_natal_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+				}
+				719 = {
+			     add_extra_state_shared_building_slots = 1
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				   }
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_natal_flag value = 1 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				719 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					   }
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_natal_counter = +1 }
+			}
+			else = {
+				719 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+					}
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_natal_counter = +1 }
+			}
+		}
+	}
+	SAF_colonial_rule_decision_strategic_region_transvaal = {
+		available = { 
+			num_of_civilian_factories_available_for_projects > 1
+			NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_transvaal_flag
+		    } 
+	    }
+		visible = { NOT = {
+            has_country_flag = SAF_colonial_rule_strategic_region_transvaal_flag
+		    }
+		}
+       days_remove = 180
+	   days_re_enable = 185
+	   modifier = {
+		civilian_factory_use = 2
+	    }
+	   complete_effect = {
+		custom_effect_tooltip = SAF_colonial_rule_strategic_region_development_tooltip
+	   }
+	   remove_effect = {
+			if = {
+				limit = {
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_transvaal_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				275 = {
+			     add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes 
+				  }
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 2
+				    instant_build = yes
+				   }
+				 add_extra_state_shared_building_slots = 2
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_transvaal_flag value = 1 }
+			}
+			else_if = {
+				limit = { 
+					check_variable = {
+						var = SAF_colonial_rule_decision_strategic_region_transvaal_counter
+						value = 2
+						compare = greater_than_or_equals
+					}
+				}
+				275 = {
+			     add_extra_state_shared_building_slots = 2
+				 add_building_construction = {
+				    type = industrial_complex
+				    level = 1
+				    instant_build = yes
+				   }
+				}
+				set_country_flag = { flag = SAF_colonial_rule_strategic_region_transvaal_flag value = 1 }
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SAF_colonial_rule_decision_powerup_flag
+				}
+				275 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					   }
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_transvaal_counter = +1 }
+			}
+			else = {
+				275 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+					}
+					add_extra_state_shared_building_slots = 1
+				}
+				add_to_variable = { SAF_colonial_rule_decision_strategic_region_transvaal_counter = +1 }
+			}
+		}
+	}
+	SAF_colonial_rule_decision_research_speed_factor = {
+		available = { NOT = {
+              check_variable = {
+                var = SAF_colonial_temp3
+				value = 4
+                compare = greater_than_or_equals
+			    }
+		    }
+		  num_of_civilian_factories_available_for_projects > 1
+		} 
+		visible = { NOT = {
+				check_variable = {
+					SAF_colonial_temp1 > 2
+				}
+			} }
+		days_remove = 90
+		days_re_enable = 90
+		modifier = {
+			civilian_factory_use = 2
+		}
+	    complete_effect = {
+		custom_effect_tooltip = SAF_colonial_rule_strategic_region_research_speed_factor_tooltip
+	   }
+		remove_effect = {
+			add_to_variable = { SAF_colonial_rule_research_speed_factor = +0.025 tooltip = research_speed_tooltip }
+			add_to_variable = { SAF_colonial_temp3 = +1 }
+		}
+	}
+}
+SAF_mobilization_measures = {
+	SAF_increase_shifts = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_industry_industrial_capacity_factory_modifier = 0.05
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_29
+
+		}
+	}
+	SAF_increase_shifts_2 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_industry_production_efficiency_max_modifier = 0.025
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_28
+
+		}
+	}
+	SAF_increase_shifts_3 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = -0.05
+			}
+			add_to_variable = {
+				SAF_production_factory_efficiency_gain_factor_modifier  = 0.15
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_27
+
+		}
+	}
+	SAF_increase_shifts_4 = {
+		available = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+			NOT = {
+				has_country_flag = SAF_currently_mobilizing
+			}
+		}
+		visible = {
+			has_completed_focus = SAF_total_mobilization_of_industry
+		}
+		days_remove = 100
+		complete_effect = {
+			set_country_flag = SAF_currently_mobilizing
+				}
+		remove_effect = {
+			add_to_variable = {
+				SAF_collapsing_government_stability_factor_modifier = 0.1
+			}
+			clr_country_flag = SAF_currently_mobilizing
+			custom_effect_tooltip = SAF_politics_fix_26
+		}
+	}
+}

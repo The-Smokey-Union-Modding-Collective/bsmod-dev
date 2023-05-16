@@ -306,11 +306,11 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		attack_skill = 1
 
 		modifier = {
 			army_morale_factor = -0.10
-		}
+			offence = 0.025	
+			}
 
 		new_commander_weight = {
 			factor = 1
@@ -707,10 +707,9 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.30
+			offence = 0.025	
 		}
-		
-		attack_skill = 1
-		
+				
 		slot = army_chief
 		specialist_advisor_trait = army_chief_offensive_1
 		expert_advisor_trait = army_chief_offensive_2

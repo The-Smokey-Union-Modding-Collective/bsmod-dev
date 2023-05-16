@@ -1,0 +1,52 @@
+################
+##### FRA ######
+################
+
+
+
+SAF_end_of_neutrality = {
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+	}
+	priority = 98
+}
+
+SAF_colonial_Rule = {
+	priority = 99
+    picture = GFX_decision_cat_colonial_rule
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+	}
+}
+
+SAF_military_industrial_complex = {
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+		or = {
+			has_completed_focus = SAF_mass_weapons_imports
+			has_completed_focus = SAF_heavy_funding_for_arty_development
+		}
+	}
+	priority = 97
+}
+SAF_mobilization_measures = {
+	allowed = {
+		original_tag = SAF
+	}
+	visible = {
+		original_tag = SAF
+		
+			has_completed_focus = SAF_total_mobilization_of_industry
+		
+	}
+	priority = 96
+}
