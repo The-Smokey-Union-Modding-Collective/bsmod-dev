@@ -105,6 +105,14 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			JAP = {
+				country_event = { days = 0 id = japan.1 }
+			}
+		}
+	}
+
+	on_startup = {
+		effect = {
 			SOV = {
 				add_ideas = SOV_distrust_capitalists
 			}

@@ -1251,7 +1251,7 @@ SIA_zaibatsu_influence = {
 	production_factory_start_efficiency_factor = SIA_zai_production_factory_start_efficiency_factor
 }
 
-JAP_politica_instability = {
+JAP_political_instability = {
 	enable { always = yes }
 	icon = GFX_generic_disjointed_gov
 	
@@ -1348,8 +1348,84 @@ JAP_zaibatsus_challenged = {
 	
 }
 
-JAP_tank_development = {
+JAP_army_of_japan = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu_control
+
+	army_attack_factor = JAP_army_army_attack_factor
+
+	army_defence_factor = JAP_army_army_defence_factor
+
+	army_strength_factor = JAP_army_strength_factor
+
+	army_org_factor = JAP_army_army_org_factor
+
+	breakthrough_factor = JAP_army_breakthrough_factor
+
+	max_dig_in_factor = JAP_army_max_dig_in_factor
+
+	dig_in_speed_factor = JAP_army_dig_in_speed_factor
+
+	experience_gain_factor = JAP_army_experience_gain_factor
+
+	max_planning_factor = JAP_army_max_planning_factor
+}
+
+JAP_japanese_navy = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu_control
+
+	naval_detection = JAP_navy_naval_detection
+
+	naval_morale_factor = JAP_navy_naval_morale_factor
+
+	naval_retreat_speed = JAP_navy_naval_retreat_speed
+
+	navy_org_factor = JAP_navy_navy_org_factor
+
+	navy_max_range_factor = JAP_navy_navy_max_range_factor
+
+	naval_torpedo_cooldown_factor = JAP_navy_naval_torpedo_cooldown_factor
+
+	naval_torpedo_hit_chance_factor = JAP_navy_naval_torpedo_hit_chance_factor
+
+	navy_visibility = JAP_navy_navy_visibility
+
+	repair_speed_factor = JAP_navy_repair_speed_factor
+
+	navy_anti_air_attack_factor = JAP_navy_navy_anti_air_attack_factor
+
+	naval_torpedo_screen_penetration_factor = JAP_navy_naval_torpedo_screen_penetration_factor
+
+	navy_capital_ship_attack_factor = JAP_navy_navy_capital_ship_attack_factor
+
+	navy_capital_ship_defence_factor = JAP_navy_navy_capital_ship_defence_factor
+
+	sortie_efficiency = JAP_navy_sortie_efficiency
+
+	naval_torpedo_screen_penetration_factor = JAP_navy_naval_torpedo_screen_penetration_factor
 	
+}
+
+JAP_japanese_airforce = {
+	enable { always = yes }
+	icon = GFX_idea_jap_zaibatsu_control
+	
+	port_strike = JAP_air_port_strike
+
+	air_wing_xp_loss_when_killed_factor = JAP_air_air_wing_xp_loss_when_killed_factor
+
+	air_ace_bonuses_factor = JAP_air_air_ace_bonuses_factor
+
+	air_bombing_targetting = JAP_air_air_bombing_targetting
+
+	ground_attack_factor = JAP_air_ground_attack_factor
+
+	naval_strike_targetting_factor = JAP_air_naval_strike_targetting_factor
+
+	air_bombing_targetting = JAP_air_air_bombing_targetting
+
+	air_training_xp_gain_factor = JAP_air_air_training_xp_gain_factor
 }
 
 RAJ_agrarian_society_dynamic = { #NATIONAL SPIRIT
