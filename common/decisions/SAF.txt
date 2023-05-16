@@ -46,6 +46,7 @@ SAF_military_industrial_complex = {
 		available = {
 			has_completed_focus = SAF_contracts_with_USA
 			has_tech = basic_medium_tank_chassis
+			has_political_power > 49
 		}
 		visible = {
 			has_completed_focus = SAF_mass_weapons_imports
@@ -70,6 +71,7 @@ SAF_military_industrial_complex = {
 		available = {
 			has_completed_focus = SAF_contracts_with_ENG
 			has_tech = basic_heavy_tank_chassis
+			has_political_power > 49
 		}
 		visible = {
 			has_completed_focus = SAF_mass_weapons_imports
@@ -110,6 +112,7 @@ SAF_military_industrial_complex = {
 	SAF_buy_KV6_behemoths = {
 		available = {
 			has_completed_focus = SAF_mass_weapons_imports
+			has_political_power > 49
 		}
 		visible = {
 			has_tech = super_heavy_tank_chassis
