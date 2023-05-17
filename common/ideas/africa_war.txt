@@ -37,9 +37,9 @@ ideas = {
 			picture = generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.04
-				local_resources_factor = 0.06
-				base_fuel_gain_factor = 0.04
+				industrial_capacity_factory = 0.1
+				local_resources_factor = 0.10
+				base_fuel_gain_factor = 0.1
 			}
 		}
 
@@ -60,9 +60,9 @@ ideas = {
 			picture = generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.06
-				local_resources_factor = 0.08
-				base_fuel_gain_factor = 0.06
+				industrial_capacity_factory = 0.15
+				local_resources_factor = 0.10
+				base_fuel_gain_factor = 0.15
 			}
 		}
 
@@ -81,9 +81,10 @@ ideas = {
 			picture =generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.08
-				local_resources_factor = 0.12
-				base_fuel_gain_factor = 0.08
+				industrial_capacity_factory = 0.20
+				consumer_goods_factor = -0.02
+				local_resources_factor = 0.10
+				base_fuel_gain_factor = 0.20
 			}
 		}
 	}
