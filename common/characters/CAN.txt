@@ -150,6 +150,21 @@ characters={
 			logistics_skill=3
 			legacy_id=-1
 		}
+		advisor={	
+			slot = high_command
+			idea_token = CAN_guy_simonds
+			ledger = army
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_artillery_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
 	}	
 	CAN_andrew_mcnaughton={
 		name="Andrew McNaughton"
@@ -170,6 +185,20 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
+		advisor={
+			slot = army_chief
+			idea_token = CAN_andrew_mcnaughton
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_chief_offensive_2
+			}
+			cost = 100
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
 	}
 	CAN_harry_crerar={
 		name="Harry Crerar"
@@ -189,6 +218,19 @@ characters={
 			planning_skill=2
 			logistics_skill=2
 			legacy_id=-1
+		}
+		advisor={	
+			slot = army_chief
+			idea_token = CAN_harry_crerar
+			allowed = {
+				original_tag = CAN
+			}
+			traits = {
+				army_chief_old_guard
+			}
+			ai_will_do = {
+				factor = 1.000
+			}
 		}
 	}
 	CAN_leonard_w_murray={
@@ -339,50 +381,50 @@ characters={
 
 	### ARMY CHIEFS ###
 
-	CAN_harry_crerar={
-		name=CAN_harry_crerar
-		portraits={
-			army={
-				small="GFX_idea_CAN_harry_crerar" #small="GFX_idea_generic_army_europe_4"
-			}
-		}
-		advisor={	
-			slot = army_chief
-			idea_token = CAN_harry_crerar
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_old_guard
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	# CAN_harry_crerar={
+	# 	name=CAN_harry_crerar
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_CAN_harry_crerar" #small="GFX_idea_generic_army_europe_4"
+	# 		}
+	# 	}
+	# 	advisor={	
+	# 		slot = army_chief
+	# 		idea_token = CAN_harry_crerar
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+	# 		traits = {
+	# 			army_chief_old_guard
+	# 		}
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}
+	# }
 
-	CAN_andrew_mcnaughton={
-		name=CAN_andrew_mcnaughton
-		portraits={
-			army={
-				small="GFX_idea_CAN_andrew_mcnaughton" #small="GFX_idea_generic_army_europe_3"
-			}
-		}
-		advisor={
-			slot = army_chief
-			idea_token = CAN_andrew_mcnaughton
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_offensive_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}		
-	}
+	# CAN_andrew_mcnaughton={
+	# 	name=CAN_andrew_mcnaughton
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_CAN_andrew_mcnaughton" #small="GFX_idea_generic_army_europe_3"
+	# 		}
+	# 	}
+	# 	advisor={
+	# 		slot = army_chief
+	# 		idea_token = CAN_andrew_mcnaughton
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+	# 		traits = {
+	# 			army_chief_offensive_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}		
+	# }
 
 	CAN_george_pearkes={
 		name=CAN_george_pearkes
@@ -580,29 +622,29 @@ characters={
 
 	### MILITARY HIGH COMMAND ###
 
-	CAN_guy_simonds={
-		name=CAN_guy_simonds
-		portraits={
-			army={
-				small="GFX_idea_CAN_guy_simonds" #small="GFX_idea_generic_army_europe_1"
-			}
-		}
-		advisor={	
-			slot = high_command
-			idea_token = CAN_guy_simonds
-			ledger = army
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_artillery_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
-	}
+	# CAN_guy_simonds={
+	# 	name=CAN_guy_simonds
+	# 	portraits={
+	# 		army={
+	# 			small="GFX_idea_CAN_guy_simonds" #small="GFX_idea_generic_army_europe_1"
+	# 		}
+	# 	}
+	# 	advisor={	
+	# 		slot = high_command
+	# 		idea_token = CAN_guy_simonds
+	# 		ledger = army
+	# 		allowed = {
+	# 			original_tag = CAN
+	# 		}
+	# 		traits = {
+	# 			army_artillery_2
+	# 		}
+	# 		cost = 100
+	# 		ai_will_do = {
+	# 			factor = 1.000
+	# 		}
+	# 	}
+	# }
 
 	CAN_gino_verchiella={
 		name=CAN_gino_verchiella
