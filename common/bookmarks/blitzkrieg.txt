@@ -158,8 +158,7 @@ bookmarks = {
 			history = "SAF_BLITZKRIEG_DESC"
 			ideology = democratic
 			ideas = {
-				SAF_ossewabrandwag
-				SAF_history_of_segregation
+				SAF_rcn_expansion
 			}
 			focuses = {
 				

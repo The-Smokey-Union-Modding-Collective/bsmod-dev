@@ -219,19 +219,6 @@ characters={
 			logistics_skill=2
 			legacy_id=-1
 		}
-		advisor={	
-			slot = army_chief
-			idea_token = CAN_harry_crerar
-			allowed = {
-				original_tag = CAN
-			}
-			traits = {
-				army_chief_old_guard
-			}
-			ai_will_do = {
-				factor = 1.000
-			}
-		}
 	}
 	CAN_leonard_w_murray={
 		name=CAN_leonard_w_murray
