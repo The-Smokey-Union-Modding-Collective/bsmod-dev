@@ -2118,7 +2118,6 @@ economy_decisions = {
 					original_tag = SOV
 					original_tag = JAP
 				}
-				is_ai = yes
 			}
         }
 
