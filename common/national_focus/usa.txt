@@ -2140,6 +2140,10 @@ focus_tree = {
 				uses = 2
 				category = cat_production
 			}
+			swap_ideas = {
+				remove_idea = USA_arsenal_of_democracy_idea
+				add_idea = USA_arsenal_of_democracy_idea_2
+			}
 		}
 	}
 #			if = {

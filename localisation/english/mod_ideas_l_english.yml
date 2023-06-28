@@ -64,5 +64,12 @@
  slowed_offensive:0 "Spanish Infrastructure"
 
  USA_arsenal_of_democracy_idea:0 "Arsenal of Democracy"
+ USA_vast_america:0 "Vast American Industrial Base"
 
  ENG_john_simon:0 "John Simon"
+ ENG_venerable_industry:0 "Venerable Industry"
+ ENG_venerable_industry_desc:0 "The industrial base of the United Kingdom is the oldest in the world and produces for the largest empire in the world. The depression has not done it any good but we can remedy this with some effective investments."
+ ENG_renewed_industry:0 "Renewed Industrial Might"
+ ENG_renewed_industry_desc:0 "The Germans again rattle sabers and threaten their neighbours. And just like last time the british will not be standing idly by. The full might of the British empire stands at our disposal."
+
+ FRA_incompetent_high_command:0 "Incompetent High Command"

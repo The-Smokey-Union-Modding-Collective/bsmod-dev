@@ -2573,6 +2573,7 @@ focus_tree = {
 				uses = 2
 				category = cat_production
 			}
+			add_ideas = JAP_national_defense_state
 		}
 	}
 

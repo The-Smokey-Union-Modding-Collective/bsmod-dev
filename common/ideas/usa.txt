@@ -85,6 +85,23 @@ ideas = {
 				economy_cost_factor = 1
 			}
 		}
+		USA_vast_america = {
+			picture = man_five_year_plan_industry
+			
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = democratic
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.25
+			}
+		}
 		USA_neutrality_act = {
 			picture = generic_production_bonus
 			
@@ -268,6 +285,7 @@ ideas = {
 			}
 		}
 		USA_arsenal_of_democracy_idea = {
+			name = USA_arsenal_of_democracy_idea
 			picture = generic_democratic_drift_bonus
 			allowed = {
 				always = no
@@ -280,6 +298,27 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
+				local_resources_factor = 0.15
+				production_speed_resource_depot_factor = 0.2
+			}
+		}
+		USA_arsenal_of_democracy_idea_2 = {
+			name = USA_arsenal_of_democracy_idea
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				production_factory_max_efficiency_factor = 0.05
 				local_resources_factor = 0.15
 				production_speed_resource_depot_factor = 0.2
 			}

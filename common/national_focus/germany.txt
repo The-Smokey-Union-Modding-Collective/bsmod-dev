@@ -146,7 +146,11 @@ focus_tree = {
 						}
 					}
 				}
-			}			
+			}	
+			add_timed_idea = {
+				idea = GER_westwall
+				days = 1825
+			}
 		}
 	}
 
@@ -2778,6 +2782,7 @@ focus_tree = {
 					custom_effect_tooltip = may_provoke_hostility
 				}
 			}
+			complete_national_focus = GER_west_wall
 		}		
 	}
 
@@ -3509,6 +3514,7 @@ focus_tree = {
 			POL = {
 				country_event = { id = germany.86 }
 			}
+			country_event = { days = 5 id = bs_germany.2  }
 		}
 	}
 #			if = {
@@ -4108,6 +4114,7 @@ focus_tree = {
 						}
 				add_named_threat = { threat = 3 name = GER_demand_sudetenland_threat }
 			}
+			country_event = { days = 5 id = bs_germany.1  }
 		}
 	}
 

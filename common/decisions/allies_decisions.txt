@@ -182,4 +182,30 @@ allied_commonwealth_assistance_category = {
 			}
 		}
 	}
+
+	learn_from_failure = {
+		icon = generic_prepare_civil_war
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 100
+
+		complete_effect = {
+			remove_ideas = FRA_incompetent_high_command
+		}
+	}
 }

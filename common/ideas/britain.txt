@@ -188,10 +188,11 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_goods_red_bonus
+			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
-				global_building_slots_factor = 0.15
+				consumer_goods_factor = -0.025
+				global_building_slots_factor = 0.25
 			}
 		}
 
@@ -206,10 +207,11 @@ ideas = {
 				always = yes
 			}
 
-			picture = generic_goods_red_bonus
+			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
-				global_building_slots_factor = 0.35
+				consumer_goods_factor = 0.025
+				global_building_slots_factor = 0.45
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.05
 			}

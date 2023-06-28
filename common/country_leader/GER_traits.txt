@@ -1,0 +1,60 @@
+
+
+leader_traits = {
+
+	reichsbank_president = { #starts with Schacht, Funk takes over after Schacht resigns
+		sprite = 10
+		consumer_goods_factor = -0.05
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	reichsminister_of_economics = { #starts with Schacht, Funk takes over after Sudetenland 
+		sprite = 10
+		production_speed_buildings_factor = 0.2
+		production_speed_arms_factory_factor = -0.45
+		production_factory_max_efficiency_factor = 0.05
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	reichsminister_of_economics_funk = { #weaker version for Funk
+		sprite = 10
+		production_speed_buildings_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
+
+		ai_will_do = {
+			factor = 10
+		}
+	}
+
+	war_mobilizer = {
+		sprite = 10
+		consumer_goods_factor = -0.025
+		production_speed_buildings_factor = 0.05
+		production_speed_arms_factory_factor = 0.1
+		production_factory_start_efficiency_factor = 0.05
+		line_change_production_efficiency_factor = 0.05
+	}
+
+	national_propagandist_GER = {
+		random = no
+		sprite = 13
+		political_power_factor = 0.05
+		fascism_drift = 0.05
+	}
+
+	architect_of_the_regime = {
+		random = no
+		sprite = 13
+		consumer_goods_factor = -0.025
+		production_factory_max_efficiency_factor = 0.05
+		production_factory_efficiency_gain_factor = 0.05
+		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
+	}
+}

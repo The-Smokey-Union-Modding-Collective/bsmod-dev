@@ -147,6 +147,7 @@ if = {
 	add_ideas = mod_scw_international_brigades
 	add_ideas = mod_scw_escuadrilla_internacional
 	add_ideas = mod_trade_allies
+	add_ideas = USA_vast_america
 }
 
 #Monroe Doctrine

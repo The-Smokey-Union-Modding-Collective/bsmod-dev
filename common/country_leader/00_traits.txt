@@ -4116,13 +4116,24 @@ leader_traits = {
 		sprite = 10
 		random = yes
 		production_factory_efficiency_gain_factor = 0.05
-		production_factory_start_efficiency_factor = 0.02
-		line_change_production_efficiency_factor = 0.02
+		production_factory_start_efficiency_factor = 0.1
+		line_change_production_efficiency_factor = 0.1
 
 		ai_will_do = {
 			factor = 1
 		}
 	}
+
+	industrial_organizer = {
+		sprite = 10
+		random = yes
+		global_building_slots_factor = 0.25
+
+		ai_will_do = {
+			factor = 2
+		}
+	}
+
 	reluctant_interventionist = {
 		random = yes
 		stability_factor = 0.05
