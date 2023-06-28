@@ -210,7 +210,7 @@ ideas = {
 			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
-				consumer_goods_factor = 0.025
+				consumer_goods_factor = -0.025
 				global_building_slots_factor = 0.45
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.05
