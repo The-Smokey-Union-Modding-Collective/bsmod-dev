@@ -267,6 +267,11 @@ equipments = {
 			tank_nsb_engine_upgrade
 			tank_nsb_armor_upgrade
 		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 
 	light_tank_chassis_1 = {
@@ -345,6 +350,11 @@ equipments = {
 		build_cost_ic = 2
 		reliability = 0.95
 		armor_value = 10
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 
 	light_tank_chassis_2 = {
@@ -405,7 +415,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -414,7 +424,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -423,7 +433,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 		}
@@ -433,6 +443,11 @@ equipments = {
 		armor_value = 15
 		resources = {
 			steel = 1
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
 		}
 	}
 
@@ -494,7 +509,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -503,7 +518,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -512,7 +527,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -521,7 +536,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 		}
@@ -531,6 +546,11 @@ equipments = {
 		armor_value = 20
 		resources = {
 			steel = 2
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 2
 		}
 	}
 
@@ -718,6 +738,16 @@ equipments = {
 		resources = {
 			steel = 1
 		}
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 1
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 
 	medium_tank_chassis_1 = {
@@ -802,6 +832,16 @@ equipments = {
 		}
 		armor_value = 35
 		build_cost_ic = 2.1
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 1
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 	medium_tank_chassis_2 = {
 		abbreviation = "mt2"
@@ -862,7 +902,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_radio_module
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -870,7 +910,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -879,7 +919,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -898,6 +938,16 @@ equipments = {
 		armor_value = 45
 		resources = {
 			steel = 1
+		}
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 2
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
 		}
 	}
 	medium_tank_chassis_3 = {
@@ -959,7 +1009,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_radio_module
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -967,7 +1017,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -976,7 +1026,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -985,7 +1035,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1005,6 +1055,16 @@ equipments = {
 		armor_value = 50
 		resources = {
 			steel = 2
+		}
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 2
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 2
 		}
 	}
 
@@ -1186,6 +1246,16 @@ equipments = {
 		build_cost_ic = 7.5
 		reliability = 1
 		armor_value = 30
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 1
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 
 	heavy_tank_chassis_1 = {
@@ -1270,6 +1340,16 @@ equipments = {
 		}
 		armor_value = 35
 		build_cost_ic = 9.75
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 1
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
+		}
 	}
 
 	heavy_tank_chassis_2 = {
@@ -1333,7 +1413,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_radio_module
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -1341,7 +1421,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1350,7 +1430,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1371,6 +1451,16 @@ equipments = {
 		resources = {
 			steel = 1
 			chromium = 1
+		}
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 2
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 1
 		}
 	}
 
@@ -1433,7 +1523,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_radio_module
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -1441,7 +1531,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1450,7 +1540,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1459,7 +1549,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1480,6 +1570,16 @@ equipments = {
 		resources = {
 			steel = 2
 			chromium = 1
+		}
+
+		module_count_limit = {
+			module = hull_flamethrower
+			count < 2
+		}
+
+		module_count_limit = {
+			module = auto_loader
+			count < 2
 		}
 	}
 
@@ -1738,7 +1838,7 @@ equipments = {
 				allowed_module_categories = {
 					tank_special_module
 					tank_radio_module
-					tank_secondary_turret
+					#tank_secondary_turret
 				}
 			}
 
@@ -1746,7 +1846,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1755,7 +1855,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
@@ -1764,7 +1864,7 @@ equipments = {
 				required = no
 				allowed_module_categories = {
 					tank_special_module
-					tank_secondary_turret
+					#tank_secondary_turret
 					tank_radio_module
 				}
 			}
