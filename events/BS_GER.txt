@@ -64,3 +64,22 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = bs_germany.3
+	title = bs_germany.3.t
+	desc = bs_germany.3.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bs_germany.3.a
+		activate_advisor = hjalmar_schacht
+	}
+
+	option = {
+		name = bs_germany.3.b
+		activate_advisor = goering
+	}
+}

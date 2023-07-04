@@ -1246,26 +1246,26 @@ characters={
 				large=GFX_portrait_GER_hermann_goring
 			}
 		}
-		advisor={
-			slot = air_chief
-			idea_token = goering
-			allowed = {
-				original_tag = GER
-			}
-			available = {
-				or = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
-				}
-			}
-			traits = {
-				air_chief_ground_support_2
-			}
-			cost = 100
-			ai_will_do = {
-				factor = 2.000
-			}
-		}
+		#advisor={
+		#	slot = air_chief
+		#	idea_token = goering
+		#	allowed = {
+		#		original_tag = GER
+		#	}
+		#	available = {
+		#		or = {
+		#			has_government = fascism
+		#			has_country_flag = GER_reinstated_nazi_leadership
+		#		}
+		#	}
+		#	traits = {
+		#		air_chief_ground_support_2
+		#	}
+		#	cost = 100
+		#	ai_will_do = {
+		#		factor = 2.000
+		#	}
+		#}
 		advisor={
 			slot = political_advisor
 			idea_token = goering
@@ -1274,9 +1274,9 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_character = GER_hjalmar_schacht
+				has_completed_focus = GER_four_year_plan
+				GER_hjalmar_schacht = {
+					is_hired_as_advisor = no
 				}
 			}
 			traits = {
@@ -1542,12 +1542,9 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_character = GER_hermann_goring
-				}
-				not = {
-					has_war = yes
+				has_completed_focus = GER_four_year_plan
+				GER_hermann_goring = {
+					is_hired_as_advisor = no
 				}
 			}
 			traits = {

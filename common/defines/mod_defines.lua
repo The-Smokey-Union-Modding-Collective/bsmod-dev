@@ -45,7 +45,7 @@ NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 2 -- vanilla = 1
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 --vanilla = 200
-NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.12 --vanilla = 0.2
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.15 --vanilla = 0.2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
