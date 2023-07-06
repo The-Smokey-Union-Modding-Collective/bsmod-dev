@@ -1929,7 +1929,7 @@ focus_tree = {
 		x = 10
 		y = 0
 		relative_position_id = SOV_infrastructure_effort_nsb
-		cost = 5
+		cost = 3
 
 		ai_will_do = {
 			factor = 1
@@ -1954,7 +1954,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 3
 
 		available = {
 			any_owned_state = {
@@ -2023,7 +2023,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -2069,7 +2069,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_merge_aircraft_plants
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -2095,7 +2095,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		available = {
 			
@@ -2156,7 +2156,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_transpolar_flights
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -2183,7 +2183,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 5
+		cost = 3
 
 		available = {
 			OR = {
@@ -2216,7 +2216,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_women_in_aviation
-		cost = 5
+		cost = 3
 
 		available = {
 			any_enemy_country = {
@@ -2257,7 +2257,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SOV_foster_flying_clubs
-		cost = 5
+		cost = 3
 
 
 		available = {
@@ -2287,7 +2287,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_expand_the_aircraft_industry
-		cost = 5
+		cost = 3
 
 		available = {
 
@@ -2312,7 +2312,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_increase_aircraft_production
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_long_range_aircraft }
 
@@ -2343,7 +2343,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_intensify_pilot_training_program
-		cost = 5
+		cost = 3
 
 		mutually_exclusive = { focus = SOV_ground_support }
 
@@ -2380,7 +2380,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SOV_ground_support
-		cost = 5
+		cost = 3
 
 		available = {
 			date > 1942.01.01

@@ -1278,6 +1278,9 @@ characters={
 				GER_hjalmar_schacht = {
 					is_hired_as_advisor = no
 				}
+				NOT = {
+					has_war = yes
+				}
 			}
 			traits = {
 				war_mobilizer
