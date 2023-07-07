@@ -2865,9 +2865,8 @@
 		}
 
 		completion_reward = {
-			add_political_power = 150 
-			custom_effect_tooltip = available_political_advisor 
-			show_ideas_tooltip = MAN_songgotu_zhanshan
+			add_political_power = 75 
+			activate_advisor = MAN_songgotu_zhanshan
 		}
 	}
 	

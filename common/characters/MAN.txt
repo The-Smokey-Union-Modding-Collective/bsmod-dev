@@ -403,7 +403,7 @@ characters={
 				has_completed_focus = MAN_economic_development 
 			}
 			traits = {
-				captain_of_industry 
+				 industrial_organizer
 			}
 			ai_will_do = {
 				factor = 2.000
