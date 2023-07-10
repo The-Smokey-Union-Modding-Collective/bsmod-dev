@@ -1314,8 +1314,8 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_native_design
-			ahead_reduction = 1
-			bonus = 1
+			ahead_reduction = 0.5
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -1785,7 +1785,7 @@ focus =  {
 	completion_reward = {
 		add_tech_bonus = {
 			name = mechanized_bonus
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = cat_mechanized_equipment
 		}
@@ -1837,7 +1837,7 @@ focus =  {
 	completion_reward = {
 		add_tech_bonus = {
 			name = infantry_support_tank
-			bonus = 1.01
+			bonus = 0.51
 			uses = 1
 			category = cat_heavy_armor
 		}
@@ -1859,7 +1859,7 @@ focus =  {
 	completion_reward = {
 		add_tech_bonus = {
 			name = the_6_pounder
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = artillery
 		}
@@ -1881,7 +1881,7 @@ focus =  {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_a_cruiser_tank
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = cat_medium_armor
 		}
@@ -1965,7 +1965,7 @@ focus =  {
 		}
 		add_tech_bonus = {
 			name = SAF_native_design
-			bonus = 0.75
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -2001,7 +2001,7 @@ focus =  {
 		}
 		add_tech_bonus = {
 			name = SAF_Train_factories
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = armor
 		}
@@ -2093,7 +2093,7 @@ focus =  {
 	completion_reward = {
 		add_tech_bonus = {
 			name = the_6_pounder
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = artillery
 		}
@@ -2280,7 +2280,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_infantry_training_school
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = infantry_weapons
 		}			
@@ -2315,7 +2315,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_heavy_funding_for_arty_development
-			bonus = 1.5
+			bonus = 0.8
 			uses = 2
 			category = artillery
 		}	
@@ -2355,7 +2355,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_smol_special_forces
-			bonus = 1.5
+			bonus = 0.8
 			uses = 2
 			category = jaeger_tech
 		}
@@ -2400,7 +2400,7 @@ focus = {
 		add_tech_bonus = {
 			category = support_tech
 			uses = 1
-			bonus = 1
+			bonus = 0.5
 			name = SAF_support_tech
 		}
 	}
@@ -2434,7 +2434,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = mechanized_bonus
-			bonus = 1
+			bonus = 0.5
 			uses = 1
 			category = cat_mechanized_equipment
 		}
@@ -2485,7 +2485,7 @@ focus = {
 		}
 		add_tech_bonus = {
 			name = SAF_smol_special_forces
-			bonus = 1
+			bonus = 0.5
 			uses = 2
 			category = mountaineers_tech
 			category = jaeger_tech
@@ -2687,7 +2687,7 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_refit_the_old_guns
-			bonus = 0.75
+			bonus = 0.4
 			uses = 2
 			category = artillery
 		}		
@@ -2995,7 +2995,7 @@ focus = {
 		}
 
 		add_tech_bonus = {
-			bonus = 1.5
+			bonus = 0.75
 			uses = 1
 			category = dd_tech
 			name =SAF_destroyer_mass_production
@@ -3035,7 +3035,7 @@ focus = {
 
 	completion_reward = {
 		add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 3
 				category = asw_tech
 				name = CAN_advanced_anti_submarine_measures
@@ -3631,14 +3631,14 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = CAN_cruiser_bonus
-			bonus = 1
+			bonus = 0.5
 			uses = 2
 			category = cl_tech
 		}
 
 		add_tech_bonus = {
 			name = CAN_naval_equipment_bonus
-			bonus = 1
+			bonus = 0.5
 			uses = 2
 			category = naval_equipment
 		}
@@ -4111,13 +4111,13 @@ focus = {
 	completion_reward = {
 		add_tech_bonus = {
 			name = SAF_secure_the_cape_sea_route
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = naval_bomber
 		}
 		add_tech_bonus = {
 			name = SAF_secure_the_cape_sea_route
-			bonus = 1.0
+			bonus = 0.5
 			uses = 1
 			category = asw_tech
 		}
