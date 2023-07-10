@@ -3530,16 +3530,16 @@ focus = {
 				}
 				add_tech_bonus = {
 					name = ROM_iar_80
-					bonus = 1.0
-					ahead_reduction = 2
+					bonus = 0.5
+					ahead_reduction = 0.5
 					uses = 1
 					category = light_air
 				}
 				else = {
 					add_tech_bonus = {
 						name = ROM_iar_80
-						bonus = 1.0
-						ahead_reduction = 2
+						bonus = 0.6
+						ahead_reduction = 0.5
 						uses = 1
 						category = light_air
 					}
@@ -3763,7 +3763,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_zb_53
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3871,7 +3871,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -3908,7 +3908,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
-				bonus = 1.0
+				bonus = 0.75
 				uses = 2
 				category = cat_anti_tank
 			}
@@ -4327,8 +4327,8 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 0.75
+				ahead_reduction = 0.5
 				uses = 1
 				category = cat_heavy_armor
 			}

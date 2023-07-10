@@ -42,7 +42,7 @@ sub_units = {
 		supply_consumption = 0.06
 	
 		need = {
-			infantry_equipment = 100
+			infantry_equipment = 75
 		}
 
 		#plains = {
@@ -508,6 +508,10 @@ sub_units = {
 		default_morale = 0.30
 		manpower = 1200
 
+		#Offensive Abilities
+		soft_attack = 0.05
+		hard_attack = 0.05
+
 		#Misc Abilities
 		training_time = 90
 		suppression = 2.2
@@ -581,8 +585,8 @@ sub_units = {
 		combat_width = 2
 
 		#Offensive Abilities
-		soft_attack = 0.1
-		hard_attack = 4.0
+		soft_attack = 0.15
+		hard_attack = 0.15
 		
 		#Size Definitions
 		max_strength = 35

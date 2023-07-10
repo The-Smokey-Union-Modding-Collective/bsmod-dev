@@ -238,7 +238,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 2.0
+				bonus = 0.85
 				uses = 2
 				category = motorized_equipment
 			}
@@ -262,8 +262,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = armor
 			}
 		}
@@ -552,7 +552,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -623,7 +623,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -697,7 +697,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -858,6 +858,12 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -925,7 +931,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -934,6 +940,14 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_arms_discount
+			add_tech_bonus = {
+				add_tech_bonus = {
+					name = SMLE_bonus
+					bonus = 0.75
+					uses = 2
+					category = infantry
+				}
+			}
 		}
 	}
 	focus = {
@@ -1230,12 +1244,12 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.80
 				uses = 1
 				category = cat_air_engine
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.55
 				uses = 1
 				category = light_air
 			}
@@ -1324,12 +1338,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = british_fighter_discount
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.80
 				uses = 1
 				category = cat_air_engine
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = light_air
 			}

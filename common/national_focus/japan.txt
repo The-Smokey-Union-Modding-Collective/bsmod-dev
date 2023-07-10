@@ -4815,7 +4815,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_small_arms_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons	
 			}
@@ -4890,7 +4890,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_modern_artillery
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = artillery	
 			}
@@ -4927,7 +4927,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_armored_divisions
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = armor	
 			}
@@ -5074,13 +5074,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_air		
 			}
 			add_tech_bonus = {
 				name = JAP_fighter_modernization
-				bonus = 1.0
+				bonus = 0.8
 				uses = 1
 				category = cat_air_engine
 			}
@@ -5239,7 +5239,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_bomber_modernization
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = medium_air					
 			}
@@ -5277,7 +5277,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = JAP_strategic_bomber_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = heavy_air
 			}
@@ -5314,12 +5314,12 @@ focus_tree = {
 		completion_reward = {
 			remove_ideas = JAP_duplicate_research_efforts
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_air	
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = cat_air_engine
 			}

@@ -1300,7 +1300,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = heavy_fighter_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = medium_air
 			}
@@ -1345,7 +1345,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = TAC_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = heavy_air
 			}
@@ -1485,7 +1485,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = weapons_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1578,7 +1578,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}
@@ -2554,7 +2554,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = light_fighter_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -2689,7 +2689,7 @@
 			}
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}
@@ -2731,7 +2731,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = medium_tank_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_medium_armor
 			}
@@ -2771,7 +2771,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = heavy_tank_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_heavy_armor
 			}
@@ -2819,7 +2819,7 @@
 				else_if = {
 					add_tech_bonus = {
 						name = mechanized_bonus
-						bonus = 1.00
+						bonus = 0.5
 						uses = 1
 						category = cat_mechanized_equipment
 					}

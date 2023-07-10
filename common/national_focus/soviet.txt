@@ -761,7 +761,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_shift_to_armaments_production
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = infantry_weapons
 			}
@@ -2130,18 +2130,18 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_increase_aircraft_production
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
 			add_tech_bonus = {
 				name = SOV_increase_aircraft_production
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = cat_air_engine
 			}add_tech_bonus = {
 				name = SOV_increase_aircraft_production
-				bonus = 0.75
+				bonus = 0.5
 				uses = 1
 				category = cat_air_engine
 			}
@@ -2314,7 +2314,7 @@ focus_tree = {
 		relative_position_id = SOV_increase_aircraft_production
 		cost = 3
 
-		mutually_exclusive = { focus = SOV_long_range_aircraft }
+		#mutually_exclusive = { focus = SOV_long_range_aircraft }
 
 		available = {
 
@@ -2345,7 +2345,7 @@ focus_tree = {
 		relative_position_id = SOV_intensify_pilot_training_program
 		cost = 3
 
-		mutually_exclusive = { focus = SOV_ground_support }
+		#mutually_exclusive = { focus = SOV_ground_support }
 
 		available = {
 
@@ -3971,7 +3971,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = SOV_superior_war_machines
-				bonus = 0.75
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}
@@ -4133,18 +4133,18 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_default
-					bonus = 0.75
+					bonus = 0.6
 					uses = 2
-					ahead_reduction = 2
+					ahead_reduction = 0.5
 					category = artillery
 				}
 			}
 			else  ={
 				add_tech_bonus = {
 					name = SOV_soviet_artillery_tech_bonus_name_alt
-					bonus = 0.75
+					bonus = 0.6
 					uses = 2
-					ahead_reduction = 2
+					ahead_reduction = 0.5
 					category = artillery
 				}
 			}
@@ -4384,7 +4384,7 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = SOV_pc_of_mortar_armament_name_default
-					bonus = 0.75
+					bonus = 0.2
 					uses = 2
 					category = artillery
 				}
@@ -4392,7 +4392,7 @@ focus_tree = {
 			else = { #ALT IDEOLOGY
 				add_tech_bonus = {
 					name = SOV_pc_of_mortar_armament_name_alt
-					bonus = 0.75
+					bonus = 0.2
 					uses = 2
 					category = artillery
 				}

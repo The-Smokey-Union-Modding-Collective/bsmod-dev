@@ -127,7 +127,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_royal_australian_artillery
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -214,7 +214,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = motorized_bonus
-				bonus = 1.00
+				bonus = 0.5
 				category = motorized_equipment
 			}
 		}
@@ -297,8 +297,8 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_specialize_equipment
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
@@ -410,7 +410,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_fund_owen_gun_research
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -447,7 +447,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = AST_sentinel_tank_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = armor
 			}

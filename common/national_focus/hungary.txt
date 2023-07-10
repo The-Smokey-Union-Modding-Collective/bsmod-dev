@@ -3802,8 +3802,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_light_fighter_effort
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 0.5
+				ahead_reduction = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -3886,8 +3886,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_tac_focus
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 0.5
+				ahead_reduction = 0.5
 				uses = 1
 				category = medium_air
 			}
@@ -4245,7 +4245,13 @@ focus_tree = {
 			add_tech_bonus = {
 				name = HUN_the_botond
 				bonus = 1.5
-				uses = 2
+				uses = 1
+				category = motorized_equipment
+			}
+			add_tech_bonus = {
+				name = HUN_the_botond
+				bonus = 0.5
+				uses = 1
 				category = motorized_equipment
 			}
 		}
@@ -4320,7 +4326,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_develop_tanks
-				ahead_reduction = 2
+				ahead_reduction = 0.5
 				uses = 1
 				category = armor
 			}
@@ -4429,7 +4435,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_armored_warfare
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
@@ -4544,7 +4550,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_danuvia_submachine_guns
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -4581,7 +4587,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = HUN_artillery_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = artillery
 			}
