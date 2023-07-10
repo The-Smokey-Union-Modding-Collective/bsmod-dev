@@ -102,8 +102,8 @@ SAF_military_industrial_complex = {
 		complete_effect = {
 			add_tech_bonus = {
 				name = SAF_native_design
-				ahead_reduction = 2
-				bonus = 1.25
+				ahead_reduction = 0.5
+				bonus = 0.6
 				uses = 1
 				technology = super_heavy_tank_chassis
 			}
