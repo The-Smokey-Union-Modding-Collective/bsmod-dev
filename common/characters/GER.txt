@@ -1316,7 +1316,31 @@ characters={
 			}
 		}
 	}
+	GER_wolfram_von_richthofen2 = {
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_wolfram_von_richthofen.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = GER_wolfram_von_richthofen2
+			allowed = {
+				original_tag = GER
+			}
 
+			ai_will_do = {
+				factor = 100
+			}			
+			cost = 100
+			
+			ai_will_do = {
+				factor = 5
+			}
+			
+			traits = { air_chief_ground_support_2 }
+		}
+	}
 
 	### MILITARY HIGH COMMAND ###
 
