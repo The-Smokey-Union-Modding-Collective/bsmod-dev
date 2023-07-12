@@ -3762,7 +3762,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_self_propelled_guns
-				bonus = 1
+				bonus = 0.25
 				uses = 3
 				category = artillery
 			}
@@ -14933,7 +14933,7 @@ focus_tree = {
 				# Balance research bonus to 2 techs in armor, also in event
 				add_tech_bonus = {
 					name = armor_bonus
-					bonus = 1.0
+					bonus = 0.5
 					uses = 2
 					category = armor
 				}
