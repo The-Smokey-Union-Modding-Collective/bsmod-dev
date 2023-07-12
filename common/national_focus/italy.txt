@@ -3465,7 +3465,7 @@ focus_tree = {
 
 			add_tech_bonus = {
 				name = ITA_italian_tankettes
-				bonus = 1.5
+				bonus = 0.75
 				uses = 1
 				category = cat_light_armor
 			}
