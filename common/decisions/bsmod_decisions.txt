@@ -270,3 +270,40 @@ ITA_greek_surrender_category = {
 #		}
 #	}
 #}
+
+economy_decisions = {
+
+	ITA_supplies_running_out = {
+		activation = {
+			has_country_flag = ITA_africa_supplies
+		}
+		available = {
+			always = no
+		}
+		cancel_trigger = {
+			has_war_with = SWE
+		}
+		icon = decision_generic_decision
+		days_mission_timeout = 730
+		complete_effect = {
+			add_political_power = 50
+		}
+		timeout_effect = {
+			663 = {
+				remove_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			451 = {
+				remove_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			450 = {
+				remove_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			448 = {
+				remove_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			remove_ideas = africa_supplies
+
+			clr_country_flag = ITA_africa_supplies
+		}
+	}
+}

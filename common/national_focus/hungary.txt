@@ -1218,7 +1218,7 @@ focus_tree = {
 		x = 5
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 100
@@ -1257,7 +1257,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_economic_intervention
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 90
@@ -1292,7 +1292,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_strengthen_fascists
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 60
@@ -1631,7 +1631,7 @@ focus_tree = {
 			NOT = { GER = { has_government = communism } }
 		}
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1668,7 +1668,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1767,7 +1767,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_renounce_the_treaty_of_trianon
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 40
@@ -1828,7 +1828,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = ROM
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1897,7 +1897,7 @@ focus_tree = {
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = CZE
 		will_lead_to_war_with = SLO
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 80
@@ -1991,7 +1991,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = HUN_reaffirm_territorial_claims
 		will_lead_to_war_with = YUG
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 70
@@ -2197,7 +2197,7 @@ focus_tree = {
 		y = 3
 		relative_position_id = HUN_reaffirm_territorial_claims
 
-		cost = 10
+		cost = 1
 
 		ai_will_do = {
 			factor = 80
@@ -2792,10 +2792,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_support_domestic_industry_IC
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2810,10 +2810,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = HUN_support_domestic_industry_IC
@@ -2943,7 +2943,7 @@ focus_tree = {
 		id = HUN_civilian_industry
 		icon = GFX_goal_generic_construct_civ_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_domestic_arms_industry }
+		#mutually_exclusive = { focus = HUN_domestic_arms_industry }
 		x = -1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -3188,7 +3188,7 @@ focus_tree = {
 		id = HUN_domestic_arms_industry
 		icon = GFX_goal_generic_construct_mil_factory
 		prerequisite = { focus = HUN_announce_the_gyor_program }
-		mutually_exclusive = { focus = HUN_civilian_industry }
+		#mutually_exclusive = { focus = HUN_civilian_industry }
 		x = 1
 		y = 1
 		relative_position_id = HUN_announce_the_gyor_program
@@ -3217,10 +3217,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_domestic_arms_industry_AF1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -3228,10 +3228,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = HUN_domestic_arms_industry_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}

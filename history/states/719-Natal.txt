@@ -1,10 +1,13 @@
-
 state={
-	id=681
-	name="STATE_681" # Cape
-	manpower = 1637178
-
+	id=719
+	name="STATE_719" # Natal
+	manpower = 3962157
+	resources={
+		chromium=60 # was: 116
+	}
+	
 	state_category = city
+
 
 	history={
 		owner = SAF
@@ -13,18 +16,24 @@ state={
 			industrial_complex = 3
 			arms_factory = 2
 			air_base = 1
-			12589 = {
-				naval_base = 4
+			1468 = {
+				naval_base = 2
+			}
+			4696 = {
+				naval_base = 2
 			}
 		}
 		victory_points = {
-			12589 10 
+			1468 3 
+		}
+		victory_points = {
+			4696 1 
 		}
 		add_core_of = SAF
 	}
 
 	provinces={
-		1509 4528 4822 5203 10415 10442 10697 12419 12547 12589 12692 
+		1468 1494 1833 4556 4584 4696 7576 7900 8178 
 	}
 
 	local_supplies=0.0 

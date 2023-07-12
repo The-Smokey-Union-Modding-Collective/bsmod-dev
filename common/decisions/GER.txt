@@ -101,6 +101,7 @@ GER_operations_category = {
 				738 = {
 					remove_dynamic_modifier = { modifier = peace_time_resources }
 				}
+				ITA = { country_event = { days = 2 id = tank_explanataions.2 } }
 			}
 		}
 	}

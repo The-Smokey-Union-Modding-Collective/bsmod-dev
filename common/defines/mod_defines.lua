@@ -22,6 +22,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 30	--vanilla = 50 Base max efficiency for factories expressed in %.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
 NDefines.NProduction.BASE_FACTORY_SPEED = 5					--vanilla=5

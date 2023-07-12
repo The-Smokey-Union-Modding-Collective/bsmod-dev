@@ -2,7 +2,7 @@ technologies = {
 
 	basic_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
 		
 		path = {
 			leads_to_tech = transportation_tech
@@ -272,7 +272,7 @@ technologies = {
 	#Machine tools branch	
 	improved_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.1
+		production_factory_max_efficiency_factor = 0.15
 
 		path = {
 			leads_to_tech = transportation_tech_2 
@@ -547,7 +547,7 @@ technologies = {
 
 	advanced_machine_tools = {
 	
-		production_factory_max_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.2
 		
 		path = {
 			leads_to_tech = transportation_tech_3
@@ -822,7 +822,7 @@ technologies = {
 
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.25
 		
 		#path = {
 		#	leads_to_tech = improved_machine_tools 
