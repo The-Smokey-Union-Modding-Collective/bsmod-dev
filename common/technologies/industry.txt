@@ -24,7 +24,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -294,7 +294,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1938
 		
 		folder = {
@@ -569,7 +569,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1940
 		
 		folder = {
@@ -849,7 +849,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1942
 		
 		folder = {
