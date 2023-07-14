@@ -14897,7 +14897,6 @@ focus_tree = {
 				uses = 2
 				category = electronics
 				category = rocketry
-				category = nuclear
 			}
 		}
 	}

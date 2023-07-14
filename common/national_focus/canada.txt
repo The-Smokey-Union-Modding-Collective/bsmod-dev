@@ -1585,7 +1585,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_uranium_mining
-				bonus = 1.0
+				bonus = 0.2
 				uses = 2
 				category = nuclear
 			}	
