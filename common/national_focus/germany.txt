@@ -9043,8 +9043,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = GER_the_mannheim_project
-					bonus = 1.0
-					ahead_reduction = 2
+					bonus = 0.2
+					#ahead_reduction = 2
 					technology = atomic_research
 				}
 			}
@@ -9055,8 +9055,8 @@ focus_tree = {
 				}
 				add_tech_bonus = {
 					name = GER_the_mannheim_project
-					bonus = 1.0
-					ahead_reduction = 2
+					bonus = 0.2
+					#ahead_reduction = 2
 					technology = nuclear_reactor
 				}
 			}
