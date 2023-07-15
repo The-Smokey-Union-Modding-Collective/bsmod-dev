@@ -114,7 +114,23 @@ characters={
 			legacy_id=1
 		}
 	}
-
+	GER_Leo_Chan ={
+		name=GER_Leo_Chan
+		portraits={
+			army={
+				large=GFX_portrait_GermanyGER_Leo_Chan
+			}
+		}
+		field_marshal={
+			traits={ armor_officer brilliant_strategist harsh_leader inflexible_strategist}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 	GER_gunther_von_kluge={
 		name=GER_gunther_von_kluge
 		portraits={
@@ -143,7 +159,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ trait_cautious armor_officer inflexible_strategist}
 			skill=1
 			attack_skill=1
 			defense_skill=1
