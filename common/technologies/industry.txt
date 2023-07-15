@@ -24,7 +24,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1936
 		folder = {
 			name = industry_folder
@@ -294,7 +294,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 1.5
+		research_cost = 2.5
 		start_year = 1938
 		
 		folder = {
@@ -434,8 +434,8 @@ technologies = {
 
 	concentrated_industry2 = {
 
-		industrial_capacity_factory = 0.1
-		industrial_capacity_dockyard = 0.1
+		industrial_capacity_factory = 0.15
+		industrial_capacity_dockyard = 0.15
 		
 		path = {
 			leads_to_tech = advanced_machine_tools
@@ -569,7 +569,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1940
 		
 		folder = {
@@ -822,7 +822,7 @@ technologies = {
 
 	assembly_line_production = {
 	
-		production_factory_max_efficiency_factor = 0.15
+		production_factory_max_efficiency_factor = 0.20
 		
 		#path = {
 		#	leads_to_tech = improved_machine_tools 
@@ -849,7 +849,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 		
-		research_cost = 2
+		research_cost = 3.5
 		start_year = 1942
 		
 		folder = {

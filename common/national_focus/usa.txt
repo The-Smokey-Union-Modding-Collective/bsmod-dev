@@ -1797,13 +1797,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}

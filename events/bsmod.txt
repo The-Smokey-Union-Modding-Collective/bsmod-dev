@@ -13,3 +13,34 @@ country_event  = {
 		add_political_power = 1
 	}
 }
+
+country_event  = {
+	id = tank_explanataions.2
+	title = tank_explanataions.2.t
+	desc = tank_explanataions.2.d
+	picture = GFX_report_event_german_troops
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = tank_explanataions.2.a
+		
+		add_ideas = africa_supplies
+
+		hidden_effect = {
+			663 = {
+				add_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			451 = {
+				add_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			450 = {
+				add_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			448 = {
+				add_dynamic_modifier = { modifier = local_stockpiles }
+			}
+			set_country_flag = ITA_africa_supplies
+		}
+	}
+}

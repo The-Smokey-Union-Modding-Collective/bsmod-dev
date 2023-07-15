@@ -2681,7 +2681,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = SPA_the_army_of_africa_model
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2707,7 +2707,7 @@ focus_tree = {
 		x = -1
 		y = 1
 		relative_position_id = SPA_equipment_modernization
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -2919,7 +2919,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_join_the_axis
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY FOCUS_FILTER_RESEARCH}
@@ -2965,7 +2965,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SPA_fascist_economic_aid
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3229,7 +3229,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_support_the_war_industry
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3295,7 +3295,7 @@ focus_tree = {
 		x = 6
 		y = 1
 		relative_position_id = SPA_the_national_syndicalist_state
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_INDUSTRY}
@@ -3462,7 +3462,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = SPA_spanish_austerity
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -3491,7 +3491,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_spanish_austerity
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 
@@ -3512,7 +3512,7 @@ focus_tree = {
 		x = 0
 		y = 2
 		relative_position_id = SPA_expand_the_axis_gold_trade
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 

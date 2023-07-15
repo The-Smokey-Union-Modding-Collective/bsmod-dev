@@ -86,6 +86,17 @@
 				uses = 1
 				category = military_police_tech
 			}
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = JAP
+			}
 		}
 	}
 	

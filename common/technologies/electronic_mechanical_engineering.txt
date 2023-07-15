@@ -448,7 +448,6 @@ technologies = {
 		# small boost to research speed
 		research_speed_factor = 0.2
 		enable_equipment_modules = {
-			stabilizer
 			bomb_sights_2
 		}
 		path = {
@@ -1158,7 +1157,7 @@ technologies = {
 	
 	atomic_research = {
 
-		research_speed_factor = 0.25
+		research_speed_factor = 0.15
 		
 		path = {
 			leads_to_tech = nuclear_reactor 
