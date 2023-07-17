@@ -21,6 +21,25 @@ ideas = {
 			}
 		}
 
+		soviet_africa_debuff = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_fascism_drift_2
+
+			modifier = {
+				industrial_capacity_factory = -0.15
+			}
+		}
+
 		allies_won_africa = {
 			
 			allowed = {
@@ -57,7 +76,7 @@ ideas = {
 			picture = generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				industrial_capacity_factory = 0.05
 				local_resources_factor = 0.10
 				base_fuel_gain_factor = 0.1
 			}
@@ -80,7 +99,7 @@ ideas = {
 			picture = generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.15
+				industrial_capacity_factory = 0.075
 				local_resources_factor = 0.10
 				base_fuel_gain_factor = 0.15
 			}
@@ -101,10 +120,10 @@ ideas = {
 			picture =generic_fascism_drift_2
 
 			modifier = {
-				industrial_capacity_factory = 0.20
+				industrial_capacity_factory = 0.10
 				consumer_goods_factor = -0.02
 				local_resources_factor = 0.15
-				base_fuel_gain_factor = 0.20
+				base_fuel_gain_factor = 0.15
 			}
 		}
 	}

@@ -56,13 +56,14 @@
  battle_for_africa_desc:0 "The war in africa may not be the ultimate goal but it has major strategic importance. Denying the British the easy ability to attack the southern axis as well as the resources that can be gained are key to winning the war."
  axis_won_africa_3:0 "Victory in Africa"
  axis_won_africa_3_desc:0 "All major locations in Egypt proper our ours, giving us strategic and economic benefits. Now, on to the Suez and Beyond!"
+ 
  #State mods/dynamic mods#
  mod_small_island:0 "Small Island"
  modifier_state_production_speed_air_base_factor:0 "§Y$air_base$§! construction speed"
  modifier_state_production_speed_air_base_factor_desc:0 "Modifies the speed of §Y$air_base$§! construction in this state." 
  peace_time_resources:0 "Extraction Difficulties"
  slowed_offensive:0 "Spanish Infrastructure"
-
+ #
  USA_arsenal_of_democracy_idea:0 "Arsenal of Democracy"
  USA_vast_america:0 "Vast American Industrial Base"
 
@@ -75,3 +76,8 @@
  FRA_incompetent_high_command:0 "Incompetent High Command"
  GER_westwall:0 "Westwall"
  africa_supplies:0 "Prepared Stockpiles"
+ soviet_africa_debuff:0 "Axis Mediterranean Dominance"
+ preparing_for_war:0 "Preparing For War"
+ prepare_for_war_decision:0 "Prepare For War"
+ prepare_for_war_decision_desc:0 "The Axis are preparing to attack soon, we need equipment tooling to be our biggest priority!"
+ 

@@ -74,3 +74,38 @@ allies_lost_africa = {
 		remove_ideas = allies_won_africa
 	}
 }
+
+soviet_africa_check_up = {
+	if = {
+		limit = {
+			GER = {
+				has_idea = axis_won_africa_3
+			}
+		}
+		add_ideas = soviet_africa_debuff
+	}
+}
+
+soviet_africa_check_up = {
+	if = {
+		limit = {
+			GER = {
+				has_idea = axis_won_africa_3
+			}
+		}
+		add_ideas = soviet_africa_debuff
+	}
+}
+
+soviet_africa_check_down = {
+	if = {
+		limit = {
+			GER = {
+				NOT = {
+					has_idea = axis_won_africa_3
+				}
+			}
+		}
+		remove_ideas = soviet_africa_debuff
+	}
+}

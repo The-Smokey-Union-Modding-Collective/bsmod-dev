@@ -604,7 +604,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -821,7 +821,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -941,12 +941,10 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = british_arms_discount
 			add_tech_bonus = {
-				add_tech_bonus = {
-					name = SMLE_bonus
-					bonus = 0.75
-					uses = 2
-					category = infantry
-				}
+				name = SMLE_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
 			}
 		}
 	}

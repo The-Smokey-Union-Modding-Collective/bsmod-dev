@@ -118,6 +118,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 }
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0 --vanilla 1.0
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75 --vanilla 0.75
+NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false --vanilla true
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
