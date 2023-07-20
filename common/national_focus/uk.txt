@@ -2838,7 +2838,7 @@ focus_tree = {
 					instant_build = yes
 				}
 			}
-			835 = {
+			909 = {
 				set_building_level = {
 					type = coastal_bunker
 					level = 5
@@ -2852,7 +2852,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 1
 					instant_build = yes
 				}
 			}
