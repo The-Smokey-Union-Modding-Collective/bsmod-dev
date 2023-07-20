@@ -806,7 +806,7 @@ focus = {
 			SAF_industry_construction_speed_modifier = 0.05
 		}
 		add_to_variable = {
-			SAF_industry_industrial_capacity_factory_modifier = 0.05
+			SAF_industry_industrial_capacity_factory_modifier = 0.07
 		}
 		add_to_variable = {
 			SAF_industry_production_efficiency_max_modifier = 0.05
@@ -887,7 +887,7 @@ focus = {
 	completion_reward = {
 		add_war_support = 0.2
 		add_to_variable = {
-			 SAF_industry_production_efficiency_max_modifier = 0.09
+			 SAF_industry_production_efficiency_max_modifier = 0.11
 		}
 		add_to_variable = {
 			SAF_production_speed_arms_factory_factor_var = 0.05
