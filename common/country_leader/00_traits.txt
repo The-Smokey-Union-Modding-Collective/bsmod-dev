@@ -5742,7 +5742,7 @@ leader_traits = {
 				naval_range = 0.05
 			}
 			capital_ship = {
-				armor_value = 0.3
+				armor_value = 0.15
 				hg_attack = 0.1
 				hg_armor_piercing = 0.1
 				build_cost_ic = -0.1
@@ -5768,7 +5768,7 @@ leader_traits = {
 		equipment_bonus = {
 			capital_ship = {
 				hg_attack = 0.15
-				hg_armor_piercing = 0.1
+				hg_armor_piercing = 0.20
 				lg_attack = 0.1
 				build_cost_ic = -0.1
 			}
@@ -5777,7 +5777,8 @@ leader_traits = {
 				sub_detection = -0.25
 				hg_attack = 0.15
 				hg_armor_piercing = 0.1
-				lg_attack = 0.1
+				lg_attack = 0.15
+				lg_armor_piercing = 0.15
 				build_cost_ic = -0.1
 			}
 		}
@@ -5800,11 +5801,14 @@ leader_traits = {
 				surface_visibility = -0.1 
 				naval_speed = 0.1
 				armor_value = 0.1 
+				lg_attack = 0.1
+				lg_armor_piercing = 0.25
 				hg_attack = -0.1 
 				build_cost_ic = -0.1
 			}
 			screen_ship = {
 				surface_visibility = -0.1 
+				max_strength = 0.2
 				naval_speed = 0.1 
 				build_cost_ic = -0.1
 			}
@@ -5844,14 +5848,14 @@ leader_traits = {
 				armor_value = 0.2
 				max_strength = 0.1
 				naval_range = -0.25 
-				naval_speed = 0.1
+				naval_speed = 0.15
 				build_cost_ic = -0.1
 			}
 			screen_ship = {
 				armor_value = 0.2
 				max_strength = 0.1
 				naval_range = -0.25 
-				naval_speed = 0.1
+				naval_speed = 0.15
 				build_cost_ic = -0.1
 			}
 		}

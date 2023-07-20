@@ -181,6 +181,9 @@ on_actions = {
 
 	on_startup = {
 		effect = {
+			909 = {
+				add_dynamic_modifier = { modifier = peace_time_resources }
+			}
 			672 = {
 				add_dynamic_modifier = { modifier = peace_time_resources }
 			}

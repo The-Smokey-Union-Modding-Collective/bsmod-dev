@@ -3491,8 +3491,8 @@ focus_tree = {
 			unlock_decision_tooltip = GER_unternehmen_weseruebung
 			add_tech_bonus = {
 				name = tp_bonus
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 0.5
+				#ahead_reduction = 2
 				uses = 1
 				category = tp_tech
 			}
