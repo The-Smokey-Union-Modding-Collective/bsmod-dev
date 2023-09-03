@@ -7725,10 +7725,7 @@ spriteTypes = {
 
 ### Plane Designer Tech Tree Icons ###
 
-	SpriteType = {
-		name = "GFX_aa_lmg_medium"
-		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
-	}
+	
 	SpriteType = {
 		name = "GFX_aa_hmg_medium"
 		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_2.dds"
@@ -7776,5 +7773,14 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_aircraft_construction_medium"
 		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
+	}
+	### new CAS Tech
+	SpriteType = {
+		name = "GFX_improved_cas_weapons_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_cas_weapons_medium"
+		texturefile = "gfx/interface/technologies/bba_tech_aa_mg_1.dds"
 	}
 }

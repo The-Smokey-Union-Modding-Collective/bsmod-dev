@@ -755,7 +755,12 @@ technologies = {
 			leads_to_tech = photo_reconnaisance
 			research_cost_coeff = 1
 		}
-		
+
+		path = {
+			leads_to_tech = improved_cas_weapons
+			research_cost_coeff = 1
+		}
+
 		categories = {
 			air_equipment
 			plane_modules_tech
@@ -772,6 +777,66 @@ technologies = {
 				}
 				factor = 5
 			}
+		}
+	}
+	improved_cas_weapons = {
+
+		enable_equipment_modules = {
+			tank_buster_1
+		}
+		
+		research_cost = 1
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 5 }
+		}
+
+		path = {
+			leads_to_tech = advanced_cas_weapons
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	advanced_cas_weapons= {
+
+		enable_equipment_modules = {
+			tank_buster_2
+			rocket_rails
+		}
+		
+		research_cost = 1
+		start_year = 1940
+
+		folder = {
+			name = bba_air_techs_folder
+			position = { x = 0 y = 7 }
+		}
+
+		path = {
+			leads_to_tech = advanced_cas_weapons
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_equipment
+			plane_modules_tech
+			cat_air_bombs
+		}
+		
+		ai_will_do = {
+			factor = 1
 		}
 	}
 
