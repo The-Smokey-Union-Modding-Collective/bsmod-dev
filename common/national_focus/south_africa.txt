@@ -3088,7 +3088,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_carrier_conversion_bb
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Ruler Class"
 			}
 			requested_factories = 1
@@ -3099,7 +3099,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_carrier_conversion_bb
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Ruler Class"
 			}
 			requested_factories = 1
@@ -3136,10 +3136,29 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
+		create_equipment_variant = {
+			name = "Crown Colony Class"
+			type = ship_hull_cruiser_3
+			name_group = ENG_CL_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_1
+				fixed_ship_radar_slot = empty
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				front_1_custom_slot = ship_anti_air_1
+				mid_1_custom_slot = ship_torpedo_1
+				mid_2_custom_slot = dp_ship_secondaries_2
+				rear_1_custom_slot = ship_light_medium_battery_2
+				rear_2_custom_slot = ship_anti_air_1
+			}
+		}
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_cruiser_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Crown Colony Class"
 			}
 			requested_factories = 1
@@ -3150,7 +3169,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_cruiser_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Crown Colony Class"
 			}
 			requested_factories = 1
@@ -3187,10 +3206,25 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
+		create_equipment_variant = {
+			name = "Tribal Class"
+			type = ship_hull_light_2
+			name_group = ENG_DD_HISTORICAL
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_2
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_light_battery_2
+				rear_1_custom_slot = ship_depth_charge_2
+			}
+		}
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3201,7 +3235,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3212,7 +3246,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3223,7 +3257,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3234,7 +3268,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3245,7 +3279,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3256,7 +3290,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Tribal Class"
 			}
 			requested_factories = 1
@@ -3315,7 +3349,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_carrier_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Majestic Class"
 			}
 			requested_factories = 1
@@ -3325,7 +3359,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_carrier_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Majestic Class"
 			}
 			requested_factories = 1
@@ -3354,7 +3388,7 @@ focus = {
 
 	}
 	
-	bypass = {
+	bypass = {  
 
 	}
 
@@ -3449,11 +3483,26 @@ focus = {
 			 idea = SAF_fleet_modernization
 			 days = 365
 		}
-
+		create_equipment_variant = {
+			name = "E/F/G/H Class"
+			type = ship_hull_light_2
+			name_group = ENG_DD_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = dp_light_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_sonar_1
+				fixed_ship_engine_slot = light_ship_engine_2
+				fixed_ship_torpedo_slot = ship_torpedo_1
+				mid_1_custom_slot = ship_torpedo_1
+				rear_1_custom_slot = ship_depth_charge_1
+			}
+		}
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3464,7 +3513,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3475,7 +3524,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3486,7 +3535,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3497,7 +3546,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3508,7 +3557,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3519,7 +3568,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3530,7 +3579,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3541,7 +3590,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3552,7 +3601,7 @@ focus = {
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_light_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "E/F/G/H Class"
 			}
 			requested_factories = 1
@@ -3589,10 +3638,29 @@ focus = {
 	available_if_capitulated = yes
 
 	completion_reward = {
+		create_equipment_variant = {
+			name = "Repulse Class"
+			type = ship_hull_heavy_2
+			name_group = ENG_BC_HISTORICAL
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_heavy_battery_3
+				fixed_ship_anti_air_slot = ship_anti_air_3
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_3
+				fixed_ship_radar_slot = ship_radar_3
+				fixed_ship_engine_slot = heavy_ship_engine_3
+				fixed_ship_secondaries_slot = dp_ship_secondaries_3
+				fixed_ship_armor_slot = ship_armor_bc_3
+				front_1_custom_slot = ship_heavy_battery_3
+				mid_1_custom_slot = ship_anti_air_3
+				mid_2_custom_slot = dp_ship_secondaries_3
+				rear_1_custom_slot = ship_heavy_battery_3
+			}
+		}
 		add_equipment_production = {
 			equipment = {
 				type = ship_hull_heavy_2
-				creator = "CAN"
+				creator = "SAF"
 				version_name = "Repulse Class"
 			}
 			requested_factories = 1
