@@ -7777,4 +7777,13 @@ spriteTypes = {
 		name = "GFX_aircraft_construction_medium"
 		texturefile = "gfx/interface/technologies/bba_tech_aircraft_construction.dds"
 	}
+	### new CAS Tech
+	SpriteType = {
+		name = "GFX_improved_cas_weapons_medium"
+		texturefile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_1_icon.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_cas_weapons_medium"
+		texturefile = "gfx/interface/equipmentdesigner/planes/modules/airplane_tank_buster_2_icon.dds"
+	}
 }
