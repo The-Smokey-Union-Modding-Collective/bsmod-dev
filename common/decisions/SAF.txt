@@ -32,6 +32,7 @@ SAF_military_industrial_complex = {
 			has_completed_focus = SAF_quality_over_quantity
 		}
 		days_remove = 90
+		days_re_enable = 365
 		complete_effect = {
 
 				}
@@ -40,6 +41,7 @@ SAF_military_industrial_complex = {
 				SAF_industry_consumer_goods_modifier = -0.02
 			}
 			custom_effect_tooltip = SAF_politics_tt_17
+			
 		}
 	}
 	SAF_buy_shermans = {
