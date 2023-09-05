@@ -964,7 +964,7 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { battleship_adherent superior_tactician spotter }
+			traits = { battleship_adherent superior_tactician spotter green_water_expert }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -1000,7 +1000,7 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { gentlemanly superior_tactician }
+			traits = { gentlemanly superior_tactician green_water_expert }
 			skill = 3
 			attack_skill = 3
 			defense_skill = 2
@@ -1023,7 +1023,7 @@ characters = {
 		}
 		 
 		navy_leader = {
-			traits = { gentlemanly inshore_fighter }
+			traits = { gentlemanly inshore_fighter green_water_expert }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 2
@@ -1056,7 +1056,7 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { aviation_enthusiast blockade_runner }
+			traits = { aviation_enthusiast blockade_runner green_water_expert }
 			skill = 3
 			attack_skill = 2
 			defense_skill = 2
@@ -1092,7 +1092,7 @@ characters = {
 		}
 		
 		navy_leader = {
-			traits = { gunnery_expert battleship_adherent ironside }
+			traits = { gunnery_expert battleship_adherent ironside green_water_expert }
 			skill = 2
 			attack_skill = 3
 			defense_skill = 1
@@ -1126,7 +1126,7 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { bold navy_career_officer superior_tactician spotter }
+			traits = { bold navy_career_officer superior_tactician spotter green_water_expert }
 			skill = 2
 			attack_skill = 2
 			defense_skill = 1
@@ -1147,7 +1147,7 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { old_guard_navy bold fleet_protector }
+			traits = { old_guard_navy bold fleet_protector green_water_expert }
 			skill = 1
 			attack_skill = 1
 			defense_skill = 1
@@ -1171,7 +1171,7 @@ characters = {
 		}
 
 		navy_leader = {
-			traits = { cuts_corners seawolf silent_hunter } #Submarines, Human torpedos, Torpedo boats, etc.
+			traits = { cuts_corners seawolf silent_hunter green_water_expert } #Submarines, Human torpedos, Torpedo boats, etc.
 			skill = 3
 			attack_skill = 4
 			defense_skill = 1
