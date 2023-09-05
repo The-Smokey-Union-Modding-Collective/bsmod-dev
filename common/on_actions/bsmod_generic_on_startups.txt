@@ -227,4 +227,21 @@ on_actions = {
             }
         }
     }
+
+	#SIAM 
+	on_startup = {
+		effect = {
+			if = {
+				limit = {
+					SIA = { NOT = { is_ai = yes } } 
+				}
+			}
+			AST = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+			RAJ = {
+				add_offsite_building = { type = industrial_complex level = 2 }
+			}
+		}
+	}
 }

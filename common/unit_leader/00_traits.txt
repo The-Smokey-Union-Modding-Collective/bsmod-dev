@@ -218,8 +218,9 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = -0.20
-			org_loss_when_moving = -0.1
+			army_speed_factor = -0.1
+			defence = 0.15
+			breakthrough_factor = -0.15
 		}
 		
 		
@@ -250,8 +251,9 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = 0.20
-			org_loss_when_moving = 0.2
+			army_speed_factor = 0.1
+			defence = -0.15
+			breakthrough_factor = 0.15
 		}
 		
 		new_commander_weight = {
