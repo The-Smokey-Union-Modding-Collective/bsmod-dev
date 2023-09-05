@@ -1410,7 +1410,7 @@ equipment_modules = {
 			defense = 7
 		}
 		multiply_stats = {
-			maximum_speed = -0.1
+			maximum_speed = -0.2
 		}
 	}
 
