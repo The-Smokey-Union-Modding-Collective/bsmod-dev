@@ -849,7 +849,7 @@ equipment_modules = {
 		abbreviation = "rk1"
 		category = tank_rocket_module
 		sfx = sfx_ui_sd_module_turret
-
+		forbid_equipment_type = artillery
 		add_stats = {
 			soft_attack = 10
 			maximum_speed = -0.3
@@ -857,7 +857,7 @@ equipment_modules = {
 			build_cost_ic = 1.5
 		}
 		multiply_stats = {
-			supply_consumption_factor = 0.1
+			supply_consumption_factor = 0.05
 		}
 		build_cost_resources = {
 			chromium = 1
@@ -870,6 +870,7 @@ equipment_modules = {
 		category = tank_rocket_module
 		sfx = sfx_ui_sd_module_turret
 		parent = tank_rocket_launcher
+		forbid_equipment_type = artillery
 		add_stats = {
 			soft_attack = 15
 			maximum_speed = -0.3
@@ -877,7 +878,7 @@ equipment_modules = {
 			build_cost_ic = 2
 		}
 		multiply_stats = {
-			supply_consumption_factor = 0.1
+			supply_consumption_factor = 0.05
 		}
 		build_cost_resources = {
 			chromium = 1
