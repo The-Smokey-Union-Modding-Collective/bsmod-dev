@@ -935,7 +935,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = electronics_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = electronics
 			}
@@ -1040,8 +1040,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = secret_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.6
+				uses = 2
 				category = nuclear
 				category = rocketry
 			}
