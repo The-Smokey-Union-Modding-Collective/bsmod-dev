@@ -32,7 +32,7 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1000
+		manpower = 750
 
 		#Misc Abilities
 		training_time = 90
@@ -110,7 +110,7 @@ sub_units = {
 		max_organisation = 60
 		default_morale = 0.3
 		maximum_speed = 0.6
-		manpower = 1000
+		manpower = 750
 
 		#Misc Abilities
 		training_time = 90
@@ -189,7 +189,7 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 70
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 90
@@ -271,7 +271,7 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 70
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 90
@@ -350,7 +350,7 @@ sub_units = {
 		max_strength = 20
 		max_organisation = 70
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 90
@@ -429,7 +429,7 @@ sub_units = {
 		max_strength = 22
 		max_organisation = 70
 		default_morale = 0.4
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 90
@@ -506,7 +506,7 @@ sub_units = {
 		max_strength = 25
 		max_organisation = 60
 		default_morale = 0.30
-		manpower = 1200
+		manpower = 1000
 
 		#Offensive Abilities
 		soft_attack = 0.05
@@ -592,7 +592,7 @@ sub_units = {
 		max_strength = 35
 		max_organisation = 60
 		default_morale = 0.3
-		manpower = 1200
+		manpower = 1100
 
 		#Misc Abilities
 		training_time = 90
@@ -798,7 +798,7 @@ sub_units = {
 		max_strength = 30 # reg inf 25
 		max_organisation = 45 # reg inf 60
 		default_morale = 0.2 #  reg inf 0.3
-		manpower = 1000
+		manpower = 850
 
 		#Misc Abilities
 		training_time = 30 # was 75  # reg inf 90
@@ -883,7 +883,7 @@ sub_units = {
 		max_strength = 22
 		max_organisation = 45 #reg infantry 60
 		default_morale = 0.1
-		manpower = 1000
+		manpower = 700
 
 		#Misc Abilities
 		training_time = 80 #reg infantry 90

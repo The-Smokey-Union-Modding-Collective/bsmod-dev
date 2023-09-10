@@ -20,6 +20,12 @@ technologies = {
 			leads_to_tech = interwar_antiair
 			research_cost_coeff = 1
 		}
+
+		path = {
+			leads_to_tech = rocket_artillery
+			research_cost_coeff = 1
+		}
+
 		enable_equipment_modules = {
 			ship_anti_air_1
 			tank_small_cannon
@@ -206,11 +212,6 @@ technologies = {
 
 		path = {
 			leads_to_tech = artillery3
-			research_cost_coeff = 1
-		}
-
-		path = {
-			leads_to_tech = rocket_artillery
 			research_cost_coeff = 1
 		}
 
@@ -452,6 +453,9 @@ technologies = {
 #		enable_subunits = {
 #			rocket_artillery_brigade
 #		}
+		sub_technologies = {
+			motorized_rocket_unit
+		}
 
 		enable_equipment_modules = {
 			tank_rocket_launcher
@@ -462,7 +466,7 @@ technologies = {
 			research_cost_coeff = 1
 		}
 
-		research_cost = 2
+		research_cost = 3
 
 		start_year = 1940
 
@@ -1432,4 +1436,33 @@ technologies = {
 		}
 	}
 
+	motorized_rocket_unit = {
+
+		allowed = {
+			has_tech = motorised_infantry
+		}
+
+		enable_subunits = {
+			motorized_rocket_brigade
+		}
+		enable_equipments = {
+			motorized_rocket_equipment_1
+		}
+	
+		research_cost = 1.5
+		start_year = 1939
+		
+		ai_will_do = {
+			factor = 1
+			
+			modifier = {
+				factor = 2
+				tag = SOV
+			}
+		}
+		
+		categories = {
+			mot_rockets
+		}
+	}
 }
