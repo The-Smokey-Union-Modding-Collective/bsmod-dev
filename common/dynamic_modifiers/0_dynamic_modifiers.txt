@@ -1283,5 +1283,5 @@ local_stockpiles = {
 	enable = { always = yes }
 	icon = GFX_MODIFIER_NO_SUPPLY_GRACE
 
-	local_supplies = 0.5
+	local_supplies = 2.5
 }
