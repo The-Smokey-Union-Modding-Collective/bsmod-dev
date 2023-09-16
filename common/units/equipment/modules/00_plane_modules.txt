@@ -950,7 +950,7 @@ equipment_modules = {
 				port_strike
 			}
 			add_stats = {
-				air_agility = -15
+				air_agility = -6
 				weight = 8
 				naval_strike_attack = 17
 			}

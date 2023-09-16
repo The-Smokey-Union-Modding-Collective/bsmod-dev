@@ -1447,6 +1447,7 @@ technologies = {
 	
 		research_cost = 1.5
 		start_year = 1939
+		sub_tech_index = 0
 		
 		ai_will_do = {
 			factor = 1
