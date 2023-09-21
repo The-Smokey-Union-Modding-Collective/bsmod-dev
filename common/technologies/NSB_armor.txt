@@ -424,6 +424,10 @@ technologies = {
 			light_tank_aa_chassis_3
 		}
 
+		enable_equipment_modules = {
+			stabilizer
+		}
+
 		path = {
 			leads_to_tech = main_battle_tank_chassis
 			research_cost_coeff = 1
@@ -576,6 +580,10 @@ technologies = {
 			medium_tank_destroyer_chassis_2
 			medium_tank_artillery_chassis_2
 			medium_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			stabilizer
 		}
 
 		path = {
@@ -828,6 +836,10 @@ technologies = {
 			heavy_tank_destroyer_chassis_2
 			heavy_tank_artillery_chassis_2
 			heavy_tank_aa_chassis_2
+		}
+
+		enable_equipment_modules = {
+			stabilizer
 		}
 
 		path = {

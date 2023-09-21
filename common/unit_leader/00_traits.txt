@@ -218,8 +218,9 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = -0.20
-			org_loss_when_moving = -0.1
+			army_speed_factor = -0.1
+			defence = 0.15
+			breakthrough_factor = -0.15
 		}
 		
 		
@@ -250,8 +251,9 @@ leader_traits = {
 		trait_type = personality_trait
 		
 		modifier = {
-			planning_speed = 0.20
-			org_loss_when_moving = 0.2
+			army_speed_factor = 0.1
+			defence = -0.15
+			breakthrough_factor = 0.15
 		}
 		
 		new_commander_weight = {
@@ -306,11 +308,11 @@ leader_traits = {
 		type = land
 		trait_type = personality_trait
 		
-		attack_skill = 1
 
 		modifier = {
 			army_morale_factor = -0.10
-		}
+			offence = 0.025	
+			}
 
 		new_commander_weight = {
 			factor = 1
@@ -707,10 +709,9 @@ leader_traits = {
 		cost = 1000
 		field_marshal_modifier = {
 			org_loss_when_moving = -0.30
+			offence = 0.025	
 		}
-		
-		attack_skill = 1
-		
+				
 		slot = army_chief
 		specialist_advisor_trait = army_chief_offensive_1
 		expert_advisor_trait = army_chief_offensive_2
@@ -1492,7 +1493,7 @@ leader_traits = {
 		cost = 700
 		modifier = {
 			fort = {
-				attack = 0.15
+				attack = 0.05
 			}
 		}
 		enable_ability = siege_artillery
@@ -2433,7 +2434,7 @@ leader_traits = {
 		modifier = {
 			water_fjords = {
 				attack = 0.1
-				movement = 0.1
+				#movement = 0.1
 				defence = 0.1
 			}
 		}
@@ -2456,7 +2457,7 @@ leader_traits = {
 		modifier = {
 			water_deep_ocean = {
 				attack = 0.1
-				movement = 0.1
+				#movement = 0.1
 				defence = 0.1
 			}
 		}
@@ -2484,7 +2485,7 @@ leader_traits = {
 		modifier = {
 			water_shallow_sea = {
 				attack = 0.1
-				movement = 0.1
+				#movement = 0.1
 				defence = 0.1
 			}
 		}

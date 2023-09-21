@@ -37,8 +37,8 @@ sub_units = {
 		supply_consumption = 0.02
 		can_be_parachuted = yes
 
-		soft_attack = -0.15
-		hard_attack = -0.15
+		soft_attack = 0.1
+		hard_attack = 0.1
 		defense = -0.15
 		breakthrough = -0.15
 
@@ -110,10 +110,10 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.025
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
-		soft_attack = -0.05
-		hard_attack = -0.05
+		soft_attack = -0.1
+		hard_attack = -0.1
 		defense = -0.05
 		breakthrough = -0.05
 
@@ -171,10 +171,10 @@ sub_units = {
 		#Misc Abilities
 		weight = 0.1
 		supply_consumption = 0.03
-		can_be_parachuted = yes
+		can_be_parachuted = no
 
-		#soft_attack = 0.1
-		#hard_attack = 0.1
+		soft_attack = -0.1
+		hard_attack = -0.1
 		defense = 0.1
 		breakthrough = 0.1
 

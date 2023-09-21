@@ -14,7 +14,7 @@ allied_commonwealth_assistance_category = {
 				original_tag = CAN
 				original_tag = AST
 				original_tag = FRA
-				original_tag = SAF
+#				original_tag = SAF
 				original_tag = RAJ
 			}
 			custom_trigger_tooltip = {
@@ -72,7 +72,7 @@ allied_commonwealth_assistance_category = {
 		complete_effect = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = armor
 			}
@@ -107,7 +107,7 @@ allied_commonwealth_assistance_category = {
 		complete_effect = {
 			add_tech_bonus = {
 				name = infantry_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -139,7 +139,7 @@ allied_commonwealth_assistance_category = {
 		complete_effect = {
 			add_tech_bonus = {
 				name = truck_bonus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -179,6 +179,73 @@ allied_commonwealth_assistance_category = {
 				bonus = 0.5
 				uses = 2
 				category = cat_productivity_tech
+			}
+		}
+	}
+
+	learn_from_failure = {
+		icon = generic_prepare_civil_war
+
+		allowed = { 
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+			original_tag = FRA
+		}
+
+		available = {
+			has_capitulated = yes 
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 35
+
+		complete_effect = {
+			remove_ideas = FRA_incompetent_high_command
+		}
+	}
+
+	prepare_for_war_decision = {
+		icon = generic_prepare_civil_war
+
+		allowed = { 
+			OR = {
+				original_tag = CAN
+				original_tag = AST
+				original_tag = SAF
+				original_tag = RAJ
+			}
+		} 
+
+		fire_only_once = yes
+
+		visible = {
+		}
+
+		available = {
+			ROOT = {
+				is_in_faction_with = ENG
+			}
+			OR = {
+				has_tech = improved_medium_tank_chassis
+				has_tech = improved_heavy_tank_chassis
+				has_tech = advanced_light_tank_chassis
+			}
+		}
+
+		cancel_trigger = {
+		}
+
+		cost = 50
+
+		complete_effect = {
+			add_timed_idea = {
+				idea = preparing_for_war
+				days = 60
 			}
 		}
 	}

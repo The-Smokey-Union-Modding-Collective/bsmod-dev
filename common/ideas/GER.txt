@@ -37,10 +37,29 @@ ideas = {
 			removal_cost = -1
 
 			modifier = {
-				industrial_capacity_factory = 0.15
-				production_factory_max_efficiency_factor = 0.1
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.15
-				stability_weekly = -0.005
+				stability_weekly = -0.0035
+			}
+		}
+
+		GER_westwall = {
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = generic_wall_line
+
+			removal_cost = -1
+
+			modifier = {
+				army_core_attack_factor = 0.25
+				army_core_defence_factor = 0.25
 			}
 		}
 		
@@ -244,9 +263,10 @@ ideas = {
 			picture = generic_exploit_mines
 
 			modifier = {
-				production_speed_arms_factory_factor = 0.1
-				production_speed_dockyard_factor = 0.1
-				production_speed_industrial_complex_factor = 0.1
+				production_speed_arms_factory_factor = 0.15
+				production_speed_dockyard_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+				global_building_slots_factor = 0.15
 			}
 		}
 
@@ -267,6 +287,7 @@ ideas = {
 			modifier = {
 				production_speed_infrastructure_factor = 0.1
 				production_speed_rail_way_factor = 0.1
+				global_building_slots_factor = 0.25
 			}
 		}
 

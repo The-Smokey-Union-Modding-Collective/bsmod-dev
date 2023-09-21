@@ -862,7 +862,9 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				consumer_goods_factor = -0.05
-				global_building_slots = 0.1
+				global_building_slots = 0.35
+				production_speed_buildings_factor = 0.15
+				production_factory_efficiency_gain_factor = 0.1
 			}
 		}
 

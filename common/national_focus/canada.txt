@@ -359,7 +359,7 @@ focus_tree = {
 				all_owned_state = {
 					free_building_slots = {
 						building = arms_factory
-						size < 1
+						size < 3
 						include_locked = yes
 					}					
 				}
@@ -376,10 +376,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_retool_angus_shops_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -395,10 +395,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_retool_angus_shops_AF
@@ -506,6 +506,21 @@ focus_tree = {
 				limit = { has_government = fascism }
 				add_ideas = CAN_defence_of_canada_regulations_fascism
 			}
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 5
+				add_building_construction = {
+					type = arms_factory
+					level = 5
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -583,10 +598,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_department_of_munitions_and_supply_AF1
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -594,10 +609,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = CAN_department_of_munitions_and_supply_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -612,10 +627,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF1
@@ -628,10 +643,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = CAN_department_of_munitions_and_supply_AF2
@@ -929,7 +944,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -940,7 +955,7 @@ focus_tree = {
 				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -956,10 +971,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 1
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 1
 					instant_build = yes
 				}
 				set_state_flag = CAN_victory_aircraft_limited_AF1
@@ -1585,7 +1600,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_uranium_mining
-				bonus = 1.0
+				bonus = 0.2
 				uses = 2
 				category = nuclear
 			}	
@@ -1622,8 +1637,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_long_branch_arsenal
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
@@ -1933,8 +1948,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_canadian_infantry_corps
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = infantry_weapons
 				category = artillery
 			}
@@ -1971,8 +1986,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_cmp_truck
-				ahead_reduction = 2
-				bonus = 3.0
+				ahead_reduction = 1
+				bonus = 1.5
 				uses = 1
 				category = motorized_equipment
 			}
@@ -2055,7 +2070,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_royal_regiment_of_canadian_artillery
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -2299,8 +2314,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_the_valentine_tank
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = armor
 			}
 			add_tech_bonus = {
@@ -3807,7 +3822,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_we_have_the_hurricane
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -4115,7 +4130,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_fund_fairchilds_development
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = medium_air
 			}
@@ -4158,7 +4173,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = CAN_cookie_carriers
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = heavy_air
 			}

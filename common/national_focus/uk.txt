@@ -135,7 +135,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = maud_focus
-				bonus = 1.0
+				bonus = 0.2
 				uses = 1
 				category = nuclear
 			}
@@ -238,7 +238,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 2.0
+				bonus = 0.85
 				uses = 2
 				category = motorized_equipment
 			}
@@ -262,8 +262,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = armor_bonus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.75
+				uses = 2
 				category = armor
 			}
 		}
@@ -552,7 +552,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = air_defense_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -604,7 +604,7 @@ focus_tree = {
 		x = -2
 		y = 1
 		relative_position_id = limited_rearmament_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -623,7 +623,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = shadow_scheme_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}	
@@ -638,6 +638,54 @@ focus_tree = {
 				category = cat_production
 			}
 			activate_advisor = ENG_john_simon
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_in_home_area = yes
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 
@@ -649,7 +697,7 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 
 		available_if_capitulated = yes
 		search_filters = {FOCUS_FILTER_RESEARCH}
@@ -773,7 +821,7 @@ focus_tree = {
 		x = -1
 		y = 2
 		relative_position_id = uk_industrial_focus
-		cost = 10
+		cost = 5
 		ai_will_do = {
 			factor = 1
 		}
@@ -810,6 +858,12 @@ focus_tree = {
 
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.75
+				uses = 2
+				category = artillery
+			}
 			random_owned_controlled_state = {
 				limit = {
 					is_in_home_area = yes
@@ -877,7 +931,7 @@ focus_tree = {
 		x = 1
 		y = 1
 		relative_position_id = royal_ordinance_focus
-		cost = 10
+		cost = 3
 		ai_will_do = {
 			factor = 1
 		}
@@ -886,6 +940,12 @@ focus_tree = {
 		search_filters = {FOCUS_FILTER_INDUSTRY}
 		completion_reward = {
 			add_ideas = british_arms_discount
+			add_tech_bonus = {
+				name = SMLE_bonus
+				bonus = 0.75
+				uses = 2
+				category = infantry_weapons
+			}
 		}
 	}
 	focus = {
@@ -918,7 +978,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = UK_secret_focus
-				bonus = 1.0
+				bonus = 0.2
 				uses = 1
 				category = nuclear
 			}
@@ -1182,12 +1242,12 @@ focus_tree = {
 		completion_reward = {
 			air_experience = 25
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.80
 				uses = 1
 				category = cat_air_engine
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.55
 				uses = 1
 				category = light_air
 			}
@@ -1276,12 +1336,12 @@ focus_tree = {
 		completion_reward = {
 			add_ideas = british_fighter_discount
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.80
 				uses = 1
 				category = cat_air_engine
 			}
 			add_tech_bonus = {
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = light_air
 			}
@@ -1970,19 +2030,19 @@ focus_tree = {
 			118 = {
 				set_building_level = {
 					type = coastal_bunker
-					level = 5
+					level = 2
 					province = 4135
 					instant_build = yes
 				}
 				set_building_level = {
 					type = coastal_bunker
-					level = 5
+					level = 2
 					province = 13228
 					instant_build = yes
 				}
 				set_building_level = {
 					type = radar_station
-					level = 5
+					level = 3
 					instant_build = yes
 				}
 				set_building_level = {
@@ -1992,7 +2052,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
@@ -2758,13 +2818,13 @@ focus_tree = {
 			116 = {
 				set_building_level = {
 					type = coastal_bunker
-					level = 5
+					level = 2
 					province = 12003
 					instant_build = yes
 				}
 				set_building_level = {
 					type = radar_station
-					level = 5
+					level = 2
 					instant_build = yes
 				}
 				set_building_level = {
@@ -2774,14 +2834,14 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 5
 					instant_build = yes
 				}
 			}
-			835 = {
+			909 = {
 				set_building_level = {
 					type = coastal_bunker
-					level = 5
+					level = 2
 					province = 5214
 					instant_build = yes
 				}
@@ -2792,7 +2852,7 @@ focus_tree = {
 				}
 				set_building_level = {
 					type = air_base
-					level = 10
+					level = 1
 					instant_build = yes
 				}
 			}
@@ -7498,18 +7558,18 @@ focus_tree = {
 			    target = SAF
 			    transfer_troops = yes
 			}
-			if = {
-				limit = {
-					SAF = { has_completed_focus = SAF_police_windhoek }
-				}
-				every_state = {
-					limit = {
-						is_core_of = SAF
-						NOT = { state = 275 }
-					}
-					add_core_of = ENG
-				}
-			}
+#			if = {
+#				limit = {
+#					SAF = { has_completed_focus = SAF_police_windhoek }
+#				}
+#				every_state = {
+#					limit = {
+#						is_core_of = SAF
+#						NOT = { state = 275 }
+#					}
+#					add_core_of = ENG
+#				}
+#			}
 			if = {
 				limit = {
 					RAJ = { has_country_flag = ENG_accepted_federation }

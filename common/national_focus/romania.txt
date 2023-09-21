@@ -374,6 +374,10 @@ focus_tree = {
 			factor = 1
 		}
 
+		allow_branch = {
+			ROM = { has_focus_tree = generic_focus }
+		}
+
 		available = {
 			OR = {
 				is_in_faction = no
@@ -889,7 +893,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -916,18 +920,18 @@ focus_tree = {
 				category = cat_production
 			}
 			46 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
 			81 = {
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -959,7 +963,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_preserve_greater_romania
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 20
@@ -1048,7 +1052,7 @@ focus_tree = {
 		y = 1
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1098,7 +1102,7 @@ focus_tree = {
 		y = 2
 		relative_position_id = ROM_civil_works
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -1236,7 +1240,7 @@ focus_tree = {
 
 
 		completion_reward = {
-			country_event = DOD_romania.120
+			#country_event = DOD_romania.120
 			81 = {
 				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
@@ -3530,16 +3534,16 @@ focus = {
 				}
 				add_tech_bonus = {
 					name = ROM_iar_80
-					bonus = 1.0
-					ahead_reduction = 2
+					bonus = 0.5
+					ahead_reduction = 0.5
 					uses = 1
 					category = light_air
 				}
 				else = {
 					add_tech_bonus = {
 						name = ROM_iar_80
-						bonus = 1.0
-						ahead_reduction = 2
+						bonus = 0.6
+						ahead_reduction = 0.5
 						uses = 1
 						category = light_air
 					}
@@ -3667,7 +3671,7 @@ focus = {
 		x = 32
 		y = 0
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -3698,7 +3702,7 @@ focus = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3742,7 +3746,7 @@ focus = {
 		y = 1
 		relative_position_id = ROM_army_war_college
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -3763,7 +3767,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_zb_53
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = infantry_weapons
 			}
@@ -3871,7 +3875,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_artillery_modernization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -3882,7 +3886,7 @@ focus = {
 		id = ROM_modern_at_guns
 		icon = GFX_goal_generic_army_artillery
 		prerequisite = { focus = ROM_artillery_modernization }
-		mutually_exclusive = { focus = ROM_mobile_tank_destroyers }
+		#mutually_exclusive = { focus = ROM_mobile_tank_destroyers }
 		x = 1
 		y = 2
 		relative_position_id = ROM_the_zb_53
@@ -3908,7 +3912,7 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_modern_at_guns
-				bonus = 1.0
+				bonus = 0.75
 				uses = 2
 				category = cat_anti_tank
 			}
@@ -3956,7 +3960,7 @@ focus = {
 		y = 1
 		relative_position_id = ROM_army_maneuvers
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 9
@@ -4048,7 +4052,7 @@ focus = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 5
@@ -4080,7 +4084,7 @@ focus = {
 		y = 1
 		relative_position_id = ROM_royal_guards_divisions
 
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -4261,6 +4265,13 @@ focus = {
 
 		completion_reward = {
 			add_ideas = ROM_acquire_modern_tanks
+			add_tech_bonus = {
+				name = ROM_the_maresal
+				bonus = 0.5
+				#ahead_reduction = 0.5
+				uses = 1
+				category = armor
+			}
 		}
 	}
 
@@ -4269,7 +4280,7 @@ focus = {
 		icon = GFX_goal_generic_build_tank
 		prerequisite = { focus = ROM_acquire_modern_tanks }
 		prerequisite = { focus = ROM_artillery_modernization }
-		mutually_exclusive = { focus = ROM_modern_at_guns }
+		#mutually_exclusive = { focus = ROM_modern_at_guns }
 		x = 0
 		y = 1
 		relative_position_id = ROM_acquire_modern_tanks
@@ -4327,10 +4338,10 @@ focus = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = ROM_the_maresal
-				bonus = 1.0
-				ahead_reduction = 2
+				bonus = 0.75
+				ahead_reduction = 0.1
 				uses = 1
-				category = cat_heavy_armor
+				category = armor
 			}
 		}
 	}

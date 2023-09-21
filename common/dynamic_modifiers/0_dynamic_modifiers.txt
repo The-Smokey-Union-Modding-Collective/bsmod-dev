@@ -1455,3 +1455,10 @@ peace_time_resources = {
 
 	state_resources_factor = -0.8
 }
+
+local_stockpiles = {
+	enable = { always = yes }
+	icon = GFX_MODIFIER_NO_SUPPLY_GRACE
+
+	local_supplies = 2.5
+}

@@ -268,7 +268,7 @@ country_event = {
 		}
 		set_global_flag = fall_of_france
 		save_global_event_target_as = free_france
-		GER = { country_event = { id = france.14 days = 25 }
+		GER = { country_event = { id = france.14 days = 5 }
 		custom_effect_tooltip = france.10.b_tt
 	}
 	# option = { # Ask for British Union

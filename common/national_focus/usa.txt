@@ -1797,13 +1797,13 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}
 			add_tech_bonus = {
 				name = USA_manhattan_project
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = nuclear
 			}
@@ -2139,6 +2139,10 @@ focus_tree = {
 				bonus = 1.0
 				uses = 2
 				category = cat_production
+			}
+			swap_ideas = {
+				remove_idea = USA_arsenal_of_democracy_idea
+				add_idea = USA_arsenal_of_democracy_idea_2
 			}
 		}
 	}
@@ -5172,7 +5176,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_support_rock_island
 				uses = 2
-				bonus = 1.0
+				bonus = 0.75
 				category = artillery
 			}
 		}
@@ -5206,7 +5210,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 1
-				bonus = 1.0
+				bonus = 0.5
 				category = armor
 			}
 		}
@@ -5335,7 +5339,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_tank_experiments
 				uses = 1
-				bonus = 1.0
+				bonus = 1.5
 				category = armor
 			}
 		}
@@ -5497,7 +5501,7 @@ focus_tree = {
 			add_tech_bonus = {
 				name = USA_TAC
 				uses = 1
-				bonus = 1.0
+				bonus = 0.75
 				category = medium_air
 			}
 		}
@@ -5581,7 +5585,7 @@ focus_tree = {
 			air_experience = 25
 			add_tech_bonus = {
 				name = USA_combined_bomber_offensive
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = heavy_air
 			}

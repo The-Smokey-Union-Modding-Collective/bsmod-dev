@@ -177,7 +177,45 @@ ideas = {
 			}			
 		}
 
-		
+		ENG_venerable_industry = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_fourth_five_year_plan
+			
+			modifier = {
+				consumer_goods_factor = -0.025
+				global_building_slots_factor = 0.25
+			}
+		}
+
+		ENG_renewed_industry = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			picture = SOV_fourth_five_year_plan
+			
+			modifier = {
+				consumer_goods_factor = -0.025
+				global_building_slots_factor = 0.45
+				industrial_capacity_factory = 0.10
+				production_factory_max_efficiency_factor = 0.05
+			}
+		}
 		
 		british_austerity_idea = {
 			
@@ -195,6 +233,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
+				production_speed_buildings_factor = 0.1
+				global_building_slots_factor = 0.15
 			}
 		}
 		

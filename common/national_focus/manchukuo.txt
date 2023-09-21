@@ -86,6 +86,17 @@
 				uses = 1
 				category = military_police_tech
 			}
+
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 3000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 500
+				producer = JAP
+			}
 		}
 	}
 	
@@ -1300,7 +1311,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = heavy_fighter_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = medium_air
 			}
@@ -1345,7 +1356,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = TAC_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = heavy_air
 			}
@@ -1485,7 +1496,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = weapons_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = infantry_weapons
 			}
@@ -1578,7 +1589,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}
@@ -2554,7 +2565,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = light_fighter_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 1
 				category = light_air
 			}
@@ -2689,7 +2700,7 @@
 			}
 			add_tech_bonus = {
 				name = artillery_bonus
-				bonus = 1
+				bonus = 0.75
 				uses = 2
 				category = artillery
 			}
@@ -2731,7 +2742,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = medium_tank_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_medium_armor
 			}
@@ -2771,7 +2782,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = heavy_tank_bonus
-				bonus = 1
+				bonus = 0.5
 				uses = 2
 				category = cat_heavy_armor
 			}
@@ -2819,7 +2830,7 @@
 				else_if = {
 					add_tech_bonus = {
 						name = mechanized_bonus
-						bonus = 1.00
+						bonus = 0.5
 						uses = 1
 						category = cat_mechanized_equipment
 					}
@@ -2865,9 +2876,8 @@
 		}
 
 		completion_reward = {
-			add_political_power = 150 
-			custom_effect_tooltip = available_political_advisor 
-			show_ideas_tooltip = MAN_songgotu_zhanshan
+			add_political_power = 75 
+			activate_advisor = MAN_songgotu_zhanshan
 		}
 	}
 	

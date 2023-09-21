@@ -1,0 +1,85 @@
+add_namespace = bs_germany
+
+# Event starting neutral civil war
+country_event = {
+	id = bs_germany.1
+	title = bs_germany.1.t
+	desc = bs_germany.1.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bs_germany.1.a
+		hidden_effect = {
+			GER_hjalmar_schacht = {
+				remove_trait = {
+					slot = political_advisor
+					trait = reichsminister_of_economics
+				}
+			}
+
+			GER_walther_funk = {
+				remove_trait = {
+					slot = political_advisor
+					trait = national_propagandist_GER
+				}
+				add_trait = {
+					slot = political_advisor
+					trait = reichsminister_of_economics_funk
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bs_germany.2
+	title = bs_germany.2.t
+	desc = bs_germany.2.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bs_germany.2.a
+		hidden_effect = {
+			GER_hjalmar_schacht = {
+				remove_trait = {
+					slot = political_advisor
+					trait = reichsbank_president
+				}
+				add_trait = {
+					slot = political_advisor
+					trait = captain_of_industry
+				}
+			}
+
+			GER_walther_funk = {
+				add_trait = {
+					slot = political_advisor
+					trait = reichsbank_president
+				}
+			}
+		}
+	}
+}
+
+country_event = {
+	id = bs_germany.3
+	title = bs_germany.3.t
+	desc = bs_germany.3.d
+	picture = GFX_report_event_ger_civil_war
+
+	is_triggered_only = yes
+	
+	option = {
+		name = bs_germany.3.a
+		activate_advisor = hjalmar_schacht
+	}
+
+	option = {
+		name = bs_germany.3.b
+		activate_advisor = goering
+	}
+}

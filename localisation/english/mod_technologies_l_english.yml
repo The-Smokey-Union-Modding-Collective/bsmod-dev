@@ -15,3 +15,8 @@
  jaeger_jungle2:0 "Harsh climate specialization II"
  jaeger_jungle2_desc:0 "Further improvements to ranger tactics, training and equipment in harsh climates will make these troops fully capable of assaulting and defending in these conditions."
  modifier_unit_jaeger_design_cost_factor:0 "Rangers Unit Design Cost"
+ advanced_cas_weapons:0 "Advanced Cas Weapons"
+ advanced_cas_weapons_desc:0 ""
+ improved_cas_weapons:0 "Improved Cas Weapons"
+ improved_cas_weapons_desc:0 ""
+ EQ_MOD_CAT_tank_rocket_module_TITLE:0 "Rocketlauncher"

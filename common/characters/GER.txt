@@ -114,7 +114,23 @@ characters={
 			legacy_id=1
 		}
 	}
-
+	GER_Leo_Chan ={
+		name=GER_Leo_Chan
+		portraits={
+			army={
+				large=GFX_portrait_GermanyGER_Leo_Chan
+			}
+		}
+		field_marshal={
+			traits={ armor_officer brilliant_strategist harsh_leader inflexible_strategist}
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
 	GER_gunther_von_kluge={
 		name=GER_gunther_von_kluge
 		portraits={
@@ -143,7 +159,7 @@ characters={
 			}
 		}
 		corps_commander={
-			traits={ trait_cautious armor_officer }
+			traits={ trait_cautious armor_officer inflexible_strategist}
 			skill=1
 			attack_skill=1
 			defense_skill=1
@@ -1246,26 +1262,46 @@ characters={
 				large=GFX_portrait_GER_hermann_goring
 			}
 		}
+		#advisor={
+		#	slot = air_chief
+		#	idea_token = goering
+		#	allowed = {
+		#		original_tag = GER
+		#	}
+		#	available = {
+		#		or = {
+		#			has_government = fascism
+		#			has_country_flag = GER_reinstated_nazi_leadership
+		#		}
+		#	}
+		#	traits = {
+		#		air_chief_ground_support_2
+		#	}
+		#	cost = 100
+		#	ai_will_do = {
+		#		factor = 2.000
+		#	}
+		#}
 		advisor={
-			slot = air_chief
+			slot = political_advisor
 			idea_token = goering
+			cost = 75.000
 			allowed = {
 				original_tag = GER
 			}
 			available = {
-				or = {
-					has_government = fascism
-					has_country_flag = GER_reinstated_nazi_leadership
+				has_completed_focus = GER_four_year_plan
+				GER_hjalmar_schacht = {
+					is_hired_as_advisor = no
 				}
 			}
 			traits = {
-				air_chief_ground_support_2
+				war_mobilizer
 			}
-			cost = 100
 			ai_will_do = {
 				factor = 2.000
 			}
-		}
+		}	
 	}
 
 	GER_ritter_von_greim={
@@ -1293,7 +1329,31 @@ characters={
 			}
 		}
 	}
+	GER_wolfram_von_richthofen2 = {
+		portraits={
+			army={
+				small="gfx/interface/ideas/idea_wolfram_von_richthofen.dds"
+			}
+		}
+		advisor={
+			slot = air_chief
+			idea_token = GER_wolfram_von_richthofen2
+			allowed = {
+				original_tag = GER
+			}
 
+			ai_will_do = {
+				factor = 100
+			}			
+			cost = 100
+			
+			ai_will_do = {
+				factor = 5
+			}
+			
+			traits = { air_chief_ground_support_2 }
+		}
+	}
 
 	### MILITARY HIGH COMMAND ###
 
@@ -1494,8 +1554,15 @@ characters={
 			allowed = {
 				original_tag = GER
 			}
+			available = {
+				AND = {
+					has_idea = tot_economic_mobilisation
+					has_war_with = SOV
+				}
+				
+			}
 			traits = {
-				armaments_organizer 
+				architect_of_the_regime 
 			}
 		}		
 	}
@@ -1515,13 +1582,16 @@ characters={
 				original_tag = GER
 			}
 			available = {
-				has_completed_focus = GER_four_year_plan 
-				not = {
-					has_completed_focus = GER_demand_sudetenland 
+				has_completed_focus = GER_four_year_plan
+				GER_hermann_goring = {
+					is_hired_as_advisor = no
+				}
+				NOT = {
+					has_war = yes
 				}
 			}
 			traits = {
-				captain_of_industry 
+				reichsbank_president reichsminister_of_economics
 			}
 			ai_will_do = {
 				factor = 2.000
@@ -1543,7 +1613,7 @@ characters={
 				original_tag = GER
 			}
 			traits = {
-				war_industrialist 
+				national_propagandist_GER
 			}
 			ai_will_do = {
 				factor = 1.000

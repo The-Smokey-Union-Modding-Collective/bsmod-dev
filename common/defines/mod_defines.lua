@@ -22,6 +22,7 @@ NDefines.NCountry.NAVY_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 NDefines.NCountry.INDUSTRY_SCORE_MULTIPLIER = 0 --vanilla = 1.0
 NDefines.NCountry.PROVINCE_SCORE_MULTIPLIER = 0 --vanilla = 0.1
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+NDefines.NProduction.BASE_FACTORY_MAX_EFFICIENCY_FACTOR = 30	--vanilla = 50 Base max efficiency for factories expressed in %.
 NDefines.NProduction.CONVOY_MAX_NAV_FACTORIES_PER_LINE = 50		--vanilla=15
 NDefines.NProduction.CAPITAL_SHIP_MAX_NAV_FACTORIES_PER_LINE = 10	--vanilla=5
 NDefines.NProduction.BASE_FACTORY_SPEED = 5					--vanilla=5
@@ -45,7 +46,7 @@ NDefines.NProduction.INFRA_MAX_CONSTRUCTION_COST_EFFECT = 2 -- vanilla = 1
 NDefines.NBuildings.MAX_SHARED_SLOTS = 50	--vanilla=25
 NDefines.NBuildings.DESTRUCTION_COOLDOWN_IN_WAR	= 90 --vanilla=30
 NDefines.NBuildings.AIRBASE_CAPACITY_MULT = 100 --vanilla = 200
-NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.12 --vanilla = 0.2
+NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.17 --vanilla = 0.2
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 72		--vanilla=24
 NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 72	--vanilla=24
@@ -117,6 +118,7 @@ NDefines.NAir.MISSION_COMMAND_POWER_COSTS = {  -- command power cost per plane t
 }
 NDefines.NAir.ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 1.0 --vanilla 1.0
 NDefines.NAir.ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.75 --vanilla 0.75
+NDefines.NAir.USE_SINGLE_NAVAL_ARMAMENT_CATEGORY = false --vanilla true
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy raid if there are enemies that can attack
 		1000,     -- do not engage
@@ -128,7 +130,7 @@ NDefines.NNavy.SUBMARINE_ESCAPE_RATIOS = { -- subs will escape battle in convoy 
 NDefines.NNavy.MISSION_SUPREMACY_RATIOS = { -- supremacy multipliers for different mission types
 		0.0, -- HOLD
 		1.0, -- PATROL		
-		0.5, -- STRIKE FORCE 
+		0.1, -- STRIKE FORCE 
 		0.5, -- CONVOY RAIDING
 		0.5, -- CONVOY ESCORT
 		0.3, -- MINES PLANTING	
@@ -146,6 +148,8 @@ NDefines.NNavy.TRAINING_ACCIDENT_CHANCES = 0.00	--vanilla=0.02
 --NDefines.NNavy.RESOURCE_ORIGIN_PRIORITY = 5     -- vanilla = 5; Default convoy priority for resources shipped internally
 --NDefines.NNavy.INITIAL_ALLOWED_DOCKYARD_RATIO_FOR_REPAIRS = 1				-- initially countries will allocate this ratio of dockyards for repairs
 NDefines.NNavy.AMPHIBIOUS_LANDING_PENALTY = 0 -- vanilla = -0.7; Naval invasion penalty
+NDefines.NNavy.SUPPLY_NEED_FACTOR = 0.01 -- multiplies supply usage of navy
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_BASE = 100	--vanilla=50
 NDefines.NAI.DIPLOMACY_ACCEPT_ATTACHE_OPINION_TRASHHOLD = -100	--vanilla=20

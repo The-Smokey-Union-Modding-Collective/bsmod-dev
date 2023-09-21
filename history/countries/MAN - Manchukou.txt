@@ -46,6 +46,7 @@ recruit_character = MAN_yin_zuoqian
 recruit_character = MAN_hesehn_tiemei
 recruit_character = MAN_xian_yuan
 recruit_character = MAN_guan_xingde
+recruit_character = MAN_songgotu_zhanshan
 
 if = {
 	limit = { has_dlc = "No Step Back" }

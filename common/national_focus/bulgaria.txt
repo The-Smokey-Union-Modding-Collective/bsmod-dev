@@ -129,7 +129,7 @@ focus_tree = {
 		relative_position_id = BUL_improve_the_road_system
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = BUL_invigorate_national_industry }
 
 		available = {
@@ -206,7 +206,7 @@ focus_tree = {
 		relative_position_id = BUL_improve_the_road_system
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = BUL_attract_foreign_capitals }
 
 		available = {
@@ -277,7 +277,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_sofia_university
 		x = -1
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -329,7 +329,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_the_tobacco_industry
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = BUL_utmost_optimization }
 
 		available = {
@@ -398,7 +398,7 @@ focus_tree = {
 		relative_position_id = BUL_expand_sofia_university
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 
 		available = {
@@ -437,7 +437,7 @@ focus_tree = {
 		relative_position_id = BUL_increase_industry_investments
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 		mutually_exclusive = { focus = BUL_nationalization }
 
 		available = {
@@ -602,7 +602,7 @@ focus_tree = {
 		relative_position_id = BUL_national_railway_lines
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 			controls_state = 48
@@ -640,7 +640,7 @@ focus_tree = {
 		relative_position_id = BUL_steel_plant_in_pernik
 		x = 0
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 			has_tech = excavation2
@@ -683,7 +683,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_uranium_prospecting
-			    bonus = 2.0
+			    bonus = 0.4
 			    uses = 2
 			    category = nuclear
 			}
@@ -831,7 +831,7 @@ focus_tree = {
 		relative_position_id = BUL_negotiate_bulgarian_rearmament
 		x = 2
 		y = 2
-		cost = 10
+		cost = 5
 
 		available = {
 			NOT = { has_idea = BUL_army_restrictions }
@@ -841,8 +841,8 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = BUL_reorganize_the_military_industry
-			    bonus = 1.0
-			    uses = 1
+			    bonus = 0.5
+			    uses = 2
 			    category = infantry_weapons
 				category = artillery
 			}
@@ -1017,7 +1017,7 @@ focus_tree = {
 		relative_position_id = BUL_reorganize_the_military_industry
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			212 = {
@@ -1075,7 +1075,7 @@ focus_tree = {
 			}
 			add_tech_bonus = {
 				name = BUL_found_dvf_sopot
-			    bonus = 1.0
+			    bonus = 0.5
 			    uses = 2
 				category = artillery
 			}
@@ -1193,7 +1193,7 @@ focus_tree = {
 		relative_position_id = BUL_found_dvf_sopot
 		x = 2
 		y = 0
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -7615,7 +7615,7 @@ focus_tree = {
 		relative_position_id = BUL_power_to_the_tsar
 		x = 4
 		y = 2
-		cost = 10
+		cost = 5
 
 		mutually_exclusive = { focus = BUL_the_tsars_regime }
 
@@ -8043,7 +8043,7 @@ focus_tree = {
 		relative_position_id = BUL_appoint_right_wing_ministers
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 
@@ -8065,7 +8065,7 @@ focus_tree = {
 		relative_position_id = BUL_economic_protectionism
 		x = 1
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			num_of_factories > 20
@@ -8638,7 +8638,7 @@ focus_tree = {
 		relative_position_id = BUL_join_the_tripartite_pact
 		x = 0
 		y = 1
-		cost = 20
+		cost = 10
 
 #		available = {
 #			any_state = {
@@ -8765,7 +8765,7 @@ focus_tree = {
 		relative_position_id = BUL_bulgarian_administration_of_the_balkans
 		x = -2
 		y = 1
-		cost = 10
+		cost = 5
 
 		available = {
 			has_stability > 0.50
@@ -9023,7 +9023,7 @@ focus_tree = {
 		relative_position_id = BUL_bulgarian_administration_of_the_balkans
 		x = 0
 		y = 1
-		cost = 10
+		cost = 5
 
 #		available = {
 #			is_subject = no

@@ -142,6 +142,11 @@ recruit_character = AST_lance_sharkey
 recruit_character = AST_herbert_v_evatt
 recruit_character = AST_generic_fascist_demagogue
 recruit_character = AST_arthur_calwell
+recruit_character = NZL_bernard_freyberg
+recruit_character = NZL_robert_row
+recruit_character = NZL_william_stevens
+recruit_character = NZL_edmund_rupert_drummond
+recruit_character = NZL_peter_phipps
 
 if = {
 	limit = {

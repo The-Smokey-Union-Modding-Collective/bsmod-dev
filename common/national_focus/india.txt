@@ -2074,7 +2074,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_vickers_berthier_gun
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = infantry_weapons
 			}
@@ -2118,7 +2118,7 @@ focus_tree = {
 			army_experience = 10
 			add_tech_bonus = {
 				name = RAJ_royal_indian_artillery
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = artillery
 			}
@@ -2161,7 +2161,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_army_motorization
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = motorized_equipment
 			}
@@ -2238,7 +2238,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_indian_armor
-				bonus = 1.0
+				bonus = 0.75
 				uses = 1
 				category = armor
 			}
@@ -2461,7 +2461,7 @@ focus_tree = {
 		completion_reward = {			
 			add_tech_bonus = {
 				name = RAJ_air_support_effort
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = tactical_bomber
 				category = cas_bomber
@@ -2500,7 +2500,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_fighter_effort
-				bonus = 1.0
+				bonus = 0.3
 				uses = 1
 				category = light_fighter
 				category = cat_heavy_fighter
@@ -2591,7 +2591,7 @@ focus_tree = {
 		completion_reward = {
 			add_tech_bonus = {
 				name = RAJ_the_smiling_buddha
-				bonus = 3.0
+				bonus = 0.2
 				uses = 1
 				category = nuclear
 			}
@@ -2723,10 +2723,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_industrial_expansion_IC
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -2742,10 +2742,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = RAJ_industrial_expansion_IC
@@ -2916,7 +2916,7 @@ focus_tree = {
 			show_ideas_tooltip = RAJ_homi_j_bhabha
 			add_tech_bonus = {
 				name = RAJ_institute_of_fundamental_research
-				bonus = 1.0
+				bonus = 0.15
 				uses = 1
 				category = nuclear
 			}
@@ -3592,10 +3592,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_ishapore_arsenal_AF
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -3611,10 +3611,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = RAJ_ishapore_arsenal_AF
@@ -3923,10 +3923,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_rail_investors_IC1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -3934,10 +3934,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_rail_investors_IC2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -3958,10 +3958,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = industrial_complex
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_rail_investors_IC1
@@ -3975,10 +3975,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = industrial_complex
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_rail_investors_IC2
@@ -4024,10 +4024,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_arms_investors_AF1
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 			}
@@ -4035,10 +4035,10 @@ focus_tree = {
 				limit = {
 					has_state_flag = RAJ_british_arms_investors_AF2
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 			}
@@ -4058,10 +4058,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 2
+				add_extra_state_shared_building_slots = 3
 				add_building_construction = {
 					type = arms_factory
-					level = 2
+					level = 3
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_arms_investors_AF1
@@ -4075,10 +4075,10 @@ focus_tree = {
 						include_locked = yes
 					}
 				}
-				add_extra_state_shared_building_slots = 1
+				add_extra_state_shared_building_slots = 2
 				add_building_construction = {
 					type = arms_factory
-					level = 1
+					level = 2
 					instant_build = yes
 				}
 				set_state_flag = RAJ_british_arms_investors_AF2

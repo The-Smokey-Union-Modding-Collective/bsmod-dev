@@ -27,7 +27,7 @@
 		}
 		prerequisite = {}
 		mutually_exclusive = { }
-		cost = 10
+		cost = 5
 			ai_will_do = {
 			factor = 1
 		}
@@ -62,7 +62,7 @@
 		prerequisite = { focus = FRA_devalue_the_franc }
 		mutually_exclusive = { }
 		relative_position_id = FRA_devalue_the_franc
-		cost = 10
+		cost = 5
 
 		ai_will_do = {
 			factor = 1
@@ -309,7 +309,7 @@
 		x = -2
 		y = 2
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -515,7 +515,7 @@
 		x = 0
 		y = 2
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -727,7 +727,7 @@
 		x = 2
 		y = 2
 		relative_position_id = FRA_invest_in_the_colonies
-		cost = 5
+		cost = 2
 		ai_will_do = {
 			factor = 1
 		}
@@ -1411,7 +1411,7 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_artillery_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 1
 				category = artillery
 			}
@@ -1432,8 +1432,8 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_heavy_armor_focus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = cat_heavy_armor
 			}
 		}
@@ -1722,8 +1722,8 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_mechanized_focus
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = cat_mechanized_equipment
 			}
 		}
@@ -1743,8 +1743,8 @@
 			army_experience = 5
 			add_tech_bonus = {
 				name = FRA_light_medium_armor
-				bonus = 1.0
-				uses = 1
+				bonus = 0.5
+				uses = 2
 				category = cat_light_armor
 				category = cat_medium_armor
 			}
@@ -1800,7 +1800,7 @@
 		completion_reward = {
 			add_tech_bonus = {
 				name = FRA_cas_focus
-				bonus = 1.0
+				bonus = 0.5
 				uses = 2
 				category = cas_bomber
 			}
