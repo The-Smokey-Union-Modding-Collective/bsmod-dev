@@ -1352,13 +1352,13 @@ JAP_army_of_japan = {
 	enable { always = yes }
 	icon = GFX_idea_jap_zaibatsu_control
 
-	army_attack_factor = JAP_army_army_attack_factor
+	army_attack_factor = JAP_army_attack_factor
 
-	army_defence_factor = JAP_army_army_defence_factor
+	army_defence_factor = JAP_army_defence_factor
 
 	army_strength_factor = JAP_army_strength_factor
 
-	army_org_factor = JAP_army_army_org_factor
+	army_org_factor = JAP_army_org_factor
 
 	breakthrough_factor = JAP_army_breakthrough_factor
 
@@ -1369,6 +1369,14 @@ JAP_army_of_japan = {
 	experience_gain_factor = JAP_army_experience_gain_factor
 
 	max_planning_factor = JAP_army_max_planning_factor
+
+	cat_mobile_warfare_cost_factor = JAP_mobile_warfare_cost_factor
+
+	cat_superior_firepower_cost_factor = JAP_superior_firepower_cost_factor
+
+	cat_grand_battleplan_cost_factor = JAP_grand_battleplan_cost_factor
+
+	cat_mass_assault_cost_factor = JAP_mass_assault_cost_factor
 }
 
 JAP_japanese_navy = {

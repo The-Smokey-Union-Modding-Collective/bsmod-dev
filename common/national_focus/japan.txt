@@ -82,6 +82,9 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
+			
+			custom_effect_tooltip = JAP_konoe_government_tt
+
 			add_to_variable = { JAP_pol_political_power_gain = 0.25 }
 			add_to_variable = { JAP_pol_stability_factor = 0.25 }
 			add_to_variable = { JAP_pol_war_support_factor = 0.25 }
@@ -119,7 +122,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			#BOP Mechanic here 
+
+			custom_effect_tooltip = JAP_liason_conference_tt
+
+			add_to_variable = { JAP_pol_political_power_gain = 0.05 }
+			add_to_variable = { JAP_pol_stability_factor = 0.05 }
+			add_to_variable = { JAP_pol_war_support_factor = 0.05 }
 		}
 	}
 
@@ -151,7 +160,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			
+			custom_effect_tooltip = JAP_iraa_tt
+
+			add_to_variable = { JAP_pol_political_power_gain = 0.05 }
+			add_to_variable = { JAP_pol_stability_factor = 0.05 }
+			add_to_variable = { JAP_pol_war_support_factor = 0.05 }
 		}
 	}
 
@@ -183,7 +197,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			custom_effect_tooltip = JAP_tojo_government_tt
+
+			add_to_variable = { JAP_pol_political_power_gain = 0.15 }
+			add_to_variable = { JAP_pol_stability_factor = 0.15 }
+			add_to_variable = { JAP_pol_war_support_factor = 0.15 }
 		}
 	}
 
@@ -215,7 +233,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			custom_effect_tooltip = JAP_national_defense_state_tt
+
+			add_to_variable = { JAP_pol_political_power_gain = 0.05 }
+			add_to_variable = { JAP_pol_stability_factor = 0.05 }
+			add_to_variable = { JAP_pol_war_support_factor = 0.05 }
 		}
 	}
 
@@ -315,7 +337,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = war_economy
 		}
 	}
 
@@ -1043,7 +1065,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			#improves japanese railway problems
 		}
 	}
 
@@ -1075,7 +1097,24 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			282 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
+			532 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1107,7 +1146,31 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			529 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
+			528 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
+			531 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = dockyard
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1140,7 +1203,20 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			536 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			533 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1172,7 +1248,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			527 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1204,7 +1290,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			525 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1237,7 +1333,13 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			527 = {
+				add_compliance = 10
+			}
+			525 = {
+				add_compliance = 10
+			}
+			#reduces the colonial resistance spirit in Korea
 		}
 	}
 
@@ -1272,7 +1374,22 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			if = {
+				limit = {
+					any_state = {
+						AND = {
+							is_core_of = CHI
+							compliance < 25
+						}
+					}	
+				}
+				every_controlled_state = {
+					limit = {
+						is_core_of = CHI
+					}
+					add_compliance = 10
+				}
+			}
 		}
 	}
 
@@ -1305,7 +1422,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			#Add dynamic modifier here if manchu player stayed in manchuria
 		}
 	}
 
@@ -1373,7 +1490,58 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			if = {
+				limit = { 
+					MAN = { 
+						AND = {
+							controls_state = 613
+							NOT = {
+								controls_state = 328
+							} 
+						}
+					}
+				}
+				MAN = {
+					add_political_power = 100
+					add_stability = 0.05
+				}
+				613 = {
+					add_extra_state_shared_building_slots = 4
+					add_building_construction = {
+						type = industrial_complex
+						level = 2
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 2
+					}
+				}
+			}
+			else_if = {
+				limit = { 
+					MAN = { 
+						AND = {
+							controls_state = 328
+							NOT = {
+								controls_state = 613
+							} 
+						}
+					}
+				}
+				add_political_power = 50
+				add_stability = 0.025
+				613 = {
+					add_extra_state_shared_building_slots = 2
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = 1
+					}
+				}
+			}
 		}
 	}
 
@@ -1406,7 +1574,62 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			596 = {
+				if = {
+					limit = {
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+				
+			}
+			613 = {
+				if = {
+					limit = {
+						infrastructure < 9
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+					}
+				}
+			}
+			598 = {
+				if = {
+					limit = {
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
+			608 = {
+				if = {
+					limit = {
+						infrastructure < 9
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+					}
+				}
+			}
+			592 = {
+				if = {
+					limit = {
+						infrastructure < 10
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+					}
+				}
+			}
 		}
 	}
 
@@ -1439,7 +1662,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			#improve railways around china, remove bad debuffs from terrible chinese infra
 		}
 	}
 
@@ -1472,7 +1695,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			613 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1505,7 +1738,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			608 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1537,7 +1780,23 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			if = {
+				limit = {
+					MAN = { owns_state = 328 }
+				}
+				MAN = {
+					add_stability = 0.05
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						MAN = { owns_state = 613}
+						MAN = { exists = no }
+					}
+				}
+				add_political_power = 50
+			}
 		}
 	}
 
@@ -1569,7 +1828,25 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			if = {
+				limit = {
+					MAN = { owns_state = 328 }
+				}
+				MAN = {
+					add_stability = 0.05
+					add_political_power = 100
+				}
+			}
+			else_if = {
+				limit = {
+					OR = {
+						MAN = { owns_state = 613}
+						MAN = { exists = no }
+					}
+				}
+				add_stability = 0.02
+				add_political_power = 50
+			}
 		}
 	}
 
@@ -1602,7 +1879,17 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			328 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+				}
+			}
 		}
 	}
 
@@ -1635,7 +1922,18 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			716 = {
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+				}
+			}
+			add_resource = {
+				type = steel
+				amount = 5
+				state = 716
+			}
 		}
 	}
 
@@ -1670,7 +1968,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_resource = {
+				type = steel
+				amount = 6
+				state = 716
+			}
+			add_resource = {
+				type = aluminium
+				amount = 6
+				state = 613
+			}
 		}
 	}
 
@@ -1703,7 +2010,11 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_resource = {
+				type = oil
+				amount = 20
+				state = 714
+			}
 		}
 	}
 
@@ -1735,7 +2046,7 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			army_experience = 25
 		}
 	}
 
@@ -1768,7 +2079,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				category = land_doctrine
+				uses = 2
+				cost_reduction = 0.25
+			}
 		}
 	}
 
@@ -1805,7 +2121,26 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			
+			custom_effect_tooltip = JAP_will_and_tradition_tt
+			
+			#Doctrine reductions
+			set_variable = { JAP_superior_firepower_cost_factor  = 0.2 }
+			set_variable = { JAP_mobile_warfare_cost_factor  = 0.2 }
+
+			#spirit adjustments
+			add_to_variable = { JAP_army_dig_in_speed_factor = 0.15 }
+			add_to_variable = { JAP_army_defence_factor = 0.05 }
+			add_to_variable = { JAP_army_max_planning_factor = 0.1 }
+			add_to_variable = { JAP_army_org_factor = 0.05 }
+			add_to_variable = { JAP_army_max_dig_in_factor = 0.15 }
+
+			add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				category = land_doctrine
+				uses = 2
+				cost_reduction = 0.25
+			}
 		}
 	}
 
@@ -1842,7 +2177,26 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+
+			custom_effect_tooltip = JAP_fire_and_technology_tt
+
+			#Doctrine reductions
+			set_variable = { JAP_mass_assault_cost_factor  = 0.2 }
+			set_variable = { JAP_grand_battleplan_cost_factor  = 0.2 }
+
+			#spirit adjustments
+			add_to_variable = { JAP_army_dig_in_speed_factor = 0.15 }
+			add_to_variable = { JAP_army_attack_factor = 0.05 }
+			add_to_variable = { JAP_army_strength_factor = 0.1 }
+			add_to_variable = { JAP_army_org_factor = -0.05 }
+			add_to_variable = { JAP_army_defence_factor = -0.05 }
+
+			add_doctrine_cost_reduction = {
+				name = doctrine_bonus
+				category = land_doctrine
+				uses = 2
+				cost_reduction = 0.25
+			}
 		}
 	}
 
@@ -1877,7 +2231,26 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_1
+				amount = 1500
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = infantry_equipment_0
+				amount = 1000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 150
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 250
+				producer = JAP
+			}
 		}
 	}
 
@@ -1910,7 +2283,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_tech_bonus = {
+				name = JAP_small_arms
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}
 		}
 	}
 
@@ -1943,7 +2321,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_tech_bonus = {
+				name = JAP_type_100
+				bonus = 0.75
+				uses = 1
+				technology = improved_infantry_weapons
+			}
 		}
 	}
 
@@ -1976,7 +2359,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = 150
+				producer = JAP
+			}
+			add_ideas = JAP_support_equipment_production
 		}
 	}
 
@@ -2009,7 +2397,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = { is_core_of = JAP }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -2114,7 +2509,16 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			#unlocks arty designer
+
+			random_owned_controlled_state = {
+				limit = { is_core_of = JAP }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -2149,7 +2553,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_ideas = JAP_light_anti_tank
+
+			add_tech_bonus = {
+				name = JAP_light_at
+				bonus = 0.5
+				uses = 2
+				category = cat_anti_tank
+			}
 		}
 	}
 
@@ -2184,7 +2595,46 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			if = {
+				limit = { 
+					has_tech = gw_artillery
+					NOT = { 
+						has_tech = artillery1
+						has_tech = artillery4
+					} 
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_1
+					amount = 450
+					producer = JAP
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = gw_artillery
+					has_tech = artillery1
+					NOT = { 
+						has_tech = artillery4
+					} 
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_2
+					amount = 350
+					producer = JAP
+				}
+			}
+			else_if = {
+				limit = { 
+					has_tech = gw_artillery
+					has_tech = artillery1
+					has_tech = artillery4
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment_3
+					amount = 250
+					producer = JAP
+				}
+			}
 		}
 	}
 
@@ -2217,7 +2667,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = { is_core_of = JAP }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
@@ -2252,7 +2709,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_tech_bonus = {
+				name = JAP_artillery_development_bonus
+				bonus = 0.25
+				uses = 2
+				category = artillery
+			}
 		}
 	}
 
@@ -2285,7 +2747,12 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			add_tech_bonus = {
+				name = JAP_artillery_development_bonus
+				bonus = 0.80
+				uses = 1
+				category = artillery
+			}
 		}
 	}
 
@@ -2318,7 +2785,14 @@ focus_tree = {
 
 		search_filters = { FOCUS_FILTER_STABILITY FOCUS_FILTER_POLITICAL }
 		completion_reward = {
-			add_stability = 0.1
+			random_owned_controlled_state = {
+				limit = { is_core_of = JAP }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+				}
+			}
 		}
 	}
 
