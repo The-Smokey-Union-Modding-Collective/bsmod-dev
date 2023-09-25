@@ -1417,6 +1417,16 @@ equipments = {
 		}
 
 		module_count_limit = {
+			module = rocket_rails
+			count < 1 
+		}
+
+		module_count_limit = {
+			module = bomb_locks
+			count < 1 
+		}
+
+		module_count_limit = {
 			module = torpedo_mounting
 			count < 4
 		}
