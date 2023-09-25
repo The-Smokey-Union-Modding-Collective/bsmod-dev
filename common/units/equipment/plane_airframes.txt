@@ -1413,7 +1413,7 @@ equipments = {
 
 		module_count_limit = {
 			module = small_bomb_bay
-			count < 3
+			count < 2
 		}
 
 		module_count_limit = {
@@ -1423,7 +1423,7 @@ equipments = {
 
 		module_count_limit = {
 			module = tank_buster_1
-			count < 4
+			count < 1
 		}
 
 		module_count_limit = {
@@ -1924,6 +1924,11 @@ equipments = {
 				}
 			}
 		}
+
+		module_count_limit = {
+			module = medium_bomb_bay
+			count < 4
+		}
 	}
 
 	medium_plane_airframe_4 = { #Modern
@@ -2079,6 +2084,11 @@ equipments = {
 					mine_warfare_defense
 				}
 			}
+		}
+
+		module_count_limit = {
+			module = medium_bomb_bay
+			count < 4
 		}
 	}
 

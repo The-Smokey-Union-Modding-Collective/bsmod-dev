@@ -7913,5 +7913,17 @@ country_event = { #buildup event
 	option = { #NOPE
 		name = germany.1044.a
 		add_timed_idea = { idea = GER_buildup_idea days = 160 } 
+		add_equipment_to_stockpile = { 
+			type = light_tank_chassis_2 
+			amount = 450 
+			producer = GER  
+			variant_name = "Panzer II Ausf. a"
+		}
+		add_equipment_to_stockpile = { 
+			type = small_plane_airframe_1 
+			amount = 200 
+			producer = GER  
+			variant_name = "Bf 109 D"
+		}
 	}
 }
