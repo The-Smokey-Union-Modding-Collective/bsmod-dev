@@ -271,6 +271,181 @@ ITA_greek_surrender_category = {
 #	}
 #}
 
+lower_player_count_decisions_category = {
+	ENG_western_allies = {
+		icon = decision_generic_decision
+
+        allowed = {
+            original_tag = ENG
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        #days_re_enable = 0
+		#days_remove = 60
+
+		visible = {
+			CAN = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		available = {
+			CAN = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = west_allies_merged
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = east_allies_merged
+					}
+				}
+				add_research_slot = 1
+			}
+			SAF = {
+				annex_country = {
+					target = CAN
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = CAN
+					}
+					add_core_of = SAF
+				}
+				add_research_slot = 1
+				set_cosmetic_tag = SAF_west_allies
+			}
+		}
+	}
+
+	ENG_eastern_allies = {
+		icon = decision_generic_decision
+
+        allowed = {
+            original_tag = ENG
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        #days_re_enable = 0
+		#days_remove = 60
+
+		visible = {
+			AST = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		available = {
+			AST = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = east_allies_merged
+			if = {
+				limit = {
+					NOT = {
+						has_global_flag = west_allies_merged
+					}
+				}
+				add_research_slot = 1
+			}
+			RAJ = {
+				annex_country = {
+					target = AST
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = AST
+					}
+					add_core_of = RAJ
+				}
+				add_research_slot = 1
+				set_cosmetic_tag = RAJ_east_allies
+			}
+		}
+	}
+
+	GER_european_axis = {
+		icon = decision_generic_decision
+
+        allowed = {
+            original_tag = GER
+        }
+
+        cost = 0
+
+        fire_only_once = yes
+
+        #days_re_enable = 0
+		#days_remove = 60
+
+		visible = {
+			HUN = {
+				exists = yes
+				is_ai = yes
+			}
+			BUL = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		available = {
+			HUN = {
+				exists = yes
+				is_ai = yes
+			}
+			BUL = {
+				exists = yes
+				is_ai = yes
+			}
+		}
+
+		complete_effect = {
+			set_global_flag = european_axis_merged
+			add_research_slot = 1
+			ROM = {
+				annex_country = {
+					target = HUN
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = HUN
+					}
+					add_core_of = ROM
+				}
+				annex_country = {
+					target = BUL
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = BUL
+					}
+					add_core_of = ROM
+				}
+				add_research_slot = 1
+				set_cosmetic_tag = ROM_axis
+				add_ideas = ROM_manpower_reduced
+			}
+		}
+	}
+}
+
 economy_decisions = {
 
 	ITA_supplies_running_out = {

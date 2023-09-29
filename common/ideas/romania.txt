@@ -23,6 +23,18 @@ ideas = {
 			}
 		}
 	
+		ROM_manpower_reduced = {
+			picture = chi_army_corruption
+
+			allowed = {
+				original_tag = ROM
+			}
+
+			modifier = {
+				conscription_factor = -0.1
+			}
+		}
+
 		ROM_revenge_against_germany = {
 
 			picture = generic_communism_drift_bonus

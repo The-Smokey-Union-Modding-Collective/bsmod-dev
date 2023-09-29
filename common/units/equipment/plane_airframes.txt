@@ -1423,7 +1423,7 @@ equipments = {
 
 		module_count_limit = {
 			module = bomb_locks
-			count < 1 
+			count < 2 
 		}
 
 		module_count_limit = {

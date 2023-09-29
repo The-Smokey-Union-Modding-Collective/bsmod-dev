@@ -428,6 +428,37 @@ ideas = {
 		}
 	}
 
+	industrial_concern = {
+
+		integrated_pacific_economies = {
+			
+			allowed = {
+				original_TAG = RAJ
+			}
+
+			visible = {
+				owns_state = 285
+			}
+
+			available = {
+				date > 1939.01.01
+			}
+
+			picture = SPR_collectivized_society
+						
+			research_bonus = {
+				industry = 0.15
+			}
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				stability_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+	}
+
 	naval_manufacturer = {
 		
 		designer = yes

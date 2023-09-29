@@ -275,7 +275,22 @@ on_actions = {
 						transfer_state = 106	
 						transfer_state = 803
 					}
-				}			   			
+				}
+				if = {
+					limit = { 
+						has_global_flag = european_axis_merged
+					}
+					ROM = {
+						transfer_state = 45
+						transfer_state = 764
+						add_state_core = 45
+						add_state_core = 764
+						transfer_state = 106	
+						transfer_state = 803
+						add_state_core = 106	
+						add_state_core = 803
+					}
+				}
 			}
 			if = {
 				limit = {
@@ -413,6 +428,17 @@ on_actions = {
 					}
 					BUL = {	
 						add_offsite_building = { type = industrial_complex level = 1 }
+					}
+				}
+				if = {
+					limit = {
+						has_global_flag = european_axis_merged	
+					}
+					ROM = {
+						transfer_state = 731	
+						transfer_state = 184
+						add_state_core = 731
+						add_state_core = 184
 					}
 				}	
 			}

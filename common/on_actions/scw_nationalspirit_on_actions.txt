@@ -9,6 +9,10 @@ on_actions = {
 				}
 				add_ideas = mod_scw_exp_gain
 			}
+			if = {
+				limit = { TAG = SOV }
+				D01 = { give_military_access = SOV }
+			}
 		}
 	}
 	on_recall_volunteers = {

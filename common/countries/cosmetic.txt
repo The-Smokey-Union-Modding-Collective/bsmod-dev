@@ -3,6 +3,21 @@ MAL_UK = {
     color_ui = rgb { 255 73 121 }
 }
 
+ROM_axis = {
+	color = rgb { 188 188 188 }
+	color_ui = rgb { 188 188 188 }
+}
+
+SAF_west_allies = {
+	color = rgb { 229 13 13 }
+	color_ui = rgb { 229 13 13 }
+}
+
+RAJ_east_allies = {
+	color = rgb { 17 35 117 }
+	color_ui = rgb { 17 35 117 }
+}
+
 MAN_reorg = {
 	color = rgb { 255 202 43 }
 	color_ui = rgb { 255 202 43 }

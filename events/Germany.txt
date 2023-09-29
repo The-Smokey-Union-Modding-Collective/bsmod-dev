@@ -3202,7 +3202,15 @@ country_event = {
 		# 	}
 		# 	NOT = { has_global_flag = GER_HUN_CZE_split }
 		# }
-		HUN = { country_event = germany.56 }
+		if = {
+			limit = {
+				has_global_flag = european_axis_merged
+			}
+			ROM = { country_event = germany.56 }
+		}
+		else = {
+			HUN = { country_event = germany.56 }
+		}
 		add_war_support = 0.1
 		# if = { bsmod change
 		# 	limit = {
@@ -3495,7 +3503,7 @@ country_event = {
 		hidden_effect = {
 			GER = {
 				annex_country = { target = CZE }
-				add_to_faction = HUN
+				#add_to_faction = HUN
 				every_state = {
 					limit = {
 						is_core_of = CZE
@@ -3504,20 +3512,43 @@ country_event = {
 					set_compliance = 50
 				}
 			}
-			HUN = {
-				add_ai_strategy = {
-					type = alliance
-					id = "GER"
-					value = 200
+			if = {
+				limit = {
+					has_global_flag = european_axis_merged
 				}
-				every_state = {
-					limit = {
-						is_core_of = CZE
-						is_controlled_by = PREV
+				ROM = {
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"
+						value = 200
 					}
-					set_compliance = 50
+					transfer_state = 664
+					every_state = {
+						limit = {
+							is_core_of = CZE
+							is_controlled_by = PREV
+						}
+						set_compliance = 50
+					}
 				}
 			}
+			else = {
+				HUN = {
+					add_ai_strategy = {
+						type = alliance
+						id = "GER"
+						value = 200
+					}
+					every_state = {
+						limit = {
+							is_core_of = CZE
+							is_controlled_by = PREV
+						}
+						set_compliance = 50
+					}
+				}
+			}
+			
 		}
 		hidden_effect = {
 			country_event = { hours = 6 id = news.61 }

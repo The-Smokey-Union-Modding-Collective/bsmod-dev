@@ -26,6 +26,12 @@ allied_commonwealth_assistance_category = {
 					amount_research_slots < 4
 				}
 			}
+			NOT = {
+				OR = {
+					has_cosmetic_tag = RAJ_east_allies
+					has_cosmetic_tag = SAF_west_allies
+				}
+			}
 		}
 		cancel_trigger = {
 		}
