@@ -21,5 +21,28 @@ ideas = {
 				line_change_production_efficiency_factor = 0.1
 			}
 		}
+
+		ALY_extra_volunteers = {
+			picture = SPR_anti_fascist_crusade
+
+			removal_cost = -1
+
+			allowed = {
+				OR = {
+					original_tag = SAF
+					original_tag = RAJ
+				}		
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			modifier = {
+				send_volunteer_size = 1
+			}
+		}
 	}
 }

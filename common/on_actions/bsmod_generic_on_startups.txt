@@ -219,10 +219,10 @@ on_actions = {
                     limit = {
                         is_ai = no
                     }
-                }
-                add_ideas = {
-                    mod_scw_international_brigades
-                    mod_trade_allies
+					add_ideas = {
+                 	  	mod_scw_international_brigades
+               	 		mod_trade_allies
+               		}
                 }
             }
         }
@@ -235,12 +235,23 @@ on_actions = {
 				limit = {
 					SIA = { NOT = { is_ai = yes } } 
 				}
+				AST = {
+					add_offsite_building = { type = industrial_complex level = 2 }
+				}
+				RAJ = {
+					add_offsite_building = { type = industrial_complex level = 2 }
+				}
 			}
-			AST = {
-				add_offsite_building = { type = industrial_complex level = 2 }
-			}
-			RAJ = {
-				add_offsite_building = { type = industrial_complex level = 2 }
+		}
+	}
+
+	on_startup = {
+		effect = {
+			FRA = {
+				add_timed_idea = { 
+					idea = FRA_temporary_competence
+					days = 730
+				}
 			}
 		}
 	}

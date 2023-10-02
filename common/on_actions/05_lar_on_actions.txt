@@ -634,14 +634,18 @@ on_actions = {
 				}
 				set_global_flag = nationalist_victory
 				set_global_flag = scw_over
-				SPR = {
-					add_ideas = {
-						SPA_plunder_economy
+
+				if = {
+					limit = {
+						NOT = {
+							has_global_flag = axis_lost_scw
+						}
 					}
-				}
-				GER = {
-					add_ideas = {
-						civilwar_veterans
+					SPR = {
+						add_ideas = SPA_plunder_economy
+					}
+					GER = {
+						add_ideas = civilwar_veterans
 					}
 				}
 

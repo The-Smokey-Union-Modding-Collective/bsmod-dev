@@ -1074,6 +1074,18 @@ technologies = {
 			max_organisation = 10
 			soft_attack = 0.25
 		}
+
+		light_flame_tank = {
+			soft_attack = -0.2
+		}
+
+		medium_flame_tank = {
+			soft_attack = -0.2
+		}
+
+		heavy_flame_tank = {
+			soft_attack = -0.2
+		}
 		
 		path = {
 			leads_to_tech = regimental_combat_teams 
@@ -1126,6 +1138,18 @@ technologies = {
 			soft_attack = 0.25
 		}
 		
+		light_flame_tank = {
+			soft_attack = -0.2
+		}
+
+		medium_flame_tank = {
+			soft_attack = -0.2
+		}
+
+		heavy_flame_tank = {
+			soft_attack = -0.2
+		}
+
 		enable_tactic = tactic_overwhelming_fire
 		
 		path = {

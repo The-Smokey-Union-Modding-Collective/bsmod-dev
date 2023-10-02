@@ -313,9 +313,76 @@ GER_spanish_civil_war_category = {
 		cost = 0
 	
 		complete_effect = {
+			set_global_flag = axis_lost_scw
 			SPR = { 
-				country_event = { id = germany.1100 } 
 				country_event = { days = 2 id = lar_spain.1100 } 
+				788 = {
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 3874
+						owner = SPR
+					}
+				}	
+				41 = {
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 3938
+						owner = SPR
+					}
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 858
+						owner = SPR
+					}
+				}
+				793 = {
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 3945
+						owner = SPR
+					}
+				}
+				169 = {
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 7183
+						owner = SPR
+					}
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 1048
+						owner = SPR
+					}
+				}
+				169 = {
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 9764
+						owner = SPR
+					}
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 6966
+						owner = SPR
+					}
+					create_unit = {
+						division = "name = \"Guarnición Nacionalista\" division_template = \"Guarnición Nacionalista\" start_experience_factor = 0.5"
+						allow_spawning_on_enemy_provs = yes
+						prioritize_location = 6927
+						owner = SPR
+					}
+				}
+			}
+			D01 = {
+				add_ideas = BS_surrender_idea
 			}
 			every_country = {
 				remove_ideas = {

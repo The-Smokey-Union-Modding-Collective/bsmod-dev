@@ -322,6 +322,7 @@ lower_player_count_decisions_category = {
 				}
 				add_research_slot = 1
 				set_cosmetic_tag = SAF_west_allies
+				add_ideas = ALY_extra_volunteers
 			}
 		}
 	}
@@ -376,6 +377,7 @@ lower_player_count_decisions_category = {
 				}
 				add_research_slot = 1
 				set_cosmetic_tag = RAJ_east_allies
+				add_ideas = ALY_extra_volunteers
 			}
 		}
 	}
@@ -441,6 +443,7 @@ lower_player_count_decisions_category = {
 				add_research_slot = 1
 				set_cosmetic_tag = ROM_axis
 				add_ideas = ROM_manpower_reduced
+				add_ideas = ROM_extra_volunteers
 			}
 		}
 	}

@@ -19,6 +19,7 @@ ideas = {
 				industrial_capacity_factory = 0.20
 				production_factory_max_efficiency_factor = 0.10
 				production_factory_efficiency_gain_factor = 0.2
+				equipment_conversion_speed = 0.5 
 			}
 		}
 
