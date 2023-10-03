@@ -2216,6 +2216,8 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 7
 			sub_detection = 2.5
+			naval_light_gun_hit_chance_factor = 0.025
+			naval_heavy_gun_hit_chance_factor = 0.025
 			build_cost_ic = 150
 		}
 		multiply_stats = {
@@ -2230,6 +2232,8 @@ equipment_modules = {
 		add_stats = {
 			surface_detection = 10
 			sub_detection = 3.5
+			naval_light_gun_hit_chance_factor = 0.075
+			naval_heavy_gun_hit_chance_factor = 0.075
 			build_cost_ic = 170
 		}
 		can_convert_from = {
