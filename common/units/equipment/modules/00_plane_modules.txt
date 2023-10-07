@@ -1076,7 +1076,7 @@ equipment_modules = {
 
 		multiply_stats = {
 			maximum_speed = -0.1
-			agility = -0.05
+			air_agility = -0.05
 		}
 		dismantle_cost_ic = 0.5
 	}
