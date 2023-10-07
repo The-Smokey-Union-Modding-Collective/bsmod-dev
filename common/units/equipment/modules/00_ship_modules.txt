@@ -2222,6 +2222,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			surface_visibility = 0.1
 		}
 	}
 	ship_airplane_launcher_2 = {
@@ -2242,6 +2243,7 @@ equipment_modules = {
 		}
 		multiply_stats = {
 			naval_speed = -0.01
+			surface_visibility = 0.15
 		}
 	}
 
