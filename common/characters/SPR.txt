@@ -3998,7 +3998,7 @@ characters={
 		name=SPR_juan_andrade
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_6"
+				small="GFX_idea_SPR_juan_andrade"
 			}
 		}
 		advisor={
@@ -4047,7 +4047,7 @@ characters={
 		name=SPR_antonia_adroher_i_pascual
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_female_europe"
+				small="GFX_idea_SPR_antonia_adroher_i_pascual"
 			}
 		}
 		gender = female
@@ -4148,7 +4148,7 @@ characters={
 		name=SPR_alexander_orlov
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_5"
+				small="GFX_idea_SPR_alexander_orlov"
 			}
 		}
 		advisor={
@@ -4591,7 +4591,7 @@ characters={
 		name=SPA_martin_de_riquer
 		portraits={
 			army={
-				small="GFX_idea_generic_political_advisor_europe_2"
+				small="GFX_idea_SPA_martin_de_riquer"
 			}
 		}
 		advisor={
