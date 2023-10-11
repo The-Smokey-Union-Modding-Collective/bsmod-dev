@@ -191,7 +191,7 @@ ideas = {
 			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.075
 				global_building_slots_factor = 0.25
 			}
 		}
@@ -210,7 +210,7 @@ ideas = {
 			picture = SOV_fourth_five_year_plan
 			
 			modifier = {
-				consumer_goods_factor = -0.025
+				consumer_goods_factor = -0.075
 				global_building_slots_factor = 0.45
 				industrial_capacity_factory = 0.10
 				production_factory_max_efficiency_factor = 0.05
@@ -232,7 +232,7 @@ ideas = {
 			picture = generic_goods_red_bonus
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 				production_speed_buildings_factor = 0.1
 				global_building_slots_factor = 0.15
 			}
@@ -624,7 +624,7 @@ ideas = {
 
 			modifier = {
 				democratic_drift = -0.1
-				war_support_weekly = 0.002
+				war_support_factor = 0.1
 				political_power_factor = 0.1
 			}
 
@@ -750,7 +750,7 @@ ideas = {
 			picture = eng_for_the_good_of_the_revolution
 			
 			modifier = {
-				consumer_goods_factor = -0.05
+				consumer_goods_factor = -0.15
 			}
 		}
 
